@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Hugo Zzo Theme</title>
-    <link>http://example.org/ko/</link>
+    <link>https://savolla.github.io/ko/</link>
     <description>Recent content on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -15,7 +15,7 @@
     <webMaster>zzossig@gmail.com (zzossig)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://example.org/ko/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://savolla.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
     
     
     
