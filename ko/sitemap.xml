@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://savolla.github.io/ko/en/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
