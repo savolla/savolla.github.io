@@ -11,10 +11,11 @@
     <description>Recent content in Publications on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>zzossig@gmail.com (zzossig)</managingEditor>
-    <webMaster>zzossig@gmail.com (zzossig)</webMaster>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
+    <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://savolla.github.io/en/publication/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,12 +27,12 @@
         <title>article</title>
         <link>https://savolla.github.io/en/publication/article/</link>
         <pubDate>Thu, 05 Mar 2020 14:08:48 +0000</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
+        <author>savolla@protonmail.com (savolla)</author>
         <atom:modified>Thu, 05 Mar 2020 14:08:48 +0000</atom:modified>
         <guid>https://savolla.github.io/en/publication/article/</guid>
         <description></description>
         
-        <dc:creator>zzossig</dc:creator>
+        <dc:creator>savolla</dc:creator>
         
         
         
@@ -44,12 +45,12 @@
         <title>book</title>
         <link>https://savolla.github.io/en/publication/book/</link>
         <pubDate>Thu, 05 Mar 2020 14:08:48 +0000</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
+        <author>savolla@protonmail.com (savolla)</author>
         <atom:modified>Thu, 05 Mar 2020 14:08:48 +0000</atom:modified>
         <guid>https://savolla.github.io/en/publication/book/</guid>
         <description></description>
         
-        <dc:creator>zzossig</dc:creator>
+        <dc:creator>savolla</dc:creator>
         
         
         
@@ -62,12 +63,12 @@
         <title>misc</title>
         <link>https://savolla.github.io/en/publication/misc/</link>
         <pubDate>Thu, 05 Mar 2020 14:08:48 +0000</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
+        <author>savolla@protonmail.com (savolla)</author>
         <atom:modified>Thu, 05 Mar 2020 14:08:48 +0000</atom:modified>
         <guid>https://savolla.github.io/en/publication/misc/</guid>
         <description></description>
         
-        <dc:creator>zzossig</dc:creator>
+        <dc:creator>savolla</dc:creator>
         
         
         

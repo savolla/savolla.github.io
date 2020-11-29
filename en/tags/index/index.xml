@@ -11,9 +11,10 @@
     <description>Recent content in index on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>zzossig@gmail.com (zzossig)</managingEditor>
-    <webMaster>zzossig@gmail.com (zzossig)</webMaster>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://savolla.github.io/en/tags/index/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +26,7 @@
         <title>Posts</title>
         <link>https://savolla.github.io/en/posts/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
+        <author>savolla@protonmail.com (savolla)</author>
         
         <guid>https://savolla.github.io/en/posts/</guid>
         <description></description>
