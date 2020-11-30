@@ -14,7 +14,6 @@
     <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
     <webMaster>savolla@protonmail.com (savolla)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://savolla.github.io/series/index.xml" rel="self" type="application/rss+xml" />
@@ -22,24 +21,6 @@
     
     
 
-      
-      <item>
-        <title>Themes Guide</title>
-        <link>https://savolla.github.io/series/themes-guide/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/series/themes-guide/</guid>
-        <description></description>
-        
-        <dc:creator>savolla</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
 
     
