@@ -22,6 +22,39 @@
     
 
       
+      <item>
+        <title>permanent macros in vim</title>
+        <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/permanent-macros-in-vim/</guid>
+        <description>this is a short step by step tutorial to save your vim macro and use it everytime
+ fire up vim do q a create your macro press q to finish exit vim :q! vim ~/.vimrc type let @q = &#39;&#39; put your cursor on first single quote do &amp;quot; a p macro should be pasted inside single quotes like:   1  let @q = &amp;#39;your_macro_content&amp;#39;    save and exit ESC :wq fire up vim again do @ q  now you should have your macro saved.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vim</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>tools</category>
+            
+          
+        
+        
+        
+      </item>
+      
 
     
   </channel>
