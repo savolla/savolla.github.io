@@ -107,11 +107,19 @@
   </url>
   
   <url>
+    <loc>https://savolla.github.io/tags/howto/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/tags/index/</loc>
   </url>
   
   <url>
     <loc>https://savolla.github.io/posts/notitia/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/permanent-macros-in-vim/</loc>
   </url>
   
   <url>
@@ -124,6 +132,14 @@
   
   <url>
     <loc>https://savolla.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/vim/</loc>
   </url>
   
 </urlset>
