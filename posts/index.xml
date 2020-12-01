@@ -22,66 +22,6 @@
     
 
       
-      <item>
-        <title>Notitia</title>
-        <link>https://savolla.github.io/posts/notitia/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/notitia/</guid>
-        <description>Topics ERP web programming probability and statistics Programming Languages python facts  sınıf metodları hiç parametre almasa bile, içinde mutlaka self parametresi barındırmalıdır. örnek: sınıf oluşturmak python&amp;rsquo;da bir sınıf oluştururken init metodu kullanmak zorunda değiliz. python&amp;rsquo;da kalıtım almak için sadece sınıf tanımlamasında, sınıf isminin yanına, parantez içine super classın adını yazmak yeterlidir. örnek: python&amp;rsquo;da inheritance kalıtım almış bir sınıfın base sınıfınından method çağırmak için super keywordü kullanılır. örnek: base class&amp;rsquo;a ulaşmak private değişken tanımlamak için, değişkenin başına iki kere &amp;lsquo;_&amp;rsquo; koymamız gerekir.</description>
-        
-        <dc:creator>[Oleksiy Nehlyadyuk]</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>permanent macros in vim</title>
-        <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/permanent-macros-in-vim/</guid>
-        <description>fire up vim
-  do q a
-  create your macro
-  press q to finish
-  exit vim :q!
-  vim ~/.vimrc
-  type let @q = &#39;&#39;
-  put your cursor on first single quote
-  do &amp;quot; a p
-  macro should be pasted inside single quotes:
-1  let @q = &amp;#39;your_macro_content&amp;#39;     save and exit ESC :wq</description>
-        
-        <dc:creator>[Oleksiy Nehlyadyuk]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>vim</category>
-            
-          
-            
-              <category>howto</category>
-            
-          
-            
-              <category>tools</category>
-            
-          
-        
-        
-        
-      </item>
-      
 
     
   </channel>
