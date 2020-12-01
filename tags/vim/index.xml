@@ -23,6 +23,38 @@
 
       
       <item>
+        <title>less known vim tricks</title>
+        <link>https://savolla.github.io/posts/less-known-vim-tricks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/less-known-vim-tricks/</guid>
+        <description>ourput redirection  you can redirect outputs of a shell command in vim  press ESC :r !ls -la RET    whitespace removal  remove all trailing whitespaces. you can also make the following a permanent macro  press ESC :%s/\s\+$//e RET    time travel  show the file 10 mins ago  press ESC :earlier 10m RET   show the file after 10 mins  press ESC :later 10m RET    </description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vim</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>tools</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>permanent macros in vim</title>
         <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

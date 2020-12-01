@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>gpg on savolla&#39;s blog</title>
+    <link>https://savolla.github.io/tags/gpg/</link>
+    <description>Recent content in gpg on savolla&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    
+        <atom:link href="https://savolla.github.io/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>what is gpg</title>
+        <link>https://savolla.github.io/posts/what-is-gpg/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/what-is-gpg/</guid>
+        <description>also called gnu privacy guard this is a key which helps to encrypt and decript files there are 2 types of gpg keys; private : unlocks everything you lock with that public : you send to other people gpg keys expire ! so you need to generate them once or twice a year  how to generate a gpg key   first generate personal key:
+1  gpg --full-gen-key     choose RSA and RSA</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>gpg</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

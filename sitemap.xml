@@ -107,6 +107,14 @@
   </url>
   
   <url>
+    <loc>https://savolla.github.io/tags/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/gpg/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/tags/howto/</loc>
   </url>
   
@@ -115,11 +123,31 @@
   </url>
   
   <url>
+    <loc>https://savolla.github.io/posts/less-known-vim-tricks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/make/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/one-makefile-for-everything/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/posts/permanent-macros-in-vim/</loc>
   </url>
   
   <url>
     <loc>https://savolla.github.io/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/search-code-in-github/</loc>
   </url>
   
   <url>
@@ -136,6 +164,10 @@
   
   <url>
     <loc>https://savolla.github.io/tags/vim/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/what-is-gpg/</loc>
   </url>
   
 </urlset>

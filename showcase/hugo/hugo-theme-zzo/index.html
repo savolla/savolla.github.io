@@ -1711,7 +1711,7 @@
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
   
   <div class="single ">
@@ -2409,36 +2409,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="false">What&#39;s on this Page</h6>
-    
-      <label class="switch" data-ani="false">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="true" data-ani="false">
-    <nav id="TableOfContents"></nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
   
 
-  var enableToc = JSON.parse("true");
+  var enableToc = JSON.parse("false");
   var toc = JSON.parse("null");
   var tocPosition = JSON.parse("\"inner\"");
   
@@ -2552,7 +2528,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    var enableToc = JSON.parse("true");
+    var enableToc = JSON.parse("false");
     var toc = JSON.parse("null");
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
