@@ -107,6 +107,14 @@
   </url>
   
   <url>
+    <loc>https://savolla.github.io/tags/doom/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/tags/emacs/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/tags/git/</loc>
   </url>
   
@@ -144,6 +152,10 @@
   
   <url>
     <loc>https://savolla.github.io/tags/programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/programming-in-doom-emacs/</loc>
   </url>
   
   <url>

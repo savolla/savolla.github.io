@@ -88,6 +88,47 @@
       </item>
       
       <item>
+        <title>programming in doom emacs</title>
+        <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/programming-in-doom-emacs/</guid>
+        <description>This is how I use doom emacs for daily coding. Doom and it&amp;rsquo;s packages are working together to make developer&amp;rsquo;s life easy. Here I made a complete list for you guys. This is a step by step guide to do coding on doom emacs. By the way when I say things like C-c C-p it means CTRL + c + p
+before we start to make things work enable specified modules in your init file</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>doom</category>
+            
+          
+            
+              <category>emacs</category>
+            
+          
+            
+              <category>programming</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>search code in Github</title>
         <link>https://savolla.github.io/posts/search-code-in-github/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
