@@ -77,6 +77,39 @@
       </item>
       
       <item>
+        <title>one Makefile for everything</title>
+        <link>https://savolla.github.io/posts/one-makefile-for-everything/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/one-makefile-for-everything/</guid>
+        <description>here! you found it! this is one single Makefile that fits all projects with this file structure:
+1 2 3 4 5 6 7 8 9  project / ├── include ├── build ├── lib ├── obj ├── src ├── test ├── main.c └── Makefile   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  TARGET_EXEC ?</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>make</category>
+            
+          
+            
+              <category>programming</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>permanent macros in vim</title>
         <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -152,15 +185,16 @@ before we start to make things work enable specified modules in your init file</
       
       <item>
         <title>savolla&#39;s music recommendations</title>
-        <link>https://savolla.github.io/posts/one-makefile-for-everything/</link>
+        <link>https://savolla.github.io/posts/music-recommendations/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>savolla@protonmail.com (savolla)</author>
         
-        <guid>https://savolla.github.io/posts/one-makefile-for-everything/</guid>
-        <description>Here I made some album recommendations for you. This is what i listen to when i really want to get into the mood. i made my best by separating genres into two categories. this list will grow up. I&amp;rsquo;ll trow goodies here when i think it&amp;rsquo;s worthy
-music for normies this is normal music for normal people. (see what I did?)
+        <guid>https://savolla.github.io/posts/music-recommendations/</guid>
+        <description>Here I made some album recommendations. this is my personal playlist which consists of very &amp;ldquo;non-normie&amp;rdquo; stuff. albums in this list will start with the most &amp;ldquo;normie&amp;rdquo; music and will incrementally get heavier
+level 1 easier to digest and fun
  Tokyo Rose - Chases 2
-great synthwave album.. my favorite song on this is midnight chase Dance with the Dead - Loved to Death</description>
+great synthwave album.. my favorite song on this is midnight chase Dance with the Dead - Loved to Death
+synthwave + some metal elements. great if you like distortion guitar riffs.</description>
         
         <dc:creator>[savolla]</dc:creator>
         
