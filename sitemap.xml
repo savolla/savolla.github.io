@@ -135,22 +135,6 @@
   </url>
   
   <url>
-    <loc>https://savolla.github.io/tags/make/</loc>
-  </url>
-  
-  <url>
-    <loc>https://savolla.github.io/music/music/</loc>
-  </url>
-  
-  <url>
-    <loc>https://savolla.github.io/music/</loc>
-  </url>
-  
-  <url>
-    <loc>https://savolla.github.io/posts/one-makefile-for-everything/</loc>
-  </url>
-  
-  <url>
     <loc>https://savolla.github.io/posts/permanent-macros-in-vim/</loc>
   </url>
   
@@ -164,6 +148,10 @@
   
   <url>
     <loc>https://savolla.github.io/posts/programming-in-doom-emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/one-makefile-for-everything/</loc>
   </url>
   
   <url>
