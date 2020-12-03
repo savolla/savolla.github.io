@@ -192,14 +192,20 @@ before we start to make things work enable specified modules in your init file</
         <guid>https://savolla.github.io/posts/music-recommendations/</guid>
         <description>Here I made some album recommendations. this is my personal playlist which consists of very &amp;ldquo;non-normie&amp;rdquo; stuff. albums in this list will start with the most &amp;ldquo;normie&amp;rdquo; music and will incrementally get heavier
 level 1 easier to digest and fun
- Tokyo Rose - Chases 2
+ Tokyo Rose - Chases 2 
 great synthwave album.. my favorite song on this is midnight chase Dance with the Dead - Loved to Death
-synthwave + some metal elements. great if you like distortion guitar riffs.</description>
+synthwave + some metal elements.</description>
         
         <dc:creator>[savolla]</dc:creator>
         
         
         
+        
+          
+            
+              <category>music</category>
+            
+          
         
         
         

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>music on savolla&#39;s blog</title>
+    <link>https://savolla.github.io/tags/music/</link>
+    <description>Recent content in music on savolla&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    
+        <atom:link href="https://savolla.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>savolla&#39;s music recommendations</title>
+        <link>https://savolla.github.io/posts/music-recommendations/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/music-recommendations/</guid>
+        <description>Here I made some album recommendations. this is my personal playlist which consists of very &amp;ldquo;non-normie&amp;rdquo; stuff. albums in this list will start with the most &amp;ldquo;normie&amp;rdquo; music and will incrementally get heavier
+level 1 easier to digest and fun
+ Tokyo Rose - Chases 2 
+great synthwave album.. my favorite song on this is midnight chase Dance with the Dead - Loved to Death
+synthwave + some metal elements.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>music</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
