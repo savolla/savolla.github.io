@@ -23,6 +23,30 @@
 
       
       <item>
+        <title>Cracking the Coding Interview Notes</title>
+        <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</guid>
+        <description>Chapter 1  recruiters look for the following;  analytical skills  how confidently you solved the problem how optimal was your solution how fast you are how efficient was your algorithm   coding skills  how clean your code is how good was your style is did you handle errors or not   computer science knowledge. do you have strong foundation or not did you make challanging / interesting projects before or not do you communicate well or not   having knowledge of data structures and algorithms is really important and positively corelates with being a good developer the reason behind whiteboard coding is that recruiters want you to focus on actual problem solving instead of struggling in restricted computer environment when compilers spit errors all over the place.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>less known vim tricks</title>
         <link>https://savolla.github.io/posts/less-known-vim-tricks/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
