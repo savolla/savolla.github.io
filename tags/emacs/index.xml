@@ -1,21 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>emacs on savolla&#39;s blog</title>
     <link>https://savolla.github.io/tags/emacs/</link>
     <description>Recent content in emacs on savolla&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy;{year}, All Rights Reserved</copyright><atom:link href="https://savolla.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>programming in doom emacs</title>
-      <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    
+        <atom:link href="https://savolla.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
       
-      <guid>https://savolla.github.io/posts/programming-in-doom-emacs/</guid>
-      <description>This is how I use doom emacs for daily coding. Doom and it&amp;rsquo;s packages are working together to make developer&amp;rsquo;s life easy. Here I made a complete list for you guys. This is a step by step guide to do coding on doom emacs. By the way when I say things like C-c C-p it means CTRL + c + p
+      <item>
+        <title>programming in doom emacs</title>
+        <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/programming-in-doom-emacs/</guid>
+        <description>This is how I use doom emacs for daily coding. Doom and it&amp;rsquo;s packages are working together to make developer&amp;rsquo;s life easy. Here I made a complete list for you guys. This is a step by step guide to do coding on doom emacs. By the way when I say things like C-c C-p it means CTRL + c + p
 before we start to make things work enable specified modules in your init file</description>
-    </item>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>doom</category>
+            
+          
+            
+              <category>emacs</category>
+            
+          
+            
+              <category>programming</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>

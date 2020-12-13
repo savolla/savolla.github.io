@@ -1,119 +1,244 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on savolla&#39;s blog</title>
     <link>https://savolla.github.io/tags/</link>
     <description>Recent content in Tags on savolla&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy;{year}, All Rights Reserved</copyright><atom:link href="https://savolla.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>book</title>
-      <link>https://savolla.github.io/tags/book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://savolla.github.io/tags/book/</guid>
-      <description></description>
-    </item>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <sy:updatePeriod>daily</sy:updatePeriod>
     
-    <item>
-      <title>doom</title>
-      <link>https://savolla.github.io/tags/doom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://savolla.github.io/tags/doom/</guid>
-      <description></description>
-    </item>
+        <atom:link href="https://savolla.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>emacs</title>
-      <link>https://savolla.github.io/tags/emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://savolla.github.io/tags/emacs/</guid>
-      <description></description>
-    </item>
     
-    <item>
-      <title>git</title>
-      <link>https://savolla.github.io/tags/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://savolla.github.io/tags/git/</guid>
-      <description></description>
-    </item>
     
-    <item>
-      <title>gpg</title>
-      <link>https://savolla.github.io/tags/gpg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+
       
-      <guid>https://savolla.github.io/tags/gpg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>howto</title>
-      <link>https://savolla.github.io/tags/howto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>book</title>
+        <link>https://savolla.github.io/tags/book/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/book/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/howto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>https://savolla.github.io/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>doom</title>
+        <link>https://savolla.github.io/tags/doom/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/doom/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>make</title>
-      <link>https://savolla.github.io/tags/make/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>emacs</title>
+        <link>https://savolla.github.io/tags/emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/emacs/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>https://savolla.github.io/tags/music/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>git</title>
+        <link>https://savolla.github.io/tags/git/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/git/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://savolla.github.io/tags/programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>gpg</title>
+        <link>https://savolla.github.io/tags/gpg/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/gpg/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tools</title>
-      <link>https://savolla.github.io/tags/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>howto</title>
+        <link>https://savolla.github.io/tags/howto/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/howto/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://savolla.github.io/tags/vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>index</title>
+        <link>https://savolla.github.io/tags/index/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/index/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
+      <item>
+        <title>make</title>
+        <link>https://savolla.github.io/tags/make/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/make/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>music</title>
+        <link>https://savolla.github.io/tags/music/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/music/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>programming</title>
+        <link>https://savolla.github.io/tags/programming/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/programming/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>tools</title>
+        <link>https://savolla.github.io/tags/tools/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/tools/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>vim</title>
+        <link>https://savolla.github.io/tags/vim/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/tags/vim/</guid>
+        <description></description>
+        
+        <dc:creator>savolla</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>
