@@ -48,6 +48,31 @@ Bölüm 1  recruiters look for the following;  analytical skills  how confidentl
       </item>
       
       <item>
+        <title>HTML Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/html-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/html-cheat-sheet/</guid>
+        <description>how to   create a heading?
+1  &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;     create a paragraph element?
+1  &amp;lt;p&amp;gt;paragraph&amp;lt;/p&amp;gt;     create an image element?
+notice there are no closing forward slashes in img elements
+1  &amp;lt;img src=&amp;#34;path/to/image&amp;#34;&amp;gt;     break a line?
+1  &amp;lt;br/&amp;gt;     tell html to use latest html version?
+by putting the docstring
+1  &amp;lt;!</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>less known vim tricks</title>
         <link>https://savolla.github.io/posts/less-known-vim-tricks/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
