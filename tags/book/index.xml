@@ -23,6 +23,34 @@
 
       
       <item>
+        <title>Code Complete Notlarım</title>
+        <link>https://savolla.github.io/posts/code-complete-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
+        <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
+  yazılım geliştirme ve programlama aynı şey değildir
+  yazılım inşası, yazılım geliştirme alanındaki bazı konuları içinde barındıran özelleşmiş bir alt daldır. yazılım inşası&amp;rsquo;nın (construction) dokunuğu dallar:
+ coding and debugging unit testing detailed design integration construction planning    construction terimi, programlama termine benzemektedir.
+  construction&amp;rsquo;ın yazılım konusunda yaptığı işler:</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Cracking the Coding Interview Notes</title>
         <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

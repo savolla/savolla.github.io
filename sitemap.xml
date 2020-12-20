@@ -111,7 +111,15 @@
   </url>
   
   <url>
+    <loc>https://savolla.github.io/posts/code-complete-notes/</loc>
+  </url>
+  
+  <url>
     <loc>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/css-cheat-sheet/</loc>
   </url>
   
   <url>
@@ -140,6 +148,10 @@
   
   <url>
     <loc>https://savolla.github.io/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/posts/javascript-cheat-sheet/</loc>
   </url>
   
   <url>

@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cracking the Coding Interview Notes – savolla&#39;s blog</title>
+    <title>Code Complete Notlarım – savolla&#39;s blog</title>
     
 
 
@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://savolla.github.io\"");
     
-    var permalink = JSON.parse("\"https://savolla.github.io/posts/cracking-the-coding-interview-notes/\"");
+    var permalink = JSON.parse("\"https://savolla.github.io/posts/code-complete-notes/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1341,12 +1341,12 @@
 <meta property="article:published_time" content="0001-01-01T00:00:00&#43;0000">
 
 <meta name="author" content="[savolla]">
-<meta property="article:author" content="https://savolla.github.io/posts/cracking-the-coding-interview-notes/@[savolla]">
+<meta property="article:author" content="https://savolla.github.io/posts/code-complete-notes/@[savolla]">
 
 
 <meta property="og:site_name" content="savolla&#39;s blog">
-<meta property="og:title" content="Cracking the Coding Interview Notes">
-<meta property="og:url" content="https://savolla.github.io/posts/cracking-the-coding-interview-notes/">
+<meta property="og:title" content="Code Complete Notlarım">
+<meta property="og:url" content="https://savolla.github.io/posts/code-complete-notes/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="oleksiy nehlyadyuk">
 
@@ -1359,7 +1359,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://savolla.github.io/posts/cracking-the-coding-interview-notes/">
+<link rel="canonical" href="https://savolla.github.io/posts/code-complete-notes/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1385,11 +1385,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Cracking the Coding Interview Notes",
+    "headline": "Code Complete Notlarım",
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
-    "url" : "https://savolla.github.io/posts/cracking-the-coding-interview-notes/",
-    "description": "Bu post\u0026rsquo;da Türkçe olarak Cracking the Coding Interview kitabının özetini çıkartıyorum. Ilk ve ikinci bölümleri ingilizce yazdım, dert etmeyin onları revize edip …",
+    "url" : "https://savolla.github.io/posts/code-complete-notes/",
+    "description": "bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali   yazılım geliştirme ve programlama aynı şey değildir   yazılım …",
     "keywords": ["book"],
     "author": {
       "@type": "Person",
@@ -1567,14 +1567,14 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="false">Cracking the Coding Interview Notes</h2>
+    <h2 class="single__title" data-ani="false">Code Complete Notlarım</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;10&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;11&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1596,353 +1596,398 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <p>Bu post&rsquo;da Türkçe olarak <em>Cracking the Coding Interview</em> kitabının özetini çıkartıyorum. Ilk ve ikinci bölümleri ingilizce yazdım, dert etmeyin onları revize edip Türkçeleştireceğim. Bu kitapta, iş başvurularında dikkat edilecek hususlar çok güzel anlatılmıştır. Ben de en azından özetini çıkararak önemli yerleri sizinle paylaşmaya karar verdim. İyi okumalar<br />
-<img src="/ox-hugo/screenshot-56.png" alt="" /></p>
-<h2 id="bölüm-1">Bölüm 1</h2>
+      <h2 id="bölüm-1-yazılım-inşasına-giriş">bölüm 1 - yazılım inşasına giriş</h2>
 <ul>
-<li>recruiters look for the following;
-<ul>
-<li>analytical skills
+<li>
+<p>yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali</p>
+</li>
+<li>
+<p><strong>yazılım geliştirme</strong> ve <strong>programlama</strong> aynı şey değildir</p>
+</li>
+<li>
+<p><strong>yazılım inşası</strong>, yazılım geliştirme alanındaki bazı konuları içinde barındıran özelleşmiş bir alt daldır. yazılım inşası&rsquo;nın (construction) dokunuğu dallar:</p>
 <ol>
-<li>how <strong>confidently</strong> you solved the problem</li>
-<li>how <strong>optimal</strong> was your solution</li>
-<li>how <strong>fast</strong> you are</li>
-<li>how <strong>efficient</strong> was your algorithm</li>
+<li>coding and debugging</li>
+<li>unit testing</li>
+<li>detailed design</li>
+<li>integration</li>
+<li>construction planning</li>
 </ol>
 </li>
-<li>coding skills
+<li>
+<p>construction terimi, <strong>programlama</strong> termine benzemektedir.</p>
+</li>
+<li>
+<p>construction&rsquo;ın yazılım konusunda yaptığı işler:</p>
 <ol>
-<li>how <strong>clean</strong> your code is</li>
-<li>how <strong>good</strong> your <strong>style</strong> was</li>
-<li>did you <strong>handle errors</strong> or not</li>
+<li>kodun temelini oturtmak</li>
+<li>kodun nasıl test edileceğini belirlemek</li>
+<li>sınıfları tasarlama ve yazmak</li>
+<li>değişkenleri oluşturmak ve isimlendirmek</li>
+<li>kontrol yapılarının seçimi ve kod bloklarının organizasyonunu sağlamak</li>
+<li>unit test, integrasyon test ve debug yapmak</li>
+<li>varsa diğer takım üyelerinin kodunu incelemek ve kendi kodunun incelemesine izin vermek</li>
+<li>koda yorum satırı eklemek ve dikkatli bir şekilde organize etmek/formatlamak</li>
+<li>üçüncü parti yazılımları, koda entegre etme</li>
+<li>koda ince ayar yaparak daha hızlı çalışmasını ve daha az memory yemesini sağlamak</li>
 </ol>
 </li>
-<li>computer science knowledge. do you have <strong>strong foundation</strong> or not</li>
-<li>did you make <strong>challanging</strong> / <strong>interesting</strong> projects before or not</li>
-<li>do you <strong>communicate well</strong> or not</li>
-</ul>
-</li>
-<li>having knowledge of data structures and algorithms is really important and positively corelates with being a good developer</li>
-<li>the reason behind <strong>whiteboard coding</strong> is that recruiters want you to focus on <span class="underline">actual problem solving</span> instead of struggling in <strong>restricted</strong> computer environment when compilers spit errors all over the place. the code you write does not need to be perfect and it&rsquo;s okay if it contains some syntactical errors. just show to the interviewer how you approach to the problem and write an acceptable code</li>
-<li>companies usually follow a pattern when selecting interview questions. there are two types of questions;
+<li>
+<p>construction&rsquo;ın dışında kalan alanlar</p>
 <ol>
-<li>algorithm questions</li>
-<li>technology questions (do you have experience with techonology X?)</li>
+<li>yönetim</li>
+<li>gereksinim geliştirme</li>
+<li>yazılım mimarisi</li>
+<li>kullanıcı arayüzü tasarımı</li>
+<li>sistem testi</li>
 </ol>
 </li>
-<li>interviewers always compare your performance to other&rsquo;s that came before and after you. even if you think that you performed well, a japanese hacker who came before you can change all the game. it&rsquo;s all about luck m8</li>
-<li>don&rsquo;t think that you&rsquo;ve been rejected immediately if you don&rsquo;t get response in 2-3 days. your interviewer might still work on your and other assessments. be patient and calm</li>
-<li>if you&rsquo;ve been rejected but really want that job you must wait for at least <strong>6 months</strong> before re-application.</li>
-</ul>
-<h2 id="bölüm-2">Bölüm 2</h2>
-<ul>
-<li>before face-to-face interview you always get a <strong>screen</strong> interview. this is actually a phone interview where skype or relative apps are used</li>
-<li>coding and algorithms questions are asked during the screen interview. questions are hard as ones that asked in face-to-face interview</li>
-<li>sometimes interviewer might give you a <strong>homework</strong> which you solve and send the code through e-mail. (rare case)</li>
-<li>the most of the time questions are asked in real time and you try to solve them while interviewer watches (common case)</li>
-<li>you do one or two screens before they take you to face-to-face arena</li>
-</ul>
-<h2 id="bölüm-3">Bölüm 3</h2>
-<ul>
 <li>
-<p>aşağıdaki maddelerde, bazı <span class="underline">değişken</span> durumlar anlatılmıştır;</p>
-<ul>
-<li>
-<p>görüşmeciler (interviewer) çok tecrübeli ve uzun süre çalışan geliştiricileri, daha düşük standartlarda görüp algoritmik soruları daha kolay sorabilir. ne de olsa bu insanlar mezun olalı yıllar olmuştur ve görüşmeciler, onların paslandıklarının farkındadırlar</p>
+<p>construction, boyuta bağlı olarak, bir yazılım projesinin %30 veya %80&rsquo;ini kaplayabilir</p>
 </li>
 <li>
-<p>bazı şirketlerde de tam tersi olabilir. yani uzun süre çalışanların daha çok problem çözdüğünü ve bu konuda yıllar geçtikçe daha iyi olduklarını düşünürler ve yeni mezunlara göre daha zor sorabilirler</p>
+<p>mimari ve gereksinimler, construction&rsquo;dan önce gerçekleşen şeylerdir. bu sayede construction çok daha hızlı ve verimli bir şekilde ilerler</p>
 </li>
 <li>
-<p>çoğu zaman tecrübeli kişilere <strong>system tasarımı</strong> soruları gelirken yeni mezun olanlar bu konuda çalşma yapmadıkları için (daha çok akademik derslere ağırlık verdiklerinden) genelde bu sorulardan kurtulabilirler</p>
-</li>
-<li>
-<p>yeni mezunlara göre tecrübelilerin, sorulara çok daha ayrıntılı cevap vermeleri beklenir. yani yeni mezunsak iş çok daha kolay. sadece algoritma sorularına çalışmamız (hackerrank, codewars) ve şu an zaman varken bol bol proje yapmamız yeterli olacaktır. tecrübelilerin iş bulması bizden daha zor</p>
+<p>kaynak kodu, construction evresinin bir ürünüdür. zamanla beraber, gereksinim ve dizayn dökümanları güncelliğini yitirse dahi kaynak kodu her zaman güncel kalır.</p>
 </li>
 </ul>
-</li>
-<li>
-<p><strong>skill atrophy</strong>: bir yetenek ya da bilgi kullanılmadığında, o yeteneğin körelmesi anlamına gelir. bizim perspektifimizden bakıldığında, algoritma ve kodlama bir yetenektir ve asla atrofiye uğramaması gerekir</p>
-</li>
-</ul>
-<blockquote>
-<p>kitapta bu bölümde, SDET ve PM ile ilgili kariyer ve görüşme tavsiyeleri verilmiş. bu bizi şu anda ilgilendirmiyor.</p>
-</blockquote>
+<h2 id="bölüm-2-yazılım-geliştirme-metaforları">bölüm 2 - yazılım geliştirme metaforları</h2>
 <ul>
 <li>
-<p>SDET: (software design engineer and tester) yazılımları test eden elemanlardır. bunların genelde normal bir developerdan daha iyi olması beklenir çünkü bu iş aynı zamanda <strong>kalite kontrol</strong>&lsquo;ün yazılım camiasındaki karşılığıdır. bu yüzden bir SDET&rsquo;in iş bulması demek, buraya kadar bahsi geçen pozisyonlardan daha çok çalışması gerek demek oluyor</p>
+<p>çok iyi anlamadığımız şeyleri bazen çok iyi bildiğimiz bir şeylerle ilişkilendirdiğimizde yani <strong>metafor</strong> kullandığımızda, olayı <strong>modellemiş</strong> oluruz ve daha iyi anlamış oluruz</p>
 </li>
 <li>
-<p>PM (Product Manager): daha çok takım yönetimi yapan ve geliştiricilerin ürettiği yazılımın sorumluluğunu üstlenen elemandır. kod yazmaktan çok işin business tarafıyla ilgilenir</p>
+<p>kitapta yazılım geliştirme için kullanılan metafor ise <strong>ev inşaatı</strong></p>
 </li>
 <li>
-<p>bir startup&rsquo;a katılmak istiyorsan;</p>
-<ul>
-<li>
-<p>CV&rsquo;de ilk göze çarpan kısmın, <strong>yapılan projeler</strong> olması gerekir. startup alım süreçlerinde CV incelemesi sırasında kişinin ne kadar <strong>girişimci</strong> ve programlama konusunda ne kadar <strong>üretken</strong> olduğu, bu kısımda göze çarpar. yani &ldquo;ben şu dilleri biliyorum&rdquo;, &ldquo;şu teknolojileri biliyorum&rdquo;&lsquo;a bakmazlar (genelde)</p>
+<p>mesela köpeğin için bir kulube yapmaya kalkarsak, ihtiyacımız olan sadece bir kaç tahta ve çivi. kulube bittiğinde eğer bir şeyleri yanlış yaptıysak, bu çok büyük bir sorun teşkil etmez. ya var olan kulubeyi alıp üzerinde oynamalar yaparak düzeltiriz ya da onun yerine yeni bir kulube yapabiliriz.</p>
 </li>
 <li>
-<p>kesinlikle, bir startup görüşmecisiyle &ldquo;samimi&rdquo; ve &ldquo;arkadaşça&rdquo; iletişim kurulması gerekir. şirket henüz çok küçüktür ve insanlar yanlarında genelde takılabilecekleri insanlar arar. burada işin sosyal tarafı, iş tarafı kadar ağır basabilir</p>
+<p>yukarıdaki metafor, yazdığımız küçük kodlar/projeler için de geçerlidir. program düzgün çalışmıyorsa ya üstünde oynama yapar düzeltmeye çalışırız ya da sil baştan yeni bir tane yazarız</p>
 </li>
 <li>
-<p>startup&rsquo;daki projede kullanılan dil ile ilgili çok iyi bir derinliğe sahip ol çünkü sorular genelde dil spesifik gelir. (bir startup&rsquo;a göre dil öğrenmek değil de bildiğimiz dilde iş yapan bir startup&rsquo;a başvurmak çok daha efektif olur)</p>
-</li>
-<li>
-<p>strtuplar tecrübe de isterler. buradan benim çıkarttığım, büyük şirketler, tecrübeli developerları görüşme esnasında çok hırpalarken, startuplarda genelde iş küçük olduğundan tecrübelileri havada kapıyor olabilirler. bu yüzden yeni mezun birinin büyük bir şirkette iş bulması, startup&rsquo;da iş bulmasından daha kolaydır (?)</p>
-</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>buradan sonrası, şirket içi iş görüşmelerinden ve interviewerlara tavsiyelerden bahsediyor. bizim için şu anlık önemli değil</p>
-</blockquote>
-<h2 id="bölüm-4">Bölüm 4</h2>
-<h3 id="tecrübe-kazanma-yolları">Tecrübe Kazanma Yolları</h3>
-<ul>
-<li>iyi bir tecrübe yoksa, iyi bir CV olmaz. iyi bir CV yoksa da kimse sizi iş görüşmesine çağırmaz</li>
-<li>öğrenciler bakımından yukarıdaki sorunun çözümü;
+<p>daha büyük bir ev yapmak istediğimizde ise metaforu genişletmemiz gerekir:</p>
 <ol>
-<li>gerçek sorunlar çözen projeler yap</li>
-<li>staj yap</li>
-<li>startup ara</li>
-<li>boş zamanında bir proje yap,</li>
-<li>hackatonlara katıl,</li>
-<li>github&rsquo;da open source bir projeye katkıda bulun</li>
+<li>nasıl bir ev yapmak istiyoruz? : <strong>problemi anlamak</strong></li>
+<li>mimar bir tasarım yapar : <strong>yazılım mimari dizaynı</strong></li>
+<li>evin planının çıkarılması : <strong>detaylı yazılım tasarımı</strong></li>
 </ol>
 </li>
 </ul>
-<h3 id="iyi-bir-cv-yazma-yolları">Iyi Bir CV Yazma Yolları</h3>
-<ul>
-<li>
-<p>aslında şirketler birinde sadece şunları ararlar;</p>
+<h3 id="reading-list-to-become-a-professional">Reading List to Become a Professional</h3>
+<h4 id="job-interview-prep">Job Interview Prep</h4>
 <ol>
-<li><strong>zeki misin?</strong></li>
-<li><strong>kod yazabilir misin?</strong></li>
+<li>Cracking the Coding Interview: 189 Programming Questions and Solutions</li>
+<li>Programming Interviews Exposed: Coding Your Way Through the Interview</li>
+<li>Introduction to Algorithms</li>
+<li>The Algorithm Design Manual</li>
+<li>Effective Java</li>
+<li>Concurrent Programming in Java: Design Principles and Pattern</li>
+<li>Modern Operating Systems</li>
+<li>Programming Pearls</li>
+<li>Discrete Mathematics for Computer Scientists</li>
 </ol>
-<p>CV&rsquo;de yazanlar, bu iki şeyin kanıtı olmalıdır. şirketlere zeki ve çalışkan olduğunuzu katınladığınız anda işi kaparsınız</p>
-</li>
-<li>
-<p>CV yazarken, odak noktası kesinlikle &ldquo;zeki misin?&rdquo; ve &ldquo;kod yazabiliyor musun?&rdquo; sorularına cevap vermeli. teknik olmayan şeyeri (hobi gibi) CV&rsquo;ye eklemek çok akıllıca değildir</p>
-</li>
-<li>
-<p>öğrencilerin ve 10 seneden az tecrübesi olan kişilerin CV&rsquo;si <span class="underline">1 sayfa</span> olmalıdır. data tecrübeliler <span class="underline">1.5 ya da 2 sayfa</span> olmalıdır</p>
-</li>
-<li>
-<p>uzun bir CV hiç bir zaman faydalı değildir çünkü iş verenler CV&rsquo;ye bakarken en fazla 10 saniye harcarlar.</p>
-</li>
-<li>
-<p>CV&rsquo;ye sadece <span class="underline">sırasıyla</span>;</p>
+<h4 id="junior-software-engineer-reading-list">Junior Software Engineer Reading List</h4>
+<h5 id="read-this-first">Read This First</h5>
 <ol>
-<li>en büyük projeleri</li>
-<li>en büyük tecrübeleri (iş tecrübesi, programlama dilleri)</li>
-<li>en büyük başarılarını</li>
+<li>Pragmatic Thinking and Learning: Refactor Your Wetware</li>
 </ol>
-<p>yukarıdakilerden daha fazla şey yazmak, iş verenin sadece dikkatini dağıtır.</p>
-</li>
-<li>
-<p>bazı işverenler, uzun CV gördüklerinde direk fırlatırlar..</p>
-</li>
-<li>
-<p>CV her zaman İngilizce olmalıdır. her zaman ana dili ingilizce olan ya da bir tercumana okutup gramer ya da yazım yanlışlarınızı kontrol ettirin.</p>
-</li>
-<li>
-<p>CV&rsquo;de <strong>yaş</strong>, <strong>cinsiyet</strong>, <strong>medeni durum</strong> <span class="underline">belirtmeyin</span>. bunu yaparsanız, özellikle Amerika&rsquo;da ters teper</p>
-</li>
-</ul>
-<h4 id="tecrübeler">Tecrübeler</h4>
-<ul>
-<li>
-<p>eğer çok tecrübeliysen ve 1 sayfaya sığdıramıyorsan, 1 sayfaya sığdırmanın yollarını ara. ya da en önemsizleri ele. 1 sayfa <strong>is the key</strong></p>
-</li>
-<li>
-<p>tecrübe kısmında, iş geçmişinin tamamını yazmak önerilmez. çünkü çok iş değiştiren biri olarak görünürsün. onun yerine sadece en önemlileri yaz. her şirket isminin altına tek cümleyle ne yaptığını anlat. örnek bir cümle kalıbı;</p>
-<blockquote>
-<p>Y&rsquo;yi yaparak X&rsquo;i başardım</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="projeler">Projeler</h4>
-<ul>
-<li>proje kısmı, yaptığınız en büyük 2-4 projeden oluşmalı</li>
-<li>projelerin açıklama kısmında;
+<h5 id="fundementals">Fundementals</h5>
 <ol>
-<li>hangi dil ya da dillerle yazıldı</li>
-<li>hangi teknolojiler kullanıldı</li>
-<li>proje bir takım projesi mi? bir kurs yardımıyla mı yapıldı? kendin mi yaptın?</li>
+<li>Code Complete 2</li>
+<li>Software Estimation: Demystifying the Black Art</li>
+<li>Software Engineering: A Practitioner&rsquo;s Approach</li>
+<li>Refactoring: Improving the Design of Existing Code</li>
+<li>Coder to Developer: Tools and Strategies for Delivering Your Software</li>
+<li>Perfect Software: And Other Illusions about Testing</li>
+<li>Getting Real: The Smarter, Faster, Easier Way to Build a Successful Web Application</li>
+<li>Understanding Professional Software Environments</li>
+<li>Agile Software Development: The Cooperative Game</li>
+<li>Software Project Survival Guide</li>
+<li>The Best Software Writing I: Selected and Introduced by Joel Spolsky</li>
+<li>Debugging the Development Process: Practical Strategies for Staying Focused, Hitting Ship Dates, and Building Solid Teams</li>
+<li>Rapid Development: Taming Wild Software Schedules</li>
+<li>Peopleware: Productive Projects and Teams</li>
 </ol>
-</li>
-<li>yukarıdaki her maddeye uyulması mecburi değildir. eğer maddeler sizi iyi gösteriyorsa o zaman belirtin.</li>
-<li>
-<ol start="3">
-<li>maddede, eğer projeyi bağımsız olarak tek başınıza yaptıysanız bunu belirtin. bu, iş verenler için takım projesi&rsquo;nden daha değerlidir</li>
-</ol>
-</li>
-<li>çoğu insan CV&rsquo;sine yaptığı bütün projeleri yazar ki bu iş verenleri yoran bir şey. maximum 4 proje yazın</li>
-</ul>
-<h4 id="programlama-dilleri">Programlama Dilleri</h4>
-<ul>
-<li>bu güne kadar çalıştığınız bütün dilleri yazmaya kalkmayın</li>
-<li>en iyi olduğunuz ve en iyi bildiğiniz dilleri yazın çünkü bir insan bütün dillerin tüm teknik detaylarını bilemez. abartılmış bir liste, iş verenin sizin hakkınızda pozitif düşünceler oluşturmaz</li>
-<li>uzun dil listesine sahip adayları genelde iş görüşmesinde özellikle sınarlar ve normal bir listeye sahip birine nazaran çok daha zor sorular yöneltebilirler.</li>
-<li>yetkinlik seviyenizi kabaca parantezler içinde belirtin. örnek bir liste;
+<h5 id="mentality">Mentality</h5>
 <ol>
-<li>java (fluent)</li>
-<li>C++ (proficient)</li>
-<li>javascript (prior experience)</li>
+<li>Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency</li>
+<li>Against Method</li>
+<li>The Passionate Programmer: Creating a Remarkable Career in Software Development</li>
 </ol>
-</li>
-<li>yetkinlik seviyesi için yıl yazmayın. 10 sene önce javascript öğrenip sadece bir kaç kere yazdıysanız bu gerçeten 10 yıllık bir tecrübe mi?</li>
-<li>eğer bir sertifikanız varsa ve bu bir programlama diliyle alakalıysa kesinlikle CV&rsquo;de buna yer vermeyin. iş verenler bu sertifikaları ciddiye almazlar</li>
-<li>eğer bir dilin belli bir versiyonuyla ilgili tecrubeniz varsa mesela, C11, C99, Perl5 gibi, iş verenler kesinlikle bu tarz bir şeyi ciddiye almazlar. bunun yerine C ve Perl demek daha doğrudur. aslında bu tarz bir şey, yazılımcının dil konusunda ne kadar spesifik olduğunu gösterir ama çoğu şirket buna değer vermez</li>
-<li><strong>stigma</strong>: bir programlamma dilinin zaman içinde ön yargılara maruz kalıp değerini yitirmesidir. örnek olarak Visual Basic ve .NET teknolojileri. eğer .NET işine baş vurmuyorsanız, bu teknolojileri ve diğer stigma kazanmış (ön yargı kazanmış) dilleri ya da teknolojileri CV&rsquo;de belirtmeye gerek yok</li>
-<li>yukarıdaki maddeden yola çıkarak şirketlerin (özellikle Amerikadakilerin) önem verdikleri diller en az&rsquo;dan en çoğa sıralanmıştır;
+<h5 id="history">History</h5>
 <ol>
-<li>C#, .NET, Visual Basic</li>
-<li>Ruby, Python, Javascript</li>
-<li>Java, C++</li>
+<li>The Mythical Man-Month: Essays on Software Engineering</li>
+<li>Computing Calamities: Lessons Learned from Products, Projects, and Companies That Failed</li>
+<li>The Deadline: A Novel About Project Management</li>
 </ol>
-</li>
-</ul>
-<h4 id="i̇ş-başvurusuna-hazırlık-haritası">İş Başvurusuna Hazırlık Haritası</h4>
-<p><img src="/ox-hugo/screenshot-54.png" alt="" /><br />
-<img src="/ox-hugo/screenshot-55.png" alt="" /></p>
-<h2 id="bölüm-5">Bölüm 5</h2>
-<ul>
-<li>
-<p>CV&rsquo;de yazılan projeler incelenip genelde bu projelerle ilgili size soru yöneltilir. CV&rsquo;yi inceleyen kişi, görüşmeden önce bu projelere ne kadar hakim olduğunuzu görmek için zor sorular hazırlayabilir.</p>
-</li>
-<li>
-<p>CV&rsquo;deki projeleri çok iyi çalşıp, şöyle bir tablo hazırlanması çok faydalı olacaktır;</p>
-<table>
-<thead>
-<tr>
-<th>yaygın soru</th>
-<th>proje1</th>
-<th>proje2</th>
-<th>proje3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>zorluklar/buglar</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-<tr>
-<td>hatalar/başarısızlıklar</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-<tr>
-<td>keyif alınan taraflar</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-<tr>
-<td>liderlik</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-<tr>
-<td>çatışmalar (takım ise)</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-<tr>
-<td>neyi farklı yapardın</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-<td>&mdash;&mdash;&mdash;</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>bu tabloyu doldurup iyice çalış. iş veren projeler hakkında soru sordukça burda yazdıklarını hatırla ve cevapla</p>
-</li>
-<li>
-<p>size &ldquo;zayıf yanlarınız&rdquo; nelerdir diye sorduklarında gerçek bir zayıflık söyleyin. &ldquo;çok çalışmak&rdquo; gibi cevaplar çok ciddiye alınmaz ve dürüst olmadığınızı düşündürür.</p>
-</li>
-<li>
-<p>zayıflıklarınızdan bahsederken aynı zamanda bu zayıflıklarla nasıl başa çıkmaya çalıştığınızı da anlatmanız gerekir. örnek;</p>
-<blockquote>
-<p>yeni bir projeye başladığımda çok hızlı burn out olabiliyorum. başa çıkmak için pomodoro tekniğini kullanıyorum</p>
-</blockquote>
-<!--quoteend-->
-<blockquote>
-<p>yeni bir teknolojiyi öğrenirken, kendimi bu konuda sonuna kadar gitmem gerektiğine inandırıyorum. bundan dolayı teknolojiye öğrenmeye odaklanmak yerine, kendimi en iyi kaynağı araştırmaya zaman harcarken bulabiliyorum. Bu konuda tecrübe kazandığım için artık çoğu kez yaptığım yanlışın farkına varabiliyorum</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="interviewer-a-yöneltilebilecek-sorular">Interviewer&rsquo;a Yöneltilebilecek Sorular</h3>
-<ul>
-<li>interviewer size soru sormanıza izin verebilir. bir iş görüşmesinde, 3 tip önemli soru çeşidi vardır;</li>
-</ul>
-<h4 id="hakiki-sorular">Hakiki Sorular</h4>
-<p>cevaplarını gerçekten bilmek istediğiniz sorulardır</p>
-<blockquote>
-<p>şirkette, geliştirici, tester ve yönetici dengesi nasıl? takımda proje planlaması nasıl yapılıyor?</p>
-</blockquote>
-<!--quoteend-->
-<blockquote>
-<p>peki siz bu şirkete nasıl geldiniz? genelde bu çalışma ortamında sizi en çok zorlayan ne oluyor?</p>
-</blockquote>
-<h4 id="teknik-sorular">Teknik Sorular</h4>
-<p>bu sorular genelde şirkete başvurmadan önce bayağı bir araştırdığınızı anlatır</p>
-<blockquote>
-<p>gördüğüm kadarıyla X teknolojisini kullanıyorsunuz. bununla Y problemini nasıl çözüyorsunuz?</p>
-</blockquote>
-<!--quoteend-->
-<blockquote>
-<p>yaptığınız ürün X teknolojisi yerine neden Y&rsquo;yi seçti? Y&rsquo;nin A,B,C konularında avantajları olduğunu biliyorum ancak diğer şirketler Y&rsquo;yi D sorunu yüzünden kullanmıyorlar</p>
-</blockquote>
-<h4 id="çalışkanlık-yansıtan-sorular">Çalışkanlık Yansıtan Sorular</h4>
-<p>bu tarz sorular iş verenin, sizin ne kadar azimli olduğunuzu görmesini ve şirket için faydalı olacağınızı düşünmesini sağlar</p>
-<blockquote>
-<p>Yazılımın ölçeklenebilirliği konusunda kendimi geliştirmeye çalışıyorum. bu şirkette bu konuyla alakalı neler öğrenebilirim?</p>
-</blockquote>
-<!--quoteend-->
-<blockquote>
-<p>Kullandığınız X teknolojisini daha önce hiç duymadım ancak çok ilginç bir yönteme benziyor. Nasıl çalıştığından biraz bahseder misiniz?</p>
-</blockquote>
-<h3 id="dikkat-edilmesi-gereken-hususlar">Dikkat edilmesi gereken hususlar</h3>
-<ul>
-<li>
-<p>projelerle ilgili konuşurken ya da sorular yöneltirken asla ama asla <strong>kibirli</strong> görünme. Kendini her zaman bir çaylakmışçasına <strong>alçak gönüllü</strong> ve <strong>saygılı</strong> olarak göster. <em>(genel olarak öyle ol zaten)</em></p>
-</li>
-<li>
-<p>görüşmeciler bu tarz çok insan ile karşılaştıklarından, artık insan sarrafı olma yolunda ilerliyorlardır. en ufak bir kibir belirtisinde çizerler</p>
-</li>
-<li>
-<p>soruları cevaplarken, karşınızdakini detaya boğmayın. çok önemli noktalara değinin ve daha fazla detay gerektiren bir konuda, karşınızdakinden izin alıp öyle devam etmeye özen gösterin. çünkü gelen kişinin, teknik detaylardan ne kadar anladığını ya da duymaktan hoşlanıp hoşlanmadığını bilemezsiniz.</p>
-</li>
-<li>
-<p>takım projesinde yer aldıysanız, takımın başarılarını anlatmak yerine kendinizin bu takımdaki başarılarınızdan bahsedin. çünkü takım ile ilgili konuşmalarınızda, sizin ne yaptığınız ile ilgili bir fikir oluşmaz</p>
-</li>
-<li>
-<p>&ldquo;kendininden biraz bahseder misiniz?&rdquo; tarzı bir soru geldiğinde kronolojik sıraya gitmeye dikkat edin ve sırasıyla şunlardan bahsedin;</p>
+<h4 id="mid-level-software-engineer-reading-list">Mid Level Software Engineer Reading List</h4>
+<h5 id="read-this-first">Read This First</h5>
 <ol>
-<li>Şu anda bir yerde çalışıyorsanız rol belirterek söze girin</li>
-<li>hangi okulda okudun ve hangi bölüm</li>
-<li>stajlar</li>
-<li>okuldan sonra ne yaptın</li>
-<li>iş dışında yaptığın projeler/çalışmalar</li>
-<li>şu anda neden burda olduğunu anlatarak toparla bitir</li>
+<li>Personal Development for Smart People: The Conscious Pursuit of Personal Growth</li>
 </ol>
-<p>hobilerden bahsetmek istersen bunu 5. maddede belirt ancak hobilerden bahsetmek bazen tehlikeli olabilir. dikkat et</p>
-</li>
-</ul>
-<h2 id="bölüm-6">Bölüm 6</h2>
-<h3 id="big-o">Big O</h3>
-<ul>
-<li>içini dışını bilmezsen, kötü gözle bakarlar</li>
-<li></li>
-</ul>
+<h5 id="fundementals">Fundementals</h5>
+<ol>
+<li>The Clean Coder: A Code of Conduct for Professional Programmers</li>
+<li>Clean Code: A Handbook of Agile Software Craftsmanship</li>
+<li>Solid Code</li>
+<li>Code Craft: The Practice of Writing Excellent Code</li>
+<li>Software Craftsmanship: The New Imperative</li>
+<li>Writing Solid Code</li>
+</ol>
+<h5 id="software-design">Software Design</h5>
+<ol>
+<li>Head First Design Patterns: A Brain-Friendly Guide</li>
+<li>Design Patterns: Elements of Reusable Object-Oriented Software</li>
+<li>Domain-Driven Design: Tackling Complexity in the Heart of Software</li>
+<li>Domain-Driven Design Distilled</li>
+<li>Design Patterns Explained: A New Perspective on Object-Oriented Design</li>
+<li>Design Patterns in C# - Even though this is specific to C# the pattern can be used in any OO language.</li>
+<li>Refactoring to Patterns</li>
+</ol>
+<h5 id="software-engineering-skill-sets">Software Engineering Skill Sets</h5>
+<ol>
+<li>Building Microservices: Designing Fine-Grained Systems</li>
+<li>Software Factories: Assembling Applications with Patterns, Models, Frameworks, and Tools</li>
+<li>NoEstimates: How To Measure Project Progress Without Estimating</li>
+<li>Object-Oriented Software Construction</li>
+<li>The Art of Software Testing</li>
+<li>Release It!: Design and Deploy Production-Ready Software</li>
+<li>Working Effectively with Legacy Code</li>
+<li>Test Driven Development: By Example</li>
+</ol>
+<h5 id="databases">Databases</h5>
+<ol>
+<li>Database System Concepts</li>
+<li>Database Management Systems</li>
+<li>Foundation for Object / Relational Databases: The Third Manifesto</li>
+<li>Refactoring Databases: Evolutionary Database Design</li>
+<li>Data Access Patterns: Database Interactions in Object-Oriented Applications</li>
+</ol>
+<h5 id="user-experience">User Experience</h5>
+<ol>
+<li>Don&rsquo;t Make Me Think: A Common Sense Approach to Web Usability</li>
+<li>The Design of Everyday Things</li>
+<li>Programming Collective Intelligence: Building Smart Web 2.0 Applications</li>
+<li>User Interface Design for Programmers</li>
+<li>GUI Bloopers 2.0: Common User Interface Design Don&rsquo;ts and Dos</li>
+</ol>
+<h5 id="mentality">Mentality</h5>
+<ol>
+<li>jThe Productive Programmer</li>
+<li>jExtreme Programming Explained: Embrace Change</li>
+<li>jCoders at Work: Reflections on the Craft of Programming</li>
+<li>jFacts and Fallacies of Software Engineering</li>
+</ol>
+<h5 id="history">History</h5>
+<ol>
+<li>Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software</li>
+<li>New Turning Omnibus: 66 Excursions in Computer Science</li>
+<li>Hacker&rsquo;s Delight</li>
+<li>The Alchemist</li>
+<li>Masterminds of Programming: Conversations with the Creators of Major Programming Languages</li>
+<li>The Information: A History, A Theory, A Flood</li>
+</ol>
+<h5 id="specialist-skills">Specialist Skills</h5>
+<ol>
+<li>Peter Norton&rsquo;s Assembly Language Book for the IBM PC</li>
+<li>Expert C Programming: Deep C Secrets</li>
+<li>Enough Rope to Shoot Yourself in the Foot: Rules for C and C++ Programming</li>
+<li>The C++ Programming Language</li>
+<li>Effective C++: 55 Specific Ways to Improve Your Programs and Designs</li>
+<li>More Effective C++: 35 New Ways to Improve Your Programs and Designs</li>
+<li>More Effective C#: 50 Specific Ways to Improve Your C#</li>
+<li>CLR via C#</li>
+<li>Mr. Bunny&rsquo;s Big Cup o' Java</li>
+<li>Thinking in Java</li>
+<li>JUnit in Action</li>
+<li>Functional Programming in Scala</li>
+<li>The Art of Prolog: Advanced Programming Techniques</li>
+<li>The Craft of Prolog</li>
+<li>Programming Perl: Unmatched Power for Text Processing and Scripting</li>
+<li>Dive into Python 3</li>
+</ol>
+<h4 id="senior-level-software-engineer-reading-list">Senior Level Software Engineer Reading List</h4>
+<h5 id="read-this-first">Read This First</h5>
+<ol>
+<li>Mastery: The Keys to Success and Long-Term Fulfillment</li>
+</ol>
+<h5 id="fundamentals">Fundamentals</h5>
+<ol>
+<li>Patterns of Enterprise Application Architecture</li>
+<li>Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions</li>
+<li>Enterprise Patterns and MDA: Building Better Software with Archetype Patterns and UML</li>
+<li>Systemantics: How Systems Work and Especially How They Fail</li>
+<li>Rework</li>
+<li>Writing Secure Code</li>
+<li>Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries</li>
+</ol>
+<h5 id="development-theory">Development Theory</h5>
+<ol>
+<li>Growing Object-Oriented Software, Guided by Tests</li>
+<li>Object-Oriented Analysis and Design with Applications</li>
+<li>Introduction to Functional Programming</li>
+<li>Design Concepts in Programming Languages</li>
+<li>Code Reading: The Open Source Perspective</li>
+<li>Modern Operating Systems</li>
+<li>Extreme Programming Explained: Embrace Change</li>
+<li>The Elements of Computing Systems: Building a Modern Computer from First Principles</li>
+<li>Code: The Hidden Language of Computer Hardware and Software</li>
+</ol>
+<h5 id="philosophy-of-programming">Philosophy of Programming</h5>
+<ol>
+<li>Making Software: What Really Works, and Why We Believe It</li>
+<li>Beautiful Code: Leading Programmers Explain How They Think</li>
+<li>The Elements of Programming Style</li>
+<li>A Discipline of Programming</li>
+<li>The Practice of Programming</li>
+<li>Computer Systems: A Programmer&rsquo;s Perspective</li>
+<li>Object Thinking</li>
+<li>How to Solve It by Computer</li>
+<li>97 Things Every Programmer Should Know: Collective Wisdom from the Experts</li>
+</ol>
+<h5 id="mentality">Mentality</h5>
+<ol>
+<li>Hackers and Painters: Big Ideas from the Computer Age</li>
+<li>The Intentional Stance</li>
+<li>Things That Make Us Smart: Defending Human Attributes In The Age Of The Machine</li>
+<li>The Back of the Napkin: Solving Problems and Selling Ideas with Pictures</li>
+<li>The Timeless Way of Building</li>
+<li>The Soul Of A New Machine</li>
+<li>WIZARDRY COMPILED</li>
+<li>YOUTH</li>
+<li>Understanding Comics: The Invisible Art</li>
+</ol>
+<h5 id="software-engineering-skill-sets">Software Engineering Skill Sets</h5>
+<ol>
+<li>Software Tools</li>
+<li>UML Distilled: A Brief Guide to the Standard Object Modeling Language</li>
+<li>Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development</li>
+<li>Practical Parallel Programming</li>
+<li>Past, Present, Parallel: A Survey of Available Parallel Computer Systems</li>
+<li>Mastering Regular Expressions</li>
+<li>Compilers: Principles, Techniques, and Tools</li>
+<li>Computer Graphics: Principles and Practice in C</li>
+<li>Michael Abrash&rsquo;s Graphics Programming Black Book</li>
+<li>The Art of Deception: Controlling the Human Element of Security</li>
+<li>SOA in Practice: The Art of Distributed System Design</li>
+<li>Data Mining: Practical Machine Learning Tools and Techniques</li>
+<li>Data Crunching: Solve Everyday Problems Using Java, Python, and more.</li>
+</ol>
+<h5 id="design">Design</h5>
+<ol>
+<li>The Psychology Of Everyday Things</li>
+<li>About Face 3: The Essentials of Interaction Design</li>
+<li>Design for Hackers: Reverse Engineering Beauty</li>
+<li>The Non-Designer&rsquo;s Design Book</li>
+</ol>
+<h5 id="history">History</h5>
+<ol>
+<li>Micro-ISV: From Vision to Reality</li>
+<li>Death March</li>
+<li>Showstopper! the Breakneck Race to Create Windows NT and the Next Generation at Microsoft</li>
+<li>The PayPal Wars: Battles with eBay, the Media, the Mafia, and the Rest of Planet Earth</li>
+<li>The Business of Software: What Every Manager, Programmer, and Entrepreneur Must Know to Thrive and Survive in Good Times and Bad</li>
+<li>In the Beginning&hellip;was the Command Line</li>
+</ol>
+<h5 id="specialist-skills">Specialist Skills</h5>
+<ol>
+<li>The Art of UNIX Programming</li>
+<li>Advanced Programming in the UNIX Environment</li>
+<li>Programming Windows</li>
+<li>Cocoa Programming for Mac OS X</li>
+<li>Starting Forth: An Introduction to the Forth Language and Operating System for Beginners and Professionals</li>
+<li>lex &amp; yacc</li>
+<li>The TCP/IP Guide: A Comprehensive, Illustrated Internet Protocols Reference</li>
+<li>C Programming Language</li>
+<li>No Bugs!: Delivering Error Free Code in C and C++</li>
+<li>Modern C++ Design: Generic Programming and Design Patterns Applied</li>
+<li>Agile Principles, Patterns, and Practices in C#</li>
+<li>Pragmatic Unit Testing in C# with NUnit</li>
+</ol>
+<h4 id="devops-reading-list">DevOps Reading List</h4>
+<ol>
+<li>Time Management for System Administrators: Stop Working Late and Start Working Smart</li>
+<li>The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services</li>
+<li>The Practice of System and Network Administration: DevOps and other Best Practices for Enterprise IT</li>
+<li>Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale</li>
+<li>DevOps: A Software Architect&rsquo;s Perspective</li>
+<li>The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations</li>
+<li>Site Reliability Engineering: How Google Runs Production Systems</li>
+<li>Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry</li>
+<li>Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation</li>
+<li>Migrating Large-Scale Services to the Cloud</li>
+</ol>
+<h4 id="entrepreneur-reading-list">Entrepreneur Reading List</h4>
+<ol>
+<li>Disrupted: My Misadventure in the Start-Up Bubble</li>
+<li>The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win</li>
+<li>The E-Myth Revisited: Why Most Small Businesses Don&rsquo;t Work and What to Do About It</li>
+<li>The Art of the Start: The Time-Tested, Battle-Hardened Guide for Anyone Starting Anything</li>
+<li>The Four Steps to the Epiphany: Successful Strategies for Products that Win</li>
+<li>Permission Marketing: Turning Strangers into Friends and Friends into Customers</li>
+<li>Ikigai</li>
+<li>Reality Check: The Irreverent Guide to Outsmarting, Outmanaging, and Outmarketing Your Competition</li>
+<li>Bootstrap: Lessons Learned Building a Successful Company from Scratch</li>
+<li>The Marketing Gurus: Lessons from the Best Marketing Books of All Time</li>
+<li>Content Rich: Writing Your Way to Wealth on the Web</li>
+<li>The Web Startup Success Guide</li>
+<li>The Best of Guerrilla Marketing: Guerrilla Marketing Remix</li>
+<li>From Program to Product: Turning Your Code into a Saleable Product</li>
+<li>This Little Program Went to Market: Create, Deploy, Distribute, Market, and Sell Software and More on the Internet at Little or No Cost to You</li>
+<li>The Secrets of Consulting: A Guide to Giving and Getting Advice Successfully</li>
+<li>The Innovator&rsquo;s Solution: Creating and Sustaining Successful Growth</li>
+<li>Startups Open Sourced: Stories to Inspire and Educate</li>
+<li>In Search of Stupidity: Over Twenty Years of High Tech Marketing Disasters</li>
+<li>Do More Faster: TechStars Lessons to Accelerate Your Startup</li>
+<li>Content Rules: How to Create Killer Blogs, Podcasts, Videos, Ebooks, Webinars (and More) That Engage Customers and Ignite Your Business</li>
+<li>Maximum Achievement: Strategies and Skills That Will Unlock Your Hidden Powers to Succeed</li>
+<li>Founders at Work: Stories of Startups' Early Days</li>
+<li>Blue Ocean Strategy: How to Create Uncontested Market Space and Make Competition Irrelevant</li>
+<li>Eric Sink on the Business of Software</li>
+<li>Words that Sell: More than 6000 Entries to Help You Promote Your Products, Services, and Ideas</li>
+<li>Anything You Want</li>
+<li>Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers</li>
+<li>The Innovator&rsquo;s Dilemma: The Revolutionary Book that Will Change the Way You Do Business</li>
+<li>Tao Te Ching</li>
+<li>Philip &amp; Alex&rsquo;s Guide to Web Publishing</li>
+<li>The Tao of Programming</li>
+<li>Zen and the Art of Motorcycle Maintenance: An Inquiry into Values</li>
+<li>The Inmates Are Running the Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity</li>
+</ol>
+<h4 id="computer-science-grad-school-reading-list">Computer Science Grad School Reading List</h4>
+<ol>
+<li>All the Mathematics You Missed: But Need to Know for Graduate School</li>
+<li>Introductory Linear Algebra: An Applied First Course</li>
+<li>Introduction to Probability</li>
+<li>The Structure of Scientific Revolutions</li>
+<li>Science in Action: How to Follow Scientists and Engineers Through Society</li>
+<li>Proofs and Refutations: The Logic of Mathematical Discovery</li>
+<li>What Is This Thing Called Science?</li>
+<li>The Art of Computer Programming</li>
+<li>The Little Schemer</li>
+<li>The Seasoned Schemer</li>
+<li>Data Structures Using C and C++</li>
+<li>Algorithms + Data Structures = Programs</li>
+<li>Structure and Interpretation of Computer Programs</li>
+<li>Concepts, Techniques, and Models of Computer Programming</li>
+<li>How to Design Programs: An Introduction to Programming and Computing</li>
+<li>A Science of Operations: Machines, Logic and the Invention of Programming</li>
+<li>Algorithms on Strings, Trees, and Sequences: Computer Science and Computational Biology</li>
+<li>The Computational Beauty of Nature: Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation</li>
+<li>The Annotated Turing: A Guided Tour Through Alan Turing&rsquo;s Historic Paper on Computability and the Turing Machine</li>
+<li>Computability: An Introduction to Recursive Function Theory</li>
+<li>How To Solve It: A New Aspect of Mathematical Method</li>
+<li>Types and Programming Languages</li>
+<li>Computer Algebra and Symbolic Computation: Elementary Algorithms</li>
+<li>Computer Algebra and Symbolic Computation: Mathematical Methods</li>
+<li>Commonsense Reasoning</li>
+<li>Using Language</li>
+<li>Computer Vision</li>
+<li>Alice&rsquo;s Adventures in Wonderland</li>
+<li>Gödel, Escher, Bach: An Eternal Golden Braid</li>
+</ol>
 
     </article>
     
@@ -2270,7 +2315,7 @@
     <ul class="related-ul">
         
         <li>
-          <a href="/posts/code-complete-notes/" class="related__link">Code Complete Notlarım</a>
+          <a href="/posts/cracking-the-coding-interview-notes/" class="related__link">Cracking the Coding Interview Notes</a>
         </li>
         
     </ul>
@@ -2280,21 +2325,14 @@
 <nav class="pagination-single">
   
     
-      <a href="https://savolla.github.io/posts/css-cheat-sheet/" class="pagination-single__left">
+      <a href="https://savolla.github.io/posts/cracking-the-coding-interview-notes/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">CSS Cheat Sheet</div>      
+        <div class="pagination-single__left-title">Cracking the Coding Interview Notes</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://savolla.github.io/posts/code-complete-notes/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Code Complete Notlarım</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>

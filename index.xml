@@ -45,6 +45,34 @@
 
       
       <item>
+        <title>Code Complete Notlarım</title>
+        <link>https://savolla.github.io/posts/code-complete-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
+        <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
+  yazılım geliştirme ve programlama aynı şey değildir
+  yazılım inşası, yazılım geliştirme alanındaki bazı konuları içinde barındıran özelleşmiş bir alt daldır. yazılım inşası&amp;rsquo;nın (construction) dokunuğu dallar:
+ coding and debugging unit testing detailed design integration construction planning    construction terimi, programlama termine benzemektedir.
+  construction&amp;rsquo;ın yazılım konusunda yaptığı işler:</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Cracking the Coding Interview Notes</title>
         <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -70,6 +98,30 @@ Bölüm 1  recruiters look for the following;  analytical skills  how confidentl
       </item>
       
       <item>
+        <title>CSS Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/css-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/css-cheat-sheet/</guid>
+        <description>how to   name a css file?
+style.css or main.css
+  how to link style.css with index.html ?
+in html file,
+1  &amp;lt;link href=&amp;#34;./style.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;     write internal css?
+put css code into  elements which is inside  element
+1 2 3 4 5 6 7  &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;     how comments look in css?</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>HTML Cheat Sheet</title>
         <link>https://savolla.github.io/posts/html-cheat-sheet/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -84,6 +136,25 @@ notice there are no closing forward slashes in img elements
 1  &amp;lt;br/&amp;gt;     tell html to use latest html version?
 by putting the docstring
 1  &amp;lt;!</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Javascript Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/javascript-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/javascript-cheat-sheet/</guid>
+        <description>concepts JSON  javascript object notation data representation format used in config files supported types;  strings: &amp;ldquo;hello world&amp;rdquo;, &amp;ldquo;savolla&amp;rdquo; numbers: 10, 1.5, -30 boolean: true, false null: null arrays: [1,2,3], [&amp;ldquo;Hello&amp;rdquo;, &amp;ldquo;world&amp;rdquo;] objects: {&amp;ldquo;key&amp;rdquo;:&amp;ldquo;value&amp;rdquo;}, {&amp;ldquo;age&amp;rdquo;:30}   everything in json is valid javascript code  tips facts how to create a json file this is actually an array in javascript. this is why it starts with &amp;lsquo;[]&amp;rsquo;
+1 2 3 4 5 6 7 8 9 10 11 12 13  [ { &amp;#34;name&amp;#34;:&amp;#34;software engineering&amp;#34;, &amp;#34;delay&amp;#34;: 2, &amp;#34;book&amp;#34;: [ {&amp;#34;name&amp;#34; : &amp;#34;codecomplete2&amp;#34;}, {&amp;#34;name&amp;#34; : &amp;#34;codecomplete2&amp;#34;}, {&amp;#34;name&amp;#34; : &amp;#34;codecomplete2&amp;#34;}, {&amp;#34;name&amp;#34; : &amp;#34;codecomplete2&amp;#34;}, {&amp;#34;name&amp;#34; : &amp;#34;codecomplete2&amp;#34;} ] ]   display json contents in html  paste the json string inside script tag and make it a string by surroud it with ` use JSON.</description>
         
         <dc:creator>[savolla]</dc:creator>
         
