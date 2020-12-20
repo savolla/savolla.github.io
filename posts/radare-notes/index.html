@@ -1387,7 +1387,7 @@
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
     "url" : "https://savolla.github.io/posts/radare-notes/",
-    "description": "key bindings ",
+    "description": "key bindings normal mode 1 2 3 4 5 6 7 8 9 10 11  V # enter visual mode and show hexdump view aaa # analyse the binary. unlocks other functions. do this first you open up …",
     "author": {
       "@type": "Person",
       "name": ["savolla"]
@@ -1571,7 +1571,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1590,6 +1590,140 @@
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
       <h2 id="key-bindings">key bindings</h2>
+<h3 id="normal-mode">normal mode</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">V               <span class="c1"># enter visual mode and show hexdump view</span>
+aaa             <span class="c1"># analyse the binary. unlocks other functions. do this first you open up a binary</span>
+aaaa            <span class="c1"># experimnetal analysis. might take more time for huge binaries</span>
+afl             <span class="c1"># see all funcitons (also called symbols) in the binary</span>
+afll            <span class="c1"># really cool color coded function list</span>
+s &lt;FUNCTION&gt;    <span class="c1"># seek to &lt;FUNCTION&gt;</span>
+ii              <span class="c1"># show imports don&#39;t forget to analyse first</span>
+iS              <span class="c1"># show sections in memory</span>
+is              <span class="c1"># show all symbols including global, local variables</span>
+iz              <span class="c1"># show ascii strings</span>
+iI              <span class="c1"># general binary information</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="visual-mode">visual mode</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">p               <span class="c1"># disassembler view</span>
+pp              <span class="c1"># debuggin view</span>
+ppp             <span class="c1"># byte distribution view</span>
+pppp            <span class="c1"># byte string view for copying in C or Pyhton</span>
+n               <span class="c1"># seek to next function</span>
+N               <span class="c1"># seek to previous funciton</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="how-to">how to</h2>
+<ul>
+<li>
+<p>jump to a function from <strong>debug</strong> or <strong>disassembler</strong> view</p>
+<ol>
+<li>use j/k keys to navigate on <code>call</code> instruction</li>
+<li>when call instruction is on the top press <code>&lt;ENTER&gt;</code> key</li>
+<li>hit <code>u</code> to come back</li>
+</ol>
+</li>
+<li>
+<p>see <strong>hex dump</strong> of a function from <strong>disassembler</strong> view</p>
+<ol>
+<li>navigate to call just like you do for jumping to funciton</li>
+<li>press <code>&lt;Shift&gt; p</code></li>
+<li>come back with <code>p</code></li>
+</ol>
+</li>
+<li>
+<p>see where a specific function is called across the binary using <code>xref</code></p>
+<ol>
+<li>
+<p>from <strong>visual mode</strong></p>
+<ul>
+<li>seek to the function you want to see where it&rsquo;s called</li>
+<li>press <code>&lt;ENTER&gt;</code> key</li>
+<li>do <code>:axt</code></li>
+</ul>
+</li>
+<li>
+<p>from <strong>normal mode</strong></p>
+<ul>
+<li><code>s &lt;FUNCTION*NAME&gt;</code></li>
+<li><code>axt</code></li>
+</ul>
+<p>this iformation can also be seen from <strong>visual mode</strong> above function name. also if you want to<br />
+see <code>jumps</code> from a function. use <code>axf</code></p>
+</li>
+</ol>
+</li>
+<li>
+<p><code>patch</code> a binary</p>
+<ol>
+<li><code>r2 -w &lt;BINARY&gt;</code> open the binary with <strong>write</strong> permissions</li>
+<li><code>aaa</code> analyze</li>
+<li><code>V</code> enter visual mode</li>
+<li><code>p</code> go to disassembler view</li>
+<li><code>:s &lt;ADDRESS*TO*MODIFY&gt;</code> seek to address you want to modify</li>
+<li><code>:e asm.var.sub=false</code> &ldquo;[var*4h]&rdquo; notations don&rsquo;t work when modifying. change to [rbp - 4]</li>
+<li><code>A</code> enter modification mode and <strong>write new instruction in assembly</strong></li>
+<li>hit <code>&lt;ENTER&gt;</code> two times and done</li>
+<li>additionally you can set `asm.var.sub` back to <code>true</code> if you want</li>
+</ol>
+</li>
+<li>
+<p>how to <code>debug</code> a binary</p>
+<ol>
+<li><code>r2 -d &lt;BINARY&gt;</code> open binary with debug mode</li>
+<li><code>V</code> enter visual mode</li>
+<li><code>pp</code> enter <strong>disassembler</strong> view</li>
+<li>additionally you can increase the <strong>stack size</strong> if you want with <code>:e stack.size=256</code></li>
+<li><code>&lt;F8&gt;</code> next instruction</li>
+<li><code>&lt;F7&gt;</code> step into call</li>
+<li><code>db &lt;FUNCTION|ADDRESS&gt;</code> set brakepoint</li>
+<li><code>dc</code> continue. hits the first breakpoint it encounters</li>
+<li><code>do</code> reopens binary. saves breakpoints so you don&rsquo;t have to set them everytime</li>
+<li>in case you lost hit <code>.</code> to come back to *ip*(instruction pointer)</li>
+<li><code>dsf</code> step until end of frame. this is handy when you accidentally step into a function</li>
+</ol>
+</li>
+</ul>
+<h2 id="info">info</h2>
+<ol>
+<li>most <strong>visual mode</strong> keys have a <strong>command</strong> equivalent</li>
+<li>to show <strong>hex dump</strong> in non-visual mode use +*px &lt;BYTE*AMOUNT&gt;**</li>
+<li>most function won&rsquo;t work in radare2 until you analyze the binary. use +*aaa** and <strong>aaaa</strong> for experimental analysis.</li>
+<li>you can use <strong>normal mode</strong> commands in <strong>visual mode</strong> as well. use +*:** when you wanna run some r2 commands</li>
+<li>with +*iI** some important information like <strong>nx*(non-executable stack), *canary</strong>, *pic*(position independent code) can be seen</li>
+<li>if <strong>pic</strong> is true then the file will randomize <strong>base address</strong> for every run</li>
+<li>use <strong><COMMAND>~..</strong> to pipe output to <strong>less</strong> like shell</li>
+</ol>
+<h2 id="tips">tips</h2>
+<ol>
+<li>always use <code>-A</code> argument when opening a binary with radare. so you don&rsquo;t have to do<br />
+<code>aaa</code> everytime. <code>-AA</code> also can be used bug takes long time on huge binaries</li>
+</ol>
 
     </article>
     

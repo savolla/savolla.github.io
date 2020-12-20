@@ -193,7 +193,7 @@ before we start to make things work enable specified modules in your init file</
         <author>savolla@protonmail.com (savolla)</author>
         
         <guid>https://savolla.github.io/posts/radare-notes/</guid>
-        <description>key bindings </description>
+        <description>key bindings normal mode 1 2 3 4 5 6 7 8 9 10 11  V # enter visual mode and show hexdump view aaa # analyse the binary. unlocks other functions. do this first you open up a binary aaaa # experimnetal analysis. might take more time for huge binaries afl # see all funcitons (also called symbols) in the binary afll # really cool color coded function list s &amp;lt;FUNCTION&amp;gt; # seek to &amp;lt;FUNCTION&amp;gt; ii # show imports don&amp;#39;t forget to analyse first iS # show sections in memory is # show all symbols including global, local variables iz # show ascii strings iI # general binary information   visual mode 1 2 3 4 5 6  p # disassembler view pp # debuggin view ppp # byte distribution view pppp # byte string view for copying in C or Pyhton n # seek to next function N # seek to previous funciton   how to   jump to a function from debug or disassembler view</description>
         
         <dc:creator>[savolla]</dc:creator>
         
