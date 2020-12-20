@@ -109,8 +109,9 @@ style.css or main.css
   how to link style.css with index.html ?
 in html file,
 1  &amp;lt;link href=&amp;#34;./style.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;     write internal css?
-put css code into  elements which is inside  element
-1 2 3 4 5 6 7  &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;     how comments look in css?</description>
+put your css code inside style tags
+1 2 3 4 5 6 7  &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;     how comments look in css?
+1  /* this is a comment */     change h1,h2 and h3 at the same selector?</description>
         
         <dc:creator>[savolla]</dc:creator>
         
