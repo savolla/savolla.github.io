@@ -267,6 +267,30 @@ Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani F
       </item>
       
       <item>
+        <title>Programming Embedded Systems Notlarım</title>
+        <link>https://savolla.github.io/posts/programming-embedded-systems-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/programming-embedded-systems-notes/</guid>
+        <description>Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı. Bunların hepsi kendi başına içinde küçük yazılımlar olan tek başına gömülü sistemlerdir  Donanım  Gömülü sistemlerin tarihi ilk olarak 1971&amp;rsquo;de Intel&amp;rsquo;in Japon bir firma için ürettiği 4004 mikroişlemcisi ile başlıyor.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>programming in doom emacs</title>
         <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
