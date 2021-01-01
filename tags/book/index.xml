@@ -75,6 +75,31 @@ Bölüm 1  recruiters look for the following;  analytical skills  how confidentl
         
       </item>
       
+      <item>
+        <title>Making Embedded Systems Notlarım</title>
+        <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/making-embedded-systems-notes/</guid>
+        <description>Making Embedded Systems Türkçe kitap özeti
+Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
 
     
   </channel>
