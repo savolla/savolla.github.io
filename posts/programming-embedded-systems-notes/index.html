@@ -1389,7 +1389,7 @@
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
     "url" : "https://savolla.github.io/posts/programming-embedded-systems-notes/",
-    "description": "Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi …",
+    "description": "Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı …",
     "keywords": ["book"],
     "author": {
       "@type": "Person",
@@ -1574,7 +1574,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;2&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1596,12 +1596,13 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <h2 id="gömülü-sistem-nedir">Gömülü Sistem Nedir</h2>
+      <h2 id="bölüm-1">Bölüm 1</h2>
+<h3 id="gömülü-sistem-nedir">Gömülü Sistem Nedir</h3>
 <ul>
 <li>Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir</li>
 <li>Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı. Bunların hepsi kendi başına içinde küçük yazılımlar olan tek başına gömülü sistemlerdir</li>
 </ul>
-<h2 id="donanım">Donanım</h2>
+<h3 id="donanım">Donanım</h3>
 <ul>
 <li>Gömülü sistemlerin tarihi ilk olarak 1971&rsquo;de Intel&rsquo;in Japon bir firma için ürettiği 4004 mikroişlemcisi ile başlıyor. ilk mikroişlemcidir bu.</li>
 <li>işlemci gücü MIPS ile ölçülür (Millions of Instruction Per Second)</li>
@@ -1615,7 +1616,7 @@
 <li>Dijital saatler gibi cihazlar ve buna benzer gömülü sistemler RAM&rsquo;e gerek duymayıp, CPU&rsquo;nun kendi registerlarını kullanabilir. Dijital saatler 8-bit CPU kullanabilir</li>
 <li>Oyun konsolu tasarlayan mühendisler, konsolun maliyetini ucuzlatmak adına, hafıza ve diğer pahalı birimleri dışardan takılabilir olarak üretirler. Bu sayede konsolun maliyeti düşerken, oyunların maliyeti yükselir. Bunun bir örneği Ateri Kasetlerinde görülür</li>
 </ul>
-<h2 id="diller">Diller</h2>
+<h3 id="diller">Diller</h3>
 <ul>
 <li>C dilinin yazılış amacı, <strong>low level</strong> bir dil oluşturmaktır</li>
 <li>C&rsquo;nin gömülü sistemler için en avantajlı 2 yanı vardır;
@@ -1628,6 +1629,177 @@
 <li>Assembly, donanımın tam kontrolünü ele alır, çok hızlı çalışır ancak kodu başka bir işlemciye port edemezsin. kod çok uzundur ve okuması zordur</li>
 <li>C++, C diline bir de Object Oriented özellikler ve bir çok Abstraction eklemiştir ve bu yazılım geliştirme açısından çok verimli bir dil olmasına neden olmuştur. Ancak bu özellikler, kodun çalışmasını kötü yönde etkilemiştir ve C kadar hızlı olamamasına sebep olmuştur. C++&lsquo;a özgü özellikler, büyük projelerde iyi rol oynayabilir ancak örneğin bir dijital saat gibi basit bir gömülü sistemde çok da ihtiyaç yoktur</li>
 <li>Ada, Gömülü sistemlerde önemli bir dildir. C++ yerine kullanılabilecek bir dil olma niteliğindedir. Kullanım alanı daha çok Amerikan Savunma Sanaiinden dışarıya çıkamadığı için yine popülaritesini kaybeden şanssız dillerdendir</li>
+</ul>
+<h2 id="bölüm-2">Bölüm 2</h2>
+<ul>
+<li>
+<p>Gömülü sistemlerde &ldquo;hello world&rdquo; programı, çoğu zaman bir LED&rsquo;i 1 Hz hızında yakıp söndürmektir.</p>
+</li>
+<li>
+<p><strong>delay</strong> fonksiyonlarında kullanılan sadece bir sayacı sıfıra kadar geriye sayan C kod yapısı şu şekilde kısaca kurulabilir;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">i</span><span class="o">--</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>basit bir LED yanıp söndürme programı;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c">  <span class="cp">#define LED_GREEN 0x40
+</span><span class="cp"></span>  <span class="cp">#define P2LTCH    0xFF5E
+</span><span class="cp"></span>  <span class="kt">void</span> <span class="nf">delay</span><span class="p">(</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nMilliseconds</span> <span class="p">);</span>
+  <span class="kt">void</span> <span class="nf">toggleLed</span><span class="p">(</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ledMask</span> <span class="p">);</span>
+
+  <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">toggleLed</span><span class="p">(</span><span class="n">LED_GREEN</span><span class="p">);</span>
+          <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="nf">delay</span><span class="p">(</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nMilliseconds</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="cp">#define CYCLES_PER_MS 260
+</span><span class="cp"></span>      <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">nCycles</span> <span class="o">=</span> <span class="n">nMilliseconds</span> <span class="o">*</span> <span class="n">CYCLES_PER_MS</span><span class="p">;</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">nCycles</span><span class="o">--</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="nf">toggleLed</span><span class="p">(</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ledMask</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="k">asm</span> <span class="p">{</span>
+          <span class="n">mov</span> <span class="n">dx</span><span class="p">,</span> <span class="n">P2LTCH</span>
+          <span class="n">in</span> <span class="n">al</span><span class="p">,</span> <span class="n">dx</span>
+          <span class="n">mov</span> <span class="n">ah</span><span class="p">,</span> <span class="n">ledMask</span>
+          <span class="n">xor</span> <span class="n">al</span><span class="p">,</span> <span class="n">ah</span>
+          <span class="n">out</span> <span class="n">dx</span><span class="p">,</span> <span class="n">al</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Gömülü yazılımların, diğer saf yazılımlardan farkı, daima sonsuz bir döngü ile bitiyor olmasıdır</p>
+</li>
+<li>
+<p>Cihazlar ya resetlenene kadar ya da bozulana kadar çalışmaya devam ederler</p>
+</li>
+</ul>
+<h2 id="bölüm-3">Bölüm 3</h2>
+<ul>
+<li>
+<p>compiler, linker gibi toolların içinde bulunduğu paket halindekii programa, <strong>toolchain</strong> denir</p>
+</li>
+<li>
+<p>Malesef her platform için kullanılan toolchain farklılık gösterir. ARM için farklı, Atmel, Microchip için farklı toolchainler kurulması gerekir</p>
+</li>
+<li>
+<p>kaynak kodu, bir gömülü sistemde çalışabilir bir yazılıma dönüştürmek için şu 3 adım izlenmesi gerekir;</p>
+<ol>
+<li>her kaynak dosyasının <strong>compile</strong> edilip <strong>object</strong> dosyasına dönüşmesi</li>
+<li>birinci adımda oluşan her object dosyasının bir <strong>linker</strong> ile bağlanıp tek bir obje dosyasına dönüşmesi. üretilen bu son dosyaya <strong>relocatable program</strong> denir</li>
+<li>relocatable program, bir <strong>locator</strong> ile hedef gömülü sistemde çalıştırılabilir bir dosyaya dönüştürülür</li>
+</ol>
+<figure>
+    <img src="/ox-hugo/screenshot-86.png"/> 
+</figure>
+
+</li>
+<li>
+<p>bazı eski işlemciler. bu işlemciler 2000&rsquo;lerde beyaz eşya, otomobil vs gibi ürünlerin yapımında kullanılan işlemcilerdir;</p>
+<ol>
+<li>Fujitsu SPARClite</li>
+<li>Hitachi H8/300</li>
+<li>Hitachi H8/300H</li>
+<li>Hitachi H8/S</li>
+<li>Hitachi SH</li>
+<li>IBM/Motorola PowerPC</li>
+<li>Intel i960</li>
+<li>MIPS R3xxx</li>
+<li>MIPS R4xx0</li>
+<li>Mitsubishi D10V</li>
+<li>Mitsubishi M32R/D</li>
+<li>Motorola 68k</li>
+<li>Sun Sparc</li>
+<li>Sun MicroSPARC</li>
+<li>Toshiba TX39</li>
+</ol>
+</li>
+<li>
+<p>object dosyalarının belli başlı formatları vardır. bunlardan ikisi COFF ve ELF&rsquo;dir. COFF (Common Object File Format), ELF (Extended Linker Format)</p>
+</li>
+<li>
+<p>eğer bir gömülü sistem projesinde birden çok dil ya da compiler kullanılacaksa object dosyalarının formatlarının aynı olmasına dikkat edilmelidir. aksi taktirde linker farklı formatlardaki obje dosyalarının bağlayamayabilir</p>
+</li>
+<li>
+<p>bir obje dosyası 3 temel kısımdan oluşur;</p>
+<ol>
+<li><code>text</code> bu kısımda kodun kendisi yer alır</li>
+<li><code>data</code> global değişkenler burada yer alır</li>
+<li><code>bss</code> henüz değer atanmamış ve static değişkenler burada bulunur</li>
+</ol>
+</li>
+<li>
+<p>kaynak dosyalarında bazen <code>extern</code> komutu ile başka kaynak dosyalarındaki değişkenler referans verilebilir. linkleme sırasında bu komutlarda tarif edilen değişkenleri yerine koymak, linkerın görevidir</p>
+</li>
+</ul>
+<h3 id="linking">linking</h3>
+<ul>
+<li>
+<p>linker, obje dosyalarında bulunan <code>text</code>, <code>data</code> ve <code>bss</code> bölümü tek bir dosya içine yazar ve <code>extern</code> komutuyla tarif edilen değişkenleri yerine koyar</p>
+</li>
+<li>
+<p>linker&rsquo;ın kendi scripting dili vardır. bu dil sayesinde kod bölümleri <em>(text, data, bss)</em> birbiriyle istendiği gibi bağlanıp, istenen bölümler başka bölümlere aktarılabilir</p>
+</li>
+</ul>
+<h3 id="startup-code">startup code</h3>
+<ul>
+<li>
+<p>yarın öbür gün bir C ya da C++ programındaki <code>main()</code> fonksiyonundan önce gerçekleşen işlemler sorulduğunda - ki gömülü sistemler iş mülakatlarında bunlar sorulur - startup kodunda neler olup bittiğini bilmek faydalı olacaktır</p>
+</li>
+<li>
+<p>yazılım geliştirme araçlarının geleneksel olarak yaptıkları işlemlerden biri, programın önüne bir <code>startup</code> kodu yerleştirmektir</p>
+</li>
+<li>
+<p>startup kodu, o platforma özel olan Assembly diliyle yazılıp, daha yüksek seviyeli dillerin çalışması için uygun bir ortam hazırlar</p>
+</li>
+<li>
+<p>her yüksek seviyeli dil, çalışmak için değişik kriterlere ihtiyaç duyar. örnek olarak C ve C++, <code>main()</code> çağırılmadan önce startup kodunun, <strong>stack</strong>&lsquo;i ayarlamasına ihtiyaç duyar. stack oluşturulmazsa C ve C++ kodu çalışamaz. Bu sadece C ve C++ için gereken işlemlerden sadece biridir</p>
+</li>
+<li></li>
 </ul>
 
     </article>
