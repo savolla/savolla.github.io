@@ -45,6 +45,34 @@
 
       
       <item>
+        <title>C&#43;&#43; Primer Notes</title>
+        <link>https://savolla.github.io/posts/cpp-primer-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/cpp-primer-notes/</guid>
+        <description>This is my summary and notes of C++ Primer by Stanley B. Lippman.
+Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one function (main)
+  simplest c++ program
+1 2 3  int main() { return 0; }     the return value of main function
+ 0 means success -1 means failure non-zero returns are defined by the system    c++ file extensions</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Code Complete Notlarım</title>
         <link>https://savolla.github.io/posts/code-complete-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
