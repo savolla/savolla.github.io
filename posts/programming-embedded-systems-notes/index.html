@@ -1389,7 +1389,7 @@
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
     "url" : "https://savolla.github.io/posts/programming-embedded-systems-notes/",
-    "description": "Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı …",
+    "description": "Programming Embedded Systems 1999\u0026rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da …",
     "keywords": ["book"],
     "author": {
       "@type": "Person",
@@ -1574,7 +1574,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1596,7 +1596,9 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <h2 id="bölüm-1">Bölüm 1</h2>
+      <p>Programming Embedded Systems 1999&rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da benim çıkardığım Türkçe Özet<br />
+<img src="/ox-hugo/screenshot-87.png" alt="" /></p>
+<h2 id="bölüm-1">Bölüm 1</h2>
 <h3 id="gömülü-sistem-nedir">Gömülü Sistem Nedir</h3>
 <ul>
 <li>Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir</li>
@@ -1799,8 +1801,34 @@
 <li>
 <p>her yüksek seviyeli dil, çalışmak için değişik kriterlere ihtiyaç duyar. örnek olarak C ve C++, <code>main()</code> çağırılmadan önce startup kodunun, <strong>stack</strong>&lsquo;i ayarlamasına ihtiyaç duyar. stack oluşturulmazsa C ve C++ kodu çalışamaz. Bu sadece C ve C++ için gereken işlemlerden sadece biridir</p>
 </li>
+<li>
+<p>startup kodu genellikle ya <code>startup.asm</code> ya da <code>crt0.s</code> olarak isimli dosyalarda yer alır. <strong>crt0.s</strong>, &ldquo;C Runtime&rdquo;&lsquo;ın kısaltılmışıdır</p>
+</li>
+<li>
+<p><code>main</code> fonksiyonundan önce olanlar sırasıyla;</p>
+<ol>
+<li>disable all interrupts  (<code>cli</code> command in x86)</li>
+<li>Copy initialized data from ROM to RAM (<code>data</code>)</li>
+<li>zero-out uninitialized data area (<code>bss</code>)</li>
+<li>Allocate space for and initialize the stack</li>
+<li>initialize the processor&rsquo;s stack pointer</li>
+<li>create and initialize the heap</li>
+<li>execute &ldquo;constructors&rdquo; and &ldquo;initializers&rdquo; for global vars (only in C++)</li>
+<li>enable interrupts</li>
+<li>call <code>main()</code></li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>adımdan sonra da program eğer <code>main()</code>&lsquo;den çıkarsa diye sonsuz döngü konur. sonsuz döngü yerine istenirse program akışı istenen yere doğru yönlendirilebilir</li>
+</ol>
+</li>
+<li>
+<p>startup kodu <strong>ilk çalışan</strong> kod olduğu için bunun linker scriptinde belirtilmesi gerekir. linker scriptingde ilk belirtilmesi gereken şey programın ilk çalışacağı kısmın neresi olduğudur. bir yazılımın ilk çalışan kod satırına ya da fonksiyonuna <strong>entry point</strong> denir</p>
+</li>
 <li></li>
 </ul>
+<p><strong>*</strong></p>
 
     </article>
     
