@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSS Cheat Sheet – savolla&#39;s blog</title>
+    <title>Cross Compilers – savolla&#39;s blog</title>
     
 
 
@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://savolla.github.io\"");
     
-    var permalink = JSON.parse("\"https://savolla.github.io/posts/css-cheat-sheet/\"");
+    var permalink = JSON.parse("\"https://savolla.github.io/posts/cross-compilers/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1339,12 +1339,12 @@
 <meta property="article:published_time" content="0001-01-01T00:00:00&#43;0000">
 
 <meta name="author" content="[savolla]">
-<meta property="article:author" content="https://savolla.github.io/posts/css-cheat-sheet/@[savolla]">
+<meta property="article:author" content="https://savolla.github.io/posts/cross-compilers/@[savolla]">
 
 
 <meta property="og:site_name" content="savolla&#39;s blog">
-<meta property="og:title" content="CSS Cheat Sheet">
-<meta property="og:url" content="https://savolla.github.io/posts/css-cheat-sheet/">
+<meta property="og:title" content="Cross Compilers">
+<meta property="og:url" content="https://savolla.github.io/posts/cross-compilers/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="oleksiy nehlyadyuk">
 
@@ -1357,7 +1357,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://savolla.github.io/posts/css-cheat-sheet/">
+<link rel="canonical" href="https://savolla.github.io/posts/cross-compilers/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1383,11 +1383,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "CSS Cheat Sheet",
+    "headline": "Cross Compilers",
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
-    "url" : "https://savolla.github.io/posts/css-cheat-sheet/",
-    "description": "how to   name a css file? style.css or main.css   how to link style.css with index.html ? in html file, 1  \u0026lt;link href=\u0026#34;./style.css\u0026#34; …",
+    "url" : "https://savolla.github.io/posts/cross-compilers/",
+    "description": ":EXPORT_FILE_NAME: all-available-cross-compilers-on-earth :EXPORT_TITLE: List of All Available Cross-Compilers :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts …",
     "author": {
       "@type": "Person",
       "name": ["savolla"]
@@ -1564,14 +1564,14 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="false">CSS Cheat Sheet</h2>
+    <h2 class="single__title" data-ani="false">Cross Compilers</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;10&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1589,1248 +1589,989 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <h2 id="how-to">how to</h2>
-<ol>
-<li>
-<p>name a css file?<br />
-<strong>style.css</strong> or <strong>main.css</strong></p>
-</li>
-<li>
-<p>how to link <strong>style.css</strong> with <strong>index.html</strong> ?<br />
-in html file,</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;./style.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">/&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>write internal css?<br />
-put your css code inside <strong>style</strong> tags</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">      <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-          <span class="nt">h3</span> <span class="p">{</span>
-            <span class="k">color</span> <span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-          <span class="p">}</span>
-        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>how comments look in css?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="c">/* this is a comment */</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>change h1,h2 and h3 at the same <strong>selector</strong>?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span> <span class="p">{</span>
-       <span class="k">color</span> <span class="p">:</span> <span class="kc">olive</span><span class="p">;</span>
-   <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>change <strong>background color</strong> of the entire page?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="nt">body</span> <span class="p">{</span>
-       <span class="k">background-color</span> <span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
-   <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>style by <strong>classes</strong> or <strong>id</strong>?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">   <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cls0&#34;</span><span class="p">&gt;</span> TITLE0 <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-   <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;cls1&#34;</span><span class="p">&gt;</span> TITLE1 <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="p">.</span><span class="nc">cls0</span> <span class="p">{</span>
-       <span class="k">color</span> <span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-   <span class="p">}</span>
-
-   <span class="p">#</span><span class="nn">cls1</span> <span class="p">{</span>
-       <span class="k">color</span> <span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-   <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>set <strong>space between two lines</strong>?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="nt">line-height</span> <span class="o">:</span> <span class="nt">1</span><span class="p">.</span><span class="nc">5em</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>set <strong>font</strong> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="nt">font-family</span> <span class="o">:</span> <span class="nt">monospace</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>set a background image?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="nt">background-image</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;../img/bg.png&#34;</span><span class="o">);</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>set opacity of text?<br />
-use <strong>rgba()</strong> with a value between 1 and 0 at the end</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">class0</span> <span class="p">{</span>
-         <span class="k">color</span> <span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make <strong>links</strong> without <span class="underline">underline</span> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="nt">a</span> <span class="p">{</span>
-         <span class="k">text-decoration</span> <span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>cancel all the <strong>default margins</strong>?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">        <span class="o">*</span><span class="p">{</span>
-            <span class="k">margin</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>change font</strong> of an element?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">font-family</span> <span class="p">:</span> <span class="n">Fira</span> <span class="n">Code</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>use <strong>google fonts</strong></p>
-<ol>
-<li>go to <strong>google fonts</strong> page</li>
-<li>select your font</li>
-<li>click <strong>select this style</strong></li>
-<li>copy <link> part and paste is between <head> element</li>
-<li>copy <strong>CSS rules</strong> and paste it to CSS file where you want to use that font</li>
-<li>click on <strong>@import</strong> section and copy the code inside <code>&lt;style&gt;</code> element</li>
-<li>paste it into the top of your CSS file</li>
-</ol>
-</li>
-<li>
-<p>make a font bolder?<br />
-use <strong>font-weight</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make font italic?<br />
-use <strong>font-style</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">font-style</span> <span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>reach a <strong>nested element</strong> inside a class?<br />
-use <strong>&gt;</strong> syntax</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cls0&#34;</span><span class="p">&gt;</span>
-       <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-         <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-         <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-       <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="nt">cls0</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
-         <span class="c">/* your code */</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>increase space between <strong>letters</strong> in a paragraph?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">letter-spacing</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>increase space between <strong>words</strong> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">word-spacing</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>capitalize an entire <strong>paragraph</strong> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">text-transform</span><span class="p">:</span> <span class="kc">capitalize</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add <strong>hover</strong> action to an element?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">         <span class="p">.</span><span class="nc">element</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-         <span class="c">/* code */</span>
-         <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add <strong>opacity</strong> to an element?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add a <strong>border</strong> around an element?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">border-style</span><span class="p">:</span> <span class="kc">solid</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add <strong>border width</strong> of an element?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">border-width</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>overlap two elements?<br />
-with <strong>negative margin</strong></p>
-</li>
-<li>
-<p>make list items on one line?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">     <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-         <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-         <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-         <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-     <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>display text in the center of the element?<br />
-use <strong>text-align: center</strong></p>
-</li>
-<li>
-<p>create a <strong>navigation bar</strong> of a website?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span><span class="p">&gt;</span>
-       <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-       <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-       <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Coffee<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-       <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Music<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">navbar</span> <span class="nt">a</span> <span class="p">{</span>
-         <span class="k">font-family</span><span class="p">:</span> <span class="n">Fira</span> <span class="n">Code</span><span class="p">;</span>
-         <span class="k">margin-right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-         <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-         <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-     <span class="p">}</span>
-
-     <span class="p">.</span><span class="nc">navbar</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add a <strong>custom font</strong> to the css?<br />
-add the following on the top of css file</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-         <span class="nt">font-family</span><span class="o">:</span> <span class="s2">&#34;font-name&#34;</span><span class="o">;</span>
-         <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;../fonts/my-font.ttf&#34;</span><span class="o">);</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>set opacity of an element?<br />
-use <strong>opacity</strong> attribute</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>use <strong>image</strong> as a background instead of straight color?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.extension&#34;</span><span class="p">);</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make an image non-repeatable?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.extension&#34;</span><span class="p">);</span>
-         <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>spread</strong> the image into one area (div) ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.extension&#34;</span><span class="p">);</span>
-         <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>center</strong> the background image?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background-position</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>adjust the position by x and y values of a background image?<br />
-use persentages to adjust</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.extension&#34;</span><span class="p">);</span>
-         <span class="k">background-position</span><span class="p">:</span> <span class="mi">20</span><span class="kt">%</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>add an image with protected <strong>aspect ratio</strong>?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.jpg&#34;</span><span class="p">);</span>
-         <span class="k">background-size</span><span class="p">:</span> <span class="kc">contain</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>align text to the center?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make a <strong>parallax</strong> effect?<br />
-use <strong>background-attachment</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">banner</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;../img/bg.jpg&#34;</span><span class="p">);</span>
-         <span class="k">background-attachment</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make a gradient element? use <strong>grey</strong> and <strong>white</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background-attachment</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">grey</span><span class="p">,</span> <span class="kc">white</span><span class="p">);</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>give <strong>angle</strong> to the gradient?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">,</span> <span class="kc">white</span><span class="p">,</span> <span class="kc">black</span><span class="p">);</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>make a nice <strong>transition effect</strong> ? when user scrolls down the transparent<br />
-screen comes on the background image. the background image does not change btw</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;first&#34;</span><span class="p">&gt;</span>
-     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;second&#34;</span><span class="p">&gt;</span>
-     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">     <span class="p">.</span><span class="nc">first</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;../img/bg2.jpg&#34;</span><span class="p">);</span>
-         <span class="k">background-attachment</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-         <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
-         <span class="k">background-position</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-         <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
-         <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-     <span class="p">}</span>
-
-     <span class="p">.</span><span class="nc">second</span> <span class="p">{</span>
-         <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;../img/bg2.jpg&#34;</span><span class="p">);</span>
-         <span class="k">background-attachment</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
-         <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
-         <span class="k">background-position</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-         <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
-         <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">;</span>
-         <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-     <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li></li>
-</ol>
-<h2 id="what-is">what is</h2>
-<ul>
-<li>
-<p>what css stands for?<br />
-cascading style sheets</p>
-</li>
-<li>
-<p>what is the <strong>syntax</strong> for css?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">selector</span><span class="p">{</span>
-      <span class="n">property0</span> <span class="p">:</span> <span class="n">value0</span><span class="p">;</span>
-      <span class="n">property1</span> <span class="p">:</span> <span class="n">value1</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is the difference between <strong>span</strong> and <strong>div</strong></p>
-<ul>
-<li>div is usefull for grouping elements together</li>
-<li>span is usefull for assigning some class or id names inline</li>
-<li>when elements grouped with <strong>div</strong> it will cause a new line</li>
-<li>hovewer span won&rsquo;t cause a new line</li>
-</ul>
-</li>
-<li>
-<p>what is the best way to represent a color ?<br />
-using <strong>rgb</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">h1</span> <span class="p">{</span>
-      <span class="k">color</span> <span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is the most primitive way to represent size?<br />
-pixels.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">cls0</span> <span class="p">{</span>
-      <span class="k">font-size</span> <span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is the drawbacks of representing something in pixels?<br />
-since pixels are constant and depends on nothing, it makes the element non-responsive. so the size will not change when screen size change</p>
-</li>
-<li>
-<p>what is <strong>font stack</strong> ?<br />
-it is a concept where we present different font families to the web browser. if web browser fails to render the first font family then it tryes out the second one. if web browser fails at every font then the last one (monospace) font will be assumed</p>
-<p>example usage;</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-      <span class="k">font-family</span> <span class="p">:</span> <span class="s1">&#39;Courier New&#39;</span> <span class="n">Courier</span><span class="p">,</span> <span class="kc">monospace</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is <strong>css box mode</strong> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">  +-------------------------------------+
-  |               Margin                |
-  |  +-------------------------------+  |
-  |  |            Border             |  |
-  |  |  +-------------------------+  |  |
-  |  |  |         Padding         |  |  |
-  |  |  |  +-------------------+  |  |  |
-  |  |  |  |      Content      |  |  |  |
-  |  |  |  +-------------------+  |  |  |
-  |  |  +-------------------------+  |  |
-  |  +-------------------------------+  |
-  +-------------------------------------+
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is the shortcut way of writin <strong>borders</strong>?<br />
-parameter order matters!</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-      <span class="c">/* width style and color */</span>
-      <span class="k">border</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what is the <strong>difference</strong> between <span class="underline">border</span> and <span class="underline">outline</span> ?</p>
-<ul>
-<li>
-<p>borders are like glued to the content. we can&rsquo;t put space between content and border</p>
-</li>
-<li>
-<p>outlines in other hand they are more flexible than borders. also we can use only outlines instead of borders. we can give <strong>offset</strong> to outlines which borders can&rsquo;t quite handle.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">       <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-           <span class="k">outline</span><span class="p">:</span> <span class="mf">0.2</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
-           <span class="k">outline-offset</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="c">/* set outline 10px above the content */</span>
-           <span class="k">outline</span><span class="o">-</span><span class="n">offset</span><span class="o">:</span> <span class="mi">-10</span><span class="kt">px</span> <span class="c">/* set outline 10px inside the content */</span>
-       <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-</li>
-<li>
-<p>what are <strong>gradients</strong> ?<br />
-it&rsquo;s a color effect. <span class="underline">two or more</span> colors are mixed into one element. and result will look<br />
-like an <span class="underline">oval</span> object. used in button coloring</p>
-</li>
-</ul>
-<h2 id="flash-cards">flash cards</h2>
-<ul>
-<li>
-<p>where css can be added?</p>
-<ol>
-<li>inline</li>
-<li>inside <head> element</li>
-<li>seperate file</li>
-</ol>
-</li>
-<li>
-<p>when you have multiple css files in which directory should we put them?<br />
-css/</p>
-</li>
-<li>
-<p>what happens if we add <strong>internal css</strong> in a page that has <strong>external css</strong> ?<br />
-internal css will override external one</p>
-</li>
-<li>
-<p>what happens if we add <strong>inline css</strong> in a page that has <strong>external css</strong> or <strong>internal css</strong> ?<br />
-<strong>inline</strong> css will override <strong>external</strong> and <strong>internal</strong> ones</p>
-</li>
-<li>
-<p>what does <strong>color</strong> attrubute do?<br />
-it changes the text color</p>
-</li>
-<li>
-<p>can we add <strong>multiple classes</strong> inside an element?<br />
-we can also add <strong>classes</strong> with <strong>ids</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;title&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lowercase&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;testid&#34;</span><span class="p">&gt;</span> hello <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>unique elements should have &hellip;<br />
-id</p>
-</li>
-<li>
-<p>why <strong>div</strong> blocks are used?<br />
-to group elements. this helps us to specify elements in css</p>
-</li>
-<li>
-<p>which grouping style causes <strong>new line</strong> ?<br />
-div</p>
-</li>
-<li>
-<p>where to get cool color schemes?</p>
-<ol>
-<li><a href="https://coolors.co/">coolors</a></li>
-<li><a href="https://color.adobe.com/explore">adobe color</a></li>
-</ol>
-</li>
-<li>
-<p>what happens when we use <strong>width</strong> and <strong>height</strong> in persentage?<br />
-the persentage will work depending on the <strong>parent div</strong>&rsquo;s sizes. for example if parent div has 20px height and we give 50% height to the child then child will have 10px height</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">parent</span> <span class="p">{</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">width</span> <span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="p">.</span><span class="nc">child</span> <span class="p">{</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* 20%50 = 10 */</span>
-      <span class="k">width</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* 20%50 = 10 */</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>persentages will depend on &hellip;<br />
-parent values!</p>
-</li>
-<li>
-<p>what <strong>vw</strong> and <strong>vh</strong> do?<br />
-vw and vh are <strong>measure units</strong> in css. they are relative values depend on <strong>screen size</strong>. when browser window size change, then those values are also change<br />
-example;</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cls0&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cls1&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">cls0</span> <span class="p">{</span>
-      <span class="k">background-color</span> <span class="p">:</span> <span class="kc">orange</span><span class="p">;</span>
-      <span class="k">width</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">vw</span><span class="p">;</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">vh</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">cls1</span> <span class="p">{</span>
-      <span class="k">background-color</span> <span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
-      <span class="k">width</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">vw</span><span class="p">;</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="mi">50</span><span class="kt">vh</span><span class="p">;</span>
-      <span class="k">margin-left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">vw</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what <strong>calc()</strong> function does in css?<br />
-it takes two values with <strong>px</strong>, <strong>vh</strong>, <strong>vw</strong>, <strong>rem</strong>, <strong>em</strong> etc and applies arithmatic operations on them.</p>
-</li>
-<li>
-<p>use case scenario of <strong>calc()</strong> function<br />
-assume we have a <strong>navbar</strong> on top of the page and it has 100px height. now let&rsquo;s say we need a <strong>banner</strong> below navbar. this banner will have height of entire page (without scroll bar). how do we adjust that height automatically?</p>
-<p>in this case we can use <strong>calc()</strong> function like this:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="o">*</span><span class="p">{</span>
-      <span class="k">margin</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="c">/* zero out default margins */</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">navbar</span> <span class="p">{</span>
-      <span class="k">background</span> <span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">banner</span> <span class="p">{</span>
-      <span class="k">background</span> <span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
-      <span class="k">height</span> <span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">vh</span> <span class="o">-</span> <span class="mi">100</span><span class="kt">px</span><span class="p">);</span> <span class="c">/* 100vh - navbar.height */</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what <strong>measure</strong> type should we use on <strong>line-height</strong> property ?<br />
-em</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-      <span class="k">line-height</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what areas a,b,c and d effect in <strong>padding: a b c d</strong> ?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-      <span class="k">padding</span><span class="p">:</span> <span class="kc">top</span><span class="p">,</span> <span class="kc">right</span><span class="p">,</span> <span class="kc">left</span><span class="p">,</span> <span class="kc">bottom</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what border-radius value turn element into circle?<br />
-50%</p>
-</li>
-<li>
-<p>what <strong>block elements</strong> do when rendered?</p>
-<ul>
-<li>always start a new line</li>
-<li>takes over full width</li>
-</ul>
-</li>
-<li>
-<p>what <strong>inline elements</strong> do when rendered?</p>
-<ul>
-<li>does not start a new line</li>
-<li>does not occupy the full width</li>
-</ul>
-</li>
-<li>
-<p>for <strong>block centering</strong> what topics are used in css?<br />
-flex and grids</p>
-</li>
-<li>
-<p>browser will ignore margin&rsquo;s <strong>margin-top</strong> and <strong>margin-bottom</strong> properties if the element is &hellip;<br />
-inline</p>
-</li>
-<li>
-<p>browser will ignore margin&rsquo;s <strong>margin-left</strong> and <strong>margin-right</strong> properties if the element is &hellip;<br />
-block</p>
-</li>
-<li>
-<p>what property should we use to make the browser respect to <strong>inline element</strong> top and bottom margins?<br />
-use <strong>inline-block</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Coffee<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Music<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">a</span> <span class="p">{</span>
-      <span class="n">inline-block</span><span class="p">:</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>create a nice banner with an image in bakcground</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;.banner&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>some text here<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">banner</span> <span class="p">{</span>
-      <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;../img/bg1.jpg&#34;</span><span class="p">);</span> <span class="c">/* load the image */</span>
-      <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span> <span class="c">/* spread image across the div area */</span>
-      <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span> <span class="c">/* prevent repetition */</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>what to do if background image is too bright and text on it is not visible?<br />
-add some <strong>opacity</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
-      <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;/path/to/image.jpg&#34;</span><span class="p">);</span>
-      <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
+      <p>:EXPORT_FILE_NAME: all-available-cross-compilers-on-earth<br />
+:EXPORT_TITLE: List of All Available Cross-Compilers<br />
+:HUGO_BASE_DIR: ~/txt/blog/<br />
+:HUGO_SECTION: en/posts<br />
+:EXPORT_AUTHOR: savolla</p>
+<p>These are available cross compilers that available. <code>std</code> columns indicates the availability of standard library. if std is <code>✓</code> then target can run standard library functions. if <code>*</code> then target is bare-metal and requires startup code <code>crt0</code>. <code>?</code> if unknown</p>
+<h2 id="arm-64-bit-aarch64">ARM 64-bit <code>aarch64</code></h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aarch64-apple-darwin</td>
+<td>✓</td>
+<td>ARM64 macOS (11.0+, Big Sur+)</td>
+</tr>
+<tr>
+<td>aarch64-apple-ios</td>
+<td>✓</td>
+<td>ARM64 iOS</td>
+</tr>
+<tr>
+<td>aarch64-apple-ios-macabi</td>
+<td>?</td>
+<td>Apple Catalyst on ARM64</td>
+</tr>
+<tr>
+<td>aarch64-apple-tvos</td>
+<td>*</td>
+<td>ARM64 tvOS</td>
+</tr>
+<tr>
+<td>aarch64-fuchsia</td>
+<td>✓</td>
+<td>ARM64 Fuchsia</td>
+</tr>
+<tr>
+<td>aarch64-linux-android</td>
+<td>✓</td>
+<td>ARM64 Android</td>
+</tr>
+<tr>
+<td>aarch64-pc-windows-msvc</td>
+<td>✓</td>
+<td>ARM64 Windows MSVC</td>
+</tr>
+<tr>
+<td>aarch64-unknown-freebsd</td>
+<td>✓</td>
+<td>ARM64 FreeBSD</td>
+</tr>
+<tr>
+<td>aarch64-unknown-hermit</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>aarch64-unknown-linux-gnu</td>
+<td>✓</td>
+<td>ARM64 Linux (kernel 4.2, glibc 2.17+) 1</td>
+</tr>
+<tr>
+<td>aarch64-unknown-linux-musl</td>
+<td>✓</td>
+<td>ARM64 Linux with MUSL</td>
+</tr>
+<tr>
+<td>aarch64-unknown-netbsd</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>aarch64-unknown-none</td>
+<td>*</td>
+<td>Bare ARM64, hardfloat</td>
+</tr>
+<tr>
+<td>aarch64-unknown-none-softfloat</td>
+<td>*</td>
+<td>Bare ARM64, softfloat</td>
+</tr>
+<tr>
+<td>aarch64-unknown-openbsd</td>
+<td>✓</td>
+<td>ARM64 OpenBSD</td>
+</tr>
+<tr>
+<td>aarch64-unknown-redox</td>
+<td>?</td>
+<td>ARM64 Redox OS</td>
+</tr>
+<tr>
+<td>aarch64-uwp-windows-msvc</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>aarch64-wrs-vxworks</td>
+<td>?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="intel-i386">Intel i386</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i386-apple-ios</td>
+<td>✓</td>
+<td>32-bit x86 iOS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="intel-i586">Intel i586</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i586-pc-windows-msvc</td>
+<td>✓</td>
+<td>32-bit Windows w/o SSE</td>
+</tr>
+<tr>
+<td>i586-unknown-linux-gnu</td>
+<td>✓</td>
+<td>32-bit Linux w/o SSE (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>i586-unknown-linux-musl</td>
+<td>✓</td>
+<td>32-bit Linux w/o SSE, MUSL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="intel-i686">Intel i686</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i686-apple-darwin</td>
+<td>✓</td>
+<td>32-bit macOS (10.7+, Lion+)</td>
+</tr>
+<tr>
+<td>i686-linux-android</td>
+<td>✓</td>
+<td>32-bit x86 Android</td>
+</tr>
+<tr>
+<td>i686-pc-windows-gnu</td>
+<td>✓</td>
+<td>32-bit MinGW (Windows 7+)</td>
+</tr>
+<tr>
+<td>i686-pc-windows-msvc</td>
+<td>✓</td>
+<td>32-bit MSVC (Windows 7+)</td>
+</tr>
+<tr>
+<td>i686-pc-windows-msvc</td>
+<td>✓</td>
+<td>32-bit Windows XP support</td>
+</tr>
+<tr>
+<td>i686-unknown-freebsd</td>
+<td>✓</td>
+<td>32-bit FreeBSD</td>
+</tr>
+<tr>
+<td>i686-unknown-haiku</td>
+<td>✓</td>
+<td>32-bit Haiku</td>
+</tr>
+<tr>
+<td>i686-unknown-linux-gnu</td>
+<td>✓</td>
+<td>32-bit Linux (kernel 2.6.32+, glibc 2.11+)</td>
+</tr>
+<tr>
+<td>i686-unknown-linux-musl</td>
+<td>✓</td>
+<td>32-bit Linux with MUSL</td>
+</tr>
+<tr>
+<td>i686-unknown-netbsd</td>
+<td>✓</td>
+<td>NetBSD/i386 with SSE2</td>
+</tr>
+<tr>
+<td>i686-unknown-openbsd</td>
+<td>✓</td>
+<td>32-bit OpenBSD</td>
+</tr>
+<tr>
+<td>i686-unknown-uefi</td>
+<td>?</td>
+<td>32-bit UEFI</td>
+</tr>
+<tr>
+<td>i686-uwp-windows-gnu</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>i686-uwp-windows-msvc</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>i686-wrs-vxworks</td>
+<td>?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="intel-64-bit-x86-64">Intel 64-bit <code>x86_64</code></h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x86_64-apple-darwin</td>
+<td>✓</td>
+<td>64-bit macOS (10.7+, Lion+)</td>
+</tr>
+<tr>
+<td>x86_64-apple-ios</td>
+<td>✓</td>
+<td>64-bit x86 iOS</td>
+</tr>
+<tr>
+<td>x86_64-apple-ios-macabi</td>
+<td>✓</td>
+<td>Apple Catalyst on x86_64</td>
+</tr>
+<tr>
+<td>x86_64-apple-tvos</td>
+<td>*</td>
+<td>x86 64-bit tvOS</td>
+</tr>
+<tr>
+<td>x86_64-fortanix-unknown-sgx</td>
+<td>✓</td>
+<td>Fortanix ABI for 64-bit Intel SGX</td>
+</tr>
+<tr>
+<td>x86_64-fuchsia</td>
+<td>✓</td>
+<td>64-bit Fuchsia</td>
+</tr>
+<tr>
+<td>x86_64-linux-android</td>
+<td>✓</td>
+<td>64-bit x86 Android</td>
+</tr>
+<tr>
+<td>x86_64-linux-kernel</td>
+<td>*</td>
+<td>Linux kernel modules</td>
+</tr>
+<tr>
+<td>x86_64-pc-solaris</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-pc-windows-gnu</td>
+<td>✓</td>
+<td>64-bit MinGW (Windows 7+)</td>
+</tr>
+<tr>
+<td>x86_64-pc-windows-msvc</td>
+<td>✓</td>
+<td>64-bit MSVC (Windows 7+)</td>
+</tr>
+<tr>
+<td>x86_64-pc-windows-msvc</td>
+<td>✓</td>
+<td>64-bit Windows XP support</td>
+</tr>
+<tr>
+<td>x86_64-rumprun-netbsd</td>
+<td>✓</td>
+<td>64-bit NetBSD Rump Kernel</td>
+</tr>
+<tr>
+<td>x86_64-sun-solaris</td>
+<td>✓</td>
+<td>64-bit Solaris 10/11, illumos</td>
+</tr>
+<tr>
+<td>x86_64-unknown-dragonfly</td>
+<td>✓</td>
+<td>64-bit DragonFlyBSD</td>
+</tr>
+<tr>
+<td>x86_64-unknown-freebsd</td>
+<td>✓</td>
+<td>64-bit FreeBSD</td>
+</tr>
+<tr>
+<td>x86_64-unknown-haiku</td>
+<td>✓</td>
+<td>64-bit Haiku</td>
+</tr>
+<tr>
+<td>x86_64-unknown-hermit</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-unknown-hermit-kernel</td>
+<td>?</td>
+<td>HermitCore kernel</td>
+</tr>
+<tr>
+<td>x86_64-unknown-illumos</td>
+<td>✓</td>
+<td>illumos</td>
+</tr>
+<tr>
+<td>x86_64-unknown-l4re-uclibc</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-unknown-linux-gnu</td>
+<td>✓</td>
+<td>64-bit Linux (kernel 2.6.32+, glibc 2.11+)</td>
+</tr>
+<tr>
+<td>x86_64-unknown-linux-gnux32</td>
+<td>✓</td>
+<td>64-bit Linux (x32 ABI) (kernel 4.15, glibc 2.27)</td>
+</tr>
+<tr>
+<td>x86_64-unknown-linux-musl</td>
+<td>✓</td>
+<td>64-bit Linux with MUSL</td>
+</tr>
+<tr>
+<td>x86_64-unknown-netbsd</td>
+<td>✓</td>
+<td>NetBSD/amd64</td>
+</tr>
+<tr>
+<td>x86_64-unknown-openbsd</td>
+<td>✓</td>
+<td>64-bit OpenBSD</td>
+</tr>
+<tr>
+<td>x86_64-unknown-redox</td>
+<td>✓</td>
+<td>Redox OS</td>
+</tr>
+<tr>
+<td>x86_64-unknown-uefi</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-uwp-windows-gnu</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-uwp-windows-msvc</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>x86_64-wrs-vxworks</td>
+<td>?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mips">MIPS</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mips-unknown-linux-gnu</td>
+<td>✓</td>
+<td>MIPS Linux (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>mips-unknown-linux-musl</td>
+<td>✓</td>
+<td>MIPS Linux with MUSL</td>
+</tr>
+<tr>
+<td>mips-unknown-linux-uclibc</td>
+<td>✓</td>
+<td>MIPS Linux with uClibc</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mips-64-bit">MIPS 64-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mips64-unknown-linux-gnuabi64</td>
+<td>✓</td>
+<td>MIPS64 Linux, n64 ABI (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>mips64-unknown-linux-muslabi64</td>
+<td>✓</td>
+<td>MIPS64 Linux, n64 ABI, MUSL</td>
+</tr>
+<tr>
+<td>mips64el-unknown-linux-gnuabi64</td>
+<td>✓</td>
+<td>MIPS64 (LE) Linux, n64 ABI (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>mips64el-unknown-linux-muslabi64</td>
+<td>✓</td>
+<td>MIPS64 (LE) Linux, n64 ABI, MUSL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wasm">WASM</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wasm32-unknown-emscripten</td>
+<td>✓</td>
+<td>WebAssembly via Emscripten</td>
+</tr>
+<tr>
+<td>wasm32-unknown-unknown</td>
+<td>✓</td>
+<td>WebAssembly</td>
+</tr>
+<tr>
+<td>wasm32-wasi</td>
+<td>✓</td>
+<td>WebAssembly with WASI</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sparc-32-bit">SPARC 32-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sparc-unknown-linux-gnu</td>
+<td>✓</td>
+<td>32-bit SPARC Linux</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sparc-64-bit">SPARC 64-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sparc64-unknown-linux-gnu</td>
+<td>✓</td>
+<td>SPARC Linux (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>sparc64-unknown-netbsd</td>
+<td>✓</td>
+<td>NetBSD/sparc64</td>
+</tr>
+<tr>
+<td>sparc64-unknown-openbsd</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>sparcv9-sun-solaris</td>
+<td>✓</td>
+<td>SPARC Solaris 10/11, illumos</td>
+</tr>
+<tr>
+<td>mipsel-sony-psp</td>
+<td>*</td>
+<td>MIPS (LE) Sony PlayStation Portable (PSP)</td>
+</tr>
+<tr>
+<td>mipsel-unknown-linux-gnu</td>
+<td>✓</td>
+<td>MIPS (LE) Linux (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>mipsel-unknown-linux-musl</td>
+<td>✓</td>
+<td>MIPS (LE) Linux with MUSL</td>
+</tr>
+<tr>
+<td>mipsel-unknown-linux-uclibc</td>
+<td>✓</td>
+<td>MIPS (LE) Linux with uClibc</td>
+</tr>
+<tr>
+<td>mipsel-unknown-none</td>
+<td>*</td>
+<td>Bare MIPS (LE) softfloat</td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerpc-32-bit">PowerPC 32-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>powerpc-unknown-linux-gnu</td>
+<td>✓</td>
+<td>PowerPC Linux (kernel 2.6.32, glibc 2.11)</td>
+</tr>
+<tr>
+<td>powerpc-unknown-linux-gnuspe</td>
+<td>✓</td>
+<td>PowerPC SPE Linux</td>
+</tr>
+<tr>
+<td>powerpc-unknown-linux-musl</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>powerpc-unknown-netbsd</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>powerpc-wrs-vxworks</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>powerpc-wrs-vxworks-spe</td>
+<td>?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerpc-64-bit">PowerPC 64-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>powerpc64-unknown-freebsd</td>
+<td>✓</td>
+<td>PPC64 FreeBSD (ELFv1 and ELFv2)</td>
+</tr>
+<tr>
+<td>powerpc64-unknown-linux-gnu</td>
+<td>✓</td>
+<td>PPC64 Linux (kernel 2.6.32, glibc 2.11)</td>
+</tr>
+<tr>
+<td>powerpc64-unknown-linux-musl</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>powerpc64-wrs-vxworks</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>powerpc64le-unknown-linux-gnu</td>
+<td>✓</td>
+<td>PPC64LE Linux (kernel 3.10, glibc 2.17)</td>
+</tr>
+<tr>
+<td>powerpc64le-unknown-linux-musl</td>
+<td>?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="arduino">Arduino</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>avr-unknown-gnu-atmega328</td>
+<td>✗</td>
+<td>AVR. Requires -Z build-std=core</td>
+</tr>
+</tbody>
+</table>
+<h2 id="risc-v-32-bit">RISC-V 32-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>riscv32gc-unknown-linux-gnu</td>
+<td></td>
+<td>RISC-V Linux (kernel 5.4, glibc 2.33)</td>
+</tr>
+<tr>
+<td>riscv32i-unknown-none-elf</td>
+<td>*</td>
+<td>Bare RISC-V (RV32I ISA)</td>
+</tr>
+<tr>
+<td>riscv32imac-unknown-none-elf</td>
+<td>*</td>
+<td>Bare RISC-V (RV32IMAC ISA)</td>
+</tr>
+<tr>
+<td>riscv32imc-unknown-none-elf</td>
+<td>*</td>
+<td>Bare RISC-V (RV32IMC ISA)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="risc-v-64-bit">RISC-V 64-bit</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>riscv64gc-unknown-linux-gnu</td>
+<td>✓</td>
+<td>RISC-V Linux (kernel 4.20, glibc 2.29)</td>
+</tr>
+<tr>
+<td>riscv64gc-unknown-none-elf</td>
+<td>*</td>
+<td>Bare RISC-V (RV64IMAFDC ISA)</td>
+</tr>
+<tr>
+<td>riscv64imac-unknown-none-elf</td>
+<td>*</td>
+<td>Bare RISC-V (RV64IMAC ISA)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-targets">Other Targets</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>std</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arm-linux-androideabi</td>
+<td>✓</td>
+<td>ARMv7 Android</td>
+</tr>
+<tr>
+<td>arm-unknown-linux-gnueabi</td>
+<td>✓</td>
+<td>ARMv6 Linux (kernel 3.2, glibc 2.17)</td>
+</tr>
+<tr>
+<td>arm-unknown-linux-gnueabihf</td>
+<td>✓</td>
+<td>ARMv6 Linux, hardfloat (kernel 3.2, glibc 2.17)</td>
+</tr>
+<tr>
+<td>arm-unknown-linux-musleabi</td>
+<td>✓</td>
+<td>ARMv6 Linux with MUSL</td>
+</tr>
+<tr>
+<td>arm-unknown-linux-musleabihf</td>
+<td>✓</td>
+<td>ARMv6 Linux with MUSL, hardfloat</td>
+</tr>
+<tr>
+<td>armebv7r-none-eabi</td>
+<td>*</td>
+<td>Bare ARMv7-R, Big Endian</td>
+</tr>
+<tr>
+<td>armebv7r-none-eabihf</td>
+<td>*</td>
+<td>Bare ARMv7-R, Big Endian, hardfloat</td>
+</tr>
+<tr>
+<td>armv4t-unknown-linux-gnueabi</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>armv5te-unknown-linux-gnueabi</td>
+<td>✓</td>
+<td>ARMv5TE Linux (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>armv5te-unknown-linux-musleabi</td>
+<td>✓</td>
+<td>ARMv5TE Linux with MUSL</td>
+</tr>
+<tr>
+<td>armv5te-unknown-linux-uclibceabi</td>
+<td>?</td>
+<td>ARMv5TE Linux with uClibc</td>
+</tr>
+<tr>
+<td>armv6-unknown-freebsd</td>
+<td>✓</td>
+<td>ARMv6 FreeBSD</td>
+</tr>
+<tr>
+<td>armv6-unknown-netbsd-eabihf</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>armv7-apple-ios</td>
+<td>✓</td>
+<td>ARMv7 iOS, Cortex-a8</td>
+</tr>
+<tr>
+<td>armv7-linux-androideabi</td>
+<td>✓</td>
+<td>ARMv7a Android</td>
+</tr>
+<tr>
+<td>armv7-unknown-freebsd</td>
+<td>✓</td>
+<td>ARMv7 FreeBSD</td>
+</tr>
+<tr>
+<td>armv7-unknown-linux-gnueabi</td>
+<td>✓</td>
+<td>ARMv7 Linux (kernel 4.15, glibc 2.27)</td>
+</tr>
+<tr>
+<td>armv7-unknown-linux-gnueabihf</td>
+<td>✓</td>
+<td>ARMv7 Linux, hardfloat (kernel 3.2, glibc 2.17)</td>
+</tr>
+<tr>
+<td>armv7-unknown-linux-musleabi</td>
+<td>✓</td>
+<td>ARMv7 Linux, MUSL</td>
+</tr>
+<tr>
+<td>armv7-unknown-linux-musleabihf</td>
+<td>✓</td>
+<td>ARMv7 Linux with MUSL</td>
+</tr>
+<tr>
+<td>armv7-unknown-netbsd-eabihf</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>armv7-wrs-vxworks-eabihf</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>armv7a-none-eabi</td>
+<td>*</td>
+<td>Bare ARMv7-A</td>
+</tr>
+<tr>
+<td>armv7a-none-eabihf</td>
+<td>*</td>
+<td>ARM Cortex-A, hardfloat</td>
+</tr>
+<tr>
+<td>armv7r-none-eabi</td>
+<td>*</td>
+<td>Bare ARMv7-R</td>
+</tr>
+<tr>
+<td>armv7r-none-eabihf</td>
+<td>*</td>
+<td>Bare ARMv7-R, hardfloat</td>
+</tr>
+<tr>
+<td>armv7s-apple-ios</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>asmjs-unknown-emscripten</td>
+<td>✓</td>
+<td>asm.js via Emscripten</td>
+</tr>
+<tr>
+<td>hexagon-unknown-linux-musl</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>mipsisa32r6-unknown-linux-gnu</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>mipsisa32r6el-unknown-linux-gnu</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>mipsisa64r6-unknown-linux-gnuabi64</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>mipsisa64r6el-unknown-linux-gnuabi64</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>msp430-none-elf</td>
+<td>*</td>
+<td>16-bit MSP430 microcontrollers</td>
+</tr>
+<tr>
+<td>nvptx64-nvidia-cuda</td>
+<td>✓</td>
+<td>&ndash;emit=asm generates PTX code that runs on NVIDIA GPUs</td>
+</tr>
+<tr>
+<td>s390x-unknown-linux-gnu</td>
+<td>✓</td>
+<td>S390x Linux (kernel 2.6.32, glibc 2.11)</td>
+</tr>
+<tr>
+<td>thumbv4t-none-eabi</td>
+<td>*</td>
+<td>ARMv4T T32</td>
+</tr>
+<tr>
+<td>thumbv6m-none-eabi</td>
+<td>*</td>
+<td>Bare Cortex-M0, M0+, M1</td>
+</tr>
+<tr>
+<td>thumbv7a-pc-windows-msvc</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>thumbv7a-uwp-windows-msvc</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>thumbv7em-none-eabi</td>
+<td>*</td>
+<td>Bare Cortex-M4, M7</td>
+</tr>
+<tr>
+<td>thumbv7em-none-eabihf</td>
+<td>*</td>
+<td>Bare Cortex-M4F, M7F, FPU, hardfloat</td>
+</tr>
+<tr>
+<td>thumbv7m-none-eabi</td>
+<td>*</td>
+<td>Bare Cortex-M3</td>
+</tr>
+<tr>
+<td>thumbv7neon-linux-androideabi</td>
+<td>✓</td>
+<td>Thumb2-mode ARMv7a Android with NEON</td>
+</tr>
+<tr>
+<td>thumbv7neon-unknown-linux-gnueabihf</td>
+<td>✓</td>
+<td>Thumb2-mode ARMv7a Linux with NEON (kernel 4.4, glibc 2.23)</td>
+</tr>
+<tr>
+<td>thumbv7neon-unknown-linux-musleabihf</td>
+<td>?</td>
+<td>Thumb2-mode ARMv7a Linux with NEON, MUSL</td>
+</tr>
+<tr>
+<td>thumbv8m.base-none-eabi</td>
+<td>*</td>
+<td>ARMv8-M Baseline</td>
+</tr>
+<tr>
+<td>thumbv8m.main-none-eabi</td>
+<td>*</td>
+<td>ARMv8-M Mainline</td>
+</tr>
+<tr>
+<td>thumbv8m.main-none-eabihf</td>
+<td>*</td>
+<td>ARMv8-M Mainline, hardfloat</td>
+</tr>
+</tbody>
+</table>
 
     </article>
     
@@ -3153,17 +2894,17 @@ add some <strong>opacity</strong></p>
 <nav class="pagination-single">
   
     
-      <a href="https://savolla.github.io/posts/html-cheat-sheet/" class="pagination-single__left">
+      <a href="https://savolla.github.io/posts/css-cheat-sheet/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">HTML Cheat Sheet</div>      
+        <div class="pagination-single__left-title">CSS Cheat Sheet</div>      
       </a>
     
     <div class="grow"></div>
     
-      <a href="https://savolla.github.io/posts/cross-compilers/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Cross Compilers</div>
+      <a href="https://savolla.github.io/posts/cracking-the-coding-interview-notes/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">Cracking The Coding Interview Notes</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>
