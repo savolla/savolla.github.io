@@ -1,222 +1,319 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>savolla&#39;s blog</title>
     <link>https://savolla.github.io/</link>
     <description>Recent content on savolla&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2075. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate><atom:link href="https://savolla.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>savolla&#39;s cave</title>
-      <link>https://savolla.github.io/showcase/hugo/hugo-theme-zzo/</link>
-      <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-      
-      <guid>https://savolla.github.io/showcase/hugo/hugo-theme-zzo/</guid>
-      <description></description>
-    </item>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
+    <webMaster>savolla@protonmail.com (savolla)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
+    <sy:updatePeriod>daily</sy:updatePeriod>
     
-    <item>
-      <title>Hugo zDoc Theme</title>
-      <link>https://savolla.github.io/showcase/hugo/hugo-theme-zdoc/</link>
-      <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-      
-      <guid>https://savolla.github.io/showcase/hugo/hugo-theme-zdoc/</guid>
-      <description></description>
-    </item>
+        <atom:link href="https://savolla.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>about</title>
-      <link>https://savolla.github.io/about/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://savolla.github.io/about/</guid>
-      <description>Hey I&amp;rsquo;m Oleksiy! I do digital electronics, Linux sysadmin, c/c++ dev, x86, ARM, os development, embedded systems and everything bare-metal! I&amp;rsquo;m a Computer Engineering student in Turkey. My interests are mostly between hardware and software. Contact me from Telegram or freenode to talk about geeky stuff! savolla is my username on freenode</description>
-    </item>
     
-    <item>
-      <title>Fourth</title>
-      <link>https://savolla.github.io/presentation/dir/fourth/</link>
-      <pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate>
-      
-      <guid>https://savolla.github.io/presentation/dir/fourth/</guid>
-      <description></description>
-    </item>
     
-    <item>
-      <title>Third</title>
-      <link>https://savolla.github.io/presentation/third/</link>
-      <pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate>
       
-      <guid>https://savolla.github.io/presentation/third/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Second</title>
-      <link>https://savolla.github.io/presentation/second/</link>
-      <pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate>
       
-      <guid>https://savolla.github.io/presentation/second/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://savolla.github.io/presentation/first/</link>
-      <pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate>
       
-      <guid>https://savolla.github.io/presentation/first/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Good Title</title>
-      <link>https://savolla.github.io/publication/article/article_any_folder_name_1/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+        
       
-      <guid>https://savolla.github.io/publication/article/article_any_folder_name_1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Donec vel ipsum vulputate, dapibus magna quis</title>
-      <link>https://savolla.github.io/publication/book/book_any_folder_name_1/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+        
       
-      <guid>https://savolla.github.io/publication/book/book_any_folder_name_1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book Review: Duis vulputate</title>
-      <link>https://savolla.github.io/publication/misc/misc_any_folder_name_1/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+        
       
-      <guid>https://savolla.github.io/publication/misc/misc_any_folder_name_1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43; Primer Notes</title>
-      <link>https://savolla.github.io/posts/cpp-primer-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
       
-      <guid>https://savolla.github.io/posts/cpp-primer-notes/</guid>
-      <description>This is my summary and notes of C++ Primer by Stanley B. Lippman. Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one function (main)
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      <item>
+        <title>C&#43;&#43; Primer Notes</title>
+        <link>https://savolla.github.io/posts/cpp-primer-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/cpp-primer-notes/</guid>
+        <description>This is my summary and notes of C++ Primer by Stanley B. Lippman.
+Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one function (main)
   simplest c++ program
-int main() { return 0; }   the return value of main function
- 0 means success -1 means failure non-zero returns are defined by the system    c++ file extensions
- .</description>
-    </item>
-    
-    <item>
-      <title>Code Complete Notlarım</title>
-      <link>https://savolla.github.io/posts/code-complete-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+1 2 3  int main() { return 0; }     the return value of main function
+ 0 means success -1 means failure non-zero returns are defined by the system    c++ file extensions</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
-      <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
+      <item>
+        <title>Code Complete Notlarım</title>
+        <link>https://savolla.github.io/posts/code-complete-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
+        <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
   yazılım geliştirme ve programlama aynı şey değildir
   yazılım inşası, yazılım geliştirme alanındaki bazı konuları içinde barındıran özelleşmiş bir alt daldır. yazılım inşası&amp;rsquo;nın (construction) dokunuğu dallar:
  coding and debugging unit testing detailed design integration construction planning    construction terimi, programlama termine benzemektedir.
   construction&amp;rsquo;ın yazılım konusunda yaptığı işler:</description>
-    </item>
-    
-    <item>
-      <title>Cracking The Coding Interview Notes</title>
-      <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</guid>
-      <description>:EXPORT_FILE_NAME: cracking-the-coding-interview-notes :EXPORT_TITLE: Cracking the Coding Interview Notes :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts :EXPORT_AUTHOR: savolla
-Bu post&amp;rsquo;da Türkçe olarak Cracking the Coding Interview kitabının özetini çıkartıyorum. Ilk ve ikinci bölümleri ingilizce yazdım, dert etmeyin onları revize edip Türkçeleştireceğim. Bu kitapta, iş başvurularında dikkat edilecek hususlar çok güzel anlatılmıştır. Ben de en azından özetini çıkararak önemli yerleri sizinle paylaşmaya karar verdim. İyi okumalar Bölüm 1  recruiters look for the following;  analytical skills  how confidently you solved the problem how optimal was your solution how fast you are how efficient was your algorithm   coding skills  how clean your code is how good your style was did you handle errors or not   computer science knowledge.</description>
-    </item>
-    
-    <item>
-      <title>Cross Compilers</title>
-      <link>https://savolla.github.io/posts/cross-compilers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>Cracking The Coding Interview Notes</title>
+        <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</guid>
+        <description>:EXPORT_FILE_NAME: cracking-the-coding-interview-notes
+:EXPORT_TITLE: Cracking the Coding Interview Notes
+:HUGO_BASE_DIR: ~/txt/blog/
+:HUGO_SECTION: en/posts
+:EXPORT_AUTHOR: savolla
+Bu post&amp;rsquo;da Türkçe olarak Cracking the Coding Interview kitabının özetini çıkartıyorum. Ilk ve ikinci bölümleri ingilizce yazdım, dert etmeyin onları revize edip Türkçeleştireceğim. Bu kitapta, iş başvurularında dikkat edilecek hususlar çok güzel anlatılmıştır. Ben de en azından özetini çıkararak önemli yerleri sizinle paylaşmaya karar verdim. İyi okumalar
+Bölüm 1  recruiters look for the following;  analytical skills  how confidently you solved the problem how optimal was your solution how fast you are how efficient was your algorithm   coding skills  how clean your code is how good your style was did you handle errors or not   computer science knowledge.</description>
+        
+        <dc:creator>[Oleksiy Nehlyadyuk]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/cross-compilers/</guid>
-      <description>:EXPORT_FILE_NAME: all-available-cross-compilers-on-earth :EXPORT_TITLE: List of All Available Cross-Compilers :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts :EXPORT_AUTHOR: savolla
+      <item>
+        <title>Cross Compilers</title>
+        <link>https://savolla.github.io/posts/cross-compilers/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/cross-compilers/</guid>
+        <description>:EXPORT_FILE_NAME: all-available-cross-compilers-on-earth
+:EXPORT_TITLE: List of All Available Cross-Compilers
+:HUGO_BASE_DIR: ~/txt/blog/
+:HUGO_SECTION: en/posts
+:EXPORT_AUTHOR: savolla
 These are available cross compilers that available. std columns indicates the availability of standard library. if std is ✓ then target can run standard library functions. if * then target is bare-metal and requires startup code crt0. ? if unknown
 ARM 64-bit aarch64    Target std Description     aarch64-apple-darwin ✓ ARM64 macOS (11.</description>
-    </item>
-    
-    <item>
-      <title>CSS Cheat Sheet</title>
-      <link>https://savolla.github.io/posts/css-cheat-sheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/css-cheat-sheet/</guid>
-      <description>how to   name a css file? style.css or main.css
-  how to link style.css with index.html ? in html file,
-&amp;lt;link href=&amp;#34;./style.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;   write internal css? put your css code inside style tags
-&amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;   how comments look in css?
-/* this is a comment */   change h1,h2 and h3 at the same selector?</description>
-    </item>
-    
-    <item>
-      <title>HTML Cheat Sheet</title>
-      <link>https://savolla.github.io/posts/html-cheat-sheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>CSS Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/css-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/css-cheat-sheet/</guid>
+        <description>how to   name a css file?
+style.css or main.css
+  how to link style.css with index.html ?
+in html file,
+1  &amp;lt;link href=&amp;#34;./style.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;/&amp;gt;     write internal css?
+put your css code inside style tags
+1 2 3 4 5 6 7  &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;     how comments look in css?
+1  /* this is a comment */     change h1,h2 and h3 at the same selector?</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/html-cheat-sheet/</guid>
-      <description>how to   create a heading?
-&amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;   create a paragraph element?
-&amp;lt;p&amp;gt;paragraph&amp;lt;/p&amp;gt;   create an image element? notice there are no closing forward slashesin img elements
-&amp;lt;img src=&amp;#34;path/to/image&amp;#34;&amp;gt;   break a line?
-&amp;lt;br/&amp;gt;   tell html to use latest html version? by putting the docstring
-&amp;lt;!DOCTYPE html&amp;gt;   generate all initial html structure with emmet? ! + TAB
-  generate a div with a class with emmet?</description>
-    </item>
-    
-    <item>
-      <title>Javascript Cheat Sheet</title>
-      <link>https://savolla.github.io/posts/javascript-cheat-sheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>HTML Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/html-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/html-cheat-sheet/</guid>
+        <description>how to   create a heading?
+1  &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;     create a paragraph element?
+1  &amp;lt;p&amp;gt;paragraph&amp;lt;/p&amp;gt;     create an image element?
+notice there are no closing forward slashes in img elements
+1  &amp;lt;img src=&amp;#34;path/to/image&amp;#34;&amp;gt;     break a line?
+1  &amp;lt;br/&amp;gt;     tell html to use latest html version?
+by putting the docstring
+1  &amp;lt;!</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/javascript-cheat-sheet/</guid>
-      <description>concepts JSON  javascript object notation data representation format used in config files supported types;  strings: &amp;ldquo;hello world&amp;rdquo;, &amp;ldquo;savolla&amp;rdquo; numbers: 10, 1.5, -30 boolean: true, false null: null arrays: [1,2,3], [&amp;ldquo;Hello&amp;rdquo;, &amp;ldquo;world&amp;rdquo;] objects: {&amp;ldquo;key&amp;rdquo;:&amp;ldquo;value&amp;rdquo;}, {&amp;ldquo;age&amp;rdquo;:30}   everything in json is valid javascript code  tips facts  best learningn resource : You Don&amp;rsquo;t Know JS  how to create a json file this is actually an arrayin javascript. this is why it starts with &amp;lsquo;[]&amp;rsquo;</description>
-    </item>
-    
-    <item>
-      <title>less known vim tricks</title>
-      <link>https://savolla.github.io/posts/less-known-vim-tricks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>Javascript Cheat Sheet</title>
+        <link>https://savolla.github.io/posts/javascript-cheat-sheet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/javascript-cheat-sheet/</guid>
+        <description>concepts JSON  javascript object notation data representation format used in config files supported types;  strings: &amp;ldquo;hello world&amp;rdquo;, &amp;ldquo;savolla&amp;rdquo; numbers: 10, 1.5, -30 boolean: true, false null: null arrays: [1,2,3], [&amp;ldquo;Hello&amp;rdquo;, &amp;ldquo;world&amp;rdquo;] objects: {&amp;ldquo;key&amp;rdquo;:&amp;ldquo;value&amp;rdquo;}, {&amp;ldquo;age&amp;rdquo;:30}   everything in json is valid javascript code  tips facts  best learningn resource : You Don&amp;rsquo;t Know JS  how to create a json file this is actually an array in javascript.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/less-known-vim-tricks/</guid>
-      <description>ourput redirection  you can redirect outputs of a shell command in vim  press ESC :r !ls -la RET    whitespace removal  remove all trailing whitespaces. you can also make the following a permanent macro  press ESC :%s/\s\+$//e RET    time travel  show the file 10 mins ago  press ESC :earlier 10m RET   show the file after 10 mins  press ESC :later 10m RET    </description>
-    </item>
-    
-    <item>
-      <title>Making Embedded Systems Notlarım</title>
-      <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>less known vim tricks</title>
+        <link>https://savolla.github.io/posts/less-known-vim-tricks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/less-known-vim-tricks/</guid>
+        <description>ourput redirection  you can redirect outputs of a shell command in vim  press ESC :r !ls -la RET    whitespace removal  remove all trailing whitespaces. you can also make the following a permanent macro  press ESC :%s/\s\+$//e RET    time travel  show the file 10 mins ago  press ESC :earlier 10m RET   show the file after 10 mins  press ESC :later 10m RET    </description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vim</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>tools</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/making-embedded-systems-notes/</guid>
-      <description>Making Embedded Systems Türkçe kitap özeti Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
-    </item>
-    
-    <item>
-      <title>one Makefile for everything</title>
-      <link>https://savolla.github.io/posts/one-makefile-for-everything/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>Making Embedded Systems Notlarım</title>
+        <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/making-embedded-systems-notes/</guid>
+        <description>Making Embedded Systems Türkçe kitap özeti
+Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/one-makefile-for-everything/</guid>
-      <description>here! you found it! this is one single Makefile that fits all projects with this file structure:
-project / ├── include ├── build ├── lib ├── obj ├── src ├── test ├── main.c └── Makefile TARGET_EXEC ?= a.out BUILD_DIR ?= ./build SRC_DIRS ?= ./src SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c -or -name *.s) OBJS := $(SRCS:%=$(BUILD_DIR)/%.o) DEPS := $(OBJS:.o=.d) INC_DIRS := $(shell find $(SRC_DIRS) -type d) INC_FLAGS := $(addprefix -I,$(INC_DIRS)) CPPFLAGS ?</description>
-    </item>
-    
-    <item>
-      <title>Perfect Equalizer for Metal</title>
-      <link>https://savolla.github.io/posts/perfect-equalizer-for-metal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>one Makefile for everything</title>
+        <link>https://savolla.github.io/posts/one-makefile-for-everything/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/one-makefile-for-everything/</guid>
+        <description>here! you found it! this is one single Makefile that fits all projects with this file structure:
+1 2 3 4 5 6 7 8 9  project / ├── include ├── build ├── lib ├── obj ├── src ├── test ├── main.c └── Makefile   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  TARGET_EXEC ?</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>make</category>
+            
+          
+            
+              <category>programming</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/perfect-equalizer-for-metal/</guid>
-      <description>This is my personal Equalizer Preference. This is a result of one year of tweaking. Every Frequency is tuned and tested 1 Hz at a time. Tuned for the following genres;
+      <item>
+        <title>Perfect Equalizer for Metal</title>
+        <link>https://savolla.github.io/posts/perfect-equalizer-for-metal/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/perfect-equalizer-for-metal/</guid>
+        <description>This is my personal Equalizer Preference. This is a result of one year of tweaking. Every Frequency is tuned and tested 1 Hz at a time. Tuned for the following genres;
   Djent
   Slam
   Break Core
@@ -225,79 +322,229 @@ project / ├── include ├── build ├── lib ├── obj ├─�
   Black Metal
     I used ATH-M40x Studio headphones for tuning.
   </description>
-    </item>
-    
-    <item>
-      <title>permanent macros in vim</title>
-      <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/permanent-macros-in-vim/</guid>
-      <description>this is a short step by step tutorial to save your vim macro and use it everytime
- fire up vim do q a create your macro press q to finish exit vim :q! vim ~/.vimrc type let @q = &#39;&#39; put your cursor on first single quote do &amp;quot; a p macro should be pasted inside single quotes like:  let @q = &amp;#39;your_macro_content&amp;#39;  save and exit ESC :wq fire up vim again do @ q  now you should have your macro saved.</description>
-    </item>
-    
-    <item>
-      <title>Programming Embedded Systems Notlarım</title>
-      <link>https://savolla.github.io/posts/programming-embedded-systems-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>permanent macros in vim</title>
+        <link>https://savolla.github.io/posts/permanent-macros-in-vim/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/permanent-macros-in-vim/</guid>
+        <description>this is a short step by step tutorial to save your vim macro and use it everytime
+ fire up vim do q a create your macro press q to finish exit vim :q! vim ~/.vimrc type let @q = &#39;&#39; put your cursor on first single quote do &amp;quot; a p macro should be pasted inside single quotes like:   1  let @q = &amp;#39;your_macro_content&amp;#39;    save and exit ESC :wq fire up vim again do @ q  now you should have your macro saved.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vim</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>tools</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/programming-embedded-systems-notes/</guid>
-      <description>Programming Embedded Systems 1999&amp;rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da benim çıkardığım Türkçe Özet Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı.</description>
-    </item>
-    
-    <item>
-      <title>programming in doom emacs</title>
-      <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>Programming Embedded Systems Notlarım</title>
+        <link>https://savolla.github.io/posts/programming-embedded-systems-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/programming-embedded-systems-notes/</guid>
+        <description>Programming Embedded Systems 1999&amp;rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da benim çıkardığım Türkçe Özet
+Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/programming-in-doom-emacs/</guid>
-      <description>This is how I use doom emacs for daily coding. Doom and it&amp;rsquo;s packages are working together to make developer&amp;rsquo;s life easy. Here I made a complete list for you guys. This is a step by step guide to do coding on doom emacs. By the way when I say things like C-c C-p it means CTRL + c + p
+      <item>
+        <title>programming in doom emacs</title>
+        <link>https://savolla.github.io/posts/programming-in-doom-emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/programming-in-doom-emacs/</guid>
+        <description>This is how I use doom emacs for daily coding. Doom and it&amp;rsquo;s packages are working together to make developer&amp;rsquo;s life easy. Here I made a complete list for you guys. This is a step by step guide to do coding on doom emacs. By the way when I say things like C-c C-p it means CTRL + c + p
 before we start to make things work enable specified modules in your init file</description>
-    </item>
-    
-    <item>
-      <title>radare notes</title>
-      <link>https://savolla.github.io/posts/radare-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>doom</category>
+            
+          
+            
+              <category>emacs</category>
+            
+          
+            
+              <category>programming</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/radare-notes/</guid>
-      <description>key bindings normal mode V # enter visual mode and show hexdump view aaa # analyse the binary. unlocks other functions. do this first you open up a binary aaaa # experimnetal analysis. might take more time for huge binaries afl # see all funcitons (also called symbols) in the binary afll # really cool color coded function list s &amp;lt;FUNCTION&amp;gt; # seek to &amp;lt;FUNCTION&amp;gt; ii # show imports don&amp;#39;t forget to analyse first iS # show sections in memory is # show all symbols including global, local variables iz # show ascii strings iI # general binary information visual mode p # disassembler view pp # debuggin view ppp # byte distribution view pppp # byte string view for copying in C or Pyhton n # seek to next function N # seek to previous funciton how to   jump to a function from debug or disassembler view</description>
-    </item>
-    
-    <item>
-      <title>savolla&#39;s music recommendations</title>
-      <link>https://savolla.github.io/posts/music-recommendations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <item>
+        <title>radare notes</title>
+        <link>https://savolla.github.io/posts/radare-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/radare-notes/</guid>
+        <description>key bindings normal mode 1 2 3 4 5 6 7 8 9 10 11  V # enter visual mode and show hexdump view aaa # analyse the binary. unlocks other functions. do this first you open up a binary aaaa # experimnetal analysis. might take more time for huge binaries afl # see all funcitons (also called symbols) in the binary afll # really cool color coded function list s &amp;lt;FUNCTION&amp;gt; # seek to &amp;lt;FUNCTION&amp;gt; ii # show imports don&amp;#39;t forget to analyse first iS # show sections in memory is # show all symbols including global, local variables iz # show ascii strings iI # general binary information   visual mode 1 2 3 4 5 6  p # disassembler view pp # debuggin view ppp # byte distribution view pppp # byte string view for copying in C or Pyhton n # seek to next function N # seek to previous funciton   how to   jump to a function from debug or disassembler view</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/music-recommendations/</guid>
-      <description>Here I made some album recommendations. this is my personal playlist which consists of very &amp;ldquo;non-normie&amp;rdquo; stuff. albums in this list will start with the most &amp;ldquo;normie&amp;rdquo; music and will incrementally get heavier
+      <item>
+        <title>savolla&#39;s music recommendations</title>
+        <link>https://savolla.github.io/posts/music-recommendations/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/music-recommendations/</guid>
+        <description>Here I made some album recommendations. this is my personal playlist which consists of very &amp;ldquo;non-normie&amp;rdquo; stuff. albums in this list will start with the most &amp;ldquo;normie&amp;rdquo; music and will incrementally get heavier
 level 1 easier to digest and fun
  Tokyo Rose - Chases 2   great synthwave album.. my favorite song on this is midnight chase
  Dance with the Dead - Loved to Death  synthwave + some metal elements.</description>
-    </item>
-    
-    <item>
-      <title>search code in Github</title>
-      <link>https://savolla.github.io/posts/search-code-in-github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>music</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/search-code-in-github/</guid>
-      <description>  for example I&amp;rsquo;m searching for &amp;ldquo;setq&amp;rdquo; keyword which exists in &amp;ldquo;.doom.d&amp;rdquo; directory, file is called &amp;ldquo;config.el&amp;rdquo; and is written in &amp;ldquo;Emacs Lisp&amp;rdquo; language
+      <item>
+        <title>search code in Github</title>
+        <link>https://savolla.github.io/posts/search-code-in-github/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/search-code-in-github/</guid>
+        <description>  for example I&amp;rsquo;m searching for &amp;ldquo;setq&amp;rdquo; keyword which exists in &amp;ldquo;.doom.d&amp;rdquo; directory, file is called &amp;ldquo;config.el&amp;rdquo; and is written in &amp;ldquo;Emacs Lisp&amp;rdquo; language
   go to github search
   search for the following string
-setq extension:el path:.doom.d filename:config.el language:&amp;#34;Emacs Lisp&amp;#34; extension:.el   </description>
-    </item>
-    
-    <item>
-      <title>what is gpg</title>
-      <link>https://savolla.github.io/posts/what-is-gpg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+1  setq extension:el path:.doom.d filename:config.el language:&amp;#34;Emacs Lisp&amp;#34; extension:.el     </description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>git</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://savolla.github.io/posts/what-is-gpg/</guid>
-      <description>also called gnu privacy guard this is a key which helps to encrypt and decript files there are 2 types of gpg keys; private : unlocks everything you lock with that public : you send to other people gpg keys expire! so you need to generate them once or twice a year  how to generate a gpg key   first generate personal key:
-gpg --full-gen-key   choose RSA and RSA</description>
-    </item>
+      <item>
+        <title>what is gpg</title>
+        <link>https://savolla.github.io/posts/what-is-gpg/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/what-is-gpg/</guid>
+        <description>also called gnu privacy guard this is a key which helps to encrypt and decript files there are 2 types of gpg keys; private : unlocks everything you lock with that public : you send to other people gpg keys expire ! so you need to generate them once or twice a year  how to generate a gpg key   first generate personal key:
+1  gpg --full-gen-key     choose RSA and RSA</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+            
+              <category>howto</category>
+            
+          
+            
+              <category>gpg</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>
