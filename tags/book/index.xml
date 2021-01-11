@@ -1,134 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>book on savolla&#39;s blog</title>
     <link>https://savolla.github.io/tags/book/</link>
     <description>Recent content in book on savolla&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>savolla@protonmail.com (savolla)</managingEditor>
-    <webMaster>savolla@protonmail.com (savolla)</webMaster>
-    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <sy:updatePeriod>daily</sy:updatePeriod>
-    
-        <atom:link href="https://savolla.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    
-
+    <language>en-us</language>
+    <copyright>&amp;copy; 2075. All rights reserved.</copyright><atom:link href="https://savolla.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; Primer Notes</title>
+      <link>https://savolla.github.io/posts/cpp-primer-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <item>
-        <title>C&#43;&#43; Primer Notes</title>
-        <link>https://savolla.github.io/posts/cpp-primer-notes/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/cpp-primer-notes/</guid>
-        <description>This is my summary and notes of C++ Primer by Stanley B. Lippman.
-Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one function (main)
+      <guid>https://savolla.github.io/posts/cpp-primer-notes/</guid>
+      <description>This is my summary and notes of C++ Primer by Stanley B. Lippman. Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one function (main)
   simplest c++ program
-1 2 3  int main() { return 0; }     the return value of main function
- 0 means success -1 means failure non-zero returns are defined by the system    c++ file extensions</description>
-        
-        <dc:creator>[savolla]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>book</category>
-            
-          
-        
-        
-        
-      </item>
+int main() { return 0; }   the return value of main function
+ 0 means success -1 means failure non-zero returns are defined by the system    c++ file extensions
+ .</description>
+    </item>
+    
+    <item>
+      <title>Code Complete Notlarım</title>
+      <link>https://savolla.github.io/posts/code-complete-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <item>
-        <title>Code Complete Notlarım</title>
-        <link>https://savolla.github.io/posts/code-complete-notes/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
-        <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
+      <guid>https://savolla.github.io/posts/code-complete-notes/</guid>
+      <description>bölüm 1 - yazılım inşasına giriş   yazara göre, bu kitap, etrafa dağılmış bilginin bir yere toplanmış hali
   yazılım geliştirme ve programlama aynı şey değildir
   yazılım inşası, yazılım geliştirme alanındaki bazı konuları içinde barındıran özelleşmiş bir alt daldır. yazılım inşası&amp;rsquo;nın (construction) dokunuğu dallar:
  coding and debugging unit testing detailed design integration construction planning    construction terimi, programlama termine benzemektedir.
   construction&amp;rsquo;ın yazılım konusunda yaptığı işler:</description>
-        
-        <dc:creator>[savolla]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>book</category>
-            
-          
-        
-        
-        
-      </item>
+    </item>
+    
+    <item>
+      <title>Making Embedded Systems Notlarım</title>
+      <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <item>
-        <title>Making Embedded Systems Notlarım</title>
-        <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/making-embedded-systems-notes/</guid>
-        <description>Making Embedded Systems Türkçe kitap özeti
-Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
-        
-        <dc:creator>[savolla]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>book</category>
-            
-          
-        
-        
-        
-      </item>
+      <guid>https://savolla.github.io/posts/making-embedded-systems-notes/</guid>
+      <description>Making Embedded Systems Türkçe kitap özeti Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
+    </item>
+    
+    <item>
+      <title>Programming Embedded Systems Notlarım</title>
+      <link>https://savolla.github.io/posts/programming-embedded-systems-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <item>
-        <title>Programming Embedded Systems Notlarım</title>
-        <link>https://savolla.github.io/posts/programming-embedded-systems-notes/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/programming-embedded-systems-notes/</guid>
-        <description>Programming Embedded Systems 1999&amp;rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da benim çıkardığım Türkçe Özet
-Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı.</description>
-        
-        <dc:creator>[savolla]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>book</category>
-            
-          
-        
-        
-        
-      </item>
-      
-
+      <guid>https://savolla.github.io/posts/programming-embedded-systems-notes/</guid>
+      <description>Programming Embedded Systems 1999&amp;rsquo;da yazılan 200 sayfalık bir kitaptır. Bir Gömülü Yazılım gelitirmek için adım adım nelerin yapılması gerektiğini anlatır. Bu da benim çıkardığım Türkçe Özet Bölüm 1 Gömülü Sistem Nedir  Gömülü sistemler genelde daha büyük bir sistemin parçası olurlar. örnek olarak bir araba içindeki sistemler; fren sistemi ya da hava yastığı sistemi için olan devrenin içindeki yazılım bir gömülü sistemdir Genel amaçlı bir bilgisayarın içinde de gömülü sistemler mevcuttur; klavye, mouse, hard drive, ses kartı.</description>
+    </item>
     
   </channel>
 </rss>

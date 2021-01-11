@@ -111,10 +111,6 @@
   </url>
   
   <url>
-    <loc>https://savolla.github.io/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://savolla.github.io/posts/code-complete-notes/</loc>
   </url>
   
@@ -219,15 +215,15 @@
   </url>
   
   <url>
-    <loc>https://savolla.github.io/series/</loc>
-  </url>
-  
-  <url>
     <loc>https://savolla.github.io/tags/</loc>
   </url>
   
   <url>
     <loc>https://savolla.github.io/tags/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>https://savolla.github.io/topics/</loc>
   </url>
   
   <url>
