@@ -512,6 +512,33 @@ level 1 easier to digest and fun
       </item>
       
       <item>
+        <title>Tiny Ml Notes</title>
+        <link>https://savolla.github.io/posts/tinyml-notes/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/tinyml-notes/</guid>
+        <description>:EXPORT_FILE_NAME: tinyml-book-notes
+:EXPORT_TITLE: TinyML Kitap Özeti
+:HUGO_BASE_DIR: ~/txt/blog/
+:HUGO_SECTION: en/posts
+:EXPORT_AUTHOR: savolla
+  Bölüm 1   Gömülü sistemlerde (Cortex-M4) yapay zeka uygulaması yapmak mümkün!
+  çoğu gömülü sistem yazılımı, new ya da malloc() kullanmaktan kaçınır.
+  fact Gömülü sistemlerde heap kullanmak kötü bir fikirdir
+  Dynamic memory allocation&amp;rsquo;ın en büyük zararı, zaman içinde RAM&amp;rsquo;i bozmasıdır. bkz: Fragmentation
+  Tensorflow&amp;rsquo;un MCU&amp;rsquo;lar için çıkardığı ürün Tensorflow Lite&amp;lsquo;dır</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>what is gpg</title>
         <link>https://savolla.github.io/posts/what-is-gpg/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
