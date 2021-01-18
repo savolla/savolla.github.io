@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tiny Ml Notes – savolla&#39;s blog</title>
+    <title>Test Driven Development For Embedded C – savolla&#39;s blog</title>
     
 
 
@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://savolla.github.io\"");
     
-    var permalink = JSON.parse("\"https://savolla.github.io/posts/tinyml-notes/\"");
+    var permalink = JSON.parse("\"https://savolla.github.io/posts/test-driven-development-for-embedded-c/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1339,12 +1339,12 @@
 <meta property="article:published_time" content="0001-01-01T00:00:00&#43;0000">
 
 <meta name="author" content="[savolla]">
-<meta property="article:author" content="https://savolla.github.io/posts/tinyml-notes/@[savolla]">
+<meta property="article:author" content="https://savolla.github.io/posts/test-driven-development-for-embedded-c/@[savolla]">
 
 
 <meta property="og:site_name" content="savolla&#39;s blog">
-<meta property="og:title" content="Tiny Ml Notes">
-<meta property="og:url" content="https://savolla.github.io/posts/tinyml-notes/">
+<meta property="og:title" content="Test Driven Development For Embedded C">
+<meta property="og:url" content="https://savolla.github.io/posts/test-driven-development-for-embedded-c/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="oleksiy nehlyadyuk">
 
@@ -1357,7 +1357,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://savolla.github.io/posts/tinyml-notes/">
+<link rel="canonical" href="https://savolla.github.io/posts/test-driven-development-for-embedded-c/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1383,11 +1383,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Tiny Ml Notes",
+    "headline": "Test Driven Development For Embedded C",
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
-    "url" : "https://savolla.github.io/posts/tinyml-notes/",
-    "description": ":EXPORT_FILE_NAME: tinyml-book-notes :EXPORT_TITLE: TinyML Kitap Özeti :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts :EXPORT_AUTHOR: savolla   Bölüm 1   Gömülü …",
+    "url" : "https://savolla.github.io/posts/test-driven-development-for-embedded-c/",
+    "description": ":EXPORT_FILE_NAME: test-driven-development-for-embedded-c :EXPORT_TITLE: Test-Driven Development for Embedded C Kitap Özeti :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: …",
     "author": {
       "@type": "Person",
       "name": ["savolla"]
@@ -1564,14 +1564,14 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="false">Tiny Ml Notes</h2>
+    <h2 class="single__title" data-ani="false">Test Driven Development For Embedded C</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1589,268 +1589,40 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <p>:EXPORT_FILE_NAME: tinyml-book-notes<br />
-:EXPORT_TITLE: TinyML Kitap Özeti<br />
+      <p>:EXPORT_FILE_NAME: test-driven-development-for-embedded-c<br />
+:EXPORT_TITLE: Test-Driven Development for Embedded C Kitap Özeti<br />
 :HUGO_BASE_DIR: ~/txt/blog/<br />
 :HUGO_SECTION: en/posts<br />
 :EXPORT_AUTHOR: savolla</p>
-<figure>
-    <img src="/ox-hugo/screenshot-97.png"/> 
-</figure>
-
+<h2 id="bölüm-0">Bölüm 0</h2>
+<ul>
+<li>
+<p>Bu kitap, Agile ve Gömülü Sistemlerin harmanlamasıdır</p>
+</li>
+<li>
+<p>Test Driven Development = TDD</p>
+</li>
+<li>
+<p>Gömülü sistemlerde genelde yazılım ve donanım geliştirme süreci paralel ilerler. Donanım henüz ortada olmadığı için yazılımcıların, döküman yazıp beklemekten başka pek yapabileceği bir şey yoktur. Ancak TDD konseptinin ortaya çıkmasıyla bu durum değişebilir</p>
+</li>
+<li>
+<p>Henüz kod ortada yokken, kod için test yazılabilir. Ve yazılımcılar donanımı beklerken Test yazabilirler. Bekleme, çok üretken bir sürece dönüşür</p>
+</li>
+<li>
+<p>Aslında normal bir yazılımcının oturup test yazması çok sıkıcı bir hal alırken, Gömülü sistem yazılımcılarının test yazması mecburi bir hal alır. Bu da ileride donanım çıktıktan sonra yazılan koddaki hataların olabildiğince aza indergenmesini sağlar</p>
+</li>
+<li>
+<p>Ne kadar çok test o kadar çok yazılım kalitesi ve o kadar az uykusuz geçen gece demektir</p>
+</li>
+<li>
+<p>Bu kitapta 2 tane test framwrok&rsquo;ü kullanılmıştır;</p>
+<ol>
+<li>Unity : C için</li>
+<li>CppUTest : C ve C++&lsquo;ı destekler</li>
+</ol>
+</li>
+</ul>
 <h2 id="bölüm-1">Bölüm 1</h2>
-<ul>
-<li>
-<p>Gömülü sistemlerde (Cortex-M4) yapay zeka uygulaması yapmak mümkün!</p>
-</li>
-<li>
-<p>çoğu gömülü sistem yazılımı, <code>new</code> ya da <code>malloc()</code> kullanmaktan kaçınır.</p>
-</li>
-<li>
-<p><code>fact</code> Gömülü sistemlerde <strong>heap</strong> kullanmak kötü bir fikirdir</p>
-</li>
-<li>
-<p>Dynamic memory allocation&rsquo;ın en büyük zararı, zaman içinde RAM&rsquo;i bozmasıdır. bkz: <strong>Fragmentation</strong></p>
-</li>
-<li>
-<p>Tensorflow&rsquo;un MCU&rsquo;lar için çıkardığı ürün <strong>Tensorflow Lite</strong>&lsquo;dır</p>
-</li>
-</ul>
-<h2 id="bölüm-2">Bölüm 2</h2>
-<ul>
-<li>
-<p>Bu kitapta şu <strong>Gömülü Yapay Zeka</strong> projeleri yer almaktadır;</p>
-<ol>
-<li>Speech recognition (microphone)</li>
-<li>hareket algılama (hareket sensörü)</li>
-<li>Detect PPL (camera sensor)</li>
-</ol>
-</li>
-<li>
-<p>yukarıda bahsi geçen projeleri siz kendiniz modifiye edebilirsiniz. örnek olarak Speech recognition ile yapılan insan konuşması algılama projesini modifiye edip köpek havlamasını tespit edebilen bir cihaz yapılabilir. Bu sayede insan yerine köpek tespiti yapan küçük cihazlar yapabilirsiniz</p>
-</li>
-<li>
-<p>Yapay zekayı eğitme kısmını tamamen <a href="https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=OwuxHmxllTwN">Google Colab</a> üstünde gerçekleştireceğiz. Yani süper özelliklere sahip bir bilgisayara ihtiyacımız kalmadı</p>
-</li>
-<li>
-<p>Low power bir MCU&rsquo;da (1 mW gibi) gidip de 10 mW tüketen bir kamera sensörü kullanırsanız, kullandığınız low power MCU&rsquo;nun bir anlamı kalmaz</p>
-</li>
-</ul>
-<h2 id="bölüm-3">Bölüm 3</h2>
-<ul>
-<li>
-<p>Yapay Zeka ilk bakışta zor görünen bir alan olarak karşımıza çıksa ve ileri matematik, tonlarca makale ve uzman olmak için yıllar geçmesi gerekiyor gibi görünse de aslında işin uygulama kısmı bir kaç tool&rsquo;dan ibarettir. Göz korkutacak bir şey yok. Yapay zeka ile ilgili bir kaç konsept öğrendikten sonra, projelerde kullanabilirsiniz</p>
-</li>
-<li>
-<p>Bu kitapta yapay zeka uygulamalarını küçük cihazlarda nasıl kullanacağımızı anlatıyoruz. Teori ile işimiz yok.</p>
-</li>
-<li>
-<p>Kullanışlı yapay zeka uygulamalarını yapmaya başlamak için bütün teoriyi bilmeye gerek yok. Bu bölümde gerekli miktarda bir giriş yapılacak</p>
-</li>
-<li>
-<p>yapay zeka uygulaması, diğer kod ile yazdığımız uygulamalardan farklıdır. kod yazmak yerine, hali hazırda var olan bir yapay zeka algoritmasına topladığımız verileri gireriz ve yapay zeka algoritması, bu verileri işleyip finalde bize bir model çıkartır. Biz bu modele yeni bir veri girdiğimizde de model bize bir tahmin üretir</p>
-</li>
-<li>
-<p>yapay zeka uygulamalarında kod kalitesinden çok <span class="underline">veri kalitesi</span> önemlidir</p>
-</li>
-<li>
-<p>örnek olarak bir fabrika düşünelim, üretim yapan bir makine var ancak bu makine bazen bozulyor ve tamiri masraflı. bu makinenin sıcaklığını, titreşimi gibi verileri bir süre aldığımızı var sayalım. yeterli miktarda veriye ulaştıktan sonra bir yapay zeka algoritmasını bu verilerle eğitip, makina bozulmaya yakın onu kapatan bir yapay zeka uygulaması yapabiliriz</p>
-</li>
-<li>
-<p><strong>training</strong> : yapay zeka kendisine sunulan verileri işleyip öğrenmesine denir. Sonuçta bir model oluşur</p>
-</li>
-<li>
-<p><strong>model</strong> : yapay zeka algoritmasının ürettiği çıktı. Bu çıktı aslında bir programdır ve yeni veriler geldiğinde bir tahmin üretir</p>
-</li>
-<li>
-<p><strong>inference</strong>: modele yeni veriler verdiğimizde, modelin yeni bir tahmin yapma sürecine denir</p>
-</li>
-<li>
-<p>bir yapay zeka uygulamasında izlenecek adımlar;</p>
-<ol>
-<li>Hedef Belirleme (uygulama ne yapacak)</li>
-<li>Veri Toplama</li>
-<li>Nöral Network Oluşturma</li>
-<li><strong>Train</strong> işlemi</li>
-<li>Convert the mode <code>TODO</code></li>
-<li><strong>Inference</strong> işlemi (yeni girdi verip çıktı al)</li>
-<li>modeli test et ve sorun gider</li>
-</ol>
-</li>
-<li>
-<p>MCU&rsquo;lar genelde az hafıza ve işlem gücüne sahip olduklarından dolayı, model oluştururken, cihazın bu özellikleri göz önünde bulundurulmalıdır. Yani çok büyük bir nöral networkü, küçük bir MCU&rsquo;ya koymak olanaksızdır.</p>
-</li>
-<li>
-<p>Nöral networkün boyutunu etkileyen faktörler;</p>
-<ol>
-<li>Nöron sayısı</li>
-<li>Nöronlar arasındaki bağlantı sayısı</li>
-</ol>
-</li>
-<li>
-<p>yapay zeka modeline girdi olarak bir tensör verilir. çıktı olarak da bir tensör alınır</p>
-</li>
-</ul>
-<h3 id="tensor">Tensor</h3>
-<ul>
-<li>
-<p>bu, tek boyutlu bir tensor&rsquo;dür. Bunun diğer bir ismi <strong>vector</strong>&lsquo;dür. boyutu ise \((5,)\) şeklinde gösterilir</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span><span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>bu ise 2D bir tensördür. başka bi isimle <strong>matrix</strong> denir. boyutu \((3, 3)\)&lsquo;dür</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[[</span><span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">5</span> <span class="mi">6</span> <span class="mi">0</span><span class="p">]</span>
- <span class="p">[</span><span class="mi">2</span> <span class="mi">2</span> <span class="mi">0</span><span class="p">]]</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>matrix&rsquo;den daha çok boyutlu tensörlere de kısaca <strong>tensor</strong> dneir. Aşağıdaki matris \((2,3,3)\) boyutlarına sahiptir çünkü <span class="underline">2 tane 3&rsquo;e 3&rsquo;lük matris barındırıyor</span></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span>
-    <span class="p">[[</span><span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">]</span>
-     <span class="p">[</span><span class="mi">5</span> <span class="mi">6</span> <span class="mi">0</span><span class="p">]</span>
-     <span class="p">[</span><span class="mi">2</span> <span class="mi">2</span> <span class="mi">0</span><span class="p">]]</span>
-
-    <span class="p">[[</span><span class="mi">1</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">]</span>
-     <span class="p">[</span><span class="mi">5</span> <span class="mi">6</span> <span class="mi">0</span><span class="p">]</span>
-     <span class="p">[</span><span class="mi">2</span> <span class="mi">2</span> <span class="mi">0</span><span class="p">]]</span>
-<span class="p">]</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<h3 id="sliding-windowing-technique">Sliding Windowing Technique</h3>
-<ul>
-<li>
-<p>Devamlı olarak gelen veriden bir anlam çıkartmak zordur. Çünkü verinin tamamına ihtiyacımız vardır. Örneğin bir ortalama alacaksak verinin tamamen eldilene kadar beklenilmesi gerekir.</p>
-<figure>
-    <img src="/ox-hugo/screenshot-94.png"/> 
-</figure>
-
-</li>
-<li>
-<p>Peki ya veri daha akarken bir sonuç çıkartmak istersek? işte o zaman veriye kendi belirlediğimiz genişlikte bir pencere açarız.</p>
-<figure>
-    <img src="/ox-hugo/screenshot-93.png"/> 
-</figure>
-
-</li>
-<li>
-<p>Yukarıdaki her yıldız verisinin gelmesi 10 saniye sürüyor. Biz de her 10 saniyede bir verinin fotoğrafını çekip o verilerin ortalamasını alıp, yapay zeka modelimize okutup çıktı elde ederiz.</p>
-<figure>
-    <img src="/ox-hugo/screenshot-95.png"/> 
-</figure>
-
-</li>
-<li>
-<p>Yapay Zeka Modelimize gidecek olan veri;</p>
-<figure>
-    <img src="/ox-hugo/screenshot-96.png"/> 
-</figure>
-
-</li>
-<li>
-<p>tabiki bu sayılar direk bu şekilde yapay zeka modeline verilemez. sayıların normalize olması gerekir</p>
-</li>
-</ul>
-<h3 id="normalizasyon">Normalizasyon</h3>
-<ul>
-<li>
-<p>Yapay Zeka algoritmalarına verilen verilerin 1 ile 0 arasına sıkıştırılması gerekir. Buna normalizasyon denir</p>
-</li>
-<li>
-<p>Basit bir normalizasyon tekniği olarak, sayıları maximum değerini bulup, tensörde bulunan her veriye bölmek verilebilir. Bu sayede tüm sayılar 1 ve 0 arasına sıkışır</p>
-<p>normalize olmamış veri: [108 104 102 103 65]</p>
-<p>en büyük sayı : 108</p>
-<p>normalize olmuş veri: [1, 0.96, 0.94, 0.95, 0.60]</p>
-</li>
-</ul>
-<h4 id="linear-scaling">Linear Scaling</h4>
-<p>TODO</p>
-<h4 id="clipping">Clipping</h4>
-<p>TODO</p>
-<h4 id="log-scaling">Log Scaling</h4>
-<p>TODO</p>
-<h4 id="z-score">Z-Score</h4>
-<p>TODO</p>
-<h4 id="model-training">Model Training</h4>
-<ul>
-<li>
-<p><strong>weight</strong> : nöron içindeki veri. ilk anda rastgele bir sayıdır</p>
-</li>
-<li>
-<p><strong>bias</strong>: bir nöral ağ parametresi</p>
-</li>
-<li>
-<p><strong>batch</strong>: öğrenme sırasında sunulan veri</p>
-</li>
-<li>
-<p><strong>epoch</strong>: eğitme sayısı</p>
-</li>
-<li>
-<p><strong>loss</strong>: performans kriteridir ve mükemmel bir modelde sıfırdır</p>
-</li>
-<li>
-<p><strong>accuracy</strong>: performans kriteridir ve mükemmel bir modelde 100% olması beklenir</p>
-</li>
-<li>
-<p><strong>hyperparameters</strong>: yapay zeka modeli eğitilmeden önce yapılan ayarların tümüne denir</p>
-</li>
-<li>
-<p><strong>overfitting</strong>: model datayı ezberlediğinde olur. bir modeli aşırı eğitirsek, çıkan model sadece eğitildiği datayı tanıyacaktır ve çok yüksek tahminler yapar. yeni bir veri geldiğinde kötü sonuç verecektir</p>
-</li>
-<li>
-<p><strong>underfit</strong>: modeli yeterli data ile eğitmemişsek ya da nöral network&rsquo;ün mimarisi, karmaşıklığı anlayamayacak kadar küçük olduğunda olur. kısaca underfit bir model yarıda kalmış bir modeldir.</p>
-</li>
-<li>
-<p>overfitting ile başa çıkmak için;</p>
-<ul>
-<li>
-<p>nöral network küçültülebilir ki veriyi tamamen ezberleyecek kadar geniş bir kapasiteye sahip olamasın.</p>
-</li>
-<li>
-<p>daha fazla veri ile beslenebilir (en iyi çözümdür)</p>
-</li>
-<li>
-<p><strong>data augmentation</strong> diye bir teknik kullanılabilir. Bu teknik ile eldeki veri setini kullanarak yeni veriler elde edilebilir</p>
-</li>
-<li>
-<p><strong>regularization</strong> kullanılabilir. L1 ve L2 regularizasyon teknikleri kullanılabilir</p>
-</li>
-<li>
-<p><strong>dropout</strong>: eğitim sırasında, her <strong>epoch</strong>&lsquo;da rastgele nöronlar arası bağlantıların rast gele koparılması tekniğine verilen isimdir</p>
-</li>
-</ul>
-</li>
-</ul>
 
     </article>
     
@@ -2173,17 +1945,17 @@
 <nav class="pagination-single">
   
     
-      <a href="https://savolla.github.io/posts/what-is-gpg/" class="pagination-single__left">
+      <a href="https://savolla.github.io/posts/tinyml-notes/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">what is gpg</div>      
+        <div class="pagination-single__left-title">Tiny Ml Notes</div>      
       </a>
     
     <div class="grow"></div>
     
-      <a href="https://savolla.github.io/posts/test-driven-development-for-embedded-c/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Test Driven Development For Embedded C</div>
+      <a href="https://savolla.github.io/posts/search-code-in-github/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">search code in Github</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>

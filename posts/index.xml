@@ -490,6 +490,32 @@ level 1 easier to digest and fun
       </item>
       
       <item>
+        <title>Test Driven Development For Embedded C</title>
+        <link>https://savolla.github.io/posts/test-driven-development-for-embedded-c/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/test-driven-development-for-embedded-c/</guid>
+        <description>:EXPORT_FILE_NAME: test-driven-development-for-embedded-c
+:EXPORT_TITLE: Test-Driven Development for Embedded C Kitap Özeti
+:HUGO_BASE_DIR: ~/txt/blog/
+:HUGO_SECTION: en/posts
+:EXPORT_AUTHOR: savolla
+Bölüm 0   Bu kitap, Agile ve Gömülü Sistemlerin harmanlamasıdır
+  Test Driven Development = TDD
+  Gömülü sistemlerde genelde yazılım ve donanım geliştirme süreci paralel ilerler. Donanım henüz ortada olmadığı için yazılımcıların, döküman yazıp beklemekten başka pek yapabileceği bir şey yoktur. Ancak TDD konseptinin ortaya çıkmasıyla bu durum değişebilir
+  Henüz kod ortada yokken, kod için test yazılabilir.</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Tiny Ml Notes</title>
         <link>https://savolla.github.io/posts/tinyml-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
