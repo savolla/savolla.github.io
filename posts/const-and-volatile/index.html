@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Good Old Friends const &amp; volatile – savolla&#39;s blog</title>
+    <title>const &amp; volatile – savolla&#39;s blog</title>
     
 
 
@@ -1343,7 +1343,7 @@
 
 
 <meta property="og:site_name" content="savolla&#39;s blog">
-<meta property="og:title" content="Good Old Friends const &amp; volatile">
+<meta property="og:title" content="const &amp; volatile">
 <meta property="og:url" content="https://savolla.github.io/posts/const-and-volatile/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Knowledge collected for Embedded Systems">
@@ -1383,7 +1383,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Good Old Friends const \u0026 volatile",
+    "headline": "const \u0026 volatile",
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
     "url" : "https://savolla.github.io/posts/const-and-volatile/",
@@ -1564,7 +1564,7 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="false">Good Old Friends const &amp; volatile</h2>
+    <h2 class="single__title" data-ani="false">const &amp; volatile</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
@@ -1691,7 +1691,7 @@
 <h2 id="volatile">volatile</h2>
 <ul>
 <li>
-<p>No optimization, value inside <code>foo</code> can change <strong>unexpectedly</strong> by another sources like other functions, threads or hardware interrupts</p>
+<p>No optimization, value inside <code>foo</code> can change <strong>unexpectedly</strong> by another sources like other functions, threads or hardware interrupts and by the programmer itself</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1700,7 +1700,10 @@
 <pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div></li>
+<li>
+<p>Great use case for <strong>Memory Mapped Registers</strong> like GPIO ports, sensors, onboard LEDs etc. Compiler optimization is disabled for <code>foo</code></p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1732,7 +1735,7 @@
 </ul>
 <h2 id="const-and-volatile">const &amp; volatile</h2>
 <ul>
-<li><strong>pointed address</strong> can&rsquo;t be changed. Value inside that address is <strong>volatile</strong>. That means compiler optimization not allowed for <code>foo</code> and data can be changed by programmer, other functions, other threads and hardware interrupts</li>
+<li><strong>pointed address</strong> can&rsquo;t be changed. Value inside that address is <strong>volatile</strong>. That means compiler optimization is not allowed for <code>foo</code> and data can be changed by programmer, other functions, other threads and hardware interrupts</li>
 </ul>
 <!--listend-->
 <div class="highlight"><div class="chroma">
@@ -2077,17 +2080,17 @@
 <nav class="pagination-single">
   
     
-      <a href="https://savolla.github.io/posts/html-cheat-sheet/" class="pagination-single__left">
+      <a href="https://savolla.github.io/posts/cracking-the-coding-interview-notes/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">HTML Cheat Sheet</div>      
+        <div class="pagination-single__left-title">Cracking The Coding Interview Notes</div>      
       </a>
     
     <div class="grow"></div>
     
-      <a href="https://savolla.github.io/posts/css-cheat-sheet/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">CSS Cheat Sheet</div>
+      <a href="https://savolla.github.io/posts/code-complete-notes/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">Code Complete Notlarım</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>

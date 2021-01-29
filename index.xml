@@ -101,6 +101,27 @@ Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one fun
       </item>
       
       <item>
+        <title>const &amp; volatile</title>
+        <link>https://savolla.github.io/posts/const-and-volatile/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/const-and-volatile/</guid>
+        <description>const   const in the following code indicates that foo is read-only value. And can&amp;rsquo;t be changed by programmer and other functions or threads
+1  int const foo;   here is how to read the upper code;
+ foo is a constant integer value
+   This is the example of constant pointer. This means that the pointed address is fixed and cannot be changed but the value in that address can be changed</description>
+        
+        <dc:creator>[savolla]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Cracking The Coding Interview Notes</title>
         <link>https://savolla.github.io/posts/cracking-the-coding-interview-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -163,27 +184,6 @@ in html file,
 put your css code inside style tags
 1 2 3 4 5 6 7  &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3 { color : red; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt;     how comments look in css?
 1  /* this is a comment */     change h1,h2 and h3 at the same selector?</description>
-        
-        <dc:creator>[savolla]</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Good Old Friends const &amp; volatile</title>
-        <link>https://savolla.github.io/posts/const-and-volatile/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>savolla@protonmail.com (savolla)</author>
-        
-        <guid>https://savolla.github.io/posts/const-and-volatile/</guid>
-        <description>const   const in the following code indicates that foo is read-only value. And can&amp;rsquo;t be changed by programmer and other functions or threads
-1  int const foo;   here is how to read the upper code;
- foo is a constant integer value
-   This is the example of constant pointer. This means that the pointed address is fixed and cannot be changed but the value in that address can be changed</description>
         
         <dc:creator>[savolla]</dc:creator>
         
