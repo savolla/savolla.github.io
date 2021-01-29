@@ -1589,8 +1589,13 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <h2 id="const">const</h2>
-<ul>
+      <h2 id="cheat-sheet">Cheat Sheet</h2>
+<figure>
+    <img src="/ox-hugo/const-volatile-cheat-sheet.png"/> 
+</figure>
+
+<h2 id="const">const</h2>
+<ol>
 <li>
 <p><code>const</code> in the following code indicates that <code>foo</code> is <strong>read-only</strong> value. And can&rsquo;t be changed by programmer and other functions or threads</p>
 <div class="highlight"><div class="chroma">
@@ -1598,7 +1603,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>here is how to read the upper code;</p>
@@ -1613,7 +1618,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="o">*</span><span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="o">*</span><span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><table>
@@ -1646,7 +1651,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">const</span> <span class="o">*</span><span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">const</span> <span class="o">*</span><span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><table>
@@ -1679,7 +1684,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">const</span> <span class="o">*</span><span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">const</span> <span class="o">*</span><span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>here is how to read the upper code;</p>
@@ -1687,9 +1692,9 @@
 <p>foo is a <strong>constant</strong> pointer of <strong>constant</strong> integer value</p>
 </blockquote>
 </li>
-</ul>
+</ol>
 <h2 id="volatile">volatile</h2>
-<ul>
+<ol>
 <li>
 <p>No optimization, value inside <code>foo</code> can change <strong>unexpectedly</strong> by another sources like other functions, threads or hardware interrupts and by the programmer itself</p>
 <div class="highlight"><div class="chroma">
@@ -1697,7 +1702,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -1708,19 +1713,18 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">volatile</span> <span class="o">*</span><span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">volatile</span> <span class="o">*</span><span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>Following code examples have very <strong>rare</strong> use cases. They almost never used</li>
-</ul>
-<!--listend-->
+</div></li>
+<li>
+<p>Following code examples have very <strong>rare</strong> use cases. They almost never used</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="o">*</span><span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="o">*</span><span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -1728,15 +1732,15 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c">  <span class="kt">int</span> <span class="k">volatile</span> <span class="o">*</span><span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
+<pre class="chroma"><code class="language-c" data-lang="c">   <span class="kt">int</span> <span class="k">volatile</span> <span class="o">*</span><span class="k">volatile</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
-</ul>
+</ol>
 <h2 id="const-and-volatile">const &amp; volatile</h2>
-<ul>
+<ol>
 <li><strong>pointed address</strong> can&rsquo;t be changed. Value inside that address is <strong>volatile</strong>. That means compiler optimization is not allowed for <code>foo</code> and data can be changed by programmer, other functions, other threads and hardware interrupts</li>
-</ul>
+</ol>
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1746,9 +1750,9 @@
 <pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="k">volatile</span> <span class="o">*</span><span class="k">const</span> <span class="n">foo</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
+</div><ol>
 <li>Same as above but this time the data inside address can&rsquo;t be changed by programmer and other software elements like threads, other functions etc. Data can be changed <span class="underline">only by hardware</span>. This is a perfect case for storing sensor data. Which can only be changed by the sensor itself (like temperature sensor) and programmer is allowed only to read the data</li>
-</ul>
+</ol>
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
