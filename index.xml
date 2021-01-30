@@ -270,6 +270,30 @@ by putting the docstring
       </item>
       
       <item>
+        <title>Making Embedded Systems</title>
+        <link>https://savolla.github.io/posts/making-embedded-systems/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>savolla@protonmail.com (savolla)</author>
+        
+        <guid>https://savolla.github.io/posts/making-embedded-systems/</guid>
+        <description>:EXPORT_FILE_NAME: making-embedded-systems-notes
+:EXPORT_TITLE: Making Embedded Systems Notlarım
+:HUGO_BASE_DIR: ~/txt/blog/
+:HUGO_SECTION: en/posts
+:EXPORT_AUTHOR: savolla
+Making Embedded Systems Türkçe kitap özeti
+Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani FLASH (ROM, EEPROM) ve bir işlemcisi olan bütün bir cihazdır DSP: özelleşmiş bir microcontroller&amp;rsquo;dır. ana amacı, gelen analog bir sinyali işleyip ilginç sonuçlar elde etmektir. Normal microcontrollerlardan farkı, matematiksel işlemleri çok daha hızlı yapabiliyor olmasıdır.  Bölüm 1  Gömülü Sistem: tek bir amaç için tasarlanmış, içinde bir yazılım barındıran, genel amaçlı bir bilgisayara göre çok daha az işlem gücü ve hafızaya sahip cihazlara denir.</description>
+        
+        <dc:creator>[Oleksiy Nehlyadyuk]</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Making Embedded Systems Notlarım</title>
         <link>https://savolla.github.io/posts/making-embedded-systems-notes/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
