@@ -1387,7 +1387,7 @@
     "datePublished": "0001-01-01T00:00:00Z",
     "dateModified": "0001-01-01T00:00:00Z",
     "url" : "https://savolla.github.io/posts/tinyml-notes/",
-    "description": ":EXPORT_FILE_NAME: tinyml-book-notes :EXPORT_TITLE: TinyML Kitap Özeti :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts :EXPORT_AUTHOR: savolla   Bölüm 1   Gömülü …",
+    "description": ":EXPORT_FILE_NAME: tinyml-book-notes :EXPORT_TITLE: TinyML Kitap Özeti :HUGO_BASE_DIR: ~/txt/blog/ :HUGO_SECTION: en/posts :EXPORT_AUTHOR: savolla TinyML Kitap Notları …",
     "author": {
       "@type": "Person",
       "name": ["savolla"]
@@ -1571,7 +1571,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Jan 1, 0001 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;5&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;[savolla]</span>
   
@@ -1594,6 +1594,7 @@
 :HUGO_BASE_DIR: ~/txt/blog/<br />
 :HUGO_SECTION: en/posts<br />
 :EXPORT_AUTHOR: savolla</p>
+<h2 id="tinyml-kitap-notları">TinyML Kitap Notları</h2>
 <figure>
     <img src="/ox-hugo/screenshot-97.png"/> 
 </figure>
@@ -1633,7 +1634,7 @@
 <p>Yapay zekayı eğitme kısmını tamamen <a href="https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=OwuxHmxllTwN">Google Colab</a> üstünde gerçekleştireceğiz. Yani süper özelliklere sahip bir bilgisayara ihtiyacımız kalmadı</p>
 </li>
 <li>
-<p>Low power bir MCU&rsquo;da (1 mW gibi) gidip de 10 mW tüketen bir kamera sensörü kullanırsanız, kullandığınız low power MCU&rsquo;nun bir anlamı kalmaz</p>
+<p><code>fact</code> Low power bir MCU&rsquo;da (1 mW gibi) gidip de 10 mW tüketen bir kamera sensörü kullanırsanız, kullandığınız low power MCU&rsquo;nun bir anlamı kalmaz. Proje &ldquo;low power&rdquo; olmaktan çıkar yani</p>
 </li>
 </ul>
 <h2 id="bölüm-3">Bölüm 3</h2>
@@ -1654,7 +1655,7 @@
 <p>yapay zeka uygulamalarında kod kalitesinden çok <span class="underline">veri kalitesi</span> önemlidir</p>
 </li>
 <li>
-<p>örnek olarak bir fabrika düşünelim, üretim yapan bir makine var ancak bu makine bazen bozulyor ve tamiri masraflı. bu makinenin sıcaklığını, titreşimi gibi verileri bir süre aldığımızı var sayalım. yeterli miktarda veriye ulaştıktan sonra bir yapay zeka algoritmasını bu verilerle eğitip, makina bozulmaya yakın onu kapatan bir yapay zeka uygulaması yapabiliriz</p>
+<p>örnek olarak bir fabrika düşünelim, üretim yapan bir makine var ancak bu makine bazen bozuluyor ve tamiri masraflı. bu makinenin sıcaklığını, titreşimi gibi verileri bir süre aldığımızı var sayalım. yeterli miktarda veriye ulaştıktan sonra bir yapay zeka algoritmasını bu verilerle eğitip, makina bozulmaya yakın onu kapatan bir yapay zeka uygulaması yapabiliriz</p>
 </li>
 <li>
 <p><strong>training</strong> : yapay zeka kendisine sunulan verileri işleyip öğrenmesine denir. Sonuçta bir model oluşur</p>
@@ -1750,7 +1751,7 @@
 <h3 id="sliding-windowing-technique">Sliding Windowing Technique</h3>
 <ul>
 <li>
-<p>Devamlı olarak gelen veriden bir anlam çıkartmak zordur. Çünkü verinin tamamına ihtiyacımız vardır. Örneğin bir ortalama alacaksak verinin tamamen eldilene kadar beklenilmesi gerekir.</p>
+<p>Devamlı olarak gelen veriden bir anlam çıkartmak zordur. Çünkü verinin tamamına ihtiyacımız vardır. Örneğin bir ortalama alacaksak verinin tamamen elde edilene kadar beklenilmesi gerekir.</p>
 <figure>
     <img src="/ox-hugo/screenshot-94.png"/> 
 </figure>
@@ -1849,6 +1850,49 @@
 <p><strong>dropout</strong>: eğitim sırasında, her <strong>epoch</strong>&lsquo;da rastgele nöronlar arası bağlantıların rast gele koparılması tekniğine verilen isimdir</p>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="train-validate-test">train -&gt; validate -&gt; test</h3>
+<ul>
+<li>
+<p>genelde veri 3 parçaya bölünür;</p>
+<ul>
+<li>%60 Training</li>
+<li>%20 Validation</li>
+<li>%20 Test</li>
+</ul>
+</li>
+<li>
+<p>overfit olan bir modelin validasyon verisiyle sınandığında oluşturduğu grafik. Bu tarz bir grafik oluşuyorsa bilin ki model overfit olmuş;</p>
+<figure>
+    <img src="/ox-hugo/screenshot-98.png"/> 
+</figure>
+
+</li>
+<li>
+<p>overfit olan modeli iyileştirmeye başladığımızda, her seferinde bir validasyon işleminden geçiririz. Bir süre sonra validasyonda başarı sağladığımızda hemen sevinmemek gerekir. çünkü modelimiz validasyon verisini de ezberlemiş olabilir ve validasyona göre de overfit olmuş olabilir. İşte bu yanılgıyı ortadan kaldırmak için bir de <strong>test</strong> datasını kullanırız. Test datasını, modelimizin validasyona göre overfit olup olmadığını anlamak için kullanırız</p>
+</li>
+<li>
+<p>test verisinde de başarılı olan bir model elde ettiğimiz zaman artık Yapay Zeka Modelimiz hazrı demektir ve MCU&rsquo;da çalıştırılabilecek düzeye gelmiş demektir</p>
+</li>
+</ul>
+<h3 id="converting-the-model">Converting the Model</h3>
+<ul>
+<li>
+<p>Yukarıda anlattığımız bütün train, validasyon ve test aşamalarını <strong>normal</strong> Tensorflow ile gerçekleştireceğiz.</p>
+</li>
+<li>
+<p>Modelimiz hazır hale geldikten sonra da Ram ve işlem gücü konusunda gelişmiş bilgisayarlardan daha zayıf olan Mikrodenetleyizimize (MCU) bu modeli çalıştırmak için <strong>Tensorflow Lite</strong> kullanırız</p>
+</li>
+<li>
+<p>Tensorflow Lite, modeli alır ve bir takım optimizasyonlar yapıp modelin daha küçük ve daha hızlı çalışmasını sağlar</p>
+</li>
+<li>
+<p><strong>Converting the Model</strong>&lsquo;dan kastımız da;</p>
+<p>Model &ndash;&gt; Tensorflow Lite &ndash;&gt; MCU uyumlu Model</p>
+</li>
+<li>
+<p>Modeli dönüştürme aşaması gayet hızlı ve kolay bir süreçtir</p>
 </li>
 </ul>
 
