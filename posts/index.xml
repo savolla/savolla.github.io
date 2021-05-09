@@ -85,7 +85,7 @@ Day 1 (Chapter 1. Getting Started)   every c++ program contains at least one fun
         <author>savolla@protonmail.com (savolla)</author>
         
         <guid>https://savolla.github.io/posts/const-and-volatile/</guid>
-        <description>Cheat Sheet   const   const in the following code indicates that foo is read-only value. And can&amp;rsquo;t be changed by programmer and other functions or threads
+        <description>Cheat Sheet  const   const in the following code indicates that foo is read-only value. And can&amp;rsquo;t be changed by programmer and other functions or threads
 1  int const foo;   here is how to read the upper code;
  foo is a constant integer value
    This is the example of constant pointer. This means that the pointed address is fixed and cannot be changed but the value in that address can be changed</description>
@@ -343,7 +343,7 @@ Bölüm 0  microcontroller: kendi içinde, RAM&amp;rsquo;i kod hafızası yani F
   Brutal Death
   Technical Death
   Black Metal
-    I used ATH-M40x Studio headphones for tuning.
+   I used ATH-M40x Studio headphones for tuning.
   </description>
         
         <dc:creator>[savolla]</dc:creator>
@@ -578,7 +578,7 @@ Bölüm 0   Bu kitap, Agile ve Gömülü Sistemlerin harmanlamasıdır
 :HUGO_BASE_DIR: ~/txt/blog/
 :HUGO_SECTION: en/posts
 :EXPORT_AUTHOR: savolla
-TinyML Kitap Notları   Bölüm 1   Gömülü sistemlerde (Cortex-M4) yapay zeka uygulaması yapmak mümkün!
+TinyML Kitap Notları  Bölüm 1   Gömülü sistemlerde (Cortex-M4) yapay zeka uygulaması yapmak mümkün!
   çoğu gömülü sistem yazılımı, new ya da malloc() kullanmaktan kaçınır.
   fact Gömülü sistemlerde heap kullanmak kötü bir fikirdir
   Dynamic memory allocation&amp;rsquo;ın en büyük zararı, zaman içinde RAM&amp;rsquo;i bozmasıdır. bkz: Fragmentation
