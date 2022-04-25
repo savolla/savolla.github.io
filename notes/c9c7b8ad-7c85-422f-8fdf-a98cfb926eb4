@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c9c7b8ad-7c85-422f-8fdf-a98cfb926eb4
+:END:
+#+title: define a variables in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+let name = "savolla";
+#+end_src

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b1a60cc1-eff1-47d7-95fc-58bb8d73defa
+:END:
+#+title: .model file
+#+filetags: :ros:what_is:
+
+*sdf* file that contains only one <model> tag. the purpose is model reuse.

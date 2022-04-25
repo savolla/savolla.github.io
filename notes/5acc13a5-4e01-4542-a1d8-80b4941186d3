@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5acc13a5-4e01-4542-a1d8-80b4941186d3
+:END:
+#+title: gazebo uses model:// syntax when importing models
+#+filetags: :ros:why:
+
+gazebo sets an environment variable called *GAZEBO_MODEL_PATH* at startup. So this is a colon seperated value that tells gazebo where to find models. the model:// syntax represents those values. You can set them manually before launching gazebo.

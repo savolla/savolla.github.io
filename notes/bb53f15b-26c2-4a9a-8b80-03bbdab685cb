@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       bb53f15b-26c2-4a9a-8b80-03bbdab685cb
+:END:
+#+title: commenting in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+fn main() {
+   // this is a comment
+}
+#+end_src

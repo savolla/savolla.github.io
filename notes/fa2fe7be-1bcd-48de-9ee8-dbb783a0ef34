@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fa2fe7be-1bcd-48de-9ee8-dbb783a0ef34
+:END:
+#+title: cProfile
+#+filetags: :what_is:
+
+it is a built-in code profiling library for [[id:4420715b-9509-4d22-bfea-8a95aafb72af][python]]

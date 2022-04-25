@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bf42d8bf-4bf4-4c90-84dc-7731917e7dac
+:END:
+#+title: remove tags from roam notes
+#+filetags: :how_to:
+~SPC m m o T~

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       397fa62e-44bb-42e7-af6b-cacc1dc4418b
+:END:
+#+title: list ros2 executables
+#+filetags: :cmd:ros2:how_to:
+
+#+begin_src sh
+ros2 pkg executables
+#+end_src

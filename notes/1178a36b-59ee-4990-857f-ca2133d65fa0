@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1178a36b-59ee-4990-857f-ca2133d65fa0
+:END:
+#+title: replace strings in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+my_string.replace("old", "new");
+#+end_src

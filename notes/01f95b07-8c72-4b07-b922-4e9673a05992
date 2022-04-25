@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       01f95b07-8c72-4b07-b922-4e9673a05992
+:END:
+#+title: applications of rust
+#+filetags: :rust:fact:
+[[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] can be used in the following applications.
+1. [[id:4a1930a2-6bb4-4fa2-8ad1-1feac8156c9f][systems programming]]
+2. web development [[id:49d63758-c83d-4961-8fdd-74e035513944][web assembly]]

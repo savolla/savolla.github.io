@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       12507ca8-a9cd-466e-a58a-349a34e0b0e2
+:END:
+#+title: start default virtual network in qemu
+#+filetags: :virtualization:how_to:
+
+#+begin_src sh
+sudo virsh net-start default
+#+end_src

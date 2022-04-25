@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1dfd3a63-f5e4-46e6-8ab5-14fb9e84f4d3
+:END:
+#+title: statically typed
+#+filetags: :programming:what_is:
+feature of a programming language which indicates that all variable types must be defined. the example of these languages are [[id:c2a13dcc-2927-4128-aa93-55aa822612eb][C]], [[id:17e1fd53-ea7b-4685-8c36-3b5712ea6aaf][c++]]. see also [[id:3a4d8639-0fd3-4c97-950a-37bb89a11f8e][dynamically typed]] for the exact opposite.

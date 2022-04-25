@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6061e429-a845-4f00-91c2-a34809731fa2
+:END:
+#+title: .world file
+#+filetags: :ros:what_is:
+
+*sdf* formatted file that read by *gzserver*. includes all robots, static objects, sensors etc.

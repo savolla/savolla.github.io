@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2d8a2b73-9c21-4763-8ff4-6ade6d677c70
+:END:
+#+title: rqt_graph
+#+filetags: :tool:ros:what_is:
+[[id:71bdbf8c-de11-4bbe-b639-111b2d32bdf6][ros]] tool that can display active nodes and where those notes are bound

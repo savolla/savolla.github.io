@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e2d3749b-911d-403d-9ea2-af3df580187b
+:END:
+#+title: GAZEBO_MASTER_URI environment variable
+#+filetags: :ros:what_is:
+
+IP and port number of *gzserver*. Clients can also connect to remote servers and run simulations from there. Hence *gzclient* and *gzserver* are not always need to run on the same machine.

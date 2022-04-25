@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       70646e14-5c14-435e-ba91-285305139c1d
+:END:
+#+title: launch redshift
+#+filetags: :redshift:how_to:
+
+if your location services are turned off then you might want to manually set your longtitude and lattitudes on a redshift file..
+
+#+begin_src sh
+mkdir ~/.config/redshift
+touch ~/.config/redshift/redshift.conf
+#+end_src
+
+Now [[id:463253e9-e3c2-4e93-aedd-ab405ce56000][find your location's latitude and longitude]]  enter your information manually like this.
+#+begin_src sh
+[redshift]
+location-provider=manual
+
+[manual]
+lat=48.864716
+lon=2.349014
+#+end_src
+
+Now run redshift

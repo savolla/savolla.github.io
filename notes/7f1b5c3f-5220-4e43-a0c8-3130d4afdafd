@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7f1b5c3f-5220-4e43-a0c8-3130d4afdafd
+:END:
+#+title: spinning
+#+filetags: :ros:what_is:
+[[id:71bdbf8c-de11-4bbe-b639-111b2d32bdf6][ros]] jargon where a [[id:249078b6-e2a3-41d0-a328-756868d2cdfd][subscriber]] listens a [[id:81f62b86-20f7-499e-8c44-a9a1994ead6d][publisher]] and the data between them is *spinning*

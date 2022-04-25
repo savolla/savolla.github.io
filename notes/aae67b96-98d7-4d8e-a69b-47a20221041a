@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       aae67b96-98d7-4d8e-a69b-47a20221041a
+:END:
+#+title: format strings in python
+#+filetags: :snippet:python:how_to:
+#+begin_src python :results output
+a = 1
+b = 2
+c = 3
+print("easy as {}, {}, {}!".format(a,b,c))
+#+end_src
+
+#+RESULTS:
+: easy as 1, 2, 3!

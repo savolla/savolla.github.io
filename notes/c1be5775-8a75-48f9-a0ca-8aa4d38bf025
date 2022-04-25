@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c1be5775-8a75-48f9-a0ca-8aa4d38bf025
+:END:
+#+title: gazebo world files
+#+filetags: :ros:where:
+
+#+begin_src sh
+ls /usr/share/gazebo-7/worlds
+#+end_src

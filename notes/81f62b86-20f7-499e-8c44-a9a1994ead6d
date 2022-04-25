@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       81f62b86-20f7-499e-8c44-a9a1994ead6d
+:END:
+#+title: publisher
+#+filetags: :what_is:
+A node that can produce some kind of output. and [[id:249078b6-e2a3-41d0-a328-756868d2cdfd][subscriber]]s can listen it's output

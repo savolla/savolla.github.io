@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4a148e20-39c4-4d52-8fca-d190f0c550e9
+:END:
+#+title: disable table of content toc in org mode
+#+filetags: :org:how_to:
+
+#+begin_src elisp
+#+OPTIONS: toc:nil
+#+end_src

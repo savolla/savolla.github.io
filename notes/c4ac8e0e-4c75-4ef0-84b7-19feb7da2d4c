@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       c4ac8e0e-4c75-4ef0-84b7-19feb7da2d4c
+:END:
+#+TITLE: orphan notes
+#+STARTUP: overview
+#+ROAM_TAGS: index
+#+CREATED: [2021-07-05 Pzt]
+#+LAST_MODIFIED: [2021-07-05 Pzt 23:35]
+
+#+begin_quote
+these notes are not belong any category (yet).
+#+end_quote
+
+* facts
+:PROPERTIES:
+:ID:       d05efbd1-ef67-41d5-9465-37fa766c958e
+:END:
+** tez yazımı
+Tez çalışmasının ille de bir proje olması gerekmez. Bir şeyin önemini vs. anlatmak da bir tez konusu olabilir. Mesela *On the importance of ...* şeklinde bir başlık da tez olabilir
+** knowing a programming language
+Knowing a programming language requires;
+1. What makes that language different than those you already know?
+2. which problems that language can solve *better* than other languages
+** teachers and books
+teachers and books take everying equally. They don't know what to skip or don't know what is less important or very important
+** good engineer and bad engineer
+The biggest difference between good engineer and not so good engineer is that good engineer knows where to look to find the information.
+** what is CPU actually is?
+CPU just moves data around and does some math and logic on that data. That's all
+** low power MCUs
+Piyasada artık o kadar düşük güç harcayan MCU'lar var ki, MCU'nun pili tüketmesi, pilin hiç çalışmadan doğal koşullarla deşarz olmasına yakın bir zaman alır.
+* howto
+:PROPERTIES:
+:ID:       1571765a-fa8a-47fe-aae1-eae176723f3b
+:END:
+* tips
+:PROPERTIES:
+:ID:       c7b27851-8cdc-44e7-a426-c7228e72f1f2
+:END:
+** when you learn new things
+When you learn new things, never think like this;
+1. Instructor/Teacher is bad
+2. this topic is beyond me
+3. I think I'm stupid
+4. the book/course is bad
+instead think like this;
+#+begin_quote
+What I'm working on is really hard. I'm still in the learning phase and even those who know this subject can sometimes make mistakes, how can I understand everything right away when I'm just at the beginning of the road?
+#+end_quote
+
+** screw homeworks
+Homeworks are always crafted. They expect you to apply some sort of *trick*. If you find that trick then you solve the homework. Use a real world problem to learn something
+** how to learn anything
+When learning things don't follow a book. Beacuse books take everything equally. They don't know what's really important because writers must write a complete book and cover everything. Throw that book away and find something to build. In first project you will look up internet for almost everything and that project will take 10 times longer than normal. Second project will take 5 times longer and so on. You will able to finish your 5th project without looking up anywhere because you will have *experience*. And this is how you learn anything.
+** when to use disassembly?
+if your compiler did =-O3= optimization and messed something up and you don't know where is the bug, open up disassembly and debug here. use gdb or radare2
+** when learning microcontrollers
+starting with very low level microcontrollers is better (other than Arduino) because it teaches very basic stuff. Arduino is ready to use and it is so abstracted. You want to learn *basics* when learning
+* snippet
+:PROPERTIES:
+:ID:       a31bafa5-fe60-4510-bc5f-b08e1061add6
+:END:
+
+* concept
+:PROPERTIES:
+:ID:       78af8513-20ad-4467-ae10-e14c2825fa61
+:END:
+* list of
+:PROPERTIES:
+:ID:       24f8292e-4427-4922-ad6a-96a509dc631c
+:END:

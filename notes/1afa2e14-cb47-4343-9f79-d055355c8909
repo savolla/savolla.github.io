@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1afa2e14-cb47-4343-9f79-d055355c8909
+:END:
+#+title: recursively search files in Doom Emacs
+#+filetags: :how_to:
+~SPC f l~

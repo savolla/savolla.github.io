@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       81626ea3-1161-4e6b-aad6-735f8a73d980
+:END:
+#+title: insert url link in org mode
+#+filetags: :emacs:how_to:
+~SPC m a u~

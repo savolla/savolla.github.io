@@ -1,0 +1,16 @@
+# Title must come at the end
+:PROPERTIES:
+:ID:       7e917f01-7cb5-43a1-8ef4-d0eec5febfe7
+:END:
+#+TITLE: things make someone fool
+#+STARTUP: overview
+# Find tags by asking;
+# 1) Topic tag: What are related words to this note?
+# 2) Context tag: What is the main idea of this note?
+#+ROAM_TAGS: argument signs stupidity permanent
+#+ROAM_ALIAS: "signs of stupidity"
+#+CREATED: [2021-06-13 Paz]
+#+LAST_MODIFIED: [2021-06-13 Paz 20:32]
+
+# You can link multiple Concepts and Permanent Notes!
+the opposite of [[id:2e2b39dd-eee2-4e9f-8633-edd920cb07a9][things make someone intelligent]]

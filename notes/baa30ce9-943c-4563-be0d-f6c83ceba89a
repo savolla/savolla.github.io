@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       baa30ce9-943c-4563-be0d-f6c83ceba89a
+:END:
+#+title: print unicode characters in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+fn main() {
+    let face = '\u{1f600}';
+    println!("{}", face );
+}
+#+end_src
+
+#+RESULTS:
+: 😀

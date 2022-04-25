@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       aa120673-fe84-4e27-b31f-caa298b7b8e4
+:END:
+#+title: get message type
+#+filetags: :cmd:ros:how_to:
+#+begin_src sh
+ros2 interface shot $TOPC_MESSAGE
+#+end_src

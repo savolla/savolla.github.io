@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       6052c6aa-babf-4889-ba3e-d00d91d9aa3e
+:END:
+#+title: use profiling function
+#+filetags: :python:how_to:
+
+After we create a [[id:92ee769b-8c4c-403c-92df-731a1dd56367][Python profiling function]] we go to the *definition of the function* we want to profile and put the [[id:96d6accb-3532-46c7-a3a3-ddf96b00871f][Python decorator]] above that function like this;
+
+#+begin_src python
+@profiler
+def slowFunction():
+    # some code
+#+end_src

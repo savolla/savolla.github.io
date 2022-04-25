@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       7ee34dc4-2944-4d87-9444-756c83cc2d98
+:END:
+#+title: insert url link in markdown
+#+filetags: :markdown:how_to:
+
+#+begin_src markdown
+[description](url)
+#+end_src

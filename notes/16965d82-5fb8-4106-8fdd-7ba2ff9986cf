@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       16965d82-5fb8-4106-8fdd-7ba2ff9986cf
+:END:
+#+title: get information about running ros node
+#+filetags: :cmd:ros:how_to:
+#+begin_src sh
+ros2 node info $NODE_NAME
+#+end_src

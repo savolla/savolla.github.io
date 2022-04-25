@@ -1,0 +1,90 @@
+:PROPERTIES:
+:ID:       d07772aa-e40d-4502-b561-13ae3c568685
+:END:
+#+title: rust
+#+filetags: :cmap:rust:what_is:
+#+ATTR_ORG: :width 300
+[[./img/rust-crab.png]]
+[[id:4a1930a2-6bb4-4fa2-8ad1-1feac8156c9f][systems programming]] language that is very promising in terms of reliability and efficiency.
+
+* facts
+:PROPERTIES:
+:ID:       02c13f53-b4b4-4253-9f2f-aaa0f32f31a5
+:END:
+1. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] can be used for [[id:49d63758-c83d-4961-8fdd-74e035513944][web assembly]]
+2. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] does not have [[id:d9984421-2322-4b04-934d-dfcfa988e629][garbage collector]]
+3. in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] you don't have to do [[id:583a4171-110e-46d9-a363-dc57538cfbe2][memory management]].
+   a. if the [[id:88bba984-f6bc-4733-a182-98fa71ee8a56][memory heap]] is close to be full, [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] will look for some unused variables and free up memory for us.
+4. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] has package manager called [[id:65e84f54-e84a-4425-a1bc-7936887e6e7c][cargo]]
+5. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] comes with some utilities like [[id:bec3f201-4c68-4ad6-9f29-3b2f3b1cc3b6][rustup]], [[id:65e84f54-e84a-4425-a1bc-7936887e6e7c][cargo]] and [[id:207cd9e6-16ff-485b-9a28-f3602e13b5a7][rustc]]
+6. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] files end with .rs extension
+7. when we [[id:ab8882f9-739e-4e8b-938f-36bcfdbfc615][create rust project using cargo]], the [[id:1c2b92b8-7abc-406c-bf41-d2e02aa18f24][git]] folder is already created
+8. when we [[id:61b7a734-2d02-48bd-8317-3111d7f53302][run cargo project]], [[id:65e84f54-e84a-4425-a1bc-7936887e6e7c][cargo]] builds and runs the project
+9. [[id:65e84f54-e84a-4425-a1bc-7936887e6e7c][cargo]] optimizes the code when we [[id:a16e5a60-4e04-48bc-b402-fb1c08814a70][build rust for production]]
+10. you can't print a numeric value directly in rust
+    a. you have to do formatting before printing numeric values. Formatting in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] is similar to [[id:aae67b96-98d7-4d8e-a69b-47a20221041a][format strings in python]]
+11. [[id:82046a94-94d4-4dba-91ab-6010508497a3][positional arguments in rust]] work with indexes
+12. in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] variables are [[id:21909f2c-513f-4c65-9e4c-374db5db9800][immutable]] by default
+13. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] is a [[id:ba333471-5ce5-4cb6-88f3-db3a98ed3552][block scopped language]]
+14. when we [[id:d7d944dd-50e0-4e7c-bac3-8a722c47d429][define constant variables in rust]] we must explicitly specify the type
+15. arrays in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] are fixed sized. there are vectors for growable container data types
+16. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] can determine the type of a variable depending on it's value and how we use it. but nevertheless [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] is a [[id:1dfd3a63-f5e4-46e6-8ab5-14fb9e84f4d3][statically typed]] language
+17. in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] [[id:18c3c2d6-ce8f-422f-8315-92313d792593][snake case]] is a convention
+18. rust has emoji support
+19. there are two kinds of strings in rust. one is mutable and other one is [[id:21909f2c-513f-4c65-9e4c-374db5db9800][immutable]]
+20. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] tuples can contain maximum 12 elements
+21. in [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] tuples can contain different variable types while arrays must contain the same type of elements
+
+* how to
+:PROPERTIES:
+:ID:       e0d2923e-629b-4ad3-bcda-3c980f54210d
+:END:
+1. [[id:909da50f-cd50-4dc2-be39-f9da9f84c3e7][install rust]]
+2. [[id:610937a8-eacf-4d3b-881d-a0d05e87f05b][update rust]]
+3. [[id:1897dcd5-1ada-46dc-9b11-a182ee95f49e][compile rust program]]
+4. [[id:ab8882f9-739e-4e8b-938f-36bcfdbfc615][create rust project using cargo]]
+5. [[id:61b7a734-2d02-48bd-8317-3111d7f53302][run cargo project]]
+6. [[id:a16e5a60-4e04-48bc-b402-fb1c08814a70][build rust for production]]
+
+* snippets
+:PROPERTIES:
+:ID:       02b76635-402c-4513-b7fd-22b4dba796e3
+:END:
+1. [[id:275b8fe4-e06c-46d2-b19a-2298b6ee8f07][hello world in rust]]
+2. [[id:bb53f15b-26c2-4a9a-8b80-03bbdab685cb][commenting in rust]]
+3. [[id:68dec594-06c3-4c3f-9441-3f49dfa9c0ca][multi line comment in rust]]
+4. [[id:82046a94-94d4-4dba-91ab-6010508497a3][positional arguments in rust]]
+5. [[id:91e81b18-8b52-46f9-bee1-9121e19c5810][named arguments in rust]]
+6. [[id:cb0623aa-908c-4cda-ac19-468d275f04e4][print number bases of a value in rust]]
+7. [[id:c9c7b8ad-7c85-422f-8fdf-a98cfb926eb4][define a variables in rust]]
+8. [[id:202ff489-4fb6-4eaf-88a8-b63df6e82333][include rust files as modules]]
+9. [[id:6da3e216-f565-497e-8105-fbf3fcbfc7f5][create mutable variables]]
+10. [[id:d7d944dd-50e0-4e7c-bac3-8a722c47d429][define constant variables in rust]]
+11. [[id:2f61253c-8e67-46fe-a736-83922ce5c85e][assign multiple variables at once]]
+12. [[id:03bf62fa-b828-49a9-8a05-b2513139b18a][assign expression results to variables in rust]]
+13. [[id:baa30ce9-943c-4563-be0d-f6c83ceba89a][print unicode characters in rust]]
+14. [[id:888ef9e0-4773-46f3-b51f-a712b8868a57][define an immutable string in rust]]
+15. [[id:5e1551da-748d-4e42-a5f0-dde9b4a280e3][define mutable string in rust]]
+16. [[id:f6181659-93a3-4d85-a00a-d7fbbba8bf1b][concat two strings in rust]]
+17. [[id:b753bda5-f12e-4df0-aea5-2a83b9d5da35][get the length of a string in rust]]
+18. [[id:1178a36b-59ee-4990-857f-ca2133d65fa0][replace strings in rust]]
+19. [[id:8b776bd0-cc6f-4377-afb7-07a78d6ab7a8][print words of a string]]
+
+* concepts
+:PROPERTIES:
+:ID:       a73bb4ee-b396-4c85-bc76-c57252fe5125
+:END:
+1. [[id:bec3f201-4c68-4ad6-9f29-3b2f3b1cc3b6][rustup]]
+2. [[id:65e84f54-e84a-4425-a1bc-7936887e6e7c][cargo]]
+3. [[id:207cd9e6-16ff-485b-9a28-f3602e13b5a7][rustc]]
+
+* list of
+:PROPERTIES:
+:ID:       46b267d0-4246-4827-b1f1-79b1cd3f56d0
+:END:
+1. [[id:d928cde2-3535-4ad0-b0d1-29925f1c1aa4][primitive types in rust]]
+
+* TODO left at 47:20 from rust tutorial
+#+begin_src sh :results none
+mpv https://invidious.privacy.gd/watch?v=zF34dRivLOw
+#+end_src

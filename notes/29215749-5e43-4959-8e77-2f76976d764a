@@ -1,0 +1,21 @@
+# Title must come at the end
+:PROPERTIES:
+:ID:       29215749-5e43-4959-8e77-2f76976d764a
+:END:
+#+TITLE: ledder diyagramını çizdim
+#+STARTUP: overview
+# Find tags by asking;
+# 1) Topic tag: What are related words to this note?
+# 2) Context tag: What is the main idea of this note?
+#+ROAM_TAGS: permanent
+#+CREATED: [2021-06-17 Prş]
+#+LAST_MODIFIED: [2021-06-17 Prş 23:03]
+
+# You can link multiple Concepts and Permanent Notes!
+TIA Portal'de ledder diyagramı çizmek çok kolay. Project View (solda) menüsünden "Main Block"'u bulup çift tıkla. Menü geldiğinde sarı yıldız olan icona tıklayıp en çok kullanılan sembolleri görüntüle ve ordan sürükle bırak. [[file:20210617230834-permanent-kontakları_isimlendir.org][Kontakları isimlendir]]. Eğer çıktı ya da giriş olmayacak bir kontakın devre içinde kullanmak istersen, mesela NOR kapısı çizeceksin ve OR'a girecek olan inputları tanımladın ve ordan çıkanı NOT kapısında sokacaksın. İşte o zaman "m0.0" kullan.
+
+ - see also ::
+# Continuation or Related notes here
+    + [[file:20210614003742-keyword-permanent_notes.org][Permanent Notes]]
+
+- references ::

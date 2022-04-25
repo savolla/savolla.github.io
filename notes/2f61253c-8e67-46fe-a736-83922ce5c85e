@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2f61253c-8e67-46fe-a736-83922ce5c85e
+:END:
+#+title: assign multiple variables at once
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+let (var0, var1, var2) = ("savolla", 3.14159265, 20);
+#+end_src

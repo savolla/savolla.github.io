@@ -1,0 +1,21 @@
+# Title must come at the end
+:PROPERTIES:
+:ID:       756ad9a0-92da-40f5-ac19-26d9b60f4eb1
+:END:
+#+TITLE: motor sürücüsünü kullanmayı öğrendim
+#+STARTUP: overview
+# Find tags by asking;
+# 1) Topic tag: What are related words to this note?
+# 2) Context tag: What is the main idea of this note?
+#+ROAM_TAGS: permanent
+#+CREATED: [2021-06-17 Prş]
+#+LAST_MODIFIED: [2021-06-17 Prş 21:57]
+
+# You can link multiple Concepts and Permanent Notes!
+Kullandığım motor sürücüsü, Mitsubishi FR-740. Bana 520 sayfalık bir [[TODO][datasheet]] verildi. Bu datasheeti akşama kadar okumam ve incelemem istendi. Akşama kadar [[file:20210617233549-permanent-mitsubishi_fr_740_hakkında_bir_cok_sey_ogrendim.org][Mitsubishi FR-740 hakkında bir çok şey öğrendim]]. En sonunda da motoru denemeden önce [[file:20210617234440-permanent-yıldız_baglantı.org][yıldız bağlantı]] ve [[file:20210617234450-permanent-ucgen_baglantı.org][üçgen bağlantı]] öğrendim
+
+ - see also ::
+# Continuation or Related notes here
+    + [[file:20210614003742-keyword-permanent_notes.org][Permanent Notes]]
+
+- references ::

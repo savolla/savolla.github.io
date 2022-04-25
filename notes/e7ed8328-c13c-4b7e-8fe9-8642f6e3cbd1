@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e7ed8328-c13c-4b7e-8fe9-8642f6e3cbd1
+:END:
+#+title: search string in a project
+#+filetags: :emacs:how_to:
+
+~SPC /~

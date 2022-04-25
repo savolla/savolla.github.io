@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6da3e216-f565-497e-8105-fbf3fcbfc7f5
+:END:
+#+title: create mutable variables
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+let mut mutable_var = 12;
+mutable_var = 239 // variable will be changed!
+#+end_src

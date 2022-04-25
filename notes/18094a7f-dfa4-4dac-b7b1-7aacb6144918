@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       18094a7f-dfa4-4dac-b7b1-7aacb6144918
+:END:
+#+title: open a robot in gazebo
+#+filetags: :ros:how_to:
+
+You first need to create a [[id:6061e429-a845-4f00-91c2-a34809731fa2][.world file]] and mention your robot there
+#+begin_src sh
+gazebo your_robot.world
+#+end_src

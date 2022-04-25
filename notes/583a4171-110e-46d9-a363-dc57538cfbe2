@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       583a4171-110e-46d9-a363-dc57538cfbe2
+:END:
+#+title: memory management
+#+filetags: :what_is:
+* TODO fill out this
+
+* facts
+1. in [[id:c2a13dcc-2927-4128-aa93-55aa822612eb][C]] and [[id:17e1fd53-ea7b-4685-8c36-3b5712ea6aaf][c++]] you have to do [[id:583a4171-110e-46d9-a363-dc57538cfbe2][memory management]] by yourself. Which makes programming tedeous

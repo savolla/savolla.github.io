@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       610937a8-eacf-4d3b-881d-a0d05e87f05b
+:END:
+#+title: update rust
+#+filetags: :rust:how_to:
+#+begin_src sh
+rustup update
+#+end_src

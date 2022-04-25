@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       c00f58cc-373b-4636-ba38-6d6a515e7532
+:END:
+#+title: configure deft
+#+filetags: :how_to:
+1. specify where to look for your notes by giving it a directory
+   open up *config.el* file by doing ~SPC f p~ and insert the following lines
+   #+begin_src elisp
+(setq deft-directory "~/path/to/notes"
+      deft-extensions '("org" "txt")
+      deft-recursive t)
+   #+end_src
+2. refresh Doom Emacs
+   ~SPC h r r~

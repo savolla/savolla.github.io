@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       909da50f-cd50-4dc2-be39-f9da9f84c3e7
+:END:
+#+title: install rust
+#+filetags: :rust:how_to:
+#+begin_src sh
+curl https://sh.rustup.rs -sSf | sh
+#+end_src

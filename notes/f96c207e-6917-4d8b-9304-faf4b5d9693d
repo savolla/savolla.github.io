@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       f96c207e-6917-4d8b-9304-faf4b5d9693d
+:END:
+#+title: ros2
+#+filetags: :what_is:
+
+* facts
+:PROPERTIES:
+:ID:       e741dc9d-ee36-4ba7-a51d-8c6a0c9c7c9a
+:END:
+1. node names in ros can contain slashes in their names "/some_node". This means it's a *global node*. and when you want to mention this particular node you always have to *include the slash*
+2. when publishing data to other topics always use YAML syntax and always *use one space after colon :*
+* how to
+:PROPERTIES:
+:ID:       1125863f-f14a-4fa2-9bd3-e2a4fc3c3b2e
+:END:
+1. [[id:1cddd07e-917e-4e7d-bea6-2f71733babe7][list installed ros packages]]
+2. [[id:397fa62e-44bb-42e7-af6b-cacc1dc4418b][list ros2 executables]]
+3. [[id:5b346662-eaeb-47d2-a449-bb84357ddbe3][list active ros nodes]]
+4. [[id:16965d82-5fb8-4106-8fdd-7ba2ff9986cf][get information about running ros node]]
+5. [[id:4a2fce23-2a2c-409d-afe7-dd7943800872][list active ros topics]]
+6. [[id:480df5a9-507f-41bb-8ae4-ec7ef6eef3f4][listen a ros topic]]
+7. [[id:97cb64a2-cb4c-4f1e-b154-9e704d491cbf][get information about ros topic]]
+8. [[id:aa120673-fe84-4e27-b31f-caa298b7b8e4][get message information]]
+9. [[id:201e18ff-a0d5-423b-b0c3-c55cb981a830][publish a message to a ros topic]]
+* snippets
+:PROPERTIES:
+:ID:       305b92f7-3a7d-4710-aefc-9ae83c6d692c
+:END:
+* concepts
+:PROPERTIES:
+:ID:       5af67978-32cc-4444-8629-5bf84d3b13ef
+:END:
+1. [[id:7f1b5c3f-5220-4e43-a0c8-3130d4afdafd][spinning]]
+2. [[id:81f62b86-20f7-499e-8c44-a9a1994ead6d][publisher]]
+3. [[id:249078b6-e2a3-41d0-a328-756868d2cdfd][subscriber]]
+4. [[id:2d8a2b73-9c21-4763-8ff4-6ade6d677c70][rqt_graph]]
+* list of
+:PROPERTIES:
+:ID:       6b6dba12-7468-4611-bd10-b71cd1668d06
+:END:
+* TODO
+left at [[https://invidious.fdn.fr/watch?v=qFVnDFLZJWQ&list=PLNw2RD-1J5YZbyWXCpas9zPJldfphPi4Q&index=3][here]]

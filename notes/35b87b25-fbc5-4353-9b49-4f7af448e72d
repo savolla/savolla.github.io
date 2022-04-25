@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       35b87b25-fbc5-4353-9b49-4f7af448e72d
+:END:
+#+title: change system language in linux
+#+filetags: :linux:how_to:
+
+#+begin_src sh
+export ENGLISH="en_US.UTF-8"
+export TURKISH="tr_TR.UTF-8"
+
+sudo localectl set-locale LANG=$ENGLISH
+sudo locale-gen
+echo -e "You need to reboot now."
+#+end_src

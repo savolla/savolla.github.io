@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       49d63758-c83d-4961-8fdd-74e035513944
+:END:
+#+title: web assembly
+#+filetags: :what_is:
+Also known as WASM. It is an efficient byte code for the web. It allows us to build very fast, secure and reliable applications. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] and [[id:17e1fd53-ea7b-4685-8c36-3b5712ea6aaf][c++]] can be used for it.

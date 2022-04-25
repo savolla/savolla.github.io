@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d7d944dd-50e0-4e7c-bac3-8a722c47d429
+:END:
+#+title: define constant variables in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+const PI: f32 = 3.14159265;
+#+end_src

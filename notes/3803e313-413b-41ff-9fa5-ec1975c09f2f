@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3803e313-413b-41ff-9fa5-ec1975c09f2f
+:END:
+#+title: auto confirm package installations with pacman
+#+filetags: :linux:how_to:
+
+#+begin_src sh
+pacman -S $PACKAGE_TO_INSTALL --noconfirm
+#+end_src

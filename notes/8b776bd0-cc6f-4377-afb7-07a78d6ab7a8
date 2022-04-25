@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       8b776bd0-cc6f-4377-afb7-07a78d6ab7a8
+:END:
+#+title: print words of a string
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+fn main() {
+    let my_string = "one two three four";
+    for word in my_string.split_whitespace() {
+        println!("{}", word );
+    }
+}
+#+end_src
+
+#+RESULTS:
+: one
+: two
+: three
+: four

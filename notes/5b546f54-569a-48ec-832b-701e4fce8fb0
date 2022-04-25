@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5b546f54-569a-48ec-832b-701e4fce8fb0
+:END:
+#+title: add tags to roam notes
+#+filetags: :how_to:
+~SPC m m o t~

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a8257a1a-0e77-475b-aee6-339fac87bdfb
+:END:
+#+title: create rss feed from youtube channel
+#+filetags: :linux:how_to:
+
+1. the prefix string should be the following
+   #+begin_quote
+https://www.youtube.com/feeds/videos.xml?channel_id=
+   #+end_quote
+2. go to the youtube channel
+3. right click and *view page source*
+4. search for this string
+   #+begin_quote
+channelID":
+   #+end_quote
+5. copy the id
+6. append to the prefix and save
+
+check [[https://www.youtube.com/watch?v=cpw56d4rUVg][this]] video to learn more

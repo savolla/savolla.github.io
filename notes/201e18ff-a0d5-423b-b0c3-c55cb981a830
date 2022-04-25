@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       201e18ff-a0d5-423b-b0c3-c55cb981a830
+:END:
+#+title: publish a message to a ros topic
+#+filetags: :ros:cmd:how_to:
+
+- Publish *continiously*
+#+begin_src sh
+ros2 topic pub $TOPIC_NAME $MSG_TYPE "$YAML_STRING"
+#+end_src
+
+- Publish *once*
+#+begin_src sh
+ros2 topic pub --once $TOPIC_NAME $MSG_TYPE "$YAML_STRING"
+#+end_src
+
+- Publish in *custom hertz*
+#+begin_src sh
+ros2 topic pub --rate 1 $TOPIC_NAME $MSG_TYPE "$YAML_STRING"
+#+end_src

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       91e81b18-8b52-46f9-bee1-9121e19c5810
+:END:
+#+title: named arguments in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+fn main() {
+   println!("Hey this is {name} and I like {activity}", name="savolla", activity="coding");
+}
+#+end_src
+
+#+RESULTS:
+: Hey this is savolla and I like coding

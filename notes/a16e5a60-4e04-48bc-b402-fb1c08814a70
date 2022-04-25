@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a16e5a60-4e04-48bc-b402-fb1c08814a70
+:END:
+#+title: build rust for production
+#+filetags: :rust:how_to:
+#+begin_src sh
+cargo build --release
+#+end_src

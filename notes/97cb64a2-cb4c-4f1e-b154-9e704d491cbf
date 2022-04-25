@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       97cb64a2-cb4c-4f1e-b154-9e704d491cbf
+:END:
+#+title: get information about ros topic
+#+filetags: :cmd:ros:how_to:
+#+begin_src sh
+ros2 topic info $YOUR_TOPIC
+#+end_src

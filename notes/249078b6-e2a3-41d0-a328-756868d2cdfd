@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       249078b6-e2a3-41d0-a328-756868d2cdfd
+:END:
+#+title: subscriber
+#+filetags: :ros:what_is:
+[[id:71bdbf8c-de11-4bbe-b639-111b2d32bdf6][ros]] node that can connect to [[id:81f62b86-20f7-499e-8c44-a9a1994ead6d][publisher]]s and listen their outputs

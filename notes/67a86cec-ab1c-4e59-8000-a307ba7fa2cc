@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       67a86cec-ab1c-4e59-8000-a307ba7fa2cc
+:END:
+#+title: list available python versions in pyenv
+#+filetags: :python:how_to:
+
+#+begin_src sh
+pyenv-install --list
+#+end_src

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       03bf62fa-b828-49a9-8a05-b2513139b18a
+:END:
+#+title: assign expression results to variables in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+let is_greater = 5 > 10; // false is assigned
+#+end_src

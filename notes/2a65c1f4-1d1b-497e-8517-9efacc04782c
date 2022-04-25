@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2a65c1f4-1d1b-497e-8517-9efacc04782c
+:END:
+#+title: list all virtual networks in qemu
+#+filetags: :virtualization:how_to:
+
+#+begin_src sh
+virsh net-list --all
+#+end_src

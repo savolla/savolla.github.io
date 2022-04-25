@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       82046a94-94d4-4dba-91ab-6010508497a3
+:END:
+#+title: positional arguments in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+fn main() {
+   println!("one: {0}, two: {1}, one: {0} ", "1", "2" );
+}
+#+end_src

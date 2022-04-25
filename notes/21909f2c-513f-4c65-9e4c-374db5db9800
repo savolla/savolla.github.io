@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       21909f2c-513f-4c65-9e4c-374db5db9800
+:END:
+#+title: immutable
+#+filetags: :what_is:
+value that once defined, cannot be *reassigned*

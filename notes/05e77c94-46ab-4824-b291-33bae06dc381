@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       05e77c94-46ab-4824-b291-33bae06dc381
+:END:
+#+title: hide slide numbers in reveal.js
+#+filetags: :how_to:
+
+#+begin_src elisp
+#+OPTIONS: num:nil
+#+end_src

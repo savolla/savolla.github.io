@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5b346662-eaeb-47d2-a449-bb84357ddbe3
+:END:
+#+title: list active ros nodes
+#+filetags: :cmd:ros:how_to:
+#+begin_src sh
+ros2 node list
+#+end_src

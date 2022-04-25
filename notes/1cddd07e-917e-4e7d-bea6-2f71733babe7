@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1cddd07e-917e-4e7d-bea6-2f71733babe7
+:END:
+#+title: list installed ros packages
+#+filetags: :cmd:ros:how_to:
+
+#+begin_src sh
+ros2 pkg list
+#+end_src

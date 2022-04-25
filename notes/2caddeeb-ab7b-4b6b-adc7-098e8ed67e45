@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       2caddeeb-ab7b-4b6b-adc7-098e8ed67e45
+:END:
+#+TITLE: Systems Languages
+#+STARTUP: overview
+#+ROAM_TAGS: index
+#+CREATED: [2021-07-05 Pzt]
+#+LAST_MODIFIED: [2021-07-05 Pzt 23:43]
+
+1. [[file:20210705235434-index-c.org][c]]
+2. [[./cpp.org][cpp]]
+3. [[./assembly.org][assembly]]
+4. [[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]]

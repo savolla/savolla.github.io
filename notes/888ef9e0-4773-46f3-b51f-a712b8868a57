@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       888ef9e0-4773-46f3-b51f-a712b8868a57
+:END:
+#+title: define an immutable string in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+let name = "savolla";
+#+end_src

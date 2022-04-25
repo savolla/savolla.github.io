@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       228abaee-43c4-44a6-90a1-44147340dae4
+:END:
+#+TITLE: Fundamental Steps in Image Processing
+#+STARTUP: overview
+#+ROAM_TAGS: index
+#+CREATED: [2021-07-06 Sal]
+#+LAST_MODIFIED: [2021-07-06 Sal 11:25]
+
+You must follow this sequence while doing [[file:20210706112127-index-image_processing.org][Image Processing]]
+
+1. Image Acquisition
+2. Image Enhancement
+3. Image Restoration

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       23d200de-d85e-4eb6-9f0c-8c54e6dcbae0
+:END:
+#+title: install different version of python in pyenv
+#+filetags: :python:how_to:
+
+first of all [[id:67a86cec-ab1c-4e59-8000-a307ba7fa2cc][list available python versions in pyenv]] and then install one
+#+begin_src sh
+pyenv install 3.8.7
+#+end_src

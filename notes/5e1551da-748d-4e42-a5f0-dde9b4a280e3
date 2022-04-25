@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5e1551da-748d-4e42-a5f0-dde9b4a280e3
+:END:
+#+title: define mutable string in rust
+#+filetags: :snippet:rust:how_to:
+#+begin_src rust
+let mut name = String::from("savolla");
+#+end_src

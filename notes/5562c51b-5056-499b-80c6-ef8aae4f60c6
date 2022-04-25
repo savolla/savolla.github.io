@@ -1,0 +1,21 @@
+# Title must come at the end
+:PROPERTIES:
+:ID:       5562c51b-5056-499b-80c6-ef8aae4f60c6
+:END:
+#+TITLE: Bilgisayarı PLC'ye bağladım
+#+STARTUP: overview
+# Find tags by asking;
+# 1) Topic tag: What are related words to this note?
+# 2) Context tag: What is the main idea of this note?
+#+ROAM_TAGS: permanent
+#+CREATED: [2021-06-17 Prş]
+#+LAST_MODIFIED: [2021-06-17 Prş 21:56]
+
+# You can link multiple Concepts and Permanent Notes!
+Connect [[https://duckduckgo.com/?q=ethernet+cable&t=brave&trmexp=b&iax=images&ia=images][Ethernet Cable]] to your PC and the PLC. Open up TIA Portal, create new project, [[file:20210617221011-permanent-configure_the_device.org][configure the device]], create a ledder logic program in main block, click *binoculars* icon on top to search devices. Select *profinet* (green) and Ethernet interface below it then start the search. PLC will be discovered after some time.
+
+ - see also ::
+# Continuation or Related notes here
+    + [[file:20210614003742-keyword-permanent_notes.org][Permanent Notes]]
+
+- references ::

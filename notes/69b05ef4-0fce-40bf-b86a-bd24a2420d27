@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       69b05ef4-0fce-40bf-b86a-bd24a2420d27
+:END:
+#+title: check if your pc has optimus technology
+#+filetags: :linux:how_to:
+
+#+begin_src sh
+lspci | grep -E "VGA|3D"
+#+end_src
+
+if you have more than one lines then it has two or more GPUs and *it supports Optimus*

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9d880a2a-c6c2-43e4-84e3-e0b71711ff96
+:END:
+#+title: search roam notes in doom emacs
+#+filetags: :emacs:org-roam:how_to:
+~SPC n r f~

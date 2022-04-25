@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       7e5644a0-894f-4b3a-a087-a47d01460600
+:END:
+#+title: include models in sdf files
+#+filetags: :ros:how_to:
+
+#+begin_src xml
+<include>
+  <uri>model://model_name</uri>
+</include>
+#+end_src
+the *model://* part is important and tells gazebo to search models directory

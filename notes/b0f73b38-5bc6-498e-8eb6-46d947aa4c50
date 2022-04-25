@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b0f73b38-5bc6-498e-8eb6-46d947aa4c50
+:END:
+#+title: automatically say yes to all commands
+#+filetags: :linux:how_to:
+
+#+begin_src sh
+yes | sudo pacman -Scc
+#+end_src

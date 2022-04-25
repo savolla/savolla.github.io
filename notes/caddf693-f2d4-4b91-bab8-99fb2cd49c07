@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       caddf693-f2d4-4b91-bab8-99fb2cd49c07
+:END:
+#+title: python profiling function
+#+filetags: :python:what_is:
+
+This is a special function definition that uses [[id:fa2fe7be-1bcd-48de-9ee8-dbb783a0ef34][cProfile]] module to do [[file:20210613164032-concept-code_profiling.org][code profiling]] on the given function. After you define it, [[file:20210613154136-permanent-use_profiling_function.org][use profiling function]] with [[file:20210613172608-concept-profiling_decorator.org][profiling decorator]]

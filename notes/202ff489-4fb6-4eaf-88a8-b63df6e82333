@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       202ff489-4fb6-4eaf-88a8-b63df6e82333
+:END:
+#+title: include rust files as modules
+#+filetags: :how_to:
+* module file ~module0.rs~
+#+begin_src rust
+pub fn function0() {
+    println!("hi from function0!");
+}
+
+pub fn function1() {
+    println!("hi from function1!");
+}
+#+end_src
+
+* main file ~main.rs~
+#+begin_src rust
+mod module0;
+
+fn main() {
+    module0::function0();
+    module0::function1();
+}
+#+end_src

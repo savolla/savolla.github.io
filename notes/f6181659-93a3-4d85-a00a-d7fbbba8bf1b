@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f6181659-93a3-4d85-a00a-d7fbbba8bf1b
+:END:
+#+title: concat two strings in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+let mut first_str = String::from("Hello,"); // define string1
+let second_str = String::from(" World"); // define second string
+first_str.push_str(&second_str); // concat strings
+println!("{}", first_str); // print concatinated string
+#+end_src

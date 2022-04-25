@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       d25ac92d-69b9-4d90-9cc2-7108e582a2d6
+:END:
+#+title: fix low resolution issue on android-x86
+#+filetags: :virtualization:how_to:
+
+1. open up the terminal that comes with the iso
+   #+begin_src bash
+   su
+   mount /dev/block/sda1 /mnt
+   vi /mnt/grub/menu.lst
+   #+end_src
+
+2. add *video=1920x1080* between *kernel* and *quiet* like this:
+   #+begin_src bash
+   title Android-x86 8.1-r3
+        kernel /android-8.1-r3/kernel video=1920x1080 quiet root...
+   #+end_src

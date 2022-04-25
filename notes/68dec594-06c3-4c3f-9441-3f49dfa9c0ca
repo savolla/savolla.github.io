@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       68dec594-06c3-4c3f-9441-3f49dfa9c0ca
+:END:
+#+title: multi line comment in rust
+#+filetags: :how_to:
+#+begin_src rust
+fn main() {
+   /*
+    This is a multiline comment
+    This is a multiline comment
+    This is a multiline comment
+    ,*/
+}
+#+end_src
+
+#+RESULTS:

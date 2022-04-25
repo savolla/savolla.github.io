@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       57b6b95f-28d5-49d2-90d7-f28bf9c613a6
+:END:
+#+title: emacs
+#+filetags: :cmap:what_is:
+
+* facts
+:PROPERTIES:
+:ID:       2bbd2be6-c58b-4548-86e2-42fa5e0ca5b7
+:END:
+* how to
+:PROPERTIES:
+:ID:       10a28d0f-5680-45ca-b645-cc0bb6d98c0d
+:END:
+1. [[id:c3b5da9d-9b46-429f-aaee-156f6f3d1729][insert roam notes in doom emacs]]
+2. [[id:9d880a2a-c6c2-43e4-84e3-e0b71711ff96][search roam notes in doom emacs]]
+3. [[id:c279abe8-f435-4f4f-a7eb-78c255566f66][create org header an org-roam node]]
+* concepts
+:PROPERTIES:
+:ID:       eb339ded-4c7c-4f6d-8da1-42f51a6d1e10
+:END:

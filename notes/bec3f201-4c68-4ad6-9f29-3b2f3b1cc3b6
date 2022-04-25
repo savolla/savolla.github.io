@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       bec3f201-4c68-4ad6-9f29-3b2f3b1cc3b6
+:END:
+#+title: rustup
+#+filetags: :what_is:
+[[id:d07772aa-e40d-4502-b561-13ae3c568685][rust]] version manager. Does things like *update*
+
+* facts
+* how to
+* concepts

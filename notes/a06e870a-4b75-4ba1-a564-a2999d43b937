@@ -1,0 +1,21 @@
+# Title must come at the end
+:PROPERTIES:
+:ID:       a06e870a-4b75-4ba1-a564-a2999d43b937
+:END:
+#+TITLE: Bir çok motoru kontrol edebiliyor
+#+STARTUP: overview
+# Find tags by asking;
+# 1) Topic tag: What are related words to this note?
+# 2) Context tag: What is the main idea of this note?
+#+ROAM_TAGS: permanent
+#+CREATED: [2021-06-17 Prş]
+#+LAST_MODIFIED: [2021-06-17 Prş 23:39]
+
+# You can link multiple Concepts and Permanent Notes!
+Tek yapılması gereken şey, eldeki motor her ne ise onun tüm özelliklerini yani [[file:20210617234038-permanent-parametrelerini_surucuye_tanıtmak.org][parametrelerini sürücüye tanıtmak]].
+
+ - see also ::
+# Continuation or Related notes here
+    + [[file:20210614003742-keyword-permanent_notes.org][Permanent Notes]]
+
+- references ::

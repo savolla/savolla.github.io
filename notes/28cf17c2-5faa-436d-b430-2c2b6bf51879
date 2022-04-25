@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       28cf17c2-5faa-436d-b430-2c2b6bf51879
+:END:
+#+title: fix high dpi issue on qt applications
+#+filetags: :how_to:
+
+reduce the following environment variable. It's probably very high like 1 or 2 by default
+#+begin_src sh
+export QT_SCALE_FACTOR=0.7
+#+end_src

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       c0ace3e3-669f-4690-b3ae-7c44b9c41b91
+:END:
+#+title: set light intensity manually in redshift
+#+filetags: :redshift:how_to:
+
+first see how to [[id:70646e14-5c14-435e-ba91-285305139c1d][launch redshift]] then add the following to the config file
+#+begin_src sh
+[redshift]
+temp-day=5700 # intensity for day light
+temp-night=3500 # intensity for night light
+#+end_src

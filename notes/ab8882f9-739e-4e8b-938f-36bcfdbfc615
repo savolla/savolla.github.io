@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       ab8882f9-739e-4e8b-938f-36bcfdbfc615
+:END:
+#+title: create rust project using cargo
+#+filetags: :how_to:
+There are two ways
+
+* first way
+#+begin_src sh
+cargo new my_project
+#+end_src
+
+* second way
+#+begin_src sh
+mkdir my_project
+cd my_project
+cargo init
+#+end_src

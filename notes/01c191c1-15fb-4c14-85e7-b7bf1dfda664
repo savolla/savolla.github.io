@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       01c191c1-15fb-4c14-85e7-b7bf1dfda664
+:END:
+#+title: convert ova to qcow2
+#+filetags: :virtualization:how_to:
+
+#+begin_src bash
+tar -xvf $YOUR_IMAGE.ova
+qemu-img convert $YOUR_IMAGE-disk001.vmdk $YOUR_IMAGE.qcow2 -O qcow2
+#+end_src
+
+This last operation might take a long time. be patient.

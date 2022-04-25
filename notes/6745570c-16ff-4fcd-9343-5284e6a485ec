@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6745570c-16ff-4fcd-9343-5284e6a485ec
+:END:
+#+title: profiling decorator
+#+filetags: :python:what_is:
+
+It is a special python decorator which looks like =@profile=. You can use that decorator after you define the python profiling function somewhere in you code. And then put this decorator *above the function definition*.
+
+It takes a function as argument. When you run the profiling decorator it starts the [[file:20210613164032-concept-code_profiling.org][code profiling]] first. Right after that it starts the passed function. When function is finished it stops the code profiling and prints out a [[file:20210613170953-concept-profile_report.org][profile report]]

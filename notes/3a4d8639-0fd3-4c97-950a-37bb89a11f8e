@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3a4d8639-0fd3-4c97-950a-37bb89a11f8e
+:END:
+#+title: dynamically typed
+#+filetags: :programming:what_is:
+programming language feature that indicates variable types don't matter. programmer can just ignore the type deffinition. example language is [[id:4420715b-9509-4d22-bfea-8a95aafb72af][python]]

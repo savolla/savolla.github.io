@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1897dcd5-1ada-46dc-9b11-a182ee95f49e
+:END:
+#+title: compile rust program
+#+filetags: :rust:how_to:
+#+begin_src sh
+rustc $YOUR_RUST_PROGRAM.rs
+#+end_src

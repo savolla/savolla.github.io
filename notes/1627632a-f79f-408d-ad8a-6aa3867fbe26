@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1627632a-f79f-408d-ad8a-6aa3867fbe26
+:END:
+#+title: load plugins on gazebo
+#+filetags: :ros:how_to:
+
+#+begin_src sh
+gzserver -s <plugin_name>
+#+end_src

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4a2fce23-2a2c-409d-afe7-dd7943800872
+:END:
+#+title: list active ros topics
+#+filetags: :ros:cmd:how_to:
+#+begin_src sh
+ros2 topic list -t
+#+end_src

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fcb76adf-5a82-4e57-b774-c367347d237e
+:END:
+#+title: black screen problem in gazebo
+#+filetags: :ros:how_to:
+
+You're probably using it with vm. Disable 3D acceleration and run your vm again. the problem will be resolved

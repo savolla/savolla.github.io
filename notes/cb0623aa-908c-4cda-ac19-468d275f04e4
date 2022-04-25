@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       cb0623aa-908c-4cda-ac19-468d275f04e4
+:END:
+#+title: print number bases of a value in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+fn main() {
+   println!("number: {0}, hex: {0:x}, octal:{0:o}, binary:{0:b}", 12 );
+}
+#+end_src
+
+#+RESULTS:
+: number: 12, hex: c, octal:14, binary:1100

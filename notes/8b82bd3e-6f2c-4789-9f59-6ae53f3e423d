@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       8b82bd3e-6f2c-4789-9f59-6ae53f3e423d
+:END:
+#+title: reduce image in org mode
+#+filetags: :org:how_to:
+
+#+ATTR_ORG: :width 200
+[[./img/rust-crab.png]]
+
+#+ATTR_ORG: :width 300
+[[./img/rust-crab.png]]
+
+#+ATTR_ORG: :width 400
+[[./img/rust-crab.png]]

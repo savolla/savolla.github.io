@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b753bda5-f12e-4df0-aea5-2a83b9d5da35
+:END:
+#+title: get the length of a string in rust
+#+filetags: :rust:snippet:how_to:
+#+begin_src rust
+string_var.len();
+#+end_src

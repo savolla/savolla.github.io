@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       18c3c2d6-ce8f-422f-8315-92313d792593
+:END:
+#+title: snake case
+#+filetags: :programming:what_is:
+variable name convention which word seperation done with *underscores* "like_this"

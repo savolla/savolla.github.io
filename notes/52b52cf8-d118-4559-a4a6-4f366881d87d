@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       52b52cf8-d118-4559-a4a6-4f366881d87d
+:END:
+#+title: install silversearcher on arch linux
+#+filetags: :how_to:
+
+#+begin_src sh
+sudo pacman -S the_silver_searcher
+#+end_src

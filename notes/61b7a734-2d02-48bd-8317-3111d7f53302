@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       61b7a734-2d02-48bd-8317-3111d7f53302
+:END:
+#+title: run cargo project
+#+filetags: :how_to:
+#+begin_src sh
+cargo run
+#+end_src

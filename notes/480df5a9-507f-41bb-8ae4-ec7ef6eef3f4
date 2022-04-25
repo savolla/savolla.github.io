@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       480df5a9-507f-41bb-8ae4-ec7ef6eef3f4
+:END:
+#+title: listen a ros topic
+#+filetags: :cmd:ros:how_to:
+#+begin_src sh
+ros2 topic echo $TOPIC_NAME
+#+end_src
