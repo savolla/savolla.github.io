@@ -1,6 +1,0 @@
-* facts
-:PROPERTIES:
-:ID:       e741dc9d-ee36-4ba7-a51d-8c6a0c9c7c9a
-:END:
-1. node names in ros can contain slashes in their names "/some_node". This means it's a *global node*. and when you want to mention this particular node you always have to *include the slash*
-2. when publishing data to other topics always use YAML syntax and always *use one space after colon :*
