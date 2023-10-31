@@ -1,14 +1,19 @@
-*, ::after, ::before {
+* {
     box-sizing: border-box;
     overflow: hidden;
     background-color: black;
+    /* border: 2px solid red; */
+}
+
+body {
+    width: 50%;
+    border: 2px solid red;
 }
 
 .message {
     /* display: flex; */
     /* flex-direction: column; */
-    border: 2px solid red;
-    width: 50%;
+    /* border: 2px solid red; */
     /* justify-content: center; */
     /* align-items: center; */
     /* height: 100vh; */
