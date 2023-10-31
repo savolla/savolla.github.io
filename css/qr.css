@@ -1,0 +1,35 @@
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.message {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.avatar {
+    margin-bottom: 150px;
+    border-radius: 50%;
+    height: 200px;
+    /* border: 2px solid red; */
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.inner-message {
+    color: white;
+    /* border: 2px solid red; */
+    text-wrap: wrap;
+}
