@@ -8,7 +8,7 @@
 .message {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
@@ -16,10 +16,14 @@
 }
 
 .avatar {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+    position: absolute;
+    margin-bottom: 25%;
+    margin-left: 22%;
     border-radius: 50%;
-    height: 200px;
+    height: 160px;
     /* border: 2px solid red; */
+    z-index: 2;
 }
 
 .inner {
@@ -32,4 +36,9 @@
     color: white;
     /* border: 2px solid red; */
     text-wrap: wrap;
+}
+
+.language-javascript {
+
+    /* border: 2px solid red; */
 }
