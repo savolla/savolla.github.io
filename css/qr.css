@@ -1,6 +1,4 @@
 *, ::after, ::before {
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
     background-color: black;
@@ -9,18 +7,11 @@
 .message {
     /* display: flex; */
     /* flex-direction: column; */
-    /* border: 2px solid red; */
+    border: 2px solid red;
+    width: 50%;
     /* justify-content: center; */
     /* align-items: center; */
     /* height: 100vh; */
     background-color: black;
 }
 
-.avatar {
-    border-radius: 50%;
-    height: 160px;
-    margin-top: 12px;
-    margin-left: 12px;
-    margin-bottom: -32px;
-    /* border: 2px solid red; */
-}
