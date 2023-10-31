@@ -3,42 +3,24 @@
     padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: black;
 }
 
 .message {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* border: 2px solid red; */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    background-color: black;
 }
 
 .avatar {
-    /* margin-bottom: 150px; */
-    position: absolute;
-    margin-bottom: 25%;
-    margin-left: 22%;
     border-radius: 50%;
     height: 160px;
-    /* border: 2px solid red; */
-    z-index: 2;
-}
-
-.inner {
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
-}
-
-.inner-message {
-    color: white;
-    /* border: 2px solid red; */
-    text-wrap: wrap;
-}
-
-.language-javascript {
-
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: -32px;
     /* border: 2px solid red; */
 }
