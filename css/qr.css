@@ -1,18 +1,10 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: black;
-    /* border: 2px solid red; */
 }
 
 .message {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* border: 2px solid red; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 100vh; */
-    font-size: 1.5rem;
-    background-color: black;
+    font-size: 1.75rem;
 }
-
