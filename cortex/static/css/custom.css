@@ -1,4 +1,6 @@
-:root {
-  --ct-text-size: 30px;
-  --ct-line-height: 1.6;
+.recent {
+  display: none;
+}
+.favorites {
+  display: none;
 }
