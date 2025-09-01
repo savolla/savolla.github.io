@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zettels on </title>
+    <link>/zettel/</link>
+    <description>Recent content in Zettels on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="/zettel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>add nexus docker registry to docker config</title>
+      <link>/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>assign static ip address on alpine linux</title>
+      <link>/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>fix login issue to nexus docker registry</title>
+      <link>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>get admin password for nexus</title>
+      <link>/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install nexus on ubuntu</title>
+      <link>/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>push a local docker image to nexus docker registry</title>
+      <link>/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>remove an image from nexus docker registry</title>
+      <link>/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>setup docker registry using nexus</title>
+      <link>/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>temporarily expose argocd from kubernetes cluster</title>
+      <link>/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

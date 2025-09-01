@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Issue on </title>
+    <link>/tags/issue/</link>
+    <description>Recent content in Issue on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="/tags/issue/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fix login issue to nexus docker registry</title>
+      <link>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
