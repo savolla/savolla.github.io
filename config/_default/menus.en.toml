@@ -17,7 +17,7 @@
 
 [[main]]
  name = "zettelkasten"
- pageRef = "zettels"
+ pageRef = "zettel"
  weight = 10
 
 [[main]]
