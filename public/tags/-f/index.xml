@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>-F on </title>
+    <link>//localhost:46719/tags/-f/</link>
+    <description>Recent content in -F on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <atom:link href="//localhost:46719/tags/-f/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Create a Hugo Blog with Emacs Org-Mode and Publish it on GitHub Pages</title>
+      <link>//localhost:46719/posts/20250831231029-create_a_new_blowfish_website_and_host_it_on_github_pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:46719/posts/20250831231029-create_a_new_blowfish_website_and_host_it_on_github_pages/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>My Literal Doom Emacs Config</title>
+      <link>//localhost:46719/posts/doom-emacs-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:46719/posts/doom-emacs-config/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
