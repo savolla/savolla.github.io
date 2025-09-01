@@ -13,7 +13,9 @@
         inline = [['\(', '\)']]
 
 [highlight]
-  noClasses = false
+  codeFences = true
+  noClasses = true
+  style = "gruvbox"
 
 [tableOfContents]
   startLevel = 2

@@ -2,17 +2,17 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "savolla"
+title = ""
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  description = "My awesome website"
-  copyright = "Copy"
+  logo = "logo.png"
+  secondaryLogo = "logo.png"
+  description = "Kuzey Koç's Personal Website"
+  copyright = "© 2025 Kuzey Koç. All rights reserved."
 
 [params.author]
   name = "Kuzey Koç"
