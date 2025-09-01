@@ -1,6 +1,7 @@
 +++
 title = "Create a Hugo Blog with Emacs Org-Mode and Publish it on GitHub Pages"
 author = ["Kuzey Koç"]
+date = 2025-08-31T00:00:00+03:00
 tags = ["-F", "hugo", "github", "emacs"]
 draft = false
 +++

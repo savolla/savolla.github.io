@@ -3,22 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>//localhost:46719/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-09-01T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:46719/posts/20250831231029-create_a_new_blowfish_website_and_host_it_on_github_pages/</loc>
+    <loc>//localhost:1313/posts/doom-emacs-config/</loc>
+    <lastmod>2025-09-01T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:46719/posts/doom-emacs-config/</loc>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-09-01T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:46719/posts/</loc>
+    <loc>//localhost:1313/posts/20250831231029-create_a_new_blowfish_website_and_host_it_on_github_pages/</loc>
+    <lastmod>2025-08-31T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
