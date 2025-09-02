@@ -3,133 +3,151 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</loc>
+    <loc>http://localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</loc>
+    <loc>http://localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</loc>
+    <loc>http://localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</loc>
+    <loc>http://localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</loc>
+    <loc>http://localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</loc>
+    <loc>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</loc>
+    <loc>http://localhost:1313/personal/music/20250902175949-favorite_music/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</loc>
+    <loc>http://localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</loc>
+    <loc>http://localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</loc>
+    <loc>http://localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</loc>
+    <loc>http://localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</loc>
+    <loc>http://localhost:1313/personal/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</loc>
+    <loc>http://localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</loc>
+    <loc>http://localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</loc>
+    <loc>http://localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</loc>
+    <loc>http://localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</loc>
+    <loc>http://localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/zettel/</loc>
+    <loc>http://localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/posts/doom-emacs-config/</loc>
+    <loc>http://localhost:1313/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/doom-emacs-config/</loc>
     <lastmod>2025-09-01T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

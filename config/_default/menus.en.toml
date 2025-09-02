@@ -22,12 +22,7 @@
 
 [[main]]
  name = "personal"
- weight = 20
-
-[[main]]
- name = "music"
- parent = "personal"
- pageRef = "posts"
+ pageRef = "personal"
  weight = 20
 
 # [[main]]

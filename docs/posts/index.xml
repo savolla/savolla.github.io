@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>//localhost:1313/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Zero to Hero CICD Pipeline | Part 1</title>
-      <link>//localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</link>
+      <link>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</guid>
+      <guid>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/featured.jpg" />
     </item>
     
     <item>
-      <title>My Literal Doom Emacs Config</title>
-      <link>//localhost:1313/posts/doom-emacs-config/</link>
+      <title>My Literate Doom Emacs Config</title>
+      <link>http://localhost:1313/posts/my-literate-doom-emacs-config/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/posts/doom-emacs-config/</guid>
+      <guid>http://localhost:1313/posts/my-literate-doom-emacs-config/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-doom-emacs-config/featured-doom-emacs-cacodemon-v013.jpg" />
     </item>
     
   </channel>

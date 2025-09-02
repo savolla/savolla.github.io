@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Favorites on </title>
+    <link>//localhost:1313/favorite/</link>
+    <description>Recent content in Favorites on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="//localhost:1313/favorite/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Faceless - In Solitude</title>
+      <link>//localhost:1313/favorite/f7b6ca1b-86bc-4908-b1a1-04ea737e733e/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/favorite/f7b6ca1b-86bc-4908-b1a1-04ea737e733e/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The Faceless - In Solitude</title>
+      <link>//localhost:1313/favorite/music/f7b6ca1b-86bc-4908-b1a1-04ea737e733e/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/favorite/music/f7b6ca1b-86bc-4908-b1a1-04ea737e733e/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

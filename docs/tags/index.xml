@@ -2,161 +2,171 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>-F</title>
-      <link>//localhost:1313/tags/-f/</link>
+      <link>http://localhost:1313/tags/-f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/-f/</guid>
+      <guid>http://localhost:1313/tags/-f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>-Z</title>
-      <link>//localhost:1313/tags/-z/</link>
+      <link>http://localhost:1313/tags/-z/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/-z/</guid>
+      <guid>http://localhost:1313/tags/-z/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Alpine</title>
-      <link>//localhost:1313/tags/alpine/</link>
+      <link>http://localhost:1313/tags/alpine/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/alpine/</guid>
+      <guid>http://localhost:1313/tags/alpine/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Argocd</title>
-      <link>//localhost:1313/tags/argocd/</link>
+      <link>http://localhost:1313/tags/argocd/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/argocd/</guid>
+      <guid>http://localhost:1313/tags/argocd/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Blowfish</title>
-      <link>//localhost:1313/tags/blowfish/</link>
+      <link>http://localhost:1313/tags/blowfish/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/blowfish/</guid>
+      <guid>http://localhost:1313/tags/blowfish/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Devops</title>
-      <link>//localhost:1313/tags/devops/</link>
+      <link>http://localhost:1313/tags/devops/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/devops/</guid>
+      <guid>http://localhost:1313/tags/devops/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Docker</title>
-      <link>//localhost:1313/tags/docker/</link>
+      <link>http://localhost:1313/tags/docker/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/docker/</guid>
+      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>//localhost:1313/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Issue</title>
-      <link>//localhost:1313/tags/issue/</link>
+      <link>http://localhost:1313/tags/issue/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/issue/</guid>
+      <guid>http://localhost:1313/tags/issue/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>//localhost:1313/tags/kubernetes/</link>
+      <link>http://localhost:1313/tags/kubernetes/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/kubernetes/</guid>
+      <guid>http://localhost:1313/tags/kubernetes/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nexus</title>
-      <link>//localhost:1313/tags/nexus/</link>
+      <link>http://localhost:1313/tags/nexus/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/nexus/</guid>
+      <guid>http://localhost:1313/tags/nexus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nixos</title>
+      <link>http://localhost:1313/tags/nixos/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/nixos/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Orgmode</title>
-      <link>//localhost:1313/tags/orgmode/</link>
+      <link>http://localhost:1313/tags/orgmode/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/orgmode/</guid>
+      <guid>http://localhost:1313/tags/orgmode/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>//localhost:1313/tags/ubuntu/</link>
+      <link>http://localhost:1313/tags/ubuntu/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/ubuntu/</guid>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Youtube</title>
-      <link>//localhost:1313/tags/youtube/</link>
+      <link>http://localhost:1313/tags/youtube/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/youtube/</guid>
+      <guid>http://localhost:1313/tags/youtube/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>//localhost:1313/tags/emacs/</link>
+      <link>http://localhost:1313/tags/emacs/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>//localhost:1313/tags/emacs/</guid>
+      <guid>http://localhost:1313/tags/emacs/</guid>
       <description></description>
       
     </item>
