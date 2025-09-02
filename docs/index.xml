@@ -2,121 +2,131 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>add nexus docker registry to docker config</title>
-      <link>/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
+      <link>//localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</guid>
+      <guid>//localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>assign static ip address on alpine linux</title>
-      <link>/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</link>
+      <link>//localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</guid>
+      <guid>//localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>fix login issue to nexus docker registry</title>
-      <link>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
+      <link>//localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
+      <guid>//localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get admin password for nexus</title>
-      <link>/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
+      <link>//localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
+      <guid>//localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install nexus on ubuntu</title>
-      <link>/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</link>
+      <link>//localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
+      <guid>//localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>push a local docker image to nexus docker registry</title>
-      <link>/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</link>
+      <link>//localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</guid>
+      <guid>//localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>remove an image from nexus docker registry</title>
-      <link>/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</link>
+      <link>//localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</guid>
+      <guid>//localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>set hugo build directory to docs</title>
+      <link>//localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>setup docker registry using nexus</title>
-      <link>/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</link>
+      <link>//localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
+      <guid>//localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>temporarily expose argocd from kubernetes cluster</title>
-      <link>/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</link>
+      <link>//localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</guid>
+      <guid>//localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Zero to Hero CICD Pipeline | Part 1</title>
-      <link>/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</link>
+      <link>//localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</guid>
+      <guid>//localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>My Literal Doom Emacs Config</title>
-      <link>/posts/doom-emacs-config/</link>
+      <link>//localhost:1313/posts/doom-emacs-config/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>/posts/doom-emacs-config/</guid>
+      <guid>//localhost:1313/posts/doom-emacs-config/</guid>
       <description></description>
       
     </item>
