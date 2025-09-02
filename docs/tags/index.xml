@@ -52,6 +52,16 @@
     </item>
     
     <item>
+      <title>Blowfish</title>
+      <link>//localhost:1313/tags/blowfish/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/tags/blowfish/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Devops</title>
       <link>//localhost:1313/tags/devops/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
@@ -107,6 +117,16 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>//localhost:1313/tags/nexus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Orgmode</title>
+      <link>//localhost:1313/tags/orgmode/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/tags/orgmode/</guid>
       <description></description>
       
     </item>

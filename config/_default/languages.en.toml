@@ -10,7 +10,7 @@ title = ""
   rtl = false
   dateFormat = "2006-01-02"
   logo = "logo.png"
-  secondaryLogo = "logo.png"
+  # secondaryLogo = "logo.png"
   description = "Kuzey Koç's Personal Website"
   copyright = "© 2025 Kuzey Koç. All rights reserved."
 
@@ -19,7 +19,7 @@ title = ""
   email = "savolla@protonmail.com"
   image = "savolla-avatar-ascii.png"
   imageQuality = 96
-  headline = "DevOps Engineer, Musician"
+  headline = "DevOps Engineer"
   bio = "DevOps Engineer"
   links = [
     { email = "savolla@protonmail.com" },

@@ -12,6 +12,26 @@
     <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="//localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>add background image to your post in hugo blowsifh site</title>
+      <link>//localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>add custom favicon to your blowfish hugo website</title>
+      <link>//localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>add nexus docker registry to docker config</title>
       <link>//localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
@@ -32,6 +52,26 @@
     </item>
     
     <item>
+      <title>create an export block in org mode with shortcut</title>
+      <link>//localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>embed youtube video in blowfish hugo website in org-mode</title>
+      <link>//localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>fix login issue to nexus docker registry</title>
       <link>//localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
@@ -42,11 +82,31 @@
     </item>
     
     <item>
+      <title>generate a favicon for your website</title>
+      <link>//localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>get admin password for nexus</title>
       <link>//localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>//localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>highlight lines in org mode source blocks</title>
+      <link>//localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</guid>
       <description></description>
       
     </item>
@@ -97,6 +157,16 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>//localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>start hugo website locally</title>
+      <link>//localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>//localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</guid>
       <description></description>
       
     </item>
