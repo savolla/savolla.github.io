@@ -13,12 +13,12 @@
     
     <item>
       <title>Zero to Hero CICD Pipeline | Part 1</title>
-      <link>http://localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</link>
+      <link>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</guid>
+      <guid>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/featured.jpg" />
     </item>
     
   </channel>

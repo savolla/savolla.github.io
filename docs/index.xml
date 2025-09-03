@@ -9,7 +9,17 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>attach a pdf in an org mode file</title>
+      <link>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>add background image to your post in hugo blowsifh site</title>

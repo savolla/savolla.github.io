@@ -4,7 +4,19 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <lastmod>2025-09-03T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</loc>
+    <lastmod>2025-09-03T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-03T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,7 +57,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/personal/music/20250902175949-favorite_music/</loc>
+    <loc>http://localhost:1313/personal/favorite-movies/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/personal/favorite-music/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -135,19 +153,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/20250902021815-zero_to_hero_cicd_pipeline_part_1/</loc>
+    <loc>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/zettel/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/posts/doom-emacs-config/</loc>
+    <loc>http://localhost:1313/posts/my-literate-doom-emacs-config/</loc>
     <lastmod>2025-09-01T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
