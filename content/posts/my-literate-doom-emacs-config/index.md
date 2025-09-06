@@ -1,5 +1,5 @@
 +++
-title = "My Literate Doom Emacs Config"
+title = "savolla's Literate Doom Emacs Configuration"
 author = ["Kuzey Koç"]
 date = 2025-09-01T00:00:00+03:00
 tags = ["emacs", "-F"]
