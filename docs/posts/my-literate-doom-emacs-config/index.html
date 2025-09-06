@@ -138,7 +138,7 @@
     "keywords": ["emacs","-F"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2031"
+    "wordCount": "2222"
   }]
   </script>
 
@@ -780,7 +780,14 @@
         <li><a href="#centaur-tabs">Centaur Tabs</a></li>
         <li><a href="#emmet">Emmet</a></li>
         <li><a href="#tailwind">Tailwind</a></li>
-        <li><a href="#org-mode">Org Mode</a></li>
+        <li><a href="#org-mode">Org Mode</a>
+          <ul>
+            <li><a href="#ox-hugo">ox-hugo</a></li>
+            <li><a href="#org-babel">org-babel</a></li>
+            <li><a href="#org-sticky-header">org-sticky-header</a></li>
+            <li><a href="#latex-settings">LaTex Settings</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -829,7 +836,14 @@
         <li><a href="#centaur-tabs">Centaur Tabs</a></li>
         <li><a href="#emmet">Emmet</a></li>
         <li><a href="#tailwind">Tailwind</a></li>
-        <li><a href="#org-mode">Org Mode</a></li>
+        <li><a href="#org-mode">Org Mode</a>
+          <ul>
+            <li><a href="#ox-hugo">ox-hugo</a></li>
+            <li><a href="#org-babel">org-babel</a></li>
+            <li><a href="#org-sticky-header">org-sticky-header</a></li>
+            <li><a href="#latex-settings">LaTex Settings</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1404,6 +1418,65 @@
     
 </h3>
 <p>This is the biggest reason why I use Emacs. Just like others do.</p>
+<p>Set where your org files and attachments will reside</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; org-mode</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> org-attach-id-dir <span style="color:#b8bb26">&#34;~/resource/notes/org/attachments&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> org-directory <span style="color:#b8bb26">&#34;~/resource/notes/org&#34;</span>)
+</span></span></code></pre></div>
+<h4 class="relative group">ox-hugo 
+    <div id="ox-hugo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#ox-hugo" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>I use <code>ox-hugo</code> package for exporting my org notes to <strong>blowfish</strong> themed hugo website (this website)</p>
+<p>If the buffer contains hugo specific properties I auto export buffer or subtree as post by using the following function</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;after-save-hook</span> <span style="color:#fabd2f">#&#39;</span>my/org-mode-hugo-auto-export)
+</span></span></code></pre></div>
+<h4 class="relative group">org-babel 
+    <div id="org-babel" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#org-babel" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>Source code and literate programming engine for emacs.. This is a huge part of my writing process in emacs.</p>
+<p>By default <code>org-babel</code> runs code blocks and generates results before exporting current buffer to websites or pdf files. I don&rsquo;t want this behavior. Here is how I disable it</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; prevent org babel from running code blocks when exporting</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> org-export-babel-evaluate <span style="color:#d3869b">nil</span>)
+</span></span></code></pre></div>
+<h4 class="relative group">org-sticky-header 
+    <div id="org-sticky-header" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#org-sticky-header" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>I usually edit huge org files and I sometimes need to scroll up to see which heading I&rsquo;m under. Luckily there is a package for that which shows exactly what I want on top of the current buffer</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; enable breadcrumbs in org view</span>
+</span></span><span style="display:flex;"><span>(use-package! org-sticky-header
+</span></span><span style="display:flex;"><span>  <span style="color:#fabd2f">:hook</span> (org-mode <span style="color:#fe8019">.</span> org-sticky-header-mode)
+</span></span><span style="display:flex;"><span>  <span style="color:#fabd2f">:config</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> org-sticky-header-full-path <span style="color:#83a598">&#39;full</span>      <span style="color:#928374;font-style:italic">;; show full heading path</span>
+</span></span><span style="display:flex;"><span>        org-sticky-header-outline-path-separator <span style="color:#b8bb26">&#34; &gt; &#34;</span>
+</span></span><span style="display:flex;"><span>        org-sticky-header-always-show-header <span style="color:#d3869b">t</span>))
+</span></span></code></pre></div>
+<h4 class="relative group">LaTex Settings 
+    <div id="latex-settings" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#latex-settings" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
 
           
           

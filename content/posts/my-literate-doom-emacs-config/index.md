@@ -526,3 +526,56 @@ you also need to do some adjustments in `packages.el` file. Here is the `package
 ### Org Mode {#org-mode}
 
 This is the biggest reason why I use Emacs. Just like others do.
+
+Set where your org files and attachments will reside
+
+```emacs-lisp
+;; org-mode
+(setq org-attach-id-dir "~/resource/notes/org/attachments")
+(setq org-directory "~/resource/notes/org")
+```
+
+
+#### ox-hugo {#ox-hugo}
+
+I use `ox-hugo` package for exporting my org notes to **blowfish** themed hugo website (this website)
+
+If the buffer contains hugo specific properties I auto export buffer or subtree as post by using the following function
+
+```emacs-lisp
+
+```
+
+```emacs-lisp
+(add-hook 'after-save-hook #'my/org-mode-hugo-auto-export)
+```
+
+
+#### org-babel {#org-babel}
+
+Source code and literate programming engine for emacs.. This is a huge part of my writing process in emacs.
+
+By default `org-babel` runs code blocks and generates results before exporting current buffer to websites or pdf files. I don't want this behavior. Here is how I disable it
+
+```emacs-lisp
+;; prevent org babel from running code blocks when exporting
+(setq org-export-babel-evaluate nil)
+```
+
+
+#### org-sticky-header {#org-sticky-header}
+
+I usually edit huge org files and I sometimes need to scroll up to see which heading I'm under. Luckily there is a package for that which shows exactly what I want on top of the current buffer
+
+```emacs-lisp
+;; enable breadcrumbs in org view
+(use-package! org-sticky-header
+  :hook (org-mode . org-sticky-header-mode)
+  :config
+  (setq org-sticky-header-full-path 'full      ;; show full heading path
+        org-sticky-header-outline-path-separator " > "
+        org-sticky-header-always-show-header t))
+```
+
+
+#### LaTex Settings {#latex-settings}
