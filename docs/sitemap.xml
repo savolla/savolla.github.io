@@ -33,6 +33,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</loc>
     <lastmod>2025-09-06T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>

@@ -516,5 +516,13 @@ you also need to do some adjustments in `packages.el` file. Here is the `package
 
 ```emacs-lisp
 ;; tailwind lsp
-(package! lsp-tailwindcss :recipe (:type git :host github :repo "merrickluo/lsp-tailwindcss"))
+(package! lsp-tailwindcss :recipe
+  (:type git
+   :host github
+   :repo "merrickluo/lsp-tailwindcss"))
 ```
+
+
+### Org Mode {#org-mode}
+
+This is the biggest reason why I use Emacs. Just like others do.

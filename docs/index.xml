@@ -42,6 +42,16 @@
     </item>
     
     <item>
+      <title>prevent tangle for an org mode source block</title>
+      <link>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Setup Tailwind CSS with Doom Emacs</title>
       <link>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
@@ -272,7 +282,7 @@
     </item>
     
     <item>
-      <title>My Literate Doom Emacs Config</title>
+      <title>savolla&#39;s Literate Doom Emacs Configuration</title>
       <link>http://localhost:1313/posts/my-literate-doom-emacs-config/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
