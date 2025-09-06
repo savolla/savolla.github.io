@@ -6,6 +6,9 @@ tags = ["devops", "-F"]
 draft = false
 +++
 
+<iframe width="753" height="380" src="https://www.youtube.com/embed/qV3Nlel4AnI?list=PLrwzufn0Pq4ZRnMoet0roO6si6NsBDSA-" title="Zero to Hero CI/CD Pipeline | Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## Introduction {#introduction}
 
 you can find the pipeline [here](https://www.canva.com/design/DAGRUMFFs3c/lNFwVoe4ymvXjbvVBlM0LQ/view?utm_content=DAGRUMFFs3c&utm_campaign=designshare&utm_medium=link&utm_source=editor)

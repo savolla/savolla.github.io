@@ -6,6 +6,13 @@ tags = ["emacs", "-F"]
 draft = false
 +++
 
+<div class="warning">
+
+⚠️ **WARNING**: This article is under construction. Please come back later
+
+</div>
+
+
 ## Basic Customizations {#basic-customizations}
 
 
@@ -535,6 +542,61 @@ Set where your org files and attachments will reside
 (setq org-directory "~/resource/notes/org")
 ```
 
+There are some settings that need to be set right after `org-mode` is executed
+
+```emacs-lisp
+(after! org
+
+  ;; anki
+  (map! :map org-mode-map "<f5>" #'org-anki-sync-entry)
+
+  (setq org-ellipsis " ")
+  (setq org-lowest-priority ?F) ;; set todo priorities from A to F
+  (setq org-modern-star '("◉" "◉" "◉" "◉" "◉"))
+  (setq org-modern-list '((?- . "•") (?+ . "➤") (?* . "→")))
+  (setq org-startup-folded 'overview) ;; auto fold all headings
+  (setq org-fontify-archived-trees nil) ;; Optional: disables fontifying archived trees
+
+  ;;; make latex previews bigger
+  (plist-put org-format-latex-options :scale 2.0)
+
+  ;;; better image rendering
+  (setq org-preview-latex-default-process 'dvisvgm)
+  (plist-put org-format-latex-options :background "Transparent")
+
+  ;; enable latex previews globally
+  (setq org-startup-with-latex-preview t)
+
+  (setq org-todo-keywords '
+        (
+         (sequence "TODO(t)" "DOING(o!)" "NEXT(n)" "ZETTEL(z)"
+                   "ARTICLE(a)" "REPEAT(R)" "DEADLINE(D)" "SCHEDULED(S)"
+                   "HABIT(h)" "LATER(l@/!)" "WAIT(w@/!)"
+                   "|"
+                   ;; "DONE(d@/!)" "CANCEL(c@/!)"
+                   "DONE(d!)" "CANCEL(c@/!)"
+                   )
+         (sequence "CONTEXT" "|" "REVIEW")
+         ))
+
+
+  (setq org-todo-keyword-faces
+        '(("TODO" . (:foreground "#00FF00" :weight bold)) ;; task
+          ("DOING" . (:foreground "#FF0000" :weight bold)) ;; now doing
+          ("NEXT" . (:foreground "#FF00FF" :weight bold)) ;; will continue to this after DOING
+          ("WAIT" . (:foreground "yellow" :weight bold)) ;; wait for somebody
+          ("LATER" . (:foreground "yellow" :weight bold)) ;; I'm gonna do it later
+          ("SCHEDULED" . (:foreground "yellow" :weight bold)) ;; event etc.
+          ("REPEAT" . (:foreground "green" :weight bold)) ;; looped tasks
+          ("DEADLINE" . (:foreground "red" :weight bold)) ;; do this before time ends
+          ("DONE" . (:foreground "#666666" :weight bold)) ;; finished task
+          ("HABIT" . (:foreground "#00FFFF" :weight bold))
+          ("CONTEXT" . (:foreground "#FFFFFF" :weight bold))
+          ("CANCEL" . (:foreground "#666666" :weight bold))) ;; cancelled task
+        )
+  )
+```
+
 
 #### ox-hugo {#ox-hugo}
 
@@ -576,6 +638,3 @@ I usually edit huge org files and I sometimes need to scroll up to see which hea
         org-sticky-header-outline-path-separator " > "
         org-sticky-header-always-show-header t))
 ```
-
-
-#### LaTex Settings {#latex-settings}
