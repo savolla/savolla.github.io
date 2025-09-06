@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on </title>
+    <link>http://localhost:1313/tags/personal/</link>
+    <description>Recent content in Personal on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Favorite Music</title>
+      <link>http://localhost:1313/personal/favorite-music/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/personal/favorite-music/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-music/feature-3221340686.jpg" />
+    </item>
+    
+  </channel>
+</rss>

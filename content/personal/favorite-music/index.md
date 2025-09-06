@@ -2,6 +2,7 @@
 title = "Favorite Music"
 author = ["Kuzey Koç"]
 date = 2025-09-02T00:00:00+03:00
+tags = ["personal", "-F"]
 draft = false
 +++
 
@@ -150,7 +151,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [Krallice - Telluric Rings](<https://www.youtube.com/watch?v=zJ8vnepZnNw>) 🔥🔥🔥🔥
 -   [SUICIDE SILENCE - Disengage](<https://www.youtube.com/watch?v=FukeNR1ydOA>)
 -   [Crytptopsy - Luminum](<https://www.youtube.com/watch?v=ghCu6V7COQ4>)
--   [Eternal Tears of Sorrow - Prophetiam](video <https://www.youtube.com/watch?v=9iFyLcDaUgY>)
+-   [Eternal Tears of Sorrow - Prophetiam](<https://www.youtube.com/watch?v=9iFyLcDaUgY>)
 -   [AFTER THE BURIAL - Drifts](<https://www.youtube.com/watch?v=V2gb2rfi16k>)
 -   [Arch Enemy - Rise of the Tyrant](<https://www.youtube.com/watch?v=NA8H_Ot9vro&list=PLsT9douBcx9_Y7NUDvhX2kHEcnvcVCgin&index=5>)
 -   [Decrepit Birth - Sea of Memories](<https://www.youtube.com/watch?v=eyBkZy1Ci1k>)

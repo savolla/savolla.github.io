@@ -4,18 +4,48 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-03T00:00:00+03:00</lastmod>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</loc>
-    <lastmod>2025-09-03T00:00:00+03:00</lastmod>
+    <loc>http://localhost:1313/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</loc>
     <lastmod>2025-09-03T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -100,12 +130,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/personal/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

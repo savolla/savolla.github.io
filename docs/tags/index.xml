@@ -9,12 +9,22 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>-F</title>
+      <link>http://localhost:1313/tags/-f/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/-f/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>-Z</title>
       <link>http://localhost:1313/tags/-z/</link>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/-z/</guid>
       <description></description>
@@ -22,9 +32,29 @@
     </item>
     
     <item>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Doomemacs</title>
+      <link>http://localhost:1313/tags/doomemacs/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/doomemacs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Orgmode</title>
       <link>http://localhost:1313/tags/orgmode/</link>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/orgmode/</guid>
       <description></description>
@@ -32,11 +62,31 @@
     </item>
     
     <item>
-      <title>-F</title>
-      <link>http://localhost:1313/tags/-f/</link>
-      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <title>Orgroam</title>
+      <link>http://localhost:1313/tags/orgroam/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/tags/-f/</guid>
+      <guid>http://localhost:1313/tags/orgroam/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Orgroamql</title>
+      <link>http://localhost:1313/tags/orgroamql/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/orgroamql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tailwind</title>
+      <link>http://localhost:1313/tags/tailwind/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/tailwind/</guid>
       <description></description>
       
     </item>
@@ -137,6 +187,16 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/nixos/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/tags/personal/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
       
     </item>

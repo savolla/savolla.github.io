@@ -138,7 +138,7 @@
     "keywords": ["emacs","-F"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "386"
+    "wordCount": "2015"
   }]
   </script>
 
@@ -757,12 +757,29 @@
         <li><a href="#line-numbers">Line Numbers</a></li>
         <li><a href="#window-separator">Window Separator</a></li>
         <li><a href="#line-wrapping">Line Wrapping</a></li>
+        <li><a href="#workspaces">Workspaces</a></li>
+        <li><a href="#buffers">Buffers</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#windows">Windows</a></li>
         <li><a href="#some-qol-improvements">Some QoL Improvements</a></li>
       </ul>
     </li>
     <li><a href="#package-based-customizations">Package Based Customizations</a>
       <ul>
         <li><a href="#evil">Evil</a></li>
+        <li><a href="#avy">Avy</a></li>
+        <li><a href="#completion-frameworks">Completion Frameworks</a>
+          <ul>
+            <li><a href="#company">Company</a></li>
+            <li><a href="#corfu">Corfu</a></li>
+          </ul>
+        </li>
+        <li><a href="#treemacs">Treemacs</a></li>
+        <li><a href="#gptel">Gptel</a></li>
+        <li><a href="#vterm-with-tmux">Vterm with <code>tmux</code></a></li>
+        <li><a href="#centaur-tabs">Centaur Tabs</a></li>
+        <li><a href="#emmet">Emmet</a></li>
+        <li><a href="#tailwind">Tailwind</a></li>
       </ul>
     </li>
   </ul>
@@ -788,12 +805,29 @@
         <li><a href="#line-numbers">Line Numbers</a></li>
         <li><a href="#window-separator">Window Separator</a></li>
         <li><a href="#line-wrapping">Line Wrapping</a></li>
+        <li><a href="#workspaces">Workspaces</a></li>
+        <li><a href="#buffers">Buffers</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#windows">Windows</a></li>
         <li><a href="#some-qol-improvements">Some QoL Improvements</a></li>
       </ul>
     </li>
     <li><a href="#package-based-customizations">Package Based Customizations</a>
       <ul>
         <li><a href="#evil">Evil</a></li>
+        <li><a href="#avy">Avy</a></li>
+        <li><a href="#completion-frameworks">Completion Frameworks</a>
+          <ul>
+            <li><a href="#company">Company</a></li>
+            <li><a href="#corfu">Corfu</a></li>
+          </ul>
+        </li>
+        <li><a href="#treemacs">Treemacs</a></li>
+        <li><a href="#gptel">Gptel</a></li>
+        <li><a href="#vterm-with-tmux">Vterm with <code>tmux</code></a></li>
+        <li><a href="#centaur-tabs">Centaur Tabs</a></li>
+        <li><a href="#emmet">Emmet</a></li>
+        <li><a href="#tailwind">Tailwind</a></li>
       </ul>
     </li>
   </ul>
@@ -913,6 +947,8 @@
 </span></span><span style="display:flex;"><span>(after! doom-themes
 </span></span><span style="display:flex;"><span>  (custom-set-faces!
 </span></span><span style="display:flex;"><span>    <span style="color:#fe8019">&#39;</span>(default <span style="color:#fabd2f">:background</span> <span style="color:#b8bb26">&#34;#000000&#34;</span>)))
+</span></span></code></pre></div><p>Make emacs transparent. Right now it only works with <code>emacs-gtk</code> in NixOS</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(add-to-list <span style="color:#83a598">&#39;default-frame-alist</span> <span style="color:#fe8019">&#39;</span>(alpha-background <span style="color:#fe8019">.</span> <span style="color:#d3869b">70</span>))
 </span></span></code></pre></div>
 <h3 class="relative group">Line Numbers 
     <div id="line-numbers" class="anchor"></div>
@@ -955,6 +991,73 @@
 <p>this gives me a little bit of headache because line wrapping also affects my <strong>vterm</strong> shell. I need to find a way (a hook maybe?) to disable this in vterm</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(global-visual-line-mode <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">; enable line wrapping globally</span>
 </span></span></code></pre></div>
+<h3 class="relative group">Workspaces 
+    <div id="workspaces" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#workspaces" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I changed some default workspace keybindings</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; workspaces</span>
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;switch to previous workspace&#34;</span> <span style="color:#b8bb26">&#34;TAB h&#34;</span>   <span style="color:#fabd2f">#&#39;</span>+workspace:switch-previous )
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;switch to next workspace&#34;</span>     <span style="color:#b8bb26">&#34;TAB l&#34;</span>   <span style="color:#fabd2f">#&#39;</span>+workspace:switch-next )
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;last workspace&#34;</span>               <span style="color:#b8bb26">&#34;TAB TAB&#34;</span> <span style="color:#fabd2f">#&#39;</span>+workspace/other )
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;display workspaces&#34;</span>           <span style="color:#b8bb26">&#34;TAB SPC&#34;</span> <span style="color:#fabd2f">#&#39;</span>+workspace/display )
+</span></span></code></pre></div>
+<h3 class="relative group">Buffers 
+    <div id="buffers" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#buffers" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I made some improvements for easier buffer navigation like switching to last buffer by hitting <code>space b b</code> and selecting buffers interactively with <code>space b l</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; buffers</span>
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;switch buffer&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b8bb26">&#34;b l&#34;</span> <span style="color:#fabd2f">#&#39;</span>consult-buffer)
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;last buffer&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b8bb26">&#34;b b&#34;</span> <span style="color:#fabd2f">#&#39;</span>evil-switch-to-windows-last-buffer)
+</span></span></code></pre></div>
+<h3 class="relative group">Tabs 
+    <div id="tabs" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#tabs" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Navigate tabs with <code>t</code> and <code>T</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:n</span> <span style="color:#b8bb26">&#34;t&#34;</span> <span style="color:#fabd2f">#&#39;</span>centaur-tabs-forward )
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:n</span> <span style="color:#b8bb26">&#34;T&#34;</span> <span style="color:#fabd2f">#&#39;</span>centaur-tabs-backward )
+</span></span></code></pre></div><p>Some cosmetics for better looking</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span>
+</span></span><span style="display:flex;"><span> tab-bar-close-button-show <span style="color:#d3869b">nil</span>
+</span></span><span style="display:flex;"><span> tab-bar-new-button-show <span style="color:#d3869b">nil</span>
+</span></span><span style="display:flex;"><span> tab-bar-separator <span style="color:#b8bb26">&#34;|&#34;</span>
+</span></span><span style="display:flex;"><span> )
+</span></span></code></pre></div><p>Tabs configuration continues in the <a
+  href="#centaur-tabs">Centaur Tabs</a> section</p>
+
+<h3 class="relative group">Windows 
+    <div id="windows" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#windows" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; window</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-vsplit-window-right <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">;; automatic focus when splitted</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-split-window-below <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">;; automatic focus when splitted</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> split-width-threshold <span style="color:#d3869b">240</span>)
+</span></span></code></pre></div>
 <h3 class="relative group">Some QoL Improvements 
     <div id="some-qol-improvements" class="anchor"></div>
     
@@ -966,6 +1069,13 @@
 </h3>
 <p>I really don&rsquo;t like the &ldquo;whole line highlighting&rdquo; in my editor. it may improve visibility of the current position but I prefer brighter cursor colors like <code>#00FF00</code> instead</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> global-hl-line-modes <span style="color:#d3869b">nil</span>) <span style="color:#928374;font-style:italic">; disable current line hightlight</span>
+</span></span></code></pre></div><p>Doom comes with line highlighting by default. I set my cursor&rsquo;s color to more vibrant color. So I don&rsquo;t need this</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> global-hl-line-modes <span style="color:#d3869b">nil</span>) <span style="color:#928374;font-style:italic">; disable current line hightlight</span>
+</span></span></code></pre></div><p>I changed my cursor color based on mode</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; change cursor colors by mode</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-insert-state-cursor <span style="color:#fe8019">&#39;</span>(box <span style="color:#b8bb26">&#34;#00FF00&#34;</span>)
+</span></span><span style="display:flex;"><span>      evil-visual-state-cursor <span style="color:#fe8019">&#39;</span>(box <span style="color:#b8bb26">&#34;orange&#34;</span>)
+</span></span><span style="display:flex;"><span>      evil-normal-state-cursor <span style="color:#fe8019">&#39;</span>(box <span style="color:#b8bb26">&#34;#E2E8EF&#34;</span>))
 </span></span></code></pre></div>
 <h2 class="relative group">Package Based Customizations 
     <div id="package-based-customizations" class="anchor"></div>
@@ -986,7 +1096,298 @@
     </span>        
     
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> global-hl-line-modes <span style="color:#d3869b">nil</span>) <span style="color:#928374;font-style:italic">; disable current line hightlight</span>
+<p>I mostly use <code>evil-mode</code> to scrach my <strong>vim</strong> itch so I modified this mode to my liking</p>
+<p>In vim, very long lines often wrap across multiple screen lines for visibility. This causes the cursor to jump several lines when using j or k. I fix this issue with the following configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; better j k experience skip pressing &#34;g j&#34; or &#34;g k&#34;</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">define-key</span> evil-normal-state-map (kbd <span style="color:#b8bb26">&#34;j&#34;</span>) <span style="color:#83a598">&#39;evil-next-visual-line</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">define-key</span> evil-normal-state-map (kbd <span style="color:#b8bb26">&#34;k&#34;</span>) <span style="color:#83a598">&#39;evil-previous-visual-line</span>)
+</span></span></code></pre></div><p>I find the <code>Escape</code> key too far from the home row, so I brought it closer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-escape-key-sequence <span style="color:#b8bb26">&#34;jk&#34;</span>) <span style="color:#928374;font-style:italic">;; escape from evil mode using j+k keys</span>
+</span></span></code></pre></div><p>In Emacs when you hit <code>A</code> key while the <code>evil-mode</code> is active, your cursor jumps to the end of line and enters into <strong>insert</strong> mode. but when you hit <code>Escape</code> key it moves the cursor one character back. I fixed this annoying behavior with the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-move-cursor-back <span style="color:#d3869b">nil</span>) <span style="color:#928374;font-style:italic">;; don&#39;t move cursor back when exiting insert mode</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-move-beyond-eol <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">;; can place cursor at the end of line. huge qol improvement</span>
+</span></span></code></pre></div><p>Since <code>L</code> and <code>H</code> keys don&rsquo;t have a meaningful purpose in <code>evil-mode</code> I decided to use them for jumping between <strong>begining of line</strong> and <strong>end of line</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">define-key</span> evil-normal-state-map (kbd <span style="color:#b8bb26">&#34;L&#34;</span>) <span style="color:#83a598">&#39;evil-end-of-line</span>) <span style="color:#928374;font-style:italic">;; shift + l go to end of line</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">define-key</span> evil-normal-state-map (kbd <span style="color:#b8bb26">&#34;H&#34;</span>) <span style="color:#83a598">&#39;evil-first-non-blank</span>) <span style="color:#928374;font-style:italic">;; shift + h go to start of line</span>
+</span></span></code></pre></div><p>History option to track history better in doom emacs</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> evil-want-fine-undo <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">;; track history better</span>
+</span></span></code></pre></div><p>When you hit <code>s</code> key in <strong>vim</strong> it deletes the character under the cursor and enters into the insert mode. I need this behavior but doom emacs replaces this functionality with a mode called <code>evil-snipe</code>. I mostly use <code>ivy</code> for this purpose. So I got my <code>s</code> key back by disabling <code>evil-snipe</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; save &#39;s&#39; from evil-snipe</span>
+</span></span><span style="display:flex;"><span>(after! evil-snipe
+</span></span><span style="display:flex;"><span>  <span style="color:#928374;font-style:italic">;; Disable evil-snipe overriding &#39;s&#39; and &#39;S&#39; in normal mode</span>
+</span></span><span style="display:flex;"><span>  (evil-snipe-mode <span style="color:#d3869b">-1</span>)
+</span></span><span style="display:flex;"><span>  (evil-snipe-override-mode <span style="color:#d3869b">-1</span>))
+</span></span></code></pre></div><p>And re-enabled the <code>s</code> behavior like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">define-key</span> evil-normal-state-map (kbd <span style="color:#b8bb26">&#34;s&#34;</span>) <span style="color:#83a598">&#39;evil-substitute</span>) <span style="color:#928374;font-style:italic">;; delete current char and enter in insert mode</span>
+</span></span></code></pre></div>
+<h3 class="relative group">Avy 
+    <div id="avy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#avy" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I use <code>avy-mode</code> for a faster navigation inside my buffer. I hit <code>F</code> to activate <code>avy</code> then press the character that I want to jump to. After I finish my work on that area I hit <code>Ctrl-o</code> to jump back</p>
+<p>I was using this functionality with lower case <code>f</code> before but I couldn&rsquo;t use <code>f</code> key while composing vim macros. So I made it <code>F</code> instead.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; avy</span>
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:n</span> <span style="color:#b8bb26">&#34;F&#34;</span> <span style="color:#fabd2f">#&#39;</span>avy-goto-char <span style="color:#fabd2f">:v</span> <span style="color:#b8bb26">&#34;F&#34;</span> <span style="color:#fabd2f">#&#39;</span>avy-goto-char) <span style="color:#928374;font-style:italic">;; easymotion like in lazyvim</span>
+</span></span></code></pre></div>
+<h3 class="relative group">Completion Frameworks 
+    <div id="completion-frameworks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#completion-frameworks" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+<h4 class="relative group">Company 
+    <div id="company" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#company" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>I use <code>company</code> for completion because it&rsquo;s mature and stable. But I&rsquo;m waiting for <code>corfu</code> to become more stable and feature rich at the same time.</p>
+<p>I like to use <code>Tab</code> key for comletions and I also want to get the completion buffer as fast as possible. Here is my small configuration for <code>company</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; company</span>
+</span></span><span style="display:flex;"><span>(after! company
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">define-key</span> company-active-map (kbd <span style="color:#b8bb26">&#34;&lt;tab&gt;&#34;</span>) <span style="color:#fabd2f">#&#39;</span>company-complete-selection) <span style="color:#928374;font-style:italic">;; use tab to complete (does not work in tui)</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> company-selection-wrap-around <span style="color:#d3869b">1</span>) <span style="color:#928374;font-style:italic">;; cycle through options</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> company-idle-delay <span style="color:#d3869b">0.1</span>) <span style="color:#928374;font-style:italic">;; get completion buffer faster</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div>
+<h4 class="relative group">Corfu 
+    <div id="corfu" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#corfu" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>I don&rsquo;t use the following <code>corfu</code> config because it doen&rsquo;t really work like I want but I still want to tangle it for reference</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; corfu</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; (after! corfu</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;   (setq +corfu-want-tab-prefer-expand-snippets t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;   (map! :map corfu-map</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         ;;;; use tab to accept completion (does not work in tui)</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         :i [tab] #&#39;corfu-complete                ;; accept completion</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         :i &#34;TAB&#34; #&#39;corfu-complete</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         :i &#34;C-j&#34; #&#39;corfu-next                    ;; next completion</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         :i &#34;C-k&#34; #&#39;corfu-previous                ;; previous completion</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         :i &#34;C-s&#34; #&#39;corfu-insert-separator        ;; insert blank space (+orderless)</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;         ))</span>
+</span></span></code></pre></div>
+<h3 class="relative group">Treemacs 
+    <div id="treemacs" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#treemacs" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Project repo <a
+  href="https://github.com/Alexander-Miller/treemacs"
+    target="_blank"
+  >GitHub - Alexander-Miller/treemacs</a></p>
+<p>I use <code>treemacs</code> package to display and quickly delete/rename/create files in my projects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; treemacs</span>
+</span></span><span style="display:flex;"><span>(after! treemacs
+</span></span><span style="display:flex;"><span>  (treemacs-follow-mode <span style="color:#d3869b">1</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> treemacs-width <span style="color:#d3869b">25</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> treemacs-position <span style="color:#83a598">&#39;right</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> treemacs-text-scale <span style="color:#d3869b">-1</span>) <span style="color:#928374;font-style:italic">;; enable if using emacs gui</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> treemacs-git-mode <span style="color:#83a598">&#39;extended</span>)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:leader</span> <span style="color:#fabd2f">:desc</span> <span style="color:#b8bb26">&#34;open treemacs&#34;</span> <span style="color:#b8bb26">&#34;o p&#34;</span>   <span style="color:#fabd2f">#&#39;</span>+treemacs/toggle )
+</span></span></code></pre></div>
+<h3 class="relative group">Gptel 
+    <div id="gptel" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#gptel" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Project repo <a
+  href="https://github.com/karthink/gptel"
+    target="_blank"
+  >GitHub - karthink/gptel: A simple LLM client for Emacs</a></p>
+<p>I like to play with local llms so I installed a package called <code>gptel</code>. I use a small version of <strong>deepseek</strong> model locally using <code>ollama</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; llm</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span>
+</span></span><span style="display:flex;"><span> gptel-model <span style="color:#83a598">&#39;deepseek-r1:8b</span>
+</span></span><span style="display:flex;"><span> gptel-backend (gptel-make-ollama <span style="color:#b8bb26">&#34;ollama&#34;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#fabd2f">:host</span> <span style="color:#b8bb26">&#34;localhost:11434&#34;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#fabd2f">:stream</span> <span style="color:#d3869b">t</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#fabd2f">:models</span> <span style="color:#fe8019">&#39;</span>(deepseek-r1:8b)))
+</span></span></code></pre></div>
+<h3 class="relative group">Vterm with <code>tmux</code> 
+    <div id="vterm-with-tmux" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#vterm-with-tmux" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I use <code>vterm</code> for all my terminal needs in emacs. But I also heavily configured it to my likings. When I toggle <code>vter</code> buffer it also reads the current workspace name and opens a <code>tmux</code> session with the same name. This is quite handy because I can manage my terminals based on workspace and projects. For example I use <code>projectile</code> package for project management. And when I open a new project it opens it in a separate workspace with project name. So when I open <code>vterm</code> it also automatically creates a new tmux session with project&rsquo;s name.</p>
+<p>Setup some environment for <code>vterm</code> first. Since I use <strong>NixOS</strong> as my daily driver, I don&rsquo;t have FHS in my system. Therefore packages like <code>zsh</code> live in different places</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; vterm</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;; NixOS-specific shell path configuration</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">let</span> ((zsh-path (shell-command-to-string <span style="color:#b8bb26">&#34;readlink -f $(which zsh)&#34;</span>)))
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> explicit-shell-file-name (string-trim zsh-path))
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> vterm-shell (string-trim zsh-path)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> vterm-environment <span style="color:#fe8019">&#39;</span>(<span style="color:#b8bb26">&#34;TERM=xterm-256color&#34;</span>))
+</span></span><span style="display:flex;"><span>(set-language-environment <span style="color:#b8bb26">&#34;UTF-8&#34;</span>)
+</span></span><span style="display:flex;"><span>(set-default-coding-systems <span style="color:#83a598">&#39;utf-8</span>)
+</span></span></code></pre></div><p>I prefer faster refresh times in my terminal. So it feels snappy and responsive.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> vterm-timer-delay <span style="color:#d3869b">0.005</span>) <span style="color:#928374;font-style:italic">;; Reduce delay for better responsiveness</span>
+</span></span></code></pre></div><p>Some settings for popup terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(after! vterm
+</span></span><span style="display:flex;"><span>  (set-popup-rule! <span style="color:#b8bb26">&#34;*doom:vterm-popup&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fabd2f">:size</span> <span style="color:#d3869b">0.35</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fabd2f">:select</span> <span style="color:#d3869b">t</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fabd2f">:quit</span> <span style="color:#d3869b">nil</span>))
+</span></span></code></pre></div><p>Since I use <code>tmux</code> inside my <code>vterm</code> terminals, it means that there is <span class="underline">always</span> a process (tmux) running. This causes <code>vterm</code> to warn me about the running process when I try to exit from it. I disable this warning and confirmation</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; Avoid prompt when killing vterm buffers with running processes</span>
+</span></span><span style="display:flex;"><span>(remove-hook <span style="color:#83a598">&#39;kill-buffer-query-functions</span> <span style="color:#83a598">&#39;process-kill-buffer-query-function</span>)
+</span></span></code></pre></div><p>I use <code>Alt+o</code> for my <code>tmux</code> prefix key because it is so easy to reach. But sening this kind of meta key combination to <code>vterm</code> is not allowed by default. We fix it like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; Allow tmux prefix (M-o) passthrough</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">with-eval-after-load</span> <span style="color:#83a598">&#39;vterm</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">define-key</span> vterm-mode-map (kbd <span style="color:#b8bb26">&#34;M-o&#34;</span>) <span style="color:#fabd2f">#&#39;</span>vterm--self-insert))
+</span></span></code></pre></div><p>Lastly I invoke <code>tmux</code> when I open <code>vterm</code> with the following config</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; tmux integration</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">defvar-local</span> my/vterm-tmux-started <span style="color:#d3869b">nil</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#b8bb26">&#34;Whether tmux has already been started in this vterm buffer.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">defun</span> my/vterm-start-tmux ()
+</span></span><span style="display:flex;"><span>  <span style="color:#b8bb26">&#34;Start tmux session in vterm once, avoiding nesting.&#34;</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">unless</span> my/vterm-tmux-started
+</span></span><span style="display:flex;"><span>    (<span style="color:#fabd2f">setq</span> my/vterm-tmux-started <span style="color:#d3869b">t</span>)
+</span></span><span style="display:flex;"><span>    (<span style="color:#fabd2f">let</span> ((workspace (persp-name (get-current-persp))))
+</span></span><span style="display:flex;"><span>      (vterm-send-string
+</span></span><span style="display:flex;"><span>       (<span style="color:#fabd2f">format</span> <span style="color:#b8bb26">&#34;sh -c &#39;unset TMUX; exec tmux new-session -A -s \&#34;%s\&#34;&#39;&#34;</span> workspace))
+</span></span><span style="display:flex;"><span>      (vterm-send-return))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">defun</span> my/vterm-setup ()
+</span></span><span style="display:flex;"><span>  <span style="color:#b8bb26">&#34;Custom setup for `vterm-mode`.&#34;</span>
+</span></span><span style="display:flex;"><span>  (visual-line-mode <span style="color:#d3869b">-1</span>) <span style="color:#928374;font-style:italic">;; Disable line wrap for better zsh modeline rendering</span>
+</span></span><span style="display:flex;"><span>  (run-with-timer <span style="color:#d3869b">0.3</span> <span style="color:#d3869b">nil</span> <span style="color:#fabd2f">#&#39;</span>my/vterm-start-tmux))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;vterm-mode-hook</span> <span style="color:#fabd2f">#&#39;</span>my/vterm-setup)
+</span></span></code></pre></div>
+<h3 class="relative group">Centaur Tabs 
+    <div id="centaur-tabs" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#centaur-tabs" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Project repo <a
+  href="https://github.com/ema2159/centaur-tabs"
+    target="_blank"
+  >ema2159/centaur-tabs</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;;; centaur tabs</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-style <span style="color:#b8bb26">&#34;alternate&#34;</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-height <span style="color:#d3869b">35</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; display highlight bar bottom</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-set-bar <span style="color:#83a598">&#39;under</span>
+</span></span><span style="display:flex;"><span> x-underline-at-descent-line <span style="color:#d3869b">t</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; disable &#34;X&#34; close button</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-close-button <span style="color:#b8bb26">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; disable new tab button</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-show-new-tab-button <span style="color:#d3869b">nil</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; make new tabs open to the right</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-adjust-buffer-order <span style="color:#83a598">&#39;right</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; don&#39;t gray out file icons</span>
+</span></span><span style="display:flex;"><span> centaur-tabs-gray-out-icons <span style="color:#83a598">&#39;buffer</span>
+</span></span><span style="display:flex;"><span> <span style="color:#928374;font-style:italic">;; centaur-tabs-gray-out-icons nil</span>
+</span></span><span style="display:flex;"><span> )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; disable groupings for tabs</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">defun</span> my/centaur-tabs-buffer-groups ()
+</span></span><span style="display:flex;"><span>  <span style="color:#b8bb26">&#34;Disable grouping in centaur-tabs. All buffers go in the same group.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#fe8019">&#39;</span>(<span style="color:#b8bb26">&#34;Default&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> centaur-tabs-buffer-groups-function <span style="color:#83a598">&#39;my/centaur-tabs-buffer-groups</span>)
+</span></span></code></pre></div>
+<h3 class="relative group">Emmet 
+    <div id="emmet" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#emmet" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Project repo <a
+  href="https://github.com/smihica/emmet-mode"
+    target="_blank"
+  >smihica/emmet-mode</a></p>
+<p>Emmet helps me spit <code>html</code> at light speed. First let&rsquo;s enable <code>emmet</code> in the following web related modes</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; emmet</span>
+</span></span><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; hooks</span>
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;html-mode-hook</span>  <span style="color:#83a598">&#39;emmet-mode</span>) <span style="color:#928374;font-style:italic">;; enable emmet in html mode</span>
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;css-mode-hook</span>  <span style="color:#83a598">&#39;emmet-mode</span>) <span style="color:#928374;font-style:italic">;; enable emmet&#39;s css abbreviation.</span>
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;rjsx-mode-hook</span>  <span style="color:#83a598">&#39;emmet-mode</span>) <span style="color:#928374;font-style:italic">;; enable emmet in rjsx mode</span>
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#83a598">&#39;js-jsx-mode-hook</span>  <span style="color:#83a598">&#39;emmet-mode</span>) <span style="color:#928374;font-style:italic">;; enable emmet in jsx mode</span>
+</span></span></code></pre></div><p>Setup keybindings for <code>emmet</code> for seamless usage like in <code>vscode</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; keybinds</span>
+</span></span><span style="display:flex;"><span>(map! <span style="color:#fabd2f">:map</span> emmet-mode-keymap
+</span></span><span style="display:flex;"><span>      <span style="color:#fabd2f">:i</span> <span style="color:#b8bb26">&#34;&lt;C-return&gt;&#34;</span> <span style="color:#fabd2f">#&#39;</span>emmet-expand-line
+</span></span><span style="display:flex;"><span>      <span style="color:#fabd2f">:i</span> <span style="color:#b8bb26">&#34;&lt;tab&gt;&#34;</span> <span style="color:#fabd2f">#&#39;</span>emmet-next-edit-point
+</span></span><span style="display:flex;"><span>      <span style="color:#fabd2f">:i</span> <span style="color:#b8bb26">&#34;&lt;backtab&gt;&#34;</span> <span style="color:#fabd2f">#&#39;</span>emmet-prev-edit-point
+</span></span><span style="display:flex;"><span>      )
+</span></span></code></pre></div><p>Make <code>emmet</code> be aware of <code>jsx</code> mode</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">setq</span> emmet-expand-jsx-className? <span style="color:#d3869b">t</span>) <span style="color:#928374;font-style:italic">;; default nil</span>
+</span></span></code></pre></div>
+<h3 class="relative group">Tailwind 
+    <div id="tailwind" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#tailwind" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Project repo <a
+  href="https://github.com/merrickluo/lsp-tailwindcss"
+    target="_blank"
+  >merrickluo/lsp-tailwindcss</a></p>
+<p>Tailwind does not play well with Doom Emacs. I spent a significant amount of time to set it up.. So here is how you do it</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; tailwind</span>
+</span></span><span style="display:flex;"><span>(use-package! lsp-tailwindcss
+</span></span><span style="display:flex;"><span>  <span style="color:#fabd2f">:after</span> lsp-mode
+</span></span><span style="display:flex;"><span>  <span style="color:#fabd2f">:init</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#fabd2f">setq</span> lsp-tailwindcss-add-on-mode <span style="color:#d3869b">t</span>
+</span></span><span style="display:flex;"><span>        lsp-tailwindcss-server-version <span style="color:#b8bb26">&#34;0.14.8&#34;</span>
+</span></span><span style="display:flex;"><span>        lsp-tailwindcss-skip-config-check <span style="color:#d3869b">t</span>))
+</span></span></code></pre></div><ul>
+<li>As you see you need to tell tailwind lsp to load as an add-on to prevent replacing the major lsp such as <code>rjsx</code> or other javascript lsps.</li>
+<li>Only the <code>0.14.8</code> version of the tailwind server works correctly (speaking for 2025)</li>
+<li>And the last option is from a GitHub issue that I found back in the day. I don&rsquo;t remember which one..</li>
+</ul>
+<p>you also need to do some adjustments in <code>packages.el</code> file. Here is the <code>packages.el</code> setting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">;; tailwind lsp</span>
+</span></span><span style="display:flex;"><span>(package! lsp-tailwindcss <span style="color:#fabd2f">:recipe</span> (<span style="color:#fabd2f">:type</span> git <span style="color:#fabd2f">:host</span> github <span style="color:#fabd2f">:repo</span> <span style="color:#b8bb26">&#34;merrickluo/lsp-tailwindcss&#34;</span>))
 </span></span></code></pre></div>
           
           
