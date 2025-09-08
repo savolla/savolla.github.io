@@ -9,12 +9,12 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>-F</title>
       <link>http://localhost:1313/tags/-f/</link>
-      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/-f/</guid>
       <description></description>
@@ -24,9 +24,49 @@
     <item>
       <title>-Z</title>
       <link>http://localhost:1313/tags/-z/</link>
-      <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/-z/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cassandra</title>
+      <link>http://localhost:1313/tags/cassandra/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/cassandra/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>http://localhost:1313/tags/debian/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/debian/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>http://localhost:1313/tags/ubuntu/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
       <description></description>
       
     </item>
@@ -197,16 +237,6 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/personal/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
-      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
       <description></description>
       
     </item>

@@ -16,6 +16,11 @@
  weight = 10
 
 [[main]]
+ name = "reference"
+ pageRef = "reference"
+ weight = 10
+
+[[main]]
  name = "zettelkasten"
  pageRef = "zettel"
  weight = 10

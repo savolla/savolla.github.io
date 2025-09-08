@@ -4,7 +4,43 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/reference/cassandra/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/reference/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -40,12 +76,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</loc>
-    <lastmod>2025-09-06T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/zettel/</loc>
     <lastmod>2025-09-06T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

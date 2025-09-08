@@ -9,7 +9,37 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>check if your linux machine is 64-bit or 32-bit</title>
+      <link>http://localhost:1313/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install cassandra on ubuntu server</title>
+      <link>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>update ubuntu/debian</title>
+      <link>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>create in-document links using org mode</title>
