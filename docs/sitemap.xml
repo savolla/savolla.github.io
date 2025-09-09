@@ -4,7 +4,25 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <lastmod>2025-09-09T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</loc>
+    <lastmod>2025-09-09T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</loc>
+    <lastmod>2025-09-09T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-09T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -27,6 +45,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</loc>
+    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/reference/</loc>
     <lastmod>2025-09-08T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -34,12 +58,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</loc>
-    <lastmod>2025-09-08T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/zettel/</loc>
     <lastmod>2025-09-08T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

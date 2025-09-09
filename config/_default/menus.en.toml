@@ -52,10 +52,10 @@
 #  pageRef = "categories"
 #  weight = 20
 
-[[main]]
- name = "tags"
- pageRef = "tags"
- weight = 30
+# [[main]]
+#  name = "tags"
+#  pageRef = "tags"
+#  weight = 30
 
 
 # -- Footer Menu --
@@ -63,10 +63,10 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "tags"
+  pageRef = "tags"
+  weight = 10
 
 # [[footer]]
 #   name = "Categories"

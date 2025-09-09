@@ -41,10 +41,32 @@ draft = false
 
 ## Zettels {#zettels}
 
--   [install cassandra on ubuntu server]({{< relref "6e1d4827-3a4e-409d-9e09-c08f8d44a12c" >}})
+```emacs-lisp
+(mapconcat
+ (lambda (node)
+   (format "- [[id:%s][%s]]"
+           (org-roam-node-id node)
+           (org-roam-node-title node)))
+ (org-roam-ql-nodes
+  '(tags "cassandra" "_z"))
+ "\n")
+```
+
+-   [install cassandra on ubuntu server]({{< relref "8fc36f7c-c3db-4cdf-a0cf-7081180b5514" >}})
 
 
 ## Flashcards {#flashcards}
+
+```emacs-lisp
+(mapconcat
+ (lambda (node)
+   (format "- [[id:%s][%s]]"
+           (org-roam-node-id node)
+           (org-roam-node-title node)))
+ (org-roam-ql-nodes
+  '(tags "cassandra" "_f"))
+ "\n")
+```
 
 
 ## References {#references}

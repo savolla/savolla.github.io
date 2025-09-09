@@ -9,7 +9,27 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>install ventoy on a usb drive on nixos</title>
+      <link>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>resize images in org mode</title>
+      <link>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>check if your linux machine is 64-bit or 32-bit</title>
@@ -27,6 +47,16 @@
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install cassandra on ubuntu server</title>
+      <link>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</guid>
       <description></description>
       
     </item>

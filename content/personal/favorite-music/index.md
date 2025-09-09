@@ -14,13 +14,18 @@ My music selection from ****Normie**** to ****Schizo**** level
 
 ### Albums {#albums}
 
--   [Jinsang - Solitude](//www.youtube.com/watch?v=ke88KS1Q09s)
--   [Jinsang - Life](https://www.youtube.com/watch?v=osVmINgyEyI)
+<a href="https://www.youtube.com/watch?v=ke88KS1Q09s" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4055206329_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=osVmINgyEyI" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4112783792_16.jpg" width="200px" />
+</a>
 
 ---
 
 
-## Classical Music 🎻 {#classical-music}
+## Classical Music {#classical-music}
 
 
 ### Live Performances {#live-performances}
@@ -62,7 +67,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Jazz 🎷 {#jazz}
+## Jazz {#jazz}
 
 -   [Jazz at the Pawnshop](https://www.youtube.com/watch?v=SRTg9BYrLY8)
 -   [George Duke Trio - It's On](https://www.youtube.com/watch?v=uHFJ9qhR0VM)
@@ -71,7 +76,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Chiptune (NES/SNES) 👾 {#chiptune--nes-snes}
+## Chiptune (NES/SNES) {#chiptune--nes-snes}
 
 
 ### Tracks {#tracks}
@@ -109,7 +114,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## IDM 🧠 {#idm}
+## IDM {#idm}
 
 
 ### Tracks {#tracks}
@@ -144,6 +149,260 @@ My music selection from ****Normie**** to ****Schizo**** level
 
 
 ## Metal {#metal}
+
+
+### Albums {#albums}
+
+<a href="https://www.youtube.com/watch?v=jH9tLxAHRaE&list=PL04FB7443998C8BE7" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/_20250909_115640screenshot.png" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=ShiEuQk5agg" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/inferi-the-path-of-apotheosis-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=zDk2Jj8XbME" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/anterior-this-age-of-silence-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=seZlOO0_loY&list=PLFLbtvbmdPzmh84OYDHPjfLUyVvq5IeHr" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/the-zenith-passage-cosmic-dissonance-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/playlist?list=PLsT9douBcx997k2CDSpOxub3grfJhtBv4" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/cryptopsy-once-was-not-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=xSCydTk4An0&list=PL303FCC9224D4FDE7" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/the-faceless-planetary-duality-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=YPPBnsAmumg" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/decrepit-birth-polarity-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=pXgYgQ25vcA&list=PLArAJlC1y558CMpigJ4D91dh0bkxDOgc7" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/cds_severe_torture_-_slaughteredg_em00081234.jpg" width="200px" />
+</a>
+
+<a href="https://kittyonfirerecords.bandcamp.com/album/digital-heresy?search_page_id=3762158789&logged_out_menubar=true" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a3001565452_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=Wf1SuxfTrhA" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/solution-45-for-aeons-past-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=AfLEN_cbBf8" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/spawn-of-possession-incurso-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=N_5QPR6hJQk&list=PLsT9douBcx98WYyKxEay8oPuF3aeIWo8g" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/arch-enemy-doomsday-machine-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=-JYFgoaEeaQ" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4289640009_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=tQuOkNRfGLk&list=PLArAJlC1y55-GPcRt-QgikggyHvKdBduc" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4034829752_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=r6UudWCJGjw" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/dissonance-in-design-sentient-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=jBEwPTW_I58" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a2101533950_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=3009z1wWf3o" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a0631388780_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=fiGcEdTMvzg" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/marduk-heaven-shall-burn-when-we-are-gathered-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=fiGcEdTMvzg" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a2042124925_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=dm3i7fWufrw" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a2796334238_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=WWuu7tq64KE" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4012758714_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=qzY3LT5U-XA" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a0442888424_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=dCekYQLstn0" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/hypocrisy-catch-22-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=lDs3m9_YVPs" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/hypocrisy-the-final-chapter-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=hxlnWjxUpoY&list=PLqiuawWTFWog6ES_HxQQcBxeQS1M18WHG" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/the-absence-from-your-grave-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=SIFttoyLkw8" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/hypocrisy-the-arrival-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=bxegqv87JhA&list=PL1900D81A9F1951F4" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/stratovarius-episode-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=5-E4ZRZg2bY" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/krallice-diotima-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=AkG5xmvA3lM" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/krallice-dimensional-bleedthrough-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=PB0nvFgSKqc" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/blut-aus-nord-memoria-vetusta-ii-dialogue-with-the-stars-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=Mm_f2fKXA9w" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/machine-head-the-blackening-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=4z9X0htC3mg" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/modern-day-babylon-travelers-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=1gRESh4iyfs" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/the-helix-nebula-meridian-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=W9VG9KxK_lo&list=PLsT9douBcx9_Y7NUDvhX2kHEcnvcVCgin" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/arch-enemy-rise-of-the-tyrant-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=dheNB2erMZI" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/horrific-your-worst-nightmare-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=wGoCtJJN8aU" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/ulcerate-cutting-the-throat-of-god-Cover-Art.png" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=HjB2Zgw5w6o" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/betray-my-secrets-betray-my-secrets-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=O68F_PYn1PM" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/fallujah-the-flesh-prevails-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=uT0dCaP6nsA" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/slipknot-slipknot-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=RHnQFbFSczI" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/slipknot-iowa-Cover-Art.jpg" width="200px" />
+</a>
+
+
+### Live Performances {#live-performances}
+
+-   Norther - Cry
+
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/6cLPs1pU-lg?list=RD6cLPs1pU-lg" title="NORTHER - Cry (live) + lyrics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+-   Sam Bell - Gravity
+
+    <iframe width="720" height="480" src="https://www.youtube.com/embed/HtpRNBnV0QE" title="GRAVITY by Sam Bell (8 string funky shred guitar)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Opeth - Heir Apparent (Wacken 2008)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/qrWqkWmKoJY" title="14) Opeth - Heir Apparent (Wacken Live 2008)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Opeth - Harlequin Forest (Royal Albert Hall)
+
+    <iframe width="751" height="380" src="https://www.youtube.com/embed/0HRett4kOpM" title="OPETH- Harlequin Forest at the Royal Albert Hall High Def!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Vesania - Marduke's Mazemerising (Metalmania 2006)
+
+    <iframe width="708" height="380" src="https://www.youtube.com/embed/Ev5XhDxv9P4" title="Vesania - Marduke&#39;s Mazemerising - Live at Metalmania 2006" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Gorod - Celestial Nature (playthrough)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/UXxZ3exL26U" title="Gorod - Celestial Nature - guitar playthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Cannibal Corpse - Frantic Disembowelment (playthrough)
+
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/QOb6JSQd-Qw" title="Cannibal Corpse - Frantic Disembowelment (Guitar, Bass &amp; Dru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Dimmu Borgir - Mourning Palace
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/Cg6n3ZhKwt4" title="DIMMU BORGIR - Mourning Palace (LIVE FORCES OF THE NORTHERN NIGHT)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Hannes Grossmann - Ingesting Blatteria
+
+    <iframe width="654" height="480" src="https://www.youtube.com/embed/vUNxjpwORDQ" title="Obscura drummer plays Blotted Science Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Sepultura - Inner Self (young)
+
+    <iframe width="643" height="480" src="https://www.youtube.com/embed/fXNKTeRYNHk" title="old SEPULTURA... &quot;Inner Self&quot; live 1991... 🤘🏻💀🎤🔥🥁🎸🤘🏻🔥💀" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Cannibal Corpse - From Skin to Liquid
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/EsPm4BXx1NA" title="Cannibal Corpse - From Skin to Liquid (guitar cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Pantera - Domination
+
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/aDACorIaxNw" title="Pantera - Domination (Official Live Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Children of Bodom - Lake Bodom (Seoul 2001)
+
+    <iframe width="600" height="480" src="https://www.youtube.com/embed/XLB4kjtnegA" title="Children Of Bodom - Lake Bodom (live in Seoul 2001)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Opeth - The Roundhouse Tapes (2006)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/PQEyE9JWQtI" title="Opeth - The Roundhouse Tapes (2006) Full Concert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Arch Enemy - Intermezzo Liberte
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/OMtN82sdNGQ" title="Arch Enemy - 12.Michael Solo+Intermezzo Liberte Live in Tokyo 2008 (Tyrants of the Rising Sun DVD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Jimbo on his War Guitar
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/FE9o0kT11Xw" title="Jimbo on his War Guitar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Jimbo on his War Guitar 2
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/YMq_gMzwfq8" title="NorCal Bassix: Jimbo, Monolith" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Sonata Arctica Keyboard Solo
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/ITVXEXmgrTA" title="Sonata Arctica - Epic keytar vs guitar solo part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Bob Katsionis Keyboard Solo
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/5DRbce2utB4" title="Bob Katsionis:Keyboard Orgasms Pt.1 &quot;Keyboard Tapping&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Opeth - Face of Melinda (Roundhouse Tapes 2007)
+
+    <iframe width="752" height="380" src="https://www.youtube.com/embed/5IDiRquHT0s" title="05. Face of Melinda [Opeth - The Roundhouse Tapes (2007)]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Behemoth - Demigod (Paris 2008)
+
+    <iframe width="752" height="380" src="https://www.youtube.com/embed/Sm1jJ4GxiB0" title="Behemoth - Demigod (Live Paris 2008)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Children of Bodom Keyboard and Guitar duel
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/SdC6N-CBdfQ" title="Children Of Bodom - Alexi Laiho Vs Janne Warman Live HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Quo Vadis - Silence Calls the Storm
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/94ipkWKXOL0" title="Quo Vadis - Silence Calls The Storm (Live) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Rings of Saturn - Seized and Devoured (playthrough)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/W1exxzZKTvg" title="RINGS OF SATURN - LUCAS MANN &amp; JOEL OMANS - SEIZED AND DEVOURED REMAKE - INSTRUMENTAL PLAYTHROUGH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Behemoth - (Paris 2008)
+
+    <iframe width="748" height="361" src="https://www.youtube.com/embed/pNKzKTUVjq0" title="Behemoth   Evangelia Heretika   live on Paris 2008 HQ DVD RIP h264 AAC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Animals As Leaders (Brutal Assault 2016)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/DWfg5BhYL5I" title="Brutal Assault 21 - Animals As Leaders (live) 2016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Infant Annihilator - Cuntcrusher (playthrough)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/SImHi16cwqc" title="Infant Annihilator - Cuntcrusher - Drum Play-through [OFFICIAL] [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Alex Rudinger - Trush in None (playthrough)
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/z2LzvTc0dgg" title="Alex Rudinger - Threat Signal - &quot;Trust In None&quot; (Instrumental)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 
 
 ### Tracks {#tracks}
@@ -214,111 +473,67 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [Dying Fetus - Your Treachery Will Die With You](<https://www.youtube.com/watch?v=i8Jjy3Zy7kk>)
 
 
-### Albums {#albums}
-
--   [Inferi - The Path of Apotheosis](<https://www.youtube.com/watch?v=ShiEuQk5agg>) 🔥🔥🔥
--   [Anterior - This age of silence](<https://www.youtube.com/watch?v=zDk2Jj8XbME>)
--   [The Zenith Passage - Cosmic Dissonance](<https://www.youtube.com/watch?v=seZlOO0_loY&list=PLFLbtvbmdPzmh84OYDHPjfLUyVvq5IeHr>)
--   [Cryptopsy - Once Was Not](<https://www.youtube.com/playlist?list=PLsT9douBcx997k2CDSpOxub3grfJhtBv4>)
--   [The Faceless - Planetary Duality](<https://www.youtube.com/watch?v=xSCydTk4An0&list=PL303FCC9224D4FDE7>)
--   [Decrepit Birth - Polarity](<https://www.youtube.com/watch?v=YPPBnsAmumg>)
--   [Severe Torture - Slaughtered](<https://www.youtube.com/watch?v=pXgYgQ25vcA&list=PLArAJlC1y558CMpigJ4D91dh0bkxDOgc7>)
--   [Heptaedium - Digital Heresy](<https://kittyonfirerecords.bandcamp.com/album/digital-heresy?search_page_id=3762158789&logged_out_menubar=true>)
--   [After the Burial - Rareform](<https://www.youtube.com/playlist?list=PLjF-6RKNqqVq1qqxey1HdiyY-yXGmYwEW>)
--   [Solution 45 - For Aeons](<https://www.youtube.com/watch?v=Wf1SuxfTrhA>) only single guy doing all the vocals?
--   [Spawn Of Possession - Incurso](<https://www.youtube.com/watch?v=AfLEN_cbBf8>)
--   [Thy Light - Suici De Pression](<https://www.youtube.com/watch?v=3b0XUdd_pdw>)
--   [Arch Enemy - Doomsday Machine](<https://www.youtube.com/watch?v=N_5QPR6hJQk&list=PLsT9douBcx98WYyKxEay8oPuF3aeIWo8g>)
--   [Abominable Putridity - The Anomalies Of Artificial Origin](<https://www.youtube.com/watch?v=-JYFgoaEeaQ>)
--   [SepticFlesh - Annubis](<https://www.youtube.com/watch?v=tQuOkNRfGLk&list=PLArAJlC1y55-GPcRt-QgikggyHvKdBduc>)
--   [Dissonance in Design - Sentient](<https://www.youtube.com/watch?v=r6UudWCJGjw>)
--   [Heptaedium - How Long Shall I Suffer Here?](<https://www.youtube.com/watch?v=jBEwPTW_I58>)
--   [Gorod - A Perfect Absolution](<https://www.youtube.com/watch?v=3009z1wWf3o>)
--   [Marduk - Heaven Shall Burn... When We Are Gathered](<https://www.youtube.com/watch?v=fiGcEdTMvzg>)
--   [Darkthrone - A Blaze In The Northern Sky](<https://www.youtube.com/watch?v=vJ96iVbA_No&list=PLiN-7mukU_RE2xmxLMh424HEBQneu5ox2>)
--   [Ouroboros - Glorification of a Myth](<https://www.youtube.com/watch?v=dm3i7fWufrw>)
--   [Cryptopsy - None So Vile](<https://www.youtube.com/watch?v=WWuu7tq64KE>)
--   [Carach Angren - Lammendam](<https://www.youtube.com/watch?v=qzY3LT5U-XA>)
--   [Hypocrisy - Catch 22](<https://www.youtube.com/watch?v=dCekYQLstn0>)
--   [Hypocrisy - The Final Chapter](<https://www.youtube.com/watch?v=lDs3m9_YVPs>)
--   [The Absence - From Your Grave](<https://www.youtube.com/watch?v=hxlnWjxUpoY&list=PLqiuawWTFWog6ES_HxQQcBxeQS1M18WHG>)
--   [Hypocrisy - The Arrival](<https://www.youtube.com/watch?v=SIFttoyLkw8>)
--   [Stratovarius - Episode](<https://www.youtube.com/watch?v=bxegqv87JhA&list=PL1900D81A9F1951F4>)
--   [Krallice - Diotima](<https://www.youtube.com/watch?v=5-E4ZRZg2bY>)
--   [Krallice - Dimensional Bleedthrough](<https://www.youtube.com/watch?v=AkG5xmvA3lM>)
--   [Blut Aus Nord - Memoria Vetusta II](<https://www.youtube.com/watch?v=PB0nvFgSKqc>)
--   [Machine Head - The Blackening](<https://www.youtube.com/watch?v=Mm_f2fKXA9w>)
--   [Modern Day Babylon - Travelers](<https://www.youtube.com/watch?v=4z9X0htC3mg>)
--   [Meridian - The Helix Nebula](<https://www.youtube.com/watch?v=1gRESh4iyfs>)
--   [Arch Enemy - Rise of the Tyrant](<https://www.youtube.com/watch?v=W9VG9KxK_lo&list=PLsT9douBcx9_Y7NUDvhX2kHEcnvcVCgin>)
--   [Horrific - Your Worst Nightmare](<https://www.youtube.com/watch?v=dheNB2erMZI>) 🔥🔥
--   [Ulcerate - Cutting the Throat of God](<https://www.youtube.com/watch?v=wGoCtJJN8aU>)
--   [Betray My Secrets - Betray My Secrets](<https://www.youtube.com/watch?v=HjB2Zgw5w6o>)
--   [Fallujah - The Flesh Prevails](<https://www.youtube.com/watch?v=O68F_PYn1PM>)
--   [Slipknot - Slipknot](<https://www.youtube.com/watch?v=uT0dCaP6nsA>)
--   [Slipknot - Iowa](<https://www.youtube.com/watch?v=RHnQFbFSczI>)
-
-
-### Live Performances {#live-performances}
-
--   [Sam Bell - Gravity](<https://www.youtube.com/watch?v=HtpRNBnV0QE>)
--   [Opeth - Heir Apparent (Wacken 2008)](<https://youtu.be/qrWqkWmKoJY>) 🔥
--   [Opeth - Harlequin Forest (Royal Albert Hall)](<https://youtu.be/0HRett4kOpM>)
--   [Vesania - Marduke's Mazemerising (Metalmania 2006)](<https://www.youtube.com/watch?v=Ev5XhDxv9P4>)
--   [Gorod - Celestial Nature (playthrough)](<https://www.youtube.com/watch?v=UXxZ3exL26U>)
--   [Cannibal Corpse - Frantic Disembowelment (playthrough)](<https://youtu.be/QOb6JSQd-Qw>)
--   [Dimmu Borgir - Mourning Palace](<https://www.youtube.com/watch?v=Cg6n3ZhKwt4>)
--   [Hannes Grossmann - Ingesting Blatteria](<https://www.youtube.com/watch?v=vUNxjpwORDQ>)
--   [Sepultura - Inner Self (young)](<https://www.youtube.com/watch?v=fXNKTeRYNHk>) 🔥🔥
--   [Cannibal Corpse - From Skin to Liquid](<https://www.youtube.com/watch?v=EsPm4BXx1NA>)
--   [Pantera - Domination](<https://www.youtube.com/watch?v=aDACorIaxNw>)
--   [Children of Bodom - Lake Bodom (Seoul 2001)](<https://www.youtube.com/watch?v=XLB4kjtnegA>)
--   [Opeth - The Roundhouse Tapes (2006)](<https://www.youtube.com/watch?v=PQEyE9JWQtI>)
--   [Arch Enemy - Intermezzo Liberte](<https://www.youtube.com/watch?v=OMtN82sdNGQ>)
--   [Jimbo on his War Guitar](<https://www.youtube.com/watch?v=FE9o0kT11Xw>)
--   [Jimbo on his War Guitar 2](<https://www.youtube.com/watch?v=YMq_gMzwfq8>)
--   [Sonata Arctica Keyboard Solo](<https://www.youtube.com/watch?v=ITVXEXmgrTA>)
--   [Bob Katsionis Keyboard Solo](<https://www.youtube.com/watch?v=5DRbce2utB4>)
--   [Opeth - Face of Melinda (Roundhouse Tapes 2007)](<https://www.youtube.com/watch?v=5IDiRquHT0s>)
--   [Behemoth - Demigod (Paris 2008)](<https://www.youtube.com/watch?v=Sm1jJ4GxiB0>)
--   [Children of Bodom Keyboard and Guitar duel](<https://www.youtube.com/watch?v=SdC6N-CBdfQ>)
--   [Quo Vadis - Silence Calls the Storm](<https://www.youtube.com/watch?v=94ipkWKXOL0>)
--   [Rings of Saturn - Seized and Devoured (playthrough)](<https://www.youtube.com/watch?v=W1exxzZKTvg>)
--   [Behemoth - (Paris 2008)](<https://www.youtube.com/watch?v=pNKzKTUVjq0>)
--   [Animals As Leaders (Brutal Assault 2016)](<https://www.youtube.com/watch?v=DWfg5BhYL5I>)
--   [Infant Annihilator - Cuntcrusher (playthrough)](<https://www.youtube.com/watch?v=SImHi16cwqc>)
--   [Alex Rudinger - Trush in None (playthrough)](<https://www.youtube.com/watch?v=z2LzvTc0dgg>)
-
----
-
-
 ## Breakcore {#breakcore}
 
 
 ### Albums {#albums}
 
--   [Heptaedium "A M E N"](<https://www.youtube.com/watch?v=OooYpuBd3gY>)
--   [Machine Girl - WLFGRL](<https://youtu.be/zkfUXYvUu4o>) 🔥🔥
+<a href="https://www.youtube.com/watch?v=OooYpuBd3gY" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a1822716383_16.jpg" width="200px" />
+</a>
+
+<a href="https://youtu.be/zkfUXYvUu4o" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a1555444215_16.jpg" width="200px" />
+</a>
 
 
-## Dark Ambient 👹 {#dark-ambient}
-
-
-### Singles {#singles}
-
--   [Atrium Carceri - A Stroll through the Ancient City](<https://www.youtube.com/watch?v=DkN_VJNHJa8>) 👹
--   [Aseptic Void - My Little Secret](<https://www.youtube.com/watch?v=Glzrs07f6dU>)
+## Dark Ambient {#dark-ambient}
 
 
 ### Albums {#albums}
 
--   [Zoät-Aon - The Triplex Bestial](<https://www.youtube.com/watch?v=DYCmHBc-G3w>) 👹👹👹👹 (don't listen to it)
--   [This Is Darkness - Vol. 1 Dark Ambient](<https://thisisdarkness.bandcamp.com/album/vol-1-dark-ambient>) various artists, huge collection with selected 66 tracks
--   [Atrium Carceri - Ur Djupan Dal](<https://cryochamber.bandcamp.com/album/ur-djupan-dal?search_page_id=3769612551&search_sig=8e39da524bc51d5aef4655f73b721c6b>)
--   [Blood Box - A World of Hurt](<https://malignantrecs.bandcamp.com/album/a-world-of-hurt?search_page_id=3769626836&logged_out_menubar=true>)
--   [Gates of Morheim - Omagatoki](<https://www.youtube.com/watch?v=ZKa5LwFgAOA>)
--   [Robert Rich - Somnium](<https://robertrich.bandcamp.com/album/somnium?search_page_id=3769636244&search_sig=c6c94edbb0f5e79a055e376806edb964>)
--   [Alan Lamb - Night Passage](<https://room40.bandcamp.com/album/night-passage?search_page_id=3769640273&logged_out_menubar=true>)
--   [The Caretaker - Everywhere at the end of time](<https://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time?search_page_id=3769643608&logged_out_menubar=true>)
--   [Konau - Speech From The Shadows](<https://konau.bandcamp.com/album/speech-from-the-shadows?search_page_id=3769646537&logged_out_menubar=true>)
--   [Selected Ambient Works Volume II (Expanded Edition)](<https://aphextwin.bandcamp.com/album/selected-ambient-works-volume-ii-expanded-edition>)
+<a href="https://www.youtube.com/watch?v=DYCmHBc-G3w" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/zoat-aon-the-triplex-bestial-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://thisisdarkness.bandcamp.com/album/vol-1-dark-ambient" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a1789601183_16.jpg" width="200px" />
+</a>
+
+<a href="https://cryochamber.bandcamp.com/album/ur-djupan-dal?search_page_id=3769612551&search_sig=8e39da524bc51d5aef4655f73b721c6b" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a3997954694_16.jpg" width="200px" />
+</a>
+
+<a href="https://malignantrecs.bandcamp.com/album/a-world-of-hurt?search_page_id=3769626836&logged_out_menubar=true" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/a4257050604_16.jpg" width="200px" />
+</a>
+
+<a href="https://www.youtube.com/watch?v=ZKa5LwFgAOA" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/gates-of-morheim-omagatoki-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://robertrich.bandcamp.com/album/somnium?search_page_id=3769636244&search_sig=c6c94edbb0f5e79a055e376806edb964" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/robert-rich-somnium-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://room40.bandcamp.com/album/night-passage?search_page_id=3769640273&logged_out_menubar=true" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/alan-lamb-original-masters-night-passage-cover-art.jpg" width="200px" />
+</a>
+
+<a href="https://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time?search_page_id=3769643608&logged_out_menubar=true" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/the-caretaker-everywhere-at-the-end-of-time-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://konau.bandcamp.com/album/speech-from-the-shadows?search_page_id=3769646537&logged_out_menubar=true" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/konau-speech-from-the-shadows-Cover-Art.jpg" width="200px" />
+</a>
+
+<a href="https://aphextwin.bandcamp.com/album/selected-ambient-works-volume-ii-expanded-edition" target="_blank" rel="noopener" style="display: inline-block; margin-right: 10px;">
+  <img src="/images/aphex-twin-selected-ambient-works-volume-ii-Cover-Art.jpg" width="200px" />
+</a>
+
+
+### Tracks {#tracks}
+
+-   [Atrium Carceri - A Stroll through the Ancient City](<https://www.youtube.com/watch?v=DkN_VJNHJa8>) 👹
+-   [Aseptic Void - My Little Secret](<https://www.youtube.com/watch?v=Glzrs07f6dU>)
