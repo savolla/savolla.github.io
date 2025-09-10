@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autohotkey on </title>
+    <link>http://localhost:1313/tags/autohotkey/</link>
+    <description>Recent content in Autohotkey on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/autohotkey/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>increase keyboard speed in windows</title>
+      <link>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>swap caps lock and escape keys in windows</title>
+      <link>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

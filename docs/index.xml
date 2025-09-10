@@ -9,7 +9,107 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>clean up nixos</title>
+      <link>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>delete garbage in nixos</title>
+      <link>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>delete old nixos generations except the current one</title>
+      <link>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>delete user profile generation in nixos</title>
+      <link>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>http://localhost:1313/reference/elasticsearch/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/elasticsearch/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/elasticsearch/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>http://localhost:1313/reference/kafka/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/kafka/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/reference/kubernetes/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/kubernetes/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>kubernetes daemonset file example</title>
+      <link>http://localhost:1313/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MySQL NDB Cluster</title>
+      <link>http://localhost:1313/reference/mysql-ndb-cluster/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/mysql-ndb-cluster/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/mysql-ndb-cluster/featured.webp" />
+    </item>
+    
+    <item>
+      <title>increase keyboard speed in windows</title>
+      <link>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>install ventoy on a usb drive on nixos</title>
@@ -32,13 +132,23 @@
     </item>
     
     <item>
+      <title>swap caps lock and escape keys in windows</title>
+      <link>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Cassandra</title>
       <link>http://localhost:1313/reference/cassandra/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/reference/cassandra/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/cassandra/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/cassandra/featured-why-is-blinking-important-why-do-we-blink-vision-1600.jpg" />
     </item>
     
     <item>
