@@ -159,7 +159,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 </a>
 
 <a href="https://www.youtube.com/watch?v=jH9tLxAHRaE&list=PL04FB7443998C8BE7" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/_20250909_115640screenshot.png" width="160px" />
+  <img src="/images/after-the-burial-rareform-cover-art.jpg" width="160px" />
 </a>
 
 <a href="https://www.youtube.com/watch?v=ShiEuQk5agg" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
