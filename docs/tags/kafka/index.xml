@@ -18,7 +18,7 @@
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/reference/kafka/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
     </item>
     
   </channel>
