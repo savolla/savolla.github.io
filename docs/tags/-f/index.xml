@@ -2,103 +2,123 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>-F on </title>
-    <link>http://localhost:1313/tags/-f/</link>
+    <link>http://localhost:46251/tags/-f/</link>
     <description>Recent content in -F on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-f/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/-f/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Literate tmux Configuration</title>
+      <link>http://localhost:46251/posts/my-literate-tmux-config/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:46251/posts/my-literate-tmux-config/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>My Literate NixOS Configuration</title>
+      <link>http://localhost:46251/posts/my-literate-nixos-config/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:46251/posts/my-literate-nixos-config/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
+    </item>
     
     <item>
       <title>Elasticsearch</title>
-      <link>http://localhost:1313/reference/elasticsearch/</link>
+      <link>http://localhost:46251/reference/elasticsearch/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/elasticsearch/</guid>
+      <guid>http://localhost:46251/reference/elasticsearch/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/elasticsearch/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/elasticsearch/featured.jpg" />
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>http://localhost:1313/reference/kafka/</link>
+      <link>http://localhost:46251/reference/kafka/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/kafka/</guid>
+      <guid>http://localhost:46251/reference/kafka/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/reference/kubernetes/</link>
+      <link>http://localhost:46251/reference/kubernetes/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/kubernetes/</guid>
+      <guid>http://localhost:46251/reference/kubernetes/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/kubernetes/featured.jpg" />
     </item>
     
     <item>
       <title>MySQL NDB Cluster</title>
-      <link>http://localhost:1313/reference/mysql-ndb-cluster/</link>
+      <link>http://localhost:46251/reference/mysql-ndb-cluster/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/mysql-ndb-cluster/</guid>
+      <guid>http://localhost:46251/reference/mysql-ndb-cluster/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/mysql-ndb-cluster/featured.webp" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/mysql-ndb-cluster/featured.webp" />
     </item>
     
     <item>
       <title>Cassandra</title>
-      <link>http://localhost:1313/reference/cassandra/</link>
+      <link>http://localhost:46251/reference/cassandra/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/cassandra/</guid>
+      <guid>http://localhost:46251/reference/cassandra/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/cassandra/featured-why-is-blinking-important-why-do-we-blink-vision-1600.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/cassandra/featured-why-is-blinking-important-why-do-we-blink-vision-1600.jpg" />
     </item>
     
     <item>
       <title>Setup Tailwind CSS with Doom Emacs</title>
-      <link>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</link>
+      <link>http://localhost:46251/posts/setup-tailwind-css-with-doom-emacs/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/</guid>
+      <guid>http://localhost:46251/posts/setup-tailwind-css-with-doom-emacs/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/setup-tailwind-css-with-doom-emacs/featured-background.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/posts/setup-tailwind-css-with-doom-emacs/featured-background.png" />
     </item>
     
     <item>
       <title>Favorite Music</title>
-      <link>http://localhost:1313/personal/favorite-music/</link>
+      <link>http://localhost:46251/personal/favorite-music/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/personal/favorite-music/</guid>
+      <guid>http://localhost:46251/personal/favorite-music/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-music/feature-3221340686.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/personal/favorite-music/feature-3221340686.jpg" />
     </item>
     
     <item>
       <title>Zero to Hero CICD Pipeline | Part 1</title>
-      <link>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</link>
+      <link>http://localhost:46251/posts/zero-to-hero-cicd-pipeline-part1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/</guid>
+      <guid>http://localhost:46251/posts/zero-to-hero-cicd-pipeline-part1/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/zero-to-hero-cicd-pipeline-part1/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/posts/zero-to-hero-cicd-pipeline-part1/featured.jpg" />
     </item>
     
     <item>
-      <title>savolla&#39;s Literate Doom Emacs Configuration</title>
-      <link>http://localhost:1313/posts/my-literate-doom-emacs-config/</link>
+      <title>My Literate Doom Emacs Configuration</title>
+      <link>http://localhost:46251/posts/my-literate-doom-emacs-config/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/posts/my-literate-doom-emacs-config/</guid>
+      <guid>http://localhost:46251/posts/my-literate-doom-emacs-config/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-doom-emacs-config/featured-doom-emacs-cacodemon-v013.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/posts/my-literate-doom-emacs-config/featured-doom-emacs-cacodemon-v013.jpg" />
     </item>
     
   </channel>

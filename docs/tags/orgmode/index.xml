@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orgmode on </title>
-    <link>http://localhost:1313/tags/orgmode/</link>
+    <link>http://localhost:46251/tags/orgmode/</link>
     <description>Recent content in Orgmode on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>resize images in org mode</title>
-      <link>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</link>
+      <link>http://localhost:46251/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</guid>
+      <guid>http://localhost:46251/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>create in-document links using org mode</title>
-      <link>http://localhost:1313/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</link>
+      <link>http://localhost:46251/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</guid>
+      <guid>http://localhost:46251/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get list of org roam notes with specific tags (AND operator)</title>
-      <link>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
+      <link>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
+      <guid>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get list of org roam notes with specific tags (OR operator)</title>
-      <link>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
+      <link>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
+      <guid>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>prevent tangle for an org mode source block</title>
-      <link>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</link>
+      <link>http://localhost:46251/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</guid>
+      <guid>http://localhost:46251/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>attach a pdf in an org mode file</title>
-      <link>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</link>
+      <link>http://localhost:46251/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</guid>
+      <guid>http://localhost:46251/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>create an export block in org mode with shortcut</title>
-      <link>http://localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</link>
+      <link>http://localhost:46251/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</guid>
+      <guid>http://localhost:46251/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>embed youtube video in blowfish hugo website in org-mode</title>
-      <link>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
+      <link>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
+      <guid>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>highlight lines in org mode source blocks</title>
-      <link>http://localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</link>
+      <link>http://localhost:46251/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</guid>
+      <guid>http://localhost:46251/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</guid>
       <description></description>
       
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debian on </title>
-    <link>http://localhost:1313/tags/debian/</link>
+    <link>http://localhost:46251/tags/debian/</link>
     <description>Recent content in Debian on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>update ubuntu/debian</title>
-      <link>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</link>
+      <link>http://localhost:46251/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</guid>
+      <guid>http://localhost:46251/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</guid>
       <description></description>
       
     </item>

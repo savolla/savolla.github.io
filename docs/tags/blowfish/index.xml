@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blowfish on </title>
-    <link>http://localhost:1313/tags/blowfish/</link>
+    <link>http://localhost:46251/tags/blowfish/</link>
     <description>Recent content in Blowfish on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/blowfish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/blowfish/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>add background image to your post in hugo blowsifh site</title>
-      <link>http://localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</link>
+      <link>http://localhost:46251/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</guid>
+      <guid>http://localhost:46251/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>add custom favicon to your blowfish hugo website</title>
-      <link>http://localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</link>
+      <link>http://localhost:46251/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</guid>
+      <guid>http://localhost:46251/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>embed youtube video in blowfish hugo website in org-mode</title>
-      <link>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
+      <link>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
+      <guid>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
       <description></description>
       
     </item>

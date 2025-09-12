@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orgroamql on </title>
-    <link>http://localhost:1313/tags/orgroamql/</link>
+    <link>http://localhost:46251/tags/orgroamql/</link>
     <description>Recent content in Orgroamql on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/orgroamql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/orgroamql/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>get list of org roam notes with specific tags (AND operator)</title>
-      <link>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
+      <link>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
+      <guid>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get list of org roam notes with specific tags (OR operator)</title>
-      <link>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
+      <link>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
+      <guid>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
       <description></description>
       
     </item>

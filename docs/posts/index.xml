@@ -9,7 +9,37 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dotfiles Management with Bare Git Repo</title>
+      <link>http://localhost:1313/posts/dotfiles-management-with-git/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/posts/dotfiles-management-with-git/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/dotfiles-management-with-git/featured.png" />
+    </item>
+    
+    <item>
+      <title>My Literate tmux Configuration</title>
+      <link>http://localhost:1313/posts/my-literate-tmux-config/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/posts/my-literate-tmux-config/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-tmux-config/featured-960px-DEC_VT100_terminal_transparent.png" />
+    </item>
+    
+    <item>
+      <title>My Literate NixOS Configuration</title>
+      <link>http://localhost:1313/posts/my-literate-nixos-config/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/posts/my-literate-nixos-config/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
+    </item>
     
     <item>
       <title>Setup Tailwind CSS with Doom Emacs</title>
@@ -32,7 +62,7 @@
     </item>
     
     <item>
-      <title>savolla&#39;s Literate Doom Emacs Configuration</title>
+      <title>My Literate Doom Emacs Configuration</title>
       <link>http://localhost:1313/posts/my-literate-doom-emacs-config/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>

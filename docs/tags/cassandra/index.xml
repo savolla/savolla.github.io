@@ -2,41 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cassandra on </title>
-    <link>http://localhost:1313/tags/cassandra/</link>
+    <link>http://localhost:46251/tags/cassandra/</link>
     <description>Recent content in Cassandra on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/cassandra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/cassandra/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing Cassandra on Talos</title>
+      <link>http://localhost:46251/writeup/installing-cassandra-on-talos/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:46251/writeup/installing-cassandra-on-talos/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Cassandra</title>
-      <link>http://localhost:1313/reference/cassandra/</link>
+      <link>http://localhost:46251/reference/cassandra/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/cassandra/</guid>
+      <guid>http://localhost:46251/reference/cassandra/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/cassandra/featured-why-is-blinking-important-why-do-we-blink-vision-1600.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/reference/cassandra/featured-why-is-blinking-important-why-do-we-blink-vision-1600.jpg" />
     </item>
     
     <item>
       <title>install cassandra on ubuntu server</title>
-      <link>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</link>
+      <link>http://localhost:46251/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
+      <guid>http://localhost:46251/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install cassandra on ubuntu server</title>
-      <link>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</link>
+      <link>http://localhost:46251/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</guid>
+      <guid>http://localhost:46251/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</guid>
       <description></description>
       
     </item>

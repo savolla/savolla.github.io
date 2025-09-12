@@ -11,9 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
- name = "devlog"
- pageRef = "posts"
- weight = 10
+ name = "write-ups"
+ pageRef = "writeup"
+ weight = 5
 
 [[main]]
  name = "reference"

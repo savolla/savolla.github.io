@@ -9,7 +9,27 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>check current namespace in kubernetes</title>
+      <link>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>uninstall/remove a service that&#39;s installed with helm</title>
+      <link>http://localhost:1313/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>clean up nixos</title>

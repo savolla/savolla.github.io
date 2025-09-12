@@ -6,7 +6,7 @@ tags = ["cassandra", "-F"]
 draft = false
 +++
 
-## Theoretical {#theoretical}
+## Theory {#theory}
 
 -   cassandra is an **open source**, **nosql**, **distributed** database
 -   developed by **apache**
@@ -38,9 +38,9 @@ draft = false
 -   **replication factor**
     -   this is similar to **replicaset** in kubernetes. you define how much replica of the node should exist. use high values like 5 for banking data
 
--   cassandra clusterında <span class="underline">master node’lar yazma</span> isteklerini kabul ederken <span class="underline">slave node’lar sadece okuma</span> isteklerinde kullanılırlar.&nbsp;[^fn:1]
+-   cassandra clusterında <span class="underline">master node’lar yazma</span> isteklerini kabul ederken <span class="underline">slave node’lar sadece okuma</span> isteklerinde kullanılırlar.
 
--   **Cassandra ve MySQL NDB Cluster Karşılaştırması**&nbsp;[^fn:2]
+-   **Cassandra ve MySQL NDB Cluster Karşılaştırması**
 
     | özellik        | cassandra                        | mysql ndb cluster                   |
     |----------------|----------------------------------|-------------------------------------|
@@ -54,7 +54,7 @@ draft = false
     -   **transactional işler** (para transferi, e-ticaret sepeti, canlı işlem logları vb.), Senkronizasyon gerektiren işlemler (anlık uyarı sistemleri, fraud detection) için Cassandra yerine MySQL NDB tercih edilebilir.
 
 
-## Applied {#applied}
+## Practice {#practice}
 
 ```emacs-lisp
 (mapconcat
@@ -90,6 +90,5 @@ draft = false
 2.  [Apache Cassandra Database – Full Course for Beginners - YouTube](https://www.youtube.com/watch?v=J-cSy5MeMOA)
 3.  [Cassandra Tutorial - Complete NoSQL Database Course - YouTube](https://www.youtube.com/watch?v=8g-f9uPzW04)
 4.  [How to Install Cassandra on Ubuntu (Linux) - YouTube](https://www.youtube.com/watch?v=-9P4CxRWL8c)
-
-[^fn:1]: [Kubernetes Cassandra Kurulumu. Merhabalar, | by Deniz TÜRKMEN | Medium](https://deniz-turkmen.medium.com/kubernetes-cassandra-kurulumu-45fc93462f00)
-[^fn:2]: [ChatGPT](https://chatgpt.com/)
+5.  [ChatGPT](https://chatgpt.com/)
+6.  [Kubernetes Cassandra Kurulumu. Merhabalar, | by Deniz TÜRKMEN | Medium](https://deniz-turkmen.medium.com/kubernetes-cassandra-kurulumu-45fc93462f00)

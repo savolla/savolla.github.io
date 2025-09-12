@@ -79,6 +79,12 @@ draft = false
         | pod sayısı      | her node'a 1 tane | belirli sayıda (replicaset) |
         | node'a bağlılık | evet              | hayır                       |
         | usecase         | sistem/altyapı    | aplikasyon                  |
+-   **Kubernetes Volumes**
+    -   kubernetes does not give you data persistency out of the box&nbsp;[^fn:2]
+    -   **Persistent Volume**
+        -   belongs to cluster itself. it is a dedicated disk
+    -   **Persistent Volume Claim**
+    -   **Storage Class**
 
 
 ## Applied {#applied}
@@ -104,8 +110,12 @@ draft = false
            (org-roam-node-id node)
            (org-roam-node-title node)))
  (org-roam-ql-nodes
-  '(tags "devops" "_f"))
+  '(tags "kubernetes" "_f"))
  "\n")
 ```
 
+
+## Resources {#resources}
+
 [^fn:1]: [ChatGPT](https://chatgpt.com/)
+[^fn:2]: [Kubernetes Volumes explained | Persistent Volume, Persistent Volume Claim &amp; S...](https://www.youtube.com/watch?v=0swOh5C3OVM)
