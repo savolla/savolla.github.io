@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nixos on </title>
-    <link>http://localhost:46251/tags/nixos/</link>
+    <link>http://localhost:1313/tags/nixos/</link>
     <description>Recent content in Nixos on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/nixos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/nixos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Literate NixOS Configuration</title>
-      <link>http://localhost:46251/posts/my-literate-nixos-config/</link>
+      <link>http://localhost:1313/posts/my-literate-nixos-config/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/posts/my-literate-nixos-config/</guid>
+      <guid>http://localhost:1313/posts/my-literate-nixos-config/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:46251/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
     </item>
     
     <item>
       <title>clean up nixos</title>
-      <link>http://localhost:46251/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</link>
+      <link>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</guid>
+      <guid>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete garbage in nixos</title>
-      <link>http://localhost:46251/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</link>
+      <link>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</guid>
+      <guid>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete old nixos generations except the current one</title>
-      <link>http://localhost:46251/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</link>
+      <link>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</guid>
+      <guid>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete user profile generation in nixos</title>
-      <link>http://localhost:46251/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</link>
+      <link>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</guid>
+      <guid>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install ventoy on a usb drive on nixos</title>
-      <link>http://localhost:46251/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</link>
+      <link>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</guid>
+      <guid>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>upgrade nixos to the latest LTS version</title>
-      <link>http://localhost:46251/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</link>
+      <link>http://localhost:1313/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</guid>
+      <guid>http://localhost:1313/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</guid>
       <description></description>
       
     </item>

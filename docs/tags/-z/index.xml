@@ -2,391 +2,391 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>-Z on </title>
-    <link>http://localhost:46251/tags/-z/</link>
+    <link>http://localhost:1313/tags/-z/</link>
     <description>Recent content in -Z on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/-z/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>check current namespace in kubernetes</title>
-      <link>http://localhost:46251/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</link>
+      <link>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</guid>
+      <guid>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>uninstall/remove a service that&#39;s installed with helm</title>
-      <link>http://localhost:46251/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</link>
+      <link>http://localhost:1313/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</guid>
+      <guid>http://localhost:1313/zettel/60687910-5536-458b-b155-0c6bfbdc57f4/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>clean up nixos</title>
-      <link>http://localhost:46251/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</link>
+      <link>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</guid>
+      <guid>http://localhost:1313/zettel/ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete garbage in nixos</title>
-      <link>http://localhost:46251/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</link>
+      <link>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</guid>
+      <guid>http://localhost:1313/zettel/61454f3a-db6f-47f1-9996-3dca13542be3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete old nixos generations except the current one</title>
-      <link>http://localhost:46251/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</link>
+      <link>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</guid>
+      <guid>http://localhost:1313/zettel/9c73a9b5-65e5-4320-a5c0-4377efa868c5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>delete user profile generation in nixos</title>
-      <link>http://localhost:46251/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</link>
+      <link>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</guid>
+      <guid>http://localhost:1313/zettel/5cc63794-87bd-444c-8c02-c8a041f5ec12/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>kubernetes daemonset file example</title>
-      <link>http://localhost:46251/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</link>
+      <link>http://localhost:1313/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</guid>
+      <guid>http://localhost:1313/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>increase keyboard speed in windows</title>
-      <link>http://localhost:46251/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</link>
+      <link>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</guid>
+      <guid>http://localhost:1313/zettel/215d3aaf-7ac1-4012-8671-0f2410c93391/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install ventoy on a usb drive on nixos</title>
-      <link>http://localhost:46251/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</link>
+      <link>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</guid>
+      <guid>http://localhost:1313/zettel/b07238fe-08fb-4df2-8639-198d0d3e63d2/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>resize images in org mode</title>
-      <link>http://localhost:46251/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</link>
+      <link>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</guid>
+      <guid>http://localhost:1313/zettel/875152b3-17ec-4c9e-b606-3178bb7ce7d5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>swap caps lock and escape keys in windows</title>
-      <link>http://localhost:46251/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</link>
+      <link>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</guid>
+      <guid>http://localhost:1313/zettel/1e2bc186-cb84-423c-8387-2561b366c31b/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>check if your linux machine is 64-bit or 32-bit</title>
-      <link>http://localhost:46251/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</link>
+      <link>http://localhost:1313/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</guid>
+      <guid>http://localhost:1313/zettel/209e9782-91c3-4fe8-afc2-fb843bb0c0ae/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install cassandra on ubuntu server</title>
-      <link>http://localhost:46251/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</link>
+      <link>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
+      <guid>http://localhost:1313/zettel/6e1d4827-3a4e-409d-9e09-c08f8d44a12c/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install cassandra on ubuntu server</title>
-      <link>http://localhost:46251/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</link>
+      <link>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</guid>
+      <guid>http://localhost:1313/zettel/8fc36f7c-c3db-4cdf-a0cf-7081180b5514/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>update ubuntu/debian</title>
-      <link>http://localhost:46251/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</link>
+      <link>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</link>
       <pubDate>Mon, 08 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</guid>
+      <guid>http://localhost:1313/zettel/70f1393c-7fac-4be8-9974-c10ad3b36cae/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>create in-document links using org mode</title>
-      <link>http://localhost:46251/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</link>
+      <link>http://localhost:1313/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</guid>
+      <guid>http://localhost:1313/zettel/8d5c22c7-be61-4004-a16b-b3c9d182a728/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get list of org roam notes with specific tags (AND operator)</title>
-      <link>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
+      <link>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
+      <guid>http://localhost:1313/zettel/b1a12a19-e8e3-4d93-b41c-cfc34df9f258/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get list of org roam notes with specific tags (OR operator)</title>
-      <link>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
+      <link>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
+      <guid>http://localhost:1313/zettel/e58643fc-c890-4c5e-ad8a-d325ea056f15/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>prevent tangle for an org mode source block</title>
-      <link>http://localhost:46251/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</link>
+      <link>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</guid>
+      <guid>http://localhost:1313/zettel/89447aa1-bbe5-4dc7-a3cc-037db8e6411e/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>attach a pdf in an org mode file</title>
-      <link>http://localhost:46251/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</link>
+      <link>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</guid>
+      <guid>http://localhost:1313/zettel/1bfcd600-62f4-4358-84e5-d6703eaf4c1f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>add background image to your post in hugo blowsifh site</title>
-      <link>http://localhost:46251/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</link>
+      <link>http://localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</guid>
+      <guid>http://localhost:1313/zettel/2e9893ea-1b05-4f61-beb5-3aa8e85292aa/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>add custom favicon to your blowfish hugo website</title>
-      <link>http://localhost:46251/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</link>
+      <link>http://localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</guid>
+      <guid>http://localhost:1313/zettel/82134023-02c0-4c29-8965-f05bb010f97e/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>add nexus docker registry to docker config</title>
-      <link>http://localhost:46251/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
+      <link>http://localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</guid>
+      <guid>http://localhost:1313/zettel/f115dcd6-d7af-43a5-ba5e-6b299a7877c3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>assign static ip address on alpine linux</title>
-      <link>http://localhost:46251/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</link>
+      <link>http://localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</guid>
+      <guid>http://localhost:1313/zettel/e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>create an export block in org mode with shortcut</title>
-      <link>http://localhost:46251/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</link>
+      <link>http://localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</guid>
+      <guid>http://localhost:1313/zettel/44219d3e-65fe-41a7-969e-b220e563a6d8/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>embed youtube video in blowfish hugo website in org-mode</title>
-      <link>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
+      <link>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
+      <guid>http://localhost:1313/zettel/c6a815be-778c-409a-9d8c-759384082a5f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>fix login issue to nexus docker registry</title>
-      <link>http://localhost:46251/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
+      <link>http://localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
+      <guid>http://localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>generate a favicon for your website</title>
-      <link>http://localhost:46251/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</link>
+      <link>http://localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</guid>
+      <guid>http://localhost:1313/zettel/11ee8424-6ce4-4169-a08c-3d7d0708467e/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>get admin password for nexus</title>
-      <link>http://localhost:46251/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
+      <link>http://localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
+      <guid>http://localhost:1313/zettel/41125c16-6ee6-419d-b824-bc2c7ddd0f73/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>highlight lines in org mode source blocks</title>
-      <link>http://localhost:46251/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</link>
+      <link>http://localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</guid>
+      <guid>http://localhost:1313/zettel/c451d668-97fc-44fe-be19-d61db96ebbe9/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>install nexus on ubuntu</title>
-      <link>http://localhost:46251/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</link>
+      <link>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
+      <guid>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>push a local docker image to nexus docker registry</title>
-      <link>http://localhost:46251/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</link>
+      <link>http://localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</guid>
+      <guid>http://localhost:1313/zettel/02ef3872-d7bf-4bd1-8487-a97a2462b312/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>remove an image from nexus docker registry</title>
-      <link>http://localhost:46251/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</link>
+      <link>http://localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</guid>
+      <guid>http://localhost:1313/zettel/4a82a516-fefb-462b-ad17-8b5688da74b7/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>set hugo build directory to docs</title>
-      <link>http://localhost:46251/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</link>
+      <link>http://localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</guid>
+      <guid>http://localhost:1313/zettel/fb992547-0e2b-474b-9fdb-5a2ab9e13cb5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>setup docker registry using nexus</title>
-      <link>http://localhost:46251/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</link>
+      <link>http://localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
+      <guid>http://localhost:1313/zettel/14ce6094-a158-4acb-bfdf-88bf4b7a300f/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>start hugo website locally</title>
-      <link>http://localhost:46251/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</link>
+      <link>http://localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</guid>
+      <guid>http://localhost:1313/zettel/00a2d910-a42b-462a-9452-b8d6875c96c1/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>temporarily expose argocd from kubernetes cluster</title>
-      <link>http://localhost:46251/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</link>
+      <link>http://localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</guid>
+      <guid>http://localhost:1313/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>upgrade nixos to the latest LTS version</title>
-      <link>http://localhost:46251/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</link>
+      <link>http://localhost:1313/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</guid>
+      <guid>http://localhost:1313/zettel/862725f7-1190-4717-a4cd-599ee22d0940/</guid>
       <description></description>
       
     </item>

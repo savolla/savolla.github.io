@@ -9,11 +9,11 @@ colorScheme = "slate"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
-enableA11y = false
+enableA11y = true
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 
-replyByEmail = false
+replyByEmail = true
 
 # mainSections = ["section1", "section2"]
 # robots = ""
@@ -23,13 +23,13 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-# defaultBackgroundImage = "bg01.jpg" # used as default for background images
+defaultBackgroundImage = "homepage-bg.png" # used as default for background images
 # defaultFeaturedImage = "bg01.jpg" # used as default for featured images in all articles
 defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 
-# highlightCurrentMenuArea = true
-# smartTOC = true
-# smartTOCHideUnfocusedChildren = true
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
 
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
@@ -49,10 +49,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "homepage-bg.png" # used in: hero, and card
-  showRecent = true
+  showRecent = false
   showRecentItems = 3
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+  showMoreLinkDest = "posts"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
@@ -89,7 +89,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   sharingLinks = [ "linkedin", "twitter", "mastodon", "email"]
-  showZenMode = false
+  showZenMode = true
 
 [list]
   showHero = true
