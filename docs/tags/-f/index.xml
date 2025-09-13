@@ -9,7 +9,17 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-f/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-f/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>access web interface of a service that runs inside kubernetes</title>
+      <link>http://localhost:1313/zettel/78577a00-4694-4dc7-b882-bf0ce7afaa66/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/78577a00-4694-4dc7-b882-bf0ce7afaa66/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Wallpapers</title>
@@ -52,16 +62,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/reference/kubernetes/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/kubernetes/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
-    </item>
-    
-    <item>
       <title>Elasticsearch</title>
       <link>http://localhost:1313/reference/elasticsearch/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
@@ -79,6 +79,16 @@
       <guid>http://localhost:1313/reference/kafka/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/reference/kubernetes/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/kubernetes/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
     </item>
     
     <item>

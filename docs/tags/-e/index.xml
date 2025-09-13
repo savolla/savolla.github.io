@@ -21,5 +21,25 @@
       
     </item>
     
+    <item>
+      <title>kubernetes configmap file example</title>
+      <link>http://localhost:1313/zettel/4bc961c6-aaa2-4105-9cf0-29f1a99bb636/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/4bc961c6-aaa2-4105-9cf0-29f1a99bb636/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>kubernetes secret file example</title>
+      <link>http://localhost:1313/zettel/15d012dd-8153-4b67-9c4e-10134a629a7e/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/15d012dd-8153-4b67-9c4e-10134a629a7e/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

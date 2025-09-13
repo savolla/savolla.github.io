@@ -147,7 +147,7 @@
     "keywords": ["-F","kubernetes"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "710"
+    "wordCount": "770"
   }]
   </script>
 
@@ -1031,13 +1031,12 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#notes">Notes</a></li>
     <li><a href="#how-to">How-to</a></li>
+    <li><a href="#notes">Notes</a></li>
     <li><a href="#flashcards">Flashcards</a></li>
     <li><a href="#resources">Resources</a>
       <ul>
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#full-courses">Full Courses</a></li>
         <li><a href="#books">Books</a></li>
         <li><a href="#articles">Articles</a></li>
       </ul>
@@ -1055,13 +1054,12 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#notes">Notes</a></li>
     <li><a href="#how-to">How-to</a></li>
+    <li><a href="#notes">Notes</a></li>
     <li><a href="#flashcards">Flashcards</a></li>
     <li><a href="#resources">Resources</a>
       <ul>
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#full-courses">Full Courses</a></li>
         <li><a href="#books">Books</a></li>
         <li><a href="#articles">Articles</a></li>
       </ul>
@@ -1167,6 +1165,46 @@
 
         <div class="article-content max-w-prose mb-20">
           
+<h2 class="relative group">How-to 
+    <div id="how-to" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#how-to" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><a
+  href="/zettel/15d012dd-8153-4b67-9c4e-10134a629a7e/">kubernetes secret file example</a></li>
+<li><a
+  href="/zettel/42cc5dca-4842-4699-827b-87fd83c1c7b9/">temporarily expose argocd from kubernetes cluster</a></li>
+<li><a
+  href="/zettel/47212944-c806-4640-927d-8666c640e950/">create an RBAC rule</a></li>
+<li><a
+  href="/zettel/4bc961c6-aaa2-4105-9cf0-29f1a99bb636/">kubernetes configmap file example</a></li>
+<li><a
+  href="/zettel/604ba3af-3520-4af4-9ea1-2d34c982ec14/">kubernetes daemonset file example</a></li>
+<li><a
+  href="/zettel/66b97f48-a63f-4caa-90e2-95aab48be9f5/">set default namespace in kubernetes</a></li>
+<li><a
+  href="/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/">check current namespace in kubernetes</a></li>
+<li><a
+  href="/zettel/78577a00-4694-4dc7-b882-bf0ce7afaa66/">access web interface of a service that runs inside kubernetes</a></li>
+<li><a
+  href="/zettel/8b83cb7b-9783-42bd-b3df-2a865ff7497d/">kubernetes deployment file example</a></li>
+<li><a
+  href="/zettel/90624a6b-b6d9-4471-ab53-19e5f9aaf452/">list all configmaps in kubernetes</a></li>
+<li><a
+  href="/zettel/94cdb293-e7b8-4dbb-b2d0-f1f86c93d2c5/">use nodeport instead of load balancer in kubernetes ingress</a></li>
+<li><a
+  href="/zettel/b6e5204d-f95a-458a-b6cc-fa3e69b16aef/">list all secrets in kubernetes</a></li>
+<li><a
+  href="/zettel/be29e7e9-2985-494c-b65c-865489810a3c/">attach to kubernetes pod&rsquo;s shell</a></li>
+<li><a
+  href="/zettel/c669bb8f-66ee-42cd-b0df-a15edc8d7836/">delete a kubernetes pod</a></li>
+</ul>
+
 <h2 class="relative group">Notes 
     <div id="notes" class="anchor"></div>
     
@@ -1355,24 +1393,6 @@
 </li>
 </ul>
 
-<h2 class="relative group">How-to 
-    <div id="how-to" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#how-to" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">mapconcat</span>
-</span></span><span style="display:flex;"><span> (<span style="color:#fabd2f">lambda</span> (node)
-</span></span><span style="display:flex;"><span>   (<span style="color:#fabd2f">format</span> <span style="color:#b8bb26">&#34;- [[id:%s][%s]]&#34;</span>
-</span></span><span style="display:flex;"><span>           (org-roam-node-id node)
-</span></span><span style="display:flex;"><span>           (org-roam-node-title node)))
-</span></span><span style="display:flex;"><span> (org-roam-ql-nodes
-</span></span><span style="display:flex;"><span>  <span style="color:#fe8019">&#39;</span>(tags <span style="color:#b8bb26">&#34;kubernetes&#34;</span> <span style="color:#b8bb26">&#34;_z&#34;</span>))
-</span></span><span style="display:flex;"><span> <span style="color:#b8bb26">&#34;\n&#34;</span>)
-</span></span></code></pre></div>
 <h2 class="relative group">Flashcards 
     <div id="flashcards" class="anchor"></div>
     
@@ -1382,15 +1402,7 @@
     </span>        
     
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#fabd2f">mapconcat</span>
-</span></span><span style="display:flex;"><span> (<span style="color:#fabd2f">lambda</span> (node)
-</span></span><span style="display:flex;"><span>   (<span style="color:#fabd2f">format</span> <span style="color:#b8bb26">&#34;- [[id:%s][%s]]&#34;</span>
-</span></span><span style="display:flex;"><span>           (org-roam-node-id node)
-</span></span><span style="display:flex;"><span>           (org-roam-node-title node)))
-</span></span><span style="display:flex;"><span> (org-roam-ql-nodes
-</span></span><span style="display:flex;"><span>  <span style="color:#fe8019">&#39;</span>(tags <span style="color:#b8bb26">&#34;kubernetes&#34;</span> <span style="color:#b8bb26">&#34;_f&#34;</span>))
-</span></span><span style="display:flex;"><span> <span style="color:#b8bb26">&#34;\n&#34;</span>)
-</span></span></code></pre></div>
+
 <h2 class="relative group">Resources 
     <div id="resources" class="anchor"></div>
     
@@ -1410,16 +1422,16 @@
     </span>        
     
 </h3>
-
-<h3 class="relative group">Full Courses 
-    <div id="full-courses" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#full-courses" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
+<ul>
+<li><a
+  href="https://www.youtube.com/watch?v=2T86xAtR6Fo"
+    target="_blank"
+  >Complete Kubernetes Course - From BEGINNER to PRO - YouTube</a></li>
+<li><a
+  href="https://www.youtube.com/watch?v=s_o8dwzRlu4"
+    target="_blank"
+  >Kubernetes Crash Course for Absolute Beginners {NEW} - YouTube</a></li>
+</ul>
 
 <h3 class="relative group">Books 
     <div id="books" class="anchor"></div>

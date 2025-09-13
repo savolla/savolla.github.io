@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openshift on </title>
+    <link>http://localhost:1313/tags/openshift/</link>
+    <description>Recent content in Openshift on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/openshift/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>access web interface of a service that runs inside kubernetes</title>
+      <link>http://localhost:1313/zettel/78577a00-4694-4dc7-b882-bf0ce7afaa66/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/78577a00-4694-4dc7-b882-bf0ce7afaa66/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
