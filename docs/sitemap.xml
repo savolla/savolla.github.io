@@ -21,6 +21,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/zettel/070c0f4d-b086-442d-9280-afc458de7284/</loc>
+    <lastmod>2025-09-13T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/zettel/1bcd9bcd-0c8e-4c94-81c3-6cb5f1a8aef0/</loc>
     <lastmod>2025-09-13T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
