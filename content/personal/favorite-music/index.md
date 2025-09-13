@@ -407,6 +407,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 
     <iframe width="753" height="380" src="https://www.youtube.com/embed/z2LzvTc0dgg" title="Alex Rudinger - Threat Signal - &quot;Trust In None&quot; (Instrumental)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+-   IMMORTAL - Tyrants (WACKEN LIVE 2007) 8K Remastered
+
+    <iframe width="753" height="380" src="https://www.youtube.com/embed/zae7HrLwqFY?list=RDzae7HrLwqFY" title="IMMORTAL - Tyrants (WACKEN LIVE 2007) 8K Remastered" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 
