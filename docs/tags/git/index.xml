@@ -9,7 +9,67 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>create a new git branch</title>
+      <link>http://localhost:1313/zettel/a8c42219-5a1f-4fed-80c5-c403ead78a60/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/a8c42219-5a1f-4fed-80c5-c403ead78a60/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>go back to previous commit</title>
+      <link>http://localhost:1313/zettel/df3d41e9-bab2-49ce-899c-1b1cded57f9d/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/df3d41e9-bab2-49ce-899c-1b1cded57f9d/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>list git commits and their hashes</title>
+      <link>http://localhost:1313/zettel/c0a80865-a920-4994-a45b-0801f0ed2b2c/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/c0a80865-a920-4994-a45b-0801f0ed2b2c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>remove a directory or files from git tracking</title>
+      <link>http://localhost:1313/zettel/f9671383-426c-45c1-88cc-557c3634a6ea/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/f9671383-426c-45c1-88cc-557c3634a6ea/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>remove staged file in git</title>
+      <link>http://localhost:1313/zettel/a16e20e6-42f6-418b-8b67-df390e83b4a6/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/a16e20e6-42f6-418b-8b67-df390e83b4a6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>see what changed in a git commit</title>
+      <link>http://localhost:1313/zettel/ee7bf474-efdd-4aaf-b916-17beb539a805/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/ee7bf474-efdd-4aaf-b916-17beb539a805/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Dotfiles Management with Bare Git Repo</title>

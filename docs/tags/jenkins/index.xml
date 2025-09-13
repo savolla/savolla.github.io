@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on </title>
+    <link>http://localhost:1313/tags/jenkins/</link>
+    <description>Recent content in Jenkins on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>abort or cancel a jenkins pipeline from jenkinsfile</title>
+      <link>http://localhost:1313/zettel/55de2e82-d082-431b-b223-a0d9d0a0d4b9/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/55de2e82-d082-431b-b223-a0d9d0a0d4b9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>if else example in jenkins</title>
+      <link>http://localhost:1313/zettel/c36b0828-1d02-4aa5-b553-c311a37a1b77/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/c36b0828-1d02-4aa5-b553-c311a37a1b77/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -9,7 +9,117 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/-z/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>abort or cancel a jenkins pipeline from jenkinsfile</title>
+      <link>http://localhost:1313/zettel/55de2e82-d082-431b-b223-a0d9d0a0d4b9/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/55de2e82-d082-431b-b223-a0d9d0a0d4b9/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>create a new git branch</title>
+      <link>http://localhost:1313/zettel/a8c42219-5a1f-4fed-80c5-c403ead78a60/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/a8c42219-5a1f-4fed-80c5-c403ead78a60/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>go back to previous commit</title>
+      <link>http://localhost:1313/zettel/df3d41e9-bab2-49ce-899c-1b1cded57f9d/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/df3d41e9-bab2-49ce-899c-1b1cded57f9d/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>if else example in jenkins</title>
+      <link>http://localhost:1313/zettel/c36b0828-1d02-4aa5-b553-c311a37a1b77/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/c36b0828-1d02-4aa5-b553-c311a37a1b77/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install groovy lsp in lunarvim or neovim</title>
+      <link>http://localhost:1313/zettel/d7a638a4-9a47-4125-90ee-9bfb329e9653/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/d7a638a4-9a47-4125-90ee-9bfb329e9653/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install java on nixos</title>
+      <link>http://localhost:1313/zettel/0e4b5bf3-798c-436c-9ca4-5598e1c7e747/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/0e4b5bf3-798c-436c-9ca4-5598e1c7e747/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install java on ubuntu or debian</title>
+      <link>http://localhost:1313/zettel/2d89c15f-c266-483d-aeaf-ee12683f2ebc/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/2d89c15f-c266-483d-aeaf-ee12683f2ebc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>list git commits and their hashes</title>
+      <link>http://localhost:1313/zettel/c0a80865-a920-4994-a45b-0801f0ed2b2c/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/c0a80865-a920-4994-a45b-0801f0ed2b2c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>remove a directory or files from git tracking</title>
+      <link>http://localhost:1313/zettel/f9671383-426c-45c1-88cc-557c3634a6ea/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/f9671383-426c-45c1-88cc-557c3634a6ea/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>remove staged file in git</title>
+      <link>http://localhost:1313/zettel/a16e20e6-42f6-418b-8b67-df390e83b4a6/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/a16e20e6-42f6-418b-8b67-df390e83b4a6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>see what changed in a git commit</title>
+      <link>http://localhost:1313/zettel/ee7bf474-efdd-4aaf-b916-17beb539a805/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/ee7bf474-efdd-4aaf-b916-17beb539a805/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>push an existing git repo to github</title>

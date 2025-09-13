@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on </title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>install java on nixos</title>
+      <link>http://localhost:1313/zettel/0e4b5bf3-798c-436c-9ca4-5598e1c7e747/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/0e4b5bf3-798c-436c-9ca4-5598e1c7e747/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install java on ubuntu or debian</title>
+      <link>http://localhost:1313/zettel/2d89c15f-c266-483d-aeaf-ee12683f2ebc/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/2d89c15f-c266-483d-aeaf-ee12683f2ebc/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
