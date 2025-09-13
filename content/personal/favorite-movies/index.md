@@ -105,43 +105,96 @@ mulholland-drive-md-web-1876893089.jpg
 
 ## Horror {#horror}
 
--   [As Above, So Below (2014)](<https://www.youtube.com/watch?v=X_BaqNzdGXY>)
--   [Alien Romulus (2024)](<https://www.youtube.com/watch?v=OzY2r2JXsDM>) the best alien movie so far.
--   [Insidious (2010)](<https://www.youtube.com/watch?v=zuZnRUcoWos>)
--   [V/H/S](<https://www.youtube.com/watch?v=NaSUZnIztuY>)
--   [V/H/S 2](<https://www.youtube.com/watch?v=63Tv0lhD1fw>) the best V/H/S
--   [V/H/S/94](<https://www.youtube.com/watch?v=opnSln8Ue2U>)
--   [Dawn of the Dead (2004)](<https://www.youtube.com/watch?v=DV8mJcuYVaA>)
--   [Grave Encounters (2011)](<https://www.youtube.com/watch?v=soaHgv8DaeI>)
--   [The Mist (2007)](<https://www.youtube.com/watch?v=LhCKXJNGzN8>)
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/grave-encounters.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/no_country_for_old_men" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/dawn-of-the-dead.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/the_platform" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/VHS2-Poster-1581990644.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/her" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/vhs.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/filth_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/incidious.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/bronson" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/alien-romulus-film-poster-1132327283.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/persepolis" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/as-above-so-below-448774915.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/the_hunt_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-mist_poster_goldposter_com_11-3357004402.jpg" width="160px" />
+</a>
+
+---
 
 
 ## J-Horror {#j-horror}
 
--   [回路 (kairo)](<https://www.youtube.com/watch?v=MpsXvHMUQ3Q>)
--   [怪談 (honogurai mizu no soko kara)](<https://www.youtube.com/watch?v=YadApPG8W7Q>)
--   [仄暗い水の底から (dark water)](<https://www.youtube.com/watch?v=1Lfzcd0zV5A>)
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/pulse_xlg-2302251433.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/kwaidan.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/Dark_Water-329055271-large-1051075613.jpg" width="160px" />
+</a>
+
+---
 
 
 ## Scifi {#scifi}
 
--   [Close Encounters of the Third Kind (1977)](<https://www.youtube.com/watch?v=XrgC0ut2De0>)
--   [Contact (1997)](<https://www.youtube.com/watch?v=Q399v-pMG30>)
+<a href="https://www.rottentomatoes.com/m/close_encounters_of_the_third_kind" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/close-encounters.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/1078021-contact" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/contact.jpg" width="160px" />
+</a>
+
+---
 
 
 ## War {#war}
 
--   [Kingdom of Heaven (2005)](<https://www.youtube.com/watch?v=KartNo8EDWY>)
+<a href="https://www.rottentomatoes.com/m/kingdom_of_heaven" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/kingdomofheaven72dpi-1495490518.png" width="160px" />
+</a>
+
+---
 
 
 ## Comedy {#comedy}
 
--   [Monty Python's Life of Brian (1979)](<https://www.youtube.com/watch?v=OuALwLhUmKY>)
--   [Pulp Fiction](<https://www.youtube.com/watch?v=dFrgIrWmTeY>)
--   [BORAT](<https://www.youtube.com/watch?v=jTx5c-2QOXc>)
--   [Wild Tales](<https://www.youtube.com/watch?v=fTXKTj4XCs8>)
+<a href="https://www.rottentomatoes.com/m/monty_pythons_life_of_brian" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/life-of-brian.jpg" width="160px" />
+</a>
 
+<a href="https://www.rottentomatoes.com/m/pulp_fiction" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/pulp-fiction.jpg" width="160px" />
+</a>
 
-## Anime {#anime}
+<a href="https://www.rottentomatoes.com/m/borat" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/borat.jpeg" width="160px" />
+</a>
 
--   [Perfect Blue](<https://youtu.be/2O09gQC-KvA>)
+<a href="https://www.rottentomatoes.com/m/wild_tales" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/wild-tales.jpg" width="160px" />
+</a>
+
+---
