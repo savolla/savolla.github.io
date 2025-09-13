@@ -92,7 +92,17 @@
     </item>
     
     <item>
-      <title>read epubs on doom emacs</title>
+      <title>narrow an org-mode subtree</title>
+      <link>http://localhost:1313/zettel/03221e30-e538-4ade-9f7e-8576817a01b6/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/03221e30-e538-4ade-9f7e-8576817a01b6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>read epub on doom emacs</title>
       <link>http://localhost:1313/zettel/b15d6b5a-294e-49de-b2d3-44b6c208b2a8/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
@@ -127,6 +137,16 @@
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/zettel/a16e20e6-42f6-418b-8b67-df390e83b4a6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>restart doom emacs</title>
+      <link>http://localhost:1313/zettel/9b3d1e49-1828-4e73-b85f-906105658209/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/9b3d1e49-1828-4e73-b85f-906105658209/</guid>
       <description></description>
       
     </item>

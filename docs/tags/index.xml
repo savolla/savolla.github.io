@@ -42,6 +42,16 @@
     </item>
     
     <item>
+      <title>Emacs</title>
+      <link>http://localhost:1313/tags/emacs/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/emacs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Epub</title>
       <link>http://localhost:1313/tags/epub/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
@@ -117,6 +127,16 @@
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/nixos/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Orgmode</title>
+      <link>http://localhost:1313/tags/orgmode/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/orgmode/</guid>
       <description></description>
       
     </item>
@@ -267,16 +287,6 @@
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/autohotkey/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Orgmode</title>
-      <link>http://localhost:1313/tags/orgmode/</link>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/tags/orgmode/</guid>
       <description></description>
       
     </item>
@@ -447,16 +457,6 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/youtube/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/tags/emacs/</guid>
       <description></description>
       
     </item>

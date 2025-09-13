@@ -87,6 +87,9 @@ draft = false
     -   **Storage Class**
 
 
+### Generative AI on Kubernetes (Book) {#generative-ai-on-kubernetes--book}
+
+
 ## Applied {#applied}
 
 ```emacs-lisp
