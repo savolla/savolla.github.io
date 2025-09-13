@@ -21,5 +21,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/dotfiles-management-with-git/featured.png" />
     </item>
     
+    <item>
+      <title>push an existing git repo to github</title>
+      <link>http://localhost:1313/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

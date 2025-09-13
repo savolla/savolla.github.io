@@ -27,6 +27,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</loc>
+    <lastmod>2025-09-12T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/zettel/</loc>
+    <lastmod>2025-09-12T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</loc>
     <lastmod>2025-09-11T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -52,12 +64,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/writeup/</loc>
-    <lastmod>2025-09-11T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/zettel/</loc>
     <lastmod>2025-09-11T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -10,17 +10,63 @@ All movies here are worth watching twice or more (imho)
 
 ## Psychological {#psychological}
 
--   [Eyes Wide Shut (1999)](<https://www.youtube.com/watch?v=xgVo96JaqeM>)
--   [The Game (1997)](<https://www.youtube.com/watch?v=nsKdR05ZsGE>)
--   [Jacob's Ladder (1990)](<https://www.youtube.com/watch?v=tLulu1Ovi2c>)
--   [The Cell (2000)](<https://www.youtube.com/watch?v=eIpy4p_yMV0>)
--   [Shutter Island (2010)](<https://www.youtube.com/watch?v=v8yrZSkKxTA>)
--   [Vanilla Sky (2001)](<https://www.youtube.com/watch?v=k09OX40NLUw>)
+<a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/eyes-wide-shut.jpg" width="160px" />
+</a>
+
+
+<a href="https://www.rottentomatoes.com/m/the_game" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-game-1997-movie-poster-4046709197.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/jacobs_ladder" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/jacobs_ladder_xlg-3382836107.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/the_cell_2000" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-cell.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/1198124-shutter_island" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/shutter-island.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/vanilla_sky" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/vanilla_sky-3379408659.jpg" width="160px" />
+</a>
 
 
 ## Hard to Digest {#hard-to-digest}
 
--   [Incendies (2011)](<https://www.youtube.com/watch?v=XJ69WnwvZhE>) **reduces your lifetime by 10 years**
+<a href="https://www.rottentomatoes.com/m/incendies" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/incendies-3588952923.jpg" width="160px" />
+</a>
+
+
+<a href="https://www.rottentomatoes.com/m/taste_of_cherry" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/taste-of-cherry.jpg" width="160px" />
+</a>
+
+
+
+
+<a href="https://www.rottentomatoes.com/m/jacobs_ladder" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/jacobs_ladder_xlg-3382836107.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/the_cell_2000" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-cell.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/1198124-shutter_island" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/shutter-island.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/vanilla_sky" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/vanilla_sky-3379408659.jpg" width="160px" />
+</a>
+
+-   [Incendies (2011)](<https://www.youtube.com/watch?v=XJ69WnwvZhE>)
 -   [طعم گیلاس (Ta'm e Guilas)](<https://www.youtube.com/watch?v=Yj7EPDDrQRU>)
 -   [1984](<https://www.youtube.com/watch?v=SXq3yMhobEU>)
 -   [Mulholland Drive (2001)](<https://www.youtube.com/watch?v=jbZJ487oJlY>) **Club Silencio**

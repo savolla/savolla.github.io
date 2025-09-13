@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on </title>
-    <link>http://localhost:46251/tags/github/</link>
+    <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:46251/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>push an existing git repo to github</title>
-      <link>http://localhost:46251/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</link>
+      <link>http://localhost:1313/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:46251/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</guid>
+      <guid>http://localhost:1313/zettel/abd9c6b4-4980-4c37-86fa-4ad1a02ad9f4/</guid>
       <description></description>
       
     </item>
