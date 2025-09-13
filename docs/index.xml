@@ -198,7 +198,7 @@
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/personal/wallpapers/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/wallpapers/featured-2015-03-14_MontyPSwallow_ROW8589847194_1920x1080.jpg" />
     </item>
     
     <item>
@@ -572,26 +572,6 @@
     </item>
     
     <item>
-      <title>Favorite Movies</title>
-      <link>http://localhost:1313/personal/favorite-movies/</link>
-      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/personal/favorite-movies/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-movies/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>Favorite Music</title>
-      <link>http://localhost:1313/personal/favorite-music/</link>
-      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/personal/favorite-music/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-music/feature-3221340686.jpg" />
-    </item>
-    
-    <item>
       <title>fix login issue to nexus docker registry</title>
       <link>http://localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
@@ -639,6 +619,26 @@
       <guid>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</guid>
       <description></description>
       
+    </item>
+    
+    <item>
+      <title>Movies</title>
+      <link>http://localhost:1313/personal/favorite-movies/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/personal/favorite-movies/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-movies/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/personal/favorite-music/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/personal/favorite-music/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-music/feature-3221340686.jpg" />
     </item>
     
     <item>

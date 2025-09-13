@@ -1,7 +1,8 @@
 +++
-title = "Favorite Movies"
+title = "Movies"
 author = ["Kuzey Koç"]
 date = 2025-09-02T00:00:00+03:00
+tags = ["personal", "-F"]
 draft = false
 +++
 
@@ -10,10 +11,44 @@ All movies here are worth watching twice or more (imho)
 
 ## Psychological {#psychological}
 
-<a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/eyes-wide-shut.jpg" width="160px" />
-</a>
+```python
+movies = [
+    {
+        "movie_name"            : "eyes wide shut",
+        "movie_url"             : "https://www.rottentomatoes.com/m/eyes_wide_shut",
+        "movie_poster_file_path": "eyes-wide-shut.jpg"
+    },
+    {
+        "movie_name"            : "The Game",
+        "movie_url"             : "https://www.rottentomatoes.com/m/the_game",
+        "movie_poster_file_path": "the-game-1997-movie-poster-4046709197.jpg"
+    },
+]
 
+movie_html = """
+"""
+
+def movie_html_constructor(movie):
+    print("""<a href="{}" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 0px;" src="/images/{}" width="160px" />
+</a>""".format(movie["movie_url"], movie["movie_poster_file_path"]))
+
+for movie in movies:
+    movie_html_constructor(movie)
+```
+
+```text
+<a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 0px;" src="/images/eyes-wide-shut.jpg" width="160px" />
+</a>
+<a href="https://www.rottentomatoes.com/m/the_game" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 0px;" src="/images/the-game-1997-movie-poster-4046709197.jpg" width="160px" />
+</a>
+```
+
+<a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 0px;" src="/images/eyes-wide-shut.jpg" width="160px" />
+</a>
 
 <a href="https://www.rottentomatoes.com/m/the_game" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/the-game-1997-movie-poster-4046709197.jpg" width="160px" />

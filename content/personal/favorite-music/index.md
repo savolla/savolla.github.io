@@ -1,5 +1,5 @@
 +++
-title = "Favorite Music"
+title = "Music"
 author = ["Kuzey Koç"]
 date = 2025-09-02T00:00:00+03:00
 tags = ["personal", "-F"]
