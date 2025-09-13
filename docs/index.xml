@@ -172,6 +172,16 @@
     </item>
     
     <item>
+      <title>Wallpapers</title>
+      <link>http://localhost:1313/personal/wallpapers/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/personal/wallpapers/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Dotfiles Management with Bare Git Repo</title>
       <link>http://localhost:1313/posts/dotfiles-management-with-git/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0300</pubDate>

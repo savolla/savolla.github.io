@@ -69,6 +69,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/personal/</loc>
+    <lastmod>2025-09-13T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/zettel/b15d6b5a-294e-49de-b2d3-44b6c208b2a8/</loc>
     <lastmod>2025-09-13T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -100,6 +106,12 @@
   </url>
   <url>
     <loc>http://localhost:1313/zettel/ee7bf474-efdd-4aaf-b916-17beb539a805/</loc>
+    <lastmod>2025-09-13T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/personal/wallpapers/</loc>
     <lastmod>2025-09-13T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -388,12 +400,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/personal/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
