@@ -9,7 +9,17 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/blowfish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/blowfish/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>disable hugo blowfish theme&#39;s zen mode for a specific page in org mode</title>
+      <link>http://localhost:1313/zettel/6fa97fee-bcdc-417f-b651-ac046693b077/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/6fa97fee-bcdc-417f-b651-ac046693b077/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>add background image to your post in hugo blowsifh site</title>
