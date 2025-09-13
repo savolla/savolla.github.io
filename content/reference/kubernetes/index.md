@@ -1,11 +1,12 @@
 +++
+title = "Kubernetes"
 author = ["Kuzey Koç"]
 date = 2025-09-10T00:00:00+03:00
 tags = ["-F", "kubernetes"]
 draft = false
 +++
 
-## Theoretical {#theoretical}
+## Notes {#notes}
 
 -   kubernetesin mimarisinde 2 temel kavram vardır. **control plane** ve **worker node**
     -   control plane
@@ -86,10 +87,7 @@ draft = false
     -   **Storage Class**
 
 
-### Generative AI on Kubernetes (Book) {#generative-ai-on-kubernetes--book}
-
-
-## Applied {#applied}
+## How-to {#how-to}
 
 ```emacs-lisp
 (mapconcat
@@ -118,6 +116,18 @@ draft = false
 
 
 ## Resources {#resources}
+
+
+### Videos {#videos}
+
+
+### Full Courses {#full-courses}
+
+
+### Books {#books}
+
+
+### Articles {#articles}
 
 [^fn:1]: [ChatGPT](https://chatgpt.com/)
 [^fn:2]: [Kubernetes Volumes explained | Persistent Volume, Persistent Volume Claim &amp; S...](https://www.youtube.com/watch?v=0swOh5C3OVM)

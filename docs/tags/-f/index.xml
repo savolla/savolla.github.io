@@ -18,7 +18,7 @@
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/personal/wallpapers/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/wallpapers/featured-2015-03-14_MontyPSwallow_ROW8589847194_1920x1080.jpg" />
     </item>
     
     <item>
@@ -112,7 +112,17 @@
     </item>
     
     <item>
-      <title>Favorite Music</title>
+      <title>Movies</title>
+      <link>http://localhost:1313/personal/favorite-movies/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/personal/favorite-movies/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/personal/favorite-movies/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Music</title>
       <link>http://localhost:1313/personal/favorite-music/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>

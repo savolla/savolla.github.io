@@ -454,6 +454,7 @@ These are my favorite wallpapers that I use everyday. Grab whichever you like!
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/Central Park New York City, NY, USA.jpg" width="190px" />
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/ChamonixClouds.jpg" width="190px" />
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/ChateauChantillyFrance.jpg" width="190px" />
+<img style="display: inline-block; margin: 5px;" src="/images/wallpapers/ChateauGaillard_EN-US11027430397_1920x1080.jpg" width="190px" />
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/ChefchaouenMorocco_EN-US7146186763_1920x1080.jpg" width="190px" />
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/Chestnuts in shell.jpg" width="190px" />
 <img style="display: inline-block; margin: 5px;" src="/images/wallpapers/ChiribiqueteNP_EN-US10713623298_1920x1080.jpg" width="190px" />

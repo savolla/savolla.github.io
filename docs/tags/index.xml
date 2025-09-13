@@ -12,6 +12,16 @@
     <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>-E</title>
+      <link>http://localhost:1313/tags/-e/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/-e/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>-F</title>
       <link>http://localhost:1313/tags/-f/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
@@ -217,6 +227,16 @@
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/personal/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
       
     </item>

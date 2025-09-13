@@ -15,6 +15,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/zettel/ed0a8eb7-9b25-438d-8d7f-724ba19d586b/</loc>
+    <lastmod>2025-09-13T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/zettel/a8c42219-5a1f-4fed-80c5-c403ead78a60/</loc>
     <lastmod>2025-09-13T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -375,18 +381,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/personal/favorite-movies/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/personal/favorite-music/</loc>
-    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/zettel/eab79c3e-7948-46c6-961e-2610994bb741/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -412,6 +406,18 @@
   </url>
   <url>
     <loc>http://localhost:1313/zettel/36f78810-6bbe-4e93-b75e-e6efe330ad32/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/personal/favorite-movies/</loc>
+    <lastmod>2025-09-02T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/personal/favorite-music/</loc>
     <lastmod>2025-09-02T00:00:00+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

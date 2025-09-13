@@ -332,12 +332,12 @@
       
         
   <a
-  href="/reference/"
+  href="/zettel/"
   
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
-  <p class="text-base font-medium" title="References">
-    reference
+  <p class="text-base font-medium" title="Zettels">
+    howto
   </p>
 </a>
 
@@ -346,12 +346,12 @@
       
         
   <a
-  href="/zettel/"
+  href="/reference/"
   
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
-  <p class="text-base font-medium" title="Zettels">
-    zettelkasten
+  <p class="text-base font-medium" title="References">
+    reference
   </p>
 </a>
 
@@ -716,12 +716,12 @@
               
   <li class="mt-1">
   <a
-    href="/reference/"
+    href="/zettel/"
     
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="References">
-      reference
+    <p class="text-bg font-bg" title="Zettels">
+      howto
     </p>
   </a>
 </li>
@@ -732,12 +732,12 @@
               
   <li class="mt-1">
   <a
-    href="/zettel/"
+    href="/reference/"
     
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="Zettels">
-      zettelkasten
+    <p class="text-bg font-bg" title="References">
+      reference
     </p>
   </a>
 </li>
@@ -1110,7 +1110,7 @@
       const toc = document.querySelector(TOC_SELECTOR)
       if (!toc) return
 
-      const collapseInactive = true
+      const collapseInactive = false
       const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
       const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
 

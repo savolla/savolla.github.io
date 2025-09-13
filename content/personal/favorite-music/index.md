@@ -9,10 +9,10 @@ draft = false
 My music selection from ****Normie**** to ****Schizo**** level
 
 
-## Lo-Fi {#lo-fi}
+## 🌴 **Lo-Fi** {#lo-fi}
 
 
-### Albums {#albums}
+### Chill Albums {#chill-albums}
 
 <a href="https://www.youtube.com/watch?v=ke88KS1Q09s" target="_blank" rel="noopener" style="display: inline-block; margin-right: 0px;">
   <img src="/images/a4055206329_16.jpg" width="160px" />
@@ -25,15 +25,15 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Classical Music {#classical-music}
+## 🎻 **Classical Music** {#classical-music}
 
 
-### Live Performances {#live-performances}
+### Classy Live {#classy-live}
 
 -   [Yanni - The Rain Must Fall - YouTube](https://www.youtube.com/watch?v=Iq3zo432sAU) (5:17 and beyond is pure love)
 
 
-### Concerts {#concerts}
+### Classy Concerts {#classy-concerts}
 
 -   [André Rieu live in Bahrain (Full Concert) - YouTube](https://www.youtube.com/watch?v=rOcqbbjuXCM)
 -   [Yanni ( The Dream Concert - Live from the Great Pyramids of Egypt 2016 ) Full...](https://www.youtube.com/watch?v=i7ypqtugREk)
@@ -41,10 +41,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Underground Rap {#underground-rap}
+## 💰 **Underground Rap** {#underground-rap}
 
 
-### Tracks {#tracks}
+### Gangsta Tracks {#gangsta-tracks}
 
 -   [6EXTERMINATION - LEGION RISING](https://www.youtube.com/watch?v=qZyAJmrwfdU)
 -   [SUICIDEBOYS - CLOUDS AS WITNESSES](https://www.youtube.com/watch?v=Zi3-P4qwpGo)
@@ -58,7 +58,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [SUICIDEBOYS - MAGAZINE](https://www.youtube.com/watch?v=Nbe-h8Skv3Q)
 
 
-### Albums {#albums}
+### Gangsta Albums {#gangsta-albums}
 
 -   [SUICIDEBOYS x GETTER - Radical $uicide EP](https://www.youtube.com/watch?v=2J7JwooMTIQ) _this is 🔥_
 -   [SuicideboyS - Gray/Grey](https://www.youtube.com/playlist?list=PLDUEjoBVMbh-NIgvXVB4HFEoPnflPcvM6)
@@ -67,7 +67,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Jazz {#jazz}
+## 🎷 **Jazz** {#jazz}
 
 -   [Jazz at the Pawnshop](https://www.youtube.com/watch?v=SRTg9BYrLY8)
 -   [George Duke Trio - It's On](https://www.youtube.com/watch?v=uHFJ9qhR0VM)
@@ -76,10 +76,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Chiptune (NES/SNES) {#chiptune--nes-snes}
+## 👾 **Chiptune** {#chiptune}
 
 
-### Tracks {#tracks}
+### 8-bit Tracks {#8-bit-tracks}
 
 -   [Monsters in My Pocket - Stage 1](https://youtu.be/4bpbcm3wNMY?list=PLEOQ0YA_1DWmbQQ8i81za00VldyOEknRC)
 -   [Demon's Crest - Beyond the Colosseum](https://youtu.be/UOzkzx1RKgw?list=PL89B635DF21CEF816)
@@ -97,14 +97,14 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [Ninja Gaiden III Act 4 Part 2](https://www.youtube.com/watch?v=5ZVCvNW4pb4&list=PL63A620D86D053A64&index=9)
 
 
-### Playlists {#playlists}
+### 8-bit Playlists {#8-bit-playlists}
 
 -   [Ninja Cats](https://www.youtube.com/watch?v=Q8zFuGxleAc&list=PLEOQ0YA_1DWn-RiwjNvxPUf30GVpAhJsI)
 
 ---
 
 
-## VGM {#vgm}
+## 🎮 **VGM** {#vgm}
 
 -   [The Witcher - An Ominous Place](https://www.youtube.com/watch?v=s0I4d9ooz8w)
 -   [The Witcher - Vizima Outskirts (Night)](https://www.youtube.com/watch?v=v5tf0x0jazI)
@@ -114,10 +114,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## IDM {#idm}
+## 🎛 **IDM** {#idm}
 
 
-### Tracks {#tracks}
+### Int Tracks {#int-tracks}
 
 -   [Aphex Twin - Vordhosbn](<https://www.youtube.com/watch?v=XYrQC-jWMFM>)
 -   [Aphex Twin - Come To Daddy](<https://www.youtube.com/watch?v=TZ827lkktYs>)
@@ -127,11 +127,11 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [Aphex Twin - Windowlicker](<https://www.youtube.com/watch?v=UBS4Gi1y_nc>)
 
 
-### Albums {#albums}
+### Int Albums {#int-albums}
 
 -   [Aphex Twin - Richard D. James](<https://www.youtube.com/watch?v=LAFazXZKZwQ>)
 -   [FILMMAKER - EIDETIC](<https://www.youtube.com/watch?v=CaBhgUzPlko>)
--   [Aphex Twin - Syro](<https://www.youtube.com/watch?v=oR4gjzXs5EE>) 🧠🧠🧠🧠
+-   [Aphex Twin - Syro](<https://www.youtube.com/watch?v=oR4gjzXs5EE>)
 -   [GLYF - THE INCURSION](<https://www.youtube.com/watch?v=lyd23cDcqT0>)
 -   [FILMMAKER - VLAD TAPES](<https://www.youtube.com/watch?v=9yb2l9Th9bs>)
 -   [Aphex Twin - Selected Ambient Works 85-92](<https://www.youtube.com/watch?v=Xw5AiRVqfqk>)
@@ -139,7 +139,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [VARIOUS ARTISTS - ANATOMY VOL.3](<https://www.youtube.com/watch?v=LuUV1IsQJq4>)
 
 
-### Live {#live}
+### Int Live {#int-live}
 
 -   [Aphex Twin Live at Field Day 2017](<https://www.youtube.com/watch?v=nzvLiwUK3R8>)
 -   [Filmmaker DJ set at Red Light Radio](<https://www.youtube.com/watch?v=nQiWAIRvEVw>)
@@ -148,10 +148,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-## Metal {#metal}
+## 🤘 **Metal** {#metal}
 
 
-### Albums {#albums}
+### Metal Albums {#metal-albums}
 
 
 <a href="https://thefaceless.bandcamp.com/album/autotheism" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
@@ -319,7 +319,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 </a>
 
 
-### Live {#live}
+### Metal Live {#metal-live}
 
 -   Norther - Cry
 
@@ -414,7 +414,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 ---
 
 
-### Tracks {#tracks}
+### Metal Tracks {#metal-tracks}
 
 -   [Krallice - Telluric Rings](<https://www.youtube.com/watch?v=zJ8vnepZnNw>) 🔥🔥🔥🔥
 -   [SUICIDE SILENCE - Disengage](<https://www.youtube.com/watch?v=FukeNR1ydOA>)
@@ -482,10 +482,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 -   [Dying Fetus - Your Treachery Will Die With You](<https://www.youtube.com/watch?v=i8Jjy3Zy7kk>)
 
 
-## Breakcore {#breakcore}
+## 🔨 **Breakcore** {#breakcore}
 
 
-### Albums {#albums}
+### Broken Albums {#broken-albums}
 
 <a href="https://www.youtube.com/watch?v=OooYpuBd3gY" target="_blank" rel="noopener" style="display: inline-block; margin-right: 0px;">
   <img src="/images/a1822716383_16.jpg" width="160px" />
@@ -496,10 +496,10 @@ My music selection from ****Normie**** to ****Schizo**** level
 </a>
 
 
-## Dark Ambient {#dark-ambient}
+## 👹 **Dark Ambient** {#dark-ambient}
 
 
-### Albums {#albums}
+### Dark Albums {#dark-albums}
 
 <a href="https://www.youtube.com/watch?v=DYCmHBc-G3w" target="_blank" rel="noopener" style="display: inline-block; margin-right: 0px;">
   <img src="/images/zoat-aon-the-triplex-bestial-Cover-Art.jpg" width="160px" />
@@ -542,7 +542,7 @@ My music selection from ****Normie**** to ****Schizo**** level
 </a>
 
 
-### Tracks {#tracks}
+### Dark Tracks {#dark-tracks}
 
--   [Atrium Carceri - A Stroll through the Ancient City](<https://www.youtube.com/watch?v=DkN_VJNHJa8>) 👹
+-   [Atrium Carceri - A Stroll through the Ancient City](<https://www.youtube.com/watch?v=DkN_VJNHJa8>)
 -   [Aseptic Void - My Little Secret](<https://www.youtube.com/watch?v=Glzrs07f6dU>)
