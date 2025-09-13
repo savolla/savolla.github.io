@@ -105,35 +105,35 @@ mulholland-drive-md-web-1876893089.jpg
 
 ## Horror {#horror}
 
-<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/grave_encounters" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/grave-encounters.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/no_country_for_old_men" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/dawn_of_the_dead" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/dawn-of-the-dead.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/the_platform" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/vhs2" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/VHS2-Poster-1581990644.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/her" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/vhs" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/vhs.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/filth_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/insidious" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/incidious.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/bronson" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/alien_romulus" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/alien-romulus-film-poster-1132327283.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/persepolis" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/as_aboveso_below" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/as-above-so-below-448774915.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/the_hunt_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/mist" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/the-mist_poster_goldposter_com_11-3357004402.jpg" width="160px" />
 </a>
 
@@ -142,15 +142,15 @@ mulholland-drive-md-web-1876893089.jpg
 
 ## J-Horror {#j-horror}
 
-<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/pulse_2005" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/pulse_xlg-2302251433.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/kwaidan" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/kwaidan.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+<a href="https://www.rottentomatoes.com/m/10002114-dark_water" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
   <img src="/images/Dark_Water-329055271-large-1051075613.jpg" width="160px" />
 </a>
 
@@ -198,3 +198,10 @@ mulholland-drive-md-web-1876893089.jpg
 </a>
 
 ---
+
+
+## Want to Watch {#want-to-watch}
+
+-   [V/H/S/Beyond | Rotten Tomatoes](https://www.rottentomatoes.com/m/v_h_s_beyond)
+-   [V/H/S/94 | Rotten Tomatoes](https://www.rottentomatoes.com/m/vhs94)
+-   [V/H/S/85 | Rotten Tomatoes](https://www.rottentomatoes.com/m/v_h_s_85)
