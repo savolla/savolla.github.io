@@ -11,63 +11,23 @@ All movies here are worth watching twice or more (imho)
 
 ## Psychological {#psychological}
 
-```python
-movies = [
-    {
-        "movie_name"            : "eyes wide shut",
-        "movie_url"             : "https://www.rottentomatoes.com/m/eyes_wide_shut",
-        "movie_poster_file_path": "eyes-wide-shut.jpg"
-    },
-    {
-        "movie_name"            : "The Game",
-        "movie_url"             : "https://www.rottentomatoes.com/m/the_game",
-        "movie_poster_file_path": "the-game-1997-movie-poster-4046709197.jpg"
-    },
-]
-
-movie_html = """
-"""
-
-def movie_html_constructor(movie):
-    print("""<a href="{}" target="_blank" rel="noopener">
-  <img style="display: inline-block; margin: 0px;" src="/images/{}" width="160px" />
-</a>""".format(movie["movie_url"], movie["movie_poster_file_path"]))
-
-for movie in movies:
-    movie_html_constructor(movie)
-```
-
-```text
 <a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener">
-  <img style="display: inline-block; margin: 0px;" src="/images/eyes-wide-shut.jpg" width="160px" />
+  <img style="display: inline-block; margin: 4px;" src="/images/eyes-wide-shut.jpg" width="150px" />
 </a>
 <a href="https://www.rottentomatoes.com/m/the_game" target="_blank" rel="noopener">
-  <img style="display: inline-block; margin: 0px;" src="/images/the-game-1997-movie-poster-4046709197.jpg" width="160px" />
+  <img style="display: inline-block; margin: 4px;" src="/images/the-game-1997-movie-poster-4046709197.jpg" width="150px" />
 </a>
-```
-
-<a href="https://www.rottentomatoes.com/m/eyes_wide_shut" target="_blank" rel="noopener">
-  <img style="display: inline-block; margin: 0px;" src="/images/eyes-wide-shut.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/jacobs_ladder" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/jacobs_ladder_xlg-3382836107.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/the_game" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/the-game-1997-movie-poster-4046709197.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/the_cell_2000" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/the-cell.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/jacobs_ladder" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/jacobs_ladder_xlg-3382836107.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/1198124-shutter_island" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/shutter-island.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/the_cell_2000" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/the-cell.jpg" width="160px" />
-</a>
-
-<a href="https://www.rottentomatoes.com/m/1198124-shutter_island" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/shutter-island.jpg" width="160px" />
-</a>
-
-<a href="https://www.rottentomatoes.com/m/vanilla_sky" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/vanilla_sky-3379408659.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/vanilla_sky" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/vanilla_sky-3379408659.jpg" width="150px" />
 </a>
 
 ---
@@ -75,64 +35,47 @@ for movie in movies:
 
 ## Hard to Digest {#hard-to-digest}
 
-<a href="https://www.rottentomatoes.com/m/incendies" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/incendies-3588952923.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/incendies" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/incendies-3588952923.jpg" width="150px" />
 </a>
-
-
-<a href="https://www.rottentomatoes.com/m/taste_of_cherry" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/taste-of-cherry.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/taste_of_cherry" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/taste-of-cherry.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/1984_1984" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/1984.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/mulholland_dr" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/mulholland-drive-md-web-1876893089.jpg" width="150px" />
 </a>
-
-
-<a href="https://www.rottentomatoes.com/m/mulholland_dr" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/
-mulholland-drive-md-web-1876893089.jpg
-" width="160px" />
+<a href="https://www.rottentomatoes.com/m/1984_1984" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/1984.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/lost_highway" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/lost-highway.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/lost_highway" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/lost-highway.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/the_substance" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/the-substance-movie-poster-1482580001.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/the_substance" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/the-substance-movie-poster-1482580001.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/the_hunt_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/jagten_xxlg-605616330.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/the_hunt_2013" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/jagten_xxlg-605616330.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/parasite.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/parasite.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/no_country_for_old_men" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/no_country_for_old_men_2007_original_film_art_5000x-41473270.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/no_country_for_old_men" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/no_country_for_old_men_2007_original_film_art_5000x-41473270.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/the_platform" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/the-platform.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/the_platform" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/the-platform.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/her" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/her.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/her" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/her.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/filth_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/filth-poster-3431448991.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/filth_2013" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/filth-poster-3431448991.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/bronson" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/bronson.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/bronson" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/bronson.jpg" width="150px" />
 </a>
-
-<a href="https://www.rottentomatoes.com/m/persepolis" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/porsepolis.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/persepolis" target="_blank" rel="noopener">
+  <img style="display: inline-block; margin: 4px;" src="/images/porsepolis.jpg" width="150px" />
 </a>
 
 ---
