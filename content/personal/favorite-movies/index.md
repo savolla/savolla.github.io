@@ -35,6 +35,8 @@ All movies here are worth watching twice or more (imho)
   <img src="/images/vanilla_sky-3379408659.jpg" width="160px" />
 </a>
 
+---
+
 
 ## Hard to Digest {#hard-to-digest}
 
@@ -47,39 +49,58 @@ All movies here are worth watching twice or more (imho)
   <img src="/images/taste-of-cherry.jpg" width="160px" />
 </a>
 
-
-
-
-<a href="https://www.rottentomatoes.com/m/jacobs_ladder" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/jacobs_ladder_xlg-3382836107.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/1984_1984" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/1984.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/the_cell_2000" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/the-cell.jpg" width="160px" />
+
+<a href="https://www.rottentomatoes.com/m/mulholland_dr" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/
+mulholland-drive-md-web-1876893089.jpg
+" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/1198124-shutter_island" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/shutter-island.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/lost_highway" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/lost-highway.jpg" width="160px" />
 </a>
 
-<a href="https://www.rottentomatoes.com/m/vanilla_sky" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
-  <img src="/images/vanilla_sky-3379408659.jpg" width="160px" />
+<a href="https://www.rottentomatoes.com/m/the_substance" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-substance-movie-poster-1482580001.jpg" width="160px" />
 </a>
 
--   [Incendies (2011)](<https://www.youtube.com/watch?v=XJ69WnwvZhE>)
--   [طعم گیلاس (Ta'm e Guilas)](<https://www.youtube.com/watch?v=Yj7EPDDrQRU>)
--   [1984](<https://www.youtube.com/watch?v=SXq3yMhobEU>)
--   [Mulholland Drive (2001)](<https://www.youtube.com/watch?v=jbZJ487oJlY>) **Club Silencio**
--   [Lost Highway (1997)](<https://www.youtube.com/watch?v=XmFgO2fJQuI>)
--   [The Substance](<https://www.youtube.com/watch?v=LNlrGhBpYjc>)
--   [Jagten (2013)](<https://www.youtube.com/watch?v=ieLIOBkMgAQ>)
--   [Parasite (2019)](<https://www.youtube.com/watch?v=SEUXfv87Wpk>)
--   [No Country for Old Men (2007)](<https://www.youtube.com/watch?v=1BFDdxMk-JQ>)
--   [The Platform (2020)](<https://www.youtube.com/watch?v=RlfooqeZcdY>)
--   [Her (2013)](<https://www.youtube.com/watch?v=dJTU48_yghs>)
--   [Filth (2013)](<https://www.youtube.com/watch?v=uWGhCLu0fZg>)
--   [Bronson (2008)](<https://www.youtube.com/watch?v=paa9knyJKrs>)
--   [Persepolis (2007)](<https://www.youtube.com/watch?v=3PXHeKuBzPY>)
+<a href="https://www.rottentomatoes.com/m/the_hunt_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/jagten_xxlg-605616330.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/parasite_2019" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/parasite.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/no_country_for_old_men" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/no_country_for_old_men_2007_original_film_art_5000x-41473270.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/the_platform" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/the-platform.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/her" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/her.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/filth_2013" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/filth-poster-3431448991.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/bronson" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/bronson.jpg" width="160px" />
+</a>
+
+<a href="https://www.rottentomatoes.com/m/persepolis" target="_blank" rel="noopener" style="display: inline-block; margin: 0px;">
+  <img src="/images/porsepolis.jpg" width="160px" />
+</a>
+
+---
 
 
 ## Horror {#horror}
