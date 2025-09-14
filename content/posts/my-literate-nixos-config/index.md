@@ -1,4 +1,5 @@
 +++
+title = "My Literate NixOS Configuration"
 author = ["Kuzey Koç"]
 date = 2025-09-11T00:00:00+03:00
 tags = ["nixos", "-F"]
@@ -40,7 +41,7 @@ DEFAULT_GATEWAY = "192.168.1.1";
 ```
 
 
-### Package Overrides {#package-overrides}
+### <span class="section-num">2.1</span> Package Overrides {#package-overrides}
 
 
 #### ncmpcpp with visualizer {#ncmpcpp-with-visualizer}
@@ -94,7 +95,7 @@ boot = {
 ```
 
 
-### Grub {#grub}
+### <span class="section-num">4.1</span> Grub {#grub}
 
 I use `grub` instead `systemd-boot` which is the default in nixos. In order to use it I disabled `systemd-boot` completely and set some `grub` specific options. `saved` means that grub will remember your last choice on the next restart.
 
@@ -203,7 +204,7 @@ networking = {
 ```
 
 
-### Network Manager {#network-manager}
+### <span class="section-num">8.1</span> Network Manager {#network-manager}
 
 ```nix
 networkmanager = {
@@ -217,7 +218,7 @@ networkmanager = {
 ```
 
 
-### Wireless {#wireless}
+### <span class="section-num">8.2</span> Wireless {#wireless}
 
 I don't have a laptop (yet) so I disable wireless option completely
 
@@ -226,7 +227,7 @@ I don't have a laptop (yet) so I disable wireless option completely
 ```
 
 
-### Firewall {#firewall}
+### <span class="section-num">8.3</span> Firewall {#firewall}
 
 I sometimes self-host services in my home network and need a way to access these services from other devices. I use the following firewall settings. Currently I don't host anything but I keep these settings for the potential future use
 
@@ -245,7 +246,7 @@ firewall = {
 ```
 
 
-### NAT {#nat}
+### <span class="section-num">8.4</span> NAT {#nat}
 
 I need this because I sometimes expose in-vm services to my home network and I need to translate those ip addresses
 
@@ -258,7 +259,7 @@ nat = {
 ```
 
 
-### DNS {#dns}
+### <span class="section-num">8.5</span> DNS {#dns}
 
 In nixos there is no `/etc/hosts` file. We have the following instead
 
@@ -277,14 +278,14 @@ In nixos there is no `/etc/hosts` file. We have the following instead
 ## <span class="section-num">9</span> Localization {#localization}
 
 
-### Timezone {#timezone}
+### <span class="section-num">9.1</span> Timezone {#timezone}
 
 ```nix
 time.timeZone = "Europe/Istanbul";
 ```
 
 
-### Internationalisation {#internationalisation}
+### <span class="section-num">9.2</span> Internationalisation {#internationalisation}
 
 ```nix
 i18n = {
@@ -304,7 +305,7 @@ i18n = {
 ```
 
 
-### Console Keymap {#console-keymap}
+### <span class="section-num">9.3</span> Console Keymap {#console-keymap}
 
 ```nix
 console.keyMap = "trq";
@@ -364,7 +365,7 @@ I once tried to run `gparted` on wayland and I came with the following solution 
 ## <span class="section-num">11</span> Nix {#nix}
 
 
-### Flakes {#flakes}
+### <span class="section-num">11.1</span> Flakes {#flakes}
 
 I'm enabling flakes support
 
@@ -378,7 +379,7 @@ nix = {
 ```
 
 
-### Unfree Packages {#unfree-packages}
+### <span class="section-num">11.2</span> Unfree Packages {#unfree-packages}
 
 Nix does not allow unfree packages by default. You need to enable them explicitly
 
@@ -392,7 +393,7 @@ nixpkgs = {
 ```
 
 
-### Package Overlays {#package-overlays}
+### <span class="section-num">11.3</span> Package Overlays {#package-overlays}
 
 
 #### mpv {#mpv}
@@ -482,7 +483,7 @@ fileSystems = {
 ## <span class="section-num">15</span> Packages {#packages}
 
 
-### Editors {#editors}
+### <span class="section-num">15.1</span> Editors {#editors}
 
 ```nix
 environment.systemPackages = with pkgs; [
@@ -497,7 +498,7 @@ environment.systemPackages = with pkgs; [
 ```
 
 
-### Virtualization {#virtualization}
+### <span class="section-num">15.2</span> Virtualization {#virtualization}
 
 ```nix
 # virtualization
@@ -517,7 +518,7 @@ virtiofsd # share file system between host and guests
 ```
 
 
-### Wayland {#wayland}
+### <span class="section-num">15.3</span> Wayland {#wayland}
 
 ```nix
 # wayland related
@@ -532,7 +533,7 @@ ydotool # xdotool for wayland
 ```
 
 
-### Gaming {#gaming}
+### <span class="section-num">15.4</span> Gaming {#gaming}
 
 I don't play games anymore but I once built a sane gaming setup on NixOS. There you go if you need it.
 
@@ -556,7 +557,7 @@ sc-controller # emulate joysticks on linux (to play swtich games using mouse and
 ```
 
 
-### Music Production {#music-production}
+### <span class="section-num">15.5</span> Music Production {#music-production}
 
 I was using NixOS for music production but since I started using Proxmox I migrated to Windows 10.
 
@@ -606,7 +607,7 @@ helvum # modern jack ui
 ```
 
 
-### Compiling Tools {#compiling-tools}
+### <span class="section-num">15.6</span> Compiling Tools {#compiling-tools}
 
 NixOS is not pretty when it comes to "compiling" from source but I was using `crosstool-ng` to build toolchains for BeagleBoneBlack and Raspberry Pi. These are the requirements
 
@@ -627,7 +628,7 @@ freetype # to be able to compile suckless utils
 ```
 
 
-### LaTeX {#latex}
+### <span class="section-num">15.7</span> LaTeX {#latex}
 
 I use Emacs's org-mode feature A LOT for writing and exporting my documents to various formats like pdf, html, slides etc. I have my own pdf export template. The following packages are the dependencies for this template
 
@@ -648,7 +649,7 @@ texlivePackages.plex # sans and mono fonts
 ```
 
 
-### Development {#development}
+### <span class="section-num">15.8</span> Development {#development}
 
 ```nix
 # development
@@ -715,7 +716,7 @@ godot_4 # 3d and 2d game engine
 ```
 
 
-### DevOps {#devops}
+### <span class="section-num">15.9</span> DevOps {#devops}
 
 ```nix
 # devops
@@ -754,7 +755,7 @@ terraform-local # use terraform with localstack
 ```
 
 
-### Doom Emacs Specific {#doom-emacs-specific}
+### <span class="section-num">15.10</span> Doom Emacs Specific {#doom-emacs-specific}
 
 I use Doom Emacs for almost anything. programming, writing, blogging, terminal multiplexing and even music listening. But to do all those things it needs some dependencies.
 
@@ -869,7 +870,7 @@ ripgrep # doom emacs dep
 ```
 
 
-### Communication {#communication}
+### <span class="section-num">15.11</span> Communication {#communication}
 
 ```nix
 ferdium # communication
@@ -878,7 +879,7 @@ nicotine-plus # pure piracy
 ```
 
 
-### Multimedia {#multimedia}
+### <span class="section-num">15.12</span> Multimedia {#multimedia}
 
 ```nix
 jamesdsp # equalizer for pipewire
@@ -888,7 +889,7 @@ ncmpcpp # custom ncmpcpp with visualizer. see let/in on top
 ```
 
 
-### Browsers {#browsers}
+### <span class="section-num">15.13</span> Browsers {#browsers}
 
 ```nix
 firefox # normal browser
@@ -898,7 +899,7 @@ librewolf # paranoid browser
 ```
 
 
-### GUI {#gui}
+### <span class="section-num">15.14</span> GUI {#gui}
 
 ```nix
 kdePackages.kdenlive # open source video editing software
@@ -925,7 +926,7 @@ inkscape-with-extensions # svg and logo design
 ```
 
 
-### Suckless {#suckless}
+### <span class="section-num">15.15</span> Suckless {#suckless}
 
 ```nix
 # suckless
@@ -942,7 +943,7 @@ inkscape-with-extensions # svg and logo design
 ```
 
 
-### Misc {#misc}
+### <span class="section-num">15.16</span> Misc {#misc}
 
 ```nix
 wget # download things
@@ -1101,7 +1102,7 @@ xdg.portal = {
 I stopped using these virtualization settings after I started using Proxmox as my type 1 hypervisor. But I'll keep these setting for future reference
 
 
-### VirtualBox {#virtualbox}
+### <span class="section-num">18.1</span> VirtualBox {#virtualbox}
 
 ```nix
 virtualbox = { # virtualbox cannot be built with linux-rt kernel. hence disabled
@@ -1118,7 +1119,7 @@ virtualbox = { # virtualbox cannot be built with linux-rt kernel. hence disabled
 ```
 
 
-### Podman {#podman}
+### <span class="section-num">18.2</span> Podman {#podman}
 
 ```nix
 podman = {
@@ -1128,7 +1129,7 @@ podman = {
 ```
 
 
-### Docker {#docker}
+### <span class="section-num">18.3</span> Docker {#docker}
 
 I change my docker data root directory to prevent bloating my root directory.
 
@@ -1160,7 +1161,7 @@ rootless = {
 ```
 
 
-### Libvirt {#libvirt}
+### <span class="section-num">18.4</span> Libvirt {#libvirt}
 
 ```nix
 libvirtd = {
@@ -1187,7 +1188,7 @@ libvirtd = {
 ```
 
 
-### Waydroid {#waydroid}
+### <span class="section-num">18.5</span> Waydroid {#waydroid}
 
 Android emulation on Linux? Sounds cool!
 
@@ -1199,7 +1200,7 @@ waydroid.enable = true;
 ## <span class="section-num">19</span> Services {#services}
 
 
-### xorg {#xorg}
+### <span class="section-num">19.1</span> xorg {#xorg}
 
 I use NixOS as a Proxmox vm. I enable "qxl" for SPICE. You don't need this if you're running NixOS on baremetal
 
@@ -1226,7 +1227,7 @@ xserver = {
 ```
 
 
-### spice {#spice}
+### <span class="section-num">19.2</span> spice {#spice}
 
 Since I use NixOS as a Proxmox vm, I sometimes connect to it via SPICE client `virt-viewer`. These services increase performance in the viewer and also let me share clipboard etc.
 
@@ -1237,7 +1238,7 @@ qemuGuest.enable = true;
 ```
 
 
-### ssh {#ssh}
+### <span class="section-num">19.3</span> ssh {#ssh}
 
 ```nix
     openssh = {
@@ -1247,7 +1248,7 @@ qemuGuest.enable = true;
 ```
 
 
-### cron {#cron}
+### <span class="section-num">19.4</span> cron {#cron}
 
 ```nix
 cron = {
@@ -1260,7 +1261,7 @@ cron = {
 ```
 
 
-### opensnitch {#opensnitch}
+### <span class="section-num">19.5</span> opensnitch {#opensnitch}
 
 I use **opensnitch** as my **application firewall**. It is the closest alternative to **Simplewall** on windows. I also set some default rules below
 
@@ -1297,7 +1298,7 @@ opensnitch = {
 ```
 
 
-### udisks2 {#udisks2}
+### <span class="section-num">19.6</span> udisks2 {#udisks2}
 
 Mount disks without sudo (requires udiskie)
 
@@ -1308,7 +1309,7 @@ udisks2 = {
 ```
 
 
-### gvfs {#gvfs}
+### <span class="section-num">19.7</span> gvfs {#gvfs}
 
 enable android file system mount in pcmanfm
 
@@ -1319,7 +1320,7 @@ gvfs = {
 ```
 
 
-### pipewire {#pipewire}
+### <span class="section-num">19.8</span> pipewire {#pipewire}
 
 ```nix
 pipewire = {
@@ -1332,7 +1333,7 @@ pipewire = {
 ```
 
 
-### ly {#ly}
+### <span class="section-num">19.9</span> ly {#ly}
 
 I used `ly` as my tui login manager but it does a **horrible** job in managing my session. I replaced it with `lightdm` but I'll leave it here for future reference
 
@@ -1345,7 +1346,7 @@ displayManager = {
 ```
 
 
-### dnscrypt {#dnscrypt}
+### <span class="section-num">19.10</span> dnscrypt {#dnscrypt}
 
 I encrypt my dns instead of using slow VPNs. see [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml) for more information
 

@@ -286,7 +286,7 @@ My music selection from ****Normie**** to ****Schizo**** level
   <img src="/images/modern-day-babylon-travelers-cover-art.jpg" width="160px" />
 </a>
 
-<a href="https://www.youtube.com/watch?v=1gRESh4iyfs" target="_blank" rel="noopener" style="display: inline-block; margin-right: 0px;">
+<a href="https://thehelixnebula.bandcamp.com/album/meridian" target="_blank" rel="noopener" style="display: inline-block; margin-right: 0px;">
   <img src="/images/the-helix-nebula-meridian-cover-art.jpg" width="160px" />
 </a>
 
