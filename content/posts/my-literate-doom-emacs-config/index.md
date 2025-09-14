@@ -13,17 +13,17 @@ draft = false
 </div>
 
 
-## Basic Customizations {#basic-customizations}
+## <span class="section-num">1</span> Basic Customizations {#basic-customizations}
 
 
-### Header {#header}
+### <span class="section-num">1.1</span> Header {#header}
 
 ```emacs-lisp
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 ```
 
 
-### Dashboard {#dashboard}
+### <span class="section-num">1.2</span> Dashboard {#dashboard}
 
 Nothing is better than a clean and customized dashboard. Here is my "suckless" stiled username and clean as possible dashboard. Btw I couldn't find a way to disable that github icon but anyway.
 
@@ -53,7 +53,7 @@ Nothing is better than a clean and customized dashboard. Here is my "suckless" s
 ```
 
 
-### Persoal Information {#persoal-information}
+### <span class="section-num">1.3</span> Persoal Information {#persoal-information}
 
 ```emacs-lisp
 ;; personal info
@@ -62,7 +62,7 @@ Nothing is better than a clean and customized dashboard. Here is my "suckless" s
 ```
 
 
-### Fonts {#fonts}
+### <span class="section-num">1.4</span> Fonts {#fonts}
 
 I personally like narrow mono fonts. Iosevka is already narrow but IosevkaTerm is better as a terminal font and programming in general. More characters fit in a single line
 
@@ -73,7 +73,7 @@ I personally like narrow mono fonts. Iosevka is already narrow but IosevkaTerm i
 ```
 
 
-### Theme {#theme}
+### <span class="section-num">1.5</span> Theme {#theme}
 
 I'm a big fan of Gruvbox color scheme.
 
@@ -98,7 +98,7 @@ Make emacs transparent. Right now it only works with `emacs-gtk` in NixOS
 ```
 
 
-### Line Numbers {#line-numbers}
+### <span class="section-num">1.6</span> Line Numbers {#line-numbers}
 
 ```emacs-lisp
 (setq display-line-numbers-type t)
@@ -106,7 +106,7 @@ Make emacs transparent. Right now it only works with `emacs-gtk` in NixOS
 ```
 
 
-### Window Separator {#window-separator}
+### <span class="section-num">1.7</span> Window Separator {#window-separator}
 
 Doom's line separator is not visible at all. so I change it's width and color for better visibility
 
@@ -120,7 +120,7 @@ Doom's line separator is not visible at all. so I change it's width and color fo
 ```
 
 
-### Line Wrapping {#line-wrapping}
+### <span class="section-num">1.8</span> Line Wrapping {#line-wrapping}
 
 this gives me a little bit of headache because line wrapping also affects my **vterm** shell. I need to find a way (a hook maybe?) to disable this in vterm
 
@@ -129,7 +129,7 @@ this gives me a little bit of headache because line wrapping also affects my **v
 ```
 
 
-### Workspaces {#workspaces}
+### <span class="section-num">1.9</span> Workspaces {#workspaces}
 
 I changed some default workspace keybindings
 
@@ -142,7 +142,7 @@ I changed some default workspace keybindings
 ```
 
 
-### Buffers {#buffers}
+### <span class="section-num">1.10</span> Buffers {#buffers}
 
 I made some improvements for easier buffer navigation like switching to last buffer by hitting `space b b` and selecting buffers interactively with `space b l`
 
@@ -155,7 +155,7 @@ I made some improvements for easier buffer navigation like switching to last buf
 ```
 
 
-### Tabs {#tabs}
+### <span class="section-num">1.11</span> Tabs {#tabs}
 
 Navigate tabs with `t` and `T`
 
@@ -177,7 +177,7 @@ Some cosmetics for better looking
 Tabs configuration continues in the [Centaur Tabs](#centaur-tabs) section
 
 
-### Windows {#windows}
+### <span class="section-num">1.12</span> Windows {#windows}
 
 ```emacs-lisp
 ;; window
@@ -187,7 +187,7 @@ Tabs configuration continues in the [Centaur Tabs](#centaur-tabs) section
 ```
 
 
-### Some QoL Improvements {#some-qol-improvements}
+### <span class="section-num">1.13</span> Some QoL Improvements {#some-qol-improvements}
 
 I really don't like the "whole line highlighting" in my editor. it may improve visibility of the current position but I prefer brighter cursor colors like `#00FF00` instead
 
@@ -211,10 +211,10 @@ I changed my cursor color based on mode
 ```
 
 
-## Package Based Customizations {#package-based-customizations}
+## <span class="section-num">2</span> Package Based Customizations {#package-based-customizations}
 
 
-### Evil {#evil}
+### <span class="section-num">2.1</span> Evil {#evil}
 
 I mostly use `evil-mode` to scrach my **vim** itch so I modified this mode to my liking
 
@@ -269,7 +269,7 @@ And re-enabled the `s` behavior like this
 ```
 
 
-### Avy {#avy}
+### <span class="section-num">2.2</span> Avy {#avy}
 
 I use `avy-mode` for a faster navigation inside my buffer. I hit `F` to activate `avy` then press the character that I want to jump to. After I finish my work on that area I hit `Ctrl-o` to jump back
 
@@ -281,10 +281,10 @@ I was using this functionality with lower case `f` before but I couldn't use `f`
 ```
 
 
-### Completion Frameworks {#completion-frameworks}
+### <span class="section-num">2.3</span> Completion Frameworks {#completion-frameworks}
 
 
-#### Company {#company}
+#### <span class="section-num">2.3.1</span> Company {#company}
 
 I use `company` for completion because it's mature and stable. But I'm waiting for `corfu` to become more stable and feature rich at the same time.
 
@@ -300,7 +300,7 @@ I like to use `Tab` key for comletions and I also want to get the completion buf
 ```
 
 
-#### Corfu {#corfu}
+#### <span class="section-num">2.3.2</span> Corfu {#corfu}
 
 I don't use the following `corfu` config because it doen't really work like I want but I still want to tangle it for reference
 
@@ -319,7 +319,7 @@ I don't use the following `corfu` config because it doen't really work like I wa
 ```
 
 
-### Treemacs {#treemacs}
+### <span class="section-num">2.4</span> Treemacs {#treemacs}
 
 Project repo [GitHub - Alexander-Miller/treemacs](https://github.com/Alexander-Miller/treemacs)
 
@@ -338,7 +338,7 @@ I use `treemacs` package to display and quickly delete/rename/create files in my
 ```
 
 
-### Gptel {#gptel}
+### <span class="section-num">2.5</span> Gptel {#gptel}
 
 Project repo [GitHub - karthink/gptel: A simple LLM client for Emacs](https://github.com/karthink/gptel)
 
@@ -355,7 +355,7 @@ I like to play with local llms so I installed a package called `gptel`. I use a 
 ```
 
 
-### Vterm with `tmux` {#vterm-with-tmux}
+### <span class="section-num">2.6</span> Vterm with `tmux` {#vterm-with-tmux}
 
 I use `vterm` for all my terminal needs in emacs. But I also heavily configured it to my likings. When I toggle `vter` buffer it also reads the current workspace name and opens a `tmux` session with the same name. This is quite handy because I can manage my terminals based on workspace and projects. For example I use `projectile` package for project management. And when I open a new project it opens it in a separate workspace with project name. So when I open `vterm` it also automatically creates a new tmux session with project's name.
 
@@ -429,7 +429,7 @@ Lastly I invoke `tmux` when I open `vterm` with the following config
 ```
 
 
-### Centaur Tabs {#centaur-tabs}
+### <span class="section-num">2.7</span> Centaur Tabs {#centaur-tabs}
 
 Project repo [ema2159/centaur-tabs](https://github.com/ema2159/centaur-tabs)
 
@@ -466,7 +466,7 @@ Project repo [ema2159/centaur-tabs](https://github.com/ema2159/centaur-tabs)
 ```
 
 
-### Emmet {#emmet}
+### <span class="section-num">2.8</span> Emmet {#emmet}
 
 Project repo [smihica/emmet-mode](https://github.com/smihica/emmet-mode)
 
@@ -499,7 +499,7 @@ Make `emmet` be aware of `jsx` mode
 ```
 
 
-### Tailwind {#tailwind}
+### <span class="section-num">2.9</span> Tailwind {#tailwind}
 
 Project repo [merrickluo/lsp-tailwindcss](https://github.com/merrickluo/lsp-tailwindcss)
 
@@ -530,7 +530,7 @@ you also need to do some adjustments in `packages.el` file. Here is the `package
 ```
 
 
-### Org Mode {#org-mode}
+### <span class="section-num">2.10</span> Org Mode {#org-mode}
 
 This is the biggest reason why I use Emacs. Just like others do.
 
@@ -598,7 +598,7 @@ There are some settings that need to be set right after `org-mode` is executed
 ```
 
 
-#### ox-hugo {#ox-hugo}
+#### <span class="section-num">2.10.1</span> ox-hugo {#ox-hugo}
 
 I use `ox-hugo` package for exporting my org notes to **blowfish** themed hugo website (this website)
 
@@ -613,7 +613,7 @@ If the buffer contains hugo specific properties I auto export buffer or subtree 
 ```
 
 
-#### org-babel {#org-babel}
+#### <span class="section-num">2.10.2</span> org-babel {#org-babel}
 
 Source code and literate programming engine for emacs.. This is a huge part of my writing process in emacs.
 
@@ -625,7 +625,7 @@ By default `org-babel` runs code blocks and generates results before exporting c
 ```
 
 
-#### org-sticky-header {#org-sticky-header}
+#### <span class="section-num">2.10.3</span> org-sticky-header {#org-sticky-header}
 
 I usually edit huge org files and I sometimes need to scroll up to see which heading I'm under. Luckily there is a package for that which shows exactly what I want on top of the current buffer
 
