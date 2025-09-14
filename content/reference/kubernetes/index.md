@@ -1,5 +1,4 @@
 +++
-title = "Kubernetes"
 author = ["Kuzey Koç"]
 date = 2025-09-10T00:00:00+03:00
 tags = ["-F", "kubernetes"]
@@ -121,6 +120,33 @@ draft = false
 
 
 ### Articles {#articles}
+
+
+## Page Renderer <span class="tag"><span class="noexport">noexport</span></span> {#page-renderer}
+
+<a id="code-snippet--render-how-to"></a>
+```emacs-lisp
+(mapconcat
+ (lambda (node)
+   (format "- [[id:%s][%s]]"
+           (org-roam-node-id node)
+           (org-roam-node-title node)))
+ (org-roam-ql-nodes
+  '(tags "kubernetes" "_z"))
+ "\n")
+```
+
+<a id="code-snippet--render-flashcards"></a>
+```emacs-lisp
+(mapconcat
+ (lambda (node)
+   (format "- [[id:%s][%s]]"
+           (org-roam-node-id node)
+           (org-roam-node-title node)))
+ (org-roam-ql-nodes
+  '(tags "kubernetes" "_f"))
+ "\n")
+```
 
 [^fn:1]: [ChatGPT](https://chatgpt.com/)
 [^fn:2]: [Kubernetes Volumes explained | Persistent Volume, Persistent Volume Claim &amp; S...](https://www.youtube.com/watch?v=0swOh5C3OVM)
