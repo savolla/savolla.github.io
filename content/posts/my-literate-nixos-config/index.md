@@ -12,6 +12,8 @@ draft = false
 
 </div>
 
+You can get the PDF version of this article <span class="underline">[here](/ox-hugo/index.pdf)</span> 📎
+
 
 ## <span class="section-num">1</span> Imports {#imports}
 

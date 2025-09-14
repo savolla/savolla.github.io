@@ -1,0 +1,1606 @@
+% Created 2025-09-14 Sun 23:37
+% Intended LaTeX compiler: xelatex
+\documentclass[14pt]{article}
+\usepackage[a4paper, total={6.8132in, 9.6354in}]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fvextra}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{background}
+\usepackage{shadowtext} % for drop shadow under cover titles
+
+% Fonts
+\setmainfont[Scale=1.2]{Fira Sans}
+\setmonofont[Scale=1.0]{Fira Mono}
+
+% Colors
+\definecolor{gruv-bg}{HTML}{f9f5d7}
+\definecolor{gruv-fg}{HTML}{3c3836}
+\definecolor{gruv-accent}{HTML}{af3a03}
+\definecolor{gruv-codebg}{HTML}{ffffff}
+\definecolor{gruv-codetext}{HTML}{3c3836}
+\definecolor{gruv-codeframe}{HTML}{ffffff}
+\definecolor{covertext}{HTML}{3c3836}
+
+\pagecolor{gruv-bg}
+\color{gruv-fg}
+
+% Hyperlinks
+\hypersetup{
+  colorlinks=true,
+  linkcolor=gruv-accent,
+  urlcolor=gruv-accent,
+  citecolor=gruv-accent
+}
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\textbf{#2}}}
+
+% Section formatting and spacing
+\titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+\setlength{\parskip}{0.7em}
+\setlength{\parindent}{0pt}
+
+% Code block appearance
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{
+  fontsize=\large,
+  breaklines=true,
+  commandchars=\\\{\},
+  bgcolor=gruv-codebg,
+  formatcom=\color{gruv-codetext},
+}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Kuzey Koç}
+\date{\textit{<2025-09-11 Thu>}}
+\title{My Literate NixOS Configuration}
+\hypersetup{
+ pdfauthor={Kuzey Koç},
+ pdftitle={My Literate NixOS Configuration},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.2 (Org mode 9.7.34)}, 
+ pdflang={English}}
+
+% Setup for code blocks [1/2]
+
+\usepackage{fvextra}
+
+\fvset{%
+  commandchars=\\\{\},
+  highlightcolor=white!95!black!80!blue,
+  breaklines=true,
+  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
+
+% Make line numbers smaller and grey.
+\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
+
+\usepackage{xcolor}
+
+% In case engrave-faces-latex-gen-preamble has not been run.
+\providecolor{EfD}{HTML}{f7f7f7}
+\providecolor{EFD}{HTML}{28292e}
+
+% Define a Code environment to prettily wrap the fontified code.
+\usepackage[breakable,xparse]{tcolorbox}
+\DeclareTColorBox[]{Code}{o}%
+{colback=EfD!98!EFD, colframe=EfD!95!EFD,
+  fontupper=\footnotesize\setlength{\fboxsep}{0pt},
+  colupper=EFD,
+  IfNoValueTF={#1}%
+  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+    boxrule=0.5pt, left=2pt}%
+  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+  right=2pt, top=1pt, bottom=0.5pt,
+  breakable}
+
+% Support listings with captions
+\usepackage{float}
+\floatstyle{plain}
+\newfloat{listing}{htbp}{lst}
+\newcommand{\listingsname}{Listing}
+\floatname{listing}{\listingsname}
+\newcommand{\listoflistingsname}{List of Listings}
+\providecommand{\listoflistings}{\listof{listing}{\listoflistingsname}}
+
+
+% Setup for code blocks [2/2]: syntax highlighting colors
+
+\newcommand\efstrut{\vrule height 2.1ex depth 0.8ex width 0pt}
+\definecolor{EFD}{HTML}{000000}
+\definecolor{EfD}{HTML}{ffffff}
+\newcommand{\EFD}[1]{\textcolor{EFD}{#1}} % default
+\definecolor{EFvp}{HTML}{000000}
+\newcommand{\EFvp}[1]{\textcolor{EFvp}{#1}} % variable-pitch
+\definecolor{EFh}{HTML}{7f7f7f}
+\newcommand{\EFh}[1]{\textcolor{EFh}{#1}} % shadow
+\definecolor{EFsc}{HTML}{228b22}
+\newcommand{\EFsc}[1]{\textcolor{EFsc}{\textbf{#1}}} % success
+\definecolor{EFw}{HTML}{ff8e00}
+\newcommand{\EFw}[1]{\textcolor{EFw}{\textbf{#1}}} % warning
+\definecolor{EFe}{HTML}{ff0000}
+\newcommand{\EFe}[1]{\textcolor{EFe}{\textbf{#1}}} % error
+\definecolor{EFl}{HTML}{ff0000}
+\newcommand{\EFl}[1]{\textcolor{EFl}{#1}} % link
+\definecolor{EFlv}{HTML}{ff0000}
+\newcommand{\EFlv}[1]{\textcolor{EFlv}{#1}} % link-visited
+\definecolor{EFhi}{HTML}{ff0000}
+\newcommand{\EFhi}[1]{\textcolor{EFhi}{#1}} % highlight
+\definecolor{EFc}{HTML}{b22222}
+\newcommand{\EFc}[1]{\textcolor{EFc}{#1}} % font-lock-comment-face
+\definecolor{EFcd}{HTML}{b22222}
+\newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
+\definecolor{EFs}{HTML}{8b2252}
+\newcommand{\EFs}[1]{\textcolor{EFs}{#1}} % font-lock-string-face
+\definecolor{EFd}{HTML}{8b2252}
+\newcommand{\EFd}[1]{\textcolor{EFd}{#1}} % font-lock-doc-face
+\definecolor{EFm}{HTML}{008b8b}
+\newcommand{\EFm}[1]{\textcolor{EFm}{#1}} % font-lock-doc-markup-face
+\definecolor{EFk}{HTML}{9370db}
+\newcommand{\EFk}[1]{\textcolor{EFk}{#1}} % font-lock-keyword-face
+\definecolor{EFb}{HTML}{483d8b}
+\newcommand{\EFb}[1]{\textcolor{EFb}{#1}} % font-lock-builtin-face
+\definecolor{EFf}{HTML}{0000ff}
+\newcommand{\EFf}[1]{\textcolor{EFf}{#1}} % font-lock-function-name-face
+\definecolor{EFv}{HTML}{a0522d}
+\newcommand{\EFv}[1]{\textcolor{EFv}{#1}} % font-lock-variable-name-face
+\definecolor{EFt}{HTML}{228b22}
+\newcommand{\EFt}[1]{\textcolor{EFt}{#1}} % font-lock-type-face
+\definecolor{EFo}{HTML}{008b8b}
+\newcommand{\EFo}[1]{\textcolor{EFo}{#1}} % font-lock-constant-face
+\definecolor{EFwr}{HTML}{ff0000}
+\newcommand{\EFwr}[1]{\textcolor{EFwr}{\textbf{#1}}} % font-lock-warning-face
+\newcommand{\EFnc}[1]{#1} % font-lock-negation-char-face
+\definecolor{EFpp}{HTML}{483d8b}
+\newcommand{\EFpp}[1]{\textcolor{EFpp}{#1}} % font-lock-preprocessor-face
+\newcommand{\EFrc}[1]{\textbf{#1}} % font-lock-regexp-grouping-construct
+\newcommand{\EFrb}[1]{\textbf{#1}} % font-lock-regexp-grouping-backslash
+\newcommand{\EFob}[1]{#1} % org-block
+\newcommand{\EFobb}[1]{#1} % org-block-begin-line
+\newcommand{\EFobe}[1]{#1} % org-block-end-line
+\definecolor{EFOa}{HTML}{0000ff}
+\newcommand{\EFOa}[1]{\textcolor{EFOa}{#1}} % outline-1
+\definecolor{EFOb}{HTML}{a0522d}
+\newcommand{\EFOb}[1]{\textcolor{EFOb}{#1}} % outline-2
+\definecolor{EFOc}{HTML}{a020f0}
+\newcommand{\EFOc}[1]{\textcolor{EFOc}{#1}} % outline-3
+\definecolor{EFOd}{HTML}{b22222}
+\newcommand{\EFOd}[1]{\textcolor{EFOd}{#1}} % outline-4
+\definecolor{EFOe}{HTML}{228b22}
+\newcommand{\EFOe}[1]{\textcolor{EFOe}{#1}} % outline-5
+\definecolor{EFOf}{HTML}{008b8b}
+\newcommand{\EFOf}[1]{\textcolor{EFOf}{#1}} % outline-6
+\definecolor{EFOg}{HTML}{483d8b}
+\newcommand{\EFOg}[1]{\textcolor{EFOg}{#1}} % outline-7
+\definecolor{EFOh}{HTML}{8b2252}
+\newcommand{\EFOh}[1]{\textcolor{EFOh}{#1}} % outline-8
+\definecolor{EFhn}{HTML}{008b8b}
+\newcommand{\EFhn}[1]{\textcolor{EFhn}{#1}} % highlight-numbers-number
+\definecolor{EFhq}{HTML}{9370db}
+\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
+\definecolor{EFhs}{HTML}{008b8b}
+\newcommand{\EFhs}[1]{\textcolor{EFhs}{#1}} % highlight-quoted-symbol
+\definecolor{EFrda}{HTML}{707183}
+\newcommand{\EFrda}[1]{\textcolor{EFrda}{#1}} % rainbow-delimiters-depth-1-face
+\definecolor{EFrdb}{HTML}{7388d6}
+\newcommand{\EFrdb}[1]{\textcolor{EFrdb}{#1}} % rainbow-delimiters-depth-2-face
+\definecolor{EFrdc}{HTML}{909183}
+\newcommand{\EFrdc}[1]{\textcolor{EFrdc}{#1}} % rainbow-delimiters-depth-3-face
+\definecolor{EFrdd}{HTML}{709870}
+\newcommand{\EFrdd}[1]{\textcolor{EFrdd}{#1}} % rainbow-delimiters-depth-4-face
+\definecolor{EFrde}{HTML}{907373}
+\newcommand{\EFrde}[1]{\textcolor{EFrde}{#1}} % rainbow-delimiters-depth-5-face
+\definecolor{EFrdf}{HTML}{6276ba}
+\newcommand{\EFrdf}[1]{\textcolor{EFrdf}{#1}} % rainbow-delimiters-depth-6-face
+\definecolor{EFrdg}{HTML}{858580}
+\newcommand{\EFrdg}[1]{\textcolor{EFrdg}{#1}} % rainbow-delimiters-depth-7-face
+\definecolor{EFrdh}{HTML}{80a880}
+\newcommand{\EFrdh}[1]{\textcolor{EFrdh}{#1}} % rainbow-delimiters-depth-8-face
+\definecolor{EFrdi}{HTML}{887070}
+\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-9-face
+\definecolor{EFany}{HTML}{CDCD00}
+\newcommand{\EFany}[1]{\textcolor{EFany}{#1}} % ansi-color-yellow
+\definecolor{EFanr}{HTML}{CD0000}
+\newcommand{\EFanr}[1]{\textcolor{EFanr}{#1}} % ansi-color-red
+\definecolor{EFanb}{HTML}{000000}
+\newcommand{\EFanb}[1]{\textcolor{EFanb}{#1}} % ansi-color-black
+\definecolor{EFang}{HTML}{00CD00}
+\newcommand{\EFang}[1]{\textcolor{EFang}{#1}} % ansi-color-green
+\definecolor{EFanB}{HTML}{0000EE}
+\newcommand{\EFanB}[1]{\textcolor{EFanB}{#1}} % ansi-color-blue
+\definecolor{EFanc}{HTML}{00CDCD}
+\newcommand{\EFanc}[1]{\textcolor{EFanc}{#1}} % ansi-color-cyan
+\definecolor{EFanw}{HTML}{E5E5E5}
+\newcommand{\EFanw}[1]{\textcolor{EFanw}{#1}} % ansi-color-white
+\definecolor{EFanm}{HTML}{CD00CD}
+\newcommand{\EFanm}[1]{\textcolor{EFanm}{#1}} % ansi-color-magenta
+\definecolor{EFANy}{HTML}{EEEE00}
+\newcommand{\EFANy}[1]{\textcolor{EFANy}{#1}} % ansi-color-bright-yellow
+\definecolor{EFANr}{HTML}{EE0000}
+\newcommand{\EFANr}[1]{\textcolor{EFANr}{#1}} % ansi-color-bright-red
+\newcommand{\EFANb}[1]{#1} % ansi-color-bright-black
+\definecolor{EFANg}{HTML}{00EE00}
+\newcommand{\EFANg}[1]{\textcolor{EFANg}{#1}} % ansi-color-bright-green
+\definecolor{EFANB}{HTML}{0000FF}
+\newcommand{\EFANB}[1]{\textcolor{EFANB}{#1}} % ansi-color-bright-blue
+\definecolor{EFANc}{HTML}{00EEEE}
+\newcommand{\EFANc}[1]{\textcolor{EFANc}{#1}} % ansi-color-bright-cyan
+\newcommand{\EFANw}[1]{#1} % ansi-color-bright-white
+\newcommand{\EFANm}[1]{#1} % ansi-color-bright-magenta
+\begin{document}
+
+% background setup for the cover page
+\backgroundsetup{
+  scale=0.8,
+  angle=0,
+  opacity=0.1,
+  contents={
+  \includegraphics[
+  width=1920,
+  height=1080
+  ]
+  {/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/featured-108358-2932042259.jpg}
+  }
+}
+
+\definecolor{covertext}{HTML}{510000}
+
+% cover page settings
+\begin{titlepage}
+  \BgThispage
+  \color{covertext}
+  \centering
+  \vspace*{3cm}
+  {\fontsize{25pt}{35pt}\bfseries Literate Configuration Series \par}
+  \vspace{0.5cm}
+  {\fontsize{60pt}{72pt}\bfseries NixOS \par}
+  \vspace{1cm}
+  {\fontsize{18pt}{20pt}\itshape by \par}
+  \vspace{0.5cm}
+  {\fontsize{23pt}{27pt}\itshape{\bfseries Kuzey Koç} \par}
+  \vfill
+\end{titlepage}
+
+% set text color back to dark for main document
+\color{gruv-fg}
+
+% generate table of contents
+\newpage
+\tableofcontents
+\newpage
+
+\begin{warning}
+⚠️ \textbf{WARNING}: This article is under construction. Please come back later
+\end{warning}
+
+You can get the PDF version of this article \href{file:///home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.pdf}{here}
+\section{Imports}
+\label{sec:org3012ceb}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\{ config, pkgs, lib, ... \}:
+\end{Verbatim}
+\end{Code}
+\section{Global Variables}
+\label{sec:org5629d0b}
+Global variable definition starts with
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{9370db}{let}
+\end{Verbatim}
+\end{Code}
+
+Now here I define my important globals like username, hostname, static ip etc.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{USERNAME} = \EFs{"savolla"};
+\textcolor[HTML]{a0522d}{HOSTNAME} = \EFs{"xkarna"};
+\textcolor[HTML]{a0522d}{HOME} = \EFs{"/home/savolla"};
+\textcolor[HTML]{a0522d}{ETHERNET\_INTERFACE\_NAME} = \EFs{"ens18"};
+\textcolor[HTML]{a0522d}{WIRELESS\_INTERFACE\_NAME} = \EFs{"wlp2s0"};
+\textcolor[HTML]{a0522d}{STATIC\_IP\_ADDRESS} = \EFs{"192.168.1.108"};
+\textcolor[HTML]{a0522d}{DEFAULT\_GATEWAY} = \EFs{"192.168.1.1"};
+\end{Verbatim}
+\end{Code}
+\subsection{Package Overrides}
+\label{sec:org914a6cd}
+\subsubsection{ncmpcpp with visualizer}
+\label{sec:org8ff7a56}
+I use \texttt{ncmpcpp} for listening my music collection. It has a nice visualizer but the default nixos package does not include it for some reason. I override that package with visualizer support
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{ncmpcpp} = pkgs.ncmpcpp.override \{
+  \textcolor[HTML]{a0522d}{visualizerSupport} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{clockSupport} = \textcolor[HTML]{483d8b}{true};
+\}; \EFc{\# ncmpcpp with visualizer}
+\end{Verbatim}
+\end{Code}
+
+Global variables definition ends with
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{9370db}{in}
+\end{Verbatim}
+\end{Code}
+\section{Main Configuration}
+\label{sec:org178bf27}
+The main configuration starts with
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\{
+\end{Verbatim}
+\end{Code}
+
+Like every nixos configuration it must import a \texttt{hardware-configuration.nix} like this
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{imports} = [ \textcolor[HTML]{008b8b}{./hardware-configuration.nix} ];
+\end{Verbatim}
+\end{Code}
+\section{Bootloader}
+\label{sec:org4fca482}
+I was using \texttt{libvirt} for virtualization before \texttt{proxmox}. These are some kernel modules for nested virtualization (kubernetes). I commented them out since I'm now using Talos in my proxmox homelab.
+
+I also use real-time kernel for better I/O performance on my system. It works well for gaming/music production etc.
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{boot} = \{
+  \EFc{\# extraModprobeConfig = ''}
+  \EFc{\#   options kvm\_intel nested=1}
+  \EFc{\#   options kvm\_intel emulate\_invalid\_guest\_state=0}
+  \EFc{\#   options kvm ignore\_msrs=1}
+  \EFc{\# '';}
+
+  \textcolor[HTML]{a0522d}{kernelPackages} = pkgs.linuxPackages-rt\_latest; \EFc{\# linux realtime kernel}
+\end{Verbatim}
+\end{Code}
+\subsection{Grub}
+\label{sec:org10d928b}
+I use \texttt{grub} instead \texttt{systemd-boot} which is the default in nixos. In order to use it I disabled \texttt{systemd-boot} completely and set some \texttt{grub} specific options. \texttt{saved} means that grub will remember your last choice on the next restart.
+
+You can also limit the amount of configuration displayed in the grub menu with \texttt{configurationLimit} option. But I disabled that. with \texttt{OSProber} it will detect other OSes in your drive.
+
+I also enable EFI support.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}  \textcolor[HTML]{a0522d}{loader} = \{
+    \textcolor[HTML]{a0522d}{timeout} = 5; \EFc{\# seconds}
+    \textcolor[HTML]{a0522d}{systemd-boot.enable} = \textcolor[HTML]{483d8b}{false};
+    \textcolor[HTML]{a0522d}{grub} = \{
+      \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{default} = \EFs{"saved"};
+      \textcolor[HTML]{a0522d}{device} = \EFs{"nodev"};
+      \EFc{\# configurationLimit = 10;}
+      \textcolor[HTML]{a0522d}{useOSProber} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{efiSupport} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{efiInstallAsRemovable} =
+        \textcolor[HTML]{483d8b}{true}; \EFc{\# otherwise /boot/EFI/BOOT/BOOTX64.EFI isn't generated}
+      \textcolor[HTML]{a0522d}{extraEntriesBeforeNixOS} = \textcolor[HTML]{483d8b}{true};
+    \};
+      \textcolor[HTML]{a0522d}{efi} = \{ \textcolor[HTML]{a0522d}{efiSysMountPoint} = \EFs{"/boot/efi"}; \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\section{External Home Directory}
+\label{sec:org0676427}
+I keep my encrypted home directory separate in 1TB external SSD. When I boot my nixos machine I want it to be mounted under \texttt{/home/savolla}. Since it is an encrypted drive I also needed to setup some decryption operations.
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{environment.etc.crypttab.text} = \EFs{''}
+    \EFs{homecrypt UUID=5ba30f2e-b06a-4588-b594-70fb46ef16d9 none luks,timeout=120}
+  \EFs{''};
+
+fileSystems.\EFs{"/home/savolla"} = \{
+  \textcolor[HTML]{a0522d}{device} = \EFs{"/dev/mapper/homecrypt"};
+  \textcolor[HTML]{a0522d}{fsType} = \EFs{"ext4"};
+  \textcolor[HTML]{a0522d}{options} = [ \EFs{"x-systemd.device-timeout=10"} ];
+  \textcolor[HTML]{a0522d}{neededForBoot} = \textcolor[HTML]{483d8b}{false};
+\};
+
+\EFcd{\#} \EFc{Helpful to ensure USB storage is supported}
+\textcolor[HTML]{a0522d}{boot.initrd.kernelModules} = [ \EFs{"usb\_storage"} ];
+\textcolor[HTML]{a0522d}{boot.kernelModules} = [ \EFs{"usb\_storage"} ];
+\end{Verbatim}
+\end{Code}
+
+This \texttt{timeout} attribute doesn't work. I'm still experimenting with these options. So it will probably change in the future.
+\section{Hardware}
+\label{sec:org479e6e4}
+I enable 3D graphics support and Bluetooth support with the following
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{hardware} = \{
+  \textcolor[HTML]{a0522d}{graphics} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true}; \EFc{\# enable 3d acceleration}
+    \textcolor[HTML]{a0522d}{enable32Bit} = \textcolor[HTML]{483d8b}{true}; \EFc{\# for older games}
+  \};
+  \textcolor[HTML]{a0522d}{bluetooth} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true}; \EFc{\# enables support for Bluetooth}
+    \textcolor[HTML]{a0522d}{powerOnBoot} = \textcolor[HTML]{483d8b}{true}; \EFc{\# powers up the default Bl}
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Automatic Updates}
+\label{sec:orgb7ceb32}
+I generally don't prefer this but I keep it in my config anyway.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{automatic update}
+\textcolor[HTML]{a0522d}{system} = \{
+  \textcolor[HTML]{a0522d}{autoUpgrade} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{false};
+    \textcolor[HTML]{a0522d}{dates} = \EFs{"weekly"};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Networking}
+\label{sec:org4ef6f97}
+My networking setup is a little bit messed up. I use \href{https://www.dnscrypt.org/}{DNSCrypt} to bypass censorship and other ISP shenanigans. So my dns is tied to DNSCrypt a little bit..
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{networking} = \{
+  \textcolor[HTML]{a0522d}{hostName} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}HOSTNAME\textcolor[HTML]{483d8b}{\textbf{\}}}";
+  \textcolor[HTML]{a0522d}{defaultGateway} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}DEFAULT\_GATEWAY\textcolor[HTML]{483d8b}{\textbf{\}}}";
+  \textcolor[HTML]{a0522d}{interfaces} = \{
+    \textcolor[HTML]{a0522d}{enp4s0} = \{
+      \textcolor[HTML]{a0522d}{ipv4.addresses} = [\{
+        \textcolor[HTML]{a0522d}{address} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}STATIC\_IP\_ADDRESS\textcolor[HTML]{483d8b}{\textbf{\}}}";
+        \textcolor[HTML]{a0522d}{prefixLength} = 24;
+      \}];
+    \};
+  \};
+  \textcolor[HTML]{a0522d}{nameservers} = [
+    \EFs{"127.0.0.1"}
+    \EFs{"::1"}
+  ]; \EFc{\# dnscrypt requires this. see https://nixos.wiki/wiki/Encrypted\_DNS}
+\end{Verbatim}
+\end{Code}
+\subsection{Network Manager}
+\label{sec:org52b879b}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{networkmanager} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{dns} =
+    \EFs{"none"}; \EFc{\# prevent network manager from overriding dns settings because dnscrypt will handle this part}
+  \textcolor[HTML]{a0522d}{unmanaged} = [
+    \EFs{"interface-name:ve-*"}
+  ]; \EFc{\# for i2p container. network manager should not touch this}
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Wireless}
+\label{sec:org962becd}
+I don't have a laptop (yet) so I disable wireless option completely
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{wireless.enable = true; \# Enables wireless support via wpa\_supplicant.}
+\end{Verbatim}
+\end{Code}
+\subsection{Firewall}
+\label{sec:org20d9ef5}
+I sometimes self-host services in my home network and need a way to access these services from other devices. I use the following firewall settings. Currently I don't host anything but I keep these settings for the potential future use
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{firewall} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true}; \EFc{\# always keep enabled}
+
+  \EFc{\# open ports in the firewall.}
+  \textcolor[HTML]{a0522d}{allowedTCPPorts} = [
+    \EFc{\# 3000}
+  ];
+  \textcolor[HTML]{a0522d}{allowedUDPPorts} = [
+    \EFc{\# 9000}
+  ];
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{NAT}
+\label{sec:org93784f7}
+I need this because I sometimes expose in-vm services to my home network and I need to translate those ip addresses
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{nat} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{internalInterfaces} = [ \EFs{"ve-+"} ];
+  \textcolor[HTML]{a0522d}{externalInterface} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}ETHERNET\_INTERFACE\_NAME\textcolor[HTML]{483d8b}{\textbf{\}}}";
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{DNS}
+\label{sec:org843aa10}
+In nixos there is no \texttt{/etc/hosts} file. We have the following instead
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}  \textcolor[HTML]{a0522d}{extraHosts} = \EFs{''}
+      \EFs{192.168.1.105 api.crc.testing}
+      \EFs{192.168.1.105 console-openshift-console.apps-crc.testing}
+      \EFs{192.168.1.105 oauth-openshift.apps-crc.testing}
+      \EFs{192.168.1.105 java-demo-java-demo.apps-crc.testing}
+      \EFs{192.168.1.105 argocd-sample-server-java-demo.apps-crc.testing}
+    \EFs{''};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Localization}
+\label{sec:org299e371}
+\subsection{Timezone}
+\label{sec:org01210ca}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{time.timeZone} = \EFs{"Europe/Istanbul"};
+\end{Verbatim}
+\end{Code}
+\subsection{Internationalisation}
+\label{sec:orgd930a3d}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{i18n} = \{
+  \textcolor[HTML]{a0522d}{defaultLocale} = \EFs{"en\_US.UTF-8"};
+  \textcolor[HTML]{a0522d}{extraLocaleSettings} = \{
+    \textcolor[HTML]{a0522d}{LC\_ADDRESS} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_IDENTIFICATION} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_MEASUREMENT} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_MONETARY} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_NAME} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_NUMERIC} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_PAPER} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_TELEPHONE} = \EFs{"tr\_TR.UTF-8"};
+    \textcolor[HTML]{a0522d}{LC\_TIME} = \EFs{"tr\_TR.UTF-8"};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Console Keymap}
+\label{sec:org7ed8aae}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{console.keyMap} = \EFs{"trq"};
+\end{Verbatim}
+\end{Code}
+\section{Users}
+\label{sec:org31b4637}
+NixOS displays ``message of the day'' on console login. I disable it with
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{users} = \{
+  \textcolor[HTML]{a0522d}{motdFile} = \textcolor[HTML]{483d8b}{null}; \EFc{\# disable message of the day on tty}
+\end{Verbatim}
+\end{Code}
+
+Setting some basic options for my user \texttt{savolla}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}users.\EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}USERNAME\textcolor[HTML]{483d8b}{\textbf{\}}}" = \{
+  \textcolor[HTML]{a0522d}{isNormalUser} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{home} = \EFs{"/home/savolla"};
+  \textcolor[HTML]{a0522d}{shell} = pkgs.zsh;
+  \textcolor[HTML]{a0522d}{description} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}USERNAME\textcolor[HTML]{483d8b}{\textbf{\}}}";
+\end{Verbatim}
+\end{Code}
+
+Adding my user to important groups
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{extraGroups} = [
+  \EFs{"networkmanager"} \EFc{\# wifi etc.}
+  \EFs{"wheel"} \EFc{\# sudo}
+  \EFs{"input"} \EFc{\# xorg}
+  \EFs{"video"} \EFc{\# xorg}
+  \EFs{"audio"} \EFc{\# pipewire}
+  \EFs{"libvirtd"} \EFc{\# virtualization}
+  \EFs{"docker"} \EFc{\# run docker commands withour sudo}
+  \EFs{"podman"} \EFc{\# run podman commmands without sudo}
+  \EFs{"vboxusers"} \EFc{\# vbox guest additions and clipboard share}
+  \EFs{"kvm"} \EFc{\# android emulation with kvm (faster)}
+  \EFs{"adbusers"} \EFc{\# interact with android and emulators with adb}
+  \EFs{"systemd-journal"} \EFc{\# watch system logs with `journalctl -f` witout sudo password}
+];
+\end{Verbatim}
+\end{Code}
+
+I once tried to run \texttt{gparted} on wayland and I came with the following solution but it doesn't work anymore.. probably will delete it later..
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}  \textcolor[HTML]{a0522d}{packages} = \textcolor[HTML]{9370db}{with} pkgs;
+    [
+      gparted \EFc{\# install this as a user package to prevent errors in wayland}
+    ];
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Nix}
+\label{sec:orgc3141d0}
+\subsection{Flakes}
+\label{sec:orgea15999}
+I'm enabling flakes support
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{nix config}
+\textcolor[HTML]{a0522d}{nix} = \{
+  \textcolor[HTML]{a0522d}{settings} = \{
+    \textcolor[HTML]{a0522d}{experimental-features} = [ \EFs{"flakes"} \EFs{"nix-command"} ];
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Unfree Packages}
+\label{sec:org500721e}
+Nix does not allow unfree packages by default. You need to enable them explicitly
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{nixpkgs} = \{
+  \textcolor[HTML]{a0522d}{config} = \{
+    \textcolor[HTML]{a0522d}{allowUnfree} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{allowUnsupportedSystem} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{permittedInsecurePackages} = [ \EFs{"electron-27.3.11"} ];
+  \};
+\end{Verbatim}
+\end{Code}
+\subsection{Package Overlays}
+\label{sec:orgf86de9a}
+\subsubsection{mpv}
+\label{sec:org673b9c2}
+I usually like to watch YouTube videos using \texttt{mpv}. \textbf{quality-menu} lets me switch between video and audio qualities easily. \textbf{quack} on the other hand temporarily reduces video quality on video skimming.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{overlays} = [
+  (self: super: \{
+    \textcolor[HTML]{a0522d}{mpv} = super.mpv.override \{
+      \textcolor[HTML]{a0522d}{scripts} = [
+        \EFc{\# select youtube video quality from the player}
+        self.mpvScripts.quality-menu
+        \EFc{\# temporarily reduce video and audio quality when skipping}
+        self.mpvScripts.quack
+      ];
+    \};
+\end{Verbatim}
+\end{Code}
+\subsubsection{weechat}
+\label{sec:org88ad885}
+I use some addons in my \texttt{weechat} config such as \textbf{url\textsubscript{hint}}, \textbf{colorize\textsubscript{nicks}} and \textbf{weechat-notify-send}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}        \textcolor[HTML]{a0522d}{weechat} = super.weechat.override \{
+        \textcolor[HTML]{a0522d}{configure} = \{ availablePlugins, ... \}: \{
+          \textcolor[HTML]{a0522d}{scripts} = \textcolor[HTML]{9370db}{with} super.weechatScripts; [
+            url\_hint
+            colorize\_nicks
+            weechat-notify-send
+          ];
+        \};
+      \};
+    \})
+  ];
+\};
+\end{Verbatim}
+\end{Code}
+\section{Theme}
+\label{sec:org2be5419}
+Enabling global dark theme without a proper DE is always painful. In NixOS it is pain in the ass..
+
+\textbf{Qt Apps}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{qt.style} = \EFs{"adwaita-dark"};
+\end{Verbatim}
+\end{Code}
+
+\textbf{GTK Apps}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{set variables for all users (including root)}
+\textcolor[HTML]{a0522d}{environment.sessionVariables} = \{
+  \textcolor[HTML]{a0522d}{GTK\_THEME} = \EFs{"Adwaita:dark"}; \EFc{\# make sudo applications use dark theme}
+\};
+\end{Verbatim}
+\end{Code}
+\section{Environment Variables}
+\label{sec:org2ff120a}
+I apply different settings in my \texttt{.xprofile} and \texttt{.profile} depending on the current nixos specialisation. So I use an env. variable \texttt{CURRENT\_NIXOS\_SPECIALISATION} for this. The default value is ``vanila''. I also have ``nvidia'' and ``musician''. See \textbf{Specialisations} section below
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{environment} = \{
+  \textcolor[HTML]{a0522d}{stub-ld.enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{variables} = \{
+    \textcolor[HTML]{a0522d}{CURRENT\_NIXOS\_SPECIALISATION} = \EFs{"vanila"};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Filesystem Check}
+\label{sec:org9ce9025}
+I should probably enable file system checks again. But it sometimes takes too much time on boot.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{fileSystems} = \{
+  \EFs{"/"}.\textcolor[HTML]{a0522d}{noCheck} = \textcolor[HTML]{483d8b}{true};
+  \EFs{"/boot/efi"}.\textcolor[HTML]{a0522d}{noCheck} = \textcolor[HTML]{483d8b}{true};
+\};
+\end{Verbatim}
+\end{Code}
+\section{Packages}
+\label{sec:org8190a1f}
+\subsection{Editors}
+\label{sec:orge9b864d}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{environment.systemPackages} = \textcolor[HTML]{9370db}{with} pkgs; [
+
+  \EFc{\# editors}
+  vim \EFc{\# fallback text editor}
+  neovim \EFc{\# better vim}
+  \EFc{\# emacs-pgtk \# transparency works in wayland}
+  emacs-gtk \EFc{\# true transparency works with this one on xorg}
+  vscodium \EFc{\# just in case ide}
+  jetbrains.webstorm \EFc{\# vscode sucks sometimes}
+\end{Verbatim}
+\end{Code}
+\subsection{Virtualization}
+\label{sec:org6729f72}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{virtualization}
+vagrant \EFc{\# declarative virtual machines}
+quickemu \EFc{\# installed for installing macos sonoma (for react-native dev)}
+quickgui \EFc{\# gui for quickemu}
+guestfs-tools \EFc{\# bunch of tools with virt-sparsify}
+virglrenderer \EFc{\# allows a qemu guest to use the host GPU for accelerated 3D rendering}
+virt-viewer \EFc{\# viewer for qemu}
+spice-vdagent \EFc{\# shared clipboard between qemu guests and host}
+qemu \EFc{\# all supported architectures like arm, mips, powerpc etc.}
+distrobox \EFc{\# run other distrox using docker}
+edk2 \EFc{\# for osx-kvm (tianocore uefi)}
+edk2-uefi-shell \EFc{\# for osx-kvm (tianocore uefi)}
+OVMFFull
+virtiofsd \EFc{\# share file system between host and guests}
+\end{Verbatim}
+\end{Code}
+\subsection{Wayland}
+\label{sec:org8bdf9c0}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{wayland related}
+waybar \EFc{\# status bar for wayland}
+rofi-wayland \EFc{\# application launcher}
+wl-clipboard \EFc{\# wayland clipboard}
+slurp \EFc{\# region select. combine it with grim to select region for screenshot}
+grim \EFc{\# screenshot utility}
+gammastep \EFc{\# redshift/sct alternative for wayland}
+swaybg \EFc{\# set wallpapers in wayland}
+ydotool \EFc{\# xdotool for wayland}
+\end{Verbatim}
+\end{Code}
+\subsection{Gaming}
+\label{sec:org09aac10}
+I don't play games anymore but I once built a sane gaming setup on NixOS. There you go if you need it.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{gaming stuff}
+lutris \EFc{\# install and launch windows and linux games}
+mangohud \EFc{\# display fps, temperature etc.}
+cabextract \EFc{\# installed this to install Age of Empires Online (prefix that was created by Kron4ek)}
+bottles-unwrapped \EFc{\# powerful wine thing}
+unigine-valley \EFc{\# test GPU drivers}
+protonup \EFc{\# proton-ge}
+wineWowPackages.staging \EFc{\# wine staging version}
+winetricks \EFc{\# install windows dlls with this}
+retroarchFull \EFc{\# retroarch + cores}
+ryujinx \EFc{\# switch emulator}
+antimicrox \EFc{\# map ps4 controller keys to nintendo switch and others}
+nsz \EFc{\# .nsz to .nsp nintendo switch game convertor for ryujinx emulator}
+input-remapper \EFc{\# map mouse movement to joystick. (play ryujinx games with mouse and keyboard)}
+qjoypad \EFc{\# play ryujinx games with mouse and keyboard}
+sc-controller \EFc{\# emulate joysticks on linux (to play swtich games using mouse and keyboard)}
+\end{Verbatim}
+\end{Code}
+\subsection{Music Production}
+\label{sec:orgbb5b8c1}
+I was using NixOS for music production but since I started using Proxmox I migrated to Windows 10.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#\#} \EFc{music}
+
+\EFcd{\#} \EFc{daw}
+reaper
+sonic-pi
+faust \EFc{\# dsp language}
+faust2jaqt \EFc{\# faust dependency}
+supercollider\_scel \EFc{\# supercollider with emacs extension scel}
+
+\EFcd{\#} \EFc{guitar stuff}
+gxplugins-lv2 \EFc{\# guitar amps, pedals, effects}
+neural-amp-modeler-lv2 \EFc{\# you'll download guitar tones for this below}
+guitarix \EFc{\# a virtual guitar amplifier for Linux running with JACK}
+tuxguitar \EFc{\# guitar pro for linux}
+musescore \EFc{\# sheet happens}
+tonelib-jam \EFc{\# 3d tab editor (paid)}
+tonelib-gfx \EFc{\# good guitar amp}
+tonelib-metal \EFc{\# all in one guitar rig}
+proteus \EFc{\# NAM}
+
+\EFcd{\#} \EFc{VST (open source)}
+\EFcd{\#} \EFc{distrho \# not in packages anymore}
+calf \EFc{\# high quality music production plugins and vsts}
+eq10q
+lsp-plugins \EFc{\# collection of open-source audio plugins}
+x42-plugins \EFc{\# collection of lv2 plugins by Robin Gareus}
+x42-gmsynth
+dragonfly-reverb
+FIL-plugins
+geonkick
+
+\EFcd{\#} \EFc{utils}
+wineasio \EFc{\# for playing Rocksmith 2014 Remastered}
+alsa-scarlett-gui \EFc{\# focusrite scarlett solo gui}
+yabridge \EFc{\# use windows vsts on linux wine is requirement here}
+yabridgectl \EFc{\# yabridge control utility}
+scarlett2 \EFc{\# update firmware of focusrite scarlett devices}
+tenacity \EFc{\# audaicty fork}
+klick \EFc{\# cli metronom}
+qpwgraph
+qjackctl \EFc{\# reduce latency}
+helvum \EFc{\# modern jack ui}
+\end{Verbatim}
+\end{Code}
+\subsection{Compiling Tools}
+\label{sec:org528f2c4}
+NixOS is not pretty when it comes to ``compiling'' from source but I was using \texttt{crosstool-ng} to build toolchains for BeagleBoneBlack and Raspberry Pi. These are the requirements
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{compiling}
+stdenv \EFc{\# build-essentials}
+help2man \EFc{\# for crosstool-ng dep}
+gnumake \EFc{\# make for all}
+autoconf \EFc{\# for crosstool-ng dep}
+audit \EFc{\# for crosstool-ng dep}
+automake \EFc{\# for crosstool-ng dep}
+gcc \EFc{\# for crosstool-ng dep}
+flex \EFc{\# for crosstool-ng dep}
+file
+bison
+ncurses
+freetype \EFc{\# to be able to compile suckless utils}
+\end{Verbatim}
+\end{Code}
+\subsection{\LaTeX{}}
+\label{sec:orge20e148}
+I use Emacs's org-mode feature A LOT for writing and exporting my documents to various formats like pdf, html, slides etc. I have my own pdf export template. The following packages are the dependencies for this template
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{latex}
+texliveFull \EFc{\# full latex environment for pdf exports (doom emacs)}
+texlivePackages.booktabs \EFc{\# Publication quality tables in LaTeX}
+texlivePackages.fvextra \EFc{\# Extensions and patches for fancyvrb (for syntax highlighting)}
+texlivePackages.xcolor \EFc{\# Driver-independent color extensions for LaTeX and pdfLaTeX}
+texlivePackages.fontspec \EFc{\# Advanced font selection in XeLaTeX and LuaLaTeX}
+texlivePackages.microtype \EFc{\# Subliminal refinements towards typographical perfection}
+texlivePackages.titlesec \EFc{\# Select alternative section titles}
+texlivePackages.minted \EFc{\# syntax highlighting}
+latexminted \EFc{\# just in case}
+texlivePackages.librebaskerville \EFc{\# main font}
+libre-baskerville \EFc{\# above font does not work}
+texlivePackages.plex \EFc{\# sans and mono fonts}
+\end{Verbatim}
+\end{Code}
+\subsection{Development}
+\label{sec:org106c12e}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{development}
+gh \EFc{\# github cli}
+tts \EFc{\# coqui-ai TTS (works with cpu)}
+drawio \EFc{\# draw rldb, uml diagrams etc.}
+\EFcd{\#} \EFc{android-studio \# for testing react native apps in emulators}
+lua \EFc{\# other python}
+ruby \EFc{\# language}
+pkg-config \EFc{\# needed for building ruby files}
+shfmt \EFc{\# doom emacs's dep for bash file formatter to work}
+spring-boot-cli \EFc{\# vite for java (spring boot)}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Frontend}
+\label{sec:orgdb73a56}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{frontend development}
+nodePackages.prettier \EFc{\# prettier code formatter for js/ts}
+figma-linux \EFc{\# frontend development}
+firefox-devedition \EFc{\# bin edition because nix tries to compile `firefox-devedition` and fails}
+pnpm \EFc{\# better npm?}
+jpegoptim \EFc{\# optimize jpeg}
+optipng \EFc{\# optimize png}
+libwebp \EFc{\# convert images to webp}
+\EFcd{\#} \EFc{responsively-app \# responsive design helper}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Backend}
+\label{sec:orge19041c}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{backend development}
+insomnia \EFc{\# make api calls easily (postman alternative)}
+dbeaver-bin \EFc{\# database awesomeness}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Mobile}
+\label{sec:orge6e395f}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{mobile development}
+genymotion \EFc{\# for testing react native apps in emulators}
+react-native-debugger \EFc{\# official react-native debugger}
+sdkmanager \EFc{\# manage android sdk versions}
+jdk \EFc{\# for JAVA installation. needed for android sdk and other apps (this installs the latest version of jdk)}
+nodePackages\_latest.eas-cli \EFc{\# build expo apk and dmg}
+bundletool \EFc{\# convert .abb to .apk}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Gamedev}
+\label{sec:orgf1b644d}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{game development}
+love \EFc{\# awesome 2d game engine written in lua}
+godot\_4 \EFc{\# 3d and 2d game engine}
+
+\end{Verbatim}
+\end{Code}
+\subsection{DevOps}
+\label{sec:orga5c46de}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{devops}
+camunda-modeler \EFc{\# business modeling tool}
+eclipses.eclipse-java \EFc{\# for camunda and spring boot}
+terraform \EFc{\# iac}
+ansible \EFc{\# cac}
+awscli2 \EFc{\# aws cli tools}
+argocd \EFc{\# control argocd instances from commandline}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Kubernetes}
+\label{sec:org586066f}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{minikube \# kubernetes testing and learning environment}
+openshift \EFc{\# kubernetes for stake holders}
+crc \EFc{\# locally install openshift}
+kubernetes-helm \EFc{\# kubernetes package manager}
+talosctl \EFc{\# control talos clusters}
+k9s \EFc{\# lazy kubernetes}
+kubectl \EFc{\# control your k8s cluster from your local machine}
+kubernetes-helm \EFc{\# kubernetes package manager}
+docker-compose \EFc{\# poor man's kubernetes}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{Local Stack}
+\label{sec:org29b8062}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}localstack \EFc{\# local aws}
+terraform-local \EFc{\# use terraform with localstack}
+
+\end{Verbatim}
+\end{Code}
+\subsection{Doom Emacs Specific}
+\label{sec:org0238b39}
+I use Doom Emacs for almost anything. programming, writing, blogging, terminal multiplexing and even music listening. But to do all those things it needs some dependencies.
+\subsubsection{Dirvish Deps}
+\label{sec:org9dc1e6e}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{doom emacs dirvish}
+vips \EFc{\# display images in emacs buffer}
+poppler-utils \EFc{\# view pdfs first page}
+ffmpegthumbnailer \EFc{\# extract thumbnails from videos}
+mediainfo \EFc{\# for displaying audio metadata}
+epub-thumbnailer \EFc{\# for displaying epub covers}
+
+\end{Verbatim}
+\end{Code}
+\subsubsection{LSP Deps}
+\label{sec:org002cb49}
+\begin{enumerate}
+\item C/C++
+\label{sec:org7b2a097}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{c/c++ (clang lsp)}
+ccls
+glslang
+clang
+clang-tools
+
+\end{Verbatim}
+\end{Code}
+\item Shell
+\label{sec:orgaeec996}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{shell}
+shellcheck
+
+\end{Verbatim}
+\end{Code}
+\item Rust
+\label{sec:orgf20c110}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#\#} \EFc{rust}
+cargo
+rustc
+rust-analyzer
+
+\end{Verbatim}
+\end{Code}
+\item Nix
+\label{sec:org2dad537}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{nix}
+nixfmt-classic \EFc{\# formatting}
+nil \EFc{\# language server}
+
+\end{Verbatim}
+\end{Code}
+\item Python
+\label{sec:orgdeea716}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}python311Packages.isort
+python311Packages.pytest
+python311Packages.nose2
+python311Packages.nose2pytest
+python313Packages.diagrams
+pipenv
+black \EFc{\# python-mode code formatter}
+python313Packages.pyflakes \EFc{\# python-mode import reordering}
+python313Packages.nose2 \EFc{\# python-mode tests}
+\end{Verbatim}
+\end{Code}
+\item Web
+\label{sec:org1ff5dc0}
+HTML, CSS, JS etc.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{web}
+html-tidy
+stylelint
+jsbeautifier
+rustywind \EFc{\# for tailwind lsp}
+
+\end{Verbatim}
+\end{Code}
+\item Docker
+\label{sec:org96680fd}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}dockfmt \EFc{\# docker file formatting}
+
+\end{Verbatim}
+\end{Code}
+\end{enumerate}
+\subsubsection{Other}
+\label{sec:org5225c5e}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}ispell \EFc{\# emacs spell checking dep}
+ripgrep \EFc{\# doom emacs dep}
+\end{Verbatim}
+\end{Code}
+\subsection{Communication}
+\label{sec:org61f883f}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}ferdium \EFc{\# communication}
+gajim \EFc{\# xmpp client for linux}
+nicotine-plus \EFc{\# pure piracy}
+\end{Verbatim}
+\end{Code}
+\subsection{Multimedia}
+\label{sec:orgd807cff}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}jamesdsp \EFc{\# equalizer for pipewire}
+mpd \EFc{\# music player daemon}
+mpc \EFc{\# control mpd from terminal}
+ncmpcpp \EFc{\# custom ncmpcpp with visualizer. see let/in on top}
+\end{Verbatim}
+\end{Code}
+\subsection{Browsers}
+\label{sec:org7d96be2}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}firefox \EFc{\# normal browser}
+chromium \EFc{\# ungoogled chrome (needed for react-native debugger)}
+tor-browser \EFc{\# just in case}
+librewolf \EFc{\# paranoid browser}
+\end{Verbatim}
+\end{Code}
+\subsection{GUI}
+\label{sec:orgdcf04d2}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}kdePackages.kdenlive \EFc{\# open source video editing software}
+\EFcd{\#} \EFc{anydesk \# proprietary remote control}
+libreoffice-qt6 \EFc{\# open .docx}
+pcmanfm \EFc{\# file manager}
+blender \EFc{\# 3d design}
+wireshark \EFc{\# network analizer}
+xournalpp \EFc{\# draw shapes using your wacom tablet}
+zathura \EFc{\# pdf reader}
+rustdesk \EFc{\# open source remote control}
+flameshot \EFc{\# screenshot utility for xorg}
+anki \EFc{\# the best spaced repetition tool}
+bleachbit \EFc{\# system cleanup}
+
+\EFcd{\#} \EFc{security}
+keepassxc \EFc{\# password manager}
+cryptomator
+
+\EFcd{\#} \EFc{image processing}
+gimp-with-plugins \EFc{\# open source photoshop}
+krita \EFc{\# digital art in linux? also comfyui integration using comfyui plugins}
+inkscape-with-extensions \EFc{\# svg and logo design}
+\end{Verbatim}
+\end{Code}
+\subsection{Suckless}
+\label{sec:org87b81e1}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{suckless}
+
+\EFcd{\#} \EFc{st}
+(st.overrideAttrs \{ \textcolor[HTML]{a0522d}{src} = \textcolor[HTML]{008b8b}{../../suckless/st-0.9.2}; \})
+
+\EFcd{\#} \EFc{slstatus}
+(slstatus.overrideAttrs \{\textcolor[HTML]{a0522d}{src} = \textcolor[HTML]{008b8b}{../../suckless/slstatus};\})
+
+\EFcd{\#} \EFc{dmenu}
+(dmenu.overrideAttrs \{ \textcolor[HTML]{a0522d}{src} = \textcolor[HTML]{008b8b}{../../suckless/dmenu-5.3}; \})
+
+\end{Verbatim}
+\end{Code}
+\subsection{Misc}
+\label{sec:orgb41d5a0}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}wget \EFc{\# download things}
+gcolor3 \EFc{\# color palettes for web dev}
+\EFcd{\#} \EFc{simplescreenrecorder \# screen recorder for xorg (disabled because using ffmpeg)}
+screenkey \EFc{\# show key presses on screen (screencast)}
+xcolor \EFc{\# color picker for xorg}
+appimage-run \EFc{\# run appimages on nixos}
+libcaca \EFc{\# ascii art viewer}
+wipe \EFc{\# securely wipe directories and files on hdd/ssd}
+git \EFc{\# version control}
+unrar \EFc{\# non-free but needed}
+koreader \EFc{\# awesome book reader}
+dunst \EFc{\# notification daemon}
+opensnitch-ui \EFc{\# enable interactive notifications for application firewall}
+gowall \EFc{\# change colorschemes of any wallpaper}
+peek \EFc{\# record desktop gifs}
+graphviz \EFc{\# org-mode graph generation dependency}
+plantuml-c4 \EFc{\# org-mode graph generation}
+kitty \EFc{\# fallback terminal}
+\EFcd{\#} \EFc{teams-for-linux \# microsoft teams for linux (unofficial)}
+pinentry-gtk2 \EFc{\# password prompt for gnupg}
+ffmpeg-full \EFc{\# needed for ncmpcpp cover art display and bunch of other things}
+libnotify \EFc{\# dunst dep}
+xcalib \EFc{\# invert colors of x}
+xorg.xev \EFc{\# find keysims}
+
+nixos-generators \EFc{\# generate various images from nixos config (qcow2)}
+dmg2img \EFc{\# convert apple's disk images to .img files. (needed for installing hackintoch on qemu)}
+pandoc \EFc{\# emacs's markdown compiler and org-mode dep}
+socat \EFc{\# serial communication with quickemy headless hosts witout ssh}
+btrfs-progs \EFc{\# you need this for nixos os-prober detect other oses like fedora which uses btrfs by default}
+arp-scan \EFc{\# scan local ips}
+iptraf-ng \EFc{\# watch network traffix in tui}
+fd \EFc{\# doom emacs dep}
+logseq \EFc{\# note taking tool}
+protonvpn-cli\_2 \EFc{\# vpn (this does not work anymore)}
+protonvpn-cli \EFc{\# vpn}
+lilypond-unstable-with-fonts \EFc{\# music notation (for doom emacs org-mode)}
+inetutils \EFc{\# for whois command}
+binwalk \EFc{\# check files}
+jq \EFc{\# needed for my adaptive bluelight filter adjuster}
+ranger \EFc{\# tui file manager}
+zip \EFc{\# archiving utility}
+p7zip \EFc{\# great archiving tool}
+\EFcd{\#} \EFc{ollama-cuda \# use local llms. installing this via systemPackages to set "models" dir to my home}
+tree-sitter \EFc{\# parser for programming}
+lazygit \EFc{\# git but fast}
+cmake \EFc{\# installed for vterm to compile}
+pavucontrol \EFc{\# pipewire buffer size and latency settings can be done from there}
+libtool \EFc{\# installed for compiling vterm}
+undollar \EFc{\# you copy and paste code from internet? you simply need it}
+gperftools \EFc{\# improve memory allocation performance for CPU (need for ai apps use CPU instead f GPU)}
+gtk3 \EFc{\# emacs requires this}
+\EFcd{\#} \EFc{nvidia-container-toolkit \# needed for docker use nvidia}
+w3m \EFc{\# image display for terminal}
+gdu \EFc{\# scan storage for size}
+tmux \EFc{\# life saver}
+smartmontools \EFc{\# check health of ssd drives}
+gsmartcontrol \EFc{\# check harddrive health}
+btop \EFc{\# better system monitor}
+yazi \EFc{\# new ranger}
+xorg.xinit \EFc{\# for startx command to work}
+xorg.libxcb \EFc{\# fix steam "glXChooseVisual" error}
+picom \EFc{\# xorg compositor}
+xsel \EFc{\# x clipboard}
+xdotool \EFc{\# simulate keyboard and mouse events}
+scrcpy \EFc{\# mirror android phone to pc}
+nsxiv \EFc{\# image viewer}
+yt-dlp \EFc{\# youtube video downloader + you can watch videos from mpv using this utility}
+tshark \EFc{\# scan local network}
+colordiff \EFc{\# to display colored output (installed for tshark)}
+unp \EFc{\# unpack any archive}
+mermaid-cli \EFc{\# for org-babel mermaid diagrams support (doom emacs)}
+xorg.libxshmfence \EFc{\# appimage-run requires it for some appimages like Mechvibes}
+libgen-cli \EFc{\# download books from libgen}
+udiskie \EFc{\# auto mount hotplugged block devices}
+ntfs3g \EFc{\# make udiskie mount NTFS partitions without problems}
+lxappearance \EFc{\# style gtk applications}
+nodejs \EFc{\# for emacs to install lsp packages}
+mpv \EFc{\# awesome media player (overlayed!)}
+syncthing \EFc{\# sync data between devices}
+imagemagick \EFc{\# for mp4 to gif conversion and other stuff}
+pulseaudio \EFc{\# installed for pactl to work. was trying to record screen with ffmpeg and pipewire. needed pactl}
+uv \EFc{\# vital python package. solves all those python version and dependency problems}
+unclutter-xfixes \EFc{\# hide mouse cursor after a time period}
+tldr \EFc{\# too long didn't read the manual}
+tabbed \EFc{\# suckless tabbed}
+emacsPackages.nov \EFc{\# to make nov.el work}
+xsct \EFc{\# protect your eyes (blue light filter) (disabled because using redshift)}
+fftw \EFc{\# fastest fourier transform for ncmpcpp}
+vlc \EFc{\# play dvds .VOB}
+hugo \EFc{\# generate static site}
+feh \EFc{\# set wallpapers}
+mp3blaster \EFc{\# auto tag mp3 files using mp3tag tool}
+zstd \EFc{\# extract .zst files}
+isoimagewriter \EFc{\# balena etcher alternative}
+neofetch \EFc{\# system info}
+weechat \EFc{\# irc client (overlayed!)}
+sysstat \EFc{\# get system statistics (used for tmux status bar cpu usage)}
+eza \EFc{\# ls alternative}
+starship \EFc{\# cross shell (very cool)}
+alsa-utils \EFc{\# for amixer and and setting volume via scripts and terminal}
+busybox \EFc{\# bunch of utilities (need)}
+sxhkd \EFc{\# simple x hotkey daemon}
+adw-gtk3 \EFc{\# for adwaita-dark theme}
+adwaita-qt \EFc{\# make qt applications use dark theme}
+adwaita-icon-theme \EFc{\# pretty icons (objective)}
+newsboat \EFc{\# rss/atom reader}
+transmission\_4-gtk \EFc{\# torrent application}
+xd \EFc{\# i2p torrenting}
+unzip \EFc{\# mendatory}
+hdparm \EFc{\# remove disks safely from terminal}
+scrot \EFc{\# for emacs's org-mode screen shot capability}
+bat \EFc{\# cat but better}
+fzf \EFc{\# fuzzy finder for terminal}
+xclip \EFc{\# clipboard for xorg}
+sxhkd \EFc{\# simple x11 hotkey daemon}
+\EFcd{\#} \EFc{lxqt.lxqt-policykit \# authentication agent}
+lxde.lxsession \EFc{\# session manager}
+xorg.xf86videoqxl \EFc{\# trying to improve scaling in spice}
+gnupg \EFc{\# encryption and stuff}
+stress \EFc{\# simulate high cpu load for testing}
+];
+\end{Verbatim}
+\end{Code}
+\section{Fonts}
+\label{sec:org4cf0d45}
+I use Fira Code in my pdf documents and iosevka in terminal
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{fonts}
+\textcolor[HTML]{a0522d}{fonts.packages} = \textcolor[HTML]{9370db}{with} pkgs; [
+  nerd-fonts.fira-code
+  nerd-fonts.iosevka-term
+  nerd-fonts.iosevka
+];
+\end{Verbatim}
+\end{Code}
+\section{XDG}
+\label{sec:orga69a0a4}
+I'm having issues with xdg even though I set the required settings below (needs more work)
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{xdg.portal} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{extraPortals} = [ pkgs.xdg-desktop-portal-gtk ];
+\};
+\end{Verbatim}
+\end{Code}
+\section{Virtualization}
+\label{sec:org8fa252f}
+I stopped using these virtualization settings after I started using Proxmox as my type 1 hypervisor. But I'll keep these setting for future reference
+\subsection{VirtualBox}
+\label{sec:org372af33}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{virtualbox} = \{ \EFc{\# virtualbox cannot be built with linux-rt kernel. hence disabled}
+  \textcolor[HTML]{a0522d}{host} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \};
+  \textcolor[HTML]{a0522d}{guest} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{vboxsf} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{dragAndDrop} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{clipboard} = \textcolor[HTML]{483d8b}{true};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Podman}
+\label{sec:org2ce5a3b}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{podman} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \EFc{\# dockerCompat = true;}
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Docker}
+\label{sec:org01ebd22}
+I change my docker data root directory to prevent bloating my root directory.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{docker} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{enableOnBoot} = \textcolor[HTML]{483d8b}{false};
+  \textcolor[HTML]{a0522d}{daemon.settings} = \{ \textcolor[HTML]{a0522d}{data-root} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}HOME\textcolor[HTML]{483d8b}{\textbf{\}}}\EFs{/resource/docker"}; \};
+  \textcolor[HTML]{a0522d}{autoPrune} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{dates} = \EFs{"weekly"};
+\};
+\end{Verbatim}
+\end{Code}
+
+I was using rootless docker but I faced issues when running containers that require Nvidia drivers. So I disabled this feature on my side.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{rootless} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{setSocketVariable} = \textcolor[HTML]{483d8b}{false};
+  \textcolor[HTML]{a0522d}{daemon.settings} = \{
+    \textcolor[HTML]{a0522d}{runtimes} = \{
+      \textcolor[HTML]{a0522d}{nvidia} = \{
+        \textcolor[HTML]{a0522d}{path} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}pkgs.nvidia-docker\textcolor[HTML]{483d8b}{\textbf{\}}}\EFs{/bin/nvidia-container-runtime"};
+      \};
+    \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Libvirt}
+\label{sec:orgc6188af}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{libvirtd} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{qemu} = \{
+    \textcolor[HTML]{a0522d}{package} = pkgs.qemu\_kvm;
+    \textcolor[HTML]{a0522d}{runAsRoot} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{swtpm.enable} = \textcolor[HTML]{483d8b}{true};
+
+    \EFc{\# enable file share between host/guest}
+    \textcolor[HTML]{a0522d}{vhostUserPackages} = \textcolor[HTML]{9370db}{with} pkgs; [ virtiofsd ];
+
+    \textcolor[HTML]{a0522d}{ovmf} = \{
+      \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{packages} = [
+        (pkgs.OVMF.override \{
+          \textcolor[HTML]{a0522d}{secureBoot} = \textcolor[HTML]{483d8b}{true};
+          \textcolor[HTML]{a0522d}{tpmSupport} = \textcolor[HTML]{483d8b}{true};
+        \}).fd
+      ];
+    \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{Waydroid}
+\label{sec:org871588b}
+Android emulation on Linux? Sounds cool!
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{waydroid.enable} = \textcolor[HTML]{483d8b}{true};
+\end{Verbatim}
+\end{Code}
+\section{Services}
+\label{sec:org55d5572}
+\subsection{xorg}
+\label{sec:org418e294}
+I use NixOS as a Proxmox vm. I enable ``qxl'' for SPICE. You don't need this if you're running NixOS on baremetal
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\EFcd{\#} \EFc{enable xorg}
+\textcolor[HTML]{a0522d}{xserver} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{xkb} = \{ \textcolor[HTML]{a0522d}{layout} = \EFs{"tr"}; \};
+  \textcolor[HTML]{a0522d}{videoDrivers} = [ \EFs{"qxl"} ]; \EFc{\# increase SPICE performance}
+
+  \EFc{\# display manager}
+  \textcolor[HTML]{a0522d}{displayManager.lightdm.enable} = \textcolor[HTML]{483d8b}{true};
+
+  \EFc{\# window manager}
+  \textcolor[HTML]{a0522d}{windowManager} = \{
+    \textcolor[HTML]{a0522d}{dwm} = \{
+      \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{package} = pkgs.dwm.overrideAttrs \{
+        \textcolor[HTML]{a0522d}{src} = \textcolor[HTML]{008b8b}{../../suckless/dwm-6.5};
+      \};
+    \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{spice}
+\label{sec:orgbca68a3}
+Since I use NixOS as a Proxmox vm, I sometimes connect to it via SPICE client \texttt{virt-viewer}. These services increase performance in the viewer and also let me share clipboard etc.
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{spiceUSBRedirection.enable} = \textcolor[HTML]{483d8b}{true};
+\textcolor[HTML]{a0522d}{spice-vdagentd.enable} = \textcolor[HTML]{483d8b}{true};
+\textcolor[HTML]{a0522d}{qemuGuest.enable} = \textcolor[HTML]{483d8b}{true};
+\end{Verbatim}
+\end{Code}
+\subsection{ssh}
+\label{sec:org9f93f3f}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}    \textcolor[HTML]{a0522d}{openssh} = \{
+      \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{startWhenNeeded} = \textcolor[HTML]{483d8b}{true};
+    \};
+\end{Verbatim}
+\end{Code}
+\subsection{cron}
+\label{sec:orge4e4fa0}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{cron} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{systemCronJobs} = [
+    \EFc{\# keep your ssd healthy by trimming it hourly (redhat suggestion)}
+    \EFs{"0 * * * * root fstrim -av >> /var/log/fstrim.log 2>\&1"}
+  ];
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{opensnitch}
+\label{sec:org90307d7}
+I use \textbf{opensnitch} as my \textbf{application firewall}. It is the closest alternative to \textbf{Simplewall} on windows. I also set some default rules below
+
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{opensnitch} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{rules} = \{
+    \textcolor[HTML]{a0522d}{systemd-timesyncd} = \{
+      \textcolor[HTML]{a0522d}{name} = \EFs{"systemd-timesyncd"};
+      \textcolor[HTML]{a0522d}{enabled} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{action} = \EFs{"allow"};
+      \textcolor[HTML]{a0522d}{duration} = \EFs{"always"};
+      \textcolor[HTML]{a0522d}{operator} = \{
+        \textcolor[HTML]{a0522d}{type} = \EFs{"simple"};
+        \textcolor[HTML]{a0522d}{sensitive} = \textcolor[HTML]{483d8b}{false};
+        \textcolor[HTML]{a0522d}{operand} = \EFs{"process.path"};
+        \textcolor[HTML]{a0522d}{data} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}lib.getBin pkgs.systemd\textcolor[HTML]{483d8b}{\textbf{\}}}\EFs{/lib/systemd/systemd-timesyncd"};
+      \};
+    \};
+    \textcolor[HTML]{a0522d}{systemd-resolved} = \{
+      \textcolor[HTML]{a0522d}{name} = \EFs{"systemd-resolved"};
+      \textcolor[HTML]{a0522d}{enabled} = \textcolor[HTML]{483d8b}{true};
+      \textcolor[HTML]{a0522d}{action} = \EFs{"allow"};
+      \textcolor[HTML]{a0522d}{duration} = \EFs{"always"};
+      \textcolor[HTML]{a0522d}{operator} = \{
+        \textcolor[HTML]{a0522d}{type} = \EFs{"simple"};
+        \textcolor[HTML]{a0522d}{sensitive} = \textcolor[HTML]{483d8b}{false};
+        \textcolor[HTML]{a0522d}{operand} = \EFs{"process.path"};
+        \textcolor[HTML]{a0522d}{data} = \EFs{"}\textcolor[HTML]{483d8b}{\textbf{\$\{}}lib.getBin pkgs.systemd\textcolor[HTML]{483d8b}{\textbf{\}}}\EFs{/lib/systemd/systemd-resolved"};
+      \};
+    \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{udisks2}
+\label{sec:org758fda5}
+Mount disks without sudo (requires udiskie)
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{udisks2} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{gvfs}
+\label{sec:org1178409}
+enable android file system mount in pcmanfm
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{gvfs} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{pipewire}
+\label{sec:orgf634264}
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{pipewire} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{alsa.enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{alsa.support32Bit} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{pulse.enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{jack.enable} = \textcolor[HTML]{483d8b}{true};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{ly}
+\label{sec:org3cb56de}
+I used \texttt{ly} as my tui login manager but it does a \textbf{horrible} job in managing my session. I replaced it with \texttt{lightdm} but I'll leave it here for future reference
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{displayManager} = \{
+  \textcolor[HTML]{a0522d}{ly} = \{
+    \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\subsection{dnscrypt}
+\label{sec:orgce02689}
+I encrypt my dns instead of using slow VPNs. see \href{https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml}{dnscrypt-proxy} for more information
+\begin{Code}
+\begin{Verbatim}
+\color{EFD}\textcolor[HTML]{a0522d}{dnscrypt-proxy2} = \{
+  \textcolor[HTML]{a0522d}{enable} = \textcolor[HTML]{483d8b}{true};
+  \textcolor[HTML]{a0522d}{settings} = \{
+    \textcolor[HTML]{a0522d}{ipv6\_servers} = \textcolor[HTML]{483d8b}{true};
+    \textcolor[HTML]{a0522d}{require\_dnssec} = \textcolor[HTML]{483d8b}{true};
+    \EFc{\# Add this to test if dnscrypt-proxy is actually used to resolve DNS requests}
+    \textcolor[HTML]{a0522d}{query\_log.file} = \EFs{"/var/log/dnscrypt-proxy/query.log"};
+    \textcolor[HTML]{a0522d}{sources.public-resolvers} = \{
+      \textcolor[HTML]{a0522d}{urls} = [
+        \EFs{"https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"}
+        \EFs{"https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md"}
+      ];
+      \textcolor[HTML]{a0522d}{cache\_file} = \EFs{"/var/cache/dnscrypt-proxy/public-resolvers.md"};
+      \textcolor[HTML]{a0522d}{minisign\_key} =
+        \EFs{"RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3"};
+    \};
+  \};
+\};
+\end{Verbatim}
+\end{Code}
+\end{document}

@@ -1,0 +1,14 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.xdv" "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.pdf" "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index" 0 -1
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.pdf"
+  (rewritten before read)
+["xelatex"] 0 "../../../../project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.tex" "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.xdv" "index" 0 -1
+  "../../../../project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.tex" 0 -1 0 ""
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.aux" 0 -1 0 "xelatex"
+  (generated)
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.aux"
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.log"
+  "/home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.xdv"
+  (rewritten before read)

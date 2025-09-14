@@ -1,0 +1,10 @@
+PWD /home/savolla/resource/notes/org/roam
+INPUT /nix/store/npnc81cbi4vzplln8jfsnpz8h7h2hm10-texlive-2024-env/share/texmf-var/web2c/texmf.cnf
+INPUT /nix/store/npnc81cbi4vzplln8jfsnpz8h7h2hm10-texlive-2024-env/share/texmf-var/web2c/xetex/xelatex.fmt
+INPUT ../../../../project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.tex
+OUTPUT /home/savolla/project/publishing/savolla.github.io/content/posts/my-literate-nixos-config/index.log
+INPUT /nix/store/9l2vaiz8cxrz32yx27wirprhfihkbhj6-texlive-2024-env-texmfdist/tex/latex/base/article.cls
+INPUT /nix/store/9l2vaiz8cxrz32yx27wirprhfihkbhj6-texlive-2024-env-texmfdist/tex/latex/base/article.cls
+INPUT /nix/store/9l2vaiz8cxrz32yx27wirprhfihkbhj6-texlive-2024-env-texmfdist/tex/latex/base/size10.clo
+INPUT /nix/store/9l2vaiz8cxrz32yx27wirprhfihkbhj6-texlive-2024-env-texmfdist/tex/latex/base/size10.clo
+INPUT /nix/store/9l2vaiz8cxrz32yx27wirprhfihkbhj6-texlive-2024-env-texmfdist/tex/latex/base/size10.clo
