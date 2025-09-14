@@ -5,22 +5,244 @@ tags = ["-F", "kubernetes"]
 draft = false
 +++
 
-## How-to {#how-to}
+## Applied Notes {#applied-notes}
 
--   [kubernetes secret file example]({{< relref "15d012dd-8153-4b67-9c4e-10134a629a7e" >}})
--   [temporarily expose argocd from kubernetes cluster]({{< relref "42cc5dca-4842-4699-827b-87fd83c1c7b9" >}})
--   [create an RBAC rule]({{< relref "47212944-c806-4640-927d-8666c640e950" >}})
--   [kubernetes configmap file example]({{< relref "4bc961c6-aaa2-4105-9cf0-29f1a99bb636" >}})
--   [kubernetes daemonset file example]({{< relref "604ba3af-3520-4af4-9ea1-2d34c982ec14" >}})
--   [set default namespace in kubernetes]({{< relref "66b97f48-a63f-4caa-90e2-95aab48be9f5" >}})
--   [check current namespace in kubernetes]({{< relref "6f82b6c9-ef95-422b-8f42-3346280397a6" >}})
--   [access web interface of a service that runs inside kubernetes]({{< relref "78577a00-4694-4dc7-b882-bf0ce7afaa66" >}})
--   [kubernetes deployment file example]({{< relref "8b83cb7b-9783-42bd-b3df-2a865ff7497d" >}})
--   [list all configmaps in kubernetes]({{< relref "90624a6b-b6d9-4471-ab53-19e5f9aaf452" >}})
--   [use nodeport instead of load balancer in kubernetes ingress]({{< relref "94cdb293-e7b8-4dbb-b2d0-f1f86c93d2c5" >}})
--   [list all secrets in kubernetes]({{< relref "b6e5204d-f95a-458a-b6cc-fa3e69b16aef" >}})
--   [attach to kubernetes pod's shell]({{< relref "be29e7e9-2985-494c-b65c-865489810a3c" >}})
--   [delete a kubernetes pod]({{< relref "c669bb8f-66ee-42cd-b0df-a15edc8d7836" >}})
+:results:
+
+
+### kubernetes secret file example {#kubernetes-secret-file-example}
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: changeme
+  type: Opeque
+  data:
+    username: c29tZSBzZWNyZXQgdmFsdWU=
+    password: c29tZSBzZWNyZXQgcGFzc3dvcmQ=
+```
+
+-   [encode string value in base64]({{< relref "092a600a-b12e-4a8c-82e2-ddc418d4373c" >}}) and put encoded values in data section
+
+---
+
+
+### temporarily expose argocd from kubernetes cluster {#temporarily-expose-argocd-from-kubernetes-cluster}
+
+```shell
+kubectl get svc -n argocd # get argocd service (with port 80 or 443)
+kubectl port-forward svc/argocd-server -n argocd 8080:443 # start port forwarding
+```
+
+-   access the service <https://localhost:8080>
+-   login as admin
+-   [get admin password of argocd in openshift]({{< relref "7eb6d892-979d-4b13-9631-c5cc1bed6f58" >}})
+
+---
+
+
+### create an RBAC rule {#create-an-rbac-rule}
+
+-   make `alice` user only **list** pods under `dev` namespace
+-   define role
+    ```yaml
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: Role
+      metadata:
+        namespace: dev
+        name: pod-reader
+        rules:
+    ​      - apiGroups: [""]
+            resources: ["pods"]
+            verbs: ["get", "list"]
+    ```
+-   bind this role to `alice`
+    ```yaml
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
+      metadata:
+        name: read-pods-binding
+        namespace: dev
+        subjects:
+    ​      - kind: User
+            name: alice
+            apiGroup: rbac.authorization.k8s.io
+            roleRef:
+              kind: Role
+              name: pod-reader
+              apiGroup: rbac.authorization.k8s.io
+    ```
+
+---
+
+
+### kubernetes configmap file example {#kubernetes-configmap-file-example}
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: changeme
+  data:
+    variable0: "some value"
+    variable1: "some value"
+```
+
+---
+
+
+### kubernetes daemonset file example {#kubernetes-daemonset-file-example}
+
+-   the following manifest will create a pod called `my-image:latest` <span class="underline">in every node</span>
+
+<!--listend-->
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: my-daemonset
+  spec:
+    selector:
+      matchLabels:
+        app: my-daemon
+        template:
+          metadata:
+            labels:
+              app: my-daemon
+              spec:
+                containers:
+                  - name: my-daemon-container
+                    image: my-image:latest
+```
+
+---
+
+
+### set default namespace in kubernetes {#set-default-namespace-in-kubernetes}
+
+the following example sets "cassandra" as a default namespace for `admin` user
+
+```shell
+kubectl config set-context --current --namespace=cassandra
+```
+
+---
+
+
+### check current namespace in kubernetes {#check-current-namespace-in-kubernetes}
+
+```shell
+kubectl config get-contexts
+```
+
+| CURRENT | NAME                        | CLUSTER               | AUTHINFO                    | NAMESPACE |
+|---------|-----------------------------|-----------------------|-----------------------------|-----------|
+| \*      | admin@talos-proxmox-cluster | talos-proxmox-cluster | admin@talos-proxmox-cluster | cassandra |
+
+---
+
+
+### access web interface of a service that runs inside kubernetes {#access-web-interface-of-a-service-that-runs-inside-kubernetes}
+
+-   by **port forwarding**
+    ```shell
+    oc get services
+    # check your service's PORT number (say it's 80)
+    # say your service name is jenkins
+    oc port-forward svc/jenkins 3000:80
+    ```
+    notice that port `3000` is the port on your host machine and port `80` is that jenkins exposes
+
+---
+
+
+### kubernetes deployment file example {#kubernetes-deployment-file-example}
+
+-   this example is for nginx deployment
+
+<!--listend-->
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+    spec:
+      replicas: 3
+      selector:
+        matchLabels:
+          app: nginx
+          template:
+            metadata:
+              labels:
+                app: nginx
+                spec:
+                  containers:
+                    - name: nginx
+                      image: nginx:1.14.2
+                      ports:
+                        - containerPort: 80
+```
+
+---
+
+
+### list all configmaps in kubernetes {#list-all-configmaps-in-kubernetes}
+
+```shell
+kubectl get configmap
+```
+
+---
+
+
+### use nodeport instead of load balancer in kubernetes ingress {#use-nodeport-instead-of-load-balancer-in-kubernetes-ingress}
+
+-   patch the ingress
+
+<!--listend-->
+
+```shell
+kubectl patch svc ingress-nginx-controller -n ingress-nginx \
+    -p '{"spec": {"type": "NodePort"}}'
+```
+
+---
+
+
+### list all secrets in kubernetes {#list-all-secrets-in-kubernetes}
+
+```shell
+kubectl get secret
+```
+
+---
+
+
+### attach to kubernetes pod's shell {#attach-to-kubernetes-pod-s-shell}
+
+-   `kubectl get pod` and get the name of your taget pod
+
+<!--listend-->
+
+```shell
+kubectl exec -it $YOUR_POD_NAME -- /bin/sh
+```
+
+---
+
+
+### delete a kubernetes pod {#delete-a-kubernetes-pod}
+
+```shell
+kubectl delete -f /path/to/file.yaml
+```
+
+:end:
 
 
 ## Notes {#notes}
@@ -120,33 +342,6 @@ draft = false
 
 
 ### Articles {#articles}
-
-
-## Page Renderer <span class="tag"><span class="noexport">noexport</span></span> {#page-renderer}
-
-<a id="code-snippet--render-how-to"></a>
-```emacs-lisp
-(mapconcat
- (lambda (node)
-   (format "- [[id:%s][%s]]"
-           (org-roam-node-id node)
-           (org-roam-node-title node)))
- (org-roam-ql-nodes
-  '(tags "kubernetes" "_z"))
- "\n")
-```
-
-<a id="code-snippet--render-flashcards"></a>
-```emacs-lisp
-(mapconcat
- (lambda (node)
-   (format "- [[id:%s][%s]]"
-           (org-roam-node-id node)
-           (org-roam-node-title node)))
- (org-roam-ql-nodes
-  '(tags "kubernetes" "_f"))
- "\n")
-```
 
 [^fn:1]: [ChatGPT](https://chatgpt.com/)
 [^fn:2]: [Kubernetes Volumes explained | Persistent Volume, Persistent Volume Claim &amp; S...](https://www.youtube.com/watch?v=0swOh5C3OVM)

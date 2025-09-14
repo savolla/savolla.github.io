@@ -42,6 +42,16 @@
     </item>
     
     <item>
+      <title>Argocd</title>
+      <link>http://localhost:1313/tags/argocd/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/tags/argocd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Ingress</title>
       <link>http://localhost:1313/tags/ingress/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
@@ -497,16 +507,6 @@
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/tags/alpine/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Argocd</title>
-      <link>http://localhost:1313/tags/argocd/</link>
-      <pubDate>Tue, 02 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/tags/argocd/</guid>
       <description></description>
       
     </item>

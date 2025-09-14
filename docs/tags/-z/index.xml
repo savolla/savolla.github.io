@@ -42,11 +42,31 @@
     </item>
     
     <item>
+      <title>decode base64 string</title>
+      <link>http://localhost:1313/zettel/844b8d26-02ba-4c9b-b9de-8ef32757c133/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/844b8d26-02ba-4c9b-b9de-8ef32757c133/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>delete a kubernetes pod</title>
       <link>http://localhost:1313/zettel/c669bb8f-66ee-42cd-b0df-a15edc8d7836/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/zettel/c669bb8f-66ee-42cd-b0df-a15edc8d7836/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>get admin password of argocd in openshift</title>
+      <link>http://localhost:1313/zettel/7eb6d892-979d-4b13-9631-c5cc1bed6f58/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/7eb6d892-979d-4b13-9631-c5cc1bed6f58/</guid>
       <description></description>
       
     </item>
