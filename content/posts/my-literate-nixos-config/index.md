@@ -44,7 +44,7 @@ DEFAULT_GATEWAY = "192.168.1.1";
 ### <span class="section-num">2.1</span> Package Overrides {#package-overrides}
 
 
-#### ncmpcpp with visualizer {#ncmpcpp-with-visualizer}
+#### <span class="section-num">2.1.1</span> ncmpcpp with visualizer {#ncmpcpp-with-visualizer}
 
 I use `ncmpcpp` for listening my music collection. It has a nice visualizer but the default nixos package does not include it for some reason. I override that package with visualizer support
 
@@ -396,7 +396,7 @@ nixpkgs = {
 ### <span class="section-num">11.3</span> Package Overlays {#package-overlays}
 
 
-#### mpv {#mpv}
+#### <span class="section-num">11.3.1</span> mpv {#mpv}
 
 I usually like to watch YouTube videos using `mpv`. **quality-menu** lets me switch between video and audio qualities easily. **quack** on the other hand temporarily reduces video quality on video skimming.
 
@@ -414,7 +414,7 @@ overlays = [
 ```
 
 
-#### weechat {#weechat}
+#### <span class="section-num">11.3.2</span> weechat {#weechat}
 
 I use some addons in my `weechat` config such as **url_hint**, **colorize_nicks** and **weechat-notify-send**
 
@@ -666,7 +666,7 @@ spring-boot-cli # vite for java (spring boot)
 ```
 
 
-#### Frontend {#frontend}
+#### <span class="section-num">15.8.1</span> Frontend {#frontend}
 
 ```nix
 # frontend development
@@ -682,7 +682,7 @@ libwebp # convert images to webp
 ```
 
 
-#### Backend {#backend}
+#### <span class="section-num">15.8.2</span> Backend {#backend}
 
 ```nix
 # backend development
@@ -692,7 +692,7 @@ dbeaver-bin # database awesomeness
 ```
 
 
-#### Mobile {#mobile}
+#### <span class="section-num">15.8.3</span> Mobile {#mobile}
 
 ```nix
 # mobile development
@@ -706,7 +706,7 @@ bundletool # convert .abb to .apk
 ```
 
 
-#### Gamedev {#gamedev}
+#### <span class="section-num">15.8.4</span> Gamedev {#gamedev}
 
 ```nix
 # game development
@@ -730,7 +730,7 @@ argocd # control argocd instances from commandline
 ```
 
 
-#### Kubernetes {#kubernetes}
+#### <span class="section-num">15.9.1</span> Kubernetes {#kubernetes}
 
 ```nix
 # minikube # kubernetes testing and learning environment
@@ -746,7 +746,7 @@ docker-compose # poor man's kubernetes
 ```
 
 
-#### Local Stack {#local-stack}
+#### <span class="section-num">15.9.2</span> Local Stack {#local-stack}
 
 ```nix
 localstack # local aws
@@ -760,7 +760,7 @@ terraform-local # use terraform with localstack
 I use Doom Emacs for almost anything. programming, writing, blogging, terminal multiplexing and even music listening. But to do all those things it needs some dependencies.
 
 
-#### Dirvish Deps {#dirvish-deps}
+#### <span class="section-num">15.10.1</span> Dirvish Deps {#dirvish-deps}
 
 ```nix
 # doom emacs dirvish
@@ -773,11 +773,11 @@ epub-thumbnailer # for displaying epub covers
 ```
 
 
-#### LSP Deps {#lsp-deps}
+#### <span class="section-num">15.10.2</span> LSP Deps {#lsp-deps}
 
 <!--list-separator-->
 
--  C/C++
+1.  C/C++
 
     ```nix
     # c/c++ (clang lsp)
@@ -790,7 +790,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Shell
+2.  Shell
 
     ```nix
     # shell
@@ -800,7 +800,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Rust
+3.  Rust
 
     ```nix
     ## rust
@@ -812,7 +812,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Nix
+4.  Nix
 
     ```nix
     # nix
@@ -823,7 +823,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Python
+5.  Python
 
     ```nix
     python311Packages.isort
@@ -839,7 +839,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Web
+6.  Web
 
     HTML, CSS, JS etc.
 
@@ -854,7 +854,7 @@ epub-thumbnailer # for displaying epub covers
 
 <!--list-separator-->
 
--  Docker
+7.  Docker
 
     ```nix
     dockfmt # docker file formatting
@@ -862,7 +862,7 @@ epub-thumbnailer # for displaying epub covers
     ```
 
 
-#### Other {#other}
+#### <span class="section-num">15.10.3</span> Other {#other}
 
 ```nix
 ispell # emacs spell checking dep
