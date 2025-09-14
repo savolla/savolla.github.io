@@ -148,7 +148,7 @@
     "keywords": ["helm","k8ssandra","cassandra","kubernetes","-writeup","talos"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "803"
+    "wordCount": "950"
   }]
   </script>
 
@@ -1063,38 +1063,253 @@
       
       
       
+        <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#intoduction">intoduction</a>
+      <ul>
+        <li><a href="#about-my-environment">about my environment</a>
+          <ul>
+            <li><a href="#proxmox">proxmox</a></li>
+            <li><a href="#talos">talos</a></li>
+            <li><a href="#k8ssandra">k8ssandra</a></li>
+            <li><a href="#nixos">nixos</a></li>
+            <li><a href="#why-i-do-it-this-way">why I do it this way?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#setup-storage-for-cassandra">Setup Storage for Cassandra</a>
+      <ul>
+        <li><a href="#create-local-pv-on-talos">Create Local PV on Talos</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-traefik">Install Traefik</a></li>
+    <li><a href="#install-k8ssandra">Install K8ssandra</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#intoduction">intoduction</a>
+      <ul>
+        <li><a href="#about-my-environment">about my environment</a>
+          <ul>
+            <li><a href="#proxmox">proxmox</a></li>
+            <li><a href="#talos">talos</a></li>
+            <li><a href="#k8ssandra">k8ssandra</a></li>
+            <li><a href="#nixos">nixos</a></li>
+            <li><a href="#why-i-do-it-this-way">why I do it this way?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#setup-storage-for-cassandra">Setup Storage for Cassandra</a>
+      <ul>
+        <li><a href="#create-local-pv-on-talos">Create Local PV on Talos</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-traefik">Install Traefik</a></li>
+    <li><a href="#install-k8ssandra">Install K8ssandra</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+            
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          <ul>
-<li>
-<p>intoduction</p>
-<ul>
-<li>about my environment
-<ul>
-<li>check this article for installing talos os on proxmox</li>
-<li>proxmox</li>
-<li>talos</li>
-<li>k8ssandra
-<ul>
-<li>k8ssandra is a kubernetes operator for cassandra</li>
-</ul>
-</li>
-<li>nixos
-<ul>
-<li>throughout the write-up I&rsquo;m going to use nixos as my local machine and also as a controller. I choose this distrob because it provides features like <strong>flakes</strong> and <strong>devshells</strong>. see <a
+          
+<h2 class="relative group">intoduction 
+    <div id="intoduction" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#intoduction" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+<h3 class="relative group">about my environment 
+    <div id="about-my-environment" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#about-my-environment" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>check this article for installing talos os on proxmox</p>
+
+<h4 class="relative group">proxmox 
+    <div id="proxmox" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#proxmox" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">talos 
+    <div id="talos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#talos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+<h4 class="relative group">k8ssandra 
+    <div id="k8ssandra" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#k8ssandra" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>k8ssandra is a kubernetes operator for cassandra</p>
+
+<h4 class="relative group">nixos 
+    <div id="nixos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#nixos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>throughout the write-up I&rsquo;m going to use nixos as my local machine and also as a controller. I choose this distrob because it provides features like <strong>flakes</strong> and <strong>devshells</strong>. see <a
   href="https://nixos.wiki/wiki/flakes"
     target="_blank"
-  >Flakes - NixOS Wiki</a> for more information</li>
+  >Flakes - NixOS Wiki</a> for more information</p>
+<ul>
 <li>&lt;share your direnv and flake.nix&gt;</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>why I do it this way?
+
+<h4 class="relative group">why I do it this way? 
+    <div id="why-i-do-it-this-way" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#why-i-do-it-this-way" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
 <ul>
 <li>pros and cons of installing cassandra on kubernetes
 <ul>
@@ -1103,14 +1318,10 @@
 </li>
 <li>a little bit about k8ssandra</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>
-<p>login to nixos</p>
-</li>
-<li>
-<p>start your talos nodes</p>
+<!--listend-->
+<ul>
+<li>login to nixos</li>
+<li>start your talos nodes
 <ul>
 <li>
 <p><code>ssh</code> into your proxmox server</p>
@@ -1142,35 +1353,66 @@ I label my talos nodes like the following</p>
 </span></span></code></pre></div></li>
 </ul>
 </li>
-<li>
-<p>install traefik</p>
-<ul>
-<li>
+</ul>
+
+<h2 class="relative group">Setup Storage for Cassandra 
+    <div id="setup-storage-for-cassandra" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#setup-storage-for-cassandra" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>when choosing storage for Cassandra in Kubernetes, your main goal is low-latency, high-throughput storage, ideally without adding extra replication or abstraction that can interfere with Cassandra&rsquo;s native behavior. <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>So we basically have 2 options. One is to use <strong>local PV</strong> for the best performance. But this is risky because if a node dies then we&rsquo;re screwed. To tolerate it we&rsquo;ll need to setup enough cassandra nodes to tolerate node failures.</p>
+<p>The second option is to use <a
+  href="https://openebs.io/"
+    target="_blank"
+  >OpenEBS - Kubernetes Storage Simplified</a> but it&rsquo;s best with external drives. I&rsquo;ll choose <strong>local PV</strong> because I&rsquo;m not using Cassandra in production right now. This is for learning purposes. That&rsquo;s why I&rsquo;ll use <strong>local PV</strong> for this write-up.</p>
+
+<h3 class="relative group">Create Local PV on Talos 
+    <div id="create-local-pv-on-talos" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#create-local-pv-on-talos" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Since we have 3 worker Talos nodes</p>
+
+<h2 class="relative group">Install Traefik 
+    <div id="install-traefik" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#install-traefik" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <p>Before we install <code>k8ssandra</code> we need a reverse proxy just to expose our services and making is easier to route between them.</p>
-</li>
-<li>
 <p>I like to use <code>traefik</code> instead of <code>nginx</code> for exposing my webuis. it provides bunch of features such as a webui, auto https, automatic service discovery etc. let&rsquo;s add it to our helm repo</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>helm repo add traefik https://helm.traefik.io/traefik
 </span></span><span style="display:flex;"><span>helm repo update
-</span></span></code></pre></div></li>
-<li>
-<p>We&rsquo;ll need to tell <strong>traefik</strong> which services to expose. We&rsquo;ll use the following <code>yaml</code> file for that purpose <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup>, </sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
-</li>
-<li>
+</span></span></code></pre></div><p>We&rsquo;ll need to tell <strong>traefik</strong> which services to expose. We&rsquo;ll use the following <code>yaml</code> file for that purpose <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup>, </sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <p>We&rsquo;re using Talos as our cluster OS, which enforces the <strong>Pod Security Standards (PSS)</strong>. This means we must assign different ports to each container, even if they have different names. So I assign different port names for each service.</p>
-</li>
-<li>
 <p>I also sort my containers by their <code>port</code> number for easier debugging.</p>
-</li>
-<li>
-<p>Now create a file named <code>traefik.yaml</code> and add the following into it</p>
-<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#fb4934">providers</span>:
+<p>Now create a file named <code>traefik-values.yaml</code> and add the following into it</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#fb4934">ingressRoute</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#fb4934">dashboard</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#fb4934">enabled</span>: <span style="color:#fe8019">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fb4934">matchRule</span>: Host(`dashboard.localhost`)
+</span></span><span style="display:flex;"><span>    <span style="color:#fb4934">entryPoints</span>:
+</span></span><span style="display:flex;"><span>      - web
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#fb4934">providers</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">kubernetesCRD</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#fb4934">namespaces</span>:
-</span></span><span style="display:flex;"><span>​      - default
+</span></span><span style="display:flex;"><span>      - default
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">kubernetesIngress</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#fb4934">namespaces</span>:
-</span></span><span style="display:flex;"><span>​      - default
+</span></span><span style="display:flex;"><span>      - default
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#fb4934">ports</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">web</span>:
@@ -1241,11 +1483,7 @@ I label my talos nodes like the following</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#fb4934">service</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">type</span>: NodePort
-</span></span></code></pre></div></li>
-<li>
-<p>Talos Kubernetes (and other secure distros) enforce Pod Security Admission rules. In &ldquo;restricted&rdquo; mode, every container must explicitly declare its <code>securityContext.seccompProfile</code>. This is a security best practice and often not set by default in older Helm charts. <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</li>
-<li>
+</span></span></code></pre></div><p>Talos Kubernetes (and other secure distros) enforce Pod Security Admission rules. In &ldquo;restricted&rdquo; mode, every container must explicitly declare its <code>securityContext.seccompProfile</code>. This is a security best practice and often not set by default in older Helm charts. <sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>That&rsquo;s why we also need to add a <code>seccomp</code> profile to our config</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#fb4934">deployment</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">podSecurityContext</span>:
@@ -1255,34 +1493,34 @@ I label my talos nodes like the following</p>
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">securityContext</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#fb4934">seccompProfile</span>:
 </span></span><span style="display:flex;"><span>      <span style="color:#fb4934">type</span>: RuntimeDefault
-</span></span></code></pre></div></li>
-<li>
-<p>Now install traefik using this configuration.</p>
-<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>helm install traefik traefik/traefik -f traefik.yaml --namespace<span style="color:#fe8019">=</span>default
-</span></span></code></pre></div></li>
-<li>
-<p>By the way I&rsquo;m using <code>NodePort</code> for demonstration purposes. It should be <code>LoadBalancer</code>.</p>
-</li>
+</span></span></code></pre></div><ul>
+<li>Now install traefik using this configuration.</li>
 </ul>
-</li>
-<li>
-<p>install k8ssandra</p>
-<ul>
-<li>
-<p>K8ssandra is an open-source project that provides a full-stack, production-ready Apache Cassandra® deployment on Kubernetes. It bundles Cassandra with other tools for management, monitoring, and backup into a Kubernetes-native deployment model. <sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</li>
-<li>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>helm install traefik traefik/traefik -f traefik-values.yaml --namespace<span style="color:#fe8019">=</span>default
+</span></span></code></pre></div><ul>
+<li>By the way I&rsquo;m using <code>NodePort</code> for demonstration purposes. It should be <code>LoadBalancer</code>.</li>
+</ul>
+
+<h2 class="relative group">Install K8ssandra 
+    <div id="install-k8ssandra" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#install-k8ssandra" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>K8ssandra is an open-source project that provides a full-stack, production-ready Apache Cassandra® deployment on Kubernetes. It bundles Cassandra with other tools for management, monitoring, and backup into a Kubernetes-native deployment model. <sup id="fnref3:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>add the k8ssandra helm chart repo <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>helm repo add k8ssandra https://helm.k8ssandra.io/stable
 </span></span><span style="display:flex;"><span>helm repo update
-</span></span></code></pre></div></li>
-<li>
-<p>create a file called <code>k8ssandra.yaml</code> and add the following into it</p>
+</span></span></code></pre></div><p>create a file called <code>k8ssandra.yaml</code> and add the following into it</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#928374;font-style:italic"># k8ssandra.yaml</span>
 </span></span><span style="display:flex;"><span><span style="color:#fb4934">cassandra</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">version</span>: <span style="color:#b8bb26">&#34;4.1.3&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">datacenters</span>:
-</span></span><span style="display:flex;"><span><span style="color:#fb4934">​    - name</span>: dc1
+</span></span><span style="display:flex;"><span>    - <span style="color:#fb4934">name</span>: dc1
 </span></span><span style="display:flex;"><span>      <span style="color:#fb4934">size</span>: <span style="color:#d3869b">3</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#fb4934">storageConfig</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#fb4934">cassandraDataVolumeClaimSpec</span>:
@@ -1292,7 +1530,7 @@ I label my talos nodes like the following</p>
 </span></span><span style="display:flex;"><span>            <span style="color:#fb4934">requests</span>:
 </span></span><span style="display:flex;"><span>              <span style="color:#fb4934">storage</span>: 5Gi
 </span></span><span style="display:flex;"><span>      <span style="color:#fb4934">racks</span>:
-</span></span><span style="display:flex;"><span><span style="color:#fb4934">​        - name</span>: rack1
+</span></span><span style="display:flex;"><span>        - <span style="color:#fb4934">name</span>: rack1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#fb4934">stargate</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">enabled</span>: <span style="color:#fe8019">true</span>
@@ -1330,18 +1568,14 @@ I label my talos nodes like the following</p>
 </span></span><span style="display:flex;"><span><span style="color:#fb4934">podSecurityContext</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#fb4934">seccompProfile</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#fb4934">type</span>: RuntimeDefault
-</span></span></code></pre></div></li>
-</ul>
-</li>
-</ul>
-<div class="footnotes" role="doc-endnotes">
+</span></span></code></pre></div><div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
 <p><a
   href="https://chatgpt.com/"
     target="_blank"
-  >ChatGPT</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+  >ChatGPT</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
 <p><a
