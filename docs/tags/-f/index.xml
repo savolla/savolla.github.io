@@ -52,23 +52,13 @@
     </item>
     
     <item>
-      <title>My Literate NixOS Configuration</title>
+      <title></title>
       <link>http://localhost:1313/posts/my-literate-nixos-config/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
       <author>savolla@protonmail.com (Kuzey Koç)</author>
       <guid>http://localhost:1313/posts/my-literate-nixos-config/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/reference/kubernetes/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/reference/kubernetes/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
     </item>
     
     <item>
@@ -89,6 +79,16 @@
       <guid>http://localhost:1313/reference/kafka/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kafka/featured-How-to-Avoid-Long-Queues-at-Your-Events-2.jpg" />
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://localhost:1313/reference/kubernetes/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/reference/kubernetes/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/reference/kubernetes/featured.jpg" />
     </item>
     
     <item>

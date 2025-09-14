@@ -332,6 +332,16 @@
     </item>
     
     <item>
+      <title></title>
+      <link>http://localhost:1313/posts/my-literate-nixos-config/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/posts/my-literate-nixos-config/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
+    </item>
+    
+    <item>
       <title>check current namespace in kubernetes</title>
       <link>http://localhost:1313/zettel/6f82b6c9-ef95-422b-8f42-3346280397a6/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
@@ -349,16 +359,6 @@
       <guid>http://localhost:1313/writeup/installing-cassandra-on-talos/</guid>
       <description></description>
       
-    </item>
-    
-    <item>
-      <title>My Literate NixOS Configuration</title>
-      <link>http://localhost:1313/posts/my-literate-nixos-config/</link>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 +0300</pubDate>
-      <author>savolla@protonmail.com (Kuzey Koç)</author>
-      <guid>http://localhost:1313/posts/my-literate-nixos-config/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg" />
     </item>
     
     <item>

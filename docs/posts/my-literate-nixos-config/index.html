@@ -14,8 +14,8 @@
   <meta name="theme-color">
 
   
-  <title>My Literate NixOS Configuration &middot; </title>
-    <meta name="title" content="My Literate NixOS Configuration &middot; ">
+  <title> &middot; </title>
+    <meta name="title" content=" &middot; ">
 
   
   <meta name="description" content="Kuzey Koç&#39;s Personal Website">
@@ -105,7 +105,6 @@
 
   
   <meta property="og:url" content="http://localhost:1313/posts/my-literate-nixos-config/">
-  <meta property="og:title" content="My Literate NixOS Configuration">
   <meta property="og:description" content="Kuzey Koç&#39;s Personal Website">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -119,7 +118,6 @@
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg">
-  <meta name="twitter:title" content="My Literate NixOS Configuration">
   <meta name="twitter:description" content="Kuzey Koç&#39;s Personal Website">
 <meta name="twitter:image" content="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg">
     <meta property="og:image" content="http://localhost:1313/posts/my-literate-nixos-config/featured-108358-2932042259.jpg">
@@ -128,8 +126,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "My Literate NixOS Configuration",
-    "headline": "My Literate NixOS Configuration",
+    "name": "",
+    "headline": "",
     
     
     "inLanguage": "en",
@@ -147,7 +145,7 @@
     "keywords": ["nixos","-F"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "4335"
+    "wordCount": "4354"
   }]
   </script>
 
@@ -869,7 +867,7 @@
   
   <li class="hidden">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/my-literate-nixos-config/"
-      >My Literate NixOS Configuration</a
+      >posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -878,7 +876,7 @@
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        My Literate NixOS Configuration
+        
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -1031,8 +1029,8 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#imports">Imports</a></li>
-    <li><a href="#global-variables">Global Variables</a>
+    <li><a href="#imports"><span class="section-num">1</span> Imports</a></li>
+    <li><a href="#global-variables"><span class="section-num">2</span> Global Variables</a>
       <ul>
         <li><a href="#package-overrides">Package Overrides</a>
           <ul>
@@ -1041,16 +1039,16 @@
         </li>
       </ul>
     </li>
-    <li><a href="#main-configuration">Main Configuration</a></li>
-    <li><a href="#bootloader">Bootloader</a>
+    <li><a href="#main-configuration"><span class="section-num">3</span> Main Configuration</a></li>
+    <li><a href="#bootloader"><span class="section-num">4</span> Bootloader</a>
       <ul>
         <li><a href="#grub">Grub</a></li>
       </ul>
     </li>
-    <li><a href="#external-home-directory">External Home Directory</a></li>
-    <li><a href="#hardware">Hardware</a></li>
-    <li><a href="#automatic-updates">Automatic Updates</a></li>
-    <li><a href="#networking">Networking</a>
+    <li><a href="#external-home-directory"><span class="section-num">5</span> External Home Directory</a></li>
+    <li><a href="#hardware"><span class="section-num">6</span> Hardware</a></li>
+    <li><a href="#automatic-updates"><span class="section-num">7</span> Automatic Updates</a></li>
+    <li><a href="#networking"><span class="section-num">8</span> Networking</a>
       <ul>
         <li><a href="#network-manager">Network Manager</a></li>
         <li><a href="#wireless">Wireless</a></li>
@@ -1059,15 +1057,15 @@
         <li><a href="#dns">DNS</a></li>
       </ul>
     </li>
-    <li><a href="#localization">Localization</a>
+    <li><a href="#localization"><span class="section-num">9</span> Localization</a>
       <ul>
         <li><a href="#timezone">Timezone</a></li>
         <li><a href="#internationalisation">Internationalisation</a></li>
         <li><a href="#console-keymap">Console Keymap</a></li>
       </ul>
     </li>
-    <li><a href="#users">Users</a></li>
-    <li><a href="#nix">Nix</a>
+    <li><a href="#users"><span class="section-num">10</span> Users</a></li>
+    <li><a href="#nix"><span class="section-num">11</span> Nix</a>
       <ul>
         <li><a href="#flakes">Flakes</a></li>
         <li><a href="#unfree-packages">Unfree Packages</a></li>
@@ -1079,10 +1077,10 @@
         </li>
       </ul>
     </li>
-    <li><a href="#theme">Theme</a></li>
-    <li><a href="#environment-variables">Environment Variables</a></li>
-    <li><a href="#filesystem-check">Filesystem Check</a></li>
-    <li><a href="#packages">Packages</a>
+    <li><a href="#theme"><span class="section-num">12</span> Theme</a></li>
+    <li><a href="#environment-variables"><span class="section-num">13</span> Environment Variables</a></li>
+    <li><a href="#filesystem-check"><span class="section-num">14</span> Filesystem Check</a></li>
+    <li><a href="#packages"><span class="section-num">15</span> Packages</a>
       <ul>
         <li><a href="#editors">Editors</a></li>
         <li><a href="#virtualization">Virtualization</a></li>
@@ -1120,9 +1118,9 @@
         <li><a href="#misc">Misc</a></li>
       </ul>
     </li>
-    <li><a href="#fonts">Fonts</a></li>
-    <li><a href="#xdg">XDG</a></li>
-    <li><a href="#virtualization">Virtualization</a>
+    <li><a href="#fonts"><span class="section-num">16</span> Fonts</a></li>
+    <li><a href="#xdg"><span class="section-num">17</span> XDG</a></li>
+    <li><a href="#virtualization"><span class="section-num">18</span> Virtualization</a>
       <ul>
         <li><a href="#virtualbox">VirtualBox</a></li>
         <li><a href="#podman">Podman</a></li>
@@ -1131,7 +1129,7 @@
         <li><a href="#waydroid">Waydroid</a></li>
       </ul>
     </li>
-    <li><a href="#services">Services</a>
+    <li><a href="#services"><span class="section-num">19</span> Services</a>
       <ul>
         <li><a href="#xorg">xorg</a></li>
         <li><a href="#spice">spice</a></li>
@@ -1158,8 +1156,8 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#imports">Imports</a></li>
-    <li><a href="#global-variables">Global Variables</a>
+    <li><a href="#imports"><span class="section-num">1</span> Imports</a></li>
+    <li><a href="#global-variables"><span class="section-num">2</span> Global Variables</a>
       <ul>
         <li><a href="#package-overrides">Package Overrides</a>
           <ul>
@@ -1168,16 +1166,16 @@
         </li>
       </ul>
     </li>
-    <li><a href="#main-configuration">Main Configuration</a></li>
-    <li><a href="#bootloader">Bootloader</a>
+    <li><a href="#main-configuration"><span class="section-num">3</span> Main Configuration</a></li>
+    <li><a href="#bootloader"><span class="section-num">4</span> Bootloader</a>
       <ul>
         <li><a href="#grub">Grub</a></li>
       </ul>
     </li>
-    <li><a href="#external-home-directory">External Home Directory</a></li>
-    <li><a href="#hardware">Hardware</a></li>
-    <li><a href="#automatic-updates">Automatic Updates</a></li>
-    <li><a href="#networking">Networking</a>
+    <li><a href="#external-home-directory"><span class="section-num">5</span> External Home Directory</a></li>
+    <li><a href="#hardware"><span class="section-num">6</span> Hardware</a></li>
+    <li><a href="#automatic-updates"><span class="section-num">7</span> Automatic Updates</a></li>
+    <li><a href="#networking"><span class="section-num">8</span> Networking</a>
       <ul>
         <li><a href="#network-manager">Network Manager</a></li>
         <li><a href="#wireless">Wireless</a></li>
@@ -1186,15 +1184,15 @@
         <li><a href="#dns">DNS</a></li>
       </ul>
     </li>
-    <li><a href="#localization">Localization</a>
+    <li><a href="#localization"><span class="section-num">9</span> Localization</a>
       <ul>
         <li><a href="#timezone">Timezone</a></li>
         <li><a href="#internationalisation">Internationalisation</a></li>
         <li><a href="#console-keymap">Console Keymap</a></li>
       </ul>
     </li>
-    <li><a href="#users">Users</a></li>
-    <li><a href="#nix">Nix</a>
+    <li><a href="#users"><span class="section-num">10</span> Users</a></li>
+    <li><a href="#nix"><span class="section-num">11</span> Nix</a>
       <ul>
         <li><a href="#flakes">Flakes</a></li>
         <li><a href="#unfree-packages">Unfree Packages</a></li>
@@ -1206,10 +1204,10 @@
         </li>
       </ul>
     </li>
-    <li><a href="#theme">Theme</a></li>
-    <li><a href="#environment-variables">Environment Variables</a></li>
-    <li><a href="#filesystem-check">Filesystem Check</a></li>
-    <li><a href="#packages">Packages</a>
+    <li><a href="#theme"><span class="section-num">12</span> Theme</a></li>
+    <li><a href="#environment-variables"><span class="section-num">13</span> Environment Variables</a></li>
+    <li><a href="#filesystem-check"><span class="section-num">14</span> Filesystem Check</a></li>
+    <li><a href="#packages"><span class="section-num">15</span> Packages</a>
       <ul>
         <li><a href="#editors">Editors</a></li>
         <li><a href="#virtualization">Virtualization</a></li>
@@ -1247,9 +1245,9 @@
         <li><a href="#misc">Misc</a></li>
       </ul>
     </li>
-    <li><a href="#fonts">Fonts</a></li>
-    <li><a href="#xdg">XDG</a></li>
-    <li><a href="#virtualization">Virtualization</a>
+    <li><a href="#fonts"><span class="section-num">16</span> Fonts</a></li>
+    <li><a href="#xdg"><span class="section-num">17</span> XDG</a></li>
+    <li><a href="#virtualization"><span class="section-num">18</span> Virtualization</a>
       <ul>
         <li><a href="#virtualbox">VirtualBox</a></li>
         <li><a href="#podman">Podman</a></li>
@@ -1258,7 +1256,7 @@
         <li><a href="#waydroid">Waydroid</a></li>
       </ul>
     </li>
-    <li><a href="#services">Services</a>
+    <li><a href="#services"><span class="section-num">19</span> Services</a>
       <ul>
         <li><a href="#xorg">xorg</a></li>
         <li><a href="#spice">spice</a></li>
@@ -1376,7 +1374,7 @@
 <p>⚠️ <strong>WARNING</strong>: This article is under construction. Please come back later</p>
 </div>
 
-<h2 class="relative group">Imports 
+<h2 class="relative group"><span class="section-num">1</span> Imports 
     <div id="imports" class="anchor"></div>
     
     <span
@@ -1387,7 +1385,7 @@
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>{ config<span style="color:#fe8019">,</span> pkgs<span style="color:#fe8019">,</span> lib<span style="color:#fe8019">,</span> <span style="color:#fe8019">...</span> }:
 </span></span></code></pre></div>
-<h2 class="relative group">Global Variables 
+<h2 class="relative group"><span class="section-num">2</span> Global Variables 
     <div id="global-variables" class="anchor"></div>
     
     <span
@@ -1434,7 +1432,7 @@
 </span></span></code></pre></div><p>Global variables definition ends with</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>in
 </span></span></code></pre></div>
-<h2 class="relative group">Main Configuration 
+<h2 class="relative group"><span class="section-num">3</span> Main Configuration 
     <div id="main-configuration" class="anchor"></div>
     
     <span
@@ -1448,7 +1446,7 @@
 </span></span></code></pre></div><p>Like every nixos configuration it must import a <code>hardware-configuration.nix</code> like this</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>imports <span style="color:#fe8019">=</span> [ <span style="color:#b8bb26">./hardware-configuration.nix</span> ];
 </span></span></code></pre></div>
-<h2 class="relative group">Bootloader 
+<h2 class="relative group"><span class="section-num">4</span> Bootloader 
     <div id="bootloader" class="anchor"></div>
     
     <span
@@ -1498,7 +1496,7 @@
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">External Home Directory 
+<h2 class="relative group"><span class="section-num">5</span> External Home Directory 
     <div id="external-home-directory" class="anchor"></div>
     
     <span
@@ -1524,7 +1522,7 @@
 </span></span><span style="display:flex;"><span>boot<span style="color:#fe8019">.</span>kernelModules <span style="color:#fe8019">=</span> [ <span style="color:#b8bb26">&#34;usb_storage&#34;</span> ];
 </span></span></code></pre></div><p>This <code>timeout</code> attribute doesn&rsquo;t work. I&rsquo;m still experimenting with these options. So it will probably change in the future.</p>
 
-<h2 class="relative group">Hardware 
+<h2 class="relative group"><span class="section-num">6</span> Hardware 
     <div id="hardware" class="anchor"></div>
     
     <span
@@ -1545,7 +1543,7 @@
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Automatic Updates 
+<h2 class="relative group"><span class="section-num">7</span> Automatic Updates 
     <div id="automatic-updates" class="anchor"></div>
     
     <span
@@ -1563,7 +1561,7 @@
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Networking 
+<h2 class="relative group"><span class="section-num">8</span> Networking 
     <div id="networking" class="anchor"></div>
     
     <span
@@ -1679,7 +1677,7 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#b8bb26">    &#39;&#39;</span>;
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Localization 
+<h2 class="relative group"><span class="section-num">9</span> Localization 
     <div id="localization" class="anchor"></div>
     
     <span
@@ -1735,7 +1733,7 @@
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>console<span style="color:#fe8019">.</span>keyMap <span style="color:#fe8019">=</span> <span style="color:#b8bb26">&#34;trq&#34;</span>;
 </span></span></code></pre></div>
-<h2 class="relative group">Users 
+<h2 class="relative group"><span class="section-num">10</span> Users 
     <div id="users" class="anchor"></div>
     
     <span
@@ -1776,7 +1774,7 @@
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Nix 
+<h2 class="relative group"><span class="section-num">11</span> Nix 
     <div id="nix" class="anchor"></div>
     
     <span
@@ -1874,7 +1872,7 @@
 </span></span><span style="display:flex;"><span>  ];
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Theme 
+<h2 class="relative group"><span class="section-num">12</span> Theme 
     <div id="theme" class="anchor"></div>
     
     <span
@@ -1892,7 +1890,7 @@
 </span></span><span style="display:flex;"><span>  GTK_THEME <span style="color:#fe8019">=</span> <span style="color:#b8bb26">&#34;Adwaita:dark&#34;</span>; <span style="color:#928374;font-style:italic"># make sudo applications use dark theme</span>
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Environment Variables 
+<h2 class="relative group"><span class="section-num">13</span> Environment Variables 
     <div id="environment-variables" class="anchor"></div>
     
     <span
@@ -1909,7 +1907,7 @@
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Filesystem Check 
+<h2 class="relative group"><span class="section-num">14</span> Filesystem Check 
     <div id="filesystem-check" class="anchor"></div>
     
     <span
@@ -1924,7 +1922,7 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#b8bb26">&#34;/boot/efi&#34;</span><span style="color:#fe8019">.</span>noCheck <span style="color:#fe8019">=</span> <span style="color:#d3869b">true</span>;
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Packages 
+<h2 class="relative group"><span class="section-num">15</span> Packages 
     <div id="packages" class="anchor"></div>
     
     <span
@@ -2599,7 +2597,7 @@
 </span></span><span style="display:flex;"><span>stress <span style="color:#928374;font-style:italic"># simulate high cpu load for testing</span>
 </span></span><span style="display:flex;"><span>];
 </span></span></code></pre></div>
-<h2 class="relative group">Fonts 
+<h2 class="relative group"><span class="section-num">16</span> Fonts 
     <div id="fonts" class="anchor"></div>
     
     <span
@@ -2616,7 +2614,7 @@
 </span></span><span style="display:flex;"><span>  nerd-fonts<span style="color:#fe8019">.</span>iosevka
 </span></span><span style="display:flex;"><span>];
 </span></span></code></pre></div>
-<h2 class="relative group">XDG 
+<h2 class="relative group"><span class="section-num">17</span> XDG 
     <div id="xdg" class="anchor"></div>
     
     <span
@@ -2631,7 +2629,7 @@
 </span></span><span style="display:flex;"><span>  extraPortals <span style="color:#fe8019">=</span> [ pkgs<span style="color:#fe8019">.</span>xdg-desktop-portal-gtk ];
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
-<h2 class="relative group">Virtualization 
+<h2 class="relative group"><span class="section-num">18</span> Virtualization 
     <div id="virtualization" class="anchor"></div>
     
     <span
@@ -2751,7 +2749,7 @@
 <p>Android emulation on Linux? Sounds cool!</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>waydroid<span style="color:#fe8019">.</span>enable <span style="color:#fe8019">=</span> <span style="color:#d3869b">true</span>;
 </span></span></code></pre></div>
-<h2 class="relative group">Services 
+<h2 class="relative group"><span class="section-num">19</span> Services 
     <div id="services" class="anchor"></div>
     
     <span
@@ -2976,7 +2974,7 @@
               <a
                 target="_blank"
                 class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-                href="mailto:savolla@protonmail.com?subject=Reply%20to%20My%20Literate%20NixOS%20Configuration">
+                href="mailto:savolla@protonmail.com?subject=Reply%20to%20">
                 Reply by Email
               </a>
             </strong>
@@ -3113,7 +3111,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/my-literate-nixos-config/&amp;title=My%20Literate%20NixOS%20Configuration"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/my-literate-nixos-config/&amp;title="
           title="Share on LinkedIn"
           aria-label="Share on LinkedIn">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
@@ -3125,7 +3123,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/my-literate-nixos-config/&amp;text=My%20Literate%20NixOS%20Configuration"
+          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/my-literate-nixos-config/&amp;text="
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span>
@@ -3136,7 +3134,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://s2f.kytta.dev/?text=My%20Literate%20NixOS%20Configuration%20http://localhost:1313/posts/my-literate-nixos-config/"
+          href="https://s2f.kytta.dev/?text=%20http://localhost:1313/posts/my-literate-nixos-config/"
           title=""
           aria-label="">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
@@ -3148,7 +3146,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=http://localhost:1313/posts/my-literate-nixos-config/&amp;subject=My%20Literate%20NixOS%20Configuration"
+          href="mailto:?body=http://localhost:1313/posts/my-literate-nixos-config/&amp;subject="
           title="Send via email"
           aria-label="Send via email">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>

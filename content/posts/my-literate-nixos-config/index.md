@@ -1,5 +1,4 @@
 +++
-title = "My Literate NixOS Configuration"
 author = ["Kuzey Koç"]
 date = 2025-09-11T00:00:00+03:00
 tags = ["nixos", "-F"]
@@ -13,14 +12,14 @@ draft = false
 </div>
 
 
-## Imports {#imports}
+## <span class="section-num">1</span> Imports {#imports}
 
 ```nix
 { config, pkgs, lib, ... }:
 ```
 
 
-## Global Variables {#global-variables}
+## <span class="section-num">2</span> Global Variables {#global-variables}
 
 Global variable definition starts with
 
@@ -62,7 +61,7 @@ in
 ```
 
 
-## Main Configuration {#main-configuration}
+## <span class="section-num">3</span> Main Configuration {#main-configuration}
 
 The main configuration starts with
 
@@ -77,7 +76,7 @@ imports = [ ./hardware-configuration.nix ];
 ```
 
 
-## Bootloader {#bootloader}
+## <span class="section-num">4</span> Bootloader {#bootloader}
 
 I was using `libvirt` for virtualization before `proxmox`. These are some kernel modules for nested virtualization (kubernetes). I commented them out since I'm now using Talos in my proxmox homelab.
 
@@ -124,7 +123,7 @@ I also enable EFI support.
 ```
 
 
-## External Home Directory {#external-home-directory}
+## <span class="section-num">5</span> External Home Directory {#external-home-directory}
 
 I keep my encrypted home directory separate in 1TB external SSD. When I boot my nixos machine I want it to be mounted under `/home/savolla`. Since it is an encrypted drive I also needed to setup some decryption operations.
 
@@ -148,7 +147,7 @@ boot.kernelModules = [ "usb_storage" ];
 This `timeout` attribute doesn't work. I'm still experimenting with these options. So it will probably change in the future.
 
 
-## Hardware {#hardware}
+## <span class="section-num">6</span> Hardware {#hardware}
 
 I enable 3D graphics support and Bluetooth support with the following
 
@@ -166,7 +165,7 @@ hardware = {
 ```
 
 
-## Automatic Updates {#automatic-updates}
+## <span class="section-num">7</span> Automatic Updates {#automatic-updates}
 
 I generally don't prefer this but I keep it in my config anyway.
 
@@ -181,7 +180,7 @@ system = {
 ```
 
 
-## Networking {#networking}
+## <span class="section-num">8</span> Networking {#networking}
 
 My networking setup is a little bit messed up. I use [DNSCrypt](https://www.dnscrypt.org/) to bypass censorship and other ISP shenanigans. So my dns is tied to DNSCrypt a little bit..
 
@@ -275,7 +274,7 @@ In nixos there is no `/etc/hosts` file. We have the following instead
 ```
 
 
-## Localization {#localization}
+## <span class="section-num">9</span> Localization {#localization}
 
 
 ### Timezone {#timezone}
@@ -312,7 +311,7 @@ console.keyMap = "trq";
 ```
 
 
-## Users {#users}
+## <span class="section-num">10</span> Users {#users}
 
 NixOS displays "message of the day" on console login. I disable it with
 
@@ -362,7 +361,7 @@ I once tried to run `gparted` on wayland and I came with the following solution 
 ```
 
 
-## Nix {#nix}
+## <span class="section-num">11</span> Nix {#nix}
 
 
 ### Flakes {#flakes}
@@ -434,7 +433,7 @@ I use some addons in my `weechat` config such as **url_hint**, **colorize_nicks*
 ```
 
 
-## Theme {#theme}
+## <span class="section-num">12</span> Theme {#theme}
 
 Enabling global dark theme without a proper DE is always painful. In NixOS it is pain in the ass..
 
@@ -454,7 +453,7 @@ environment.sessionVariables = {
 ```
 
 
-## Environment Variables {#environment-variables}
+## <span class="section-num">13</span> Environment Variables {#environment-variables}
 
 I apply different settings in my `.xprofile` and `.profile` depending on the current nixos specialisation. So I use an env. variable `CURRENT_NIXOS_SPECIALISATION` for this. The default value is "vanila". I also have "nvidia" and "musician". See **Specialisations** section below
 
@@ -468,7 +467,7 @@ environment = {
 ```
 
 
-## Filesystem Check {#filesystem-check}
+## <span class="section-num">14</span> Filesystem Check {#filesystem-check}
 
 I should probably enable file system checks again. But it sometimes takes too much time on boot.
 
@@ -480,7 +479,7 @@ fileSystems = {
 ```
 
 
-## Packages {#packages}
+## <span class="section-num">15</span> Packages {#packages}
 
 
 ### Editors {#editors}
@@ -1071,7 +1070,7 @@ stress # simulate high cpu load for testing
 ```
 
 
-## Fonts {#fonts}
+## <span class="section-num">16</span> Fonts {#fonts}
 
 I use Fira Code in my pdf documents and iosevka in terminal
 
@@ -1085,7 +1084,7 @@ fonts.packages = with pkgs; [
 ```
 
 
-## XDG {#xdg}
+## <span class="section-num">17</span> XDG {#xdg}
 
 I'm having issues with xdg even though I set the required settings below (needs more work)
 
@@ -1097,7 +1096,7 @@ xdg.portal = {
 ```
 
 
-## Virtualization {#virtualization}
+## <span class="section-num">18</span> Virtualization {#virtualization}
 
 I stopped using these virtualization settings after I started using Proxmox as my type 1 hypervisor. But I'll keep these setting for future reference
 
@@ -1197,7 +1196,7 @@ waydroid.enable = true;
 ```
 
 
-## Services {#services}
+## <span class="section-num">19</span> Services {#services}
 
 
 ### xorg {#xorg}
