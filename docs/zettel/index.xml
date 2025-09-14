@@ -9,7 +9,37 @@
     <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
     <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
     <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/zettel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>add traefik helm repository</title>
+      <link>http://localhost:1313/zettel/4fa89eb1-68ee-43e0-b29a-692e9ad20d1d/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/4fa89eb1-68ee-43e0-b29a-692e9ad20d1d/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>install traefik on kubernetes cluster using helm</title>
+      <link>http://localhost:1313/zettel/d81ee853-60c9-48d8-b73c-414d3f7c4637/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/d81ee853-60c9-48d8-b73c-414d3f7c4637/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>update helm repo</title>
+      <link>http://localhost:1313/zettel/20575718-754a-474a-bc5e-7ef1d199191b/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/20575718-754a-474a-bc5e-7ef1d199191b/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>access web interface of a service that runs inside kubernetes</title>

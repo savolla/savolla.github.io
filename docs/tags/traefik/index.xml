@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traefik on </title>
+    <link>http://localhost:1313/tags/traefik/</link>
+    <description>Recent content in Traefik on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>savolla@protonmail.com (Kuzey Koç)</managingEditor>
+    <webMaster>savolla@protonmail.com (Kuzey Koç)</webMaster>
+    <copyright>© 2025 Kuzey Koç. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0300</lastBuildDate><atom:link href="http://localhost:1313/tags/traefik/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>add traefik helm repository[fn:1]</title>
+      <link>http://localhost:1313/zettel/4fa89eb1-68ee-43e0-b29a-692e9ad20d1d/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0300</pubDate>
+      <author>savolla@protonmail.com (Kuzey Koç)</author>
+      <guid>http://localhost:1313/zettel/4fa89eb1-68ee-43e0-b29a-692e9ad20d1d/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
