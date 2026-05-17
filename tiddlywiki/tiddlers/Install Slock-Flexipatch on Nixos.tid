@@ -1,0 +1,112 @@
+title: Install Slock-Flexipatch on Nixos
+tags: nixos nix slock suckless @zettel _method @post
+roam-id: 77b4c93e-e1c1-48c2-ac7b-7ed89d571470
+created: 20260517022000000
+modified: 20260517022000000
+type: text/markdown
+
+clone the repository <https://github.com/bakkeby/slock-flexipatch>
+
+I personally added the following patches
+
+`DPMS_PATCH`
+:   shutdown monitor when locked
+
+`DWM_LOGO_PATCH`
+:   display cool dwm logo on the lock screen
+
+`KEYPRESS_FEEDBACK_PATCH`
+:   draw blocks on screen on key press
+
+`MEDIAKEYS_PATCH`
+:   adjust volume and change songs when screen is locked
+
+`MESSAGE_PATCH`
+:   put a message on lock screen
+
+`ALPHA_PATCH`
+:   make lock screen transparent
+
+`CAPSCOLOR_PATCH`
+:   warn when Caps Lock is active
+
+For those patches to compile you also need to do modifications in `config.mk` file
+
+``` diff
+modified   config.mk
+@@ -17,8 +17,8 @@ X11LIB = /usr/X11R6/lib
+ #NETBSD=-D_NETBSD_SOURCE
+
+ # Uncomment for message patch / MESSAGE_PATCH / COLORMESSAGE_PATCH / DWM_LOGO_PATCH
+-#XINERAMA=-lXinerama
+-#XINERAMAFLAGS = -DXINERAMA
++XINERAMA=-lXinerama
++XINERAMAFLAGS = -DXINERAMA
+
+ # Uncomment for pam auth patch / PAMAUTH_PATCH
+ #PAM=-lpam
+```
+
+add the following derivation into your `configuration.nix`
+
+``` nix
+# configuration.nix
+let
+  slockFlexipatch = pkgs.stdenv.mkDerivation {
+    pname = "slock-flexipatch";
+    version = "1.6";
+    src = builtins.path {
+      path = /home/savolla/project/repos/one-ring/tools/suckless/slock-flexipatch;
+      name = "slock-flexipatch-src";
+    };
+    nativeBuildInputs = [ pkgs.gnumake pkgs.pkg-config ];
+    buildInputs = [
+      pkgs.xorg.libX11
+      pkgs.xorg.libXext
+      pkgs.xorg.libXinerama
+      pkgs.xorg.libXrandr
+      pkgs.xorg.libXScrnSaver
+      pkgs.libxcrypt
+      pkgs.pam
+    ];
+    postPatch = ''
+      sed -i 's/^LIBS =.*/LIBS = -lc -lcrypt -lX11 -lXext -lXrandr -lXinerama -lXss/' Makefile
+    '';
+    buildPhase = ''
+      cp config.def.h config.h
+    cp patches.def.h patches.h
+    make
+    '';
+    installPhase = ''
+      mkdir -p $out/bin
+    cp slock $out/bin/
+    '';
+    meta = {
+      mainProgram = "slock";
+    };
+  };
+in
+```
+
+add this derivation into system packages
+
+``` nix
+# configuration.nix
+systemPackages = with pkgs; [
+  slockFlexipatch
+];
+```
+
+specify the package name for `slock` program
+
+``` nix
+# configuration.nix
+programs = {
+  slock = {
+    enable = true;
+    package = slockFlexipatch;
+  };
+};
+```
+
+[[Rebuild Nixos]]

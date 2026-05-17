@@ -1,0 +1,9 @@
+title: My GIF Wallpapers and How I Set Them on NixOS and DWM
+tags: @post dwm nixos plymouth gif @zettel _method
+roam-id: 38f22edf-a934-47ec-ab07-d17584235d65
+created: 20260517193200000
+modified: 20260517193200000
+type: text/markdown
+
+- clone [[Plymouth Themes]] repo
+- I extract gifs just what I like

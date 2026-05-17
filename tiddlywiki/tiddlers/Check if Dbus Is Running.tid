@@ -1,0 +1,10 @@
+title: Check if Dbus Is Running
+tags: dbus @zettel _method
+roam-id: edd613fe-88c6-47cf-babc-dfe65ea0857b
+created: 20260517220100000
+modified: 20260517220100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+echo $DBUS_SESSION_BUS_ADDRESS
+```

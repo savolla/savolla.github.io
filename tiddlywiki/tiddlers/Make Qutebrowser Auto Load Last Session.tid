@@ -1,0 +1,10 @@
+title: Make Qutebrowser Auto Load Last Session
+tags: qutebrowser @zettel _method
+roam-id: c5794fd9-b9b3-40f5-966b-cf8fb157d1c5
+created: 20260517213700000
+modified: 20260517213700000
+type: text/markdown
+
+``` python
+c.auto_save.session = True
+```

@@ -1,0 +1,38 @@
+title: Host Your Personal Page on GitHub Pages
+tags: @post _method @zettel github
+roam-id: be8e4558-3285-483c-8af6-c664e9b6dd27
+created: 20260517223000000
+modified: 20260517223000000
+type: text/markdown
+
+Create a new repository with the following name `<YOUR_USERNAME>.github.io` on github. Add description, set visibility to Public and add licence as \"GNU GPL v3.0\"
+
+Clone the repository using `ssh` method. If you don\'t know how to do it then see [[Push to Github Without Password Authentication]]. here is how I did this
+
+``` {.bash org-language="sh"}
+git clone git@github.com:savolla/savolla.github.io.git
+```
+
+If you want to host your html content then keep in mind that github pages only host content under the `docs` directory. So you have to put your static site under `docs` folder.
+
+``` {.bash org-language="sh"}
+cd savolla.github.io.git
+mkdir docs
+echo "hello world" > index.html
+```
+
+Commit changes and push to github
+
+``` {.bash org-language="sh"}
+git add -A
+git commit -m "first commit"
+git push
+```
+
+Now you need to enable github pages for this repository. From your repo page go to `Settings -> Pages (Side Panel)`. By default the `root` is going to be selected. Change it to `docs` and click \"Save\"
+
+Give it a 10-20 seconds to deploy then access <https://savolla.github.io> or your page
+
+[^1]
+
+[^1]: <https://www.youtube.com/watch?v=e5AwNU3Y2es&pp=ygUZaG9zdCBwYWdlIG9uIGdpdGh1YiBwYWdlcw%3D%3D>

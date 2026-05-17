@@ -258,6 +258,14 @@ services.picom = {
  });
 ```
 
+## Launch `st` Terminals with Same CWD
+
+you need to enable `NEWTERM_PATCH` and `WORKINGDIR_PATCH` and `OSC7_PATCH` patches in `st-flexipatch` first
+
+then you also need to enable `SPAWNCMD_PATCH` from `dwm-flexipatch`
+
+then from dwm config for launching `st` use
+
 ## References
 
 - [Best DWM Patches You Need to Use - YouTube](https://www.youtube.com/watch?v=1RKGeFgozBY)

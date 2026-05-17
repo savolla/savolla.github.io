@@ -1,0 +1,12 @@
+title: Set Gif as Wallpaper on Xorg
+tags: xorg gif @zettel _method
+roam-id: 57d432ec-103a-4c62-b92f-12c6b94a3b58
+created: 20260517200200000
+modified: 20260517200200000
+type: text/markdown
+
+install `xwinwrap` when do
+
+``` {.bash org-language="sh"}
+xwinwrap -fs -ni -b -nf -ov -argb -s -st -- mpv -wid WID --loop --no-audio your.gif
+```
