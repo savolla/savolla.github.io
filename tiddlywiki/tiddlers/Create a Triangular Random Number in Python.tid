@@ -1,0 +1,15 @@
+title: Create a Triangular Random Number in Python
+tags: @zettel _method python
+roam-id: c727150a-1963-4996-a7d7-2906c2b653ae
+type: text/markdown
+
+``` {.python results="output"}
+import random
+
+delay = random.triangular(low=1, high=10)
+print(delay)
+```
+
+``` example
+6.186499719027259
+```

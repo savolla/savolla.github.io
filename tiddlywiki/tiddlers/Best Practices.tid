@@ -1,0 +1,14 @@
+title: Best Practices
+tags: 
+roam-id: 98e52d6a-04d2-427c-a247-adf8a7188630
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_bestpractice]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

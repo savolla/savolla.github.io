@@ -1,0 +1,9 @@
+title: 20260322142222
+tags: kaas _limitation @biblio
+roam-id: dbec937a-e45d-4f6b-b8a0-4af5b04ea4e4
+type: text/markdown
+
+> many KaaS platforms disable alpha features because they can destabilize the managed cluster.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

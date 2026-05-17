@@ -1,0 +1,8 @@
+title: Get Kubernetes Version
+tags: @zettel _method k8s
+roam-id: 37c8386d-60cf-4420-a5a5-d5face26b4a6
+type: text/markdown
+
+``` shell
+kubectl version
+```

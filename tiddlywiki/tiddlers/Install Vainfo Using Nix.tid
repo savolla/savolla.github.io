@@ -1,0 +1,8 @@
+title: Install Vainfo Using Nix
+tags: nix vaapi @zettel _method
+roam-id: b998770c-6531-4aaf-9032-e05e6a02a25f
+created: 20260514210000000
+modified: 20260514210000000
+type: text/markdown
+
+put `libva-utils` under your packages list and [[Rebuild Nixos]]

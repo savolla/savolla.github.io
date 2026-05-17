@@ -1,0 +1,8 @@
+title: Create a New Branch and Checkout Into It Using Git
+tags: @zettel _method git
+roam-id: a656d5ff-1c13-4ccc-8b42-87e6142307ed
+type: text/markdown
+
+``` shell
+git checkout -b <branch-name>
+```

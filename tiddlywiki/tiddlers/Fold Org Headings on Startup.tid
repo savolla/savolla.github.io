@@ -1,0 +1,17 @@
+title: Fold Org Headings on Startup
+tags: @zettel _method orgmode
+roam-id: e334818f-77b8-49e7-a8ad-173ec4703f18
+type: text/markdown
+
+- globally
+
+``` elisp
+;; doom/config.el
+(setq org-startup-folded 'overview)
+```
+
+- if you want to enable this per file add the following rule on the top of the org file (remove comma)
+
+  ``` org
+  #+STARTUP: overview
+  ```

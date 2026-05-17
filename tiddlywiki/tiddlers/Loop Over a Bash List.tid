@@ -1,0 +1,12 @@
+title: Loop Over a Bash List
+tags: @zettel _method bash
+roam-id: 10b83d0d-eb12-4682-b563-71a0554066eb
+type: text/markdown
+
+``` shell
+my_list=(apple banana cherry)
+
+for item in "${my_list[@]}"; do
+  echo "Item: $item"
+done
+```

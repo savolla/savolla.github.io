@@ -1,0 +1,10 @@
+title: Redirect Command Output Into a File While Seeing It in Stdout
+tags: tee
+roam-id: 693afae7-893e-4f82-9072-8a409c15e873
+type: text/markdown
+
+you\'ll see the output in your terminal and it\'ll also put the output inside the `output` file
+
+``` shell
+sudo ls -l / | tee output
+```

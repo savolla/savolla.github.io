@@ -1,0 +1,8 @@
+title: Show Databases/Keyspaces in Cassandra
+tags: _method @zettel cassandra
+roam-id: fdf3f41a-8a04-4d59-8cd8-a9dea4c39c7a
+type: text/markdown
+
+``` sql
+describe keyspaces;
+```

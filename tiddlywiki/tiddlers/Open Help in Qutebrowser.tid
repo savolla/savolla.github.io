@@ -1,0 +1,6 @@
+title: Open Help in Qutebrowser
+tags: _method @zettel qutebrowser
+roam-id: 7d247e69-beed-48ec-89ad-bbf02825b717
+type: text/markdown
+
+do `:help`

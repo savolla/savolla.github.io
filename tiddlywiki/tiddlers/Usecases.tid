@@ -1,0 +1,14 @@
+title: Usecases
+tags: 
+roam-id: 8e527e20-d680-4f0a-81f1-194a51c0b501
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_usecase]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

@@ -1,0 +1,10 @@
+title: Fix REMOTE HOST IDENTIFICATION HAS CHANGED! Error in SSH
+tags: @zettel _fix ssh
+roam-id: 16e76f97-4616-4317-a081-e6bc5519d535
+type: text/markdown
+
+remove the ip from known hosts
+
+``` {.bash org-language="sh"}
+ssh-keygen -R 192.168.1.250
+```

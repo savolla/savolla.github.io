@@ -1,0 +1,10 @@
+title: Build Spring Boot Java Application Using Gradle
+tags: @zettel _method gradle java spring
+roam-id: 49e69af4-b766-4f58-9a1b-64fce122158d
+type: text/markdown
+
+``` shell
+./gradlew bootJar
+```
+
+contents will be created under `./build/libs/your-app.jar`

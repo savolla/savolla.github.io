@@ -1,0 +1,5 @@
+title: Always Use =set -Euo Pipefail= in Production Shell Scripts
+tags: @zettel bash _fact
+roam-id: 44ee5b52-a322-4e0a-8637-79dafa56452c
+type: text/markdown
+

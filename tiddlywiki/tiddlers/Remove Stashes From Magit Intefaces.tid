@@ -1,0 +1,8 @@
+title: Remove Stashes From Magit Intefaces
+tags: @zettel _method magit git doomemacs
+roam-id: e78171e8-e1a2-4d93-aa76-399080a622f5
+type: text/markdown
+
+- `SPC g g` open magit interface
+- navigate to stach item
+- press `x` and confirm

@@ -1,0 +1,8 @@
+title: List All Helm Charts That Run on Kubernetes Cluster
+tags: @zettel _method helm k8s
+roam-id: 678a3091-033c-4fac-8803-6708dd176d99
+type: text/markdown
+
+``` shell
+helm list -A
+```

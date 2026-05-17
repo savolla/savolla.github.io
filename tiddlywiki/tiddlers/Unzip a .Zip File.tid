@@ -1,0 +1,12 @@
+title: Unzip a .Zip File
+tags: zip @zettel _method
+roam-id: 52a29572-82f2-4486-931c-f0a0b019c841
+created: 20260512194600000
+modified: 20260512194600000
+type: text/markdown
+
+make sure you have `unzip` package
+
+``` {.bash org-language="sh"}
+unzip /path/to/file.zip
+```

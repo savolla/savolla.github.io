@@ -1,0 +1,11 @@
+title: 202605011435
+tags: _con @biblio claude_code
+roam-id: 50942794-a511-41b9-a811-483555ca427b
+created: 20260501143500000
+modified: 20260501143500000
+type: text/markdown
+
+you cannot call skills directory like you do with **slash commands**. they are loaded automatically when needed. so you cannot specify what skill to use for aspecific task
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

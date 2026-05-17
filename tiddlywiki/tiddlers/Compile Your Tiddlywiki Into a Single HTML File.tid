@@ -1,0 +1,11 @@
+title: Compile Your Tiddlywiki Into a Single HTML File
+tags: tiddlywiki @zettel _method
+roam-id: eef348be-4c7e-46f4-baff-9edaad07507f
+roam-refs: https://chatgpt.com/
+created: 20260423174200000
+modified: 20260423174200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+tiddlywiki . --build index
+```

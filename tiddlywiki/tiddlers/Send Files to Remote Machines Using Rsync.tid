@@ -1,0 +1,8 @@
+title: Send Files to Remote Machines Using Rsync
+tags: @zettel _method rsync
+roam-id: 6f25ebe8-249c-44fe-9a13-b80766992304
+type: text/markdown
+
+``` bash
+rsync -av /path/to/sourcefile user@some_host:/path/to/destination
+```

@@ -1,0 +1,8 @@
+title: Stop Supercollider Server
+tags: @zettel _method supercollider
+roam-id: 1ee8199a-4c4d-47b7-a988-8a6a587ad09d
+type: text/markdown
+
+``` scd
+s.quit
+```

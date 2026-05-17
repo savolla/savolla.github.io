@@ -1,0 +1,9 @@
+title: Software Velocity
+tags: _term @biblio k8s
+roam-id: 551ccbca-17b1-4834-8656-0238d5b89916
+type: text/markdown
+
+> Velocity is the key component in nearly all software development today. The software industry has evolved from shipping products as boxed CDs or DVDs to software that is delivered over the network via web-based services that are updated hourly. This changing landscape means that the difference between you and your competitors is often the speed with which you can develop and deploy new components and features, or the speed with which you can respond to innovations developed by others.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

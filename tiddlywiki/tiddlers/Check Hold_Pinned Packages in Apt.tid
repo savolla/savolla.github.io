@@ -1,0 +1,9 @@
+title: Check Hold/Pinned Packages in Apt
+tags: @zettel _method apt
+roam-id: 6e0b079e-447d-4225-bdca-0118982a4472
+type: text/markdown
+
+``` {.bash org-language="sh"}
+dpkg --get-selections | grep hold
+grep -r "Pin-Priority" /etc/apt/preferences*
+```

@@ -1,0 +1,9 @@
+title: 20260321140819
+tags: gitops _mechanism @biblio
+roam-id: fcb3ddbe-f9a4-4a6f-b275-d944d2d907c1
+type: text/markdown
+
+> changes to pro duction are made entirely via pushes to a Git repository, which are then reflected into your cluster via automation.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

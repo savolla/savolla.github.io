@@ -1,0 +1,8 @@
+title: Default Path for Elasticsearch Config File
+tags: elasticsearch @zettel _property
+roam-id: 8a458b37-23a7-4cca-bf33-1c4e2b267049
+created: 20260313134600000
+modified: 20260313134600000
+type: text/markdown
+
+under `/etc/elasticsearch/elasticsearch.yml`

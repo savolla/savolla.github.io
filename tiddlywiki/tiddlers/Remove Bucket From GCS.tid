@@ -1,0 +1,10 @@
+title: Remove Bucket From GCS
+tags: gcs gcp
+roam-id: c5dc4c75-1d0b-461f-b987-52f1ec365737
+type: text/markdown
+
+- [[Get All Google Cloud Storage Elements Buckets]]
+
+``` {.bash org-language="sh"}
+gcloud storage rm --recursive gs://BUCKET_NAME
+```

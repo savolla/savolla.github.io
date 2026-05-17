@@ -1,0 +1,13 @@
+title: Install Harlequin on Ubuntu
+tags: @zettel _method harlequin ubuntu
+roam-id: 4fafee65-2ecb-48b9-b644-b7d724ff3b04
+type: text/markdown
+
+``` shell
+curl -LsSf https://astral.sh/uv/install.sh | sh # install uv
+uv tool install --python 3.13 harlequin # install harlequin
+uv tool install --python 3.13 'harlequin[postgres,mysql,s3]' # install adapters
+```
+
+- [emacs binding for narrow function](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-05.org::1803)
+- [emacs binding for narrow function](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-05.org::2011)

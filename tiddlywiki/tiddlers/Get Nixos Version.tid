@@ -1,0 +1,10 @@
+title: Get Nixos Version
+tags: @zettel _method
+roam-id: 8cded5da-0eee-4348-83dd-6012a5cdb9fa
+created: 20260508202100000
+modified: 20260508202100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+nixos-version
+```

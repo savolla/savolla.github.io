@@ -1,0 +1,8 @@
+title: Revert/Rollback Your Transaction in Mysql
+tags: @zettel _method mysql
+roam-id: 7b27e748-d3ef-40eb-8701-e39ff8c393ea
+type: text/markdown
+
+``` sql
+rollback;
+```

@@ -1,0 +1,16 @@
+title: Install Copy Code Plugin on Tiddlywiki
+tags: tiddlywiki @zettel _method
+roam-id: 0c4f6ba0-795f-4607-a103-d1312a268ac1
+created: 20260509221200000
+modified: 20260509221200000
+type: text/markdown
+
+- go to <https://b-yp.github.io/tiddlywiki-plugins/#%24%3A%2Fplugins%2Fbyper%2Fcode-copy-button>
+- drag and drop the plugin into your tiddlywiki
+- restart tiddlywiki
+
+[^1] [^2]
+
+[^1]: <https://b-yp.github.io/tiddlywiki-plugins/#%24%3A%2Fplugins%2Fbyper%2Fcode-copy-button>
+
+[^2]: <https://talk.tiddlywiki.org/t/code-copy-button-a-simple-plug-in-to-copy-code/14895>

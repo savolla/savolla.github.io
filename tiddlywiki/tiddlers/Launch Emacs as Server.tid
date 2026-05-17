@@ -1,0 +1,8 @@
+title: Launch Emacs as Server
+tags: @zettel _method
+roam-id: d6f28a06-6ef3-4dfa-8dca-2c1ed94c93a1
+type: text/markdown
+
+``` bash
+emacs --daemon
+```

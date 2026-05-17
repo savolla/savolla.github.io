@@ -1,0 +1,11 @@
+title: Set Theme for Revealjs Presentation From Org Mode
+tags: @zettel _method orgmode revealjs
+roam-id: 15ed9d2d-13c7-4b65-87c3-dc12071d0e61
+type: text/markdown
+
+- revealjs has multiple themes; black (default), white, league, beige, night, serif, simple, solarized, moon, dracula, sky, blood
+
+- you can set these themes like this;
+
+  ``` org
+  ```

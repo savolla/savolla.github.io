@@ -1,0 +1,10 @@
+title: Open Same File in Different Buffers in Emacs
+tags: @zettel _method emacs
+roam-id: deec6e0a-ed0d-406e-96e5-5e8b2ab1631d
+type: text/markdown
+
+- this one is very specific. I usually find myself editing the same file on separate buffers to decrease huge movements. for example say I have a function on line 10 and I want to view this function as I edit another function on line 1200. there is a huge distance between them. so I open two side by side buffers and edit them.
+
+- but sometimes I also want to use `org-narrow-to-subtree` in my org files but narrow my contect to a heading while keeping the same org file on the side (without narrowing). in this case it also narrows the other buffer. this is not what I want. so I clone the current buffer and open the cloned version on the side using;
+
+- `clone-indirect-buffer-other-window` and switch to it

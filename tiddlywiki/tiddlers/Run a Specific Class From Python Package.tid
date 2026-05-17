@@ -1,0 +1,11 @@
+title: Run a Specific Class From Python Package
+tags: @zettel _method python
+roam-id: 99650b88-671d-46da-a9ce-276471be9539
+type: text/markdown
+
+``` shell
+python3 <package_name>/main.py <your_class_name> <parameters_if_any>
+```
+
+- [hook for invalidating projectile cache when switching branches](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-11.org::2700)
+- [hook for invalidating projectile cache when switching branches](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-11.org::2837)

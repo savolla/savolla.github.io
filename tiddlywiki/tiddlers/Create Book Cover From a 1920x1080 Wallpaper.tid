@@ -1,0 +1,17 @@
+title: Create Book Cover From a 1920x1080 Wallpaper
+tags: @zettel _method latex orgmode
+roam-id: 3adc6120-c806-4876-8e27-555d5958aa20
+type: text/markdown
+
+- I assume you have a good wallpaper that you want to create a wallpaper from it
+- open gimp
+- create \"new\" project
+- enter frame dimensions as **763x1080**
+- open your wallpaper
+- `Ctrl a` -\> `Ctrl x`
+- go back to your A4 frame (763x1080)
+- `Ctrl p`
+- click \"anchor floating image\" (right bottom)
+- export as png
+- see [[Latex Template for Org Mode]]
+- replace the image with your image

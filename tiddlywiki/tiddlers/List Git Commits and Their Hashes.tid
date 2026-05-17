@@ -1,0 +1,8 @@
+title: List Git Commits and Their Hashes
+tags: @zettel _method git
+roam-id: c0a80865-a920-4994-a45b-0801f0ed2b2c
+type: text/markdown
+
+``` shell
+git reflog
+```

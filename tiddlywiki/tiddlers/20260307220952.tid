@@ -1,0 +1,9 @@
+title: 20260307220952
+tags: graphing alerting _property @biblio prometheus
+roam-id: b36aeedf-d8ac-4a2b-92e9-549c766aab0b
+type: text/markdown
+
+> graphing and alerting were once completely separate concerns performed by different tools.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

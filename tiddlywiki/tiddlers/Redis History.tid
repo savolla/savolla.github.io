@@ -1,0 +1,10 @@
+title: Redis History
+tags: _history redis @query
+roam-id: 68e16c8b-6cdf-474f-af59-27b6731b001d
+type: text/markdown
+
+<$list filter="[tag[redis]tag[_history]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

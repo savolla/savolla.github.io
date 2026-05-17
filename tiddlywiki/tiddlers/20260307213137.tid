@@ -1,0 +1,9 @@
+title: 20260307213137
+tags: nagios graphite _history @biblio prometheus
+roam-id: 4c1055bc-5eca-4d39-8bb1-bbd1f62916b8
+type: text/markdown
+
+> Monitoring has seen a shift toward tools including Prometheus in the past few years. For a long time, the dominant solution has been some combination of Nagios and Graphite or their variants.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

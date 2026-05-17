@@ -1,0 +1,13 @@
+title: Add Transclusion to Org Roam Node
+tags: orgmode orgroam emacs @zettel _method
+roam-id: 2c1fafb9-1dec-4509-88e5-42a2e3fad4df
+created: 20260416222700000
+modified: 20260416222700000
+type: text/markdown
+
+- insert org roam node link
+- add the following prefix (remove comma)
+
+``` text
+#+transclude: [[Install Org-Transclusion in Doom Emacs]]
+```

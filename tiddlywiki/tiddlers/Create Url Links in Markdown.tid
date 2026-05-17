@@ -1,0 +1,8 @@
+title: Create Url Links in Markdown
+tags: @zettel _method markdown
+roam-id: 42ad8125-c816-420c-90ea-8b16ae77fa46
+type: text/markdown
+
+``` markdown
+[Link text](https://website-name.com)
+```

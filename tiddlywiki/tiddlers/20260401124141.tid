@@ -1,0 +1,9 @@
+title: 20260401124141
+tags: @biblio k8s k8s_deployment _usecase
+roam-id: ceffcfe4-4436-40be-96b9-1920175f5873
+type: text/markdown
+
+> Deployment is a good fit for managing a stateless application workload on your cluster,
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

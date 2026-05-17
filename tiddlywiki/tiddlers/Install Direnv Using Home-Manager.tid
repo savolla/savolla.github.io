@@ -1,0 +1,17 @@
+title: Install Direnv Using Home-Manager
+tags: @zettel _method nix direnv
+roam-id: c57d503e-ca42-48e4-b02c-0866135985b9
+type: text/markdown
+
+``` nix
+# save this as shell.nix
+programs = {
+    direnv = {
+      enable = true;
+      enableBashIntegration = true; # see note on other shells below
+      nix-direnv.enable = true;
+    };
+
+    bash.enable = true; # see note on other shells below
+  };
+```

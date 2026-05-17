@@ -1,0 +1,12 @@
+title: Setup/Install Zoxide
+tags: zoxide @zettel _method
+roam-id: 45801074-2419-4fb3-ad56-1d98ec523ca1
+type: text/markdown
+
+- install `zoxide` package first
+
+- setting up zoxide for zsh below
+
+  ``` {.bash org-language="sh"}
+  zoxide init zsh
+  ```

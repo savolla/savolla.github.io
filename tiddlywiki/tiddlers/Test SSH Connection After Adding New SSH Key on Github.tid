@@ -1,0 +1,16 @@
+title: Test SSH Connection After Adding New SSH Key on Github
+tags: ssh github @zettel _method
+roam-id: be6f8a6f-1fda-4617-8c8d-a6edfff77bde
+created: 20260510155100000
+modified: 20260510155100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+ssh -T git@github.com
+```
+
+you should see a message like this:
+
+> Hi username! You\'ve successfully authenticated, but GitHub does not provide shell access.
+
+if you see this then all is OK

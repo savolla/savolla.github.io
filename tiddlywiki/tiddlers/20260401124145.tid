@@ -1,0 +1,9 @@
+title: 20260401124145
+tags: @biblio k8s k8s_statefulset k8s_pvc _usecase
+roam-id: 3ff2e68a-65b4-49ed-a5e9-22a1d6b1771b
+type: text/markdown
+
+> The most common use for a StatefulSet is to be able to make a link between its Pods and their persistent storage.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

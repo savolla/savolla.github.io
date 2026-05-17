@@ -1,0 +1,10 @@
+title: Get Size of Systemd Logs
+tags: systemd linux @zettel _method
+roam-id: e4d3264f-b7fd-4181-bb55-3d781a5abe39
+created: 20260504213500000
+modified: 20260504213500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo journalctl --disk-usage
+```

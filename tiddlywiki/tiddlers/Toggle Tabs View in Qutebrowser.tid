@@ -1,0 +1,16 @@
+title: Toggle Tabs View in Qutebrowser
+tags: @zettel _method qutebrowser
+roam-id: a7c8fb89-ed08-4f0c-8974-58393cb9988b
+type: text/markdown
+
+- [[Generate Qutebrowser Config File]]
+
+- put the following inside
+
+  ``` python
+  config.bind('tt', 'config-cycle tabs.show always never')
+  ```
+
+- restart your browser
+
+- this will make pressing `tt` toggle the tab view

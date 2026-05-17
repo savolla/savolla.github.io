@@ -1,0 +1,10 @@
+title: Add Bookmark in Buku
+tags: buku @zettel _method
+roam-id: dbde8879-974e-46ee-aaab-dd94d6bd7985
+created: 20260314181200000
+modified: 20260314181200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+buku -a https://your.url.com --title "title you want" -c "your comment here"
+```

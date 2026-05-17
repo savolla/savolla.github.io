@@ -1,0 +1,6 @@
+title: Remove an Image From Nexus Docker Registry
+tags: docker nexus @zettel _method
+roam-id: 4a82a516-fefb-462b-ad17-8b5688da74b7
+type: text/markdown
+
+- you can\'t delete from commandline. you must go to nexus ui and delete it from there

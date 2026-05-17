@@ -1,0 +1,8 @@
+title: Delete Remote Git Branch
+tags: @zettel _method git
+roam-id: 10fc6759-ddc5-4496-8a0b-b1e8b3545075
+type: text/markdown
+
+``` shell
+git push origin --delete YOUR_BRANCH_NAME
+```

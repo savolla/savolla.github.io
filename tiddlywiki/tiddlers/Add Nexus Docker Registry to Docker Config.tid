@@ -1,0 +1,22 @@
+title: Add Nexus Docker Registry to Docker Config
+tags: @zettel _method docker nexus
+roam-id: f115dcd6-d7af-43a5-ba5e-6b299a7877c3
+type: text/markdown
+
+- in `/etc/docker/daemon.json`
+
+  ``` json
+  {
+    "insecure-registries" : ["NEXUS_IP:YOUR_REPO_PORT"]
+  }
+  ```
+
+- here is an example
+
+  ``` json
+  {
+    "insecure-registries" : ["192.168.1.54:5000"]
+  }
+  ```
+
+- `sudo systemctl restart docker`

@@ -1,0 +1,6 @@
+title: Tags
+tags: 
+roam-id: d9797ada-2749-4b58-b9e0-804b5715c1b4
+type: text/markdown
+
+<$list filter="[tags[]] -[[$:/tags/AboveStory]] -[[$:/tags/Stylesheet]] -[[$:/tags/Palette]] -[[$:/tags/ViewTemplate]]"><<tag>></$list>

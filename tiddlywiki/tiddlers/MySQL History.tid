@@ -1,0 +1,10 @@
+title: MySQL History
+tags: _history mysql @query
+roam-id: 5a456f2d-58e3-4f6f-aa06-ece91cbdafc5
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_history]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

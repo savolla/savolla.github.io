@@ -1,0 +1,10 @@
+title: Display File Contents of a Gzip File Without Extracting It
+tags: zcat gzip @zettel _method
+roam-id: 973f6704-2715-4b42-9e43-17263addf725
+created: 20260308125600000
+modified: 20260308125600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+zcat /path/to/file.gz
+```

@@ -1,0 +1,15 @@
+title: Upgrade Gke Cluster
+tags: @zettel _method gcp k8s gke
+roam-id: 31ebef3a-0e41-4069-ba9d-d3bcdfde2d0f
+type: text/markdown
+
+- [[Set GCP Project]] to your target project
+- [[Get Cluster Name of a Specific Gke]] you can get **location**, cluster name etc with this command
+
+``` shell
+gcloud container clusters upgrade CLUSTER_NAME \
+  --node-pool=NODE_NAME \
+  --project=PROJECT_NAME \
+  --location=europe-west1-b \
+  --cluster-version 1.33.4-gke.1245000
+```

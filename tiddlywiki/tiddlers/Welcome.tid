@@ -1,0 +1,18 @@
+title: Welcome
+tags: 
+roam-id: b657bcb7-1ec1-48ad-ab00-441a3d757704
+type: text/markdown
+
+You\'re looking at a single 4MB portable html file that contains 900 [zettelkasten](Https://en-wikipedia-org.translate.goog/wiki/Zettelkasten?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc) notes that I took in 4 years (and it\'s counting).
+
+It\'s a living website and I add more and more constantly. I take my notes using an [emacs](https://en-wikipedia-org.translate.goog/wiki/Emacs?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc) package called [org-roam](https://www.orgroam.com/) and exporting all of my notes to [tiddlywiki](https://tiddlywiki.com/) compatible format (this website). the theme I\'m using is actually inspired by [andy matuschak](https://notes.andymatuschak.org/About_these_notes)\'s website. you can start exploring this mess using the following entry points;
+
+- [[Posts]]
+- [[Permanent Notes]]
+- [[Bibliographic Notes]]
+- [[Map of Content]]
+- [[Tags]]
+- [[Index]]
+- [[Personal]]
+
+Enjoy your stay, friend!

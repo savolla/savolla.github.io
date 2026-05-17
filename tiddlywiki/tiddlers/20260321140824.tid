@@ -1,0 +1,9 @@
+title: 20260321140824
+tags: decoupling _term @biblio
+roam-id: 48bc2ee6-e3b1-4556-8848-767ab7d0c0ee
+type: text/markdown
+
+> In a decoupled 2rchitecture, each component is separated from other components by defined APIs and service load balancers. APIs and load balancers isolate each piece of the system from the others. APIs provide a buffer between implementer and consumer, and load balancers provide a buffer between running instances of each service.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

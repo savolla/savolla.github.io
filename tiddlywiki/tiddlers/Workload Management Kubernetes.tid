@@ -1,0 +1,7 @@
+title: Workload Management Kubernetes
+tags: @biblio k8s
+roam-id: 7d50cb79-4c0f-43d9-80ec-48844f733e1c
+roam-refs: https://kubernetes.io/docs/concepts/workloads/controllers/
+type: text/markdown
+
+[Workload Management \| Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/)

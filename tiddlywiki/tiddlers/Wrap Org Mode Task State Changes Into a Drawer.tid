@@ -1,0 +1,12 @@
+title: Wrap Org Mode Task State Changes Into a Drawer
+tags: @zettel _method emacs orgmode
+roam-id: 85f5bd83-0ca3-4bef-8779-49ac9268efee
+type: text/markdown
+
+- I watched this video for the solution <https://www.youtube.com/watch?v=L0EJeN1fCYw&pp=ygUVZW1hY3MgcHJvdCBvcmctYWdlbmRh>
+
+- put the following into your emacs config
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (setq org-log-into-drawer t) ;; wrap org mode task state changes into a drawer
+  ```

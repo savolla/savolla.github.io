@@ -1,0 +1,14 @@
+title: Kubernetes Configmap File Example
+tags: @zettel _reference k8s
+roam-id: 4bc961c6-aaa2-4105-9cf0-29f1a99bb636
+type: text/markdown
+
+``` yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: changeme
+data:
+  variable0: "some value"
+  variable1: "some value"
+```

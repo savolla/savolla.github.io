@@ -1,0 +1,13 @@
+title: Start Tiddlywiki From Terminal
+tags: tiddlywiki @zettel _method
+roam-id: 31428415-676d-4fe5-bcc3-3fdd28934185
+created: 20260421182000000
+modified: 20260421182000000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+mkdir testwiki
+cd testwiki
+tiddlywiki --init
+tiddlywiki . --listen
+```

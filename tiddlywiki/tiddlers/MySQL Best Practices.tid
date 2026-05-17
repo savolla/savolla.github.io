@@ -1,0 +1,10 @@
+title: MySQL Best Practices
+tags: _bestpractice mysql @query
+roam-id: f5476b7d-ff11-4c06-8510-c6611c7a77ef
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_bestpractice]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

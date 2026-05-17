@@ -1,0 +1,8 @@
+title: List Installed Packages in Ubuntu
+tags: ubuntu apt
+roam-id: dbab0275-c28d-44fd-bb90-5896c2f2e770
+type: text/markdown
+
+``` shell
+sudo apt list --installed
+```

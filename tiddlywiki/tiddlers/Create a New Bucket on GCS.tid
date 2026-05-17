@@ -1,0 +1,10 @@
+title: Create a New Bucket on GCS
+tags: gcs gcp @zettel _method
+roam-id: 55e7c9da-b311-434f-aae3-522edc280656
+created: 20260402175100000
+modified: 20260402175100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gsutil mb gs://bucket_name
+```

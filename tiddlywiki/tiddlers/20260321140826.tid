@@ -1,0 +1,9 @@
+title: 20260321140826
+tags: crisp_api _pro @biblio
+roam-id: 8a052804-a59a-4799-a161-a6e8ebe6e460
+type: text/markdown
+
+> Crisp APIs betw2en microservices limit the amount of cross-team communica tion overhead required to build and deploy software. This communication overhead is often the major restricting factor when scaling teams.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

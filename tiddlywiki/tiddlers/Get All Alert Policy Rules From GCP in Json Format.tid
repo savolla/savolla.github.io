@@ -1,0 +1,8 @@
+title: Get All Alert Policy Rules From GCP in Json Format
+tags: @zettel _method gcp json
+roam-id: 31292656-2649-4c31-9ab2-193551cd7ff4
+type: text/markdown
+
+``` shell
+gcloud alpha monitoring policies list --format=json  > alert_policies.json
+```

@@ -1,0 +1,7 @@
+title: Get Version of Emacs Package
+tags: emacs @zettel _method
+roam-id: 82a87929-650c-4426-ac0a-4e63bd2d560b
+type: text/markdown
+
+- do `M-x describe-package`
+- find your package and version will be displayed

@@ -1,0 +1,12 @@
+title: Fix Kubernetes Deployment Timeout Problems in Jenkins
+tags: jenkins k8s @zettel _method
+roam-id: 12244bfa-a88a-44a9-b7c5-3b52c05e6a66
+created: 20260414084700000
+modified: 20260414084700000
+type: text/markdown
+
+use `progressDeadlineSeconds` like this:
+
+``` yaml
+TODO
+```

@@ -1,0 +1,11 @@
+title: 202604301647
+tags: _mechanism @biblio claude_code
+roam-id: 18233d3a-8ddc-4024-a58e-6a7e362f6897
+created: 20260430164700000
+modified: 20260430164700000
+type: text/markdown
+
+coding assistant sits between the user and LLMs. it takes prompts from the user, adds extra information to the prompt and sends the final prompts to the LLM
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

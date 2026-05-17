@@ -1,0 +1,9 @@
+title: Set Default Directory to $HOME in Emacs Workspace
+tags: @zettel _method
+roam-id: 2bf4e336-49bc-46ea-9b3c-e8f79224dbc9
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+(setq default-directory (expand-file-name "~/"))
+```

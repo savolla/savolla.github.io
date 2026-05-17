@@ -1,0 +1,11 @@
+author: Byper
+core-version: >=5.0.0
+dependents: 
+description: Advanced Search plugin for TiddlyWiki
+list: readme settings history
+name: Advanced Search
+plugin-type: plugin
+source: https://github.com/b-yp/tiddlywiki-plugins
+title: $:/plugins/byper/advanced-search
+type: application/json
+version: 1.0.1

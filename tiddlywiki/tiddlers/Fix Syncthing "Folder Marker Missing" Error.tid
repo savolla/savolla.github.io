@@ -1,0 +1,9 @@
+title: Fix Syncthing "Folder Marker Missing" Error
+tags: syncthing @zettel _fix
+roam-id: b72bbdb3-c6d5-4f19-ba0d-72d7dc8c9f7f
+type: text/markdown
+
+- go to the folder you want to sync
+- create a new file `.stfolder`
+- restart the sync process
+- so syncthing will see that this is a \"syncthing folder\" and will start syncing

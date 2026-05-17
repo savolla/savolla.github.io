@@ -1,0 +1,11 @@
+title: Disable Internetet Connection of a Program
+tags: firejail network linux
+roam-id: 927bd527-441c-4179-b647-07c4fd74d706
+type: text/markdown
+
+``` shell
+firejail --noprofile --net=none heroic
+```
+
+- the `--noprofile` option is only necessary for nixos
+- if you want to disable internet for multiple tools in your system, then using opensnitch is a better solution

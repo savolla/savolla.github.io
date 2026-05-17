@@ -1,0 +1,13 @@
+title: Auto Save Org Buffers
+tags: doomemacs emacs orgmode @zettel _method
+roam-id: 3c873700-ef3e-4efa-9162-af1c948b6a06
+roam-refs: https://christiantietze.de/posts/2019/03/sync-emacs-org-files/
+created: 20260313192600000
+modified: 20260313192600000
+type: text/markdown
+
+in your `init.el` or `config.el` if you\'re using doom emacs
+
+``` elisp
+(add-hook 'auto-save-hook 'org-save-all-org-buffers)
+```

@@ -1,0 +1,9 @@
+title: Create Sine Wave in Supercollider
+tags: @zettel _method supercollider
+roam-id: 7958a787-ad60-4986-8585-4832e8f37dcb
+type: text/markdown
+
+``` scd
+s.boot
+{SinOsc.ar}.play;
+```

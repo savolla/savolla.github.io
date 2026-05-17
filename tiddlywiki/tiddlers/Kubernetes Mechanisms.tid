@@ -1,0 +1,10 @@
+title: Kubernetes Mechanisms
+tags: _mechanism k8s @query
+roam-id: bb2e834f-b0f2-453c-98f0-b9d72f5a1867
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_mechanism]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

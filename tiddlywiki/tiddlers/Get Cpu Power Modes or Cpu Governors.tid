@@ -1,0 +1,8 @@
+title: Get Cpu Power Modes or Cpu Governors
+tags: @zettel _method linux power
+roam-id: 397c43ff-d236-402e-9d3a-fd6d49c34ede
+type: text/markdown
+
+``` shell
+sudo cpupower --cpu 0 frequency-info --governors | grep "analyzing\|governors"
+```

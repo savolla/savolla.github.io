@@ -1,0 +1,11 @@
+title: Check if Emacs Is Natively Compiled
+tags: @zettel _method emacs
+roam-id: 318bd52e-7883-48e5-a337-469c24145de2
+type: text/markdown
+
+``` elisp
+(describe-variable)
+(system-configuration-features)
+```
+
+look for the string `NATIVE_COMP`

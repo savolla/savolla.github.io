@@ -1,0 +1,11 @@
+title: 202604301637
+tags: _property @biblio claude_code
+roam-id: 6c394df7-804c-4d89-848c-0f724d065e49
+created: 20260430163700000
+modified: 20260430163700000
+type: text/markdown
+
+coding agents are actually LLMs but with software layers on top. these software layers hint LLMs for doing extra stuff on the system like reading files, sending commands etc.
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

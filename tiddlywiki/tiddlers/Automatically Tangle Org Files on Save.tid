@@ -1,0 +1,29 @@
+title: Automatically Tangle Org Files on Save
+tags: @zettel _method orgmode doomemacs
+roam-id: 92787191-e267-41b2-972c-1c5d7bb2b53c
+type: text/markdown
+
+- put the following into your `packages.el` first
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  ;; doom/packages.el
+  ;; org mode automatic tangle on save
+  (package! org-auto-tangle)
+  ```
+
+- then this into your `config.el`
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  ;; doom/config.el
+  ;; tangle source codes on save automatically
+  (use-package! org-auto-tangle
+    :defer t
+    :hook (org-mode . org-auto-tangle-mode)
+    :config
+    (setq org-auto-tangle-default t)
+    )
+  ```
+
+- [[Refresh Doom Emacs]]
+
+- also see [[Pre Define Org Code Block Properties]]

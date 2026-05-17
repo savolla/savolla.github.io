@@ -1,0 +1,10 @@
+title: Insert Anonymous Footnotes in Org Mode
+tags: orgmode @zettel _method
+roam-id: 165401f6-d73c-440f-8fe8-38be9f4b2cb7
+created: 20260501214600000
+modified: 20260501214600000
+type: text/markdown
+
+``` org
+[fn:: some content]
+```

@@ -1,0 +1,15 @@
+title: Enable Clipboard Sharing Between Host and KVM Virtual Machines on Nixos
+tags: libvirt kvm virtualization nixos nix spice @zettel _method
+roam-id: 53eb2e39-8b90-4a95-a9b3-0d415935e8cf
+created: 20260514214600000
+modified: 20260514214600000
+type: text/markdown
+
+``` nix
+services = {
+  spice-vdagentd = {
+    # share clipboard, files etc. with virtual machines
+    enable = true;
+  };
+};
+```

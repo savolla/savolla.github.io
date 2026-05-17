@@ -1,0 +1,10 @@
+title: Get List of Permissions/Auths for GCP
+tags: gcloud gcp @zettel _method
+roam-id: 22142d62-0e89-4afe-9e2f-7e0691c365fd
+created: 20260511141500000
+modified: 20260511141500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gcloud auth list
+```

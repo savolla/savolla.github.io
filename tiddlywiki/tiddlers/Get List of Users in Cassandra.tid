@@ -1,0 +1,8 @@
+title: Get List of Users in Cassandra
+tags: @zettel _method cassandra
+roam-id: f4dd5ce5-361e-428f-af50-25bc9a931deb
+type: text/markdown
+
+``` sql
+list roles;
+```

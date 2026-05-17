@@ -1,0 +1,8 @@
+title: Specify Custom home.nix File Path When Doing Home-Manager Switch
+tags: homemanager nix @zettel _method
+roam-id: a0c92252-c479-455c-a331-69e4fb1c899c
+type: text/markdown
+
+``` {.bash org-language="sh"}
+home-manager switch -f /path/to/home.nix
+```

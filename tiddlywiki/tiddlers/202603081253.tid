@@ -1,0 +1,8 @@
+title: 202603081253
+tags: gzip zcat @zettel _usecase
+roam-id: 8e660eae-6351-4c35-a221-4b01fca80758
+created: 20260308125300000
+modified: 20260308125300000
+type: text/markdown
+
+use zcat if you want to cat content of gzipped file directly without extracting it first

@@ -1,0 +1,12 @@
+title: Prevent Tangle for an Org Mode Source Block
+tags: @zettel _method orgmode
+roam-id: 89447aa1-bbe5-4dc7-a3cc-037db8e6411e
+type: text/markdown
+
+- use `:tangle no` option
+
+``` org
+#+BEGIN_SRC emacs-lisp :tangle no
+  (message "This code will NOT be tangled")
+#+END_SRC
+```

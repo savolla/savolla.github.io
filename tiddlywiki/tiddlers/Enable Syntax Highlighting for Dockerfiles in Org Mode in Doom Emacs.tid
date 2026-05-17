@@ -1,0 +1,7 @@
+title: Enable Syntax Highlighting for Dockerfiles in Org Mode in Doom Emacs
+tags: @zettel _method orgmode docker doomemacs
+roam-id: 4e83057a-4737-4ba4-b258-30cdeb7da56f
+type: text/markdown
+
+- just enable the `docker` package in `doom/init.el`
+- rebuild doom emacs

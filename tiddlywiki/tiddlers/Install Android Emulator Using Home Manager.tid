@@ -1,0 +1,86 @@
+title: Install Android Emulator Using Home Manager
+tags: homemanager nix android @zettel _method @post
+roam-id: 6b88985e-27c6-4161-b58d-0534edd0da4a
+created: 20260505123700000
+modified: 20260505123700000
+type: text/markdown
+
+- Enable Android support in nixpkgs in home.nix
+
+``` nix
+{
+  nixpkgs.config = {
+    allowUnfree = true;
+    android_sdk.accept_license = true;
+  };
+}
+```
+
+Add the following variable in home.nix
+
+``` nix
+let
+  android = pkgs.androidenv.composeAndroidPackages {
+    platformVersions = [ "34" ];
+    abiVersions = [ "x86_64" ];
+    # systemImageTypes = [ "default" ]; # stock AOSP (no google)
+    # systemImageTypes = [ "google_apis" ]; # only google no play store
+    systemImageTypes = [ "google_apis_playstore" ]; # google + play store
+
+    includeEmulator = true;
+    includeSystemImages = true;
+    includePlatformTools = true;
+  };
+in
+```
+
+Add session variables and packages
+
+``` nix
+home.packages = [
+  android.androidsdk
+  pkgs.qemu
+  pkgs.libGL
+  pkgs.gtk3
+];
+```
+
+Add the session variables.
+
+``` nix
+home.sessionVariables = {
+  ANDROID_HOME = "${android.androidsdk}/libexec/android-sdk";
+  ANDROID_SDK_ROOT = "${android.androidsdk}/libexec/android-sdk";
+};
+```
+
+Note that these variables will be sourced on your next login. That\'s why you need to create them right now
+
+``` {.bash org-language="sh"}
+export ANDROID_SDK_ROOT="$HOME/.nix-profile/libexec/android-sdk"
+export ANDROID_HOME="$ANDROID_SDK_ROOT"
+```
+
+Check if all those packages are installed
+
+``` {.bash org-language="sh" results="drawer"}
+which emulator
+which avdmanager
+```
+
+:results: *home/kkoc*.nix-profile/bin/emulator *home/kkoc*.nix-profile/bin/avdmanager
+
+Create an avd android emulator
+
+``` {.bash org-language="sh"}
+avdmanager create avd \
+  -n pixel-playstore \
+  -k "system-images;android-34;google_apis_playstore;x86_64" \
+  -d pixel
+```
+
+Run android emulator
+
+``` {.bash org-language="sh"}
+nixGL emulator -avd pixel-playstore -gpu host
+```

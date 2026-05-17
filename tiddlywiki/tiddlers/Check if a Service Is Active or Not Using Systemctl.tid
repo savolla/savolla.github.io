@@ -1,0 +1,8 @@
+title: Check if a Service Is Active or Not Using Systemctl
+tags: @zettel _method systemd
+roam-id: 1d6c8031-040b-4a24-8be5-6a76f250e609
+type: text/markdown
+
+``` shell
+systemctl is-active <service-name>
+```

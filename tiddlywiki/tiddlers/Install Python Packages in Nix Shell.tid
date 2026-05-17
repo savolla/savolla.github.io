@@ -1,0 +1,29 @@
+title: Install Python Packages in Nix Shell
+tags: @zettel _method python nix
+roam-id: 3ce9c05c-8113-40ca-921e-c017c0bf72d3
+type: text/markdown
+
+here is an example. I install `requests` module into my `python3` environment. I install `git` and `curl` just to indicate how you\'d instal normal packages other than python and it\'s dependencies
+
+``` nix
+{ pkgs ? import <nixpkgs> {} }:
+
+with pkgs;
+
+mkShell {
+  buildInputs = [
+    git
+    curl 
+
+    (python3.withPackages (ps: with ps; [
+      google-api-python-client
+      google-cloud-storage
+      google-cloud-bigquery
+      google-cloud-core
+      google-cloud-pubsub
+    ]))
+  ];
+}
+```
+
+**NOTE**: I highly recommend using **pure** nix shells to reduce python version conflicts. also use `direnv` to automatically enter into nix shell when you `cd` into this directory

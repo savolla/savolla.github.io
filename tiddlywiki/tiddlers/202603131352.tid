@@ -1,0 +1,8 @@
+title: 202603131352
+tags: elasticsearch @zettel _constraint
+roam-id: ecaac2a0-f4c6-428f-8e45-4140f87da8e0
+created: 20260313135200000
+modified: 20260313135200000
+type: text/markdown
+
+elasticsearch does not have a webui. but kibana can be used for that purpose

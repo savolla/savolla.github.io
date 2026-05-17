@@ -1,0 +1,9 @@
+title: Mutability
+tags: mutability _term @biblio k8s
+roam-id: 4d8beefd-bf38-41cb-af83-91a7c5eb3e2c
+type: text/markdown
+
+> mutable infrastructure, changes are applied as incremental updates to an existing system. These updates can occur all at once, or spread out across a long period of time. A system upgrade via the apt-get update tool is a good example of an update to a mutable system.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

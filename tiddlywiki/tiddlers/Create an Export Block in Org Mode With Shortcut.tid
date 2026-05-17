@@ -1,0 +1,6 @@
+title: Create an Export Block in Org Mode With Shortcut
+tags: @zettel _method orgmode
+roam-id: 44219d3e-65fe-41a7-969e-b220e563a6d8
+type: text/markdown
+
+- in **doom emacs** you can insert an export block by doing `<E` and press `Tab`

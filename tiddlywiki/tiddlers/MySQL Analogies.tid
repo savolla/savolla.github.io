@@ -1,0 +1,10 @@
+title: MySQL Analogies
+tags: mysql @query _analogy
+roam-id: 7823e3d1-2d7e-4d63-8c26-10bcb3874dd2
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_analogy]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,8 @@
+title: Create Extra Cursor in Doom Emacs
+tags: emacs doomemacs @zettel _method
+roam-id: ef6f44c2-0d91-40b2-89d5-8576dfd0793a
+created: 20260510150900000
+modified: 20260510150900000
+type: text/markdown
+
+use `g z z`

@@ -1,0 +1,12 @@
+title: 202604142007
+tags: message_broker kafka rabbitmq pubsub @zettel _mechanism
+roam-id: e17d4a01-082f-45db-86c2-2f5c4c997f30
+roam-refs: https://www.youtube.com/watch?v=wb4qcdb0XWw
+created: 20260414200700000
+modified: 20260414200700000
+type: text/markdown
+
+message broker is a middle element between an event publisher (like microservice) and subscribers to that event publisher.
+
+- publisher sends message to message broker
+- message broker distributes messages to the subscribers

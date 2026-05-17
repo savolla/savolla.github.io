@@ -1,0 +1,6 @@
+title: 20260214114316
+tags: k8s @zettel _bestpractice
+roam-id: f38cc47d-8cb2-44c1-bc4a-07795d279eb6
+type: text/markdown
+
+for a **manually managed** kubernetes cluster, the officially recommended kubernetes installation method is **kubeadm**

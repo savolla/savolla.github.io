@@ -1,0 +1,26 @@
+title: Read Epub on Doom Emacs
+tags: @zettel _method doomemacs epub
+roam-id: b15d6b5a-294e-49de-b2d3-44b6c208b2a8
+type: text/markdown
+
+- add the following into `packages.el`
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (package! nov)
+  ```
+
+- in your `config.el` add
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (use-package! nov
+    :mode ("\\.epub\\'" . nov-mode)
+    :config
+    (setq nov-text-width 80) ;; Or set to nil for auto width
+    (add-hook 'nov-mode-hook #'visual-line-mode))
+  ```
+
+- [[Refresh Doom Emacs]]
+
+- you also may want to [[Restart Doom Emacs]] if any error occurs
+
+- open an `.epub` file with `find-file`

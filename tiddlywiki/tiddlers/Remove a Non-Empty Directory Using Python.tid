@@ -1,0 +1,9 @@
+title: Remove a Non-Empty Directory Using Python
+tags: @zettel _method python
+roam-id: 9ffb9621-e355-4574-9076-3807bcd09039
+type: text/markdown
+
+``` python
+import shutil
+shutil.rmtree(output_file.strip(".tar.xz"))
+```

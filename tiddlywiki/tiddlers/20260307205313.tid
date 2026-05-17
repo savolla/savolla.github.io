@@ -1,0 +1,11 @@
+title: 20260307205313
+tags: prometheus_exporter mysql postgresql redis jmx snmp consul kafka haproxy _usecase @biblio prometheus
+roam-id: 6afdcf33-5ab9-4023-a0ec-45de8b53dd8a
+type: text/markdown
+
+> include HAProxy, MySQL, PostgreSQL, Redis, JMX, SNMP, Consul, and Kafka.
+
+prometheus exporter can be used for exporting those tools\' metrics
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

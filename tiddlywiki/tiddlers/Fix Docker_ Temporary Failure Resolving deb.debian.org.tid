@@ -1,0 +1,10 @@
+title: Fix Docker: Temporary Failure Resolving deb.debian.org
+tags: docker @zettel _fix
+roam-id: a9653950-993e-4dae-ab93-3bf73b621d52
+type: text/markdown
+
+this may happen when you build a docker image. simply restart the docker daemon
+
+``` shell
+sudo systemctl restart docker
+```

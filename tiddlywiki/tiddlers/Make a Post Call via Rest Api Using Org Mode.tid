@@ -1,0 +1,15 @@
+title: Make a Post Call via Rest Api Using Org Mode
+tags: @zettel _method orgmode rest
+roam-id: 428314f8-6383-4584-b6b8-662055de6869
+type: text/markdown
+
+``` {.restclient results="output"}
+POST http://127.0.0.1:8000/todo/todos/
+Content-Type: application/json
+
+{
+  "title": "Write Emacs config",
+  "description": "Add org-mode + restclient examples",
+  "completed": false
+}
+```

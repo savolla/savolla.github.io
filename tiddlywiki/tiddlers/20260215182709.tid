@@ -1,0 +1,6 @@
+title: 20260215182709
+tags: terraform @zettel _fact
+roam-id: f083c238-42d6-4d9c-8c4b-507d0e476f25
+type: text/markdown
+
+`.tfvars` file is where you **define variables** like giving them the actual values. while `variables.tf` is there you **declare variables**. giving them which type and name should they have

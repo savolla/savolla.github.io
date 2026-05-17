@@ -1,0 +1,14 @@
+title: References
+tags: 
+roam-id: 81c0b74c-1fb1-48e5-842e-a0eafc46aad1
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_reference]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

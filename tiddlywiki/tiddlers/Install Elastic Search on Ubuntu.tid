@@ -1,0 +1,18 @@
+title: Install Elastic Search on Ubuntu
+tags: @zettel _method elasticsearch ubuntu
+roam-id: 8f1c14d7-523c-4116-baef-0b84ddab0d02
+type: text/markdown
+
+``` shell
+apt install gpg curl -y
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elastic.gpg
+echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+apt update
+apt install elasticsearch -y
+# generated elasticsearch superuser password: qlY717dPYqU7r6v1g3ry
+
+# start elasticsearch
+sudo systemctl daemon-reload
+sudo systemctl enable elasticsearch.service
+sudo systemctl start elasticsearch.service
+```

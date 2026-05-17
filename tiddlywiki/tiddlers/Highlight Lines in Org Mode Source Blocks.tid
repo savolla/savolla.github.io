@@ -1,0 +1,16 @@
+title: Highlight Lines in Org Mode Source Blocks
+tags: @zettel _method orgmode
+roam-id: c451d668-97fc-44fe-be19-d61db96ebbe9
+type: text/markdown
+
+here is an example. I\'ll highlight the first line and from third line to 5 line
+
+``` org
+#+begin_src python :hl_lines 1,3-5
+def f(a, b):
+    sum = a + b
+    return sum + 42
+
+c = f(12,3)
+#+end_src
+```

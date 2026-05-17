@@ -1,0 +1,9 @@
+title: 20260307213133
+tags: alerting _term @biblio prometheus
+roam-id: 4dd05492-1089-491b-adde-10b81b2c9536
+type: text/markdown
+
+> Alerting Knowing when things are going wrong is usually the most important thing that you want monitoring for. You want the monitoring system to call in a human to take a look.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

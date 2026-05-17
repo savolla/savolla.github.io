@@ -1,0 +1,8 @@
+title: List Errors of a Systemd Service
+tags: @arrow @zettel _method systemd
+roam-id: 79524c64-5662-477e-bb2f-93a8547087ed
+type: text/markdown
+
+``` shell
+journalctl -xeu kube-apiserver.service
+```

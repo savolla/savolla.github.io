@@ -1,0 +1,14 @@
+title: Fix Ollama Is Not Reachable From Another Machine on the Local Network
+tags: nixos ollama @zettel _fix
+roam-id: 2b6c2e4a-3bfb-4131-a097-29815c2623a1
+created: 20260320224600000
+modified: 20260320224600000
+type: text/markdown
+
+set ollama\'s host to 0.0.0.0
+
+on nixos you can set it in the options like
+
+``` nix
+services.ollama.host = "0.0.0.0";
+```

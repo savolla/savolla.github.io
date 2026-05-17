@@ -1,0 +1,11 @@
+title: Download Webpages as PDF
+tags: wkhtmltopdf pdf @zettel _method
+roam-id: b4005a31-0d07-4d3a-a1ca-49cda79933b9
+type: text/markdown
+
+- download the tool called `wkhtmltopdf`
+- copy the url
+
+``` {.bash org-language="sh"}
+wkhtmltopdf https://link.to/webpage.html output.pdf
+```

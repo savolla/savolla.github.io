@@ -1,0 +1,8 @@
+title: Get All Google Cloud Storage Elements Buckets
+tags: @zettel _method gcp
+roam-id: b6573ba5-bc5e-4cf5-8afe-42961280ba6d
+type: text/markdown
+
+``` shell
+gcloud storage ls
+```

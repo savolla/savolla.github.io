@@ -1,0 +1,16 @@
+title: 20260307220956
+tags: tracing logging profiling monitoring _pattern @biblio prometheus
+roam-id: f35fd26b-2156-42aa-b591-a476b3d33442
+type: text/markdown
+
+> Having all the context for all the events would be great for debugging and understanding how your systems are performing in both technical and business terms, but that amount of data is not practical to process and store. Thus, we see roughly four ways to approach reducing that volume of data to something workable, namely profiling, tracing, logging, and metrics.
+
+there are 4 categories of monitoring;
+
+- profiling
+- tracing
+- logging
+- metrics
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

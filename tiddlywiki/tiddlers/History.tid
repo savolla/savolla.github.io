@@ -1,0 +1,14 @@
+title: History
+tags: 
+roam-id: fa9d144e-4ec1-4a75-b4e3-1bf3974523bf
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_history]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

@@ -1,0 +1,10 @@
+title: Get Currently Running Script's Directory PWD
+tags: _method @zettel bash pwd
+roam-id: c38121f4-46bd-4998-b463-f5ddb9310df1
+type: text/markdown
+
+that solves a very specific problem...
+
+``` shell
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+```

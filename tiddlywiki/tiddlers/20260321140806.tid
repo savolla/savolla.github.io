@@ -1,0 +1,9 @@
+title: 20260321140806
+tags: _term @biblio k8s software_velocity
+roam-id: c0628db8-9f5b-4333-adf3-f9a140155d49
+type: text/markdown
+
+> velocity is measured not in terms of the raw number of features you can ship per hour or day, but rather in terms of the number of things you can ship while maintaining a highly available service.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

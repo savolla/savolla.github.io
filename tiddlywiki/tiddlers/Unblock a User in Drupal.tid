@@ -1,0 +1,8 @@
+title: Unblock a User in Drupal
+tags: slack drush sql @zettel _method drupal
+roam-id: 3a7314df-d12f-43bf-9a53-87875b64da29
+type: text/markdown
+
+``` {.bash org-language="sh"}
+drush sql:query "truncate flood;"
+```

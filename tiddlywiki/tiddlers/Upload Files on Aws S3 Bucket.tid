@@ -1,0 +1,18 @@
+title: Upload Files on Aws S3 Bucket
+tags: @zettel aws _method
+roam-id: e94f4f41-1fe3-4ac7-b27e-e6fe3a1700cd
+type: text/markdown
+
+assume we have an s3 bucket named `s3-92827`
+
+- upload a single file
+
+``` shell
+aws s3 cp ./file.txt s3://s3-92827/
+```
+
+- upload a directory )
+
+``` shell
+aws s3 cp ./folder s3://s3-92827/ --recursive
+```

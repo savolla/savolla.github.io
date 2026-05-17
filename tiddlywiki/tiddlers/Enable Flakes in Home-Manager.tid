@@ -1,0 +1,17 @@
+title: Enable Flakes in Home-Manager
+tags: @zettel _method nix homemanager
+roam-id: bff70461-690e-4cb2-aec3-3c8c4b82e33b
+type: text/markdown
+
+in your `~/.config/home-manager/home.nix` put the following\`
+
+``` nix
+{
+  ...
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
+  ...
+}
+```

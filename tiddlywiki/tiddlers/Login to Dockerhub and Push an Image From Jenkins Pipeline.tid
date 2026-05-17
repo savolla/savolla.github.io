@@ -1,0 +1,69 @@
+title: Login to Dockerhub and Push an Image From Jenkins Pipeline
+tags: @zettel _method dockerhub jenkins _e
+roam-id: fbdf2537-bd63-4d03-bc15-d5edb161b98d
+type: text/markdown
+
+- first you need to [[Integrate Docerhub With Jenkins]]
+- here is an example about how to do it.
+
+``` groovy
+pipeline {
+    agent { label 'agent-java' }
+
+    environment {
+        GIT_REPO_URL="http://192.168.1.52/savolla/java-demo"
+        GIT_REPO_BRANCH="main"
+        GIT_REPO_DIR="java-demo"
+        DOCKERHUB_CREDS=credentials('dockerhub-savolla')
+        DOCKERHUB_USER="savolla"
+    }
+
+    stages {
+        stage('Git Clone') {
+            steps {
+                sh '''
+              if [[ ! -d "$GIT_REPO_DIR" ]]
+              then
+                git clone "$GIT_REPO_URL"
+              else
+                cd "$GIT_REPO_DIR"
+              fi
+              git pull
+              git checkout $GIT_REPO_BRANCH
+            '''
+            }
+        }
+        stage('Build Project') {
+            steps {
+                sh '''
+              cd "$GIT_REPO_DIR"
+              ./gradlew bootJar
+            '''
+            }
+        }
+        stage('Containerization') {
+            steps {
+                sh '''
+              cd "$GIT_REPO_DIR"
+              docker build -t $DOCKERHUB_USER/java-demo .
+            '''
+            }
+        }
+        stage('Upload to DockerHub') {
+            steps {
+                sh '''
+              echo $DOCKERHUB_CREDS_PSW | docker login -u $DOCKERHUB_CREDS_USR --password-stdin
+              docker push $DOCKERHUB_USER/java-demo:latest
+            '''
+            }
+        }
+    }
+    post {
+        always {
+            sh '''
+              docker logout
+            '''
+        }
+    }
+}
+```

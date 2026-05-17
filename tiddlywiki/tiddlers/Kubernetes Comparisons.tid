@@ -1,0 +1,10 @@
+title: Kubernetes Comparisons
+tags: _comparison k8s @query
+roam-id: 1e2a68e3-f29a-4136-85be-1ccbe8f55cd0
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_comparion]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

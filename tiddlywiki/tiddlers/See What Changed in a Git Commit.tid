@@ -1,0 +1,20 @@
+title: See What Changed in a Git Commit
+tags: @zettel _method git
+roam-id: ee7bf474-efdd-4aaf-b916-17beb539a805
+type: text/markdown
+
+``` shell
+git show $COMMIT_HASH
+```
+
+or you can show what changed in the last commit using `HEAD`
+
+``` shell
+git show HEAD
+```
+
+or the previous commit
+
+``` shell
+git show HEAD~1
+```

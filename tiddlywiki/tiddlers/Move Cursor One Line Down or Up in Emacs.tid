@@ -1,0 +1,9 @@
+title: Move Cursor One Line Down or Up in Emacs
+tags: @zettel _method emacs
+roam-id: b286591a-f476-4464-be73-c47e78c45120
+type: text/markdown
+
+``` elisp
+(forward-line 2) ;; moves cursor 2 lines down
+(forward-line -2) ;; moves cursor 2 lines up
+```

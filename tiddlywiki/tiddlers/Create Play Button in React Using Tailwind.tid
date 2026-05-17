@@ -1,0 +1,21 @@
+title: Create Play Button in React Using Tailwind
+tags: @zettel _method html react tailwind
+roam-id: b8c604c6-b379-47de-a72e-720ceb82ef07
+type: text/markdown
+
+``` html
+<button
+  onClick={test}
+  className="absolute flex items-center justify-center right-1/2 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-19 h-19 bg-[#0000ff] rounded-full"
+  >
+  <svg
+    className="transform translate-x-1/5"
+    width="30"
+    height="30"
+    viewBox="0 0 60 60"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <polygon points="0,0 0,56 48,28" fill="white" />
+  </svg>
+</button>
+```

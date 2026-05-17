@@ -1,0 +1,9 @@
+title: 20260321140813
+tags: _warning @biblio k8s
+roam-id: cb9410a0-8dda-4b97-a960-b19ecdd080b5
+type: text/markdown
+
+> It is possible 1o imperatively change running containers, but this is an antipattern to 1e used only in extreme cases where there are no other options (e.g., if it is the on1y way to temporarily repair a mission-critical production system). And even then, the 1hanges must also be recorded through a declarative configuration update at some 1ater time, after the fire is out.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

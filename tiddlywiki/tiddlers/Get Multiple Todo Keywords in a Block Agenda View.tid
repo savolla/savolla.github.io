@@ -1,0 +1,21 @@
+title: Get Multiple Todo Keywords in a Block Agenda View
+tags: @zettel _method orgagenda
+roam-id: 3ea1523c-7a21-48fa-89f7-718bcd9344e1
+type: text/markdown
+
+- notice `"DOING|NEXT|WAIT"` string below
+
+``` {.commonlisp org-language="emacs-lisp"}
+(setq org-agenda-custom-commands
+      '(("b" "2-day Agenda"
+
+         (
+          (todo "DOING|NEXT|WAIT" ((org-agenda-overriding-header " 󱌣  Currently Working")))
+          (agenda "" ((org-agenda-overriding-header "") ; make current date as header
+                      (org-agenda-start-day "0d") ; start from today
+                      (org-agenda-span 2) ; display 2 days
+                      (org-deadline-warning-days 14))) ; remind upcoming deadlines before 2 weeks
+
+          (todo "CONTEXT" ((org-agenda-overriding-header "")))
+          ))))
+```

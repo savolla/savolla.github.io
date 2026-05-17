@@ -1,0 +1,18 @@
+title: Include and Exclude Tags in Org Agenda Custom Commands
+tags: @zettel _method orgagenda
+roam-id: d9b483eb-2dca-462d-9746-3f8962b0be66
+type: text/markdown
+
+- check out the followin function
+
+``` {.commonlisp org-language="emacs-lisp"}
+;; active contexts
+(tags "+_c+personal+project-_j"
+      ((org-agenda-overriding-header "󱗾  Contexts")
+       (org-agenda-skip-function
+        (lambda ()
+          (unless (org-entry-get (point) "ID")
+            (or (outline-next-heading) (point-max)))))))
+```
+
+- `"+_c+personal+project-_j"` includes `_c`, `personal` and `project` tags while excluding `_j` tags.

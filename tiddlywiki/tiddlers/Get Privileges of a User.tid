@@ -1,0 +1,10 @@
+title: Get Privileges of a User
+tags: mysql @zettel _method
+roam-id: 506c5382-4279-457c-84a8-d44e64940e72
+created: 20260406165700000
+modified: 20260406165700000
+type: text/markdown
+
+``` sql
+SHOW GRANTS FOR 'kkoc'@'%';
+```

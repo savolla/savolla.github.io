@@ -1,0 +1,9 @@
+title: 20260401124151
+tags: @biblio k8s_daemonset _property k8s
+roam-id: 549f5b78-d074-4511-990c-b1cad1799b53
+type: text/markdown
+
+> You can run Dae5onSets (and their pods) across every no5e in your cluster, or across just a subset
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

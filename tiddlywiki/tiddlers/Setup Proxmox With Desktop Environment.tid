@@ -1,0 +1,14 @@
+title: Setup Proxmox With Desktop Environment
+tags: @zettel _method proxmox
+roam-id: 68f08260-985c-43a1-8486-1ef706ac6fcc
+type: text/markdown
+
+- install basic packages
+
+``` shell
+apt update
+apt upgrade
+apt install dwm suckless-tools stterm lightdm firefox-esr virt-viewer neovim btop
+```
+
+-

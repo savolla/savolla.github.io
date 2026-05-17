@@ -1,0 +1,14 @@
+title: Properties
+tags: 
+roam-id: f736f2ca-88e6-44eb-9ee3-f2b9ffffeb95
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_property]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

@@ -1,0 +1,9 @@
+title: Create in-Document Links Using Org Mode
+tags: @zettel _method orgmode
+roam-id: 8d5c22c7-be61-4004-a16b-b3c9d182a728
+type: text/markdown
+
+- navigate to the section you want
+- store link by doing `SPC m l s` (in doom emacs) or do `M-x org-store-link`
+- then go to the section you want to store this link
+- do `SPC m l l`

@@ -1,0 +1,24 @@
+title: Use Environment Variables in a Jenkins Pipeline
+tags: @zettel _method jenkins
+roam-id: 54452c9e-e274-4ec5-a9fa-8f796a45b78b
+type: text/markdown
+
+``` groovy
+pipeline {
+    agent { label 'agent-java' }
+
+    environment {
+        VAR0 = 'something'
+        VAR1 = 'another variable'
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+```

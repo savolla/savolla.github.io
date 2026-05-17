@@ -1,0 +1,24 @@
+title: Reference an Environment Variable in Jenkins Pipeline
+tags: @zettel _method jenkins
+roam-id: 55a2f955-2b7e-420c-a622-2b797785e537
+type: text/markdown
+
+``` groovy
+pipeline {
+    agent { label 'agent-java' }
+
+    environment {
+        JAVA_HOME = '/usr/lib/jvm/java-11'
+        APP_ENV = 'production'
+    }
+
+    stages {
+        stage('Print Vars') {
+            steps {
+                echo "JAVA_HOME is ${env.JAVA_HOME}"
+                echo "APP_ENV is ${env.APP_ENV}"
+            }
+        }
+    }
+}
+```

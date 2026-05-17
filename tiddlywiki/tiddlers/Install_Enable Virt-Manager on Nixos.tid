@@ -1,0 +1,14 @@
+title: Install/Enable Virt-Manager on Nixos
+tags: virt_manager nix nixos @zettel _method
+roam-id: d6b32c66-e310-4f0c-a26a-d4b9c9c9efe8
+created: 20260514213300000
+modified: 20260514213300000
+type: text/markdown
+
+``` nix
+programs = {
+  virt-manager = {
+    enable = true;
+  };
+};
+```

@@ -1,0 +1,264 @@
+title: My DWM Setup on NixOS
+tags: nixos dwm suckless @post
+roam-id: 9e20753f-bec3-4e60-a1e5-a57af3bb5965
+created: 20260515161300000
+modified: 20260515161300000
+type: text/markdown
+
+## `dwm-flexipatch`
+
+<https://github.com/bakkeby/dwm-flexipatch>
+
+## Patches Used
+
+`COOL_AUTOSTART_PATCH`
+
+:   I used to put my commands inside `.xprofile` or `.xinitrc` but I had issues with this method. for example when I tried the `ly` display manager it read the `.xprofile` file. while when using `startx` it read `.xinitrc`. I think auto starting programs can be simplified in a unified method. I think the window manager should be responsible for starting programs. This is why I use this patch.
+
+`MOVESTACK_PATCH`
+
+:   It lets us move windows in the stacked area. By default you can only swap windows between stacked and master areas.
+
+`PERTAG_PATCH`
+
+:   Normally when you increase or decrease master size on one workspace (tag), it applies globally on all tags. This is annoying. With this patch all tags have their own master and stack area sizes
+
+`PERTAG_VANITYGAPS_PATCH`
+
+:   Same thing for gaps. I want my gaps on tag 3 but not in tag 1. this patch does that.
+
+`SCRATCHPADS_PATCH`
+
+:   A big game changer. A floating terminal you can toggle on every tag. For quick typing, quick calculation for example or python interpreter etc. You can even use `tmux` in that terminal so you have named scratchpads in one place
+
+`BAR_PADDING_SMART_PATCH`
+
+:   Disable window borders when there is only one window in the workspace
+
+`FOCUSADJACENTTAG_PATCH`
+
+:   I use `Alt+l` and `Alt+h` to quickly navigate tags on the left and rights. This patch allows it
+
+`SPAWNCMD_PATCH`
+
+:   keep working directory of currently focused terminal when launching a new terminal
+
+`STICKY_PATCH`
+
+:   make a floating window sticky using `Alt+s`
+
+`SENDMON_KEEPFOCUS_PATCH`
+:   keep focus on the current monitor when sending one of the window to another monitor
+
+## Enable Patches
+
+`cd` into `dwm-flexipatch` and open up `patches.def.h` file. Now activate patches just by putting `1` in front of the target patch
+
+## Process
+
+``` {.bash org-language="sh"}
+cd ~/project/repos/tools/suckless
+git clone https://github.com/bakkeby/dwm-flexipatch.git
+```
+
+## Integrate dmf-flexipatch in configuration.nix
+
+Since `dwm-flexipatch` is not a nix package, we need to custom build it. Here we create a derivation of dwm. we put this `let` block on top of our `configuration.nix`
+
+``` nix
+let
+  dwmFlexipatch = pkgs.stdenv.mkDerivation {
+    pname = "dwm-flexipatch";
+    version = "6.8";
+
+    src = builtins.path {
+      path = /home/savolla/project/repos/one-ring/tools/suckless/dwm-flexipatch;
+      name = "dwm-flexipatch-src";
+    };
+
+    nativeBuildInputs = [ pkgs.gnumake pkgs.gcc pkgs.pkg-config ];
+    buildInputs = [ pkgs.libx11 pkgs.libxft pkgs.libxinerama pkgs.libxrandr pkgs.libxcursor ];
+    installPhase = ''
+      mkdir -p $out/bin
+      rm config.h patches.h
+      make clean
+      make
+      cp dwm $out/bin/
+    '';
+  };
+in
+```
+
+Then let\'s add this derivation in our system packages
+
+``` nix
+systemPackages = with pkgs; [
+  dwmFlexipatch
+];
+```
+
+Finally use this package as dwm package instead of default one like this;
+
+``` nix
+services = {
+  xserver = {
+    enable = true;
+    windowManager = {
+      dwm = {
+        enable = true;
+        package = dwmFlexipatch;
+      };
+    };
+  };
+};
+```
+
+now [[Rebuild Nixos]]
+
+## Nix Shell for Building DWM on NixOS
+
+``` nix
+{
+  pkgs ? import <nixpkgs> { },
+}:
+
+pkgs.mkShell {
+  name = "dwm-build-shell";
+
+  buildInputs = [
+    pkgs.gcc # C compiler
+    pkgs.gnumake # Make tool
+    pkgs.libX11 # X11 library
+    pkgs.libXinerama # Optional: for multi-monitor support
+    pkgs.libXft # Optional: font rendering
+    pkgs.pkg-config # For compile-time library detection
+  ];
+
+  # Environment variables to make building easier
+  shellHook = ''
+    echo "Welcome to the DWM build shell!"
+    echo "Use 'make clean install' inside the dwm source directory."
+  '';
+}
+```
+
+## DWM with Animations
+
+picom has added animations support just like in hyprland. we simply install the official `picom` package and not any fork.
+
+put the following into your `~/.config/picom.conf`
+
+``` conf
+backend = "glx";
+vsync = true;
+corner-radius = 10;
+no-use-damage = true;
+xrender-sync-fence = true;
+
+rounded-corners-exclude = [
+  "window_type = 'dock'",
+  "window_type = 'desktop'",
+  "fullscreen"
+];
+
+rules = (
+  {
+    match = "window_type = 'dock' || window_type = 'desktop' || fullscreen";
+    corner-radius = 0;
+  },
+  {
+    animations = (
+      {
+        triggers = ["open", "show"];
+        d = 0.4;
+        scale-x = { duration = "d"; start = 0.9; end = 1; curve = "cubic-bezier(.63,0,.32,1.6)"; };
+        scale-y = { duration = "d"; start = 0.9; end = 1; curve = "cubic-bezier(.63,0,.32,1.6)"; };
+        offset-x = { duration = "d"; start = "window-width * 0.05"; end = 0; curve = "cubic-bezier(.63,0,.32,1.6)"; };
+        offset-y = { duration = "d"; start = "window-height * 0.05"; end = 0; curve = "cubic-bezier(.63,0,.32,1.6)"; };
+        opacity = { duration = "d"; start = 0; end = 1; curve = "cubic-bezier(.63,0,.32,1.6)"; };
+      },
+      {
+        triggers = ["close", "hide"];
+        d = 0.4;
+        scale-x = { duration = "d"; start = 1; end = 0.9; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        scale-y = { duration = "d"; start = 1; end = 0.9; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        offset-x = { duration = "d"; end = "window-width * 0.05"; start = 0; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        offset-y = { duration = "d"; end = "window-height * 0.05"; start = 0; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        opacity = { duration = "d"; start = 1; end = 0; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+      },
+      {
+        triggers = ["geometry"];
+        d = 0.4;
+        saved-image-blend = 0;
+        scale-x = { duration = "d"; start = "window-width-before / window-width"; end = 1; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        scale-y = { duration = "d"; start = "window-height-before / window-height"; end = 1; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        offset-x = { duration = "d"; start = "window-x-before - window-x"; end = 0; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+        offset-y = { duration = "d"; start = "window-y-before - window-y"; end = 0; curve = "cubic-bezier(0.85,0,0.15,1)"; };
+      },
+    );
+  },
+);
+
+fading = true;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+shadow = true;
+shadow-radius = 15;
+shadow-offset-x = -15;
+shadow-offset-y = -15;
+```
+
+### False
+
+we\'ll use different fork of `picom` that is `icom-ftlabs` add this in your `let` block in `configuration.nix`
+
+``` nix
+ picomFtlabs = pkgs.picom.overrideAttrs (oldAttrs: {
+   version = "11";
+   src = pkgs.fetchFromGitHub {
+     owner = "FT-Labs";
+     repo = "picom";
+     rev = "next";
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+   };
+   mesonFlags = [ "-Dwith_docs=false" ];
+   doInstallCheck = false;
+ });
+in
+```
+
+Add it to your syste packages
+
+``` nix
+environment.systemPackages = [ picomFtlabs ];
+```
+
+add this into your services
+
+``` nix
+services.picom = {
+  enable = true;
+  package = picomFtlabs;
+};
+```
+
+[[Rebuild Nixos]] and get the hash error. this is what we want. I got hash `FmORxY7SLFnAmtQyC82sK36RoUBa94rJ7BsDXjXUCXk`. So I\'m updating my code with it
+
+``` diff
+ picomFtlabs = pkgs.picom.overrideAttrs (oldAttrs: {
+   version = "11";
+   src = pkgs.fetchFromGitHub {
+     owner = "FT-Labs";
+     repo = "picom";
+     rev = "next";
++    hash = "sha256-FmORxY7SLFnAmtQyC82sK36RoUBa94rJ7BsDXjXUCXk=";
+   };
+   mesonFlags = [ "-Dwith_docs=false" ];
+   doInstallCheck = false;
+ });
+```
+
+## References
+
+- [Best DWM Patches You Need to Use - YouTube](https://www.youtube.com/watch?v=1RKGeFgozBY)
+- [Easily Customize DWM With Flexipatch - YouTube](https://www.youtube.com/watch?v=92bkauK3qpE)

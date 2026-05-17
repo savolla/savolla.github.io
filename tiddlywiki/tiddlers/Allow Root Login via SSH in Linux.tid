@@ -1,0 +1,12 @@
+title: Allow Root Login via SSH in Linux
+tags: @zettel _method ssh linux
+roam-id: 490baa6d-f022-4266-b699-c070a2b6aee6
+type: text/markdown
+
+- login to your server as a normal user
+- edit `/etc/ssh/sshd_config` file
+- uncomment `PermitRootLogin prohibit-password`
+- replace the line with `PermitRootLogin yes`
+- save an exit the file
+- restart ssh service by `sudo systemctl restart ssh.service`
+- now you can login as `root` from another machine

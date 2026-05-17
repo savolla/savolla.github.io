@@ -1,0 +1,11 @@
+title: Make Org Agenda Look for Files Recursively
+tags: @zettel _method orgagenda
+roam-id: a4b464dd-2595-4074-8a22-c20a70dab769
+type: text/markdown
+
+set the following options outside of `(after! org-agend)`
+
+``` {.commonlisp org-language="emacs-lisp"}
+(setq org-agenda-files
+      (directory-files-recursively "~/resource/notes/org/roam/" "\\.org$"))
+```

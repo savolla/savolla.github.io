@@ -1,0 +1,10 @@
+title: Run Node_exporter With a Custom Metrics Directory
+tags: @zettel _method prometheus node_exporter
+roam-id: a4bae9c3-3b97-4817-8e0c-f14384102e86
+type: text/markdown
+
+run it with your systemd service like that
+
+``` shell
+/opt/grafana/node_exporter --collector.textfile.directory=/var/prometheus_metrics/
+```

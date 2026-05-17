@@ -1,0 +1,10 @@
+title: Get Total Size of a Table in Cassandra
+tags: @zettel _method cassandra
+roam-id: e5e28a77-2fad-4095-bd77-84c83067c3d7
+type: text/markdown
+
+- you have to use nodetool with root user. it will ask for the password
+
+``` {.bash org-language="sh"}
+nodetool -u cassandra tablestats <keyspace>.<table> -H
+```

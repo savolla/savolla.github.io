@@ -1,0 +1,8 @@
+title: Get Zookeeper Configuration
+tags: @zettel _method kafka @zettel _method zookeeper
+roam-id: 86230563-013c-4796-934c-c7ea489eb7a1
+type: text/markdown
+
+- connect to one of [[Get Zookeeper Servers]]
+- run `cat /etc/zookeeper/conf/zoo.cfg`
+- also get service configuration wit `sudo systemctl cat zookeeper.service`

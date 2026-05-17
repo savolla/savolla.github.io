@@ -1,0 +1,14 @@
+title: Git Commit Message Good Practices
+tags: _fact git
+roam-id: 815b5e44-23b6-4add-9be3-1023e50f7b59
+type: text/markdown
+
+Type                    Description
+  ----------------------- ---------------------------------------------
+  `feat`       Introduce a new feature to the codebase
+  `fix`        Fix a bug in the codebase
+  `docs`       Create/update documentation
+  `style`      Feature and updates related to styling
+  `refactor`   Refactor a specific section of the codebase
+  `test`       Add or update code related to testing
+  `chore`      Regular code maintenance

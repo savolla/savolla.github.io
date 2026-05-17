@@ -1,0 +1,8 @@
+title: Remove Staged File in Git
+tags: @zettel _method git
+roam-id: a16e20e6-42f6-418b-8b67-df390e83b4a6
+type: text/markdown
+
+``` shell
+git restore --staged /path/to/file
+```

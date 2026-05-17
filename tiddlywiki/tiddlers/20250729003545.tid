@@ -1,0 +1,17 @@
+title: 20250729003545
+tags: 
+roam-id: 3245e308-2345-442f-b601-1102988e1434
+type: text/markdown
+
+[[Chatgpt]] gave me a function like this:
+
+``` {.commonlisp org-language="emacs-lisp"}
+(defun my/insert-org-context-heading ()
+  "Insert a new Org 'CONTEXT' heading with CREATED and ID properties."
+  (interactive)
+  (let ((created (format-time-string (org-time-stamp-format t t)))
+        (id (org-id-get-create)))
+    (insert (format "* CONTEXT [%%] \n:PROPERTIES:\n:CREATED: %s\n:ID: %s\n:END:\n" created id))
+    (forward-line -3)
+    (end-of-line)))
+```

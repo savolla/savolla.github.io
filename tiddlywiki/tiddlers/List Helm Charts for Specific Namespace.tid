@@ -1,0 +1,8 @@
+title: List Helm Charts for Specific Namespace
+tags: @zettel _method helm
+roam-id: 8fe89f8b-16d5-4c81-80db-4fc2d7066ba4
+type: text/markdown
+
+``` shell
+helm list -n default
+```

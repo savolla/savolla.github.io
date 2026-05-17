@@ -1,0 +1,12 @@
+title: Enable Usb Device Redirection for KVM VMS on Nixos
+tags: virtualization nix nixos libvirt kvm usb @zettel _method
+roam-id: 22668183-9063-4390-9da9-fce99ac8dbac
+created: 20260514213800000
+modified: 20260514213800000
+type: text/markdown
+
+``` nix
+virtualisation = {
+  spiceUSBRedirection.enable = true;
+};
+```

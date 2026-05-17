@@ -1,0 +1,6 @@
+title: Vertical Pod Autoscaling Kubernetes
+tags: @biblio k8s
+roam-id: 1b4984e8-b82b-4945-b792-b6238b1f46c6
+type: text/markdown
+
+[Vertical Pod Autoscaling \| Kubernetes](https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/)

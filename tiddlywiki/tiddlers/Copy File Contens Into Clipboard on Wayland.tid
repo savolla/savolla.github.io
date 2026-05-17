@@ -1,0 +1,14 @@
+title: Copy File Contens Into Clipboard on Wayland
+tags: wayland linux @zettel _method
+roam-id: 680c642a-69da-4a07-af39-20ad25229d7a
+created: 20260510152500000
+modified: 20260510152500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+wl-copy < filename.txt
+```
+
+[^1]
+
+[^1]: <https://wiki.archlinux.org/title/Copying_text_from_a_terminal>

@@ -1,0 +1,9 @@
+title: 20260703192234
+tags: _property @biblio prometheus
+roam-id: fc902b68-6fcb-4f2d-ba0d-12754c37abaf
+type: text/markdown
+
+> It does not try to solve problems outside of the metrics space, leaving those to other more appropriate tools.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

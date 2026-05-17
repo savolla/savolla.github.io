@@ -1,0 +1,38 @@
+title: Create an RBAC Rule
+tags: @zettel _method k8s
+roam-id: 47212944-c806-4640-927d-8666c640e950
+type: text/markdown
+
+- make `alice` user only **list** pods under `dev` namespace
+
+- define role
+
+  ``` yaml
+  apiVersion: rbac.authorization.k8s.io/v1
+  kind: Role
+  metadata:
+    namespace: dev
+    name: pod-reader
+  rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list"]
+  ```
+
+- bind this role to `alice`
+
+  ``` yaml
+  apiVersion: rbac.authorization.k8s.io/v1
+  kind: RoleBinding
+  metadata:
+    name: read-pods-binding
+    namespace: dev
+  subjects:
+  - kind: User
+    name: alice
+    apiGroup: rbac.authorization.k8s.io
+  roleRef:
+    kind: Role
+    name: pod-reader
+    apiGroup: rbac.authorization.k8s.io
+  ```

@@ -1,0 +1,123 @@
+title: DOING Soapui'ı Backend Olarak Kullanıp Config Changeleri Cli Üzerinden Hızlandırmak
+tags: _work
+roam-id: d3c8d5f2-228b-42b2-9069-0ff15436cd13
+type: text/markdown
+
+- rofi ile yaptırmaya çalıştım dün ancak olmadı. bir türlü authentication kısmını geçemiyorum. aşağıda kullandığım script ve örnek xml requesti paylaşıyorum
+
+- **send.sh**
+
+  ``` shell
+  #!/bin/bash
+
+  # --- Configuration ---
+  TEMPLATE="getSystemConfig-template.xml"
+  REQUEST="getSystemConfig.xml"
+  USERNAME="bird_service_account"
+  PASSWORD="s8b5ouxo/QV7k8lbIJiGUQU8gmY="
+  URL="https://bird.test.kartaca.com/bird-admin/soap/config"
+
+  # --- Generate timestamps ---
+  CREATED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+  EXPIRES=$(date -u -d "+2 minutes" +"%Y-%m-%dT%H:%M:%SZ")
+
+  # --- Generate random Nonce (16 bytes, Base64) ---
+  NONCE=$(openssl rand -base64 16)
+
+  # --- Compute PasswordDigest: Base64( SHA1(Nonce + Created + Password) ) ---
+  DIGEST=$(echo -n "${NONCE}${CREATED}${PASSWORD}" | openssl dgst -binary -sha1 | openssl base64)
+
+  # --- Generate final XML ---
+  sed -e "s|{{CREATED}}|$CREATED|g" \
+    -e "s|{{EXPIRES}}|$EXPIRES|g" \
+    -e "s|{{NONCE}}|$NONCE|g" \
+    -e "s|{{PASSWORD_DIGEST}}|$DIGEST|g" \
+    "$TEMPLATE" >"$REQUEST"
+
+  # --- Send SOAP request ---
+  curl -k \
+    -H "Content-Type: text/xml; charset=UTF-8" \
+    -H "SOAPAction: http://bird.kartaca.com/xmlschema/admin/config/ConfigSoap/getSystemConfigRequest" \
+    --data-binary @"$REQUEST" \
+    "$URL"
+  ```
+
+- **getSystemConfig-template.xml**
+
+  ``` xml
+  <soapenv:Envelope
+      xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:con="http://bird.kartaca.com/xmlschema/admin/config"
+      xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+      xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+
+      <soapenv:Header>
+          <wsse:Security soapenv:mustUnderstand="1">
+
+              <wsu:Timestamp wsu:Id="TS-1">
+                  <wsu:Created>{{CREATED}}</wsu:Created>
+                  <wsu:Expires>{{EXPIRES}}</wsu:Expires>
+              </wsu:Timestamp>
+
+              <wsse:UsernameToken wsu:Id="UsernameToken-1">
+                  <wsse:Username>bird_service_account</wsse:Username>
+                  <wsse:Password
+                      Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
+                      s8b5ouxo/QV7k8lbIJiGUQU8gmY=
+                  </wsse:Password>
+                  <wsu:Created>{{CREATED}}</wsu:Created>
+              </wsse:UsernameToken>
+
+          </wsse:Security>
+      </soapenv:Header>
+
+      <soapenv:Body>
+          <con:getSystemConfigRequest/>
+      </soapenv:Body>
+
+  </soapenv:Envelope>
+  ```
+
+- **getSystemConfig.xml**
+
+  ``` xml
+  <soapenv:Envelope
+      xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:con="http://bird.kartaca.com/xmlschema/admin/config"
+      xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+      xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <soapenv:Header>
+          <wsse:Security soapenv:mustUnderstand="1">
+              <wsu:Timestamp wsu:Id="TS-1">
+                  <wsu:Created>2025-12-25T21:18:11Z</wsu:Created>
+                  <wsu:Expires>2025-12-25T21:20:11Z</wsu:Expires>
+              </wsu:Timestamp>
+              <wsse:UsernameToken wsu:Id="UsernameToken-1">
+                  <wsse:Username>bird_service_account</wsse:Username>
+                  <wsse:Password
+                      Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
+                      s8b5ouxo/QV7k8lbIJiGUQU8gmY=
+                  </wsse:Password>
+                  <wsu:Created>2025-12-25T21:18:11Z</wsu:Created>
+              </wsse:UsernameToken>
+          </wsse:Security>
+      </soapenv:Header>
+      <soapenv:Body>
+          <con:getSystemConfigRequest/>
+      </soapenv:Body>
+  </soapenv:Envelope>
+  ```
+
+- bunları aynı klasöre koyup aşağıdaki gibi çalıştırdım
+
+  ``` shell
+  ./send.sh
+  ```
+
+- ama aşağıdaki hatayı aldım hep
+
+  ``` {.bash org-language="sh"}
+  <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><SOAP-ENV:Fault><faultcode>SOAP-ENV:Client</faultcode><faultstring xml:lang="en">UNEXPECTED_ADMIN_ERROR - The security token could not be authenticated or authorized; nested exception is org.apache.wss4j.common.ext.WSSecurityException: The security token could not be authenticated or authorized</faultstring><detail><ServiceError xmlns="http://bird.kartaca.com/xmlschema/common"><code>UNEXPECTED_ADMIN_ERROR</code><description>The security token could not be authenticated or authorized; nested exception is org.apache.wss4j.common.ext.WSSecurityException: The security token could not be authenticated or authorized</description><details>The security token could not be authenticated or authorized</details><details>Stack trace:</details><details>org.springframework.ws.soap.security.wss4j2.Wss4jSecurityInterceptor:validateMessage() - Wss4jSecurityInterceptor.java:698</details><details>com.kartaca.bird.admin.endpoint.security.interceptor.AdminServicesEndpointSecurityInterceptor:validateMessage() - AdminServicesEndpointSecurityInterceptor.java:131</details><details>com.kartaca.bird.admin.endpoint.security.interceptor.AdminUserSecurityInterceptor:validateMessage() - AdminUserSecurityInterceptor.java:42</details><details>org.springframework.ws.soap.security.AbstractWsSecurityInterceptor:handleRequest() - AbstractWsSecurityInterceptor.java:124</details><details>org.springframework.ws.server.MessageDispatcher:dispatch() - MessageDispatcher.java:227</details><details>org.springframework.ws.server.MessageDispatcher:receive() - MessageDispatcher.java:176</details><details>org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport:handleConnection() - WebServiceMessageReceiverObjectSupport.java:89</details><details>org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter:handle() - WebServiceMessageReceiverHandlerAdapter.java:61</details><details>org.springframework.ws.transport.http.MessageDispatcherServlet:doService() - MessageDispatcherServlet.java:293</details><details>org.springframework.web.servlet.FrameworkServlet:processRequest() - FrameworkServlet.java:974</details><details>org.springframework.web.servlet.FrameworkServlet:doPost() - FrameworkServlet.java:877</details><details>javax.servlet.http.HttpServlet:service() - HttpServlet.java:661</details><details>org.springframework.web.servlet.FrameworkServlet:service() - FrameworkServlet.java:851</details><details>javax.servlet.http.HttpServlet:service() - HttpServlet.java:742</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:231</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>org.apache.tomcat.websocket.server.WsFilter:doFilter() - WsFilter.java:52</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:193</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>com.kartaca.bird.commons.request.tracking.RequestTrackingFilter:doFilter() - RequestTrackingFilter.java:43</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:193</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>com.kartaca.bird.commons.rest.servlet.HealthCheckFilter:doFilter() - HealthCheckFilter.java:29</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:193</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>com.kartaca.bird.commons.rest.servlet.VersionFilter:doFilter() - VersionFilter.java:49</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:193</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>org.springframework.web.filter.CharacterEncodingFilter:doFilterInternal() - CharacterEncodingFilter.java:200</details><details>org.springframework.web.filter.OncePerRequestFilter:doFilter() - OncePerRequestFilter.java:107</details><details>org.apache.catalina.core.ApplicationFilterChain:internalDoFilter() - ApplicationFilterChain.java:193</details><details>org.apache.catalina.core.ApplicationFilterChain:doFilter() - ApplicationFilterChain.java:166</details><details>org.apache.catalina.core.StandardWrapperValve:invoke() - StandardWrapperValve.java:198</details><details>org.apache.catalina.core.StandardContextValve:invoke() - StandardContextValve.java:96</details><details>org.apache.catalina.authenticator.AuthenticatorBase:invoke() - AuthenticatorBase.java:493</details><details>org.apache.catalina.core.StandardHostValve:invoke() - StandardHostValve.java:140</details><details>org.apache.catalina.valves.ErrorReportValve:invoke() - ErrorReportValve.java:81</details><details>org.apache.catalina.core.StandardEngineValve:invoke() - StandardEngineValve.java:87</details><details>org.apache.catalina.connector.CoyoteAdapter:service() - CoyoteAdapter.java:342</details><details>org.apache.coyote.http11.Http11Processor:service() - Http11Processor.java:800</details><details>org.apache.coyote.AbstractProcessorLight:process() - AbstractProcessorLight.java:66</details><details>org.apache.coyote.AbstractProtocol$ConnectionHandler:process() - AbstractProtocol.java:806</details><details>org.apache.tomcat.util.net.NioEndpoint$SocketProcessor:doRun() - NioEndpoint.java:1498</details><details>org.apache.tomcat.util.net.SocketProcessorBase:run() - SocketProcessorBase.java:49</details><details>java.util.concurrent.ThreadPoolExecutor:runWorker() - ThreadPoolExecutor.java:1149</details><details>java.util.concurrent.ThreadPoolExecutor$Worker:run() - ThreadPoolExecutor.java:624</details><details>org.apache.tomcat.util.threads.TaskThread$WrappingRunnable:run() - TaskThread.java:61</details><details>java.lang.Thread:run() - Thread.java:750</details></ServiceError></detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>%
+  ```
+
+- buna bir çözüm bulamadım bir türlü. o yüzden soapui\'ı engine olarak kullanmaya karar verdim. dün gpt ile konuşurken bana bir kaç tane çözüm önerisi sundu. şimdi ona devam edeceğim

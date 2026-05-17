@@ -1,0 +1,10 @@
+title: Terraform Mechanisms
+tags: _mechanism terraform @query
+roam-id: 7571a0fe-c5a1-4a93-a40c-55093386d678
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_mechanism]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

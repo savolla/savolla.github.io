@@ -1,0 +1,10 @@
+title: MySQL Comparisons
+tags: _comparison mysql @query
+roam-id: 6baff269-84fd-4903-a969-bf355f9224fd
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_comparion]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

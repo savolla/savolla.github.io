@@ -1,0 +1,49 @@
+title: Install Cassandra on Ubuntu Server
+tags: @zettel _method cassandra ubuntu
+roam-id: 8fc36f7c-c3db-4cdf-a0cf-7081180b5514
+type: text/markdown
+
+- update ubuntu
+
+  ``` shell
+  sudo apt update
+  sudo apt upgrade -y
+  ```
+
+- install necessary tools
+
+  ``` shell
+  apt install curl gpg -y
+  ```
+
+- install openjdk 11
+
+  ``` shell
+  sudo apt install openjdk-11-jdk -y
+  ```
+
+- verify java installation
+
+  ``` shell
+  java -version
+  ```
+
+- add cassandra repo keys
+
+  ``` shell
+  curl https://downloads.apache.org/cassandra/KEYS | sudo gpg --dearmor -o /usr/share/keyrings/cassandra.gpg
+  ```
+
+- add the repository to sources list
+
+  ``` shell
+  echo "deb [signed-by=/etc/apt/keyrings/apache-cassandra.asc] https://debian.cassandra.apache.org 50x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list \
+       deb https://debian.cassandra.apache.org 50x main
+  ```
+
+- install cassandra
+
+  ``` shell
+  sudo apt update
+  sudo apt install cassandra -y
+  ```

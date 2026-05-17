@@ -1,0 +1,8 @@
+title: Diff Files Using Nvim Like Vimdiff
+tags: vim neovim diff @zettel _method
+roam-id: 529fb39d-8d19-4f59-a0ac-19efa955d6dd
+created: 20260313150700000
+modified: 20260313150700000
+type: text/markdown
+
+use `nvim -d file0 file1`

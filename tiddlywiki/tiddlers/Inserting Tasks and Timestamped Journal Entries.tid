@@ -1,0 +1,47 @@
+title: Inserting Tasks and Timestamped Journal Entries
+tags: 
+roam-id: c1a0b4f2-1c85-42ff-afaa-740510eb2d5c
+type: text/markdown
+
+you need to enable this
+
+``` elisp
+(setq require-final-newline "visit-save") ;; increase compatability with other tools (POSIX stuff and very technical) don't remove this
+```
+
+then here are some functions
+
+``` elisp
+(defun savolla/org-insert-header-with-todo ()
+  "Go to the bottom of the file, insert an Org mode header with the a task, and place the cursor in insert mode."
+  (interactive)
+  (end-of-buffer)  ;; Move to the end of the buffer
+  (insert (format "* TODO "))  ;; Insert the header with the timestamp
+  (evil-insert-state) ;; Enter insert state (if using Evil mode)
+  )
+
+(defun savolla/org-insert-header-with-timestamp ()
+  "Go to the bottom of the file, insert an Org mode header with the current timestamp, and place the cursor in insert mode."
+  (interactive)
+  (end-of-buffer)  ;; Move to the end of the buffer
+  (let ((timestamp (format-time-string "%H:%M")))
+    (insert (format "* %s\n" timestamp)))  ;; Insert the header with the timestamp
+  (evil-insert-state)
+  )  ;; Enter insert state (if using Evil mode)
+
+(defun savolla/org-insert-repeated-scheduled-task ()
+  (interactive)
+  (end-of-buffer)  ;; Move to the end of the buffer
+  (insert (format "* REPEAT "))
+  (org-schedule '(org-timestamp))
+  (evil-insert-state)
+  )
+
+(defun savolla/org-insert-repeated-deadline-task ()
+  (interactive)
+  (end-of-buffer)  ;; Move to the end of the buffer
+  (insert (format "* REPEAT "))
+  (org-deadline '(org-timestamp))
+  (evil-insert-state)
+  )
+```

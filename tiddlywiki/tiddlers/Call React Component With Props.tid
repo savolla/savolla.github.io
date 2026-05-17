@@ -1,0 +1,8 @@
+title: Call React Component With Props
+tags: @zettel _method react
+roam-id: a98f17ff-97ca-4417-a5b4-8b3822bbe733
+type: text/markdown
+
+``` html
+<Video thumbnail={Section3Img0} url="https://youtu.be/9SbnhgjeyXA" />
+```

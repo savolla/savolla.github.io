@@ -1,0 +1,8 @@
+title: 202603091119
+tags: openssl cryptography @zettel _property
+roam-id: e9d2a39f-1ea3-4385-bf3d-757aaae72a4f
+created: 20260309111900000
+modified: 20260309111900000
+type: text/markdown
+
+`fullchain.pam` file is the combination of `cert.pam` and `chain.pam` file

@@ -1,0 +1,16 @@
+title: Fix SSH Keys Permissions
+tags: @zettel _fix ssh issue
+roam-id: 67a2436e-2ccc-419a-9f9b-0bbd4722cc47
+type: text/markdown
+
+- fix private key permissions
+
+  ``` shell
+  chmod 600 ~/.ssh/id_rsa
+  ```
+
+- fix public key permission
+
+  ``` shell
+  chmod 644 ~/.ssh/id_rsa.pub
+  ```

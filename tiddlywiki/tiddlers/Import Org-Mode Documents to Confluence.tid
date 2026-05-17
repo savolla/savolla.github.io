@@ -1,0 +1,9 @@
+title: Import Org-Mode Documents to Confluence
+tags: @zettel _method confluence orgmode
+roam-id: 01caf3c1-a2a5-434f-9462-a2b66be40d59
+type: text/markdown
+
+there are two ways;
+
+- Org → HTML → paste html into confluence page
+- Org → DOCX → Confluence Import

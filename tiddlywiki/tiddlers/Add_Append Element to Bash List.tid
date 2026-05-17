@@ -1,0 +1,9 @@
+title: Add/Append Element to Bash List
+tags: @zettel _method bash
+roam-id: dcd49658-712e-4cd6-9bca-4cc3bfcfe6d9
+type: text/markdown
+
+``` shell
+my_list=(apple banana cherry)
+my_list+=("melon")
+```

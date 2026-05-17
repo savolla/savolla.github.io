@@ -1,0 +1,10 @@
+title: Disable Line Numbers in Org Mode
+tags: @zettel _method emacs orgmode
+roam-id: 5ede79c9-372d-47a2-921c-724178b21d02
+type: text/markdown
+
+add the following hook in your init.el or config.el
+
+``` elisp
+(add-hook 'org-mode-hook (lambda () (display-line-numbers-mode 0))) ;; disable line numbers in org
+```

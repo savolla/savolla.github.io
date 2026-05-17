@@ -1,0 +1,12 @@
+title: Switch to Last Active Previous Window in Doom Emacs
+tags: @zettel _method emacs doomemacs
+roam-id: f4ccc32d-3fa5-41fd-b65d-37470fc267ea
+type: text/markdown
+
+- evil has a function like `evil-window-mru`
+
+- I assigned this function on a keybinding in doom emacs
+
+  ``` elisp
+  (map! :leader :desc "select window" "w w" #'evil-window-mru)
+  ```

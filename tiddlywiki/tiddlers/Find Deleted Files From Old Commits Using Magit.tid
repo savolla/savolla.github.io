@@ -1,0 +1,8 @@
+title: Find Deleted Files From Old Commits Using Magit
+tags: @zettel _method git magit doomemacs
+roam-id: ee2d7f56-998a-4655-bd87-e44f51e6f51a
+type: text/markdown
+
+- know your commit hash first `57ace42569c09ec9c8297dc46571b7eb15e1c646` for example
+- in doom emacs do `SPC g f c` and paste your hash.
+- press `Enter`

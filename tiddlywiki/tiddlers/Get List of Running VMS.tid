@@ -1,0 +1,10 @@
+title: Get List of Running VMS
+tags: proxmox @zettel _method
+roam-id: b81a5c6b-38c4-48fd-855f-de90142af07e
+created: 20260404155100000
+modified: 20260404155100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+qm list | rg "running"
+```

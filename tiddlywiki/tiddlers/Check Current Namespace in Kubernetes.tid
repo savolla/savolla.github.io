@@ -1,0 +1,13 @@
+title: Check Current Namespace in Kubernetes
+tags: @zettel _method k8s
+roam-id: 6f82b6c9-ef95-422b-8f42-3346280397a6
+type: text/markdown
+
+``` shell
+kubectl config get-contexts
+```
+
+  --------- ----------------------------- ----------------------- ----------------------------- -----------
+  CURRENT   NAME                          CLUSTER                 AUTHINFO                      NAMESPACE
+  \*        admin@talos-proxmox-cluster   talos-proxmox-cluster   admin@talos-proxmox-cluster   cassandra
+  --------- ----------------------------- ----------------------- ----------------------------- -----------

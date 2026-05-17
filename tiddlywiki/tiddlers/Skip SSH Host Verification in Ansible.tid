@@ -1,0 +1,19 @@
+title: Skip SSH Host Verification in Ansible
+tags: @zettel _method ansible ssh
+roam-id: eddda427-aebc-48dd-983b-dcee452c1890
+type: text/markdown
+
+add this to your script or shell before running ansible
+
+``` shell
+export ANSIBLE_HOST_KEY_CHECKING=False
+```
+
+or put this into `ansible.cfg`
+
+``` toml
+[defaults]
+host_key_checking = False
+inventory = ./inventory/jenkins.ini
+roles_path = ./roles
+```

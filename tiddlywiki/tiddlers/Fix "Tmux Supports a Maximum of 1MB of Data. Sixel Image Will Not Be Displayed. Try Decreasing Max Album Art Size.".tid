@@ -1,0 +1,25 @@
+title: Fix "Tmux Supports a Maximum of 1MB of Data. Sixel Image Will Not Be Displayed. Try Decreasing Max Album Art Size."
+tags: tmux @zettel _fix
+roam-id: aa21e149-aa40-4659-893b-e075231148f5
+created: 20260516175500000
+modified: 20260516175500000
+type: text/markdown
+
+`~/.config/tmux/tmux.conf`
+
+``` conf
+set -g buffer-limit 50
+set -g terminal-features "xterm-256color:sixel"
+set -g allow-passthrough on
+
+set -g default-terminal "xterm-256color"
+set -as terminal-overrides ",xterm-256color:Tc"
+```
+
+[[Reload/Refresh Tmux]]
+
+`~/.profile` or `~/.xprofile`
+
+``` {.bash org-language="sh"}
+export TERM=xterm-256color
+```

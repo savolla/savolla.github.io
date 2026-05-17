@@ -1,0 +1,11 @@
+author: Jeffrey Wilkinson (BJ)
+core-version: >=5.3.5
+dependents: 
+description: hightlighter
+list: readme license
+name: tiddlyprism
+plugin-type: plugin
+source: https://github.com/buggyj/tiddlyprism
+title: $:/plugins/bj/tiddlyprism
+type: application/json
+version: 0.0.6

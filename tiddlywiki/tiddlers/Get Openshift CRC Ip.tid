@@ -1,0 +1,8 @@
+title: Get Openshift CRC Ip
+tags: @zettel _method openshift networking
+roam-id: 7780f185-2322-4659-a7fb-5ba6c3b37e2e
+type: text/markdown
+
+``` shell
+./crc ip
+```

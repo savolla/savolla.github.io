@@ -1,0 +1,10 @@
+title: Get Specific Log Router Sink Item as Json Using Gcloud
+tags: @zettel _method gcp
+roam-id: 67921097-f450-4597-8b9b-cf1a9b135b23
+type: text/markdown
+
+- [[Get All Log Router Objects Using Gcloud]] or grep what you want to get the name of your log router
+
+``` shell
+gcloud logging sinks describe SINK_NAME --format=json
+```

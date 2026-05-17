@@ -1,0 +1,9 @@
+title: Upgrade Nixos
+tags: nix nixos @zettel _method
+roam-id: aa089ea3-3dd1-4995-9fc2-659a6594dda9
+created: 20260508230500000
+modified: 20260508230500000
+type: text/markdown
+
+- [[Update Nix Channels]]
+- [[Update Nixos Packages]]

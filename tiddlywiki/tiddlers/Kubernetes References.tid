@@ -1,0 +1,10 @@
+title: Kubernetes References
+tags: @query k8s _reference
+roam-id: 3b4d85a4-ddd1-414f-bba9-902654340da0
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_reference]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,6 @@
+title: Go One Parent Up in Org Mode in Doom Emacs
+tags: @zettel _method doomemacs
+roam-id: 96d7f4ef-d28d-49d5-9d81-98881655263e
+type: text/markdown
+
+prett `g h`

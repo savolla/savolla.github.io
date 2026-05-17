@@ -1,0 +1,12 @@
+title: Create a Repeated Task in Org Mode
+tags: @zettel _method orgmode
+roam-id: a7c99972-b3f8-4a27-8d92-28f6c9bcd519
+type: text/markdown
+
+``` org
+* TODO take weekly backup
+,  SCHEDULED: <2025-10-03 Fri +1w>
+,  :PROPERTIES:
+,  :REPEAT_TO_STATE: TODO
+,  :END:
+```

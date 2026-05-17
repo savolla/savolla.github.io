@@ -1,0 +1,16 @@
+title: Fix Old Linux Kernels Are Not Being Removed With =sudo Apt Autoremove --Purge=
+tags: linux apt @zettel _fix
+roam-id: 3fa3b5e0-74e0-4f57-a313-7249c111a801
+created: 20260504211100000
+modified: 20260504211100000
+type: text/markdown
+
+- [[Get Currently Used Linux Kernel]] so you don\'t accidentally remove that one
+
+- [[List Installed Linux Kernels]] and see what\'s old
+
+- manually remove old ones. for example
+
+  ``` {.bash org-language="sh"}
+  sudo apt purge linux-image-6.1.0-37-amd64
+  ```

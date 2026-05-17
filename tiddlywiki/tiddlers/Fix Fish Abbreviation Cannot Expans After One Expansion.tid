@@ -1,0 +1,12 @@
+title: Fix Fish Abbreviation Cannot Expans After One Expansion
+tags: _fix fish @zettel _method
+roam-id: 3eeb0352-98f3-4dc5-9bf4-92509a4113e3
+created: 20260317121800000
+modified: 20260317121800000
+type: text/markdown
+
+use `--position anywhere`
+
+``` fish
+abbr --add g --position anywhere "| grep -i \""
+```

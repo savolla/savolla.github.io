@@ -1,0 +1,12 @@
+title: Create a Main Function in Python
+tags: @zettel _method python
+roam-id: 48015eba-12e6-474f-8248-983899e0f47a
+type: text/markdown
+
+``` python
+def main():
+
+...
+if __name__ == "__main__":
+    main()
+```

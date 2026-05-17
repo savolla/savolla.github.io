@@ -1,0 +1,9 @@
+title: 20260307220954
+tags: elasticsearch logstash kibana elk opensearch logging _usecase @biblio prometheus
+roam-id: 0a202338-ca01-41d7-943d-f5802809fe8d
+type: text/markdown
+
+> logs have also been used as a significant part of monitoring, such as with the Elasticsearch, Logstash, and Kibana (ELK) and OpenSearch stack.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

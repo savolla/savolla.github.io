@@ -1,0 +1,10 @@
+title: Reload/Refresh Tmux
+tags: tmux @zettel _method
+roam-id: 3d4d3089-9305-41ca-af1a-82d5bbff3980
+created: 20260516175800000
+modified: 20260516175800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+tmux source ~/.config/tmux/tmux.conf
+```

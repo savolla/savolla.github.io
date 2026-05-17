@@ -1,0 +1,7 @@
+title: Paste Urls With Their Description in Org Mode Doom Emacs
+tags: @zettel _method
+roam-id: b8f53929-bf57-4962-a004-64ab79b11312
+type: text/markdown
+
+- use \`SPC m l c\`
+- or `org-cliplink` function directly

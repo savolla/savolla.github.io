@@ -1,0 +1,10 @@
+title: Convert .Ttc Files to .Woff
+tags: font ttc woff @zettel _method
+roam-id: 132332c2-3671-449d-9b96-488eaa45b5e0
+created: 20260512195000000
+modified: 20260512195000000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+woff2_compress path/to/file.ttc
+```

@@ -1,0 +1,12 @@
+title: Resize Images by Respecting Their Aspect Ratio in Tailwind
+tags: @zettel _method tailwind
+roam-id: f56b3c03-ed34-4774-b694-a6ec147887af
+type: text/markdown
+
+use `w-auto h-auto`
+
+``` html
+<div className="flex w-auto h-auto border-4 border-red-500">
+  <img className="" src={Section3Img0} alt="some picture" />
+</div>
+```

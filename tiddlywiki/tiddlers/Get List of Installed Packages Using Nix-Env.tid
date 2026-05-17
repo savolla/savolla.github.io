@@ -1,0 +1,8 @@
+title: Get List of Installed Packages Using Nix-Env
+tags: nix @zettel _method
+roam-id: 7053a876-0664-4f65-8354-616ff88ec841
+type: text/markdown
+
+``` {.bash org-language="sh"}
+nix-env -q
+```

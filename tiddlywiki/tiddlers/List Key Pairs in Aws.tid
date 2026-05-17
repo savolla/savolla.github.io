@@ -1,0 +1,8 @@
+title: List Key Pairs in Aws
+tags: @zettel _method aws
+roam-id: ca46fac8-98b0-4d2b-b8e2-ae4799b3400e
+type: text/markdown
+
+``` shell
+aws ec2 describe-key-pairs
+```

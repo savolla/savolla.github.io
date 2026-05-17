@@ -1,0 +1,8 @@
+title: List All Your Aws Resources Using Terraform
+tags: @zettel terraform aws _method
+roam-id: 6f0bae3b-14dd-432e-8ffa-7e3b901df671
+type: text/markdown
+
+``` shell
+terraform state list
+```

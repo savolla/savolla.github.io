@@ -1,0 +1,10 @@
+title: List/Search for Available Builder Images in Openshift
+tags: @zettel _method openshift
+roam-id: d65dfe89-4f2c-43d7-894f-9e5561e39740
+type: text/markdown
+
+I\'m searching for \"nodejs:22\" image in openshfit
+
+``` shell
+oc new-app -S nodejs:22
+```

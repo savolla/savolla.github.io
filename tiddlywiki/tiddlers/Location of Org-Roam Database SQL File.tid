@@ -1,0 +1,6 @@
+title: Location of Org-Roam Database SQL File
+tags: @zettel _method orgroam
+roam-id: 2580e688-b1c2-4eef-8bff-40b742bbe5d5
+type: text/markdown
+
+- `~/.config/emacs/.local/cache/org-roam.db`

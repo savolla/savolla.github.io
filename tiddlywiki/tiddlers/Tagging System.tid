@@ -1,0 +1,12 @@
+title: Tagging System
+tags: 
+roam-id: 76b9605a-fb75-4d49-890b-d8068c6285e0
+type: text/markdown
+
+when you tag an entry you need to follow the following structure: `:one_main_tag:UPPERCASE_CONTEXT_LABEL:regular_tag1:regular_tag2:` here is one example for a context that is about my nixos environment =:~c~:NIXOS
+
+tags will be separated into 3 groups;
+
+1.  main tags
+2.  context label tags
+3.  regular tags

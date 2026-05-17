@@ -1,0 +1,14 @@
+title: Add a Column With a Default Value in Mysql
+tags: @zettel _method mysql
+roam-id: 4b3c60e1-b770-4d2e-a2d6-df572fdbbc6f
+type: text/markdown
+
+``` sql
+ALTER TABLE table_name ADD COLUMN column_name data_type DEFAULT default_value;
+```
+
+full example:
+
+``` sql
+ALTER TABLE bulk_coin_charging ADD COLUMN coin_completion_enabled bit(1) DEFAULT b'0';
+```

@@ -1,0 +1,16 @@
+title: Set Static Ip in Terraform Libvirt Provider
+tags: @zettel _method terraform libvirt
+roam-id: 779f2393-5e95-44df-8e3a-4ed16d43ff10
+type: text/markdown
+
+here is the example network config
+
+``` hcl
+network_interface {
+  network_name = "default"
+  hostname     = "jenkins-master"
+  addresses    = [
+    "192.168.122.50"
+  ]
+}
+```

@@ -1,0 +1,9 @@
+title: 20260307220951
+tags: graphite _property @biblio prometheus
+roam-id: dacb3a4e-45e7-48ad-a794-290bdcdb4140
+type: text/markdown
+
+> in 2006, Graphite uses Whisper for metrics storage, which has a similar design to RRD.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

@@ -1,0 +1,8 @@
+title: Grant All Privileges to User for Specific Database
+tags: @zettel _method mysql
+roam-id: be2af982-ae37-4459-a0b3-c3c1fe226d8c
+type: text/markdown
+
+``` sql
+GRANT ALL PRIVILEGES ON <database_name>.* TO '<username>'@'%';
+```

@@ -1,0 +1,16 @@
+title: Create Access Token for Terraform in Proxmox
+tags: @zettel _method proxmox terraform
+roam-id: 046947de-3557-4341-a586-a1c558a16292
+type: text/markdown
+
+- watch this: <https://youtu.be/wK8PUp7rjzs>
+
+- ssh into proxmox
+
+  ``` shell
+  pveum user add terraform@pam
+  pveum user token add terraform@pam t2
+  pveum acl modify / -user terraform@pam -role Administrator
+  ```
+
+- you want to disable privilege separation also

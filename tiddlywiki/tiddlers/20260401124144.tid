@@ -1,0 +1,9 @@
+title: 20260401124144
+tags: @biblio k8s k8s_deployment k8s_statefulset _comparison
+roam-id: dbf2c199-2990-4071-a085-9b444b439d69
+type: text/markdown
+
+> Pods rely on having a distinct identity. This is different from a Deployment where the Pods are expected to be interchangeable.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

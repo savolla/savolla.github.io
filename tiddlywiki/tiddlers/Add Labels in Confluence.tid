@@ -1,0 +1,11 @@
+title: Add Labels in Confluence
+tags: confluence @zettel _method
+roam-id: 08159c2f-1d65-4cce-881c-bcc24efbdbf9
+created: 20260419005300000
+modified: 20260419005300000
+type: text/markdown
+
+- edit your page
+- press `Ctrl+Shift+i`
+- you\'ll see \"󰓹 Labels\"
+- add you labels

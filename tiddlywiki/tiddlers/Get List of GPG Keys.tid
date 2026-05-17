@@ -1,0 +1,10 @@
+title: Get List of GPG Keys
+tags: security gpg @zettel _method
+roam-id: 2b047aa6-9b0b-443f-b450-af363b0822fd
+created: 20260510205100000
+modified: 20260510205100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gpg --list-keys
+```

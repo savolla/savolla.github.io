@@ -1,0 +1,9 @@
+title: Enter Time Information Into Scheduled Task in Org Mode
+tags: @zettel _method
+roam-id: 4310ea28-906c-4b7c-b916-e210bf7795b5
+type: text/markdown
+
+``` org
+* TODO Write report
+  SCHEDULED: <2025-07-20 Sun 14:00>
+```

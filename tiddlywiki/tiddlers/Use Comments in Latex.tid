@@ -1,0 +1,8 @@
+title: Use Comments in Latex
+tags: @zettel _method latex
+roam-id: 62211623-cd2c-4d7d-8ecf-fbde661c853c
+type: text/markdown
+
+``` latex
+% this is a comment
+```

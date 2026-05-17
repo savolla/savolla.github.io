@@ -1,0 +1,60 @@
+title: Install Nexus on Ubuntu
+tags: @zettel _method nexus ubuntu
+roam-id: 36f78810-6bbe-4e93-b75e-e6efe330ad32
+type: text/markdown
+
+- add nexus user
+
+adduser nexus usermod -aG sudo nexus
+
+- install nexus
+
+  ``` shell
+  apt install openjdk-17-jdk wget tar unzip -y
+  cd /opt
+  wget https://download.sonatype.com/nexus/3/nexus-3.83.1-03-linux-x86_64.tar.gz
+  tar -xvf nexus-3.83.1-03-linux-x86_64.tar.gz
+  mv nexus-3.83.1-03 nexus
+  chown -R nexus:nexus /opt/nexus
+  chown -R nexus:nexus /opt/sonatype-work
+  nvim /opt/nexus/bin/nexus
+  ```
+
+- change shebang from sh to bash
+
+  - run~asuser~=\'nexus\'
+
+- create a systemd service
+
+`nvim /etc/systemd/system/nexus.service`
+
+- add the following
+
+  ``` shell
+  [Unit]
+  Description=nexus service
+  After=network.target
+
+  [Service]
+  Type=forking
+  LimitNOFILE=65536
+  ExecStart=/opt/nexus/bin/nexus start
+  ExecStop=/opt/nexus/bin/nexus stop
+  User=nexus
+  Restart=on-abort
+
+  [Install]
+  WantedBy=multi-user.target
+  ```
+
+- start nexus
+
+  ``` shell
+  systemctl daemon-reexec
+  systemctl daemon-reload
+  systemctl enable nexus
+  systemctl start nexus
+  reboot
+  ```
+
+- next steps is to [[Get Admin Password for Nexus]]

@@ -1,0 +1,19 @@
+title: Update/Upgrade Packages Installed by Home-Manager
+tags: @zettel _method homemanager nix
+roam-id: 192ad245-4004-4632-b82d-10719034fc83
+type: text/markdown
+
+- non-flake way
+
+  ``` shell
+  nix-channel --update
+  home-manager swtich
+  ```
+
+- if you\'re using flakes then
+
+  ``` shell
+  cd /path/to/your/flake.nix
+  nix flake update
+  home-manager swtich
+  ```

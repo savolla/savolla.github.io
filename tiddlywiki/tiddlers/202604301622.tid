@@ -1,0 +1,15 @@
+title: 202604301622
+tags: _mechanism @biblio claude_code
+roam-id: ef1ffa14-5d6c-4201-b166-43be04368ab0
+created: 20260430161900000
+modified: 20260430161900000
+type: text/markdown
+
+when you give a prompt to a coding agent it does the following things;
+
+> - **Gather context** - Understanding what the error refers to, which part of the codebase is affected, and what files are relevant
+> - **Formulate a plan** - Deciding how to solve the issue, such as changing code and running tests to verify the fix
+> - **Take action** - Actually implementing the solution by updating files and running commands
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

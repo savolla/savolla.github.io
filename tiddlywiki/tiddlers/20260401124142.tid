@@ -1,0 +1,9 @@
+title: 20260401124142
+tags: @biblio k8s k8s_deployment k8s_pod _mechanism
+roam-id: ea531f44-3bd9-45be-9a03-196f890c4f26
+type: text/markdown
+
+> any Pod in the Deployment is interchangeable and can be replaced if needed.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

@@ -1,0 +1,9 @@
+title: Fix Evicted Pod in Openshift
+tags: _fix @zettel _fix openshift
+roam-id: 5ac886d3-e6d4-4468-83ff-94fedc16b392
+type: text/markdown
+
+- [[List/Get All Failed Pods in a Namespace in Opneshift]]
+- do `oc describe pod <pod_name>`
+- look for events section. the problem is written there
+- it is probably the resource problem

@@ -1,0 +1,13 @@
+title: Change Id of a Vm in Proxmox
+tags: @zettel _method proxmox
+roam-id: d37f6b9e-5ceb-4f01-9304-d1fbeb321c35
+type: text/markdown
+
+- ssh into your proxmox
+
+  ``` shell
+  cd /etc/pve/qemu-server
+  ls
+  ```
+
+- find your target and change the name of the file

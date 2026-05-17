@@ -1,0 +1,7 @@
+title: Edit Org Mode Subtree in a New Buffer
+tags: @zettel orgmode _method
+roam-id: d257a362-3f30-4f59-ba47-fb03c7ef4d80
+type: text/markdown
+
+- navigate to the subtree you want
+- press `z n` or use `org-tree-to-indirect-buffer`

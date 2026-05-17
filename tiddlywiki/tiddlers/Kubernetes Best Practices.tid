@@ -1,0 +1,10 @@
+title: Kubernetes Best Practices
+tags: _bestpractice k8s @query
+roam-id: 280e53ea-ff5a-4a84-a73b-6f313c20b877
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_bestpractice]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

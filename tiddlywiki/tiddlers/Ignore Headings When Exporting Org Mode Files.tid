@@ -1,0 +1,6 @@
+title: Ignore Headings When Exporting Org Mode Files
+tags: @zettel _method orgmode
+roam-id: aaeca885-982e-47df-8b22-930282e3e061
+type: text/markdown
+
+- just use :noexport: tag in heading

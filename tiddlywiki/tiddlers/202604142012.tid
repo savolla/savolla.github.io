@@ -1,0 +1,9 @@
+title: 202604142012
+tags: pubsub @zettel _analogy
+roam-id: 67b6e6eb-9e4c-4d70-bacb-078cc1f2bf2f
+roam-refs: https://www.youtube.com/watch?v=wb4qcdb0XWw
+created: 20260414201200000
+modified: 20260414201200000
+type: text/markdown
+
+pubsub is just like instagram. when you send a post on instagram (event publisher) then the instagram takes this post and delivers it to your followers (subscribers)

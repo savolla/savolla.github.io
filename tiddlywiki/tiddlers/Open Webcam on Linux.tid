@@ -1,0 +1,8 @@
+title: Open Webcam on Linux
+tags: _method linux @zettel
+roam-id: d7720e55-dd04-4abd-b02a-1abdabe96676
+type: text/markdown
+
+``` shell
+mpv --no-cache --profile=low-latency --untimed /dev/video0
+```

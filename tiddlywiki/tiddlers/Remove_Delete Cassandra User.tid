@@ -1,0 +1,10 @@
+title: Remove/Delete Cassandra User
+tags: @zettel _method cassandra
+roam-id: 5f1acf1a-2998-40dd-bd2a-d534e1dbcfa9
+type: text/markdown
+
+- login as root to one of the cassandra nodes
+
+  ``` sql
+  drop role USERNAME
+  ```

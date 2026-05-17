@@ -1,0 +1,14 @@
+title: Enable Flakes on Nixos
+tags: @zettel _method nixos
+roam-id: 14749c86-11c2-43ac-aba7-41e24d10f538
+type: text/markdown
+
+``` nix
+# configuration.nix
+  # nix config
+  nix = {
+    settings = {
+      experimental-features = [ "flakes" "nix-command" ];
+    };
+  };
+```

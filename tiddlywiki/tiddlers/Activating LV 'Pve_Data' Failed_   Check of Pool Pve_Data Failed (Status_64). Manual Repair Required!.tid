@@ -1,0 +1,12 @@
+title: Activating LV 'Pve/Data' Failed:   Check of Pool Pve/Data Failed (Status:64). Manual Repair Required!
+tags: _fix proxmox
+roam-id: 1994ae19-9b52-49f4-9392-81022eea3eb4
+type: text/markdown
+
+- this happens when your virtual machines on proxmox occupy more storage than the lvm-thin has to offer
+
+- open up your proxmox shell and issue
+
+  ``` shell
+  lvconvert --repair pve/data
+  ```

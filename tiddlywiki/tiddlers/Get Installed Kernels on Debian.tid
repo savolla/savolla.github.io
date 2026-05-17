@@ -1,0 +1,10 @@
+title: Get Installed Kernels on Debian
+tags: dpkg linux debian @zettel _method
+roam-id: cb625732-3f75-41d2-9aa4-b927a4d93846
+created: 20260504163700000
+modified: 20260504163700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+dpkg -l | grep linux-image
+```

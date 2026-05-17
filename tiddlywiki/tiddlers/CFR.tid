@@ -1,0 +1,16 @@
+title: CFR
+tags: @zettel _abbr
+roam-id: 8cac43c0-552b-4a44-ab1b-d6f80c3b24cb
+created: 20260319110100000
+modified: 20260319110100000
+type: text/markdown
+
+The video maintains the same number of frames per second (fps) throughout its entire duration. for example a video is 30 fps, and every second contains exactly 30 frames.
+
+- Pros:
+  - Easier to edit or synchronize with audio.
+  - Better compatibility with older video software and devices.
+  - Needed for certain streaming platforms that require predictable timing.
+- Cons:
+  - May result in slightly larger file size if frames are duplicated to maintain a constant rate.
+  - Less efficient for videos with variable motion (e.g., static scenes) because you encode unnecessary frames.

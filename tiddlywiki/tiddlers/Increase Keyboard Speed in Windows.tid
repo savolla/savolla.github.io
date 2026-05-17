@@ -1,0 +1,26 @@
+title: Increase Keyboard Speed in Windows
+tags: @zettel _method windows autohotkey
+roam-id: 215d3aaf-7ac1-4012-8671-0f2410c93391
+type: text/markdown
+
+- download [AutoHotkey](https://www.autohotkey.com/)
+
+- install
+
+- do `Win + r`
+
+- enter `shell:startup`
+
+- you\'ll place your startup scripts here
+
+- right click and create a new file `fastkeys.ahk`
+
+- edit this script and add the following
+
+  ``` ahk
+  SetKeyDelay(20, 120)  ; 150ms delay, 20ms between repeats (50 keys/sec)
+  ```
+
+- save and exit.
+
+- restart your windows machine

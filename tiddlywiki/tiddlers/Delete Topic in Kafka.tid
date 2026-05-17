@@ -1,0 +1,10 @@
+title: Delete Topic in Kafka
+tags: kafka kafka_topic @zettel _method
+roam-id: 3c94237e-a30c-41b3-ac0d-d0318e37ccfa
+created: 20260401154800000
+modified: 20260401154800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic topicname
+```

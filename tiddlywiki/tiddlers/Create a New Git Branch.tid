@@ -1,0 +1,8 @@
+title: Create a New Git Branch
+tags: @zettel _method git
+roam-id: a8c42219-5a1f-4fed-80c5-c403ead78a60
+type: text/markdown
+
+``` shell
+git branch testing/some-test
+```

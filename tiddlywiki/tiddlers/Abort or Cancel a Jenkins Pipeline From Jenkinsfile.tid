@@ -1,0 +1,26 @@
+title: Abort or Cancel a Jenkins Pipeline From Jenkinsfile
+tags: @zettel _method jenkins
+roam-id: 55de2e82-d082-431b-b223-a0d9d0a0d4b9
+type: text/markdown
+
+``` groovy
+pipeline {
+  agent none
+
+  environment {
+    A = "abc"
+  }
+
+  stages {
+    stage("conditional stage") {
+      steps {
+        script {
+          if ( A == "abc" ) {
+            error "aborting the pipeline"
+          }
+        }
+      }
+    }
+  }
+}
+```

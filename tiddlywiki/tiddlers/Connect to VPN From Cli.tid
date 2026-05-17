@@ -1,0 +1,15 @@
+title: Connect to VPN From Cli
+tags: vpn linux networking @zettel _method
+roam-id: 549b7e98-5969-43f6-a51b-63a1e9376114
+created: 20260505105900000
+modified: 20260505105900000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo vpnc \
+    --enable-weak-encryption \
+    --gateway ${IP} \
+    --id ${VPN_NAME} \
+    --username ${USERNAME} \
+    --no-detach
+```

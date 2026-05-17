@@ -1,0 +1,14 @@
+title: Install Argocd on Openshift
+tags: @zettel _method argocd openshift
+roam-id: a6b134a8-d805-49fd-b681-148807d8638c
+type: text/markdown
+
+- reference: [Getting Started with ArgoCD on OpenShift 4 - YouTube](https://www.youtube.com/watch?v=xYCX2EejSMc)
+- login as **kubeadmin** to your openshift web console
+- go to opeartorhub
+- search for argocd
+- install argocd on a namespace
+- after installing
+- go to \"installed opeartors\"
+- go to \"Argo CD\" tab
+- click on \"Crete ArgoCD\"

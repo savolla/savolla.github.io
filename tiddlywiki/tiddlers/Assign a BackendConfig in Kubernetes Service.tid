@@ -1,0 +1,23 @@
+title: Assign a BackendConfig in Kubernetes Service
+tags: k8s gcp backendconfig @zettel _method
+roam-id: 89ed6098-d612-479f-a038-46202a416b33
+roam-refs: https://www.google.com/search?q=what%20is%20kubernetes%20backendconfig
+created: 20260315154400000
+modified: 20260315154400000
+type: text/markdown
+
+Define the BackendConfig: A user creates a BackendConfig YAML manifest that specifies the desired settings (e.g., a 60-second timeout).
+
+Reference in a Service: An annotation is added to the relevant Kubernetes Service object, referencing the name of the BackendConfig.
+
+``` yaml
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    cloud.google.com/backend-config: '{"default": "my-backend-config"}'
+  name: my-service
+  ...
+```
+
+GKE Ingress Controller Action: The GKE Ingress controller reads the annotation on the Service, retrieves the configuration from the BackendConfig CRD, and provisions the corresponding Google Cloud load balancer with the specified settings.

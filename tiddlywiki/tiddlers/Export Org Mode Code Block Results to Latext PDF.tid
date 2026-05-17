@@ -1,0 +1,6 @@
+title: Export Org Mode Code Block Results to Latext PDF
+tags: @zettel _method orgmode latex
+roam-id: 4e911b32-3ce1-4f1b-bdc3-4673b229e061
+type: text/markdown
+
+put some text between code block and results. like **Results:**. this will do the trick

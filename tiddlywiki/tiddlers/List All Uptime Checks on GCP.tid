@@ -1,0 +1,8 @@
+title: List All Uptime Checks on GCP
+tags: @zettel _method gcp
+roam-id: d46933fa-7d21-4fdb-b7a5-dd2211ef21e3
+type: text/markdown
+
+``` shell
+gcloud monitoring uptime list-configs
+```

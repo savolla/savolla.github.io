@@ -1,0 +1,19 @@
+title: Enable Auto Revert Mode Only for Certain Files
+tags: emacs @zettel _method
+roam-id: 03781f2d-14e3-483b-af5c-983034ed024b
+roam-refs: https://christiantietze.de/posts/2019/03/sync-emacs-org-files/
+created: 20260313193100000
+modified: 20260313193100000
+type: text/markdown
+
+- emacs gives us an opportunity for auto reverting files that are inside a particular directory
+
+- we need to add a new file inside the directory called `.dir-locals.el`
+
+- then adding the following inside
+
+  ``` elisp
+  ((nil . ((eval . (auto-revert-mode 1)))))
+  ```
+
+- now when you do `M-x find-file` and open files from that directory, only those buffers will have auto-revert mode enabled

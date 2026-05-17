@@ -1,0 +1,8 @@
+title: Edit Commit Message
+tags: @zettel _method git
+roam-id: 64e3f7b2-5b7e-4834-b947-d744ef4c4c80
+type: text/markdown
+
+``` shell
+git commit --amend
+```

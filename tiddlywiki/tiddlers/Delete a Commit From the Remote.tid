@@ -1,0 +1,20 @@
+title: Delete a Commit From the Remote
+tags: @zettel _method
+roam-id: bde78e55-e281-4f03-9f4e-c7b1d680e4fd
+type: text/markdown
+
+- move your HEAD back to the commit number you want to be on the origin. for example I want to remove the current commit from the remote. thus I move my HEAD one commit back
+
+  ``` shell
+  git reset --hard HEAD~1
+  ```
+
+- then I push the current state of my repo to the origin
+
+  ``` shell
+  git push origin HEAD --force
+  ```
+
+- [fix picom does not apply on qutebrowser and other apps](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-12.org::972)
+
+- [fix picom does not apply on qutebrowser and other apps](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-12.org::1264)

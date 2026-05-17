@@ -1,0 +1,10 @@
+title: Detect Deprecated Api Versions Using Pluto With Kustomize
+tags: k8s @zettel _method pluto kustomize
+roam-id: b49437c0-59a1-4f2f-b1b8-88895a571312
+type: text/markdown
+
+- [[Get Kubernetes Version]] and put that version in `k8s` parameter below
+
+``` shell
+kustomize build pretest | pluto detect - --target-versions k8s=v1.33.4
+```

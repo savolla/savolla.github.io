@@ -1,0 +1,49 @@
+title: Deploy Ec2 Instance Using Terraform
+tags: @zettel _method aws terraform
+roam-id: 0c4d4d6c-00b6-4066-9f57-849f792a9f7e
+type: text/markdown
+
+create 3 files; `main.tf`, `variables.tf` and `output.tf`
+
+- **main.tf**
+
+  ``` hcl
+  provider "aws" = {
+    region = "us-east-1"
+  }
+
+  resource "aws_instance" "demo_ec2" {
+    ami =
+    instance_type =
+  }
+  ```
+
+- **variables.tf**
+
+  ``` hcl
+  provider "aws" = {
+    region = "us-east-1"
+  }
+
+  variable "ami_id" = {
+    description = "distro description for this ec2 instance"
+    default = "ami-98392" # amazon linux 2 for example
+  }
+
+  variable "instance_type" {
+    description = "some description"
+    default = "t2.micro"
+  }
+  ```
+
+- **outputs.tf**
+
+  ``` hcl
+  output "instance_id" {
+    value = aws_instance.demo_ec2.id
+  }
+
+  output "public_ip" {
+    value = aws_instance.demo_ec2.public_ip
+  }
+  ```

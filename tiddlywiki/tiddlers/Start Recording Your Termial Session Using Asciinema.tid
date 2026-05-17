@@ -1,0 +1,8 @@
+title: Start Recording Your Termial Session Using Asciinema
+tags: @zettel _method asciinema
+roam-id: c74d9c7c-4897-41cd-90c8-f8517113931d
+type: text/markdown
+
+``` shell
+asciinema rec 2025-11-06.cast
+```

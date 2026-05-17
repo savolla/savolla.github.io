@@ -1,0 +1,17 @@
+title: Use 2FA From Your Tui
+tags: @zettel _method ctop
+roam-id: c4a31024-5d77-4df0-916a-d3eec7249f11
+type: text/markdown
+
+- install `ctop` from nixpkgs
+- the following example will create a new OTP labeled as google
+
+``` shell
+ctop add -l google
+```
+
+- it will ask you the password for cotp
+- enter the secret
+- run `ctop` again
+- enter the password
+- you\'ll see your otp

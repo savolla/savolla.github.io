@@ -1,0 +1,12 @@
+title: Install K9s on Ubuntu 24.04
+tags: @zettel _method k9s k8s ubuntu
+roam-id: 090815c8-978a-421a-8742-9fd7450efc69
+type: text/markdown
+
+- source <https://dev.to/dm8ry/how-to-install-k9s-on-ubuntu-a-step-by-step-guide-2f98>
+
+``` shell
+wget https://github.com/derailed/k9s/releases/download/v0.50.13/k9s_linux_amd64.deb
+sudo apt install ./k9s_linux_amd64.deb
+rm ./k9s_linux_amd64.deb
+```

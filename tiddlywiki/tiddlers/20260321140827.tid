@@ -1,0 +1,9 @@
+title: 20260321140827
+tags: k8s _pro @biblio
+roam-id: 635d2054-b3bb-4f62-93cf-52efb722f7ca
+type: text/markdown
+
+> adding addition2l resources to the cluster is simply a matter of imaging a new machine of the same class and joining it into the cluster.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

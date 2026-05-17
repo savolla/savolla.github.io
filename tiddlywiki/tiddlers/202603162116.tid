@@ -1,0 +1,8 @@
+title: 202603162116
+tags: gcp networking @zettel _mechanism
+roam-id: a060754c-7d05-40ff-88f5-709e70e05567
+created: 20260316211600000
+modified: 20260316211600000
+type: text/markdown
+
+in gcp security policy the smallest priority rule applies first

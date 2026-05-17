@@ -1,0 +1,10 @@
+title: Enable Libvirt Support in Vagrant
+tags: @zettel _method vagrant libvirt
+roam-id: d8cc5a37-0e30-4d19-9f67-3d0c0d7fdbcc
+type: text/markdown
+
+install libvirt plugin
+
+``` bash
+vagrant plugin install librivrt-libvirt
+```

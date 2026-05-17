@@ -1,0 +1,11 @@
+title: Install Argocd on Almalinux
+tags: @zettel _method argocd almalinux
+roam-id: b18b32f4-45c3-4c85-9c02-5af7b8684602
+type: text/markdown
+
+``` shell
+VERSION=$(curl -L -s https://raw.githubusercontent.com/argoproj/argo-cd/stable/VERSION)
+curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/download/v$VERSION/argocd-linux-amd64
+sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+rm argocd-linux-amd64
+```

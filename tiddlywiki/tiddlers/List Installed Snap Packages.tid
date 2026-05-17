@@ -1,0 +1,8 @@
+title: List Installed Snap Packages
+tags: @zettel _method snap
+roam-id: b490e78d-8d10-43d3-bc76-e60efd93af19
+type: text/markdown
+
+``` shell
+snap list
+```

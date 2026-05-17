@@ -1,0 +1,13 @@
+title: Setup Mermaid Diagrams in Org Mode in Doom Emacs
+tags: @zettel _method doomemacs orgmode mermaid
+roam-id: 1b6bef7d-038d-4778-8c09-711c243b3a09
+type: text/markdown
+
+``` elisp
+;; doom/packages.el
+;; add mermaid support to org-babel
+(package! ob-mermaid)
+```
+
+- install mermaid diagrams executable on your machine.
+- package name is `mermaid-cli`

@@ -1,0 +1,18 @@
+title: Use .Woff Font File in CSS
+tags: font css @zettel _method
+roam-id: d6cb3ef3-bdb8-473f-b515-884b46eee41c
+created: 20260512193200000
+modified: 20260512193200000
+type: text/markdown
+
+Make sure you have your `.woff` files on your local machine. I use `Iosevka` font for this example. Add the following into your css file. I keep my `fonts` directory alongside with `styles.css`
+
+``` css
+@font-face {
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/IosevkaTTC-Regular.woff2') format('woff2');
+}
+```

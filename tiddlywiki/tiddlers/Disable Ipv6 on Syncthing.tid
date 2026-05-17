@@ -1,0 +1,13 @@
+title: Disable Ipv6 on Syncthing
+tags: syncthing @zettel _method
+roam-id: fb96475d-8342-4a7a-a488-d92174a83f9c
+type: text/markdown
+
+- first [[Get Configuration File Path of Syncthing]]
+
+``` diff
+- <listenAddress>default</listenAddress>
++ <listenAddress>tcp4://0.0.0.0:22000</listenAddress>
+```
+
+- restart syncthing

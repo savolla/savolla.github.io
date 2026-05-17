@@ -1,0 +1,17 @@
+title: Go to a Directory in Dirvish
+tags: @zettel _method dirvish dired
+roam-id: c6c8d8a5-30af-4ed2-a852-5174e3d87957
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+
+;;; go to wallpapers
+(defun savolla/dired-go-to-favorites-wallpapers ()
+  "Open dired in ~/resource/images/wallpapers/favorites."
+  (interactive)
+  (dired "~/resource/images/wallpapers/favorites"))
+
+;;;; set currently selected img as wallpaper
+(map! :after dired :map dired-mode-map :desc "go to wallpapers" :localleader "g w" #'savolla/dired-go-to-favorites-wallpapers)
+```

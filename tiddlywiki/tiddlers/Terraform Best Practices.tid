@@ -1,0 +1,10 @@
+title: Terraform Best Practices
+tags: _bestpractice terraform @query
+roam-id: 643e9306-4441-4507-a578-4ba802dbe70d
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_bestpractice]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

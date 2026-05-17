@@ -1,0 +1,9 @@
+title: Generate Local Yaml File From Helm Chart
+tags: @zettel _method helm yaml
+roam-id: b1260c10-6d80-41d7-a03d-9f6da7ebdd3a
+type: text/markdown
+
+``` shell
+cd /path/to/helm/chart
+helm template . -f values.yaml > local.yaml
+```

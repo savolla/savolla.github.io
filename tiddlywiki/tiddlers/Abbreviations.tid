@@ -1,0 +1,14 @@
+title: Abbreviations
+tags: 
+roam-id: 3b24e09c-09eb-479f-919a-6208ce081bda
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_abbr]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

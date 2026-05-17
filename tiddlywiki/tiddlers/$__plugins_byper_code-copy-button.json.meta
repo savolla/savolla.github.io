@@ -1,0 +1,11 @@
+author: Byper
+core-version: >=5.0.0
+dependents: 
+description: A plugin that adds a button to copy code snippets to the clipboard
+list: readme
+name: Code Copy Button
+plugin-type: plugin
+source: https://github.com/b-yp/tiddlywiki-plugins
+title: $:/plugins/byper/code-copy-button
+type: application/json
+version: 1.0.0

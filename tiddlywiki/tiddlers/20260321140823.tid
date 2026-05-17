@@ -1,0 +1,9 @@
+title: 20260321140823
+tags: k8s k8s_operator _term @biblio
+roam-id: f16a29d9-c4db-4b44-8a44-83332cb4909b
+type: text/markdown
+
+> With operators,2more advanced logic needed to maintain, scale, and heal a specific piece of software (MySQL, for example) is encoded into an operator application that runs as a container in the cluster. The code in the operator is responsible for more targeted and advanced health detection and healing than can be achieved via Kubernetes's generic self-healing. Often this is packaged up as "operators,"
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

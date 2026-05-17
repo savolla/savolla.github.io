@@ -1,0 +1,14 @@
+title: Tradeoffs
+tags: 
+roam-id: 2bea5e71-9406-44f4-adde-bb9fc6a02609
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_tradeoff]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

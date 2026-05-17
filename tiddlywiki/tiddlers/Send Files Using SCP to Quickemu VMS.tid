@@ -1,0 +1,10 @@
+title: Send Files Using SCP to Quickemu VMS
+tags: @zettel _method quickemu scp
+roam-id: 1d5193d4-40a0-4a6e-820f-7513093151d8
+type: text/markdown
+
+you need to use different port which is `22220` by default. use this:
+
+``` bash
+scp /path/to/file user@localhost:/path/to/dest -P 22220
+```

@@ -1,0 +1,26 @@
+title: Assign Static Ip Address on Alpine Linux
+tags: @zettel _method alpine
+roam-id: e05834c5-5f6b-43c0-9f4a-6d5462f9ff3f
+type: text/markdown
+
+- assign static ip to alpine
+  - `vi /etc/network/interfaces`
+
+  - add the following. I want it to be `192.168.1.110`
+
+    ``` shell
+    auto lo
+    iface lo inet loopback
+
+    auto eth0
+    iface eth0 inet static
+        address 192.168.1.110
+        netmask 255.255.255.0
+        gateway 192.168.1.1
+    ```
+
+  - restart network
+
+    ``` shell
+    /etc/init.d/networking restart
+    ```

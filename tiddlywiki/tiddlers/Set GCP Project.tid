@@ -1,0 +1,8 @@
+title: Set GCP Project
+tags: @zettel _method gcp gcloud
+roam-id: 5e92cade-a4f8-468d-b64e-be6c5eb5e070
+type: text/markdown
+
+``` shell
+gcloud config set project hopi-pretest-kartaca
+```

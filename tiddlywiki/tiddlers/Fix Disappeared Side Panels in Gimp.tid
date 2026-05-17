@@ -1,0 +1,7 @@
+title: Fix Disappeared Side Panels in Gimp
+tags: @zettel _method gimp _fix
+roam-id: 1bcd9bcd-0c8e-4c94-81c3-6cb5f1a8aef0
+type: text/markdown
+
+- you probably pressed `Tab` key accidentally
+- just press `Tab` again and they will appear again

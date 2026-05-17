@@ -1,0 +1,12 @@
+title: Flip State in React
+tags: @zettel _method react
+roam-id: b1f618c1-8419-47ca-956b-982afdf56a3f
+type: text/markdown
+
+``` typescript
+...
+setA((prev) => !prev);
+...
+```
+
+also see [[Toggle React State Variable Withing a Button onClick]]

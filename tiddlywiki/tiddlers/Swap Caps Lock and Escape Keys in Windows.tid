@@ -1,0 +1,27 @@
+title: Swap Caps Lock and Escape Keys in Windows
+tags: @zettel _method windows autohotkey
+roam-id: 1e2bc186-cb84-423c-8387-2561b366c31b
+type: text/markdown
+
+- download [AutoHotkey](https://www.autohotkey.com/)
+
+- install
+
+- do `Win + r`
+
+- enter `shell:startup`
+
+- you\'ll place your startup scripts here
+
+- right click and create a new file `swapescapecapslock.ahk`
+
+- edit this script and add the following
+
+  ``` ahk
+  CapsLock:Escape
+  Escape:CapsLock
+  ```
+
+- save and exit.
+
+- restart your windows machine

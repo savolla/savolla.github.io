@@ -1,0 +1,10 @@
+title: Kubernetes Facts
+tags: _fact k8s @query
+roam-id: 5806cbe0-f1bc-48b2-8f81-a4e5a63c6f73
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_fact]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

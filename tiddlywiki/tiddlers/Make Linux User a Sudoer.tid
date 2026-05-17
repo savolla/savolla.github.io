@@ -1,0 +1,10 @@
+title: Make Linux User a Sudoer
+tags: @zettel _method linux
+roam-id: aa7ea1df-c6aa-4134-ad11-3443202373ff
+type: text/markdown
+
+- I\'m adding user `savolla` to sudoers group
+
+``` shell
+echo "savolla ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/savolla
+```

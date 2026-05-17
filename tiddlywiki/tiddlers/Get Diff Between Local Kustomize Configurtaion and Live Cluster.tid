@@ -1,0 +1,8 @@
+title: Get Diff Between Local Kustomize Configurtaion and Live Cluster
+tags: _method kustomize k8s @zettel
+roam-id: d618ab35-61cf-4bff-b6b8-d1c9ac625e3f
+type: text/markdown
+
+``` shell
+kubectl diff -k tasks/prod
+```

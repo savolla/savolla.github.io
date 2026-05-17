@@ -1,0 +1,8 @@
+title: Fix Nyxt Browser Crash on Startup When Installed via Home-Manager on Ubuntu
+tags: @zettel _fix nyxt homemanager ubuntu nix
+roam-id: 25aec111-91a1-4139-b6f8-bd5fc71dac5a
+type: text/markdown
+
+``` shell
+export WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 nixGL nyxt
+```

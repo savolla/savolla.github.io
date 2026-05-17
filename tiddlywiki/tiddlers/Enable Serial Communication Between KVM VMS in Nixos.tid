@@ -1,0 +1,15 @@
+title: Enable Serial Communication Between KVM VMS in Nixos
+tags: @zettel _method nixos kvm
+roam-id: 1519d20d-ffcd-4b5e-a215-c470006546a6
+type: text/markdown
+
+- enable `"console=ttyS0"` kernel parameter
+
+  ``` nix
+  # /etc/nixos/configuration.nix
+  boot = {
+    kernelParams = [
+      "console=ttyS0"
+    ];
+  };
+  ```

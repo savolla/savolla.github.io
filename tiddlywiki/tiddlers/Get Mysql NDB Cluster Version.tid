@@ -1,0 +1,13 @@
+title: Get Mysql NDB Cluster Version
+tags: mysql ndb @zettel _method
+roam-id: b45579da-d74c-4f1b-87e9-dd733b2c18b2
+created: 20260327124400000
+modified: 20260327124400000
+type: text/markdown
+
+- [[Connect to Mysql NDB in Test Environment]]
+- mysql -h \$YOUR~MYSQLDATANODEIP~ -p
+
+``` sql
+SELECT VERSION();
+```

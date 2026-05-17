@@ -1,0 +1,16 @@
+title: Run Emacs Server on Nixos
+tags: nixos emacs @zettel _method
+roam-id: 8be9cd34-9f80-4719-8489-09c92021aa86
+type: text/markdown
+
+add the following to your configuration.nix
+
+``` nix
+services = {
+  # run emacs as server
+  emacs = {
+    enable = true;
+    package = pkgs.emacs-gtk;
+  };
+};
+```

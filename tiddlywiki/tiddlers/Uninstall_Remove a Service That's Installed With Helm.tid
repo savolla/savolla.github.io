@@ -1,0 +1,10 @@
+title: Uninstall/Remove a Service That's Installed With Helm
+tags: @zettel _method helm
+roam-id: 60687910-5536-458b-b155-0c6bfbdc57f4
+type: text/markdown
+
+I uninstall `traefik` service from `default` namespace with the following command
+
+``` shell
+helm uninstall traefik --namespace default
+```

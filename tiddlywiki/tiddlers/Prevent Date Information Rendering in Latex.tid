@@ -1,0 +1,6 @@
+title: Prevent Date Information Rendering in Latex
+tags: @zettel _method orgmode latex
+roam-id: 9e620072-769a-4f94-853b-b2072fdddf3a
+type: text/markdown
+
+- add `#+DATE:` in your org file. make it null

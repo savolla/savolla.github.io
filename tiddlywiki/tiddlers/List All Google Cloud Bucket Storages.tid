@@ -1,0 +1,8 @@
+title: List All Google Cloud Bucket Storages
+tags: @zettel _method gcp
+roam-id: 6b4f9249-683c-49d8-affa-0b07ca1e015c
+type: text/markdown
+
+``` shell
+gcloud storage ls
+```

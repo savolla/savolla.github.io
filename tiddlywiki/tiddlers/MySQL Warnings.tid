@@ -1,0 +1,10 @@
+title: MySQL Warnings
+tags: _warning mysql @query
+roam-id: f8123eeb-c13a-4e49-842e-d0020781317d
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_warning]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

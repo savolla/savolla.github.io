@@ -1,0 +1,13 @@
+title: Install Nosetests on Nixos
+tags: @zettel _method nixos python nose
+roam-id: 74756bfb-55fc-405e-93b2-533eae562abc
+type: text/markdown
+
+``` bash
+# configuration.nix (under system packages)
+...
+python313Packages.nose2
+...
+```
+
+- [[Rebuild Nixos]]

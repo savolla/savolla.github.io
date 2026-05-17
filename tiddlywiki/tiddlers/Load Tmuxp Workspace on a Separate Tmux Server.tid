@@ -1,0 +1,8 @@
+title: Load Tmuxp Workspace on a Separate Tmux Server
+tags: @zettel _method tmux tmuxp
+roam-id: 49435521-8617-4d69-a329-53b7522669cb
+type: text/markdown
+
+``` shell
+tmuxp load -L second-server /path/to/workspace.yaml
+```

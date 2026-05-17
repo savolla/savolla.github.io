@@ -1,0 +1,10 @@
+title: Get Status of a Vm in Proxmox Shell
+tags: proxmox @zettel _method
+roam-id: 928b27a4-2ba7-4203-b2c9-34f1d2632192
+created: 20260320212500000
+modified: 20260320212500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+qm status $VMID
+```

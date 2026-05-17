@@ -1,0 +1,6 @@
+title: List Deployments in K8s
+tags: @zettel _method k8s
+roam-id: e9191972-9b2b-4024-8667-4a6a6d91bcb6
+type: text/markdown
+
+- `kubectl get deployments -o wide`

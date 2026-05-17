@@ -1,0 +1,11 @@
+title: Copy File Contents From Terminal
+tags: linux @zettel _method
+roam-id: df1cc83b-7e29-4f94-83e6-0ef8ea4a6176
+created: 20260510152500000
+modified: 20260510152500000
+type: text/markdown
+
+it depends on your graphical environment
+
+- [[Copy File Contens Into Clipboard on Xorg]]
+- [[Copy File Contens Into Clipboard on Wayland]]

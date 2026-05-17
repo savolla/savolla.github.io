@@ -1,0 +1,12 @@
+title: Set Linux Laptop to Performance Mode
+tags: @zettel _method power linux
+roam-id: afdb2dec-ae7e-421e-8a98-450e88877fd6
+type: text/markdown
+
+- [[Get All Cpu Profiles/Governors on Linux]]
+
+``` shell
+powerprofilesctl performance
+powerprofilesctl balanced
+powerprofilesctl power-saver
+```

@@ -1,0 +1,20 @@
+title: Run Remote Commands From Org-Babel Blocks
+tags: @zettel _method orgbabel tramp
+roam-id: 8138187e-e563-4135-854b-50a26a7b943e
+type: text/markdown
+
+use `:dir /ssh:USER@IP:` structure. example below
+
+``` {.bash results="raw drawer output" dir="/ssh:root@192.168.122.50:"}
+kubectl cluster-info
+kubectl get nodes
+```
+
+``` ascii
+Kubernetes control plane is running at https://192.168.122.50:6443
+CoreDNS is running at https://192.168.122.50:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+NAME            STATUS   ROLES    AGE   VERSION
+kube-master-0   Ready    <none>   45m   v1.33.3
+```

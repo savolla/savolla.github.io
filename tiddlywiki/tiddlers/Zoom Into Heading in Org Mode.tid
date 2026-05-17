@@ -1,0 +1,8 @@
+title: Zoom Into Heading in Org Mode
+tags: @zettel _method
+roam-id: 65bc905e-31c7-46c7-9b82-3ca6fbf0fa7f
+type: text/markdown
+
+- use `org-narrow-to-subtree` function
+- `SPC m s n`
+- see also [[Exit Zoom From Org Mode Heading]]

@@ -1,0 +1,8 @@
+title: Make a Delete Call via Rest Api Using Org Mode
+tags: @zettel _method orgmode rest
+roam-id: 48285f56-55b6-4404-b719-0b50252e52cb
+type: text/markdown
+
+``` restclient
+DELETE http://127.0.0.1:8000/api/todos/1/
+```

@@ -1,0 +1,7 @@
+title: Add Dockerhub Images on Openshift
+tags: @zettel _method dockerhub openshift
+roam-id: 5e6ee5c7-f470-4ad8-8da0-f6650bd7748c
+type: text/markdown
+
+- normally your image link would look like: <https://hub.docker.com/r/savolla/java-demo>
+- but opneshift does not accept this link. instead you need to provide it like: `docker.io/savolla/java-demo:latest`

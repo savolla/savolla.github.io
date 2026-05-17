@@ -1,0 +1,11 @@
+title: 202604041857
+tags: proxmox networking @zettel _property
+roam-id: da70fdfc-f329-43ff-9d06-f47f59095fe5
+roam-refs: https://chatgpt.com/
+created: 20260404185700000
+modified: 20260404185700000
+type: text/markdown
+
+On Proxmox, your interface is usually:
+
+ens18 (most common with virtio) or sometimes eth0

@@ -1,0 +1,10 @@
+title: Switch to Unstable Channel in Nixos
+tags: @zettel _method nixos nix
+roam-id: 3bc96ec3-ff2d-42f6-819e-075274f346c8
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo nix-channel --add https://channels.nixos.org/nixos-unstable nixos
+sudo nix-channel --update
+sudo nixos-rebuild switch --upgrade
+```

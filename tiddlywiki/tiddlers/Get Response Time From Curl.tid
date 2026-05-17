@@ -1,0 +1,16 @@
+title: Get Response Time From Curl
+tags: curl @zettel _method
+roam-id: 11ad6d12-1fee-41f1-b434-d55c4ca6c2e2
+created: 20260506162200000
+modified: 20260506162200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+-w "%{time_total}\n"
+```
+
+example:
+
+``` {.bash org-language="sh"}
+curl -i http://bird-user-context:8080/bird-user-context/user-info?birdId=14 -w "%{time_total}\n"
+```

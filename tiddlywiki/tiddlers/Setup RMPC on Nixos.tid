@@ -1,0 +1,52 @@
+title: Setup RMPC on Nixos
+tags: @zettel _method rmpc mpd audio
+roam-id: 68cc9a5a-b11e-4e40-ac4c-357f2d24fb10
+type: text/markdown
+
+:LOGBOOK: CLOCK: \[2026-02-01 Sun 14:33\]--\[2026-02-01 Sun 14:34\] =\> 0:01 CLOCK: \[2026-02-01 Sun 13:52\]--\[2026-02-01 Sun 14:32\] =\> 0:40
+
+- State \"DOING\" from \"TODO\" \[2026-02-01 Sun 13:52\]
+
+- I finally found the solution. here is how I it
+
+- remove the mpd service from my nixos configuration completely
+
+- put the following mpd configuration under `~/.config/mpd/mpd.conf`
+
+  ``` {.bash org-language="sh"}
+  music_directory "~/resource/music"
+  playlist_directory "~/.config/mpd/playlists"
+  db_file "~/.config/mpd/database"
+  log_file "~/.config/mpd/log"
+  pid_file "~/.config/mpd/pid"
+  state_file "~/.config/mpd/state"
+  sticker_file "~/.config/mpd/sticker.sql"
+  port "6600"
+  log_level "default"
+  metadata_to_use "artist,album,title,track,name,genre,date,composer,performer,disc"
+  auto_update "yes"
+  audio_buffer_size "8192"
+
+  audio_output {
+      type     "pipewire"
+      name     "PipeWire Output"
+      enabled  "yes"
+  }
+
+  audio_output {
+      type        "fifo"
+      name        "rmpc-cava"
+      path        "/tmp/mpd.fifo"
+      format      "44100:16:2"
+  }
+  ```
+
+- you also have to create those files under `~/.config/mpd` manually
+
+- start `mpd` as your current user on each session. put the following into your `~/.xprofile`
+
+  ``` {.bash org-language="sh"}
+  mpd &
+  ```
+
+- restart your computer

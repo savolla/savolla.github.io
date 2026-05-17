@@ -1,0 +1,10 @@
+title: Change Default GPG Keys Directory
+tags: gpg @zettel _method
+roam-id: ba9a75f7-dec0-4a5b-992f-b694798c6043
+created: 20260510205500000
+modified: 20260510205500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+export GNUPGHOME=/home/savolla/project/repos/one-ring/dotfiles/nix/.gnupg
+```

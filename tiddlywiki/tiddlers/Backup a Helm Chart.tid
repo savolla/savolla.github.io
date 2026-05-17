@@ -1,0 +1,14 @@
+title: Backup a Helm Chart
+tags: @zettel _method helm
+roam-id: d0ff2b49-e36c-459a-8147-d29a3e41471f
+type: text/markdown
+
+- say you want to backup your `consul` chart
+
+``` shell
+cd /path/to/chart/repo
+mkdir .backup
+cd .backup
+helm get manifest consul-agent > consul-manifest.yaml
+helm get values consul-agent -o yaml > consul-values.yaml
+```

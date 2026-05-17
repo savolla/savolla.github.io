@@ -1,0 +1,6 @@
+title: Create a New Branch Using Magit
+tags: @zettel _method magit doomemacs
+roam-id: 4d49f395-3c1a-4489-a32f-b49fb6c84b1b
+type: text/markdown
+
+- `SPC g g b n`

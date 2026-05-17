@@ -1,0 +1,10 @@
+title: Terraform Tradeoffs
+tags: _tradeoff terraform @query
+roam-id: 053ac1ae-49ff-4c2d-ab2c-c77b09bf4751
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_tradeoff]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,13 @@
+title: Important Keybinds for Qutebrowser
+tags: @zettel _method qutebrowser
+roam-id: 95ff79c9-fb39-4cd2-9232-efdc6b28342e
+type: text/markdown
+
+shortcut   functionality
+  ---------- --------------------------------------
+  g t        fuzzy find tab and select with enter
+  g C        clone current tab to right
+  yyPp       clone current tab with favicon
+  g J/K      move tab right or left
+  yy         copy page url
+  yT         copy page title

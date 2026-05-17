@@ -1,0 +1,8 @@
+title: Update Helm Repo
+tags: _method helm @zettel
+roam-id: 20575718-754a-474a-bc5e-7ef1d199191b
+type: text/markdown
+
+``` shell
+helm update
+```

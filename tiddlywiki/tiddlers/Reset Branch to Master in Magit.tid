@@ -1,0 +1,9 @@
+title: Reset Branch to Master in Magit
+tags: @zettel _method magit
+roam-id: 0d626842-0827-4a2b-ad3d-05668058d20f
+type: text/markdown
+
+- `SPC g g`
+- `O b`
+- select the branch you want to reset
+- select the branch you want to reset to (usually main)

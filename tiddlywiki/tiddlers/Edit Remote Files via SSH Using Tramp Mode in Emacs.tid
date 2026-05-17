@@ -1,0 +1,11 @@
+title: Edit Remote Files via SSH Using Tramp Mode in Emacs
+tags: @zettel _method doomemacs ssh tramp
+roam-id: fcfad191-e3d2-41cd-bdc6-5eddb418117b
+type: text/markdown
+
+- `SPC f f` to `find-file`
+- now type `/ssh:` and a new menu will pop up
+- select your target host say `192.168.200.100` and you want to login as `root`
+- type `/ssh:root@192.168.200.100`
+- it will ask for password
+- now browse the file system and edit your files

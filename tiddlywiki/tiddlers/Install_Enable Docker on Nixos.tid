@@ -1,0 +1,29 @@
+title: Install/Enable Docker on Nixos
+tags: @zettel _method
+roam-id: 4ffc7945-9bff-41bc-96b1-9187a622e924
+created: 20260514213600000
+modified: 20260514213600000
+type: text/markdown
+
+in `configuration.nix`
+
+``` nix
+virtualisation = {
+  docker = {
+    enable = true;
+    enableOnBoot = false;
+    daemon.settings = {
+      data-root = "/home/savolla/resource/docker";
+    };
+    autoPrune = {
+      enable = false;
+      dates = "weekly";
+    };
+
+    rootless = {
+      enable = true;
+      setSocketVariable = false;
+    };
+  };
+};
+```

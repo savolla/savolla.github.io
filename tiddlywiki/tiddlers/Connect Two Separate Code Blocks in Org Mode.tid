@@ -1,0 +1,6 @@
+title: Connect Two Separate Code Blocks in Org Mode
+tags: @zettel _method orgmode
+roam-id: a92ea24a-e2f0-4c34-9f3f-1400ae4fdb7d
+type: text/markdown
+
+- there are two solutions. using `:noweb yes` and `:session name_of_session`

@@ -1,0 +1,11 @@
+title: 20260401124150
+tags: @biblio k8s_daemonset _property k8s
+roam-id: 4507d601-4b94-4d96-b6fb-a604cdb34991
+type: text/markdown
+
+> Each Pod in a DaemonSet performs a role similar to a system daemon on a classic Unix / POSIX server.
+
+k8s\' daemonset = linux\'s systemd service
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

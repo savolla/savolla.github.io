@@ -1,0 +1,19 @@
+title: Install/Enable Ollama on Nixos
+tags: nixos nix ollama @zettel _method
+roam-id: 2908d6eb-6942-443d-a559-5ca6fac851ba
+created: 20260514214000000
+modified: 20260514214000000
+type: text/markdown
+
+in `configuration.nix`
+
+``` nix
+services = {
+  ollama = {
+    enable = true;
+    host = "0.0.0.0"; # to access from other machines
+    # package = pkgs.ollama-rocm; # use with AMD
+    # or nvidia (find the option from nix options)
+  };
+};
+```

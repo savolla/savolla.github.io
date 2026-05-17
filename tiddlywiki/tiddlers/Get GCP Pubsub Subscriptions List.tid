@@ -1,0 +1,10 @@
+title: Get GCP Pubsub Subscriptions List
+tags: gcp pubsub @zettel _method
+roam-id: 56fb6781-d646-499d-90cc-b3e746f92325
+created: 20260409103700000
+modified: 20260409103700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gcloud pubsub subscriptions list
+```

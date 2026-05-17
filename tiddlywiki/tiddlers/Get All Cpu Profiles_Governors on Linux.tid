@@ -1,0 +1,8 @@
+title: Get All Cpu Profiles/Governors on Linux
+tags: @zettel _method power linux
+roam-id: b47e9cc5-e666-4e7c-8b1b-aa6128c55128
+type: text/markdown
+
+``` shell
+powerprofilesctl
+```

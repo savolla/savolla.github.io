@@ -1,0 +1,10 @@
+title: Execute Command on Kubernetes Pod
+tags: k8s k8s_pod @zettel _method
+roam-id: c1081759-bdd2-47ac-943d-79c560b0bdab
+created: 20260402194800000
+modified: 20260402194800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kubectl exec -n default apm-dd86897fd-f5m8l -- curl -s ident.me
+```

@@ -1,0 +1,21 @@
+title: Install a Specific Version of Linux Kernel on Nixos
+tags: nixos nix linux @zettel _method
+roam-id: c4be0834-571c-4dcf-96a6-f328fb4c2de9
+type: text/markdown
+
+here is a working example.
+
+``` nix
+boot.kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_10.override {
+    argsOverride = rec {
+        src = pkgs.fetchurl {
+                url = "mirror://kernel/linux/kernel/v6.x/linux-${version}.tar.xz";
+                sha256 = "900d567ff01824708ce24c3b37faaef03e6f6145411dd447a6ff2edc8c5db3a9";
+    };
+    version = "6.10.7";
+    modDirVersion = "6.10.7";
+    };
+});
+```
+
+source: <https://discourse.nixos.org/t/using-a-specific-kernel-version/53626/4>

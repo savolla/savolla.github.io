@@ -1,0 +1,8 @@
+title: Check Version of a Package in Ubuntu/Debian
+tags: dpkg debian ubuntu @zettel _method
+roam-id: 425b10f8-a3e7-46e5-8259-9173033df07b
+type: text/markdown
+
+``` shell
+sudo dpkg -l package0 packagd1
+```

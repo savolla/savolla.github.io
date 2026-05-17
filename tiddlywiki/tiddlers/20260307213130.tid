@@ -1,0 +1,9 @@
+title: 20260307213130
+tags: _property @biblio prometheus
+roam-id: 7e35f107-b3d7-4506-b6f2-51e1787646d0
+type: text/markdown
+
+> A single Prometheus server can ingest millions of samples per second.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

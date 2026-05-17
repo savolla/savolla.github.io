@@ -1,0 +1,8 @@
+title: Get Ram and Cpu Usage of Kubernetes Nodes
+tags: _method @zettel k8s
+roam-id: 10f4f7f2-63b5-46b2-ac01-8e16bf37fbba
+type: text/markdown
+
+``` shell
+kubectl top node
+```

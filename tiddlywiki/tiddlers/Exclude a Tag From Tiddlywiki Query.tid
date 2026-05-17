@@ -1,0 +1,14 @@
+title: Exclude a Tag From Tiddlywiki Query
+tags: tiddlywiki @zettel _method
+roam-id: 5932759d-0fd0-47af-88ba-4b4600c64a98
+created: 20260423191900000
+modified: 20260423191900000
+type: text/markdown
+
+``` tiddlywiki
+{{{}}}
+```
+
+``` tiddlywiki
+{{{}}}
+```

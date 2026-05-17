@@ -1,0 +1,6 @@
+title: Get List of Consul Metrics for Prometheus
+tags: @zettel _method prometheus consul
+roam-id: d366a8db-8a60-40cf-bc80-6a55e855fd5f
+type: text/markdown
+
+- read [Agents - Enable Telemetry Metrics \| Consul \| HashiCorp Developer](https://developer.hashicorp.com/consul/docs/monitor/telemetry/agent)

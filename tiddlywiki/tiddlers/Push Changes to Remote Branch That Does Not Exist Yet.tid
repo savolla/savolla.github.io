@@ -1,0 +1,10 @@
+title: Push Changes to Remote Branch That Does Not Exist Yet
+tags: @zettel _method git
+roam-id: e9169705-971a-4622-ac7d-928202054c11
+type: text/markdown
+
+- `BIRD-32351` does not exist. but it will after the following command
+
+``` shell
+git push -u origin BIRD-32351
+```

@@ -1,0 +1,10 @@
+title: Install Datree
+tags: @zettel _method datree k8s
+roam-id: 071edd2c-6870-45d8-bc44-4b9a4670f7d8
+type: text/markdown
+
+``` shell
+curl https://raw.githubusercontent.com/datreeio/datree/main/install.sh | /bin/bash
+```
+
+or using by `nix`

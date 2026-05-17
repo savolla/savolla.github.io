@@ -1,0 +1,21 @@
+title: Install Soapui on Ubuntu
+tags: @zettel _method ubuntu soapui
+roam-id: 4b8bfaaf-0ca3-4413-b4e3-4ca69e6dbce6
+type: text/markdown
+
+- make sure you have `java`
+
+  ``` shell
+  java -version
+  ```
+
+- if you don\'t have it
+
+  ``` shell
+  sudo apt update
+  sudo apt install default-jre
+  ```
+
+- download soapui from <https://www.soapui.org/downloads/thank-you-for-downloading-soapui/>
+
+- install by following insatllation wizard

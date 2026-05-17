@@ -1,0 +1,10 @@
+title: Store a Bookmark Into Register in PDF-Tools
+tags: @zettel _method emacs
+roam-id: 53e6a6ab-92b1-4010-a732-850f35f3026c
+roam-refs: https://www.youtube.com/watch?v=rTtLu4QAT2I
+type: text/markdown
+
+- while inside pdf view navigate to the page you want to store the bookmark for
+- press `m` and then a character of your choice
+- now the bookmark is stored into that character
+- [[Jump to Bookmark in PDF-Tools]]

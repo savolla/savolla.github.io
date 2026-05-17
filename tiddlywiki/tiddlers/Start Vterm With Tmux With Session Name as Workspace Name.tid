@@ -1,0 +1,28 @@
+title: Start Vterm With Tmux With Session Name as Workspace Name
+tags: @zettel _method tmux vterm
+roam-id: 7ac18d46-5034-4550-aab8-de4ead2d3fd8
+type: text/markdown
+
+- add the following into your `config.el`
+
+``` elisp
+;; tmux integration
+(defvar-local my/vterm-tmux-started nil
+  "Whether tmux has already been started in this vterm buffer.")
+
+(defun my/vterm-start-tmux ()
+  "Start tmux session in vterm once, avoiding nesting."
+  (unless my/vterm-tmux-started
+    (setq my/vterm-tmux-started t)
+    (let ((workspace (persp-name (get-current-persp))))
+      (vterm-send-string
+       (format "sh -c 'unset TMUX; exec tmux new-session -A -s \"%s\"'" workspace))
+      (vterm-send-return))))
+
+(defun my/vterm-setup ()
+  "Custom setup for `vterm-mode`."
+  (visual-line-mode -1) ;; Disable line wrap for better zsh modeline rendering
+  (run-with-timer 0.3 nil #'my/vterm-start-tmux))
+
+(add-hook 'vterm-mode-hook #'my/vterm-setup)
+```

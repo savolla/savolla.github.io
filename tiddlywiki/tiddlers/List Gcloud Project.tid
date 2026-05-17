@@ -1,0 +1,8 @@
+title: List Gcloud Project
+tags: @zettel _method gcloud
+roam-id: 17c45b32-592b-4352-a0dc-6f04b8e83f42
+type: text/markdown
+
+``` shell
+gcloud projects list
+```

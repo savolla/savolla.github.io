@@ -1,0 +1,14 @@
+title: Cherry Pick Commits Without the Original Author
+tags: @zettel _method git
+roam-id: 82d595f9-bc4c-4079-ae0a-d66f042ae8fe
+type: text/markdown
+
+``` shell
+git cherry-pick --no-commit 545234739f76
+git add .
+git commit -m 'BIRD-32501 bird-tasks: refactor RotateApplicationLogs'
+
+git cherry-pick --no-commit 8544ccd59cda
+git add .
+git commit -m 'BIRD-32501 bird-tasks: add kustomize defs for RotateApplicationLogs'
+```

@@ -1,0 +1,9 @@
+title: Get Version of a Python Library
+tags: @zettel _method python
+roam-id: 3ed99194-3e9d-412c-9722-1fe1ab60d548
+type: text/markdown
+
+``` python
+import library_name
+library_name.__version__
+```

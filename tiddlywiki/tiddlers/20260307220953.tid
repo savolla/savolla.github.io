@@ -1,0 +1,9 @@
+title: 20260307220953
+tags: opentracing opencensus opentelemetry _history @biblio prometheus
+roam-id: 264fc0d3-70b7-4b78-b2b1-9ea2f200c659
+type: text/markdown
+
+> OpenTelemetry is born from two other open source projects, OpenCensus and OpenTracing.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

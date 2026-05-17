@@ -1,0 +1,10 @@
+title: Delete All Failed Pods
+tags: k8s k8s_pod @zettel _method
+roam-id: d49901bd-9788-4009-8ee0-fc760efd935c
+created: 20260403120500000
+modified: 20260403120500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kubectl delete pod --field-selector=status.phase=Failed -n <namespace>
+```

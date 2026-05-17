@@ -1,0 +1,8 @@
+title: List Build Configs in Openshift
+tags: @zettel _method openshift
+roam-id: 45d7c73a-9299-43ba-a24f-fa0d464321ae
+type: text/markdown
+
+``` shell
+oc get bc
+```

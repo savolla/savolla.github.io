@@ -1,0 +1,8 @@
+title: List All Configmaps in Kubernetes
+tags: @zettel _method k8s
+roam-id: 90624a6b-b6d9-4471-ab53-19e5f9aaf452
+type: text/markdown
+
+``` shell
+kubectl get configmap
+```

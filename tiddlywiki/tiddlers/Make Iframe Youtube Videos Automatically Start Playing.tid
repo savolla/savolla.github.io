@@ -1,0 +1,12 @@
+title: Make Iframe Youtube Videos Automatically Start Playing
+tags: @zettel _method html
+roam-id: 9420d941-8b16-48e8-bbba-8ed026207d6d
+type: text/markdown
+
+- add `?autoplay=1` at the end of the video id. see example below
+
+``` html
+<iframe
+  src="https://www.youtube.com/embed/9SbnhgjeyXA?autoplay=1">
+</iframe>
+```

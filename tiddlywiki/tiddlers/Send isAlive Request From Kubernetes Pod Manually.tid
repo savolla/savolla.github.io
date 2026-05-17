@@ -1,0 +1,11 @@
+title: Send isAlive Request From Kubernetes Pod Manually
+tags: _method @zettel k8s
+roam-id: 08370002-5a0d-4613-a8d5-4b385317b79c
+type: text/markdown
+
+``` shell
+kubectl exec -it <pod_name> -- sh
+wget -qSO- http://localhost:8080/<deployment_name>/isAlive
+```
+
+find the 200 header response.

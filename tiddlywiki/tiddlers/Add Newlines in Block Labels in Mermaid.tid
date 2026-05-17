@@ -1,0 +1,12 @@
+title: Add Newlines in Block Labels in Mermaid
+tags: @zettel _method mermaid
+roam-id: 176a93d6-0edf-4f41-a3f7-39e2853e9803
+type: text/markdown
+
+- use `<br>`
+
+``` {.mermaid file="\"test2.png\"" scale="2"}
+flowchart LR
+    A[Scrimba <br> Python Course]:::someclass --> B
+    classDef someclass fill:#f96
+```

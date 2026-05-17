@@ -1,0 +1,8 @@
+title: List All Remote Branches in Git Repository
+tags: @zettel _method git
+roam-id: acc9a65b-fe83-49bd-b4af-7c85d7360dd2
+type: text/markdown
+
+``` shell
+git branch -r
+```

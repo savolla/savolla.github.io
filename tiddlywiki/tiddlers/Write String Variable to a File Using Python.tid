@@ -1,0 +1,12 @@
+title: Write String Variable to a File Using Python
+tags: @zettel _method python
+roam-id: 711c0043-f781-4442-bc74-9c3d60b175fe
+type: text/markdown
+
+``` python
+my_string = "Hello, this is some text I want to write to a file."
+
+# Open a file and write the string
+with open("output.txt", "w") as file:
+    file.write(my_string)
+```

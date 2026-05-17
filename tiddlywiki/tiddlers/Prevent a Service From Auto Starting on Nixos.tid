@@ -1,0 +1,12 @@
+title: Prevent a Service From Auto Starting on Nixos
+tags: systemd nixos @zettel _method
+roam-id: 5748f8cf-a430-4f25-b9e9-20d198394beb
+created: 20260514220100000
+modified: 20260514220100000
+type: text/markdown
+
+in this example we prevent docker service from auto starting. put the following in `configuration.nix`
+
+``` nix
+systemd.services.docker.wantedBy = lib.mkForce [ ];
+```

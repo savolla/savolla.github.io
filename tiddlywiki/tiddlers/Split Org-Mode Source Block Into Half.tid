@@ -1,0 +1,6 @@
+title: Split Org-Mode Source Block Into Half
+tags: @zettel _method orgmode emacs
+roam-id: 0644d1ff-fb37-4c89-aa51-2490238d8c2e
+type: text/markdown
+
+use `org-babel-demarcate-block` function

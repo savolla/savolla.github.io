@@ -1,0 +1,10 @@
+title: Get Apt Cache Size
+tags: linux apt @zettel _method
+roam-id: 63949a25-75b4-4546-913f-3dfc346c358c
+created: 20260504213600000
+modified: 20260504213600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo du -sh /var/cache/apt/archives
+```

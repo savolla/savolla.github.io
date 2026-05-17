@@ -1,0 +1,8 @@
+title: Get Helm Chart Values
+tags: @zettel _method helm
+roam-id: 6d335ad1-2cf1-4ca5-a6d0-7c1162b4e112
+type: text/markdown
+
+``` shell
+helm get values consul-agent -o yaml > consul-values.yaml
+```

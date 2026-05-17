@@ -1,0 +1,10 @@
+title: Rename Object/Blob in GCP Bucket
+tags: @arrow gcp gcs @zettel _method
+roam-id: 00f9e499-2853-4502-8e22-ef03bd98135e
+created: 20260402175900000
+modified: 20260402175900000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gsutil mv gs://bucket_name/old_object_name gs://bucket_name/new_object_name
+```

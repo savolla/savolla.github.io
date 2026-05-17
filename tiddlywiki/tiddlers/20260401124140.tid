@@ -1,0 +1,11 @@
+title: 20260401124140
+tags: @biblio k8s k8s_workload _mechanism
+roam-id: ec9ce78c-43e0-4062-a888-8ee7612cdfb4
+type: text/markdown
+
+> Ultimately, your applications run as containers inside Pods; however, managing individual Pods would be a lot of effort. For example, if a Pod fails, you probably want to run a new Pod to replace it. Kubernetes can do that for you. You use the Kubernetes API to create a workload object that represents a higher abstraction level than a Pod,
+
+a kubernetes workload is an **abstraction layer** over pods. things like Deployment, Replicaset, Statefulset etc.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

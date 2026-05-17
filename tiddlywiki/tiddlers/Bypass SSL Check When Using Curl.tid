@@ -1,0 +1,8 @@
+title: Bypass SSL Check When Using Curl
+tags: @zettel _method curl
+roam-id: 34f9d1a5-b3db-4d1f-a885-76f1b115b511
+type: text/markdown
+
+``` shell
+curl -k https://bird-pretest.test.kartaca.com/version
+```

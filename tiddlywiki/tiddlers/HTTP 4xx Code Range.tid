@@ -1,0 +1,15 @@
+title: HTTP 4xx Code Range
+tags: http @zettel _reference
+roam-id: c88b7962-47a3-4400-b379-403cb4482a4d
+roam-refs: https://chatgpt.com/
+created: 20260331115000000
+modified: 20260331115000000
+type: text/markdown
+
+Codes in the 4xx range, usually **your request** (client) was wrong:
+
+- 400 Bad Request -- Request is malformed or invalid.
+- 401 Unauthorized -- You need to log in or provide credentials.
+- 403 Forbidden -- You're logged in, but not allowed to do this.
+- 404 Not Found -- Resource doesn't exist (classic internet error).
+- 429 Too Many Requests -- You are sending too many requests too fast.

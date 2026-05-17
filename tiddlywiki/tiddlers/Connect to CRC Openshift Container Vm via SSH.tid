@@ -1,0 +1,8 @@
+title: Connect to CRC Openshift Container Vm via SSH
+tags: @zettel _method openshift ssh
+roam-id: 989621d5-7bbd-4898-8616-df23d7d8db11
+type: text/markdown
+
+``` shell
+ssh -i ~/.crc/machines/crc/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 2222 core@127.0.0.1
+```

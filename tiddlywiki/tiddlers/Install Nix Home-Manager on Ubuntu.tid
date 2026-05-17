@@ -1,0 +1,10 @@
+title: Install Nix Home-Manager on Ubuntu
+tags: @zettel _method nix ubuntu homemanager
+roam-id: dcf9a2a2-d338-42a9-aa0c-19302f184a44
+type: text/markdown
+
+- install nix package manager on ubuntu
+
+``` shell
+nix-env -iA nixpkgs.home-manager
+```

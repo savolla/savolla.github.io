@@ -1,0 +1,10 @@
+title: Rebasing Commits Using Magit
+tags: @zettel _method magit doomemacs
+roam-id: 52df3046-df6e-4212-89d9-2483721c299d
+type: text/markdown
+
+- `SPC g g`
+- go to recent commits section
+- `Shift v` to enter line selection mode
+- select your commits
+- press `r i` to enter into interactive rebase

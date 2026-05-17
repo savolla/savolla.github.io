@@ -1,0 +1,11 @@
+title: Go Back to Stashed Changes in Git
+tags: _method git @zettel
+roam-id: b506e978-5737-4ed7-bc6e-e4b8836ad6e7
+type: text/markdown
+
+``` shell
+git stash list # to get the target stash
+git stash apply stash@{N} # replace N with your stash id
+```
+
+if everything is okay and your stashed changes are applied then you can safely delete your stash

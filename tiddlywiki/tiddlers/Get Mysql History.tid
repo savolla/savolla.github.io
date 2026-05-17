@@ -1,0 +1,6 @@
+title: Get Mysql History
+tags: mysql
+roam-id: 513b0892-41ad-4b0c-ae3e-c1844de0306d
+type: text/markdown
+
+- it is stored under your home `~/.mysql_history`

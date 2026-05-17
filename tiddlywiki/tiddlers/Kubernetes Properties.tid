@@ -1,0 +1,10 @@
+title: Kubernetes Properties
+tags: _property k8s @query
+roam-id: ae7b6434-12af-4e98-872a-9206ede09c73
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_property]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

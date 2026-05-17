@@ -1,0 +1,10 @@
+title: Prevent/Disable Tag Inheritance in Org Mode
+tags: orgmode emacs @zettel _method
+roam-id: 23cea4bf-b2e5-4a66-beae-2f1e7d65b8f9
+created: 20260501161900000
+modified: 20260501161900000
+type: text/markdown
+
+``` elisp
+(setq org-use-tag-inheritance nil)
+```

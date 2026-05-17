@@ -1,0 +1,16 @@
+title: Bibliographic Notes
+tags: 
+roam-id: a6314d22-3f34-4227-9ccf-c35993738d34
+type: text/markdown
+
+My bibliographic notes taken from various sources. books, web articles, youtube videos and such
+
+<ol>
+  <$list filter="[tag[@biblio]!tag[_warning]!tag[_bestpractice]!tag[_term]!tag[_con]!tag[_limitation]!tag[_method]!tag[_abbr]!tag[_analogy]!tag[_fact]!tag[_tradeoff]!tag[_comparison]!tag[_pro]!tag[_cause]!tag[_antipattern]!tag[_pattern]!tag[_usecase]!tag[_advice]!tag[_property]!tag[_mechanism]!tag[_definition]!tag[_history]!tag[_constraint]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

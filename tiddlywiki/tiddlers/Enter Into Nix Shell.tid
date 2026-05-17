@@ -1,0 +1,9 @@
+title: Enter Into Nix Shell
+tags: @zettel _method nix starship
+roam-id: 0a6e06b9-3160-4a12-bf3c-f74dd0e12d0b
+type: text/markdown
+
+- make sure you are in the same directory as your `shell.nix`
+- do `nix-shell`
+- or if you\'re using `starship` then do the following
+- `nix-shell --command zsh`

@@ -1,0 +1,8 @@
+title: Delete Local Branch
+tags: @zettel _method git
+roam-id: 4404967d-7500-4d51-b405-5e4d8e1a8c67
+type: text/markdown
+
+``` shell
+git branch -D name-of-branch
+```

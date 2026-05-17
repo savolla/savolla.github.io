@@ -1,0 +1,10 @@
+title: Difference Between Startup, Liveness and Readiness Probes in Kubernetes
+tags: k8s @zettel _comparison
+roam-id: 97ef181a-8987-4044-a450-1a6ebe73a12c
+created: 20260318111700000
+modified: 20260318111700000
+type: text/markdown
+
+- Liveness probe --- "Is it still alive?"
+- Readiness probe --- "Can it handle traffic?"
+- Startup probe --- "Has it finished starting?"

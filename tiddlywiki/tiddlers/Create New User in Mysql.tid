@@ -1,0 +1,24 @@
+title: Create New User in Mysql
+tags: mysql
+roam-id: bad4fb72-e4e0-4a65-9b9f-93991183268a
+type: text/markdown
+
+- read: <https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql>
+
+- ssh into the mysql server
+
+- login as root `mysql -h SOMEHOST -u root -pSOMEPASSWORD`
+
+- create a new user
+
+  ``` sql
+  CREATE USER '<username>'@'%' IDENTIFIED BY 'secure_pass';
+  ```
+
+- [[Grant All Privileges to User for Specific Database]] or [[Grant All Privileges to User for All Databases]]
+
+- refresh privileges
+
+  ``` sql
+  flush privileges;
+  ```

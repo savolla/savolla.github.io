@@ -1,0 +1,20 @@
+title: Integrate GCP and Terraform
+tags: @zettel _method terraform gcp
+roam-id: b4729ef5-948a-4ae2-aac5-914d611481e4
+type: text/markdown
+
+- make sure you logged into gcp
+
+  ``` {.bash org-language="sh"}
+  gcloud auth application-default login
+  ```
+
+- after you logged in a new `adc.json` file will be created under `~/.config/gcloud/legacy_credentials/user@mail.com`
+
+- you\'ll need to add this file to `GOOGLE_APPLICATION_CREDENTIALS` environment variable
+
+``` shell
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/adc.json"
+```
+
+put above line to `.zshrc` or `.profile`

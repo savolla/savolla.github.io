@@ -1,0 +1,8 @@
+title: Enable Line Wrap When Displaying Content With Less
+tags: @zettel _method less
+roam-id: a0b3ca88-99da-4950-b1aa-e7dc7dff7bfe
+type: text/markdown
+
+``` shell
+less -Si /path/to/file
+```

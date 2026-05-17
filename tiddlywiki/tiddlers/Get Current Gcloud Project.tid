@@ -1,0 +1,8 @@
+title: Get Current Gcloud Project
+tags: @zettel _method gcp
+roam-id: dd4bf409-bbc1-4321-9fd6-98b41f8f9367
+type: text/markdown
+
+``` shell
+gcloud config get-value project
+```

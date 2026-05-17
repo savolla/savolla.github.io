@@ -1,0 +1,23 @@
+title: Add Metric Targets to Prometheus
+tags: @zettel _method prometheus
+roam-id: d62093bb-ef63-44f0-a98d-7e3c744b7eba
+type: text/markdown
+
+use the following under `scrape_configs:`
+
+``` yaml
+- job_name: "kafka_exporter"
+  static_configs:
+    - targets: ["mobilelgniter:9308"]
+```
+
+here is a complete example:
+
+``` yaml
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: "kafka_exporter"
+    static_configs:
+      - targets: ["mobilelgniter:9308"]
+```

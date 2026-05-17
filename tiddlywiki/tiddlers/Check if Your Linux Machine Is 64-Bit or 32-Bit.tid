@@ -1,0 +1,8 @@
+title: Check if Your Linux Machine Is 64-Bit or 32-Bit
+tags: @zettel _method linux
+roam-id: 209e9782-91c3-4fe8-afc2-fb843bb0c0ae
+type: text/markdown
+
+``` shell
+getconf LONG_BIT
+```

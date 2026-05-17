@@ -1,0 +1,10 @@
+title: Set Cursor Position in Fish Abbreviation
+tags: fish @zettel _method
+roam-id: 0363dcd0-f392-4448-9b5a-ca1e5ca42af2
+created: 20260317122400000
+modified: 20260317122400000
+type: text/markdown
+
+``` fish
+abbr -a L --position anywhere --set-cursor "% | less"
+```

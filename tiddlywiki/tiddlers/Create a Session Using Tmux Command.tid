@@ -1,0 +1,8 @@
+title: Create a Session Using Tmux Command
+tags: @zettel _method tmux
+roam-id: 8697dea8-bb6e-4f0b-8eb0-a9cb0d49630d
+type: text/markdown
+
+``` shell
+tmux new-session -t "name-of-session"
+```

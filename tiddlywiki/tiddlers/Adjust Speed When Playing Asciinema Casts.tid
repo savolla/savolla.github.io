@@ -1,0 +1,12 @@
+title: Adjust Speed When Playing Asciinema Casts
+tags: @zettel _method asciinema
+roam-id: d05e1453-1449-4d4e-988b-61e979b29c4a
+type: text/markdown
+
+launch asciinema player with the following arguments
+
+``` shell
+asciinema play -s 2 your_file.cast
+```
+
+this will increase the player speed by 100%

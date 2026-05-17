@@ -1,0 +1,8 @@
+title: Bring Back Suspended Linux Processes
+tags: @zettel _method linux
+roam-id: d0645b0e-997a-49ca-a7a1-64b96fa908d8
+type: text/markdown
+
+``` shell
+fg
+```

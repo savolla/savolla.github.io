@@ -1,0 +1,10 @@
+title: Kubernetes Fixes
+tags: _fix k8s @query
+roam-id: fd991427-f1b0-4d4f-8538-8693955284db
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_fix]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

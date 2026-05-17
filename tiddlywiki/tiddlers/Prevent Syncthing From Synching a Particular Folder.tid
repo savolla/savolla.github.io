@@ -1,0 +1,16 @@
+title: Prevent Syncthing From Synching a Particular Folder
+tags: syncthing @zettel _method
+roam-id: 1fbe65e0-1638-4e35-8de3-67129b80e480
+type: text/markdown
+
+- go to the root of the folder you\'re trying to sync
+
+- create a file named `.stignore`
+
+- put file path of the folder related to the root folder. example below;
+
+  ``` {.bash org-language="sh"}
+  dotfiles/fiat/.config/gcloud/logs
+  ```
+
+- so if your sync folder is called `one-ring` then the `one-ring/dotfiles/fiat/.config/gcloud/logs` folder will be ignored by syncthing

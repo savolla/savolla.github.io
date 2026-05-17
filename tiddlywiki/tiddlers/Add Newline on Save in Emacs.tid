@@ -1,0 +1,10 @@
+title: Add Newline on Save in Emacs
+tags: emacs @zettel _method
+roam-id: a09f653a-c809-41b0-afde-ffec7a4ade78
+created: 20260504104700000
+modified: 20260504104700000
+type: text/markdown
+
+``` elisp
+(setq-default require-final-newline t)
+```

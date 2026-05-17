@@ -1,0 +1,9 @@
+title: List Available Languages in XTTS V2 Using Coqui TTS
+tags: @zettel _method coquitts xtts
+roam-id: 89023a53-ef8f-48ed-9219-d4d8a91f56ba
+type: text/markdown
+
+``` {.bash org-language="sh"}
+tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
+    --list_language_idx
+```

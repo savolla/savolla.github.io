@@ -1,0 +1,12 @@
+title: Connect to Quickemu Vm Using SSH
+tags: @zettel _method ssh quickemu
+roam-id: 93faa1c9-a52c-4eae-a1b3-a29d386eb3c3
+type: text/markdown
+
+- don\'t attempt to change the IP of your guest. just use the following
+
+  ``` bash
+  ssh -p 22220 your_user@localhost
+  ```
+
+- note that you must use `localhost` and not the guest IP address

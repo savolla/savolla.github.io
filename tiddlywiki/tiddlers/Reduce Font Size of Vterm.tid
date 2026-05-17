@@ -1,0 +1,12 @@
+title: Reduce Font Size of Vterm
+tags: @zettel _method vterm
+roam-id: cec2edfc-930d-48ea-98fd-197d01c21f2a
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+(add-hook 'vterm-mode-hook
+          (lambda ()
+            (face-remap-add-relative 'default :height 0.95)
+            ))
+```

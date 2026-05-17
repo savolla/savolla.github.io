@@ -1,0 +1,8 @@
+title: List Columns of a Table in Mysql
+tags: mysql
+roam-id: c6c69054-58de-42c7-8625-39237aa4d445
+type: text/markdown
+
+``` sql
+show columns from <table_name>;
+```

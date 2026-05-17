@@ -1,0 +1,31 @@
+title: Map Wacom Tablet to a Specific Monitor
+tags: @arrow @zettel _method wacom
+roam-id: 1fab7b8b-0be0-437d-a47d-a5269f0f216a
+type: text/markdown
+
+``` {.shell results="output"}
+# list wacom devices
+xsetwacom --list devices
+```
+
+``` example
+Wacom Intuos S Pad pad          id: 23    type: PAD
+Wacom Intuos S Pen stylus       id: 24    type: STYLUS
+```
+
+list active monitors
+
+``` {.shell results="output"}
+xrandr --listactivemonitors
+```
+
+``` example
+Monitors: 2
+ 0: +*HDMI-1 1920/527x1080/296+0+0  HDMI-1
+ 1: +eDP-1 1920/301x1200/188+1920+0  eDP-1
+```
+
+``` shell
+xsetwacom --set "Wacom Intuos S Pad pad" MapToOutput HDMI-1
+xsetwacom --set "Wacom Intuos S Pen stylus" MapToOutput HDMI-1
+```

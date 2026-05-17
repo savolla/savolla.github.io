@@ -1,0 +1,10 @@
+title: Kubernetes Warnings
+tags: _warning k8s @query
+roam-id: 01582c2c-def8-4791-81d2-d27bea74eb5e
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_warning]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,8 @@
+title: List Suspended Processes in Linux
+tags: @zettel _method linux
+roam-id: 978e6041-06fd-497e-9b11-91c052f9cfe4
+type: text/markdown
+
+``` shell
+jobs -s
+```

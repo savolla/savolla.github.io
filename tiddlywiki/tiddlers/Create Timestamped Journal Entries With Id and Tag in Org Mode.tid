@@ -1,0 +1,20 @@
+title: Create Timestamped Journal Entries With Id and Tag in Org Mode
+tags: @zettel _method orgmode
+roam-id: dcb1e2dd-1104-4bb1-8972-2963e1776e1c
+type: text/markdown
+
+- put the following in your `config.el` and attach it to a keybind
+
+``` {.commonlisp org-language="emacs-lisp"}
+(defun savolla/org-insert-header-with-timestamp ()
+  "Insert a timestamped Org heading at the same level within the current subtree."
+  (interactive)
+  (org-end-of-subtree) ;; Move to end of current subtree
+  (org-insert-heading) ;; Insert heading at same level
+  (insert (format-time-string "%Y-%m-%d %H:%M ")) ;; Insert timestamp
+  (end-of-line) ;; Move to new line ready for content
+  (insert ":j:") ;; add j tag for journal entry indicator
+  (insert "\n") ;; descent one line down
+  (evil-insert-state) ;; Switch to insert mode (evil)
+  (org-id-get-create)) ;; create ID for org-roam can query this entry later
+```

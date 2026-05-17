@@ -1,0 +1,8 @@
+title: Generate Qutebrowser Config File
+tags: @zettel _method qutebrowser
+roam-id: 92094c6e-2aaa-4fc0-abfa-aa81aceefeb6
+type: text/markdown
+
+- open qutebrowser
+- do `:config-write`
+- now you can find your config under `~/.config/qutebrowser/config.py`

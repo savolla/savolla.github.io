@@ -1,0 +1,27 @@
+title: Install Org Roam Ui (Graph Visualizer) on Doom Emacs
+tags: @zettel _method outdated
+roam-id: 832b8dda-e766-4d36-932f-149763645eb2
+type: text/markdown
+
+``` elisp
+;; doom/packages.el
+(package! org-roam-ui)
+```
+
+``` elisp
+;; doom/config.el
+(use-package! websocket
+    :after org-roam)
+
+(use-package! org-roam-ui
+    :after org-roam ;; or :after org
+;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+;;         a hookable mode anymore, you're advised to pick something yourself
+;;         if you don't care about startup time, use
+;;  :hook (after-init . org-roam-ui-mode)
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t))
+```

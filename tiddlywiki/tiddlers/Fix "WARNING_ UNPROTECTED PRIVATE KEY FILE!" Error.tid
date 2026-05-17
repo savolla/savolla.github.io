@@ -1,0 +1,11 @@
+title: Fix "WARNING: UNPROTECTED PRIVATE KEY FILE!" Error
+tags: ssh @zettel _fix
+roam-id: 65ef7550-4b91-49ad-bcbb-65cd506b82ad
+type: text/markdown
+
+your ssh folder and key permissions are wrong. correct it like
+
+``` {.bash org-language="sh"}
+chmod 600 ~/.ssh/id_rsa
+chmod 700 ~/.ssh
+```

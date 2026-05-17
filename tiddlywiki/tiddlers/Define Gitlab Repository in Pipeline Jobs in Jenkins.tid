@@ -1,0 +1,26 @@
+title: Define Gitlab Repository in Pipeline Jobs in Jenkins
+tags: @zettel _method jenkins gitlab
+roam-id: e9772384-5d5a-42b9-b663-fcfefd395fb9
+type: text/markdown
+
+- example pipeline
+
+``` groovy
+pipeline {
+  agent any
+
+  stages {
+    stage('Checkout') {
+      steps {
+        git url: 'https://github.com/your-org/your-repo.git', branch: 'main'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        echo "Building the project..."
+      }
+    }
+  }
+}
+```

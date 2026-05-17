@@ -1,0 +1,67 @@
+title: Host Static Website on Aws Using S3 Bucket Using Terraform
+tags: @zettel aws terraform _method
+roam-id: e655291f-6618-4346-b9f3-414427f43a85
+type: text/markdown
+
+- create a terraform file and add provider, s3 bucket and policy to make this site be accessible by public
+
+  ``` hcl
+  # bucket-website.tf
+  provider "aws" {
+    region = "us-east-1"
+  }
+
+  resource "aws_s3_bucket" "website_bucket" {
+    bucket = "your-unique-bucket-name"
+    acl    = "public-read"
+
+    website {
+      index_document = "index.html"
+    }
+
+    tags = {
+      Environment = "test"
+      Owner       = "admin"
+    }
+  }
+
+  resource "aws_s3_bucket_policy" "website_policy" {
+    bucket = aws_s3_bucket.website_bucket.id
+
+    policy = jsonencode({
+      Version = "2012-10-17"
+      Statement = [{
+        Effect = "Allow"
+        Principal = "*"
+        Action = ["s3:GetObject"]
+        Resource = ["${aws_s3_bucket.website_bucket.arn}/*"]
+      }]
+    })
+  }
+  ```
+
+- apply changes
+
+  ``` shell
+  terraform init
+  terraform plan
+  terraform apply
+  ```
+
+- create a simple website
+
+  ``` shell
+  echo "<h1>Hello World</h1>" > index.html
+  ```
+
+- upload this `index.html` file to your s3 bucket
+
+  ``` shell
+  aws s3 cp ./index.html s3://your-unique-bucket-name
+  ```
+
+- access your website
+
+  ``` shell
+  curl http://your-unique-bucket-name.s3-website-us-east-1.amazonaws.com
+  ```

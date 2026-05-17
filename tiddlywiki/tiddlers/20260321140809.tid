@@ -1,0 +1,9 @@
+title: 20260321140809
+tags: mutability _property @biblio k8s
+roam-id: 245e5b78-15a6-496f-80ed-f5615f14c039
+type: text/markdown
+
+> With a mutable system, the current state of the infrastructure is not represented as a single artifact, but rather as an accumulation of incremental updates and changes over time.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

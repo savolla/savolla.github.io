@@ -1,0 +1,9 @@
+title: BackendConfig
+tags: backendconfig k8s gcp @zettel _term
+roam-id: 892a0155-33aa-4a99-aadf-edb2d33b29de
+roam-refs: https://www.google.com/search?q=what%20is%20kubernetes%20backendconfig
+created: 20260315153200000
+modified: 20260315153200000
+type: text/markdown
+
+> A BackendConfig is a Custom Resource Definition (CRD) used in Google Kubernetes Engine (GKE) to provide fine-grained, structured control over the Google Cloud load balancer\'s backend services.

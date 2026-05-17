@@ -1,0 +1,10 @@
+title: Create Topic in Kafka
+tags: kafka kafka_topic @zettel _method
+roam-id: 7e029d79-33e1-40c0-b413-da4c083ebd67
+created: 20260401155000000
+modified: 20260401155000000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topicname --partitions 50 --replication-factor 3
+```

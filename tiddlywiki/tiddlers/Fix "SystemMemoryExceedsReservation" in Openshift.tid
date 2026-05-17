@@ -1,0 +1,61 @@
+title: Fix "SystemMemoryExceedsReservation" in Openshift
+tags: @zettel _fix openshift
+roam-id: 548d3072-99e0-409c-9dd0-8746f886136a
+type: text/markdown
+
+- login as kubeadmin
+
+- create a file named `crc-kubeletconfig.yaml`
+
+- add the following in it
+
+  ``` yaml
+  apiVersion: machineconfiguration.openshift.io/v1
+  kind: KubeletConfig
+  metadata:
+    name: crc-kubelet-reserved
+  spec:
+    machineConfigPoolSelector:
+      matchLabels:
+        custom-kubelet: crc
+    kubeletConfig:
+      systemReserved:
+        memory: "1024Mi"
+  ```
+
+- Find your pool (usually named master in CRC):
+
+  ``` shell
+  oc get machineconfigpools
+  ```
+
+- You'll likely see just:
+
+  ``` yaml
+  NAME     CONFIG                              UPDATED   ...
+  master   rendered-master-...                 True      ...
+  ```
+
+- Then label it:
+
+oc label machineconfigpool master custom-kubelet=crc
+
+This ensures the pool matches the machineConfigPoolSelector in your KubeletConfig.
+
+🔹 3. Apply the Config
+
+Now apply the file:
+
+oc apply -f crc-kubeletconfig.yaml
+
+🔹 4. Wait for the Node to Apply the Changes
+
+Check the status of the MachineConfigPool:
+
+oc get mcp
+
+You should wait until the pool reports:
+
+UPDATED: True UPDATING: False DEGRADED: False
+
+This might take a few minutes. The node may restart briefly.

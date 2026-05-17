@@ -1,0 +1,8 @@
+title: Pause Playwright Execution
+tags: @zettel _method playwright python
+roam-id: 9e745264-dc3d-4c81-ba39-217a46e50455
+type: text/markdown
+
+``` python
+page.pause()
+```

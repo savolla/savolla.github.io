@@ -1,0 +1,8 @@
+title: See Service Configuration Using Systemctl Cat
+tags: @zettel _method systemd cat
+roam-id: 703d9389-7470-4fb8-8cba-8dad8c7b5621
+type: text/markdown
+
+``` shell
+sudo systemctl cat name.service
+```

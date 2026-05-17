@@ -1,0 +1,21 @@
+title: Install Org-Transclusion in Doom Emacs
+tags: @zettel _method doomemacs orgmode
+roam-id: 23a9a1ab-9ee4-42ee-bcc6-ea09b12ea4be
+type: text/markdown
+
+``` elisp
+;; ~/.doom.d/package.el
+(package! org-transclusion)
+```
+
+``` elisp
+;; ~/.doom.d/config.el
+(use-package! org-transclusion
+  :after org
+  :init
+  (map!
+   :map global-map "<f12>" #'org-transclusion-add
+   :leader
+   :prefix "n"
+   :desc "Org Transclusion Mode" "t" #'org-transclusion-mode))
+```

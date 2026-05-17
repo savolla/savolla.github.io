@@ -1,0 +1,8 @@
+title: Get Prometheus Metrics Using Curl
+tags: @zettel _method curl prometheus
+roam-id: 2d851a9a-2486-4815-863f-a009729d4a86
+type: text/markdown
+
+``` shell
+curl -s http://hostname:9100/metrics
+```

@@ -1,0 +1,13 @@
+title: Install Claude-Code on Ubuntu
+tags: _method @biblio claude_code
+roam-id: 13258d59-84a3-4654-a95e-a188a54f9508
+created: 20260430182700000
+modified: 20260430182700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

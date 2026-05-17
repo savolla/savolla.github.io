@@ -1,0 +1,18 @@
+title: Set Wallpaper From Dirvish in Emacs
+tags: @zettel _method dired dirvish
+roam-id: 85e7857e-dc7a-41df-8da2-08e5ff189c2d
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+;;; set currently selected image as wallpaper
+(defun savolla/dired-set-wallpaper ()
+  "Set the currently selected file in dired as wallpaper using feh."
+  (interactive)
+  (let ((file (dired-get-file-for-visit)))
+    (when (and file (file-exists-p file))
+      (start-process "feh-wallpaper" nil "feh" "--bg-scale" file))))
+
+;;;; set currently selected img as wallpaper
+(map! :after dired :map dired-mode-map :desc "set wallpaper" :localleader "w" #'savolla/dired-set-wallpaper)
+```

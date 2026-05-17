@@ -1,0 +1,10 @@
+title: Filter Database and Tables Names in Mysql
+tags: @zettel _method mysql
+roam-id: be684d2f-9201-4ee8-a40f-d0985891e5c5
+type: text/markdown
+
+show all database names include \"account\"
+
+``` sql
+show databases like "%account%";
+```

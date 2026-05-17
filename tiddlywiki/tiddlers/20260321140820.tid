@@ -1,0 +1,9 @@
+title: 20260321140820
+tags: k8s _mechanism @biblio
+roam-id: 416d2639-17f0-41b1-8a73-1b979d0a0a88
+type: text/markdown
+
+> When it receive2 a desired state configu ration, it does not simply take a set of actions to make the current state match the desired state a single time. It continuously takes actions to ensure that the current state matches the desired state. This means that not only will Kubernetes initialize your system, but it will guard it against any failures or perturbations that might destabilize the system and affect reliability.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

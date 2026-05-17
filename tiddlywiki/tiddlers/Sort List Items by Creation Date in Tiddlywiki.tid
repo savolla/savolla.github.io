@@ -1,0 +1,34 @@
+title: Sort List Items by Creation Date in Tiddlywiki
+tags: tiddlywiki @zettel _method
+roam-id: dd4bded6-5dcf-4e39-a1a8-ca293e16ae53
+created: 20260503180400000
+modified: 20260503180400000
+type: text/markdown
+
+simply use `sort[created]`. see the following example
+
+``` html
+<ol>
+  <$list filter="[tag[@post]sort[created]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+```
+
+you can also sort them in **reverse order** by adding `reverse[]` at the end
+
+``` html
+<ol>
+  <$list filter="[tag[@post]sort[created]reverse[]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+```

@@ -1,0 +1,12 @@
+title: Enable Transparency/Opacity in Niri
+tags: @zettel _method niri
+roam-id: 549ac198-5111-4e82-b762-0db99ccb48c3
+type: text/markdown
+
+add the following into the configuration file
+
+``` kdl
+window-rule {
+    draw-border-with-background
+}
+```

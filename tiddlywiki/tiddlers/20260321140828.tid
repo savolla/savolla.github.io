@@ -1,0 +1,9 @@
+title: 20260321140828
+tags: k8s _property @biblio
+roam-id: 815b882e-0a1b-442a-a919-687e4053ec4a
+type: text/markdown
+
+> Kubernetes makes it possible to achieve automatic scaling (both up and down) of resources. Especially in a cloud environment where new machines can be created via APIs,
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

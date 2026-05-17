@@ -1,0 +1,22 @@
+title: Create Posgresql Database for Sonarqube
+tags: @zettel _method sonarqube postgresql
+roam-id: b2660e21-d39d-4130-a39e-ad6be1fdde43
+type: text/markdown
+
+``` shell
+sudo passwd postgres
+su - postgres
+createuser sonar
+```
+
+- run `psql` command in your shell and run following commands;
+
+``` shell
+ALTER USER sonar WITH ENCRYPTED password 'sonar';
+CREATE DATABASE sonarqube OWNER sonar;
+grant all privileges on DATABASE sonarqube to sonar;
+\q
+```
+
+- run `exit` to exit `postgres` user
+- [[Install Temurin Java on Ubuntu or Debian]]

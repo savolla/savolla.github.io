@@ -1,0 +1,8 @@
+title: Comment in XML
+tags: xml @zettel _method
+roam-id: 089012a5-8352-4e6d-85aa-16565fd5da3c
+type: text/markdown
+
+``` xml
+<!-- this is a comment -->
+```

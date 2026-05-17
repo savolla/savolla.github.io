@@ -1,0 +1,32 @@
+title: Convert Flac to Mp3 Using Ffmpeg
+tags: @zettel _method flac mp3 ffmpeg
+roam-id: 96cc8526-86b5-4839-b593-cbced9a5f1b7
+type: text/markdown
+
+``` bash
+for file in *.flac; do
+  ffmpeg -i "$file" -codec:a libmp3lame -b:a 320k "${file%.flac}.mp3"
+done
+```
+
+I personally convert my flacs in bulk
+
+``` bash
+for genre in ./*; do
+    cd $genre
+    for artist in ./*; do
+        cd $artist
+        for album in ./*; do
+            cd $album
+            mkdir $album # create new directory with the same name to store mp3s
+            for file in *.flac; do
+                ffmpeg -i "$file" -codec:a libmp3lame -b:a 320k "${file%.flac}.mp3"
+            done
+            mv *.mp3 $album
+            cd ..
+        done
+        cd ..
+    done
+    cd ..
+done
+```

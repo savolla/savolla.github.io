@@ -1,0 +1,17 @@
+title: Install Jenkins on Ubuntu
+tags: @zettel _method jenkins ubuntu
+roam-id: 1deb149c-43e3-470f-924a-8b5e050c8e1b
+type: text/markdown
+
+- [[Install Java on Ubuntu or Debian]]
+
+- install jenkins
+
+  ``` shell
+  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+  sudo apt-get update
+  sudo apt-get install jenkins -y
+  ```
+
+- [[Get Jenkins Initial Admin Password]]

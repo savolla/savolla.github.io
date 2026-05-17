@@ -1,0 +1,8 @@
+title: Get Unique Prometheus Metrics From a Server
+tags: @zettel _method prometheus grep
+roam-id: d0c68455-cb7f-4f39-9137-9176e149b3f1
+type: text/markdown
+
+``` shell
+curl -s http://hostname:9100/metrics | grep -vP '^#' | cut -d' ' -f1 | cut -d{ -f1 | sort | uniq
+```

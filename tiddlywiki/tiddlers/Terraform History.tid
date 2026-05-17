@@ -1,0 +1,10 @@
+title: Terraform History
+tags: _history terraform @query
+roam-id: 2005b60e-4b99-430c-8f70-757b1f815f27
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_history]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

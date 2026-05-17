@@ -1,0 +1,8 @@
+title: Upload Iso Images to Proxmox
+tags: @zettel _method proxmox
+roam-id: 308c9a3d-d175-403d-8726-15c3ed9f3e67
+type: text/markdown
+
+``` shell
+scp /path/to/image.iso root@PROXMOX_IP:/var/lib/vz/template/iso/
+```

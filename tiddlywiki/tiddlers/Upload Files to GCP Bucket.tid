@@ -1,0 +1,10 @@
+title: Upload Files to GCP Bucket
+tags: @arrow gcs gcp @zettel _method
+roam-id: d78f1232-9f6e-4032-8b5a-62e5c1070957
+created: 20260402180100000
+modified: 20260402180100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gsutil cp object_location gs://destination_bucket_name/
+```

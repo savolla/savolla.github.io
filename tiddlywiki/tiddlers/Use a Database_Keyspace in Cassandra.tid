@@ -1,0 +1,10 @@
+title: Use a Database/Keyspace in Cassandra
+tags: _method @zettel cassandra
+roam-id: 24dfeec0-98fb-4d95-a389-92ece80fc55b
+type: text/markdown
+
+- you may want to [[Show Databases/Keyspaces in Cassandra]] first
+
+``` cql
+use <keyspace_name>
+```

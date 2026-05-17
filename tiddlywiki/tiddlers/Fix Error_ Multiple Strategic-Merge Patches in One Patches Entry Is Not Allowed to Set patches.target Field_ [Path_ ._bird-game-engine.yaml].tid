@@ -1,0 +1,8 @@
+title: Fix Error: Multiple Strategic-Merge Patches in One Patches Entry Is Not Allowed to Set patches.target Field: [Path: ./bird-game-engine.yaml]
+tags: kustomize
+roam-id: a537af9d-878d-43ac-82b2-ab4d85f73faf
+created: 20260427152300000
+modified: 20260427152300000
+type: text/markdown
+
+:@zettel:~fix~: you probably have both service and deployment in the same yaml file separated by `---`

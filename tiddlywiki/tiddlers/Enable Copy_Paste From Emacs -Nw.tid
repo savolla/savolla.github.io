@@ -1,0 +1,21 @@
+title: Enable Copy/Paste From Emacs -Nw
+tags: @zettel _method emacs doomemacs
+roam-id: ee596cf6-697c-4be2-952c-c4dc2150aa1c
+type: text/markdown
+
+- install `xclip` package to your distribution
+
+- add the following into your `package.el`
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (package! xclip)
+  ```
+
+- sync your doom emacs
+
+- add the following into your `config.el`
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (use-package! xclip
+    :hook (after-init . xclip-mode))
+  ```

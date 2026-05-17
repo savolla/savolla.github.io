@@ -1,0 +1,10 @@
+title: Delete Row From a Table in Mysql
+tags: mysql @zettel _method
+roam-id: f6a922fc-7ea9-44e5-ad7a-671fbe7f6bdd
+created: 20260512175400000
+modified: 20260512175400000
+type: text/markdown
+
+``` sql
+DELETE FROM tablename WHERE val = 123;
+```

@@ -1,0 +1,14 @@
+title: Add DNS Host in Nixos
+tags: @zettel _method nixos dns
+roam-id: 30a6068e-5762-4071-8c09-e3b4c0782f44
+type: text/markdown
+
+- modify your configuration.nix with the following example
+
+  ``` nix
+  networking.extraHosts =
+    ''
+      127.0.0.2 other-localhost
+      10.0.0.1 server
+    '';
+  ```

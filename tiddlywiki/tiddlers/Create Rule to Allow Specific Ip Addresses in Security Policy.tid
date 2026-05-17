@@ -1,0 +1,28 @@
+title: Create Rule to Allow Specific Ip Addresses in Security Policy
+tags: gcp terraform networking @zettel _method
+roam-id: fe07ce1b-a6af-4e23-834e-acc42fe6c84b
+created: 20260316213400000
+modified: 20260316213400000
+type: text/markdown
+
+in the following example we only allow sertein ip addresses
+
+``` diff
+ custom_rules = {
+   ...
++  allow_trusted_ips = {
++    action      = "allow"
++    description = "Allow ABC and DEF VPN addresses"
++    preview     = false
++    priority    = 0
++    expression  = <<-EOT
++      inIpRange(origin.ip, '35.241.170.123') ||
++      inIpRange(origin.ip, '195.226.196.2') ||
++      inIpRange(origin.ip, '213.74.95.202') ||
++      inIpRange(origin.ip, '213.14.79.240/28')
++    EOT
+  }
+...
+```
+
+ATATT3xFfGF0eO9Dv-bH9pCobJqQRae2GgCVXbZhVmKhCrqbN2j3xJvy6EYVl1JkItynRT4C0ifjPlEdQdOmb0Wve1~yoXHronOfSGvPB6puZusNGHZ3VG54eTFe5uvl2ZhB9H5BlvjUoIC1zwDxQmDDBhgD1zjXsMqIiT35Z1W~-STtxRX6HzE=F5FD4788

@@ -1,0 +1,8 @@
+title: Build Kustomize Overlay
+tags: @zettel _method kustomize
+roam-id: 8ed5a883-9bae-4d5f-bcba-d72075c26f8a
+type: text/markdown
+
+``` shell
+kustomize build overlay_name_here
+```

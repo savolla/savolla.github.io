@@ -1,0 +1,7 @@
+title: Refresh Doom Emacs
+tags: @zettel _method doomemacs
+roam-id: d4865625-f08a-4b1f-bfe2-922931bbc635
+type: text/markdown
+
+- do `SPC h r r`
+- or `M-x doom/reload`

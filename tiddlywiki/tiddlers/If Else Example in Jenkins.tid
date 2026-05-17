@@ -1,0 +1,26 @@
+title: If Else Example in Jenkins
+tags: @zettel _reference jenkins
+roam-id: c36b0828-1d02-4aa5-b553-c311a37a1b77
+type: text/markdown
+
+``` groovy
+pipeline {
+  agent none
+
+  environment {
+    A = "abc"
+  }
+
+  stages {
+    stage("conditional stage") {
+      steps {
+        script {
+          if ( A == "abc" ) {
+            error "aborting the pipeline"
+          }
+        }
+      }
+    }
+  }
+}
+```

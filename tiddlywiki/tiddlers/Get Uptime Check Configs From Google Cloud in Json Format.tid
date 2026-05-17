@@ -1,0 +1,8 @@
+title: Get Uptime Check Configs From Google Cloud in Json Format
+tags: @zettel _method json gcp
+roam-id: 4c45398d-ba16-4066-841b-9a670185a8f6
+type: text/markdown
+
+``` shell
+gcloud monitoring uptime list-configs --format=json > uptime_checks.json
+```

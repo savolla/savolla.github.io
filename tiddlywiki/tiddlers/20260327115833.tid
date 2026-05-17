@@ -1,0 +1,8 @@
+title: 20260327115833
+tags: k8s hpa _property
+roam-id: 17b7d7b2-3dd7-41d2-baa8-8cd5fa1b2b39
+type: text/markdown
+
+> --horizontal-pod-autoscaler-initial-readiness-delay (default: 30 seconds)
+
+`--horizontal-pod-autoscaler-initial-readiness-delay` defines a delay right after a pod enters the Ready state. this delay is necessary because sometimes pods can fluctuate between Ready and Unready states initially. so this is an ensurance policy for hpa

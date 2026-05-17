@@ -1,0 +1,6 @@
+title: Strike Through Text in Org Mode
+tags: @zettel _method orgmode
+roam-id: 6af21d06-e17f-4c1b-8513-efaef147f9fb
+type: text/markdown
+
+~~this is a striked text~~

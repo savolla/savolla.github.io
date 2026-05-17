@@ -1,0 +1,11 @@
+title: Install Consul on Kubernetes Using Helm
+tags: @zettel _method helm consul
+roam-id: a17edb54-7880-4411-9ab6-d6dc4a74cc0d
+type: text/markdown
+
+``` shell
+helm repo add hashicorp https://helm.releases.hashicorp.com
+helm search repo hashicorp/consul # verify if you have access
+```
+
+read more at: [Install Consul on Kubernetes with Helm \| Consul \| HashiCorp Developer](https://developer.hashicorp.com/consul/docs/deploy/server/k8s/helm?page=k8s&page=installation&page=install)

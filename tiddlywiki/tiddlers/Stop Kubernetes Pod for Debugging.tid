@@ -1,0 +1,13 @@
+title: Stop Kubernetes Pod for Debugging
+tags: _method k8s @zettel
+roam-id: fb3756aa-0d5f-4059-8ea4-5a37ce820d93
+type: text/markdown
+
+make pod sleep infinitelly after creation. add the follwing as command
+
+``` yaml
+containers:
+- name: bird-account-checker
+    command: ["sh", "-c", "sleep infinity"] # debug
+    image: eu.gcr.io/hopi-program/bird-usy/bird-account-checker:1.0.0
+```

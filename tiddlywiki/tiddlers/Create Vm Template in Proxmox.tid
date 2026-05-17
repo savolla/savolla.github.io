@@ -1,0 +1,27 @@
+title: Create Vm Template in Proxmox
+tags: @zettel _method proxmox
+roam-id: d901bbc3-1ebc-4c6d-a9bc-95729b33d582
+type: text/markdown
+
+- ssh into your proxmox server
+
+  ``` shell
+  ssh root@<YOUR_PROXMOX_IP>
+  ```
+
+- download img and create vm template in proxmox. but you can also change the cloud-init img. I use ubuntu here
+
+  ``` shell
+  cd /var/lib/vz/template/iso
+  wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+
+  qm create 100 --name "ubuntu-cloudinit-template" --memory 2048 --cores 2
+  qm importdisk 100 jammy-server-cloudimg-amd64.img local-lvm
+  qm set 100 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-100-disk-0 # attach the disk to the VM
+  qm set 100 --ide2 local-lvm:cloudinit # add cloud-init drive
+  qm set 100 --boot c --bootdisk scsi0 # set boot options
+  qm set 100 --net0 virtio,bridge=vmbr0 # set networking DHCP
+  qm set 100 --agent enabled=1 # enable qemu guest agent
+  # qm resize 100 scsi0 +32G # resize disk (optional)
+  qm template 100 # convert vm into template
+  ```

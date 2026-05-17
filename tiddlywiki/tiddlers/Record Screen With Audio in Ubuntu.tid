@@ -1,0 +1,12 @@
+title: Record Screen With Audio in Ubuntu
+tags: @zettel _method ubuntu kazam
+roam-id: 99103804-9f0c-4786-b246-1b16f39f5355
+type: text/markdown
+
+- install `kazam` on ubuntu
+- run it
+- open file -\> preferences
+- select your audio sources
+- save settings
+- tick microphone, speakers
+- click on \"capture\"

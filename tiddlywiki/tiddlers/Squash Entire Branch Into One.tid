@@ -1,0 +1,11 @@
+title: Squash Entire Branch Into One
+tags: git @zettel _method
+roam-id: 7e8c8462-fcec-4350-b96e-204515d8267f
+created: 20260317133000000
+modified: 20260317133000000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+git reset --soft origin/HEAD
+git commit --amend
+```

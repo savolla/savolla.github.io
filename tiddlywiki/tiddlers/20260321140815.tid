@@ -1,0 +1,9 @@
+title: 20260321140815
+tags: declarative imperative _comparison @biblio
+roam-id: c82c1737-6212-47a3-bba6-7ce1673e945f
+type: text/markdown
+
+> declarative con1iguration is an alternative to 1mperative configuration, where the state of the world is defined by the execution o1 a series of instructions rather than a declaration of the desired state of the world.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

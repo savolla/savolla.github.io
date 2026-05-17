@@ -1,0 +1,10 @@
+title: Build a Docker Image
+tags: @zettel _method docker
+roam-id: 8f711189-c620-4e81-9813-84f86479bcb8
+type: text/markdown
+
+- `cd` into the project directory where `Dockerfile` resides
+
+``` shell
+docker build -t my-app .
+```

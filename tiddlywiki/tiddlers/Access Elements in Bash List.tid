@@ -1,0 +1,10 @@
+title: Access Elements in Bash List
+tags: @zettel _method bash
+roam-id: de8cc0bc-1825-41aa-bcb8-e8ad4cdfab73
+type: text/markdown
+
+``` shell
+my_list=(apple banana cherry)
+echo "${my_list[0]}"   # apple
+echo "${my_list[1]}"   # banana
+```

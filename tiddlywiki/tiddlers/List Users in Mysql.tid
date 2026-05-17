@@ -1,0 +1,8 @@
+title: List Users in Mysql
+tags: @zettel _method mysql
+roam-id: 250425f1-164b-4321-8f92-16ce55de4e30
+type: text/markdown
+
+``` sql
+SELECT User, Host FROM mysql.user;
+```

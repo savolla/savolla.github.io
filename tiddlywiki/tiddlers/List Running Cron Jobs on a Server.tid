@@ -1,0 +1,8 @@
+title: List Running Cron Jobs on a Server
+tags: @zettel _method cron
+roam-id: e82afcf7-42a2-4eda-aa28-2d7951da8b08
+type: text/markdown
+
+``` shell
+crontab -l
+```

@@ -1,0 +1,8 @@
+title: Watch Logs of a Program in Linux
+tags: @zettel _method
+roam-id: d010c667-77e4-47a8-8c4a-338fc567b6c4
+type: text/markdown
+
+``` shell
+sudo tail -f /path/to/log_file
+```

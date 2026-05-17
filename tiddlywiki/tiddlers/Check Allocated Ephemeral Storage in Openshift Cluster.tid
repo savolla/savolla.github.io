@@ -1,0 +1,8 @@
+title: Check Allocated Ephemeral Storage in Openshift Cluster
+tags: @zettel _method openshift
+roam-id: b1fc40ff-77c1-41b3-afa4-efa6a020a8be
+type: text/markdown
+
+``` shell
+oc describe node crc | grep -A10 "Allocated resources"
+```

@@ -1,0 +1,9 @@
+title: Resolve Ip Address From Hostname in Linux
+tags: @zettel _method linux
+roam-id: 7cc2fbd4-b381-4ba9-aa47-a4000eb1a2aa
+type: text/markdown
+
+``` shell
+# example
+getent hosts console-openshift-console.apps-crc.testing
+```

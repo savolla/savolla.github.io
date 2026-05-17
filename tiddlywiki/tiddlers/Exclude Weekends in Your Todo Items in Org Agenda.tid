@@ -1,0 +1,11 @@
+title: Exclude Weekends in Your Todo Items in Org Agenda
+tags: @zettel _method orgmode orgagenda
+roam-id: 9c175313-dc3d-4fe0-a781-d5795058aa04
+type: text/markdown
+
+``` org
+* TODO Wake Up
+   SCHEDULED: <%%(and (not (memq (calendar-day-of-week date) '(0 6))) t) 7:00>
+```
+
+this will exclude Saturday and Sunday. I also added 7:00 as hour information

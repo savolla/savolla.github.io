@@ -1,0 +1,11 @@
+title: 202604301625
+tags: _comparison @biblio claude_code
+roam-id: e1563310-3ed6-40be-bbb2-4453c3b6ed96
+created: 20260430162500000
+modified: 20260430162500000
+type: text/markdown
+
+LLMs by themselves can only process text and return only text. while coding agents can also run commands and read files. coding agents can do these extra things by using tools in the system
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

@@ -1,0 +1,10 @@
+title: Use Different SSH Private Key While Connecting
+tags: ssh @zettel _method
+roam-id: 5cce0102-ba9f-434f-9eea-2f8b57cf433d
+created: 20260314161100000
+modified: 20260314161100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+ssh -i /path/to/private_key user@host
+```

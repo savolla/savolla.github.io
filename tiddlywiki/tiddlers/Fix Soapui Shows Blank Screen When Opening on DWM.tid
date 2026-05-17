@@ -1,0 +1,12 @@
+title: Fix Soapui Shows Blank Screen When Opening on DWM
+tags: @zettel _fix dwm soapui
+roam-id: 95c8d1be-d5f6-41c6-a429-4e78ac0d25b8
+type: text/markdown
+
+put the following line in your `.zshrc` or `.bashrc`
+
+``` shell
+export _JAVA_AWT_WM_NONREPARENTING=1
+```
+
+source your `.zshrc` or open a new terminal then run `soapui` again

@@ -1,0 +1,13 @@
+title: Auto Update Feeds in Elfeed at Launch
+tags: @zettel _method elfeed
+roam-id: f8b7382b-55a6-47e9-a95b-9caa667c1213
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+(after! elfeed
+  (elfeed-update) ;; update all the feeds once elfeed starts
+  )
+```
+
+- [[Refresh Doom Emacs]]

@@ -1,0 +1,8 @@
+title: Draw/Print Dash Line Characters With the Length of Current Terminal
+tags: @zettel _method bash
+roam-id: 91ae3ccf-5d74-4051-a674-e1055331a8b8
+type: text/markdown
+
+``` shell
+printf '%*s\n' "$(tput cols)" '' | tr ' ' '-'
+```

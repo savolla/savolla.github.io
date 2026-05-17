@@ -1,0 +1,10 @@
+title: Check What Occupies Space on Linux Machine
+tags: storage linux @zettel _method
+roam-id: b69d83c6-bb6f-45dd-ba0e-2975962cb252
+created: 20260504164200000
+modified: 20260504164200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo du -xh / | sort -rh | head -20
+```

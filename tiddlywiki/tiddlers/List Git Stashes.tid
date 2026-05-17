@@ -1,0 +1,8 @@
+title: List Git Stashes
+tags: git @zettel _method
+roam-id: d1f8c2e8-b208-47ba-a7ba-ef71f4ee19a3
+type: text/markdown
+
+``` shell
+git stash list
+```

@@ -1,0 +1,17 @@
+title: Copy Your Public SSH Key
+tags: ssh @zettel _method
+roam-id: 1c5029a0-57d8-4ecb-bf21-e40e70cdc0b1
+created: 20260510152100000
+modified: 20260510152100000
+type: text/markdown
+
+- list your public ssh keys
+
+``` {.bash org-language="sh" results="drawer output"}
+cd ~/.ssh
+ls *.pub
+```
+
+:results: id~rsa~.pub
+
+- see [[Copy File Contents From Terminal]] and copy your public ssh key

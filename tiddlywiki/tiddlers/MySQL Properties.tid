@@ -1,0 +1,10 @@
+title: MySQL Properties
+tags: _property mysql @query
+roam-id: 2da6e326-9281-4cf1-b522-b23676f1fdd1
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_property]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

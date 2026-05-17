@@ -1,0 +1,10 @@
+title: Add Git Repos With Different Build Root Context in Openshift
+tags: @zettel _method openshift
+roam-id: 3cd03afb-2140-4770-ae9f-16ca7dd79836
+type: text/markdown
+
+your `package.json` or `pom.xml` may be in another directory in the github repo. you provide this directory with `--context-dir=` parameter
+
+``` shell
+oc new-app  nodejs:22-ubi9-minimal~https://github.com/savolla/devops-training.git --context-dir=apps/sample-nodejs
+```

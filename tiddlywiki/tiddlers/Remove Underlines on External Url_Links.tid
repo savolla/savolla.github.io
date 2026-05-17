@@ -1,0 +1,24 @@
+title: Remove Underlines on External Url/Links
+tags: css tiddlywiki @zettel _method
+roam-id: f4625aff-f810-4178-ad8f-b85ae19f0645
+created: 20260502230300000
+modified: 20260502230300000
+type: text/markdown
+
+- After you [[Apply Custom CSS Theme in TiddlyWiki]], you can paste the following CSS content in
+
+``` css
+/* Remove underline from external links (URLs) */
+a.tc-tiddlylink-external {
+    text-decoration: none !important;
+}
+
+/* Optional: remove underline on hover too */
+a.tc-tiddlylink-external:hover {
+    text-decoration: none !important;
+}
+```
+
+[^1]
+
+[^1]: <https://meta.stackoverflow.com/questions/372725/removing-underlined-links>

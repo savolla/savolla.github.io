@@ -1,0 +1,7 @@
+title: Restart Doom Emacs
+tags: @zettel _method doomemacs
+roam-id: 9b3d1e49-1828-4e73-b85f-906105658209
+type: text/markdown
+
+- to restart and restore the session do `SPC q r`
+- or with `M-x doom/restart-and-restore`

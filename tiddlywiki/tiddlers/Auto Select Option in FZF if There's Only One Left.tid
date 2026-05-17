@@ -1,0 +1,6 @@
+title: Auto Select Option in FZF if There's Only One Left
+tags: @zettel _method fzf
+roam-id: 15dc1484-61fa-410d-b7d1-d07d4cc26596
+type: text/markdown
+
+use `--select-1 --exit-0` option with `fzf`

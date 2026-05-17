@@ -1,0 +1,14 @@
+title: Add URL in Tiddlywiki's Title
+tags: tiddlywiki @zettel _method
+roam-id: d434aaf2-d5c5-4be7-9b44-de04df418b2d
+created: 20260502224300000
+modified: 20260502224300000
+type: text/markdown
+
+- Go to `Open settings -> Info -> Basic -> Title of this TiddlyWiki`
+- You can now insert a URL like this `[[KuzeyKoç|http://127.0.0.1:8080/]]`
+- You can also set a page link into it. It is very flexible!
+
+[^1]
+
+[^1]: <https://groups.google.com/g/tiddlywiki/c/Ax7Rvmi2kfQ/m/pYRjEi_m1ckJ>

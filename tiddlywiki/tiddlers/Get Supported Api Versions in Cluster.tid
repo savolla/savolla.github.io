@@ -1,0 +1,10 @@
+title: Get Supported Api Versions in Cluster
+tags: k8s @zettel _method
+roam-id: 712ab186-e415-498b-b40b-ba9352cf1892
+created: 20260317114600000
+modified: 20260317114600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kubectl api-versions
+```

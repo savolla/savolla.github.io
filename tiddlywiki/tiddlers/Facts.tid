@@ -1,0 +1,14 @@
+title: Facts
+tags: 
+roam-id: 9fe0896b-08e3-469f-8191-ec2861fc6f7f
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_fact]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

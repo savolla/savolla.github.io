@@ -1,0 +1,8 @@
+title: Install Helm's Diff Plugin on Linux
+tags: @zettel _method helm
+roam-id: 19ccc47a-6e2b-4b7e-9e0e-13b7870fdf95
+type: text/markdown
+
+``` shell
+helm plugin install https://github.com/databus23/helm-diff
+```

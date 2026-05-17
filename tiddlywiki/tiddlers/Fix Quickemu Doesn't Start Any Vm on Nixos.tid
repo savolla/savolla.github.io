@@ -1,0 +1,10 @@
+title: Fix Quickemu Doesn't Start Any Vm on Nixos
+tags: @zettel _method nixos quickemu
+roam-id: a0188a0a-3a2c-4f40-8333-e504c50faa51
+type: text/markdown
+
+append `--display snice` at the end
+
+``` bash
+quickemu --vm nixos-25.05-minimal.conf --display spice
+```

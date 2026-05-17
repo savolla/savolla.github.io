@@ -1,0 +1,19 @@
+title: Install Terraform Libvirt Provider
+tags: @zettel _method terraform libvirt
+roam-id: 9beab841-750e-4235-872a-7a7cc1e0fe0a
+type: text/markdown
+
+``` hcl
+# main.tf
+terraform {
+  required_providers {
+    libvirt = {
+      source = "dmacvicar/libvirt"
+    }
+  }
+}
+
+provider "libvirt" {
+  # Configuration options
+}
+```

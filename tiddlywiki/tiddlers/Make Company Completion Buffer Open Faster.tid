@@ -1,0 +1,8 @@
+title: Make Company Completion Buffer Open Faster
+tags: @zettel _method company
+roam-id: 2827be72-84bf-4c2b-a538-c99d5a649324
+type: text/markdown
+
+``` elisp
+
+```

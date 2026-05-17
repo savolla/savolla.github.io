@@ -1,0 +1,9 @@
+title: Reword/Change Commit Messages Using Magic
+tags: @zettel _method magic doomemacs
+roam-id: 48fac946-78d9-4e85-b0c2-7e815d607c3a
+type: text/markdown
+
+- `SPC g g`
+- navigate to a commit that you want to change the message of
+- press `c w`
+- once you happy with your new message press `C-c C-c`

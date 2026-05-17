@@ -1,0 +1,9 @@
+title: Attach a PDF in an Org Mode File
+tags: @zettel _method orgmode
+roam-id: 1bfcd600-62f4-4358-84e5-d6703eaf4c1f
+type: text/markdown
+
+- `M-x org-insert-link`
+- select `file:`
+- select your document
+- enter description

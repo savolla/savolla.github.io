@@ -1,0 +1,20 @@
+title: Reference a Jenkins Agent in a Pipeline
+tags: @zettel _method jenkins
+roam-id: d46fbfdf-46d2-47fa-b3bf-ee357a0f2be3
+type: text/markdown
+
+- say you have an agent called \"agent-java\" then you call it like this
+
+``` groovy
+pipeline {
+    agent { label 'agent-java' }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+```

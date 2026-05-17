@@ -1,0 +1,14 @@
+title: Fix Qutebrowser High Cpu Usage
+tags: qutebrowser @zettel _fix
+roam-id: 26a57717-bd78-4337-ba5d-b0ff7ae0727d
+created: 20260516195700000
+modified: 20260516195700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+qutebrowser \\
+    --qt-flag ignore-gpu-blacklist \\
+    --QT-flag enable-gpu-rasterization \\
+    --qt-flag enable-native-gpu-memory-buffers \\
+    --qt-flag num-raster-threads=4
+```

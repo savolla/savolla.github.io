@@ -1,0 +1,12 @@
+title: Remove Old Linux Kernels Using Apt
+tags: debian apt linux @zettel _method
+roam-id: 8ea724d9-7640-41d3-9712-fc91384796ab
+created: 20260504210600000
+modified: 20260504210600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo apt autoremove --purge
+```
+
+also [[Fix Old Linux Kernels Are Not Being Removed With =sudo Apt Autoremove --Purge=]] if that command does not work.

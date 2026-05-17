@@ -1,0 +1,8 @@
+title: Delete Old Nixos Generations Except the Current One
+tags: @arrow @zettel _method nixos nix
+roam-id: 9c73a9b5-65e5-4320-a5c0-4377efa868c5
+type: text/markdown
+
+``` shell
+sudo nix-collect-garbage -d
+```

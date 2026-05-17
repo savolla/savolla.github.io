@@ -1,0 +1,10 @@
+title: Add Category to Org Heading
+tags: @zettel _method orgmode
+roam-id: a8ed761b-e3cb-4827-925c-ed607351fa0c
+type: text/markdown
+
+``` org
+,:PROPERTIES:
+,:CATEGORY: context
+,:END:
+```

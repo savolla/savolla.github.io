@@ -1,0 +1,11 @@
+title: 20260307205312
+tags: _term @biblio prometheus prometheus_exporter
+roam-id: 5cbfb642-9681-4d11-b75f-1003fcfb866c
+type: text/markdown
+
+> For third party software that exposes metrics in a non-Prometheus format, there are hundreds of integrations available. These are called exporters,
+
+prometheus exporter is a tool that can be used to convert non-prometheus metrics to prometheus metrics.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

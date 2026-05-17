@@ -1,0 +1,30 @@
+title: Connect to Openshift CRC That Runs in a Proxmox Vm From Another Vm
+tags: @zettel _method proxmox openshift ssh
+roam-id: 9fd843db-c7a1-443e-adfd-b4492a727044
+type: text/markdown
+
+- from your client vm (not from openshift vm) do
+
+  ``` shell
+  ssh -L 6443:CRC_IP:6443 OPENSHIFT_VM_USER@OPENSHIFT_VM_IP
+  ```
+
+- to get the information above
+
+- [[Get Openshift CRC Ip]]
+
+- the kubernetes api port is usually `6443`
+
+- here is the example
+
+  ``` shell
+  ssh -L 6443:127.0.0.1:6443 openshift@192.168.1.105
+  ```
+
+- you want to keep this running in the background
+
+- open another terminal and do
+
+  ``` shell
+  oc login -u developer -p developer https://localhost:6443 --insecure-skip-tls-verify=true
+  ```

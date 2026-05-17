@@ -1,0 +1,33 @@
+title: Open a Page and Get Its Title Using Playwright With Python
+tags: @zettel _method playwright python
+roam-id: d901e14c-6050-4bf0-8358-d3d822e69c26
+type: text/markdown
+
+- run `playwright install` first to download the latest browsers
+
+``` python
+#!/usr/bin/env python3
+
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    # Launch browser (headful mode so you can see it; use headless=True to hide)
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context()
+
+    # Open new page
+    page = context.new_page()
+
+    # Go to a URL
+    page.goto("https://duckduckgo.com")
+
+    # Wait for element to load (optional)
+    page.wait_for_selector("h1")
+
+    # Extract content
+    title = page.text_content("h1")
+    print(title)
+
+    # Close browser
+    browser.close()
+```

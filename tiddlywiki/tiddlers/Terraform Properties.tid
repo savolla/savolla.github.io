@@ -1,0 +1,10 @@
+title: Terraform Properties
+tags: _property terraform @query
+roam-id: 47bb6140-dd15-41e8-ab8f-f6c45bed8b00
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_property]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

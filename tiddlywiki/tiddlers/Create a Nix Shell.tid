@@ -1,0 +1,32 @@
+title: Create a Nix Shell
+tags: @zettel _method nix
+roam-id: b8d5659d-c71f-4098-a8a1-fe81ff43985e
+type: text/markdown
+
+``` {.bash org-language="sh"}
+touch shell.nix
+```
+
+here is an example `shell.nix` file
+
+``` nix
+{ pkgs ? import <nixpkgs> {} }:
+
+pkgs.mkShell {
+    packages = [ # install these packages into the environment
+        pkgs.python3
+        pkgs.nodejs
+    ];
+
+    inputsFrom = [ # compilers and libraries used while compiling `bat` program
+        pkgs.bat
+    ];
+
+    shellHook = ''
+        echo "Welcome to the shell!"
+    '';
+
+    ENVVAR0 = "abcd";
+    ENVVAR1 = "dftdg";
+}
+```

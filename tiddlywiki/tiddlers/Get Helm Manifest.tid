@@ -1,0 +1,8 @@
+title: Get Helm Manifest
+tags: _method helm @zettel
+roam-id: 7dd70d7f-d5e2-43e3-a14f-4a20c05cc832
+type: text/markdown
+
+``` shell
+helm get manifest consul-agent > consul-manifest.yaml
+```

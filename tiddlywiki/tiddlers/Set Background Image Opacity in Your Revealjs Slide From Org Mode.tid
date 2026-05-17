@@ -1,0 +1,9 @@
+title: Set Background Image Opacity in Your Revealjs Slide From Org Mode
+tags: @zettel _method orgmode revealjs
+roam-id: 69daa65e-247b-4f74-984e-83752d690977
+type: text/markdown
+
+put the following on top of your org file
+
+``` org
+```

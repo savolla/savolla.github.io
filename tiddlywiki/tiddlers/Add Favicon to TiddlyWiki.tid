@@ -1,0 +1,15 @@
+title: Add Favicon to TiddlyWiki
+tags: tiddlywiki @zettel _method
+roam-id: e27a5a0a-e5d7-4211-b8ad-3c522468f8a8
+created: 20260502225300000
+modified: 20260502225300000
+type: text/markdown
+
+- Drag and drop your image into your wiki
+- In the `$:/Import` tiddler import your image
+- Open the tiddler of your newly imported image
+- Name it as `$:/favicon.ico`
+
+[^1]
+
+[^1]: <https://talk.tiddlywiki.org/t/setting-the-favicon/13237/2>

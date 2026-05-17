@@ -1,0 +1,9 @@
+title: 20260322142221
+tags: kaas _limitation @biblio
+roam-id: db84e443-9355-4d96-a9f1-e17e12597dd2
+type: text/markdown
+
+> Of course, using KaaS has some limitations, since the operator makes decisions for you about how the Kubernetes clusters are built and configured.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

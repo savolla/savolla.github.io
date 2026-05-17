@@ -1,0 +1,6 @@
+title: Install Kubens on Arch Linux
+tags: @zettel _method archlinux k8s
+roam-id: 8486a024-5f94-4ecd-a997-dcce968b134a
+type: text/markdown
+
+- `sudo pacman -S kubectx`

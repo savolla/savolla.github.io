@@ -1,0 +1,9 @@
+title: Set Org Mode Directory for Attachments
+tags: @zettel _method
+roam-id: f3ccb7a0-4471-411d-8f3c-842c64cdf63c
+type: text/markdown
+
+``` elisp
+;; ~/.config/doom/config.el
+(setq org-attach-id-dir "~/resource/notes/org/attachments")
+```

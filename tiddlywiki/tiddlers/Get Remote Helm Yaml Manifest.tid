@@ -1,0 +1,8 @@
+title: Get Remote Helm Yaml Manifest
+tags: @zettel _method yaml helm
+roam-id: 8fac972d-8004-402e-ac7b-0a0800994c01
+type: text/markdown
+
+``` shell
+helm get manifest consul -n default
+```

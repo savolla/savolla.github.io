@@ -1,0 +1,12 @@
+title: Start and End Transaction in Mysql
+tags: @arrow _method mysql
+roam-id: f0f01f1a-95c9-4389-9bc7-ed3a84dbf9e0
+type: text/markdown
+
+``` sql
+start transaction;
+-- some sql code
+-- some sql code
+-- some sql code
+commit;
+```

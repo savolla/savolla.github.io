@@ -1,0 +1,22 @@
+title: Install Krew on Ubuntu
+tags: @zettel _method k8s ubuntu krew
+roam-id: d456e460-ec6d-404f-aa79-51659e5ee489
+type: text/markdown
+
+``` shell
+(
+  set -x; cd "$(mktemp -d)" &&
+  OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
+  ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/arm.*$/arm/')" &&
+  KREW="krew-${OS}_${ARCH}" &&
+  curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/${KREW}.tar.gz" &&
+  tar zxvf "${KREW}.tar.gz" &&
+  ./"${KREW}" install krew
+)
+```
+
+put the following into your `.zshrc` or `.bashrc`
+
+``` shell
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+```

@@ -1,0 +1,13 @@
+title: Transclude All Tiltered Tiddler With Title Links
+tags: tiddlywiki @zettel _method
+roam-id: 93d59951-fe4c-48ba-b4d9-e814433e08f0
+created: 20260424173800000
+modified: 20260424173800000
+type: text/markdown
+
+``` tiddlywiki
+<$list filter="[tag[@biblio]tag[k8s]]">
+  <$transclude mode="block"/>
+  <sup><$link><$view field="title"/></$link></sup>
+</$list>
+```

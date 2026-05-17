@@ -1,0 +1,10 @@
+title: Get List of Tmux Sockets
+tags: tmux @zettel _method
+roam-id: 4559884c-2787-4aae-829a-f9e19d7819d0
+created: 20260320123800000
+modified: 20260320123800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+ls /tmp/tmux-$(id -u)/
+```

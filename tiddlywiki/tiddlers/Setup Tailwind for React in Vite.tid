@@ -1,0 +1,26 @@
+title: Setup Tailwind for React in Vite
+tags: @zettel _method tailwind react vite
+roam-id: 92245497-292c-4cd2-b8f8-86e8719b2c29
+type: text/markdown
+
+``` bash
+cd /path/to/vite/project
+npm install tailwindcss @tailwindcss/vite
+```
+
+``` typescript
+  // vite.config.ts
+  import { defineConfig } from 'vite'
++ import tailwindcss from '@tailwindcss/vite'
+
+  export default defineConfig({
+    plugins: [
++      tailwindcss(),
+    ],
+  })
+```
+
+``` css
+/* index.css */
+@import "tailwindcss";
+```

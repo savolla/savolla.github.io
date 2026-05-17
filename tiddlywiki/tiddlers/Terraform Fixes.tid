@@ -1,0 +1,10 @@
+title: Terraform Fixes
+tags: _fix terraform @query
+roam-id: 014e070d-deca-4132-a2ac-0fb823710b43
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_fix]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

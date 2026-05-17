@@ -1,0 +1,10 @@
+title: Toggle React State Variable Withing a Button onClick
+tags: @zettel _method react
+roam-id: f7fcf964-33f7-4dce-a3ab-5fae0dee05e2
+type: text/markdown
+
+``` html
+<button onClick={() => {setClicked((prev) => !prev);}}>
+  click me!
+</button>
+```

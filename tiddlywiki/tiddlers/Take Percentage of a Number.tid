@@ -1,0 +1,10 @@
+title: Take Percentage of a Number
+tags: math @zettel _method
+roam-id: ca7c4719-684c-43d0-863c-f100bb38efdd
+created: 20260501222900000
+modified: 20260501222900000
+type: text/markdown
+
+take 20% of number 10;
+
+$$(20 x 10) / 100 = 2$$

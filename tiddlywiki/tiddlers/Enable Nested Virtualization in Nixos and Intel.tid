@@ -1,0 +1,13 @@
+title: Enable Nested Virtualization in Nixos and Intel
+tags: @zettel _method nixos intel
+roam-id: 69eea7c2-0fb0-46e7-ba76-e5350ef1039c
+type: text/markdown
+
+``` nix
+boot = {
+  extraModprobeConfig = ''
+      options kvm_intel nested=1
+      options kvm_intel emulate_invalid_guest_state=0
+      options kvm ignore_msrs=1
+    '';
+```

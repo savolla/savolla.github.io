@@ -1,0 +1,10 @@
+title: List Installed Linux Kernels
+tags: linux dpkg @zettel _method
+roam-id: e5278965-0589-402b-ba80-656c5e1ac010
+created: 20260504210700000
+modified: 20260504210700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+dpkg -l | grep linux-image
+```

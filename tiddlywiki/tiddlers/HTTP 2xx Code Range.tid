@@ -1,0 +1,14 @@
+title: HTTP 2xx Code Range
+tags: http @zettel _reference
+roam-id: 2ec673df-8b59-4ab6-a41e-6bb0ad5103b6
+roam-refs: https://chatgpt.com/
+created: 20260331114700000
+modified: 20260331114700000
+type: text/markdown
+
+These are in the 2xx range, meaning the request worked:
+
+- 200 OK -- Everything worked as expected.
+- 201 Created -- Something was successfully created (common for APIs).
+- 202 Accepted -- Request accepted but not processed yet.
+- 204 No Content -- Request succeeded but there's nothing to show (e.g., after deletion).

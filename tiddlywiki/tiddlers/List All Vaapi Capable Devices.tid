@@ -1,0 +1,16 @@
+title: List All Vaapi Capable Devices
+tags: gpu linux vaapi @zettel _method
+roam-id: 338a5953-ab50-4629-87e2-05ba001ac955
+created: 20260514205400000
+modified: 20260514205400000
+type: text/markdown
+
+if you\'re using `nix` then [[Install Vainfo Using Nix]] first
+
+``` {.bash org-language="sh"}
+ls /dev/dri/renderD*
+```
+
+``` example
+/dev/dri/renderD128
+```

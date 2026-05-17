@@ -1,0 +1,8 @@
+title: Go Back to Previous Commit
+tags: @zettel _method git
+roam-id: df3d41e9-bab2-49ce-899c-1b1cded57f9d
+type: text/markdown
+
+``` shell
+git reset --hard HEAD~1
+```

@@ -1,0 +1,9 @@
+title: 202604142005
+tags: pubsub @zettel _term
+roam-id: 05f88712-09a2-4db6-bfe8-460e777c4ebc
+roam-refs: https://www.youtube.com/watch?v=wb4qcdb0XWw
+created: 20260414200500000
+modified: 20260414200500000
+type: text/markdown
+
+pubsub is google\'s message broker on google cloud just like rabbitmq and kafka

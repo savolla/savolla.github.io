@@ -1,0 +1,9 @@
+title: 20260321140812
+tags: immutability _property @biblio k8s
+roam-id: af3b19ec-50b7-4e94-90fa-88b78d3dc409
+type: text/markdown
+
+> Immutable conta1ner images are at the core of everything that you will build in Kubernetes.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

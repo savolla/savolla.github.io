@@ -1,0 +1,19 @@
+title: Install Ventoy on a Usb Drive on Nixos
+tags: @zettel _method ventoy nixos
+roam-id: b07238fe-08fb-4df2-8639-198d0d3e63d2
+type: text/markdown
+
+- install ventoy
+
+``` shell
+export NIXPKGS_ALLOW_INSECURE=1
+export NIXPKGS_ALLOW_UNFREE=1
+nix-shell -p ventoy
+```
+
+- install it on a usb stick
+
+  ``` shell
+  lsblk # check your usb device (be careful)
+  sudo ventoy -I /dev/sdX # replace with your drive
+  ```

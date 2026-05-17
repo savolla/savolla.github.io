@@ -1,0 +1,13 @@
+title: Automatically Run Commands Once File Is Saved Using Gaze
+tags: @zettel _method gaze
+roam-id: e8763dc1-1fdd-4e32-84cb-91b9c4bea035
+type: text/markdown
+
+open a terminal and specify the file to watch and give it the command to execute once that file is changed
+
+``` shell
+gaze ~/.config/home-manager/home.nix -c "home-manager switch" 
+```
+
+- [setup weechat and possibly other communication channels](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-07.org::848)
+- [setup weechat and possibly other communication channels](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-07.org::1069)

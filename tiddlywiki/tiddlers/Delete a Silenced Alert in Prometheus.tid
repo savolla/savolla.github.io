@@ -1,0 +1,8 @@
+title: Delete a Silenced Alert in Prometheus
+tags: @zettel _method prometheus thanos
+roam-id: 6dd7ea94-0397-4e55-a585-38c1e13992b1
+type: text/markdown
+
+- go to silences
+- click preview
+- click expire

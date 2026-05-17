@@ -1,0 +1,10 @@
+title: Restart All Deployments of a Namespace
+tags: k8s k8s_pod k8s_deployment @arrow @zettel _method
+roam-id: d5524953-461b-47de-aa77-f3bc750ba211
+created: 20260403120100000
+modified: 20260403120100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kubectl rollout restart deployment -n <namespace>
+```

@@ -1,0 +1,8 @@
+title: Cpan
+tags: perl cpan @zettel _term
+roam-id: fa545559-55a6-4bca-8a40-2ce9a7e5750b
+created: 20260407121600000
+modified: 20260407121600000
+type: text/markdown
+
+cpan → Perl's package installer (like pip for Python)

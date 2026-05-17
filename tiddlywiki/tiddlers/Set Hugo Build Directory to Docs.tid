@@ -1,0 +1,14 @@
+title: Set Hugo Build Directory to Docs
+tags: @zettel _method hugo
+roam-id: fb992547-0e2b-474b-9fdb-5a2ab9e13cb5
+type: text/markdown
+
+if you want to host your hugo website on github pages just like I do, you\'ll need to put it under `docs` folder. and here is how you do it
+
+- create a `config.toml` directory under the root of your hugo site
+
+- put the following in
+
+  ``` toml
+  publishDir = "docs"
+  ```

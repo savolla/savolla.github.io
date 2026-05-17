@@ -1,0 +1,9 @@
+title: Install Markdown-It Plugin in Tiddlywiki
+tags: markdown tiddlywiki @zettel _method
+roam-id: ff8405e7-d8b2-40d9-9184-03e2657ae840
+created: 20260423165800000
+modified: 20260423165800000
+type: text/markdown
+
+- go to <https://tiddlywiki.com/plugins/tiddlywiki/markdown/>
+- under \"installation\" follow the instructions

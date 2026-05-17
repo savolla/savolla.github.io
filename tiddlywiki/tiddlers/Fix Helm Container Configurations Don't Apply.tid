@@ -1,0 +1,10 @@
+title: Fix Helm Container Configurations Don't Apply
+tags: @zettel k8s _fix helm
+roam-id: 86e64b9f-ec5d-4a7b-9531-66fdaa1385c1
+type: text/markdown
+
+this is a helm problem. you can fix this by adding `--reset-values`
+
+``` shell
+helm upgrade --reset-values --wait bird-ai-assistant --timeout 15m0s bird-ai-assistant-${version}.tgz
+```

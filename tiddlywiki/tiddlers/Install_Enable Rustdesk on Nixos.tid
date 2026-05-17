@@ -1,0 +1,18 @@
+title: Install/Enable Rustdesk on Nixos
+tags: rustdesk nixos @zettel _method
+roam-id: e15f1fca-c381-49a6-8660-8ade577ff918
+created: 20260514220400000
+modified: 20260514220400000
+type: text/markdown
+
+I [[Assign Static Ip Addres on Nixos]] to \"192.168.1.20\" because I use this machine also as rustdesk relay.
+
+``` nix
+rustdesk-server = {
+  enable = true;
+  openFirewall = true;
+  signal.relayHosts = [ "192.168.1.20" ];
+};
+
+systemd.services.rustdesk-signal.environment.ALWAYS_USE_RELAY = "Y";
+```

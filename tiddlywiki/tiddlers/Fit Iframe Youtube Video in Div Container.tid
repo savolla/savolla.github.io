@@ -1,0 +1,23 @@
+title: Fit Iframe Youtube Video in Div Container
+tags: @zettel _method iframe tailwind
+roam-id: 01e16f1d-e272-4497-864b-7312c2df03a3
+type: text/markdown
+
+use proportional padding for 16:9 ratio
+
+$$\frac{16}{9} = 1.777\ldots$$
+
+$$\frac{1}{1.777\ldots} = 0.5625 \Rightarrow 56.25\%$$
+
+``` html
+<div className="relative w-full pt-[56.25%]">
+  <iframe
+    className="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/9SbnhgjeyXA?autoplay=1"
+    title="Why Ableton - Juanpe"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+    ></iframe>
+</div>
+```

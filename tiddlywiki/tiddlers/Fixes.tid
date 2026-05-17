@@ -1,0 +1,14 @@
+title: Fixes
+tags: 
+roam-id: 85b7e87e-2ba5-4cd8-a801-34690319361f
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_fix]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

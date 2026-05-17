@@ -1,0 +1,27 @@
+title: Access Dictionary Elements in Python
+tags: @zettel _method python _e
+roam-id: ed0a8eb7-9b25-438d-8d7f-724ba19d586b
+type: text/markdown
+
+``` {.python results="output"}
+movies = [
+    {
+        "movie_name"       : "eyes wide shut",
+        "movie_url"        : "https://www.rottentomatoes.com/m/eyes_wide_shut",
+        "movie_poster_path": "eyes-wide-shut.jpg"
+    },
+    {
+        "movie_name"       : "The Game",
+        "movie_url"        : "https://www.rottentomatoes.com/m/the_game",
+        "movie_poster_path": "the-game-1997-movie-poster-4046709197.jpg"
+    },
+]
+
+print(movies[0]["movie_name"])
+print(movies[0]["movie_url"])
+```
+
+``` example
+eyes wide shut
+https://www.rottentomatoes.com/m/eyes_wide_shut
+```

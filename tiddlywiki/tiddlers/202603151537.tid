@@ -1,0 +1,9 @@
+title: 202603151537
+tags: @zettel _property k8s backendconfig gcp
+roam-id: 6d4c0992-1948-4bd5-8abe-688136f46965
+roam-refs: https://www.google.com/search?q=what%20is%20kubernetes%20backendconfig
+created: 20260315153700000
+modified: 20260315153700000
+type: text/markdown
+
+> It is used in conjunction with a Kubernetes Service and Ingress resource to offer advanced configuration options not available through standard Kubernetes annotations alone.

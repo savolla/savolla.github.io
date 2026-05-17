@@ -1,0 +1,53 @@
+title: Enable File Share Between Guest/Host in KVM on Nixos
+tags: @zettel _method libvirt kvm virtmanager nixos
+roam-id: 8e38775c-626f-4a38-98da-c00cf24fc068
+type: text/markdown
+
+- enable virtiofsd in your config. example config below
+
+  ``` shell
+  # configuration.nix
+  libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      vhostUserPackages = with pkgs; [ virtiofsd ]; # enable file share between host/guest
+      ovmf = {
+        enable = true;
+        packages = [
+          (pkgs.OVMF.override {
+            secureBoot = true;
+            tpmSupport = true;
+          }).fd
+        ];
+      };
+    };
+  };
+  ```
+
+- [[Rebuild Nixos]]
+
+- add the following xml configuration to your guest
+
+  ``` xml
+  <filesystem type="mount" accessmode="passthrough">
+    <driver type="virtiofs"/>
+    <binary path="/nix/store/g0q6d3g4b1mbfvyx8y14ax7d0knnlqj7-virtiofsd-1.13.2/bin/virtiofsd"/>
+    <source dir="/home/savolla/.crc"/>
+    <target dir="crc"/>
+    <alias name="fs0"/>
+    <address type="pci" domain="0x0000" bus="0x07" slot="0x00" function="0x0"/>
+  </filesystem>
+  ```
+
+  just an example
+
+- boot into guest
+
+  ``` shell
+  sudo mount -t virtiofs crc .crc
+  ```
+
+- now your shared folder is available under `/home/savolla/.crc`

@@ -1,0 +1,10 @@
+title: Create a Type for Function in TSX
+tags: tsx react
+roam-id: 76accd80-428d-430c-983f-0f208c8c83d4
+type: text/markdown
+
+``` typescript
+type SomeType = {
+  func: () => void;
+};
+```

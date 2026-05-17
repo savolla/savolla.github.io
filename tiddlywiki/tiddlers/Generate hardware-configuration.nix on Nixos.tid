@@ -1,0 +1,8 @@
+title: Generate hardware-configuration.nix on Nixos
+tags: @zettel _method nixos
+roam-id: 26e388a9-03e1-4bb5-bd8c-a12ebb35280a
+type: text/markdown
+
+``` bash
+sudo nixos-generate-config
+```

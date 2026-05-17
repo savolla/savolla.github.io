@@ -1,0 +1,8 @@
+title: Revert/Restore a File With No Committed Changes
+tags: @zettel _method git
+roam-id: 2d5902fa-b820-4ee1-a975-768e9f773eaf
+type: text/markdown
+
+``` shell
+git restore /path/to/file
+```

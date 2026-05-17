@@ -1,0 +1,13 @@
+title: 20260322142223
+tags: kaas k8s _bestpractice @biblio
+roam-id: 30c2c2cb-336c-4e3c-8c31-3ad396a44282
+type: text/markdown
+
+> Often for small organizations, KaaS provides an easy-to-use solution that enables them to focus their time and energy on building the software to support their work rather than managing a cluster. For larger organizations that can afford a dedicated team for managing its Kubernetes cluster, managing it that way may make sense since it enables greater flexibility in terms of cluster capabilities and operations.
+
+küçük geliştirici takımları için KaaS kullanılması önerilir. bu sayede ürünün geliştirilmesine odaklanılır. k8s yönetimi cloud servislerine bırakılır.
+
+büyük takımlar ise kubernetes management için bir takıma sahip olabilir. bu onların k8s clusterını daha kontrollü, daha esnek yapar.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

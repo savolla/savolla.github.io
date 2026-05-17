@@ -1,0 +1,11 @@
+title: 202603151416
+tags: fuse @zettel _constraint
+roam-id: 919a9927-291b-410a-b9a5-cfc1172a4b15
+created: 20260315141600000
+modified: 20260315141600000
+type: text/markdown
+
+using fuse to mount file systems via network has some disadvantages;
+
+- connection errors while file transfers
+- heavy resource usages

@@ -1,0 +1,18 @@
+title: Get Screenshot of a Webpage From Command Line
+tags: linux @zettel _method
+roam-id: 2b9ed6ed-cd61-42a8-aa7d-4a9ece876caa
+created: 20260504161300000
+modified: 20260504161300000
+type: text/markdown
+
+- [[Install Wkhtmltoimage Using Nix]]
+
+- get screenshot of a web page
+
+  ``` {.bash org-language="sh"}
+  wkhtmltoimage https://your.url page.png
+  ```
+
+[^1]
+
+[^1]: <https://askubuntu.com/questions/75058/how-can-i-take-a-full-page-screenshot-of-a-webpage-from-the-command-line>

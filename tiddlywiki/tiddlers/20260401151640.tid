@@ -1,0 +1,11 @@
+title: 20260401151640
+tags: @biblio k8s _mechanism k8s_vpa
+roam-id: 257b21e9-0799-494d-9ffd-84eac51290ec
+type: text/markdown
+
+> VerticalPodAutoscaler automatically updates a workload management resource (such as a Deployment or StatefulSet), with the aim of automatically adjusting infrastructure resource requests and limits to match actual usage.
+
+vpa automatically adjusts pod limits and resources
+
+
+<sup>source: [[Vertical Pod Autoscaling Kubernetes]]</sup>

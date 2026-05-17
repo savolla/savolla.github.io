@@ -1,0 +1,14 @@
+title: Methods
+tags: 
+roam-id: 11385513-e178-46a5-ac73-8a0f2ca3ba46
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_method]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

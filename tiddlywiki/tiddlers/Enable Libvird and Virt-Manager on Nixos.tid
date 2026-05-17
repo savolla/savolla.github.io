@@ -1,0 +1,33 @@
+title: Enable Libvird and Virt-Manager on Nixos
+tags: @zettel _method
+roam-id: 8086f39c-51bf-4900-a185-4981855f495d
+created: 20260514212900000
+modified: 20260514212900000
+type: text/markdown
+
+``` nix
+virtualisation = {
+  libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      vhostUserPackages = with pkgs; [ virtiofsd ]; # enable file share between host/guest
+
+      # # it is already included in newer nixos versions. but keeping this for "just in case" scenarios
+      # ovmf = {
+      #   enable = true;
+      #   packages = [
+      #     (pkgs.OVMF.override {
+      #       secureBoot = true;
+      #       tpmSupport = true;
+      #     }).fd
+      #   ];
+      # };
+    };
+  };
+};
+```
+
+you also may want to [[Install/Enable Virt-Manager on Nixos]], [[Enable Clipboard Sharing Between Host and KVM Virtual Machines on Nixos]] and [[Enable Usb Device Redirection for KVM VMS on Nixos]]

@@ -1,0 +1,10 @@
+title: Attach to Kubernetes Pod's Shell
+tags: @zettel _method k8s
+roam-id: be29e7e9-2985-494c-b65c-865489810a3c
+type: text/markdown
+
+- `kubectl get pod` and get the name of your taget pod
+
+``` shell
+kubectl exec -it $YOUR_POD_NAME -- /bin/sh
+```

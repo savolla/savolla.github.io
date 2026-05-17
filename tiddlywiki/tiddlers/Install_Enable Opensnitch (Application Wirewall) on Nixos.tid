@@ -1,0 +1,44 @@
+title: Install/Enable Opensnitch (Application Wirewall) on Nixos
+tags: opensnitch nixos @zettel _method
+roam-id: 2018b7a1-a295-41fb-925b-81ebb6c02f10
+created: 20260514221400000
+modified: 20260514221400000
+type: text/markdown
+
+in the following example you can also add rules declaratively
+
+``` nix
+services = {
+  opensnitch = {
+    # application firewall for linux
+    enable = true;
+    rules = {
+      systemd-timesyncd = {
+        name = "systemd-timesyncd";
+        enabled = true;
+        action = "allow";
+        duration = "always";
+        operator = {
+          type = "simple";
+          sensitive = false;
+          operand = "process.path";
+          data = "${lib.getBin pkgs.systemd}/lib/systemd/systemd-timesyncd";
+        };
+      };
+      systemd-resolved = {
+        name = "systemd-resolved";
+        enabled = true;
+        action = "allow";
+        duration = "always";
+        operator = {
+          type = "simple";
+          sensitive = false;
+          operand = "process.path";
+          data = "${lib.getBin pkgs.systemd}/lib/systemd/systemd-resolved";
+        };
+      };
+    };
+  };
+};
+
+```

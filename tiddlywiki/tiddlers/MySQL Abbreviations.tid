@@ -1,0 +1,10 @@
+title: MySQL Abbreviations
+tags: @query _abbr mysql
+roam-id: 76f25bbb-633d-4f9f-8556-890cbab9720d
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_abbr]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

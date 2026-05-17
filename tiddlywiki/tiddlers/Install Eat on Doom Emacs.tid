@@ -1,0 +1,46 @@
+title: Install Eat on Doom Emacs
+tags: doomemacs eat @zettel _method
+roam-id: 6c333d6b-79ad-4023-b2cc-58eb96ddb614
+created: 20260419140500000
+modified: 20260419140500000
+type: text/markdown
+
+install it like this
+
+``` elisp
+;; FILE: packages.el
+(package! eat
+  :recipe (:host codeberg
+       :repo "akib/emacs-eat"
+       :files ("*.el" ("term" "term/*.el") "*.texi"
+               "*.ti" ("terminfo/e" "terminfo/e/*")
+               ("terminfo/65" "terminfo/65/*")
+               ("integration" "integration/*")
+               (:exclude ".dir-locals.el" "*-tests.el"))))
+```
+
+set up the configuration like this
+
+``` elisp
+;; FILE: config.el
+(after! eat
+  (set-popup-rule! "^\\*eat\\*"
+    :side 'bottom
+    :size 0.25
+    :select t
+    :quit nil))
+
+(defun my/eat-toggle ()
+  (interactive)
+  (let* ((default-directory (or (projectile-project-root) default-directory))
+         (buffer (get-buffer "*eat*")))
+    (if (and buffer (get-buffer-window buffer))
+        (delete-window (get-buffer-window buffer))
+      (if buffer
+          (pop-to-buffer buffer)
+        (eat)))))
+
+(map! :leader
+      :prefix ("o" . "toggle")
+      :desc "Eat terminal" "t" #'my/eat-toggle)
+```

@@ -1,0 +1,16 @@
+title: What Are Kubernetes Probes
+tags: _fact
+roam-id: 9105f074-a59f-4dd0-8030-0b45ac08794a
+type: text/markdown
+
+- startup probe
+
+  > Don't rush me, I'm starting
+
+- liveness probe
+
+  > If I'm dead, restart me.
+
+- readiness probe
+
+  > If I'm busy, stop sending work

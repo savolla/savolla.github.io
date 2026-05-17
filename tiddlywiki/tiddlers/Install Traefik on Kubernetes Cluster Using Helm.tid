@@ -1,0 +1,33 @@
+title: Install Traefik on Kubernetes Cluster Using Helm
+tags: @zettel _method helm traefik k8s
+roam-id: d81ee853-60c9-48d8-b73c-414d3f7c4637
+type: text/markdown
+
+- [[Add Traefik Helm Repository]]
+- [[Update Helm Repo]]
+
+use the following `traefik-values.yaml` file
+
+``` yaml
+# values.yaml
+ingressRoute:
+  dashboard:
+    enabled: true
+    matchRule: Host(`dashboard.localhost`)
+    entryPoints:
+      - web
+providers:
+  kubernetesGateway:
+    enabled: true
+gateway:
+  listeners:
+    web:
+      namespacePolicy:
+        from: All
+```
+
+install traefik using helm
+
+``` shell
+helm install traefik traefik/traefik -f traefik-values.yaml --wait
+```

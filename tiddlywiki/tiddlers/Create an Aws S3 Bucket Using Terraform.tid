@@ -1,0 +1,20 @@
+title: Create an Aws S3 Bucket Using Terraform
+tags: @zettel terraform aws _method
+roam-id: feb1a6ce-6e90-4da4-8bad-a2c035abd1f9
+type: text/markdown
+
+``` hcl
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "some-unique-name-980480"
+  acl = "private"
+
+  tags = {
+    Environment = "dev"
+    Owner = "you"
+  }
+}
+```

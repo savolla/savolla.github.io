@@ -1,0 +1,6 @@
+title: Reload Kitty Config Without Restarting Kitty
+tags: @zettel _method kitty
+roam-id: efc55508-f067-43c8-aff1-33eb68c1d2d7
+type: text/markdown
+
+- press `Ctrl + Shift + F5`

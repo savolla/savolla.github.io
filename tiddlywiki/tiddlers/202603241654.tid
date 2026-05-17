@@ -1,0 +1,27 @@
+title: 202603241654
+tags: hpa k8s @zettel _mechanism
+roam-id: 35c9fc16-c4a7-456e-9ca7-a6b34993d64a
+created: 20260324165400000
+modified: 20260324165400000
+type: text/markdown
+
+hpa only triggers when the Utilization value is exceeded. here is an example;
+
+``` yaml
+spec:
+  maxReplicas: 20
+  metrics:
+  - resource:
+      name: cpu
+      target:
+        averageUtilization: 90
+        type: Utilization
+    type: Resource
+  minReplicas: 5
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: bird-mobile-service
+```
+
+this will scale one replica once the cpu utilization is exceeded 90%. this process will be continued up to 20. normal state should be 5 replicas

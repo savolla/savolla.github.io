@@ -1,0 +1,21 @@
+title: Install Ros Noetic on Ubuntu 20.04
+tags: @zettel _method ros
+roam-id: 7113b823-1813-4518-ae6a-fa54e113b2f4
+type: text/markdown
+
+``` shell
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl gnupg2 lsb-release -y
+
+# Set up the sources
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros1-latest.list'
+
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+sudo apt update
+sudo apt install ros-noetic-desktop-full -y
+
+# Set up the environment
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```

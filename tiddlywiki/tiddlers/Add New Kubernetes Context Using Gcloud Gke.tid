@@ -1,0 +1,16 @@
+title: Add New Kubernetes Context Using Gcloud Gke
+tags: @zettel _method gke gcp k8s
+roam-id: d947d7c1-0f8c-4b53-8c8f-ccbf60d0457b
+type: text/markdown
+
+- [[List Gcloud Project]]
+
+- [[Set GCP Project]] to your liking \"hopi-test-kartaca\" in this case
+
+- [[Get Cluster Name of a Specific Gke]] to get the current cluster name information [for the current set project]{.underline}
+
+- add the context
+
+  ``` shell
+  gcloud container clusters get-credentials [CLUSTER_NAME] --zone [ZONE] --project [PROJE_ID]
+  ```

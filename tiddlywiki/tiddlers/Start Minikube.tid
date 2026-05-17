@@ -1,0 +1,8 @@
+title: Start Minikube
+tags: @zettel _method minikube
+roam-id: 95c73c20-1790-469a-a29e-211ccdb51b02
+type: text/markdown
+
+``` shell
+minikube start --driver=docker --container-runtime=containerd
+```

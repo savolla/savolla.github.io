@@ -1,0 +1,9 @@
+title: Proxmox Crash Problem When Passthrough Amd Gpu in Windows Vm
+tags: windows amd proxmox @zettel _fix
+roam-id: 410bf36e-a5c4-4d67-819a-34e42a22bc6b
+roam-refs: https://forum.level1techs.com/t/the-state-of-amd-rx-7000-series-vfio-passthrough-april-2024/210242
+created: 20260314160200000
+modified: 20260314160200000
+type: text/markdown
+
+check the referenced link in case something bad happens here is the [pdf version of the web page](resource/notes/org/roam/biblio/webpages/the-state-of-amd-rx-7000-series-vfio-passthrough-april-2024.pdf)

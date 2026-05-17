@@ -1,0 +1,11 @@
+title: 202605011430
+tags: _comparison @biblio claude_code
+roam-id: ceb39be5-7edf-44dc-966c-4a686fd4a148
+created: 20260501143000000
+modified: 20260501143000000
+type: text/markdown
+
+`SKILL.md` files are task specific and they are only used when they needed. `CLAUDE.md` file is loaded on every conversation.
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

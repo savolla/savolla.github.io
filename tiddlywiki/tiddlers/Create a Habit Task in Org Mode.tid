@@ -1,0 +1,11 @@
+title: Create a Habit Task in Org Mode
+tags: @zettel orgmode _method
+roam-id: d1021d57-67c5-4094-a3e3-2b856a9bccc9
+type: text/markdown
+
+- you may want to add a new todo tag called HABIT. but it is optional
+
+``` org
+* HABIT wash your face
+  SCHEDULED: <2026-03-09 Mon .+1d>
+```

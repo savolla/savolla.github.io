@@ -1,0 +1,22 @@
+title: Fix Elfeed Does Not Load Feeds on Startup
+tags: @zettel _method elfeed doomemacs
+roam-id: ab40f9c6-be11-4fb3-979a-c3bbf0383565
+type: text/markdown
+
+- doom\'s `:rss` flag in `doom/init.el` doesn\'t work (2025.07.10)
+
+- instead you need to install those packages in `doom/packages.el` instead
+
+  ``` elisp
+  ;; doom/packages.el
+  (package! elfeed)
+  (package! elfeed-org)
+  (package! elfeed-tube)
+  (package! elfeed-tube-mpv)
+  ```
+
+- [[Refresh Doom Emacs]]
+
+- restart doom emacs and open `elfeed`
+
+- run `elfeed-update`

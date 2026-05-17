@@ -1,0 +1,9 @@
+title: Update Ubuntu/Debian
+tags: @zettel _method ubuntu debian
+roam-id: 70f1393c-7fac-4be8-9974-c10ad3b36cae
+type: text/markdown
+
+``` shell
+sudo apt update
+sudo apt upgrade -y
+```

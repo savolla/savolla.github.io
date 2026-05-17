@@ -1,0 +1,11 @@
+title: Switch to Previous Tab in Firefox
+tags: @zettel _method firefox
+roam-id: 8850c6bb-69d2-4c64-b1d3-d8581e73c32f
+type: text/markdown
+
+- browse `about:config`
+- find `browser.ctrlTab.sortByRecentlyUsed`
+- set `true`
+- use `Ctrl+Tab`
+
+[source](https://superuser.com/questions/290704/switching-back-to-last-tab-on-firefox)

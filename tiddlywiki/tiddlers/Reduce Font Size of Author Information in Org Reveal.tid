@@ -1,0 +1,14 @@
+title: Reduce Font Size of Author Information in Org Reveal
+tags: @zettel _method orgmode revealjs
+roam-id: e50ae54e-868d-4794-ac31-9e0ac63e8266
+type: text/markdown
+
+- [[Add Custom CSS to Org Reveal]]
+
+- add the following into it
+
+  ``` css
+  .reveal h2.author {
+      font-size: 0.6em;
+  }
+  ```

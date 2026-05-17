@@ -1,0 +1,16 @@
+title: Run Prometheus Using Docker
+tags: @zettel _method prometheus docker
+roam-id: 933a689f-473d-4d74-9564-65bd17a2d552
+type: text/markdown
+
+- [[Create a Prometheus Yaml File]] and make sure the `prometheus.yaml` file is under the same directory before running the following command
+
+``` shell
+sudo docker run -d \
+  --name prometheus \
+  -p 9090:9090 \
+  -v ./prometheus.yml:/etc/prometheus/prometheus.yml \
+  prom/prometheus
+```
+
+**WARNING**: notice it\'s `.yml` and not `.yaml`. I\'m not sure if it works with `.yaml` or not..

@@ -1,0 +1,14 @@
+title: Terms
+tags: 
+roam-id: 3351c003-67ea-4995-929f-a60ce8ef5dbd
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_term]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

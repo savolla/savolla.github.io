@@ -1,0 +1,15 @@
+title: Delete Stash in Git
+tags: git @zettel _method
+roam-id: 494b834f-0275-4547-9bad-b5c9eeb87db1
+type: text/markdown
+
+``` shell
+git stash list # get your target stash to delete
+git stash drop stash@{N}
+```
+
+or you can delete all stashed (dangerous)
+
+``` shell
+git stash clear
+```

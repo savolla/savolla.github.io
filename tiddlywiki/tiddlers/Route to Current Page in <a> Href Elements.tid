@@ -1,0 +1,8 @@
+title: Route to Current Page in <a> Href Elements
+tags: @zettel _method html
+roam-id: 1fd2bea4-cbc9-48c4-b460-8131ec3cb344
+type: text/markdown
+
+``` html
+<a href="#">Go to current page</a>
+```

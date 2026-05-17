@@ -1,0 +1,10 @@
+title: Terraform References
+tags: @query terraform _reference
+roam-id: c2c42c73-2667-4850-bec1-bafcfb9ec930
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_reference]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,11 @@
+title: 20260703192238
+tags: _property @biblio prometheus
+roam-id: 951ebc44-884b-40cc-853d-77c184b54941
+type: text/markdown
+
+> For instrumenting your own code, there are client libraries in all the popular languages and runtimes, including Go, Java/JVM, C#/.Net, Python, Ruby, Node.js, Haskell, Erlang, and Rust.
+
+if you want to export metrics from your software project, you can do this by using those libraries
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

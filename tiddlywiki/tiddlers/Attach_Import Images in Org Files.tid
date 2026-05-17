@@ -1,0 +1,11 @@
+title: Attach/Import Images in Org Files
+tags: @zettel _method orgmode
+roam-id: 7fbce44b-7deb-4787-bbdf-8e70a9e71140
+type: text/markdown
+
+- use the following format
+
+  ``` org
+  [[./path/to/image.jpg]]
+  [[./path/to/image.gif]]
+  ```

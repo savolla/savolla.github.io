@@ -1,0 +1,8 @@
+title: 202605121616
+tags: mysql @zettel _warning
+roam-id: 1bead42d-4886-41bc-a6bc-f417a28e9134
+created: 20260512161600000
+modified: 20260512161600000
+type: text/markdown
+
+`LIKE` operator increases load dramatically when used with double percents `'%test%'`. This is not recommended on production databases. Use only one percent signs in the worst case. never go double!

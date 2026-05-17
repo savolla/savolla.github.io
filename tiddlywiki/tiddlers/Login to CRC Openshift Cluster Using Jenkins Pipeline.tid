@@ -1,0 +1,29 @@
+title: Login to CRC Openshift Cluster Using Jenkins Pipeline
+tags: @zettel _method openshift jenkins _e
+roam-id: ea5ca0c8-dbbf-4e82-886a-781cee30dba1
+type: text/markdown
+
+``` groovy
+pipeline {
+    agent { label 'agent-openshift' }
+
+    environment {
+        OPENSHIFT_API_SERVER = 'https://api.crc.testing:6443'
+        OPENSHIFT_USERNAME = 'developer'
+        OPENSHIFT_PASSWORD = 'developer'
+        CRC_PATH = '/home/openshift/crc-linux-2.53.0-amd64'
+    }
+
+    stages {
+        stage('Login into Openshift Cluster') {
+            steps {
+                sh '''
+                    cd $CRC_PATH
+                    eval "$(./crc oc-env --shell bash)"
+                    oc login -u $OPENSHIFT_USERNAME -p $OPENSHIFT_PASSWORD $OPENSHIFT_API_SERVER
+                '''
+            }
+        }
+    }
+}
+```

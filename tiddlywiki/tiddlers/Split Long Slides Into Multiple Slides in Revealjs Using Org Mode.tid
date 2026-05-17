@@ -1,0 +1,9 @@
+title: Split Long Slides Into Multiple Slides in Revealjs Using Org Mode
+tags: @zettel _method revealjs orgmode
+roam-id: de19d19a-fd20-45d0-bddd-cf53f872b155
+type: text/markdown
+
+``` org
+some long content
+another long content
+```

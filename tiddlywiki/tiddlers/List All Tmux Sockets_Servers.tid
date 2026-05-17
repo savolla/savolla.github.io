@@ -1,0 +1,8 @@
+title: List All Tmux Sockets/Servers
+tags: @zettel _method tmux
+roam-id: 1555b65a-3fe7-4378-9f11-16f0ead3dc8d
+type: text/markdown
+
+``` shell
+ls /tmp/tmux-$(id -u)
+```

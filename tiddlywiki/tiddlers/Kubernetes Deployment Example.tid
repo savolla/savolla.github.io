@@ -1,0 +1,41 @@
+title: Kubernetes Deployment Example
+tags: k8s @zettel _reference
+roam-id: 69db236a-2f69-4d6d-a87f-505ae4b3caab
+created: 20260504220500000
+modified: 20260504220500000
+type: text/markdown
+
+``` yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment     # Name of the Deployment
+  labels:
+    app: nginx               # Labels for grouping/selecting resources
+spec:
+  replicas: 3                # Number of pod replicas
+  selector:
+    matchLabels:
+      app: nginx             # Pods must have this label to be managed by this deployment
+  template:
+    metadata:
+      labels:
+        app: nginx           # Label assigned to the pods
+    spec:
+      containers:
+      - name: nginx          # Container name
+        image: nginx:1.25    # Docker image (can be replaced with your own)
+        ports:
+        - containerPort: 80  # Port the container exposes
+        resources:           # Optional resource requests and limits
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+```
+
+[^1]
+
+[^1]: <https://chatgpt.com/>

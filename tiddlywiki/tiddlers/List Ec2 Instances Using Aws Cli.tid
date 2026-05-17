@@ -1,0 +1,10 @@
+title: List Ec2 Instances Using Aws Cli
+tags: @zettel aws _method
+roam-id: 8200b598-2499-47a2-b022-b6bd49d308ce
+type: text/markdown
+
+``` shell
+aws ec2 describe-instances \
+  --query "Reservations[].Instances[].{ID:InstanceId,Name:Tags[?Key=='Name']|[0].Value,State:State.Name}" \
+  --output table
+```

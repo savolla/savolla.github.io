@@ -1,0 +1,14 @@
+title: Create a Deadline Task in Org Mode With Custom Reminder Time
+tags: @zettel _method orgmode
+roam-id: 6c4516b0-ee6a-416d-a56b-3d120fddd506
+type: text/markdown
+
+remove commans from the following example
+
+``` {.commonlisp org-language="emacs-lisp"}
+* EVENT payday
+,DEADLINE: <2025-11-05 Wed +1m -3d>
+,:PROPERTIES:
+,:REPEAT_TO_STATE: EVENT
+,:END:
+```

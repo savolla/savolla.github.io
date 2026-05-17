@@ -1,0 +1,19 @@
+title: Fix Tailwind LSP Not Starting in Doom Emacs
+tags: @zettel _fix talwind doomemacs
+roam-id: e180cfcd-3dcb-4995-833d-b3c9a90b4cfe
+type: text/markdown
+
+``` elisp
+;; doom/packages.el
+(package! lsp-tailwindcss :recipe (:type git :host github :repo "merrickluo/lsp-tailwindcss"))
+```
+
+``` elisp
+;; doom/config.el
+(use-package! lsp-tailwindcss
+  :after lsp-mode
+  :init
+  (setq lsp-tailwindcss-add-on-mode t
+        lsp-tailwindcss-server-version "0.14.8" ;; this does the trick
+        lsp-tailwindcss-skip-config-check t))
+```

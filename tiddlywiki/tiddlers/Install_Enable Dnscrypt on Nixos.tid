@@ -1,0 +1,43 @@
+title: Install/Enable Dnscrypt on Nixos
+tags: dnscrypt dns nixos @zettel _method
+roam-id: 099d9dca-f93f-48e3-872f-a2d1803dd008
+created: 20260514214200000
+modified: 20260514214200000
+type: text/markdown
+
+in `configuration.nix`
+
+``` nix
+services = {
+  dnscrypt-proxy = {
+    enable = true;
+    # Settings reference:
+    # https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml
+    settings = {
+      ipv6_servers = true;
+      require_dnssec = true;
+      # Add this to test if dnscrypt-proxy is actually used to resolve DNS requests
+      query_log.file = "/var/log/dnscrypt-proxy/query.log";
+      sources.public-resolvers = {
+        urls = [
+          "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
+          "https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md"
+        ];
+        cache_file = "/var/cache/dnscrypt-proxy/public-resolvers.md";
+        minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
+      };
+
+      # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
+      # server_names = [ ... ];
+    };
+  };
+};
+```
+
+[^1]
+
+[^2]
+
+[^1]: 1 <https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml>
+
+[^2]: 2 <https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md>

@@ -1,0 +1,8 @@
+title: Clone Vm Using Virsh
+tags: @zettel _method virsh kvm
+roam-id: f038a175-433f-497a-a01d-1246b0357fc6
+type: text/markdown
+
+``` {.shell results="raw drawer"}
+sudo virt-clone --original $VM_NAME_TO_CLONE --auto-clone
+```

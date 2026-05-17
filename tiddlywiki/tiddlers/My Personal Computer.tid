@@ -1,0 +1,46 @@
+title: My Personal Computer
+tags: @post
+roam-id: 57122682-f158-4aa6-8b6a-01c197ccb199
+created: 20260503160900000
+modified: 20260503160900000
+type: text/markdown
+
+## The Dream of a Single Machine That Rules Them All
+
+One day I went to a government building in Turkey for an ensurance problem I was facing.. While doing the boring stuff there like signing papers and stuff, one thing catched my eyes. On every worker\'s desk was sitting a small desktop computer with a monitor. a keyboard and ofcouse.. a mouse. These computers were not that powerful. Only to be used for a specific tasks like browsing the web and do Excell stuff. I was fascinated by that idea. Then I thought to myself, why don\'t I use this idea to control all my devices from SSH server? And possibly VNC for graphica stuff? Using only that weak mahcine and controll my other machines instead of physically going back and forth between them?
+
+That idea stuck with me since. But I couldn\'t find time and financial resouce to integrate this into my life. I was jobless at that time. And looking for a job. So I had no money at all.
+
+I had a Raspberry Pi 3B with a plastic case. I had one big tower pc but it was located in my brother\'s room. So in order to access it I needed to occupy my brother\'s space all the time. I also had that Thinkpad laptop that my company gave me. And one laptop that was running my personal services. I would be great to control all of those machines using only one thin client via ssh.
+
+## Trying Out Raspberri Pi 3B
+
+I installed raspberry pi os and started experimenting
+
+### 1GB was too low
+
+1.  Another heading
+
+    some text
+
+### tried dietpi
+
+## Work Computer Control
+
+## VNC, Rustdesk and Other Tools and Finally Sunshine
+
+## From Micro Computer to Mini Computers
+
+searching for more powerfull but cheap alternative
+
+## I Needed Type C port
+
+## GMKtec Nucbox with AMD GPU
+
+## BIOS Settings Tweaks
+
+## More Than Expected
+
+I can even play my favorite games like Path of Exile there. with graphics settings turned down
+
+## Fan Noice

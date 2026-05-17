@@ -1,0 +1,10 @@
+title: Describe Topic in Kafka
+tags: kafka kafka_topic @zettel _method
+roam-id: d2306cc8-724a-40d1-95f3-8cb718b36483
+created: 20260401154800000
+modified: 20260401154800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic topicname
+```

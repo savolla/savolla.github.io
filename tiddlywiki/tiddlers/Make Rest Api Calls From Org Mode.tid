@@ -1,0 +1,27 @@
+title: Make Rest Api Calls From Org Mode
+tags: @zettel _method orgmode rest
+roam-id: 0886bf18-c465-4a63-9642-b5c7f40b2912
+type: text/markdown
+
+``` restclient
+GET http://127.0.0.1:8000/todo/hello/
+```
+
+``` {.javascript org-language="js"}
+{
+  "message": "Hello, World!"
+}
+// GET http://127.0.0.1:8000/todo/hello/
+// HTTP/1.1 200 OK
+// Date: Thu, 31 Jul 2025 17:13:25 GMT
+// Server: WSGIServer/0.2 CPython/3.13.4
+// Content-Type: application/json
+// Vary: Accept, Cookie
+// Allow: GET, HEAD, OPTIONS
+// X-Frame-Options: DENY
+// Content-Length: 27
+// X-Content-Type-Options: nosniff
+// Referrer-Policy: same-origin
+// Cross-Origin-Opener-Policy: same-origin
+// Request duration: 0.003732s
+```

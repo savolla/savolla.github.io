@@ -1,0 +1,11 @@
+title: 202605011433
+tags: _mechanism @biblio claude_code
+roam-id: ea381d6a-9555-4412-a0bd-ca234608826e
+created: 20260501143300000
+modified: 20260501143300000
+type: text/markdown
+
+claude-code only loads the **name** and the **description** of a `SKILL.md` file. so it prevents overloading the context window that way
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

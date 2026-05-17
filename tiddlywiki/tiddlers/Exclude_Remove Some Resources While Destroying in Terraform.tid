@@ -1,0 +1,16 @@
+title: Exclude/Remove Some Resources While Destroying in Terraform
+tags: @zettel _method terraform
+roam-id: 1c4a0fc2-26b2-49a2-997b-01a2508de1a9
+type: text/markdown
+
+``` shell
+# list all resources
+terraform state list
+
+# remove that resource you don't want to destroy
+# you can add more to be excluded if required
+terraform state rm <resource_to_be_deleted>
+
+# destroy the whole stack except above excluded resource(s)
+terraform destroy
+```

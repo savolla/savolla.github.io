@@ -1,0 +1,11 @@
+title: Moonlight Keybindings
+tags: moonlight @zettel _reference
+roam-id: d29d5cc9-c4fb-4b67-8090-bff613e7db57
+created: 20260514204200000
+modified: 20260514204200000
+type: text/markdown
+
+key                      function
+  ------------------------ ------------------------
+  ctrl + shift + alt + q   exit
+  ctrl + shift + alt + z   release mouse/keyboard

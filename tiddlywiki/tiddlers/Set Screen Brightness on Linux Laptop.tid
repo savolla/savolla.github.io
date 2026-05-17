@@ -1,0 +1,8 @@
+title: Set Screen Brightness on Linux Laptop
+tags: @zettel _method linux
+roam-id: 3a38c6c0-2fa7-42fc-a64d-f222aca36148
+type: text/markdown
+
+``` shell
+brightnessctl set 50%
+```

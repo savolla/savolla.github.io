@@ -1,0 +1,10 @@
+title: Fix "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" in SSH
+tags: @zettel _method ssh issue
+roam-id: faf941e2-44b8-46bf-9a55-1d9dd327bc46
+type: text/markdown
+
+- remove the old host key
+
+  ``` bash
+  ssh-keygen -R hostname_or_ip
+  ```

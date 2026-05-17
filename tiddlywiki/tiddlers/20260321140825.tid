@@ -1,0 +1,9 @@
+title: 20260321140825
+tags: decoupling _cause @biblio
+roam-id: 12da22ac-9c77-4a30-9bdc-213b67485ef9
+type: text/markdown
+
+> Decoupling serv2rs via APIs makes it easier to scale the development teams because each team can f2cus on a single, smaller microservice with a comprehensible surface area.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

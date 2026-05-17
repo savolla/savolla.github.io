@@ -1,0 +1,14 @@
+title: Install/Enable Waydroid on Nixos
+tags: waydroid nix nixos @zettel _method
+roam-id: d7ccaa0c-dbea-469b-8228-9d921072f651
+created: 20260514213400000
+modified: 20260514213400000
+type: text/markdown
+
+in `configuration.nix`
+
+``` nix
+virtualisation = {
+  waydroid.enable = true;
+};
+```

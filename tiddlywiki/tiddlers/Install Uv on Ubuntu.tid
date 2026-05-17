@@ -1,0 +1,8 @@
+title: Install Uv on Ubuntu
+tags: @zettel _method uv ubuntu python
+roam-id: e9f0c7d7-31cd-40d1-b55b-5be266ed6910
+type: text/markdown
+
+``` shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```

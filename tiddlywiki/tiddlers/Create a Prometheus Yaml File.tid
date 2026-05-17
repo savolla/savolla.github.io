@@ -1,0 +1,19 @@
+title: Create a Prometheus Yaml File
+tags: @zettel _method prometheus yaml
+roam-id: 399ccae0-731d-4967-8821-74e59b06e3dc
+type: text/markdown
+
+the following example will make prometheus watch its own metrics + an external server `mobilelgniter` and the `kafka_exporter` that runs inside
+
+``` yaml
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "kafka_exporter"
+    static_configs:
+      - targets: ["mobilelgniter:9308"]
+```

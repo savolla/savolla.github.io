@@ -1,0 +1,12 @@
+title: Apply Custom CSS Theme in TiddlyWiki
+tags: tiddlywiki @zettel _method
+roam-id: db6c5e02-053f-4e7d-9313-dce03988cfb0
+created: 20260502012000000
+modified: 20260502012000000
+type: text/markdown
+
+- In TiddlyWiki, create a new tiddler
+- Set Type to `text/css`
+- Add the tag `$:/tags/Stylesheet`
+- Paste the entire CSS into the tiddler body
+- Save --- it applies instantly, no reload needed

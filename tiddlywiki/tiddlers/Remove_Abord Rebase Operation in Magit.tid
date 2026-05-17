@@ -1,0 +1,8 @@
+title: Remove/Abord Rebase Operation in Magit
+tags: @zettel _method magit doomemacs
+roam-id: 98fc6b41-2d35-427a-b795-cff86012e06a
+type: text/markdown
+
+- `SPC g g`
+- navigate to Rebasing section
+- press `r a`

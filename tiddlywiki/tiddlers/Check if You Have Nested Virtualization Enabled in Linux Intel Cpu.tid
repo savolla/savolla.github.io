@@ -1,0 +1,12 @@
+title: Check if You Have Nested Virtualization Enabled in Linux Intel Cpu
+tags: @zettel _method linux intel
+roam-id: 823dc77d-4d21-48dd-8894-16cf83617904
+type: text/markdown
+
+``` shell
+cat /sys/module/kvm_intel/parameters/nested
+```
+
+``` example
+Y
+```

@@ -1,0 +1,10 @@
+title: Update Nix Channels
+tags: nixos nix @zettel _method
+roam-id: 25815003-c199-444b-8075-4afdb8ee8336
+created: 20260508230500000
+modified: 20260508230500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+nix-channel --update
+```

@@ -1,0 +1,10 @@
+title: Detect Infrastructure Drift With Terraform
+tags: @zettel _method terraform
+roam-id: c1b60240-80fa-47ad-8bd2-9f59f68b1291
+type: text/markdown
+
+``` shell
+terraform plan -detailed-exitcode
+```
+
+if the exit code is `0` then there is no change between previous state and current state. if other than `0` then you need to see what changed to prevent **infrastructure drift problem**

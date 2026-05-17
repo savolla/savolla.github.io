@@ -1,0 +1,17 @@
+title: Select Window in Tmux
+tags: tmux @zettel _method
+roam-id: 6cafaa63-306e-425d-bb64-26c6d4e4aaf9
+type: text/markdown
+
+``` {.bash org-language="sh"}
+tmux select-window -t session_name:window_name
+# or
+tmux select-window -t session_name:window_name_index
+```
+
+example:
+
+``` {.bash org-language="sh"}
+tmux select-window -t main:2
+tmux select-window -t main:editor
+```

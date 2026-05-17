@@ -1,0 +1,8 @@
+title: Specify Terraform Directory to Run in Terraform
+tags: @zettel _method terraform
+roam-id: 8fbede97-3f12-4dc0-a3ff-2aa2c067e1e9
+type: text/markdown
+
+``` shell
+terraform -chdir=path/to/terraform-dir <command>
+```

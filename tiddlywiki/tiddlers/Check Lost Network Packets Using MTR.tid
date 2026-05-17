@@ -1,0 +1,12 @@
+title: Check Lost Network Packets Using MTR
+tags: linux mtr networking @zettel _method
+roam-id: b9400224-8eab-4912-ba87-66fd027becb8
+created: 20260511211000000
+modified: 20260511211000000
+type: text/markdown
+
+check lost packets from your router to google dns
+
+``` {.bash org-language="sh"}
+mtr 8.8.8.8
+```

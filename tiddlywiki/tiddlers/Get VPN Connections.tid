@@ -1,0 +1,12 @@
+title: Get VPN Connections
+tags: linux networking vpn @zettel _method
+roam-id: 2ab6120f-51d9-478c-b5f6-50e4cc0e3912
+created: 20260505101300000
+modified: 20260505101300000
+type: text/markdown
+
+``` {.bash org-language="sh" results="drawer"}
+nmcli connection show | grep -i vpn
+```
+
+:results: abc-vpn 8e6295a0-e84b-4d27-9348-3c9e76f79b95 vpn --

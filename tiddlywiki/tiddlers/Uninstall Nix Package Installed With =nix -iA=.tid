@@ -1,0 +1,11 @@
+title: Uninstall Nix Package Installed With =nix -iA=
+tags: @zettel _method nix
+roam-id: 9b39f7a5-cc02-4fe1-95ce-5e104152bdee
+type: text/markdown
+
+``` shell
+# say you installed it like this:
+nix-env -iA nixpkgs.emacs
+# remove it like this:
+nix-env -e emacs
+```

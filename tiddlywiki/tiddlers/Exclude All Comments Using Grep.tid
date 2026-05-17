@@ -1,0 +1,8 @@
+title: Exclude All Comments Using Grep
+tags: @zettel _method grep
+roam-id: 564262d4-84d2-4e00-bc95-9db4de31b2a5
+type: text/markdown
+
+``` shell
+grep -vP '^#' /path/to/file
+```

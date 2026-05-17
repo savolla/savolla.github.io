@@ -1,0 +1,11 @@
+title: Install Qutebrowser on Ubuntu Using Nix
+tags: _method @zettel nix ubuntu qutebrowser
+roam-id: c009d083-693a-4881-a323-b2ca04c32724
+type: text/markdown
+
+``` shell
+nix-channel --add https://github.com/nix-community/nixGL/archive/main.tar.gz nixgl && nix-channel --update
+nix-env -iA nixgl.auto.nixGLDefault
+nix-env -iA nixpkgs.qutebrowser
+nixGL qutebrowser
+```

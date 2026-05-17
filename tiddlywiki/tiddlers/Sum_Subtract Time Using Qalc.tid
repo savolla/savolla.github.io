@@ -1,0 +1,8 @@
+title: Sum/Subtract Time Using Qalc
+tags: _method @zettel qalc
+roam-id: e5175fd3-4af5-4d76-bf59-9921b2fe10f3
+type: text/markdown
+
+``` shell
+qalc 10:31 - 8:30 to time
+```

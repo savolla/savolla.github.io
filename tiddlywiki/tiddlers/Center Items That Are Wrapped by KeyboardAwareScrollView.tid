@@ -1,0 +1,25 @@
+title: Center Items That Are Wrapped by KeyboardAwareScrollView
+tags: @zettel _method javascript reactnative
+roam-id: 6893ffe8-b9a8-4ef1-8001-7b098bfabac1
+type: text/markdown
+
+I learned how to center items that are wrapped by `<KeyboardAwareScrollView>` component. you need to use `contentContainerStyle`
+
+``` {.javascript org-language="js"}
+  return (
+    <KeyboardAwareScrollView
+      contentContainerStyle={{
+        flexGrow: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+      className="w-full h-full" // Full width and height to take up the screen
+      bottomOffset={60}
+    >
+
+...
+
+    </KeyboardAwareScrollView>
+  );
+}
+```

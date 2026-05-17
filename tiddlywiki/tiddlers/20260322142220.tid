@@ -1,0 +1,13 @@
+title: 20260322142220
+tags: k8s software_development _pattern @biblio
+roam-id: 437a367b-e8ea-4fab-bdae-e72a504132dc
+type: text/markdown
+
+> The common solution to this tension has been the development of decoupled, service-oriented teams that each build a single microservice.
+
+[[Small Devteam vs Large Devteam]] karşılaştırmasına bakıldığında küçük takımların daha verimli olduğu ortaya konuldu ancak büyük yazılım projelerinde daha büyük takımlara ihtiyaç duyulduğundan, küçük takımların verimini ve performansını yakalamak için yazılımı microservislere bölüp her 6-7 kişilik takıma bir microservis paylaştırılır.
+
+kubernetes ise sahip olduğu mimari sayesinde bu tarz bir çalışma modelini destekler
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

@@ -1,0 +1,337 @@
+title: $:/custom-styles
+tags: $:/tags/Stylesheet
+type: text/css
+
+/* ─── Local Fonts ──────────────────────────────────────────── */
+@font-face {
+  font-family: 'Iosevka Term Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url('./files/fonts/IosevkaTerm/IosevkaTerm-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Iosevka Term Web';
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  src: url('./files/fonts/IosevkaTerm/IosevkaTerm-MediumItalic.woff2') format('woff2');
+}
+
+/* ─── Color Palette ────────────────────────────────────────── */
+/*
+  Design intent: serious dark theme, near-black with cool blue-grey
+  undertones, a single periwinkle-blue accent. No warm tones,
+  no loud colors. Syntax highlighting uses the same palette —
+  no more than 4 hues total.
+
+  bg-0   #0e0f11  — deepest bg (page, code blocks)
+  bg-1   #141519  — base surface (tiddler body bg)
+  bg-2   #1c1d22  — raised surfaces (sidebar, cards)
+  bg-3   #25262d  — hover states, selections
+  border #2e2f38  — all borders
+  dim    #4a4c5a  — disabled, very muted
+  muted  #7a7c8e  — secondary labels, comments
+  subtle #a8aabe  — secondary body text
+  text   #d4d6e4  — primary body text
+  bright #e8eaf4  — headings, titles
+  accent #7b9cff  — links, highlights, active states (one blue only)
+  acc-dim#4d6fd4  — accent at lower luminance (visited links, borders)
+*/
+:root {
+  --bg0:      #0e0f11;
+  --bg1:      #141519;
+  --bg2:      #1c1d22;
+  --bg3:      #25262d;
+  --border:   #2e2f38;
+  --dim:      #4a4c5a;
+  --muted:    #7a7c8e;
+  --subtle:   #a8aabe;
+  --text:     #d4d6e4;
+  --bright:   #e8eaf4;
+  --accent:   #7b9cff;
+  --acc-dim:  #4d6fd4;
+
+  --font-mono:    'Iosevka Term Web', 'Cascadia Code', 'Courier New', monospace;
+
+  --type-caption: 0.8rem;
+  --type-small:   0.889rem;
+  --type-base:    1rem;
+  --type-h4:      1rem;
+  --type-h3:      1.25rem;
+  --type-h2:      1.5rem;
+  --type-h1:      1.875rem;
+  --type-title:   2.25rem;
+}
+
+html { font-size: 18px; }
+
+/* ─── Base page ────────────────────────────────────────────── */
+body,
+.tc-page-container {
+  background: var(--bg0) !important;
+  color: var(--text) !important;
+}
+
+/* ─── Tiddler title ────────────────────────────────────────── */
+.tc-title {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-title) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: var(--bright) !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* ─── Site title ───────────────────────────────────────────── */
+.tc-site-title {
+  font-family: var(--font-mono) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  color: var(--subtle) !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+/* ─── Body text ────────────────────────────────────────────── */
+.tc-tiddler-body {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-base) !important;
+  color: var(--text) !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.01em;
+  max-width: 72ch;
+}
+
+.tc-tiddler-body p { margin-bottom: 0.85rem; }
+
+/* ─── Body headings ────────────────────────────────────────── */
+.tc-tiddler-body h1 {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-h1) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: var(--bright) !important;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tc-tiddler-body h2 {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-h2) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: var(--bright) !important;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  margin-bottom: 0.45rem;
+}
+
+.tc-tiddler-body h3 {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-h3) !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--subtle) !important;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  margin-top: 1.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.tc-tiddler-body h4 {
+  font-family: var(--font-mono) !important;
+  font-size: var(--type-h4) !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--muted) !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ─── Code ─────────────────────────────────────────────────── */
+pre, code, kbd, samp,
+.tc-tiddler-body pre,
+.tc-tiddler-body code {
+  font-family: var(--font-mono) !important;
+  font-size: 0.95em !important;
+}
+
+.tc-tiddler-body code {
+  background: var(--bg2) !important;
+  color: var(--subtle) !important;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+.tc-tiddler-body pre {
+  background: var(--bg0) !important;
+  border: 1px solid var(--border) !important;
+  border-left: 3px solid var(--acc-dim) !important;
+  border-radius: 4px !important;
+  padding: 1rem 1.25rem !important;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  line-height: 1.5;
+  color: var(--subtle) !important;
+}
+
+/* ─── Blockquotes ──────────────────────────────────────────── */
+.tc-tiddler-body blockquote {
+  font-style: italic !important;
+  background: var(--bg2) !important;
+  border-left: 2px solid var(--dim) !important;
+  border-radius: 0 !important;
+  margin: 1.25rem 0 !important;
+  padding: 0.65rem 1.1rem !important;
+  color: var(--muted) !important;
+}
+
+.tc-tiddler-body blockquote p { margin-bottom: 0 !important; }
+
+/* ─── Links ────────────────────────────────────────────────── */
+a.tc-tiddlylink-external {
+  text-decoration: none !important;
+  color: var(--acc-dim) !important;
+}
+
+.tc-tiddler-body a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+}
+
+.tc-tiddler-body a:hover,
+a.tc-tiddlylink-external:hover {
+  color: var(--bright) !important;
+  transition: color 0.1s ease !important;
+}
+
+.tc-title a,
+.tc-title a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* ─── Horizontal rule ──────────────────────────────────────── */
+.tc-tiddler-body hr {
+  border: none !important;
+  border-top: 1px solid var(--border) !important;
+  margin: 2rem 0 !important;
+}
+
+/* ─── UI chrome ────────────────────────────────────────────── */
+button.tc-btn-invisible.tc-tiddlylink {
+  display: none !important;
+}
+
+/* ─── Syntax highlighting ──────────────────────────────────── */
+/*
+  Palette: same 4 hues as the UI.
+  accent   #7b9cff  — keywords, tags
+  #b9a8ff           — functions, types (accent shifted purple)
+  #8ecf9e           — strings (desaturated green, the only warm note)
+  muted    #7a7c8e  — comments
+  subtle   #a8aabe  — operators, punctuation, default tokens
+*/
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: var(--font-mono);
+  color: var(--subtle);
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  background: var(--bg0) !important;
+}
+
+pre[class*="language-"] {
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  overflow: auto;
+  border-radius: 4px;
+  border-left: 3px solid var(--acc-dim);
+}
+
+:not(pre) > code[class*="language-"] {
+  background: var(--bg2) !important;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: var(--bg3);
+  color: var(--bright);
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata           { color: var(--dim); font-style: italic; }
+
+.token.keyword,
+.token.selector,
+.token.atrule,
+.token.important       { color: var(--accent); }
+
+.token.tag,
+.token.boolean,
+.token.builtin,
+.token.doctype         { color: var(--accent); opacity: 0.8; }
+
+.token.function,
+.token.class-name,
+.token.symbol          { color: #b9a8ff; }
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex           { color: #8ecf9e; }
+
+.token.number,
+.token.entity          { color: #b9a8ff; }
+
+.token.property,
+.token.constant,
+.token.variable,
+.token.delimiter       { color: var(--subtle); }
+
+.token.operator,
+.token.punctuation,
+.token.attr-name,
+.token.attr-value .punctuation  { color: var(--muted) !important; background: transparent !important; }
+
+.token.url             { color: var(--acc-dim); text-decoration: underline; }
+.token.bold            { font-weight: bold; }
+.token.italic          { font-style: italic; }
+.token.inserted        { color: #8ecf9e; background: rgba(142,207,158,0.08); }
+.token.deleted         { color: #e05c6b; background: rgba(224,92,107,0.08); }
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  :root {
+    --type-title: 1.875rem;
+    --type-h1:    1.5rem;
+    --type-h2:    1.25rem;
+    --type-h3:    1.1rem;
+  }
+  .tc-tiddler-body { padding: 1rem; }
+}

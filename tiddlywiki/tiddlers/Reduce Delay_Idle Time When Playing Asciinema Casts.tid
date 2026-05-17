@@ -1,0 +1,10 @@
+title: Reduce Delay/Idle Time When Playing Asciinema Casts
+tags: @zettel _method asciinema
+roam-id: 33eead2c-d4ed-445a-ab4d-bbcf3e3793ae
+type: text/markdown
+
+``` shell
+asciinema play -i 1 your_file.cast
+```
+
+crop idle time longer than 1 second

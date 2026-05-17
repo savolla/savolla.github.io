@@ -1,0 +1,11 @@
+title: Extract Appimage
+tags: appimage @zettel _method
+roam-id: f3db9533-8327-48d2-8b8c-fc30f433369b
+created: 20260513161600000
+modified: 20260513161600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+./example.AppImage --appimage-extract
+cd squashfs-root
+```

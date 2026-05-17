@@ -1,0 +1,9 @@
+title: 20260307205315
+tags: _usecase @biblio prometheus promql
+roam-id: c1d02a74-f1e2-4801-b6ef-3f6c0e33c6ca
+type: text/markdown
+
+> Alerts can be defined using the exact same PromQL query language that you use for graphing.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

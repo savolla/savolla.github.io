@@ -1,0 +1,11 @@
+title: Deploy a Helm Chart
+tags: @zettel _method helm k8s
+roam-id: face266c-ca8b-4e64-8680-04eeccc9ed5e
+type: text/markdown
+
+``` shell
+cd /path/to/your_chart
+helm upgrade --install your_chart . -f values/pretest.yaml
+```
+
+values can be one of the pretest, test, staging, prod etc.

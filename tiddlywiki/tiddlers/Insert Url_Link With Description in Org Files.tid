@@ -1,0 +1,8 @@
+title: Insert Url/Link With Description in Org Files
+tags: @zettel _method
+roam-id: 50f38d58-35ce-470d-9f60-9f700702849d
+type: text/markdown
+
+- `SPC m l l`
+- add link
+- then description

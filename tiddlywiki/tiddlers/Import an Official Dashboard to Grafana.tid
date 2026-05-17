@@ -1,0 +1,10 @@
+title: Import an Official Dashboard to Grafana
+tags: @zettel _method grafana ATTACH
+roam-id: 8c49ac27-2207-453e-a8c2-a7aa37ac20ac
+type: text/markdown
+
+- [[attachment:_20250926_104727screenshot.png]]
+- go to the page of your target dashboard and copy the id [[attachment:_20250926_104922screenshot.png]]
+- paste the id and click load [[attachment:_20250926_105037screenshot.png]]
+- you can adjust the following details if you want. [[attachment:_20250926_105130screenshot.png]]
+- don\'t forget to add your data source for this dashboard

@@ -1,0 +1,8 @@
+title: Play Asciinema Files
+tags: @zettel _method asciinema
+roam-id: 8f6e9062-74df-44bc-bb1d-b60de376d5f4
+type: text/markdown
+
+``` shell
+asciinema play /path/to/file.cast
+```

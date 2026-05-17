@@ -1,0 +1,9 @@
+title: Create Org-Roam-Ql Dynamic Blocks
+tags: @zettel _method orgroamql
+roam-id: e36ed098-da1f-4f0d-9cd3-a1688e9e7558
+type: text/markdown
+
+``` org
+```
+
+- then while your cursor is on the dblock run `org-dblock-update`

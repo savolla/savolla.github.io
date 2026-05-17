@@ -1,0 +1,11 @@
+title: Pre Define Org Code Block Properties
+tags: @zettel _method orgmode
+roam-id: 85d06f07-71a3-4a40-a250-d39b3668bd6c
+type: text/markdown
+
+- use this on top of your org file
+
+  ``` org
+  ```
+
+- this will define default properties for each code block globally so you don\'t need to put these props on every code block

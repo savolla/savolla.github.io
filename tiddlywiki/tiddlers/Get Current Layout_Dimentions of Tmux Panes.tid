@@ -1,0 +1,12 @@
+title: Get Current Layout/Dimentions of Tmux Panes
+tags: @zettel tmux _method
+roam-id: 98ac7176-bd98-467a-a7e2-f3702af815ce
+type: text/markdown
+
+prefix + `display-message -p "#{window_layout}"`
+
+or directly from terminal
+
+``` shell
+tmux display-message -p "#{window_layout}"
+```

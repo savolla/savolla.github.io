@@ -1,0 +1,20 @@
+title: Get Current Year in Python
+tags: @zettel _method python
+roam-id: 76e6076a-d4ea-4f92-8420-6f1594c4cc13
+type: text/markdown
+
+``` {.python results="output"}
+from datetime import datetime
+
+current_year = datetime.now().year
+print(current_year)
+
+last_year = datetime.now().year - 1
+updated_combobox = "×" + str(last_year)
+print(updated_combobox)
+```
+
+``` example
+2025
+×2024
+```

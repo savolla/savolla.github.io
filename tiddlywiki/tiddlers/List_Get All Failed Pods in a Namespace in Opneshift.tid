@@ -1,0 +1,8 @@
+title: List/Get All Failed Pods in a Namespace in Opneshift
+tags: @zettel _method openshift
+roam-id: b7b9c0a7-083a-49a9-9cb5-06dc9b655c0c
+type: text/markdown
+
+``` shell
+oc get pods --field-selector=status.phase=Failed
+```

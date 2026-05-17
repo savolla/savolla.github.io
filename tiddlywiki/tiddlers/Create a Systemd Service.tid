@@ -1,0 +1,44 @@
+title: Create a Systemd Service
+tags: @zettel _method systemd
+roam-id: d5e3602c-5882-4301-b302-0723fdf9cdbe
+type: text/markdown
+
+:::: warning
+::: title
+Warning
+:::
+
+this example will create service for sonarqube. adjust the following code and commands to your needs
+::::
+
+- `sudo vim /etc/systemd/system/sonar.service`
+
+  ``` shell
+  [Unit]
+  Description=SonarQube service
+  After=syslog.target network.target
+
+  [Service]
+  Type=forking
+
+  ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+  ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+  User=sonar
+  Group=sonar
+  Restart=always
+
+  LimitNOFILE=65536
+  LimitNPROC=4096
+
+  [Install]
+  WantedBy=multi-user.target
+  ```
+
+- save and exit
+
+  ``` shell
+  sudo systemctl start sonar
+  sudo systemctl enable sonar
+  sudo systemctl status sonar
+  ```

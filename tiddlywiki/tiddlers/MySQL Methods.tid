@@ -1,0 +1,12 @@
+title: MySQL Methods
+tags: _method mysql @query
+roam-id: df978bc0-f897-4ef3-a009-09741b6d2a09
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_method]!tag[@query]]">
+  <li>
+    <$link>
+      <$view field="title"/>
+    </$link>
+  </li>
+</$list>

@@ -1,0 +1,20 @@
+title: Silent Flycheck Pyright Warning
+tags: @zettel _method python pyright flycheck
+roam-id: a755f700-2f91-48a1-b8d0-db12a1f9beeb
+type: text/markdown
+
+notice `# type: ignore` comment below
+
+``` python
+from django.db import models
+
+
+class Todo(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.TextField(blank=True)
+    completed = models.BooleanField(default=False) # type: ignore
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+```

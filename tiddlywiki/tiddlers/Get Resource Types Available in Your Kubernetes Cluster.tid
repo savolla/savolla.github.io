@@ -1,0 +1,10 @@
+title: Get Resource Types Available in Your Kubernetes Cluster
+tags: k8s @zettel _method
+roam-id: 31246a68-3ab3-494a-9f2e-edcf673e7d55
+created: 20260317114600000
+modified: 20260317114600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kubectl api-resources
+```

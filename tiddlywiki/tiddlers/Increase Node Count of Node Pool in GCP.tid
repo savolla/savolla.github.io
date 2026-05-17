@@ -1,0 +1,8 @@
+title: Increase Node Count of Node Pool in GCP
+tags: gcp k8s @zettel _method
+roam-id: d37131bc-8ec3-451f-8124-26b6dc3ffbf8
+created: 20260513084000000
+modified: 20260513084000000
+type: text/markdown
+
+Go to GKE -\> select your target node pool -\> increase max node size

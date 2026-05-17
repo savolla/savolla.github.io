@@ -1,0 +1,36 @@
+title: Open Shell in a Kubernetes Node
+tags: @zettel _method k8s
+roam-id: 651dbd64-822b-4285-8cb5-004304dfdae1
+type: text/markdown
+
+- you can directly connect into a pod with the following command
+
+  ``` {.bash org-language="sh"}
+  kubectl debug node/${NODE_NAME} -it --image=busybox
+  ```
+
+- or with a plugin install <https://github.com/kvaps/kubectl-node-shell>
+
+- do
+
+  ``` {.shell results="output"}
+  kubectl get node
+  ```
+
+  ```{=org}
+  #+RESULTS:
+  ```
+  ``` example
+  NAME                                                  STATUS   ROLES    AGE   VERSION
+  gke-bird-pretest-gke-bird-pretest-gke-8045da2c-be3z   Ready    <none>   25d   v1.34.1-gke.1829001
+  gke-bird-pretest-gke-bird-pretest-gke-8045da2c-e30d   Ready    <none>   25d   v1.34.1-gke.1829001
+  gke-bird-pretest-gke-bird-pretest-gke-8045da2c-ja35   Ready    <none>   25d   v1.34.1-gke.1829001
+  gke-bird-pretest-gke-bird-pretest-gke-8045da2c-t5fw   Ready    <none>   25d   v1.34.1-gke.1829001
+  gke-bird-pretest-gke-bird-pretest-gke-8045da2c-ztsc   Ready    <none>   25d   v1.34.1-gke.1829001
+  ```
+
+- exec into one of them
+
+  ``` shell
+  kubectl node-shell gke-bird-pretest-gke-bird-pretest-gke-8045da2c-be3z
+  ```

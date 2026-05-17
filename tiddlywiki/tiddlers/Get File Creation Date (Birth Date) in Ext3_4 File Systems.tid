@@ -1,0 +1,8 @@
+title: Get File Creation Date (Birth Date) in Ext3/4 File Systems
+tags: @zettel _method linux
+roam-id: 01411581-0292-449c-b0d9-fa1439e08ec9
+type: text/markdown
+
+``` shell
+date -d @$(stat -c %W /path/to/file)
+```

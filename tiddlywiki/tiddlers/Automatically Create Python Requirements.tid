@@ -1,0 +1,9 @@
+title: Automatically Create Python Requirements
+tags: @zettel _method python
+roam-id: 4dca9565-457a-48ac-9417-f36290fdfb5d
+type: text/markdown
+
+``` python
+pip install pipreqs
+pipreqs /path/to/project
+```

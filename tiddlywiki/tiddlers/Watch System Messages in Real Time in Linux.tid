@@ -1,0 +1,8 @@
+title: Watch System Messages in Real Time in Linux
+tags: @zettel _method linux systemd
+roam-id: 9fc6ef45-b11f-4163-833f-0fd4ea2b9454
+type: text/markdown
+
+``` shell
+journalctl -f
+```

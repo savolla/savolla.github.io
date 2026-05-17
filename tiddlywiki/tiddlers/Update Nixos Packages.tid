@@ -1,0 +1,10 @@
+title: Update Nixos Packages
+tags: nixos nix @zettel _method
+roam-id: 9d89caba-3dc1-4038-9a7b-0f57e160716f
+created: 20260508230800000
+modified: 20260508230800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo nixos-rebuild switch -I nixos-config=./configuration.nix --upgrade
+```

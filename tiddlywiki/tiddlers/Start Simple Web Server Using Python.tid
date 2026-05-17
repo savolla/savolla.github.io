@@ -1,0 +1,8 @@
+title: Start Simple Web Server Using Python
+tags: @zettel _method python
+roam-id: ea110d63-b50e-40b0-b88a-14f0c09624d5
+type: text/markdown
+
+``` shell
+python3 -m http.server 8080
+```

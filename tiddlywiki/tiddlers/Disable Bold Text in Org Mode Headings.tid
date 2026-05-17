@@ -1,0 +1,17 @@
+title: Disable Bold Text in Org Mode Headings
+tags: @zettel _method
+roam-id: 8a32ae98-b306-451c-a26d-d1bfcbba701d
+type: text/markdown
+
+``` elisp
+;; disable org headings being bold
+(custom-set-faces
+ '(org-level-1 ((t (:inherit outline-1 :weight normal))))
+ '(org-level-2 ((t (:inherit outline-2 :weight normal))))
+ '(org-level-3 ((t (:inherit outline-3 :weight normal))))
+ '(org-level-4 ((t (:inherit outline-4 :weight normal))))
+ '(org-level-5 ((t (:inherit outline-5 :weight normal))))
+ '(org-level-6 ((t (:inherit outline-6 :weight normal))))
+ '(org-level-7 ((t (:inherit outline-7 :weight normal))))
+ '(org-level-8 ((t (:inherit outline-8 :weight normal)))))
+```

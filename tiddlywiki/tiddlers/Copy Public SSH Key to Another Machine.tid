@@ -1,0 +1,8 @@
+title: Copy Public SSH Key to Another Machine
+tags: @zettel _method ssh
+roam-id: 7e1c0ca7-2915-42a5-9a06-6e742c722876
+type: text/markdown
+
+``` shell
+ssh-copy-id -i ~/.ssh/id_rsa.pub USER@REMOTE_MACHINE_IP
+```

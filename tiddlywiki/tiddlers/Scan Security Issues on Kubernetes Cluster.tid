@@ -1,0 +1,13 @@
+title: Scan Security Issues on Kubernetes Cluster
+tags: k8s kubescape security devsecops @zettel _method
+roam-id: 87c86daa-8b49-4579-bcc1-7617cea5a97e
+created: 20260513163000000
+modified: 20260513163000000
+type: text/markdown
+
+make sure you installed `kubescape`
+
+``` {.bash org-language="sh"}
+kubescape scan framework nsa
+kubescape scan framework nsa
+```

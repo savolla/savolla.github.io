@@ -1,0 +1,8 @@
+title: Check Logs for a Specific Systemd Service
+tags: @zettel _method systemd
+roam-id: d380eca9-2dfe-42c1-8d61-56e068d18e4e
+type: text/markdown
+
+``` shell
+sudo journalctl -u chrony
+```

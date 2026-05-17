@@ -1,0 +1,14 @@
+title: Comparisons
+tags: 
+roam-id: 93f2ac8e-44c6-42de-8b2b-5ffa64b979e8
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_comparison]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

@@ -1,0 +1,16 @@
+title: Disable Terminal Bell
+tags: @zettel _method linux
+roam-id: b363eec3-83ec-4dca-91cb-9fa11b51b62b
+type: text/markdown
+
+there are two methods
+
+``` shell
+xset b off
+```
+
+or
+
+``` shell
+setterm -blength 0
+```

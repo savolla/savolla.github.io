@@ -1,0 +1,8 @@
+title: Update a Row in Mysql
+tags: @zettel _method
+roam-id: 030b6bf8-d78c-4232-bba5-13b04b9d1e42
+type: text/markdown
+
+``` sql
+UPDATE users SET email = 'newemail@example.com' WHERE id = 5;
+```

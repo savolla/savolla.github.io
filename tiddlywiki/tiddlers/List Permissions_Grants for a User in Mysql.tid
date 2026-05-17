@@ -1,0 +1,8 @@
+title: List Permissions/Grants for a User in Mysql
+tags: _method mysql @zettel
+roam-id: 77b4df1b-a17e-44f7-9636-c6d625b6fa34
+type: text/markdown
+
+``` shell
+SHOW GRANTS FOR 'username@'%';
+```

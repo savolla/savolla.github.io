@@ -1,0 +1,12 @@
+title: Get Latest Kubernetes Version Available
+tags: k8s @zettel _method
+roam-id: c3292e2f-637b-4a45-b83f-b425b725e354
+created: 20260318084200000
+modified: 20260318084200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+curl -s https://api.github.com/repos/kubernetes/kubernetes/releases \
+    | jq -r '[.[] | select(.prerelease==false)][0].tag_name' \
+    | sed 's/^v//'
+```

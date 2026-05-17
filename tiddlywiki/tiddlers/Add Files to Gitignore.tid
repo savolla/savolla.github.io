@@ -1,0 +1,15 @@
+title: Add Files to Gitignore
+tags: @zettel _method git
+roam-id: 63a4cd3d-51fa-421f-b1e3-6dcfae34b7d1
+type: text/markdown
+
+- create a file called `.gitignore`
+
+- example gitignore:
+
+  ``` shell
+  images/
+  terraform/terraform.tfstate*
+  terraform/.terraform/
+  terraform/.terraform.lock.hcl
+  ```

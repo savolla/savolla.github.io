@@ -1,0 +1,14 @@
+title: Warnings
+tags: 
+roam-id: b8c0d1b9-9a3f-499f-85c0-491cf379ea17
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_warning]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

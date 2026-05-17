@@ -1,0 +1,10 @@
+title: Fix NTFS Mount Problems on Ubuntu or Linux in General
+tags: @zettel _method ntfs linux
+roam-id: c20b8031-abcd-49e5-b746-7c751151c060
+type: text/markdown
+
+- install `ntfs-3g` package. it contains `ntfsfix`
+
+``` shell
+sudo ntfsfix /dev/sdXn
+```

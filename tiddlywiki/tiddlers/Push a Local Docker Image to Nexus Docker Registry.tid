@@ -1,0 +1,18 @@
+title: Push a Local Docker Image to Nexus Docker Registry
+tags: @zettel _method docker nexus
+roam-id: 02ef3872-d7bf-4bd1-8487-a97a2462b312
+type: text/markdown
+
+- see [[Setup Docker Registry Using Nexus]] for previous details
+
+- tag an image with your repo
+
+  ``` shell
+  docker tag alpine:latest 192.168.1.54:5000/alpine
+  ```
+
+- push image to private nexus registry
+
+  ``` shell
+  docker push 192.168.1.54:5000/alpine
+  ```

@@ -1,0 +1,9 @@
+title: Install Dockfmt on Ubuntu
+tags: @zettel _method docker ubuntu
+roam-id: 1d55055e-c953-45d4-a7d6-e3f743331323
+type: text/markdown
+
+``` shell
+sudo curl -fSL "https://github.com/jessfraz/dockfmt/releases/download/v0.3.3/dockfmt-linux-amd64" -o /usr/local/bin/dockfmt
+sudo chmod +x /usr/local/bin/dockfmt
+```

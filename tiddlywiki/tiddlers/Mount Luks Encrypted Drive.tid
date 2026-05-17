@@ -1,0 +1,15 @@
+title: Mount Luks Encrypted Drive
+tags: luks security @zettel _method
+roam-id: 88332cc0-908e-49d1-8052-38a67ccef036
+created: 20260421193400000
+modified: 20260421193400000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo cryptsetup open /dev/sdb savolla
+# it will ask for password
+mkdir ./0
+sudo mount /dev/mapper/savolla ./0
+```
+
+you also want to see [[Unmount Luks Encrypted Drive]] when you finish

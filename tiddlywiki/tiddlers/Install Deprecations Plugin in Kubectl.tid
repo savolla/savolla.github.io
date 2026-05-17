@@ -1,0 +1,12 @@
+title: Install Deprecations Plugin in Kubectl
+tags: @zettel _method k8s
+roam-id: e8613ece-e835-4a3a-a064-0fa4699f340d
+type: text/markdown
+
+- [[Install Krew on Ubuntu]]
+
+- install deprecations
+
+  ``` shell
+  kubectl krew install deprecations
+  ```

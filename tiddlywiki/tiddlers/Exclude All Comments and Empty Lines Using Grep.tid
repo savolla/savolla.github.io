@@ -1,0 +1,8 @@
+title: Exclude All Comments and Empty Lines Using Grep
+tags: @zettel _method grep
+roam-id: 2d30ca4e-19e1-4b23-a228-a2de9fd6bdf0
+type: text/markdown
+
+``` shell
+grep -vP '^$|^#' /path/to/file
+```

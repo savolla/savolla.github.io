@@ -1,0 +1,10 @@
+title: Get GCP Pubsub Topic List
+tags: gcp pubsub @zettel _method
+roam-id: 107e978f-f906-406a-a458-cdc7fff5ba13
+created: 20260409103700000
+modified: 20260409103700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gcloud pubsub topics list
+```

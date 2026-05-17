@@ -1,0 +1,10 @@
+title: Manually Check a Kubernetes Service Aliveness Using Curl
+tags: @zettel _method curl k8s
+roam-id: a0068c4e-6a39-4611-968f-03f17abe3182
+type: text/markdown
+
+``` shell
+curl https://some-k8s-service/api/isAlive -v -o /dev/null
+```
+
+if you see `< 200` then it\'s up

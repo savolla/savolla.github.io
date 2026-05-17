@@ -1,0 +1,8 @@
+title: Narrow an Org-Mode Subtree
+tags: @zettel _method orgmode emacs
+roam-id: 03221e30-e538-4ade-9f7e-8576817a01b6
+type: text/markdown
+
+- navigate to an org heading
+- press `z n` to focus
+- unfocus `z N`

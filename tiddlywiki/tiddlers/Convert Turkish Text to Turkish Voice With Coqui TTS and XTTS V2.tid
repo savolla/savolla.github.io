@@ -1,0 +1,15 @@
+title: Convert Turkish Text to Turkish Voice With Coqui TTS and XTTS V2
+tags: @zettel _method xtts coquitts ai
+roam-id: dc72a3e2-2876-45c4-9937-559f0db9eb36
+type: text/markdown
+
+- [[Install Coqui TTS on Nixos]]
+
+``` {.bash org-language="sh"}
+tts \
+    --text "iyi günler. yarın saat 10:30'da, Bahçelievler Devlet Hastanesi Radyoloji bölümünde, doktor Kuzey Koç ile bir randevunuz mevcuttur. Eğer bu randevuya gelmek istiyorsanız lütfen 'vet'deyiniz. Eğer gelemeyecekseniz lütfen 'Hayır eyiniz" \
+    --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
+    --out_path result.mp3 \
+    --language_idx tr \
+    --speaker_idx 'Asya Anara'
+```

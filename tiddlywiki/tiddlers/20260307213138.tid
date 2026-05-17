@@ -1,0 +1,9 @@
+title: 20260307213138
+tags: nagios icinga zmon sensu _mechanism @biblio prometheus
+roam-id: eb5b7057-8a23-4e3d-b2f8-c8259e92516c
+type: text/markdown
+
+> When we say Nagios, we are including any software within the same broad family, such as Icinga, Zmon, and Sensu. They work primarily by regularly executing scripts called checks. If a check fails by returning a nonzero exit code, an alert is generated.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

@@ -1,0 +1,17 @@
+title: Add a Return Type in Python Function
+tags: @zettel _method python
+roam-id: 6c747fca-69b7-41e2-8485-6200f17ce7f1
+type: text/markdown
+
+notice `-> int` part
+
+``` {.python results="output"}
+def sum(a: int, b: int) -> int:
+    return a + b
+
+print(sum(1,3))
+```
+
+``` example
+4
+```

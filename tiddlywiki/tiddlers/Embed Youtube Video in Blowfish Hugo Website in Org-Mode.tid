@@ -1,0 +1,20 @@
+title: Embed Youtube Video in Blowfish Hugo Website in Org-Mode
+tags: @zettel _method blowfish hugo orgmode
+roam-id: c6a815be-778c-409a-9d8c-759384082a5f
+type: text/markdown
+
+- go to your youtube video
+- right click on the video
+- \"Copy Embed Code\"
+- go back to emacs org mode file
+- add the following **export block**
+
+``` org
+#+begin_export html
+<iframe width="853" height="480" src="https://www.youtube.com/embed/mtd92pfy0YY" title="The Tongue Stealer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+end_export
+```
+
+- and since this is already a hugo site, here is the example output:
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/mtd92pfy0YY" title="The Tongue Stealer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

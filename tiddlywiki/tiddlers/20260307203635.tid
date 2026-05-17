@@ -1,0 +1,11 @@
+title: 20260307203635
+tags: _bestpractice @biblio prometheus
+roam-id: 055bdd2d-085f-4f41-a99e-3dfb129d2458
+type: text/markdown
+
+> If you can graph it, you can alert on it.
+
+if you can create a graph from prometheus labels then you can also create an alert from it as well
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

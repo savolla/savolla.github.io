@@ -1,0 +1,9 @@
+title: 20260401124152
+tags: @biblio k8s_daemonset _usecase k8s
+roam-id: 3184515a-fe5d-4a9b-94f5-b1f09fe81fd0
+type: text/markdown
+
+> install the GPU5accelerator driver on nodes that have a GPU installed).
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

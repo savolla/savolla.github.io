@@ -1,0 +1,6 @@
+title: Fix Gparted Exfat Option Is Grayed Out
+tags: @zettel _method exfat nixos gparted
+roam-id: 95bb92c4-43be-4d54-a2c3-cc744b76541c
+type: text/markdown
+
+install `exfatprogs` on your distro restart `gparted`

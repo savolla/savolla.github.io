@@ -1,0 +1,18 @@
+title: Delete a Vm in Proxmox Shell
+tags: proxmox @zettel _method
+roam-id: f4f79bbe-7ccf-4a87-80b7-99a2287ef523
+created: 20260320212600000
+modified: 20260320212600000
+type: text/markdown
+
+make sure you [[Shutdown a Vm in Proxmox Shell]] before destroying it
+
+``` {.bash org-language="sh"}
+qm destroy $VMID
+```
+
+alternatively you can keep the attached disk and only remove the vm
+
+``` {.bash org-language="sh"}
+qm destroy $VMID --keep-disk
+```

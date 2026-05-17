@@ -1,0 +1,13 @@
+title: Prevent Repeated Scheduled/Deadline Tasks From Accumulating
+tags: @zettel _method orgmode
+roam-id: 4b7f235e-1f54-4d17-a7f3-b70c4e8d22cf
+type: text/markdown
+
+- use `++1w` instead of `+1w`.
+
+- add the following into your config
+
+  ``` elisp
+  (setq org-agenda-skip-scheduled-if-done t) ;; clear stacked multiple scheduled repeated items when marked as done
+  (setq org-agenda-skip-deadline-if-done t) ;; clear stacked multiple deadline repeated items when marked as done
+  ```

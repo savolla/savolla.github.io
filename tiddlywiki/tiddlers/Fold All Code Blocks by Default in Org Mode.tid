@@ -1,0 +1,13 @@
+title: Fold All Code Blocks by Default in Org Mode
+tags: @zettel _method orgmode
+roam-id: 659cb8b4-b744-4db4-a38f-fb37b41e57b4
+type: text/markdown
+
+``` {.commonlisp org-language="emacs-lisp"}
+;; doom/config.el
+;; hide all source blocks by default
+(defun my/org-hide-all-blocks-on-open ()
+  "Hide all blocks when opening an Org file."
+  (org-fold-hide-block-all))
+(add-hook 'org-mode-hook #'my/org-hide-all-blocks-on-open)
+```

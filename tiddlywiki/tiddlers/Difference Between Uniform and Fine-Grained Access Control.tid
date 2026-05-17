@@ -1,0 +1,7 @@
+title: Difference Between Uniform and Fine-Grained Access Control
+tags: _what_is gcp gcs
+roam-id: 0de3670e-c1f3-4206-94b7-00b30b33300f
+type: text/markdown
+
+- uniform puts lock on the bucket and when the bucket is accessed then the user can access all the content inside
+- fine-graned is when user opens the bucket but each content has its own lock

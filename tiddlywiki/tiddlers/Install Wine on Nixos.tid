@@ -1,0 +1,35 @@
+title: Install Wine on Nixos
+tags: @zettel _method wine nixos
+roam-id: 18d873b7-670d-432a-829b-2299a6c9456b
+type: text/markdown
+
+you can install multiple versions of wine on your system. I provided those options below. usually you only need `wineWowPackages.staging`
+
+``` nix
+{
+  environment.systemPackages = with pkgs; [
+    # ...
+
+    # support both 32-bit and 64-bit applications
+    wineWowPackages.stable
+
+    # support 32-bit only
+    wine
+
+    # support 64-bit only
+    (wine.override { wineBuild = "wine64"; })
+
+    # support 64-bit only
+    wine64
+
+    # wine-staging (version with experimental features)
+    wineWowPackages.staging
+
+    # winetricks (all versions)
+    winetricks
+
+    # native wayland support (unstable)
+    wineWowPackages.waylandFull
+  ];
+}
+```

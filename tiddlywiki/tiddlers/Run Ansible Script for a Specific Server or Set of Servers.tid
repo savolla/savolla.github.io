@@ -1,0 +1,18 @@
+title: Run Ansible Script for a Specific Server or Set of Servers
+tags: @zettel _method ansible
+roam-id: 37283d86-7927-48d9-ad46-2e3867ee0c17
+type: text/markdown
+
+- the following will run the following script for `zookeeper-prod` set of servers that are
+
+  > \[zookeeper-prod\] chefnightly.kartaca.net \# Zookeeper healthspot.kartaca.net \# Zookeeper leaptransit.kartaca.net \# Zookeeper
+
+``` shell
+ansible-playbook -i hosts -l zookeeper-prod -kK update_pkgs.yml
+```
+
+- second is for specific server that is `cdn-prod`
+
+  ``` shell
+  ansible-playbook -i hosts -l cdn-prod -kK update_pkgs.yml
+  ```

@@ -1,0 +1,10 @@
+title: Login to Docker Registry
+tags: docker @zettel _method
+roam-id: f2099b43-eecd-49fb-bf2e-f9545c879e7e
+created: 20260407115200000
+modified: 20260407115200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+docker login -u kkoc -p <LDAP_PASS> https://registry.kartaca.com
+```

@@ -1,0 +1,8 @@
+title: Rebuild Nixos With Custom configuration.nix File
+tags: _method @zettel nixos
+roam-id: 2a16e676-4233-42a3-b9e9-954f3eef036b
+type: text/markdown
+
+``` shell
+nixos-rebuild switch -I nixos-config=./path/to/config.nix 
+```

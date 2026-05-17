@@ -1,0 +1,11 @@
+title: 20260703192239
+tags: k8s docker envoy vault _property @biblio prometheus
+roam-id: 4564fafa-ca1c-4254-a70f-302f0c7c03ac
+type: text/markdown
+
+> Many popular applications are already instrumented with Prometheus client libraries, like Kubernetes, Docker, Envoy, and Vault.
+
+most tools adopted prometheus and can export metrics in prometheus format by default
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

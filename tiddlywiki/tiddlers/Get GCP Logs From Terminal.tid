@@ -1,0 +1,20 @@
+title: Get GCP Logs From Terminal
+tags: gcp @zettel _method
+roam-id: aa0a562d-063a-401e-bbe3-ab8770fae439
+created: 20260430151100000
+modified: 20260430151100000
+type: text/markdown
+
+example below
+
+``` {.bash org-language="sh"}
+gcloud logging read 'resource.type="k8s_container" AND
+    resource.labels.cluster_name="bird-production-gke-cluster" AND
+    resource.labels.container_name="profiling" AND
+    resource.labels.namespace_name="default"' \
+       --project=hopi-program \
+       --limit=200 \
+       --freshness=2h \
+       --order=desc \
+       --format=json
+```

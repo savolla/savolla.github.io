@@ -1,0 +1,9 @@
+title: 20260307220955
+tags: tracing zipkin jaeger _usecase @biblio prometheus
+roam-id: 13eb8ca1-2a2f-4183-b0e2-2822aad4af37
+type: text/markdown
+
+> Tracing and profiling are generally done with their own software stack: Zipkin and Jaeger are made for tracing,
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

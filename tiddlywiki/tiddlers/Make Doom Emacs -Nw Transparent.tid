@@ -1,0 +1,12 @@
+title: Make Doom Emacs -Nw Transparent
+tags: @zettel _method emacs
+roam-id: f1f51f51-2c2e-4d22-9ca7-49152493ee5f
+type: text/markdown
+
+``` {.commonlisp org-language="emacs-lisp"}
+;; theme
+(setq doom-theme 'doom-gruvbox)
+
+(when (not (display-graphic-p))
+  (set-face-background 'default "unspecified-bg")) ;; make transparent background
+```

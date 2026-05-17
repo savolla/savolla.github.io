@@ -1,0 +1,12 @@
+title: Set Linux Laptop to Balanced Mode
+tags: @zettel _method linux power
+roam-id: 03f6bf35-3680-4e10-bd24-a5d11cb18c6a
+type: text/markdown
+
+- make sure you first [[Get Cpu Power Modes or Cpu Governors]] and replace it with YOUR~PREFEREDMODE~
+
+below
+
+``` shell
+sudo cpupower --cpu all frequency-set --governor YOUR_PREFERED_MODE
+```

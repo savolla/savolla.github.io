@@ -1,0 +1,6 @@
+title: Create Vm on Proxmox Using Terraform and Cloud-Init
+tags: cloudinit proxmox terraform
+roam-id: 77ba3e1e-8c94-4e31-a8a6-855694468e38
+type: text/markdown
+
+watch this for creating cloud init template <https://www.youtube.com/watch?v=1Ec0Vg5be4s> then watch <https://www.youtube.com/watch?v=7VlNl6Z-qao>

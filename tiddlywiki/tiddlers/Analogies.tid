@@ -1,0 +1,14 @@
+title: Analogies
+tags: 
+roam-id: 985b8e05-be64-4077-9ff0-214326558ff1
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[_analogy]!tag[@query]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

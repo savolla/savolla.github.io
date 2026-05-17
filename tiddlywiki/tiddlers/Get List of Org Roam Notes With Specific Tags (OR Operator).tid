@@ -1,0 +1,25 @@
+title: Get List of Org Roam Notes With Specific Tags (OR Operator)
+tags: @zettel _method orgmode orgroam orgroamql
+roam-id: e58643fc-c890-4c5e-ad8a-d325ea056f15
+type: text/markdown
+
+- the following example will list all notes either with tag `orgmod` or `orgroam` or `orgroamql`
+
+  ``` org
+  #+begin_src emacs-lisp :results value raw
+  (mapconcat
+   (lambda (node)
+     (format "- [[id:%s][%s]]"
+             (org-roam-node-id node)
+             (org-roam-node-title node)))
+   (org-roam-ql-nodes
+    '(or
+      (tags "orgmode")
+      (tags "orgroam")
+      (tags "orgroamql")
+      ))
+   "\n")
+  #+end_src
+  ```
+
+- you can also see [[Get List of Org Roam Notes With Specific Tags (AND Operator)]]

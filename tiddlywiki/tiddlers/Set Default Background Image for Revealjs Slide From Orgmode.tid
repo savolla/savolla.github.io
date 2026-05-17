@@ -1,0 +1,11 @@
+title: Set Default Background Image for Revealjs Slide From Orgmode
+tags: @zettel _method orgmode revealjs
+roam-id: cf62f228-6a11-476a-94c6-7cb60a389108
+type: text/markdown
+
+put the following on top of your org file
+
+``` org
+```
+
+also see [[Set Background Image Opacity in Your Revealjs Slide From Org Mode]]

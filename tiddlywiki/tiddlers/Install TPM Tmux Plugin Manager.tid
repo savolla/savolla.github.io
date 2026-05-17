@@ -1,0 +1,20 @@
+title: Install TPM Tmux Plugin Manager
+tags: @zettel _method tmux tpm
+roam-id: e200a048-ab73-4a54-9404-cc813b7fbdfa
+type: text/markdown
+
+``` {.bash org-language="sh"}
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
+
+put the following in your `tmux.conf`
+
+``` shell
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.config/tmux/plugins/tpm/tpm'
+```
+
+source your new tmux config

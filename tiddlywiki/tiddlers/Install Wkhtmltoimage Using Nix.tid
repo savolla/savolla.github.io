@@ -1,0 +1,8 @@
+title: Install Wkhtmltoimage Using Nix
+tags: nixos nix @zettel _method
+roam-id: c01b2b08-c9fd-4578-878a-ac97c072a00c
+created: 20260504161500000
+modified: 20260504161500000
+type: text/markdown
+
+add `wkhtmltopdf` to your `home.nix` or `configuration.nix`. yes the package name is not a mistake. it comes with this package

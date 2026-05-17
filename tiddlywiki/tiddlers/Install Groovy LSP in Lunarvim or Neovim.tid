@@ -1,0 +1,12 @@
+title: Install Groovy LSP in Lunarvim or Neovim
+tags: @zettel _method lunarvim groovy mason
+roam-id: d7a638a4-9a47-4125-90ee-9bfb329e9653
+type: text/markdown
+
+- install java on your system.
+  - [[Install Java on Nixos]] or [[Install Java on Ubuntu or Debian]]
+- launch `lvim`
+- do `:Mason`
+- search \"groovy\"
+- navigate to `groovy-language-server`
+- press `i` for install

@@ -1,0 +1,12 @@
+title: Connect to Desktop of a Host Using Moonlight Using Cli
+tags: moonlight @zettel _method
+roam-id: 4ea60446-70c9-417a-bd34-d2db73ce7d9b
+created: 20260515162200000
+modified: 20260515162200000
+type: text/markdown
+
+In this example I\'m using my remote host named `fiat`. I\'ll connect to its Desktop like this
+
+``` {.bash org-language="sh"}
+moonlight stream fiat "Desktop"
+```

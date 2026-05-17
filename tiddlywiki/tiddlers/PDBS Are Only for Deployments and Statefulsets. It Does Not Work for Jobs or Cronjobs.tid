@@ -1,0 +1,5 @@
+title: PDBS Are Only for Deployments and Statefulsets. It Does Not Work for Jobs or Cronjobs
+tags: @zettel k8s _fact
+roam-id: edac98dc-cfe9-4cec-8b61-fff6d8ad716b
+type: text/markdown
+

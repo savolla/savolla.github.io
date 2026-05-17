@@ -1,0 +1,18 @@
+title: Set Custom Layouts in Tmuxp
+tags: @zettel _method tmuxp tmux
+roam-id: 43ac6c28-f6aa-428f-935f-8cc9300976e0
+type: text/markdown
+
+- set your custom layout in tmux
+
+- press prefix key and do `display-message -p "#{window_layout}"`
+
+- then put the output under `window` prop in your tmuxp session yaml file
+
+  ``` yaml
+  ...
+  windows:
+    - window_name: k8s-versions
+      layout: 1f34,213x42,0,0[213x8,0,0{106x8,0,0,1,106x8,107,0,2},213x25,0,9{106x25,0,9,3,106x25,107,9,4},213x7,0,35,5]
+  ...
+  ```

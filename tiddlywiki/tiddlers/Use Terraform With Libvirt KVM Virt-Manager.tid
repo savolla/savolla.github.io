@@ -1,0 +1,9 @@
+title: Use Terraform With Libvirt KVM Virt-Manager
+tags: @zettel _method libvirt kvm terraform
+roam-id: 33fa8322-d6e5-490b-bec4-db215ca4812f
+type: text/markdown
+
+- check the following resources:
+  - [terraform libvirt documentation](https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs)
+  - [github repo](https://github.com/dmacvicar/terraform-provider-libvirt)
+- [[Install Terraform Libvirt Provider]]

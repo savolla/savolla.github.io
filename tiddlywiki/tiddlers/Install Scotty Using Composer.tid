@@ -1,0 +1,10 @@
+title: Install Scotty Using Composer
+tags: scotty php composer @zettel _method
+roam-id: ba6b1597-7af0-4799-8de7-72350fc3c814
+created: 20260401102800000
+modified: 20260401102800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+composer global require spatie/scotty
+```

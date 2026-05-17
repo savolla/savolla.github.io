@@ -1,0 +1,9 @@
+title: Rename Kubernetes Contexts
+tags: _method k8s @zettel
+roam-id: 2b96c093-a99c-4cfb-bb7a-cfa081e0c914
+type: text/markdown
+
+``` shell
+kubectl config get-contexts # list contexts you want to rename
+kubectl config rename-context <long-context> <short-name>
+```

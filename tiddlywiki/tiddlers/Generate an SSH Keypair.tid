@@ -1,0 +1,8 @@
+title: Generate an SSH Keypair
+tags: @zettel _method ssh
+roam-id: c69033a9-0a61-43a7-bba5-4c00b4ff31cc
+type: text/markdown
+
+``` shell
+ssh-keygen -t rsa
+```

@@ -1,0 +1,8 @@
+title: Upload Your Asciinema Terminal Casts on Asciinema Server
+tags: @zettel _method asciinema
+roam-id: b6c3eca5-db20-4372-8689-3aa66ca24903
+type: text/markdown
+
+``` shell
+asciinema upload /path/to/file.cast
+```

@@ -1,0 +1,10 @@
+title: Add Traefik Helm Repository
+tags: @zettel _method traefik helm
+roam-id: 4fa89eb1-68ee-43e0-b29a-692e9ad20d1d
+type: text/markdown
+
+do the following \[fn:1\]
+
+``` shell
+helm repo add traefik https://traefik.github.io/charts
+```

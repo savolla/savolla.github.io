@@ -1,0 +1,15 @@
+title: Setup Docker Registry Using Nexus
+tags: @zettel _method nexus docker youtube
+roam-id: 14ce6094-a158-4acb-bfdf-88bf4b7a300f
+type: text/markdown
+
+- login into nexus
+- go to <http://192.168.1.54:8081/#admin/repository/repositories>
+- click \"create repository\"
+- select docker hosted
+- name it \"docker-hosted\"
+- enable other connections
+- http port 5000
+- allow anonymous docker pull
+- next: [[Add Nexus Docker Registry to Docker Config]]
+- next: [[Fix Login Issue to Nexus Docker Registry]]

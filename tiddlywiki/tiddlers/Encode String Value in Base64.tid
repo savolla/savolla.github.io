@@ -1,0 +1,12 @@
+title: Encode String Value in Base64
+tags: @zettel _method base64 encryption
+roam-id: 092a600a-b12e-4a8c-82e2-ddc418d4373c
+type: text/markdown
+
+``` shell
+echo -n "some secret password" | base64
+```
+
+``` example
+c29tZSBzZWNyZXQgcGFzc3dvcmQ=
+```

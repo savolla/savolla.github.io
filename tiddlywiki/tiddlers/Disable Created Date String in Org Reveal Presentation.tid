@@ -1,0 +1,9 @@
+title: Disable Created Date String in Org Reveal Presentation
+tags: @zettel _method orgmode revealjs
+roam-id: 39164a50-9967-4860-a5d6-ac1bacbbd0f3
+type: text/markdown
+
+add the following to your org file
+
+``` org
+```

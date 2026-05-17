@@ -1,0 +1,20 @@
+title: Create a Cassandra User
+tags: @zettel _method cassandra
+roam-id: 988f3f16-0a5f-47a3-94ba-50aa3567f6ed
+type: text/markdown
+
+- connect one of the cassandra nodes as root user. example;
+
+``` {.bash org-language="sh"}
+cqlsh $CASS_HOST -u $ROOT_USER -p$ROOT_PASS
+```
+
+``` sql
+CREATE ROLE username with password = 'password' AND LOGIN = true;
+```
+
+grant all permissions for all keyspaces
+
+``` sql
+GRANT ALL PERMISSIONS ON ALL KEYSPACES TO username;
+```

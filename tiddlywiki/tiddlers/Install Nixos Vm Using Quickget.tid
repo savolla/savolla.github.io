@@ -1,0 +1,55 @@
+title: Install Nixos Vm Using Quickget
+tags: @zettel _method quickemu nixos
+roam-id: 8b4cf0bb-024a-4ea5-bf51-35734d8141a2
+type: text/markdown
+
+``` bash
+quickget --list | grep nixos # get available nixos versions
+mkdir nixos
+cd nixos
+quickget nixos 25.05 minimal # I choose 25.05 minimal version
+quickemu --vm nixos-25.05-minimal.conf
+# this will download the iso
+```
+
+- if you\'re on nixos then append `--display spice` to `quickemu` command at the end
+- it is also recommended to increase the size of the vm. nixos consumes more storage
+- once the vm booted
+
+``` bash
+sudo su
+cd
+loadkeys tr
+cfdisk
+# select gpt
+# press enter (new)
+# insert 512MB
+# type -> EFI System
+# create another partition
+# insert 2048MB
+# type -> Linux Swap
+# create one partition for root
+# select available space
+# WRITE
+# type yes
+# QUIT
+lsblk # see your partitions
+
+# format file systems
+mkfs.fat -F32 -n boot /dev/vda1 # your 512MB partition
+mkswap -L swap /dev/vda2 # create a swap parititon
+mkfs.ext4 -L nixos /dev/vda3 # format ext4 your root file system
+
+# mount file systems
+mount /dev/disk/by-label/nixos /mnt
+mkdir -p /mnt/boot
+mount /dev/disk/by-label/boot /mnt/boot
+swapon /dev/vda2
+lsblk # confirm everything is properly mounted
+
+nixos-generate-config --root /mnt
+# now put your configuration.nix under /etc/nixos
+# or edit existing one
+vim /mnt/etc/nixos/configuration.nix
+nixos-install
+```

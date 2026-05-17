@@ -1,0 +1,16 @@
+title: Embed HTML Code in Org Mode
+tags: html orgmode @zettel _method
+roam-id: b274007e-ad1a-4133-b886-0dafb539f862
+created: 20260424155200000
+modified: 20260424155200000
+type: text/markdown
+
+add a code block in called `#+BEGIN_HTML` and write your own html code in.
+
+example: (remove commas)
+
+``` org
+#+BEGIN_EXPORT html
+,<img src="https://m.media-amazon.com/images/I/41zeL13jFOL._SY445_SX342_FMwebp_.jpg" alt="Image" />
+#+END_EXPORT
+```

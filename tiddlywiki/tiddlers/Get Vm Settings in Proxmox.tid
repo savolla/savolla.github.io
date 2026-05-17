@@ -1,0 +1,10 @@
+title: Get Vm Settings in Proxmox
+tags: proxmox @zettel _method
+roam-id: 8ccd83ec-59b1-4eb5-adbe-aef00b59b51f
+created: 20260314160600000
+modified: 20260314160600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+qm config $VM_ID
+```

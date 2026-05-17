@@ -1,0 +1,12 @@
+title: Merge Multiple Files Into One Configmap
+tags: k8s k8s_cm @zettel _method
+roam-id: 122835b6-2adb-4a55-b0fc-63aa57c14fdf
+created: 20260430125300000
+modified: 20260430125300000
+type: text/markdown
+
+example below
+
+``` {.bash org-language="sh"}
+kubectl create configmap bird-adjust-service-app-config --from-file=bird-adjust-service.properties --from-file=bird-adjust-service.yml -o yaml --dry-run=client | kubectl diff -f -
+```

@@ -1,0 +1,10 @@
+title: Kubernetes Abbreviations
+tags: @query _abbr k8s
+roam-id: 807f4fa3-3672-4bc8-b67e-3e50c77e0cf9
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_abbr]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

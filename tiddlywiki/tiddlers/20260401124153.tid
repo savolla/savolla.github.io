@@ -1,0 +1,9 @@
+title: 20260401124153
+tags: @biblio k8s_job k8s_cronjob _comparison k8s
+roam-id: acba9794-6c20-4b84-9b9f-2cf4f1bf8653
+type: text/markdown
+
+> A Job represents a one-off task, whereas each CronJob repeats according to a schedule.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

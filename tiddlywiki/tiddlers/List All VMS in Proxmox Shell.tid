@@ -1,0 +1,8 @@
+title: List All VMS in Proxmox Shell
+tags: @zettel _method proxmox
+roam-id: eb374b0c-6605-47e3-a4b3-ebeabb79dca8
+type: text/markdown
+
+``` shell
+qm list
+```

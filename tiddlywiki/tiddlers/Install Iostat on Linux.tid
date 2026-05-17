@@ -1,0 +1,9 @@
+title: Install Iostat on Linux
+tags: @zettel _method linux
+roam-id: 1cddf046-b793-4a37-9cb1-b97aa686ae96
+type: text/markdown
+
+``` shell
+sudo dnf install sysstat
+sudo apt install sysstat
+```

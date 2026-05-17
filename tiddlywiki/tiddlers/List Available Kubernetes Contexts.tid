@@ -1,0 +1,8 @@
+title: List Available Kubernetes Contexts
+tags: _method @zettel k8s
+roam-id: 19bad419-e21c-4e6d-8f19-9477957cb268
+type: text/markdown
+
+``` shell
+kubectl config get-contexts
+```

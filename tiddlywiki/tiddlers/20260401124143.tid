@@ -1,0 +1,9 @@
+title: 20260401124143
+tags: @biblio k8s k8s_deployment _history
+roam-id: ee7eb196-9ba9-4643-b071-5c783888e609
+type: text/markdown
+
+> (Deployments are a replacement for the legacy ReplicationController API).
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

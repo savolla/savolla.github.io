@@ -1,0 +1,9 @@
+title: 20260401124146
+tags: @biblio k8s k8s_deployment k8s_statefulset k8s_pod _mechanism
+roam-id: abec2a25-ff1c-4882-aff3-7f671b85dcb5
+type: text/markdown
+
+> you can run a StatefulSet that associates each Pod with a PersistentVolume. If one of the Pods in the StatefulSet fails, Kubernetes makes a replacement Pod that is connected to the same PersistentVolume.
+
+
+<sup>source: [[Workload Management Kubernetes]]</sup>

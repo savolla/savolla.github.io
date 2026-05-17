@@ -1,0 +1,8 @@
+title: List Terraform State
+tags: @zettel _method terraform
+roam-id: 4af579c5-19f0-4165-94b4-6c5f089bc77f
+type: text/markdown
+
+``` shell
+terraform state list
+```

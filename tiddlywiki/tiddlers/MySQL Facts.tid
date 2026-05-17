@@ -1,0 +1,10 @@
+title: MySQL Facts
+tags: _fact mysql @query
+roam-id: f1c4eb0a-9070-4ad8-8f38-63785436a5c0
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_fact]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

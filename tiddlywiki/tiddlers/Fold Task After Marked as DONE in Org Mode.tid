@@ -1,0 +1,14 @@
+title: Fold Task After Marked as DONE in Org Mode
+tags: @zettel _method orgmode
+roam-id: 296194c4-c798-4086-961b-fc885b6137e2
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+(defun my/org-fold-on-done ()
+  "Fold the current heading when marked as DONE."
+  (when (string= org-state "DONE")
+    (org-cycle 'fold)))  ;; fold the current subtree
+
+(add-hook 'org-after-todo-state-change-hook #'my/org-fold-on-done)
+```

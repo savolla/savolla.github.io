@@ -1,0 +1,16 @@
+title: Map of Content
+tags: 
+roam-id: 3ff6ecec-2cae-49a8-9e23-4109e7c13b55
+type: text/markdown
+
+Dynamic SQL queries for fetching notes from my huge zettelkasten. something that [Niklas Luhmann](https://tr.wikipedia.org/wiki/Niklas_Luhmann) wished for..
+
+<ol>
+  <$list filter="[tag[@moc]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

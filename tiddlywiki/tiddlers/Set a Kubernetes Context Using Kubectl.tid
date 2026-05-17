@@ -1,0 +1,10 @@
+title: Set a Kubernetes Context Using Kubectl
+tags: _method @zettel k8s
+roam-id: d9315024-c295-4a25-b1b5-4f51304e7a24
+type: text/markdown
+
+- [[List Available Kubernetes Contexts]]
+
+``` shell
+kubectl config use-context <context-name>
+```

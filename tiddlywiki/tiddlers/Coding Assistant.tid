@@ -1,0 +1,11 @@
+title: Coding Assistant
+tags: _term @biblio claude_code
+roam-id: 80c86e02-1f9a-45df-a749-1fd41abfff70
+created: 20260430161500000
+modified: 20260430161500000
+type: text/markdown
+
+a system that uses large language models to solve complex programming tasks
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

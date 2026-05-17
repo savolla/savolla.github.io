@@ -1,0 +1,15 @@
+title: Make Tiddlywiki Look Like Claude.ai Website
+tags: @post tiddlywiki claude css
+roam-id: 68b53f63-37a2-4cc5-b440-a5d58ebe8c94
+created: 20260502011500000
+modified: 20260502011500000
+type: text/markdown
+
+here are some important aspects of claude\'s website
+
+- Galaxie Copernicus (serif) for large headers --- a custom paid font, but we\'ll use Georgia/ui-serif as the fallback
+- Styrene B for the main text input area --- we\'ll substitute with a similar rounded sans-serif
+- Tiempo Text for body reading text --- we\'ll use ui-serif/Georgia
+- The warm color palette: #F4F3EE (Pampas/cream background), #F5F5F0 (off-white), #1a1a18 (near-black text), #ae5630 / #C15F3C (terracotta/orange accent), #2b2a27 (dark bg)
+
+see how to [[Apply Custom CSS Theme in TiddlyWiki]] and use my [[Claude Flavored Tiddlywiki Theme]]

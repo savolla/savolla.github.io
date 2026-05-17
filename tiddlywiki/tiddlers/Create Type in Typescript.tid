@@ -1,0 +1,11 @@
+title: Create Type in Typescript
+tags: @zettel _method typescript
+roam-id: e4c7c576-d4b9-4938-a1c6-d7da869c25e9
+type: text/markdown
+
+``` typescript
+type VideoProps = {
+  thumbnail: string;
+  url: string;
+};
+```

@@ -1,0 +1,8 @@
+title: List All Local Branches in Git Repository
+tags: @zettel _method git
+roam-id: 3d5e76e0-cb09-40bb-b51b-1ffeb365c1a5
+type: text/markdown
+
+``` shell
+git branch --list
+```

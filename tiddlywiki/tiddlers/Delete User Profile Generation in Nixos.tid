@@ -1,0 +1,8 @@
+title: Delete User Profile Generation in Nixos
+tags: @arrow @zettel _method nixos nix
+roam-id: 5cc63794-87bd-444c-8c02-c8a041f5ec12
+type: text/markdown
+
+``` shell
+nix-collect-garbage -d
+```

@@ -1,0 +1,29 @@
+title: Run Multi Line Shell Script in Jenkins Pipeline
+tags: @zettel _method jenkins
+roam-id: 05f4afba-8763-4ae3-a7c3-94ab78341b45
+type: text/markdown
+
+``` groovy
+pipeline {
+  agent {
+    label 'jenkins-agent02'
+  }
+
+  stages {
+    stage("stage01") {
+      steps {
+        script {
+          sh '''
+            mkdir hello-world
+            touch example.txt
+            echo "bla bla" > example.txt
+            mv example.txt hello-world
+            cd hello-world
+            cat example.txt
+          '''
+        }
+      }
+    }
+  }
+}
+```

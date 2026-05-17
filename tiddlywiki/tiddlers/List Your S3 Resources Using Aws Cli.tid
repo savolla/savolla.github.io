@@ -1,0 +1,8 @@
+title: List Your S3 Resources Using Aws Cli
+tags: @zettel aws _method
+roam-id: cc2fe590-a105-4250-be74-bdb33ed49c1e
+type: text/markdown
+
+``` shell
+aws s3 ls
+```

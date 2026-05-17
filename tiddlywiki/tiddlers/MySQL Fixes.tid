@@ -1,0 +1,10 @@
+title: MySQL Fixes
+tags: _fix mysql @query
+roam-id: 05dbd9e0-cbd3-4cfb-8345-c587e82d81c6
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_fix]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

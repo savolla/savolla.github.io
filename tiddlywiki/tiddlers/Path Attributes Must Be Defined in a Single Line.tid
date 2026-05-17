@@ -1,0 +1,34 @@
+title: Path Attributes Must Be Defined in a Single Line:
+tags: @zettel _fact nix flake
+roam-id: 9d26902a-83b8-4a9b-aa71-bfa197f31662
+type: text/markdown
+
+you cannot brake down the paths like this:
+
+``` nix
+homeConfigurations = {
+  kartaca = {
+    "personal-laptop" = {
+      fiat = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs { system = "x86_64-linux"; };
+        modules = [
+          ./hosts/kartaca/personal-laptop/fiat/home.nix
+        ];
+      };
+    };
+  };
+};
+```
+
+you have to give it in one line
+
+``` nix
+homeConfigurations = {
+  "kartaca.personal-laptop.fiat" = home-manager.lib.homeManagerConfiguration {
+    pkgs = import nixpkgs { system = "x86_64-linux"; };
+    modules = [
+      ./hosts/kartaca/personal-laptop/fiat/home.nix
+    ];
+  };
+};
+```

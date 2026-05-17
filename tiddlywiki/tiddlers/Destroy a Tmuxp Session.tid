@@ -1,0 +1,8 @@
+title: Destroy a Tmuxp Session
+tags: @zettel _method tmuxp tmux
+roam-id: aa66a7cc-427b-4e97-b589-306721293907
+type: text/markdown
+
+``` shell
+tmux kill-session -t session-name
+```

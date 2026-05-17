@@ -1,0 +1,8 @@
+title: Backup Your Branch Using Magic
+tags: @zettel _method magic doomemacs
+roam-id: 539f8539-1654-4b31-b55c-b64572a53f4a
+type: text/markdown
+
+- create a new branch with `SPC g g b n`
+- select your current branch from starting branch menu
+- give it a name like `my-branch.backup`

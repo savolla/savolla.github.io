@@ -1,0 +1,41 @@
+title: Crate a Rate Limiting Cloud Armor Security Policy Rule in GCP Using Terraform
+tags: terraform gcp networking @zettel _method
+roam-id: 340f0996-5f22-40e3-a75d-713e924467bc
+created: 20260315152100000
+modified: 20260315152100000
+type: text/markdown
+
+here is the example. this will also not apply rate limiting to those ips in the `expression` section. so it is selective
+
+``` diff
+ module security-policy-ai {
+   source                                = "GoogleCloudPlatform/cloud-armor/google"
+   project_id                            = var.gcp_project_id
+   name                                  = "security-policy-ai"
+   description                           = "Cloud Armor security policy for ai.hopi.com.tr"
+   default_rule_action                   = "deny(403)"
+   layer_7_ddos_defense_enable           = true
+   layer_7_ddos_defense_rule_visibility  = "STANDARD"
+
+   custom_rules = {
+     ...
+
++    rate_limit_rule = {
++      action      = "rate_based_ban"
++      description = "Rate limit clients based on IP except for boyner and kartaca vpn addresses"
++      preview     = false
++      priority    = 200
++      expression    = <<-EOT
++        !inIpRange(origin.ip, '35.241.170.123') && !inIpRange(origin.ip, '195.226.196.2') && !inIpRange(origin.ip, '213.74.95.202') && !inIpRange(origin.ip, '213.14.79.240/28')
++      EOT
++      rate_limit_options = {
++        exceed_action                        = "deny(429)"
++        rate_limit_http_request_count        = 2000
++        rate_limit_http_request_interval_sec = 60
++        ban_duration_sec = 3600
++        enforce_on_key                       = "IP"
++      }
++    }
+   }
+}
+```

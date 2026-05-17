@@ -1,0 +1,11 @@
+title: Load Qutebrowser Sessions in Place
+tags: @zettel _method qutebrowser
+roam-id: fff1101f-379e-4fa3-bd55-72f803a5f6be
+type: text/markdown
+
+in your qutebrowser run **NOTE**: make sure you saved your current session before doing that
+
+`:session-load --clear your_new_session`
+
+- [zettel for watching restarted pods](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-04.org::4609)
+- [zettel for watching restarted pods](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-04.org::5337)

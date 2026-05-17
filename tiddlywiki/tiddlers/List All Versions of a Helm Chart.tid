@@ -1,0 +1,8 @@
+title: List All Versions of a Helm Chart
+tags: @zettel _method helm
+roam-id: 200c9efc-f110-492a-9c3d-f2fab92e0a4d
+type: text/markdown
+
+``` shell
+helm search repo hashicorp/consul --versions
+```

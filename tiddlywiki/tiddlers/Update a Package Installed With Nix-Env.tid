@@ -1,0 +1,10 @@
+title: Update a Package Installed With Nix-Env
+tags: nix @zettel _method
+roam-id: 6307f27d-cb32-43eb-b568-8d95958e686c
+type: text/markdown
+
+- [[Get List of Installed Packages Using Nix-Env]]
+
+``` {.bash org-language="sh"}
+nix-env -u firefox
+```

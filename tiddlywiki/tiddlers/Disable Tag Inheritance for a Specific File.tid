@@ -1,0 +1,32 @@
+title: Disable Tag Inheritance for a Specific File
+tags: orgmode emacs @zettel _method
+roam-id: 8bdb5e24-39c5-4cde-a596-c2be042cb60a
+created: 20260501170100000
+modified: 20260501170100000
+type: text/markdown
+
+there are two methods (may be more)
+
+- disable tag inheritance if a file has a special tag like \@biblio for example;
+
+  ``` elisp
+  (add-hook 'org-mode-hook
+    (lambda ()
+      (when (and (buffer-file-name)
+                 (save-excursion
+                   (goto-char (point-min))
+                   (re-search-forward "^#\\+filetags:.*@biblio" nil t)))
+        (setq-local org-use-tag-inheritance nil))))
+  ```
+
+  so whenever a file has this biblio tag, emacs will disable tag inheritance for it
+
+- disable tag inheritance for files that are inside a specific folder
+
+  ``` elisp
+  (add-hook 'org-mode-hook
+    (lambda ()
+      (when (and (buffer-file-name)
+                 (string-prefix-p "/path/to/biblio/" (buffer-file-name)))
+        (setq-local org-use-tag-inheritance nil))))
+  ```

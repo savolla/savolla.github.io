@@ -1,0 +1,17 @@
+title: Start Tiddlywiki as Server
+tags: tiddlywiki @zettel _method
+roam-id: 5019ed38-6494-467c-8150-0b8fe33f3f31
+created: 20260423165400000
+modified: 20260423165400000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+cd /path/to/tiddlywiki
+tiddlywiki . --init server
+```
+
+or if it already exists then
+
+``` {.bash org-language="sh"}
+tiddlywiki . --listen
+```

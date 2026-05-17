@@ -1,0 +1,8 @@
+title: 202604011440
+tags: k8s_workload @zettel _term
+roam-id: 85e5b159-afb2-43dd-af10-cf24f533baba
+created: 20260401144000000
+modified: 20260401144000000
+type: text/markdown
+
+workload in kubernetes is an object that can operate on its own pods

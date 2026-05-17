@@ -1,0 +1,11 @@
+title: Install Better Code Highlighting Plugin on Tiddlywiki
+tags: tiddlywiki @zettel _method
+roam-id: c4709e9d-1463-4f7b-ab43-60bc4acaf8ba
+created: 20260509223300000
+modified: 20260509223300000
+type: text/markdown
+
+- go to [My TiddlyWiki --- a non-linear personal web notebook](https://prismjs.tiddlyhost.com/)
+- drag and drop `tiddlyprism` plugin into your wiki
+
+\[fn: <https://prismjs.tiddlyhost.com/>\]

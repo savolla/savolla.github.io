@@ -1,0 +1,8 @@
+title: List All Supported Operating Systems in Quickemu
+tags: @zettel _method quickemu
+roam-id: 94a303fd-e244-480d-8b4f-a492dd21b734
+type: text/markdown
+
+``` bash
+quickemu --list
+```

@@ -1,0 +1,7 @@
+title: Exit Zoom From Org Mode Heading
+tags: @zettel _method
+roam-id: 40c52aed-deff-4611-a150-fa924cdcfb50
+type: text/markdown
+
+- use `widen` function
+- or use `SPC m s N`

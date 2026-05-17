@@ -1,0 +1,38 @@
+title: Install Ros Noetic on Distrobox
+tags: @zettel _method ros distrobox
+roam-id: 23e446dd-4d55-4740-9be6-2e3acfc05c24
+type: text/markdown
+
+- put the following into `distrobox.ini` file
+
+  ``` shell
+  # distrobox.ini
+  [ros-noetic]
+  image=ubuntu:20.04
+  pull=true
+  replace=true
+  init=false
+  nvidia=false
+  root=false
+  additional_packages="curl gnupg2 lsb-release"
+
+  init_hooks=echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros1-latest.list
+  init_hooks=curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -
+  init_hooks=apt update
+  init_hooks=apt install -y ros-noetic-desktop-full
+  init_hooks=echo "source /opt/ros/noetic/setup.bash" >> /etc/bash.bashrc
+
+  start_now=true
+  ```
+
+- from the same directory with `distrobox.ini` run
+
+  ``` shell
+  distrobox assemble create --replace
+  ```
+
+- enter into the container
+
+  ``` shell
+  distrobox enter ros-noetic
+  ```

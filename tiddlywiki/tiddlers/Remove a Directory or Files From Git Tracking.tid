@@ -1,0 +1,13 @@
+title: Remove a Directory or Files From Git Tracking
+tags: @zettel _method git
+roam-id: f9671383-426c-45c1-88cc-557c3634a6ea
+type: text/markdown
+
+- I once staged and pushed the drizzle directory to the remote branch. so I fixed it by doing;
+
+  ``` shell
+  git rm -r --cached drizzle
+  echo "path/to/your-directory/" >> .gitignore
+  git commit -m "fix: drizzle directory is being tracked by git"
+  git push
+  ```

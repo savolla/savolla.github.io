@@ -1,0 +1,14 @@
+title: Pretty Print in Python
+tags: @zettel _method python
+roam-id: 9193b1d7-f58d-4fc3-8806-d34839988778
+type: text/markdown
+
+``` {.python results="output"}
+from pprint import pprint
+
+characters = ['a','b','c','d','e','f','g','j',]
+pprint(characters)
+```
+
+- [drupal refresher](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-06.org::2387)
+- [drupal refresher](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-06.org::2478)

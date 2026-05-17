@@ -1,0 +1,10 @@
+title: MySQL Tradeoffs
+tags: _tradeoff mysql @query
+roam-id: 69a72426-4651-41af-a157-162dd1408494
+type: text/markdown
+
+<$list filter="[tag[mysql]tag[_tradeoff]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

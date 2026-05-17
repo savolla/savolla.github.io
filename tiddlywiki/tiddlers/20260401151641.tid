@@ -1,0 +1,11 @@
+title: 20260401151641
+tags: k8s_hpa _usecase @biblio k8s
+roam-id: fcd0eee6-5a26-4cfd-8da9-722b50b8a5bc
+type: text/markdown
+
+> deploying more Pods to distribute the load.
+
+hpa used for **distributing load across pods**
+
+
+<sup>source: [[Vertical Pod Autoscaling Kubernetes]]</sup>

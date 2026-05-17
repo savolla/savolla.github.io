@@ -1,0 +1,10 @@
+title: Get Currently Used Linux Kernel
+tags: linux @zettel _method
+roam-id: ccbf1ea0-f4cc-4830-89e7-d8fbb022196a
+created: 20260504210700000
+modified: 20260504210700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+uname -r
+```

@@ -1,0 +1,10 @@
+title: Auto Enter Nix Shells From Emacs Using Direnv
+tags: @zettel _method direnv nix emacs
+roam-id: 894ba3ce-2318-4f12-9591-6a6dfc1d90fb
+type: text/markdown
+
+- under your project create a `shell.nix` file
+- see [[Create a Nix Shell]] for example
+- under the same directory create a file called `.envrc`
+- install `direnv` on your system
+- install direnv package in emacs

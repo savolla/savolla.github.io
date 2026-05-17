@@ -1,0 +1,12 @@
+title: Create Configmap That Is Not in Yaml Format
+tags: k8s @zettel _method
+roam-id: e5a29eb3-daf4-49dc-99cf-1072b64f4570
+created: 20260430111600000
+modified: 20260430111600000
+type: text/markdown
+
+example below
+
+``` {.bash org-language="sh"}
+kubectl create configmap bird-profiling-importer-app-config --from-file=bird-profiling-importer.properties -oyaml --dry-run=client | kubectl diff -f -
+```

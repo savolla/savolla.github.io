@@ -1,0 +1,9 @@
+title: 20260307213136
+tags: _term @biblio prometheus plumbing
+roam-id: e8e0c18f-68bf-472e-9a6e-9504e43b3b26
+type: text/markdown
+
+> Plumbing When all you have is a hammer, everything starts to look like a nail. At the end of the day, all monitoring systems are data processing pipelines. Sometimes it is more convenient to appropriate part of your monitoring system for another purpose, rather than building a bespoke solution. This is not strictly monitoring, but it is common in practice so we like to include it.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

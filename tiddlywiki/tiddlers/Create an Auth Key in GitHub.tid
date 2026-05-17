@@ -1,0 +1,16 @@
+title: Create an Auth Key in GitHub
+tags: security git github @zettel _method
+roam-id: 4010b424-4647-4509-b58d-eb726d2c036d
+created: 20260503000900000
+modified: 20260503000900000
+type: text/markdown
+
+Go to <https://github.com/settings/keys>
+
+Click on \"New SSH Key\"
+
+Name your key
+
+Copy your **public ssh key** in your system. if you don\'t have any then [[Generate an SSH Keypair]]
+
+Paste your public ssh key in the \"Key\" section

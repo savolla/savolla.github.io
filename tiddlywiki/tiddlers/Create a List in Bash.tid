@@ -1,0 +1,8 @@
+title: Create a List in Bash
+tags: @zettel _method bash
+roam-id: b5019b36-20a1-406b-8ee1-78b0a8688f87
+type: text/markdown
+
+``` shell
+my_list=(apple banana cherry)
+```

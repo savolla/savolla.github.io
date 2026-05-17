@@ -1,0 +1,16 @@
+title: Copy File Contens Into Clipboard on Xorg
+tags: linux xorg @zettel _method
+roam-id: c079f111-893c-49bc-af2f-a2ba6b2b7f87
+created: 20260510152500000
+modified: 20260510152500000
+type: text/markdown
+
+make sure you have `xclip` package installed
+
+``` {.bash org-language="sh"}
+xclip -selection clipboard < filename.txt
+```
+
+[^1]
+
+[^1]: <https://stackoverflow.com/questions/32039476/copy-file-contents-to-the-clipboard-in-linux-terminal>

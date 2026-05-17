@@ -1,0 +1,11 @@
+title: 202605011417
+tags: _term @biblio claude_code
+roam-id: 13682e2b-f784-4ba2-98eb-5aebd4cb41c9
+created: 20260501141700000
+modified: 20260501141700000
+type: text/markdown
+
+agent skill: is a reusable prompt in a markdown file where you define how to do things to the agent. for example you define how do review PRs for your specific project. so you don\'t specify it on every prompt again. you just store them in a markdown file and agent will know about the skill
+
+
+<sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

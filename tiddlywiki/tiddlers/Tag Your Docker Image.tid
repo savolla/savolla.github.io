@@ -1,0 +1,16 @@
+title: Tag Your Docker Image
+tags: @zettel _method docker
+roam-id: 73ef4847-d2a4-4470-95f2-d92c77735c85
+type: text/markdown
+
+- you can either tag it when you build it
+
+``` shell
+docker build -t savolla/your-image:latest .
+```
+
+- or you can tag it after your built it
+
+``` shell
+docker tag your-image savolla/your-image:latest
+```

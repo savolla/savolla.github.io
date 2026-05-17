@@ -1,0 +1,8 @@
+title: Enable Webhooks Between Gitlab and Jenkins
+tags: @zettel _method jenkins gitlab
+roam-id: 54ee0210-c65a-49a3-b670-0e1568fb4d52
+type: text/markdown
+
+- reference: [GitLab Webhook Integration with Jenkins CI. - YouTube](https://www.youtube.com/watch?v=SObrdM1ev3M)
+- install gitlab plugins in jenkins controller
+  -

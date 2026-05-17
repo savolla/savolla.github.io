@@ -1,0 +1,10 @@
+title: Watch Events and Logs of a Namespace or Project in Openshift
+tags: @zettel _method openshift
+roam-id: 5f8fdf7f-812c-4926-8392-7e36c7e816ea
+type: text/markdown
+
+- I\'m using \"java-demo\" namespace as an example
+
+``` shell
+watch -n5 oc get events -n java-demo --sort-by='.lastTimestamp'
+```

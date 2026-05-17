@@ -1,0 +1,9 @@
+title: 20260321140811
+tags: immutability _property @biblio k8s
+roam-id: d2421efe-775b-448a-9a51-05fc9803b5eb
+type: text/markdown
+
+> in an immutable1system, rather than a series of incremental updates and changes, an ent1rely new, complete image is built, where the update simply replaces the entire imag1 with the newer image in a single operation. There are no incremental changes.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

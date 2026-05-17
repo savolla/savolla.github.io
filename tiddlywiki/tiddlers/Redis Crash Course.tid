@@ -1,0 +1,7 @@
+title: Redis Crash Course
+tags: @biblio redis
+roam-id: bf9a0da4-8ec1-4cd8-b99d-52ecbaf69f79
+roam-refs: https://www.youtube.com/watch?v=jgpVdJB2sKQ
+type: text/markdown
+
+<iframe width="600" height="325" src="https://www.youtube.com/embed/jgpVdJB2sKQ" title="Redis Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

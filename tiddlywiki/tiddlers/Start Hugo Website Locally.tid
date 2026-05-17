@@ -1,0 +1,8 @@
+title: Start Hugo Website Locally
+tags: @zettel _method hugo
+roam-id: 00a2d910-a42b-462a-9452-b8d6875c96c1
+type: text/markdown
+
+``` shell
+hugo server
+```

@@ -1,0 +1,8 @@
+title: Get Nodes in a Kubernetes Cluster
+tags: @zettel _method k8s
+roam-id: 2a18cbaf-8c56-4308-acd8-78dbb0a4ee73
+type: text/markdown
+
+``` shell
+kubernetes get nodes -owide
+```

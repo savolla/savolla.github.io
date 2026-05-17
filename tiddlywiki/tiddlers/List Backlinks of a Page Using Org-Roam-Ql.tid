@@ -1,0 +1,11 @@
+title: List Backlinks of a Page Using Org-Roam-Ql
+tags: @zettel _method orgroamql
+roam-id: 5e5aee28-0c18-4cb5-9c02-a19ff5c4869e
+type: text/markdown
+
+``` {.commonlisp org-language="emacs-lisp" results="none"}
+(org-roam-ql-search
+ '(backlink-to (title "John Doe"))
+ "notes about John Doe"
+ "title-reverse")
+```

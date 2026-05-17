@@ -1,0 +1,14 @@
+title: Reveal List Items as They Arrive in Revealjs in Orgmode
+tags: @zettel _method revealjs orgmode
+roam-id: 8c6fe35a-5d3d-4974-8f55-70fcd0cc24a6
+type: text/markdown
+
+``` text
+- Doğal dil işleyen bir *LLM* (ChatGPT, Gemini, DeepSeek vb.)
+- Telefonla *gelen* ve *giden* çağrıları yöneten bir servis (Twilio, Google Telephony vb.)
+- Yapay zekanın oluşturduğu metinsel cevapları müşteriye iletilmek üzere sese dönüştüren bir *TTS* (Text-to-Speech)
+- Müşterinin sesli cevaplarını yazıya dönüştürüp yapay zekaya geri ileten bir *STT* (Speech-to-Text)
+- Yapay zekanın, *şirketin isterlerine ve detaylarına göre* cevap vermesinin sağlanmasını (fine-tuning, embeddings vb.)
+```
+
+there are also different revealing effects like; \"zoom-in\"

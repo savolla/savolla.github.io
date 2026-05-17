@@ -1,0 +1,10 @@
+title: Add SSH Key to Github
+tags: git ssh github @zettel _method
+roam-id: 25899890-6d77-40dc-b6fe-79ebcfa5834f
+created: 20260510153500000
+modified: 20260510153500000
+type: text/markdown
+
+- [[Copy Your Public SSH Key]]
+- go to `GitHub → Settings → SSH and GPG keys → New SSH Key`
+- paste your key, give it a descriptive title, and save.

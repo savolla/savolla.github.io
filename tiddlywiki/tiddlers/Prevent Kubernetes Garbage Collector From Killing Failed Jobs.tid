@@ -1,0 +1,21 @@
+title: Prevent Kubernetes Garbage Collector From Killing Failed Jobs
+tags: _method @zettel k8s
+roam-id: 063b3994-a3ae-4ab7-bb36-93cbe44a787f
+type: text/markdown
+
+- edit the cronjob in your cluster or directly from your repo
+
+- put `ttlSecondsAfterFinished: 86400` under `jobTemplate` just like the following
+
+  ``` diff
+  spec:
+    concurrencyPolicy: Forbid
+    failedJobsHistoryLimit: 2
+    jobTemplate:
+      metadata:
+        creationTimestamp: null
+      spec:
+  +     ttlSecondsAfterFinished: 86400
+        backoffLimit: 0
+        template:
+  ```

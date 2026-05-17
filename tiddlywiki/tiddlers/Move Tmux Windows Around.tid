@@ -1,0 +1,6 @@
+title: Move Tmux Windows Around
+tags: @zettel _method tmux
+roam-id: 8b71a256-4277-49f4-bd0f-1ed8087680b8
+type: text/markdown
+
+- press `prefix <` and it will display a menu. follow the instructions

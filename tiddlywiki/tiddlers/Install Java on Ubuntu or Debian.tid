@@ -1,0 +1,9 @@
+title: Install Java on Ubuntu or Debian
+tags: @zettel _method ubuntu debian java
+roam-id: 2d89c15f-c266-483d-aeaf-ee12683f2ebc
+type: text/markdown
+
+``` shell
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+```

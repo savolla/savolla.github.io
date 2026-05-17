@@ -1,0 +1,9 @@
+title: 20260321140814
+tags: _property @biblio k8s
+roam-id: a84e1d9e-8fe5-4878-a750-1bf0e5785272
+type: text/markdown
+
+> Everything in K1bernetes is a declarative configuration o1ject that represents the desired state of the system.
+
+
+<sup>source: [[Kubernetes Up and Running (2022)]]</sup>

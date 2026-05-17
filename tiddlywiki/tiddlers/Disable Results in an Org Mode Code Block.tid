@@ -1,0 +1,11 @@
+title: Disable Results in an Org Mode Code Block
+tags: @zettel _method orgmode
+roam-id: 04aedca3-94fe-4115-9325-e305574a2149
+type: text/markdown
+
+- use `:results none`
+
+  ``` {.python session="a" results="none"}
+  def sum(a, b):
+      return a + b
+  ```

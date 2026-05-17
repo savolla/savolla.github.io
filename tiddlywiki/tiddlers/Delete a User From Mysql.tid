@@ -1,0 +1,8 @@
+title: Delete a User From Mysql
+tags: @zettel _method mysql
+roam-id: 83fd6d70-ade4-416b-87d3-e39657f97ec6
+type: text/markdown
+
+``` sql
+DROP USER 'username'@'host';
+```

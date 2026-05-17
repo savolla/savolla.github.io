@@ -1,0 +1,12 @@
+title: Redis Methods
+tags: _method redis @query
+roam-id: 7728c8ab-3546-41f8-8d78-e1eefbb19b78
+type: text/markdown
+
+<$list filter="[tag[redis]tag[_method]!tag[@query]]">
+  <li>
+    <$link>
+      <$view field="title"/>
+    </$link>
+  </li>
+</$list>

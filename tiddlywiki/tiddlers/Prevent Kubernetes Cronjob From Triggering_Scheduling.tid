@@ -1,0 +1,15 @@
+title: Prevent Kubernetes Cronjob From Triggering/Scheduling
+tags: k8s cronjob @zettel _method
+roam-id: 42d5cbf1-a13c-4e87-a33c-49989007e1f3
+created: 20260514162000000
+modified: 20260514162000000
+type: text/markdown
+
+in the cronjob\'s definition file you need to assign `suspend` property to `true`
+
+``` diff
+ schedule: 0 0 * * 1
+ startingDeadlineSeconds: 300
+ successfulJobsHistoryLimit: 2
++suspend: true
+```

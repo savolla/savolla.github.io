@@ -1,0 +1,8 @@
+title: Delete Garbage in Nixos
+tags: @arrow @zettel _method nixos
+roam-id: 61454f3a-db6f-47f1-9996-3dca13542be3
+type: text/markdown
+
+``` shell
+sudo nix-store --gc
+```

@@ -1,0 +1,12 @@
+title: Kubernetes Methods
+tags: _method k8s @query
+roam-id: 0234e4e5-b714-415c-b1fa-afdc90192a46
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_method]!tag[@query]]">
+  <li>
+    <$link>
+      <$view field="title"/>
+    </$link>
+  </li>
+</$list>

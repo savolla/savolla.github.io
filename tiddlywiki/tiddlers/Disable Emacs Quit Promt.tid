@@ -1,0 +1,14 @@
+title: Disable Emacs Quit Promt
+tags: _method @zettel doomemacs emacs
+roam-id: ba97b02e-cdee-4f97-8e1f-0099d5928476
+created: 20260307005100000
+modified: 20260307005100000
+type: text/markdown
+
+- add to the config.el
+
+  ``` elisp
+  (setq confirm-kill-emacs nil)
+  ```
+
+- [[Sync Doom Emacs]]

@@ -1,0 +1,8 @@
+title: Exec Into a Freshly Created Docker Container by Disabling Its Own Entrypoint
+tags: @zettel _method docker
+roam-id: b677ceee-732f-405a-9bfb-76e75058f2f4
+type: text/markdown
+
+``` shell
+docker run -it --entrypoint /bin/bash <image_name>
+```

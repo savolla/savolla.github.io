@@ -1,0 +1,10 @@
+title: List Topics in Kafka
+tags: kafka kafka_topic @zettel _method
+roam-id: a8eeb9c6-f60c-4191-a3e4-49dfc094a21d
+created: 20260401154700000
+modified: 20260401154700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+kafka-topics.sh --bootstrap-server localhost:9092 --list
+```

@@ -1,0 +1,17 @@
+title: Disable Breadcrumbs in Org Roam Nodes Search Buffer
+tags: @zettel _method orgroam
+roam-id: 669fd456-35bd-46c3-a241-ffd8eb25532d
+type: text/markdown
+
+- in your `doom/config.el` add
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  (after! org-roam
+    (setq org-roam-node-display-template
+          (concat
+           (propertize "${title}" 'face 'font-lock-keyword-face)
+           " "
+           (propertize "${doom-tags}" 'face '(:inherit org-tag :box nil)))))
+  ```
+
+- it will only display title and tags

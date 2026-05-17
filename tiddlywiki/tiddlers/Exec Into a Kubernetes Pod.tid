@@ -1,0 +1,8 @@
+title: Exec Into a Kubernetes Pod
+tags: k8s @zettel _method
+roam-id: d1ecabda-4de2-4bdc-b62a-24e5ba640ee8
+type: text/markdown
+
+``` shell
+kubectl exec -it <pod-name> -- <command>
+```

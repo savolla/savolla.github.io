@@ -1,0 +1,9 @@
+title: Install CRC on Fedora
+tags: @zettel _method crc fedora
+roam-id: 201ea826-2aea-4e85-ae67-db7bcf6c8aed
+type: text/markdown
+
+- login to redhat site
+- go to **openshift local** install page
+- download the crc archive
+- then [[install openshift local]]

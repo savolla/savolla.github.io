@@ -1,0 +1,14 @@
+title: Posts
+tags: 
+roam-id: c2435543-f4b0-4f8c-8d6f-a440d7243808
+type: text/markdown
+
+<ol>
+  <$list filter="[tag[@post]sort[created]reverse[]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

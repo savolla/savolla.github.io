@@ -1,0 +1,8 @@
+title: Get All Notification Channels From GCP in Json Format
+tags: @zettel _method json gcp
+roam-id: 4871be57-b293-4fb9-8d19-0a89d953a460
+type: text/markdown
+
+``` shell
+gcloud alpha monitoring channels list --format=json > notification_channels.json
+```

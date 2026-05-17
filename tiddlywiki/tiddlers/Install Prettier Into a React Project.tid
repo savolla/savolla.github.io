@@ -1,0 +1,23 @@
+title: Install Prettier Into a React Project
+tags: @zettel _method
+roam-id: 7ca3a851-3126-4ff0-995d-8fd4da770808
+type: text/markdown
+
+- under your project root create `.prettierrc` file
+
+- put the following into it
+
+  ``` json
+  {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+  ```
+
+- install prettier
+
+  ``` bash
+  npm install --save-dev --save-exact prettier
+  ```

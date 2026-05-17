@@ -1,0 +1,30 @@
+title: Create Tasks With Time Ranges in Org Mode
+tags: @zettel _method orgmode orgagenda
+roam-id: 2725472f-0b5e-448a-b7cb-35551f2c003b
+type: text/markdown
+
+- create your entry like this:
+
+  ``` org
+  * Do something
+     <2025-08-01 Cum 10:00-10:30>
+  ```
+
+- then to insert a time range use `org-clone-subtree-with-time-shift`
+
+- enter how many items you want and enter the repeating range
+
+- here is the result
+
+  ``` org
+  * do something useful today
+     SCHEDULED: <2025-08-01 Cum 10:00-10:30>
+  * do something useful today
+     SCHEDULED: <2025-08-08 Cum 10:00-10:30>
+  * do something useful today
+     SCHEDULED: <2025-08-15 Cum 10:00-10:30>
+  * do something useful today
+     SCHEDULED: <2025-08-22 Cum 10:00-10:30>
+  ```
+
+- now you can manually delete the occurances for example for weekends or weekdays

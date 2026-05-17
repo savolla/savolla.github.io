@@ -1,0 +1,10 @@
+title: List in Bash
+tags: @zettel _method bash _moc
+roam-id: 88e85718-3f52-4c98-9f48-ecaca9d50f33
+type: text/markdown
+
+- [[Create a List in Bash]]
+- [[Access Elements in Bash List]]
+- [[Loop Over a Bash List]]
+- [[Get Length of Bash List]]
+- [[Add/Append Element to Bash List]]

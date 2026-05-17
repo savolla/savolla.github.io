@@ -1,0 +1,14 @@
+title: Index
+tags: 
+roam-id: a40a3c62-4f1b-4535-b2ce-512d9e646b6d
+type: text/markdown
+
+<ol>
+  <$list>
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>

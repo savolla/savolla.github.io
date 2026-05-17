@@ -1,0 +1,39 @@
+title: Assign Static Ip Addres on Nixos
+tags: nixos networking @zettel _method
+roam-id: d5474707-ec60-4311-a9b5-b088e9269b9e
+created: 20260514220500000
+modified: 20260514220500000
+type: text/markdown
+
+to make things clear I assigned 3 different ip addresses for ethernet, wifi and usb network interface. in `configuration.nix`
+
+``` nix
+networking = {
+  interfaces = {
+
+    # builtin ethernet interface
+    eno1 = {
+      ipv4.addresses = [{
+        address = "192.168.1.20";
+        prefixLength = 24;
+      }];
+    };
+
+    # builtin wifi interface
+    wlp1s0 = {
+      ipv4.addresses = [{
+        address = "192.168.1.21";
+        prefixLength = 24;
+      }];
+    };
+
+    # usb hub ethernet interface
+    enp5s0f3u2u1 = {
+      ipv4.addresses = [{
+        address = "192.168.1.22";
+        prefixLength = 24;
+      }];
+    };
+  };
+};
+```

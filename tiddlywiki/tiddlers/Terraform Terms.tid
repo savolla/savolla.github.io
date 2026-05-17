@@ -1,0 +1,10 @@
+title: Terraform Terms
+tags: terraform _term @query
+roam-id: f852f5dd-8588-41f9-923b-27014db276f1
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_term]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

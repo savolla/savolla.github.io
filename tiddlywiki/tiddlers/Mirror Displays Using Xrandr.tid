@@ -1,0 +1,16 @@
+title: Mirror Displays Using Xrandr
+tags: @zettel _method xrandr
+roam-id: 0585679e-bbf0-47b2-b3e1-9bdb3a0386fb
+type: text/markdown
+
+in this example I\'ll make eDP-1 show exactly what HDMI-1 shows
+
+``` {.shell results="drawer"}
+xrandr | grep -w "connected"
+```
+
+:results: eDP-1 connected 1920x1200+0+0 (normal left inverted right x axis y axis) 301mm x 188mm HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 527mm x 296mm
+
+``` shell
+xrandr --output eDP-1 --same-as HDMI-1
+```

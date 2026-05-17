@@ -1,0 +1,7 @@
+title: Sort Columns in K9s
+tags: k9s k8s @zettel _method
+roam-id: d62fb865-61f4-4c77-bcd2-7126e6a1cafa
+roam-refs: https://stackoverflow.com/questions/72558633/how-to-filter-pods-based-on-status-in-k9s
+type: text/markdown
+
+press `Shift` + the first letter of the column

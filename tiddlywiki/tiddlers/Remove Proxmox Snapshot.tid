@@ -1,0 +1,10 @@
+title: Remove Proxmox Snapshot
+tags: @zettel _method proxmox lvm
+roam-id: 53995143-b876-41bb-976d-3d18d288cf1e
+type: text/markdown
+
+example below
+
+``` shell
+lvremove /dev/pve/snap_vm-1000-disk-0_DT18012026
+```

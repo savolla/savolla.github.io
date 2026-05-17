@@ -1,0 +1,12 @@
+title: Install Postgresql on Ubuntu or Debian
+tags: @zettel _method postgresql ubuntu debian
+roam-id: 3f51cf57-80fc-46ff-8f4a-289038b743fc
+type: text/markdown
+
+``` shell
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget -qO- https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo tee /etc/apt/trusted.gpg.d/pgdg.asc &>/dev/null
+sudo apt update
+sudo apt-get -y install postgresql postgresql-contrib
+sudo systemctl enable postgresql
+```

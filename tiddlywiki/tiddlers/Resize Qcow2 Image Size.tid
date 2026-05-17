@@ -1,0 +1,10 @@
+title: Resize Qcow2 Image Size
+tags: @zettel _method qemu
+roam-id: c94a486e-406a-478a-8d74-3b2c5406fe3e
+type: text/markdown
+
+- increase by 20GB example
+
+``` shell
+qemu-img resize /path/to/image.qcow2 +20G
+```

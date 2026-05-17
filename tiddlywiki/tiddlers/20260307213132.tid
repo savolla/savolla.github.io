@@ -1,0 +1,9 @@
+title: 20260307213132
+tags: _property @biblio prometheus
+roam-id: 513501b8-593c-4158-94b2-f8b98b428065
+type: text/markdown
+
+> All components of Prometheus can be run in containers, and they avoid doing anything fancy that would get in the way of configuration management tools.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

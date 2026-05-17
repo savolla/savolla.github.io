@@ -1,0 +1,25 @@
+title: Kubernetes Daemonset File Example
+tags: @zettel _reference k8s
+roam-id: 604ba3af-3520-4af4-9ea1-2d34c982ec14
+type: text/markdown
+
+- the following manifest will create a pod called `my-image:latest` [in every node]{.underline}
+
+``` yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: my-daemonset
+spec:
+  selector:
+    matchLabels:
+      app: my-daemon
+  template:
+    metadata:
+      labels:
+        app: my-daemon
+    spec:
+      containers:
+      - name: my-daemon-container
+        image: my-image:latest
+```

@@ -1,0 +1,8 @@
+title: Setup Prettier With Doom Emacs
+tags: @zettel _method prettier doomemacs
+roam-id: 364ee89a-4926-4d08-8daa-37884b1cedf6
+type: text/markdown
+
+- it is already setup but you need to enable `(format +onsave)`
+- do not use `(format +onsave +lsp)` because prettier works with `eglot` and `+lsp` flag disables it
+- [[Install Prettier Into a React Project]]

@@ -1,0 +1,16 @@
+title: Encrypt a Drive/HDD/SSD Using Luks on Linux
+tags: @zettel _method luks
+roam-id: 326f9d3e-fe07-407e-8a14-62f449f92073
+type: text/markdown
+
+``` shell
+# mount your drive
+lsblk # find the sdx. (mine is sdb)
+sudo umount /run/media/savolla/my_drive # unmount the drive
+sudo cryptsetup luksFormat /dev/sdx1 # encrypt partition
+# type YES
+# enter your passphrase
+sudo cryptsetup open /dev/sdx1 my_encrypted_drive # open device
+# enter your decryption password
+sudo mkfs.ext4 /dev/mapper/my_encrypted_drive # create file system
+```

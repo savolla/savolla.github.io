@@ -1,0 +1,12 @@
+title: Disable Org-Mode Code Blocks Background Color in Doom Emacs
+tags: @zettel _method
+roam-id: db519ff8-6c93-4ed2-900d-216191573326
+type: text/markdown
+
+``` elisp
+;; doom/config.el
+(custom-set-faces!
+  '(org-block :background nil)
+  '(org-block-background :background nil)
+  '(org-src :background nil))
+```

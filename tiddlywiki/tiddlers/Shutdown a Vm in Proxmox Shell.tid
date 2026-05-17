@@ -1,0 +1,12 @@
+title: Shutdown a Vm in Proxmox Shell
+tags: proxmox @zettel _method
+roam-id: a8be2869-d1d6-47fa-9e24-988439dbd1a8
+created: 20260320212300000
+modified: 20260320212300000
+type: text/markdown
+
+[[Get Status of a Vm in Proxmox Shell]] first
+
+``` {.bash org-language="sh"}
+qm shutdown $VMID
+```

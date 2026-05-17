@@ -1,0 +1,8 @@
+title: Get Deployment Configs in Openshift
+tags: @zettel _method openshift
+roam-id: c4bca824-c2a9-419c-b35e-3acdd57da9d2
+type: text/markdown
+
+``` shell
+oc get dc
+```

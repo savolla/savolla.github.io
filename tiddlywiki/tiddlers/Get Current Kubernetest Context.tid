@@ -1,0 +1,8 @@
+title: Get Current Kubernetest Context
+tags: _method @zettel k8s
+roam-id: 2780a7a5-a088-4e13-8412-983a358a9861
+type: text/markdown
+
+``` shell
+kubectl config current-context
+```

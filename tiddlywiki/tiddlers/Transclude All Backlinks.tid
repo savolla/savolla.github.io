@@ -1,0 +1,13 @@
+title: Transclude All Backlinks
+tags: tiddlywiki @zettel _method
+roam-id: 8ce1f34f-bb1a-4236-a3a6-4d6a1b2239ae
+created: 20260501222600000
+modified: 20260501222600000
+type: text/markdown
+
+``` html
+<$list filter="[all[current]backlinks[]sort[title]]">
+  <$transclude mode="block"/>
+  <sup><$link><$view field="title"/></$link></sup>
+</$list>
+```

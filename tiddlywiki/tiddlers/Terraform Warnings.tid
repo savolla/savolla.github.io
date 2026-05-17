@@ -1,0 +1,10 @@
+title: Terraform Warnings
+tags: _warning terraform @query
+roam-id: d36a717a-cf93-4274-98e8-15efa40e48df
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_warning]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

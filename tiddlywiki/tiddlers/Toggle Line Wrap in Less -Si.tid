@@ -1,0 +1,7 @@
+title: Toggle Line Wrap in Less -Si
+tags: @zettel _method less
+roam-id: 77349e76-82ce-4851-b8a6-8b80d1fc0ef1
+type: text/markdown
+
+- press `-S` while in less display
+- press `Enter` to toggle line wrap

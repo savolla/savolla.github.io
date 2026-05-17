@@ -1,0 +1,11 @@
+title: Use Multiple Cursors in Doom Emacs
+tags: doomemacs emacs vim @zettel _method
+roam-id: 52e92a69-e657-4644-907c-6f998bfd8bf8
+created: 20260510150900000
+modified: 20260510150900000
+type: text/markdown
+
+- get into normal mode in evil mode
+- [[Create Extra Cursor in Doom Emacs]]
+- move to other area in the text. then do the same
+- get into insert mode and start typing

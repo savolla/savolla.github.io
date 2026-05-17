@@ -1,0 +1,14 @@
+title: Transclude All Filtered Tiddlers
+tags: tiddlywiki @zettel _method
+roam-id: 6079d8fd-cf42-4a0c-b465-983ba5bc58f5
+created: 20260424172500000
+modified: 20260424172500000
+type: text/markdown
+
+use the following trick. I\'m filtering tiddlers tagged with `@zettel` and `k8s` and then transclude their contents
+
+``` tiddlywiki
+<$list filter="[tag[@zettel]tag[k8s]]">
+<$transclude mode="block"/>
+</$list>
+```

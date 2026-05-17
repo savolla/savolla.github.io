@@ -1,0 +1,50 @@
+title: Separate Work and Personal Agendas in Org-Agenda
+tags: @zettel _method orgmode emacs orgagenda
+roam-id: a74f4e70-ee65-4c77-b2ff-b1a544040de5
+type: text/markdown
+
+- State \"DOING\" from \"TODO\" \[2025-12-28 Sun 00:17\]
+
+create separate context tags for your personal and work tasks. I did it like \@w and \@p. then you can create a new org-agenda view for these tags. see the example below
+
+``` {.commonlisp org-language="emacs-lisp"}
+(setq org-agenda-custom-commands
+      '(
+        ("p" "personal agenda"
+         ((todo "DOING|NEXT|WAIT" ((org-agenda-overriding-header " 󱌣  Currently Working (personal)")))
+          (agenda ""
+                  ((org-agenda-overriding-header "")
+                   (org-agenda-start-day "0d") ; start from today
+                   (org-agenda-span 1) ; display 2 weeks
+                   (org-deadline-warning-days 14) ; remind upcoming deadlines before 2 weeks
+                   ))
+          (todo "LATER" ((org-agenda-overriding-header "\nKANBAN")))
+          (todo "TODO" ((org-agenda-overriding-header " ")))
+          (todo "NEXT" ((org-agenda-overriding-header " ")))
+          (todo "DOING" ((org-agenda-overriding-header " ")))
+          (todo "WAIT" ((org-agenda-overriding-header " ")))
+          (todo "DONE" ((org-agenda-overriding-header " ")))
+          (todo "CANCEL" ((org-agenda-overriding-header " ")))
+          )
+         ((org-agenda-tag-filter-preset '("+@p"))))
+
+        ("w" "work agenda"
+         ((todo "DOING|NEXT|WAIT" ((org-agenda-overriding-header " 󱌣  Currently Working (personal)")))
+          (agenda ""
+                  ((org-agenda-overriding-header "")
+                   (org-agenda-start-day "0d") ; start from today
+                   (org-agenda-span 1) ; display 2 weeks
+                   (org-deadline-warning-days 14) ; remind upcoming deadlines before 2 weeks
+                   ))
+          (todo "LATER" ((org-agenda-overriding-header "\nKANBAN")))
+          (todo "TODO" ((org-agenda-overriding-header " ")))
+          (todo "NEXT" ((org-agenda-overriding-header " ")))
+          (todo "DOING" ((org-agenda-overriding-header " ")))
+          (todo "WAIT" ((org-agenda-overriding-header " ")))
+          (todo "DONE" ((org-agenda-overriding-header " ")))
+          (todo "CANCEL" ((org-agenda-overriding-header " "))))
+         ((org-agenda-tag-filter-preset '("+@w"))))
+        ))
+```
+
+I know it\'s a little bit ugly but it works. you can also crete a new view without any tag filter if you want to see all of your tasks in a separate view

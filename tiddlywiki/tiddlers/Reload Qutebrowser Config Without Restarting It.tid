@@ -1,0 +1,6 @@
+title: Reload Qutebrowser Config Without Restarting It
+tags: @zettel _method qutebrowser
+roam-id: 4aeb7a1f-1819-4ad2-813c-b3bc88f0dbf9
+type: text/markdown
+
+do `:config-source`

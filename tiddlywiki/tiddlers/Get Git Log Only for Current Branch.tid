@@ -1,0 +1,10 @@
+title: Get Git Log Only for Current Branch
+tags: @zettel _method
+roam-id: e13a84e9-05e2-4856-b77e-e0be46d20325
+created: 20260316164800000
+modified: 20260316164800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+git log \$(git branch --show-current) --not release/master
+```

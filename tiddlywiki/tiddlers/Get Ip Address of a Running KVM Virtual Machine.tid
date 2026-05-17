@@ -1,0 +1,8 @@
+title: Get Ip Address of a Running KVM Virtual Machine
+tags: @zettel _method libvirt kvm
+roam-id: db0c979c-4dc7-4c23-8b6e-8e61bb8b3c39
+type: text/markdown
+
+``` shell
+virsh domifaddr kube-master-0
+```

@@ -1,0 +1,149 @@
+title: How I Built This Website
+tags: emacs orgroam orgmode css tiddlywiki @post
+roam-id: 8584c55e-f50d-43df-aec4-e6c585ec01ca
+created: 20260502132200000
+modified: 20260502132200000
+type: text/markdown
+
+I always took notes while learning new material throughout my carreer and personal life. I find it more effective than passively reading or watching through a material. Things like books, web articles and video courses etc. I always took notes.
+
+After trying out static site generators like [Quartz 4](https://quartz.jzhao.xyz/), [Hugo](https://github.com/gohugoio/hugo), Emacs\'s own publishing system etc.
+
+Before falling in love with emacs I was taking my notes in vim. I had a huge file called `notitia.txt` there I stored all of my notes. there was no tagging system and they were all unstructured. Sometimes under unrelated headings.. it was a mess. And after this file reached good 10k lines, my vim editor started lagging. It was not scalable at all.. I started looking for solutions and I stumbled upon a note taking methodology called [Zettelkasten](https://en-wikipedia-org.translate.goog/wiki/Zettelkasten?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc). I adoped it immediatelly. This was the thing I needed! I quickly learned the method but realized that it was not easy to apply on the \"digital era\". People like [Tiago Forte](https://www.google.com/search?q=Teago%20Forte) was revolutionalizing a method called PARA, other people were trying to explain how to create a digital second brain etc. There was so much information about the topic at the time.
+
+A tool called [Obsidian](https://obsidian.md/) was a preferable choice of those PKM people, so I started using it. I was having trouble of taking actual notes and leanring stuff. Because I had 2 major mental friction. I was learning the obsidian, trying to shape obsidian to my zettelkasten needs and also learning the zettelkasten method at the same time. So it was not possible to just \"learn the material\". I was procrastinating.. trying out obsidian plugins and wathcin videos about obsidian and zettelkasten method. I simply couldn\'t concentrate on \"learning\" the thing I\'m supposed to learn! I was aware of this condition and it made me nerveous so much. But I was fascinated about the Zettelkaste method so much that I couldn\'t go back to traditional note taking anymore..
+
+After some time I dropped obsidian. It was also not an open source project. So I found an open source alternative [Logseq](https://logseq.com/). It was very good. I fell in love with it and started learning about it. Logseq was a real beast and those bullet journaling concept made me love it even more. Logseq treats those bullets as separate notes. You can search the bullets, Indent them and do other stuff. It was great. But... After using logseq for 3 years my notes accumulated and of course the application became very laggy and slow.. Logseq also was not scalable application. Right now (2026-05-02) logseq developers are working on a more scalable version of logseq called [Logseq DB Version](https://discuss.logseq.com/t/logseq-db-unofficial-faq/32508). I waited for this to come out for so long that I ended up looking for another solutions.
+
+jjjjjjjj
+
+a new content etc.
+
+a new content etc.
+
+a new content etc.
+
+``` css
+/* ─── Fonts ───────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Display:ital&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka@5.3.3/index.css');
+
+/* ─── √φ Type Scale ────────────────────────────────────────── */
+:root {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'Crimson Pro', Georgia, serif;
+  --font-mono:    'Iosevka', 'Iosevka Web', 'Cascadia Code', monospace;
+
+  --type-caption: 0.85rem;
+  --type-base:    1rem;
+  --type-h3:      1.272rem;
+  --type-h2:      1.618rem;
+  --type-h1:      2.058rem;
+  --type-title:   2.618rem;
+}
+
+/* ─── Tiddler title ────────────────────────────────────────── */
+.tc-title {
+  font-family: var(--font-display) !important;
+  font-size: var(--type-title) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: none !important;
+  margin-bottom: 0.3em !important;
+}
+
+/* ─── Body headings ────────────────────────────────────────── */
+.tc-tiddler-body h1 {
+  font-family: var(--font-display) !important;
+  font-size: var(--type-h1) !important;
+  font-weight: 400 !important;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.tc-tiddler-body h2 {
+  font-family: var(--font-display) !important;
+  font-size: var(--type-h2) !important;
+  font-weight: 400 !important;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tc-tiddler-body h3 {
+  font-family: var(--font-display) !important;
+  font-size: var(--type-h3) !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.tc-tiddler-body h4 {
+  font-family: var(--font-body) !important;
+  font-size: var(--type-base) !important;
+  font-weight: 600 !important;
+  font-style: italic !important;
+  letter-spacing: 0.03em;
+  margin-top: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ─── Body text ────────────────────────────────────────────── */
+.tc-tiddler-body {
+  font-family: var(--font-body) !important;
+  font-size: var(--type-base) !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.01em;
+  max-width: 68ch;
+}
+
+.tc-tiddler-body p { margin-bottom: 1rem; }
+
+/* ─── Code ─────────────────────────────────────────────────── */
+pre, code, kbd, samp,
+.tc-tiddler-body pre,
+.tc-tiddler-body code {
+  font-family: var(--font-mono) !important;
+  font-size: 0.85em !important;
+}
+
+.tc-tiddler-body code {
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.tc-tiddler-body pre {
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  :root {
+    --type-title: 2.058rem;
+    --type-h1:    1.618rem;
+    --type-h2:    1.272rem;
+    --type-h3:    1.1rem;
+  }
+  .tc-tiddler-body { padding: 1rem; }
+}
+
+.tc-site-title {
+  font-family: var(--font-body) !important;
+  font-style: italic !important;
+  font-weight: 600 !important;
+  font-size: 1.9rem !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1 !important;
+}
+```

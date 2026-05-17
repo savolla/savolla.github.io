@@ -1,0 +1,6 @@
+title: Declare Tmux Sessions With Yaml File
+tags: @zettel _method yaml tmux tmuxp
+roam-id: c942c7bc-456b-4ea1-94f7-1736e413c279
+type: text/markdown
+
+- use a tool called [tmuxp](https://tmuxp.git-pull.com/)

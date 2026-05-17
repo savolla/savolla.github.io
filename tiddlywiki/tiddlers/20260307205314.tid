@@ -1,0 +1,9 @@
+title: 20260307205314
+tags: _property @biblio prometheus
+roam-id: 8d2621a6-de15-4aea-ac74-0c90567e44d7
+type: text/markdown
+
+> The PromQL query language allows aggregation across any of these labels, so you can analyze not just per process but also per datacenter and per service or by any other labels that you have defined.
+
+
+<sup>source: [[Prometheus Up & Running (2023)]]</sup>

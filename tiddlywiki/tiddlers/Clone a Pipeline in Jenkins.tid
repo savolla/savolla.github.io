@@ -1,0 +1,10 @@
+title: Clone a Pipeline in Jenkins
+tags: @zettel _method jenkins
+roam-id: 426b7685-1e08-479f-b612-8204e60cc17f
+type: text/markdown
+
+- click \"new item\"
+- enter a new name for the item
+- at the end of the page there will be a section called **\"Copy From\"**
+- enter the pipeline name you want to clone
+- click OK

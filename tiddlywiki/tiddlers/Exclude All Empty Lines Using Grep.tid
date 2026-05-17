@@ -1,0 +1,8 @@
+title: Exclude All Empty Lines Using Grep
+tags: @zettel _method grep
+roam-id: 63e0fe22-265a-4e08-8d30-f6a29f3b9436
+type: text/markdown
+
+``` shell
+grep -vP '^$' /path/to/file
+```

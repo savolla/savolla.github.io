@@ -1,0 +1,8 @@
+title: List/Browse Google Cloud Storage GCS Bucket Using Burf
+tags: _method gcloud burf gcs @zettel
+roam-id: d9eb5c22-993c-408d-84bc-2178df0c2256
+type: text/markdown
+
+``` shell
+burf -p hopi-program gs://prod-application-logs
+```

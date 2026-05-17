@@ -1,0 +1,8 @@
+title: Get Length of Bash List
+tags: @zettel _method bash
+roam-id: a46e37d7-1f8b-4ce2-a537-708e85fb4414
+type: text/markdown
+
+``` shell
+echo "${#my_list[@]}"  # 3
+```

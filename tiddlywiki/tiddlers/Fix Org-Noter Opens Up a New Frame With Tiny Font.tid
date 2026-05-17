@@ -1,0 +1,11 @@
+title: Fix Org-Noter Opens Up a New Frame With Tiny Font
+tags: @zettel _method orgnoter issue
+roam-id: 148c469d-7ea4-4d2e-a0ee-09855c358ac6
+type: text/markdown
+
+- put this into your config
+
+  ``` {.commonlisp org-language="emacs-lisp"}
+  ;; doom/config.el
+  (setq org-noter-always-create-frame nil) ;; prevent new frames
+  ```

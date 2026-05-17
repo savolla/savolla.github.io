@@ -1,0 +1,14 @@
+title: Change Linux User's Uid (User Id)
+tags: @zettel _method linux
+roam-id: 5f1fa056-f90a-449d-8571-0056bdb96a2b
+type: text/markdown
+
+I\'ll set my user id from 1000 to 666
+
+``` shell
+# login as root to your machine (ssh or tty4)
+getent passwd 666 # make sure the user id is not in use by others
+usermode -u 666 savolla
+find / -user 1000 -exec chown -h 666 {} \; # fix permissions for savolla
+reboot
+```

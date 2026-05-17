@@ -1,0 +1,10 @@
+title: Select Windows in Emacs With Character Labels
+tags: @zettel _method emacs doomemacs
+roam-id: 42e2bc7b-e31e-43de-9657-6693634e3735
+type: text/markdown
+
+put the following into your config.el or init.el
+
+``` elips
+(setq aw-keys '(?j ?k ?l ?f ?a ?s ?h ?g ?d)) ;; select windows with chars instead of numbers
+```

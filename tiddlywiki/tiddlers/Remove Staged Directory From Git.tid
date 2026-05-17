@@ -1,0 +1,14 @@
+title: Remove Staged Directory From Git
+tags: @zettel _method git
+roam-id: 2e971ef5-93a3-4d6f-8761-d3c24cab688a
+type: text/markdown
+
+``` shell
+git reset /path/to/dir
+```
+
+or if you already pushed to the github.
+
+``` shell
+git rm --cached path/to/directory/or/file
+```

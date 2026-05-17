@@ -1,0 +1,10 @@
+title: Create a Flashcard in Org-Mode Using Org-Fc
+tags: orgmode orgfc @zettel _method
+roam-id: 580acd2c-ee3c-429d-9d7a-5f819e11e7db
+roam-refs: https://www.leonrische.me/fc/marking_headings_as_cards.html
+created: 20260314135300000
+modified: 20260314135300000
+type: text/markdown
+
+- create an org mode headline and add a tag as :fc:
+- now you have a flashcard

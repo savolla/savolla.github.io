@@ -1,0 +1,8 @@
+title: Set Variable in Mysql
+tags: mysql
+roam-id: 538ece29-af30-4774-9d36-3222e034e7b3
+type: text/markdown
+
+``` sql
+set @var = 23;
+```

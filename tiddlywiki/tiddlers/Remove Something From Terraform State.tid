@@ -1,0 +1,10 @@
+title: Remove Something From Terraform State
+tags: @zettel _method terraform
+roam-id: c6dd5d9b-ba27-4a0f-8893-0b1d3997647b
+type: text/markdown
+
+- [[List Terraform State]] first and maybe `grep` for your target
+
+``` shell
+terraform state rm your-resource
+```

@@ -1,0 +1,16 @@
+title: Rebuild Nixos
+tags: @zettel _method nixos
+roam-id: b97fb469-826f-4a72-92c7-4643fff85c5b
+type: text/markdown
+
+- if you have your `configuration.nix` under `/etc/nixos` (which normally is the case) then use the following
+
+  ``` bash
+  sudo nixos-rebuild switch
+  ```
+
+- but if you have your `configuration.nix` file in some other location then you need to specify by doing
+
+  ``` bash
+  sudo nixos-rebuild switch -I nixos-config="/path/to/configuration.nix"
+  ```

@@ -1,0 +1,10 @@
+title: Redis Facts
+tags: _fact redis @query
+roam-id: 4401fc03-3eed-420e-92f0-033271f8344d
+type: text/markdown
+
+<$list filter="[tag[redis]tag[_fact]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

@@ -1,0 +1,8 @@
+title: Install Java on Nixos
+tags: @zettel _method java nixos
+roam-id: 0e4b5bf3-798c-436c-9ca4-5598e1c7e747
+type: text/markdown
+
+- for nix shell `nix-shell -p jdk`
+- for configuration.nix add `jdk`
+- `jdk` is for LTS openjdk

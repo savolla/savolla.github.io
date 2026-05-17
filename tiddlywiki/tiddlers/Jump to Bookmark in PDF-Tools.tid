@@ -1,0 +1,8 @@
+title: Jump to Bookmark in PDF-Tools
+tags: @zettel _method emacs
+roam-id: 3e2e087e-ab9b-416a-9480-f6af161c0bc3
+roam-refs: https://www.youtube.com/watch?v=rTtLu4QAT2I
+type: text/markdown
+
+- [[Store a Bookmark Into Register in PDF-Tools]]
+- press single quote and the character that you stored the bookmark in

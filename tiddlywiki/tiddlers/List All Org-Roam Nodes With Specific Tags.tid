@@ -1,0 +1,34 @@
+title: List All Org-Roam Nodes With Specific Tags
+tags: @zettel _method orgroam elisp
+roam-id: 02b675e9-a710-4ef1-ad25-20a165e9db2c
+type: text/markdown
+
+- here is a function that does this
+
+  ``` {#org-roam-nodes-by-tags .commonlisp org-language="emacs-lisp" results="none"}
+  (defun my/org-roam-nodes-by-tags (tags)
+    (let* ((placeholders (mapconcat (lambda (_tag) "?") tags ", "))
+           (query (format
+                   "SELECT n.id, n.title, n.file
+                    FROM nodes n
+                    JOIN tags t ON n.id = t.node_id
+                    WHERE t.tag IN (%s)
+                    GROUP BY n.id
+                    HAVING COUNT(DISTINCT t.tag) = %d"
+                   placeholders
+                   (length tags)))
+           (results (org-roam-db-query query tags)))
+      (mapcar (lambda (row)
+                `((:id . ,(nth 0 row))
+                  (:title . ,(nth 1 row))
+                  (:file . ,(nth 2 row))))
+              results)))
+
+  ```
+
+- to use this function do this
+
+  ``` {.commonlisp org-language="emacs-lisp" results="output raw" noweb="yes"}
+  <<org-roam-nodes-by-tags>>
+  (my/org-roam-nodes-by-tags '("z" "playwright"))
+  ```

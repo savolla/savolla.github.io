@@ -1,0 +1,9 @@
+title: Increase Mapped Memory Regions in Ubuntu or Debian Linux
+tags: @zettel _method ubuntu debian
+roam-id: 4aa64d81-4cca-4523-a318-2aa5d45ccd5f
+type: text/markdown
+
+- `sudo vim /etc/sysctl.conf`
+- add the following
+  - `vm.max_map_count = 262144`
+- `reboot` the system

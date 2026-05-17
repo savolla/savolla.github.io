@@ -1,0 +1,10 @@
+title: Use Specific Context When Issuing Kubectl Commands
+tags: @zettel _method k8s
+roam-id: b26b66b9-d73d-4014-abcb-fef06ebdfee1
+type: text/markdown
+
+use `--context` flag
+
+``` shell
+kubectl get nodes --context gke_hopi-program-staging_europe-west1-b_bird-staging-gke-cluster
+```

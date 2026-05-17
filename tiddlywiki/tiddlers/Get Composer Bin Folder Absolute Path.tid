@@ -1,0 +1,10 @@
+title: Get Composer Bin Folder Absolute Path
+tags: php composer @zettel _method
+roam-id: 1c6214d9-a703-4303-9311-02c4452feffb
+created: 20260401102700000
+modified: 20260401102700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+composer global config bin-dir --absolute
+```

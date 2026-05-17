@@ -1,0 +1,7 @@
+title: Set Static Ip on Ubuntu
+tags: @zettel _method ubuntu networking
+roam-id: f5e2188b-7db3-4556-9d05-769f24e2a334
+type: text/markdown
+
+- you can either use `/etc/netplan/` files
+- or use `nmtui` directly and edit interfaces

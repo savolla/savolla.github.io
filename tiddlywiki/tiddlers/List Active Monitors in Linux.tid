@@ -1,0 +1,8 @@
+title: List Active Monitors in Linux
+tags: @zettel _method xrandr
+roam-id: 56e258d2-167b-4197-a6a4-b77ffe21929e
+type: text/markdown
+
+``` shell
+xrandr --listactivemonitors
+```

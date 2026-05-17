@@ -1,0 +1,15 @@
+title: VFR
+tags: @zettel _abbr
+roam-id: 7cd5e215-5351-4df6-802f-1276062c88c9
+created: 20260319105900000
+modified: 20260319105900000
+type: text/markdown
+
+The number of frames per second can change dynamically depending on the content of the video. for example a video might be 60 fps during fast motion and drop to 15 fps during static scenes.
+
+- Pros:
+  - More efficient compression: fewer frames where nothing moves.
+  - Can reduce file size while maintaining perceived quality.
+- Cons:
+  - Can cause audio sync problems in some editing software.
+  - Not compatible with all platforms (some expect a consistent frame rate).

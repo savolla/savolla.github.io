@@ -1,0 +1,12 @@
+title: Terraform Methods
+tags: _method terraform @query
+roam-id: 06685b29-f275-4fa0-bc02-0ffcccee3821
+type: text/markdown
+
+<$list filter="[tag[terraform]tag[_method]!tag[@query]]">
+  <li>
+    <$link>
+      <$view field="title"/>
+    </$link>
+  </li>
+</$list>

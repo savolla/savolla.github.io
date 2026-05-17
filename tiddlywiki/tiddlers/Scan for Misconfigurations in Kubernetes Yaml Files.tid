@@ -1,0 +1,11 @@
+title: Scan for Misconfigurations in Kubernetes Yaml Files
+tags: @zettel _method k8s datree kustomize
+roam-id: 050666bf-b1dc-4de2-b188-99df82e63595
+type: text/markdown
+
+``` shell
+datree test deployment.yaml
+# or
+kustomize build your_overlay > deployment.yaml
+datree test deployment.yaml 
+```

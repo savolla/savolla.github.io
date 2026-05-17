@@ -1,0 +1,8 @@
+title: Delete a Kubernetes Pod
+tags: @zettel _method k8s
+roam-id: c669bb8f-66ee-42cd-b0df-a15edc8d7836
+type: text/markdown
+
+``` shell
+kubectl delete -f /path/to/file.yaml
+```

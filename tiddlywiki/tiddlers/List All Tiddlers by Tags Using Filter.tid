@@ -1,0 +1,20 @@
+title: List All Tiddlers by Tags Using Filter
+tags: tiddlywiki @zettel _method
+roam-id: 7deaab72-37eb-425e-8152-7f615b70e42e
+created: 20260424180400000
+modified: 20260424180400000
+type: text/markdown
+
+example below;
+
+``` {.bash org-language="sh"}
+<ol>
+  <$list filter="[tag[@zettel]tag[_method]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
+```

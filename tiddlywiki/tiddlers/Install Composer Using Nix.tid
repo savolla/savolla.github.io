@@ -1,0 +1,12 @@
+title: Install Composer Using Nix
+tags: homemanager nix composer php @zettel _method
+roam-id: 619f0c25-8165-4988-9fcf-b9be8d6eba42
+created: 20260401102500000
+modified: 20260401102500000
+type: text/markdown
+
+add the following into your configuration.nix or home.nix. package name is
+
+``` nix
+php85Packages.composer
+```

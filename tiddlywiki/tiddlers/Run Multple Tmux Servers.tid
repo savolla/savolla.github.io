@@ -1,0 +1,9 @@
+title: Run Multple Tmux Servers
+tags: @zettel _method tmux
+roam-id: 9cf5e96b-f83c-466e-997b-f96d4d035b78
+type: text/markdown
+
+``` shell
+tmux -L first-server
+tmux -L second-server
+```

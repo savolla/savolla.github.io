@@ -1,0 +1,22 @@
+title: List All GCP Bucket Folders Using Python
+tags: @zettel _method gcp python
+roam-id: c7c3a7d8-dc34-4f63-94bb-307b62ae2110
+type: text/markdown
+
+``` python
+from pprint import pprint
+
+from google.cloud import exceptions as GSExceptions
+from google.cloud.storage import Client, transfer_manager
+
+if __name__ == '__main__':
+    client = Client()
+
+    ds = set()
+    blobs = client.list_blobs('prod-application-logs', delimiter='/', prefix='')
+    for page in blobs.pages:
+        ds.update(page.prefixes)
+
+    directories = sorted(ds)
+    pprint(directories)
+```

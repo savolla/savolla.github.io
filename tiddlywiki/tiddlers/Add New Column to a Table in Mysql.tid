@@ -1,0 +1,14 @@
+title: Add New Column to a Table in Mysql
+tags: @zettel _method mysql
+roam-id: 6c65b115-f156-4e50-b68a-91a551336031
+type: text/markdown
+
+``` sql
+ALTER TABLE table_name ADD COLUMN column_name data_type;
+```
+
+real example:
+
+``` sql
+ALTER TABLE bulk_coin_charging ADD COLUMN coin_completion_enabled bit(1);
+```

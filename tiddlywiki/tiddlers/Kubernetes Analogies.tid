@@ -1,0 +1,10 @@
+title: Kubernetes Analogies
+tags: k8s @query _analogy
+roam-id: caff52d4-5182-406a-9d2d-c9a33d0fa31a
+type: text/markdown
+
+<$list filter="[tag[k8s]tag[_analogy]!tag[@query]]">
+  <hr style="border: 1px solid #484848; margin: 20px 0;" />
+  <sup><$link><$view field="title"/></$link></sup>
+  <$transclude mode="block"/>
+</$list>

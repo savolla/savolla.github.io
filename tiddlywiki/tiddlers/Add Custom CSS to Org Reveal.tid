@@ -1,0 +1,11 @@
+title: Add Custom CSS to Org Reveal
+tags: @zettel _method orgmode revealjs
+roam-id: bd440517-b9fa-4509-91ac-e121113216f5
+type: text/markdown
+
+- put a `custom.css` file under the same directory as your presentation org file
+
+- import cusom css into your presentation like this:
+
+  ``` org
+  ```

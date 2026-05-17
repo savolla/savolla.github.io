@@ -1,0 +1,14 @@
+title: Install Iosevka-Term Font on Ubuntu
+tags: @zettel _method
+roam-id: 92f66e28-3eed-4e25-9595-9bb276758281
+type: text/markdown
+
+- go to <https://www.nerdfonts.com/font-downloads>
+- search \"iosevkaterm\"
+- download the font
+- extract the archive
+- `mkdir iosevkaterm`
+- put all `.ttf` files into `iosevkaterm` folder
+- `mv iosevka-term-ttf ~/.local/share/fonts/`
+- update font cache `fc-cache -fv ~/.local/share/fonts`
+- you can list newly installed iosevka font with `fc-list | grep iosevka`

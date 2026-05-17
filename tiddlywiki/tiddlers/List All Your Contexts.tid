@@ -1,0 +1,15 @@
+title: List All Your Contexts
+tags: 
+roam-id: 992590f2-f6c9-4d2b-8174-fc20af017b84
+type: text/markdown
+
+the following function will list all our contexts in our workflow
+
+``` {.commonlisp org-language="emacs-lisp" results="none"}
+(org-roam-ql-search
+ '(and (tags "_c") (and (not (tags "_j")) (not (tags "@zettel:_method"))))
+ "contexts"
+ "title")
+```
+
+we\'re getting all the context tags `_c` but excluding journal tags `_j`
