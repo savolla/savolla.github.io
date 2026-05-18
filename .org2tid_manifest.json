@@ -3514,6 +3514,21 @@
     "node_id": "95897ecf-841d-4f4b-abe3-c5404e1f9de5",
     "source_mtime": 1779139786.1134453
   },
+  "Unblock All Devices Blocked by Rfkill.tid": {
+    "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-19.org",
+    "node_id": "39bff87e-afa6-4a87-b149-9e3121044232",
+    "source_mtime": 1779144702.9017336
+  },
+  "Unblock a Specific Device That Is Blocked by Rfkill.tid": {
+    "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-19.org",
+    "node_id": "f00a4342-791d-41a2-9a52-ede1374ac237",
+    "source_mtime": 1779144702.9017336
+  },
+  "Get List of B_@zettel__method.tid": {
+    "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-19.org",
+    "node_id": "9ac3967e-168a-46d2-91ac-3cdca6cf104c",
+    "source_mtime": 1779144702.9017336
+  },
   "Add Dockerhub Images on Openshift.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/zettels/20250308010200-add_dockerhub_images_on_openshift.org",
     "node_id": "5e6ee5c7-f470-4ad8-8da0-f6650bd7748c",

@@ -1,0 +1,21 @@
+title: Unblock a Specific Device That Is Blocked by Rfkill
+tags: networking linux rfkill @zettel _method
+roam-id: f00a4342-791d-41a2-9a52-ede1374ac237
+created: 20260519014900000
+modified: 20260519014900000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+rfkill unblock wifi
+rfkill unblock bluetooth
+```
+
+or by index
+
+``` {.bash org-language="sh"}
+rfkill unblock 0
+```
+
+[^1]
+
+[^1]: <https://claude.ai/chat/015169e3-9161-4741-b9cf-240e6c043281>

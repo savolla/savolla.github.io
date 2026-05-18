@@ -1,0 +1,14 @@
+title: Unblock All Devices Blocked by Rfkill
+tags: networking rfkill @zettel _method linux
+roam-id: 39bff87e-afa6-4a87-b149-9e3121044232
+created: 20260519014800000
+modified: 20260519014800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+rfkill unblock all
+```
+
+[^1]
+
+[^1]: <https://claude.ai/chat/015169e3-9161-4741-b9cf-240e6c043281>
