@@ -23,37 +23,26 @@ type: text/css
 
 /* ─── Color Palette ────────────────────────────────────────── */
 /*
-  Gruvbox Dark — monochrome only (bg + fg spectrum, no hue).
-  All colors are from the official Gruvbox palette:
-
-  bg0_h  #1d2021  — hardest bg (deepest black, code blocks, page bg)
-  bg0    #282828  — base bg (tiddler body bg)
-  bg0_s  #32302f  — soft bg (raised surfaces, sidebar)
-  bg1    #3c3836  — bg1 (hover, selection, card surfaces)
-  bg2    #504945  — bg2 (borders, dividers)
-  bg3    #665c54  — bg3 (disabled, very muted text)
-  bg4    #7c6f64  — bg4 (secondary labels, comments)
-  gray   #928374  — gray (muted body text, operators)
-  fg4    #a89984  — fg4 (subtle secondary text)
-  fg3    #bdae93  — fg3 (secondary body text)
-  fg2    #d5c4a1  — fg2 (primary body text)
-  fg1    #ebdbb2  — fg1 (main text, the classic gruvbox fg)
-  fg0    #fbf1c7  — fg0 (headings, titles, brightest)
+  Gruvbox Dark:
+  bg0_h #1d2021 · bg0 #282828 · bg0_s #32302f · bg1 #3c3836
+  bg2   #504945 · bg3 #665c54 · bg4   #7c6f64 · gray #928374
+  fg4   #a89984 · fg3 #bdae93 · fg2   #d5c4a1 · fg1  #ebdbb2 · fg0 #fbf1c7
 */
 :root {
-  --bg0h:   #1d2021;
-  --bg0:    #282828;
-  --bg0s:   #32302f;
-  --bg1:    #3c3836;
-  --bg2:    #504945;
-  --bg3:    #665c54;
-  --bg4:    #7c6f64;
-  --gray:   #928374;
-  --fg4:    #a89984;
-  --fg3:    #bdae93;
-  --fg2:    #d5c4a1;
-  --fg1:    #ebdbb2;
-  --fg0:    #fbf1c7;
+  /* Raw palette */
+  --bg0h: #1d2021;
+  --bg0:  #282828;
+  --bg0s: #32302f;
+  --bg1:  #3c3836;
+  --bg2:  #504945;
+  --bg3:  #665c54;
+  --bg4:  #7c6f64;
+  --gray: #928374;
+  --fg4:  #a89984;
+  --fg3:  #bdae93;
+  --fg2:  #d5c4a1;
+  --fg1:  #ebdbb2;
+  --fg0:  #fbf1c7;
 
   /* Semantic aliases */
   --page-bg:   var(--bg0h);
@@ -69,10 +58,8 @@ type: text/css
   --text:      var(--fg2);
   --bright:    var(--fg1);
   --heading:   var(--fg0);
-
-  /* Links use the brightest fg so they stand out without color */
-  --link:      var(--fg1);
-  --link-dim:  var(--fg4);
+  --link:      #da9921;
+  --link-ext:  var(--fg4);
 
   --font-mono: 'Iosevka Term Web', 'Cascadia Code', 'Courier New', monospace;
 
@@ -95,6 +82,46 @@ body,
   color: var(--text) !important;
 }
 
+/* ─── Topbar ─────────────────────────────────────────────────── */
+.tc-topbar,
+.tc-page-controls,
+nav.tc-sidebar-header,
+.tc-sidebar-header,
+.krystal-header {
+  background: var(--page-bg) !important;
+  border: none !important;
+}
+
+/* ─── Tiddler frame ──────────────────────────────────────────── */
+/*
+  Shadows only when tiddlers are stacked (overlapping in a column).
+  Side-by-side tiddlers each live in their own .krystal-column with
+  only one frame, so :only-child has no shadow. Stacked frames
+  (siblings inside the same column) get depth shadows.
+*/
+.tc-tiddler-frame {
+  border: none !important;
+  outline: none !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+/* Stacked: frame has siblings in the same column */
+.tc-tiddler-frame:not(:only-child) {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    0 12px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Buried: something is stacked on top of this frame */
+.tc-tiddler-frame:not(:last-child) {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 6px 20px rgba(0, 0, 0, 0.65),
+    0 20px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
 /* ─── Tiddler title ────────────────────────────────────────── */
 .tc-title {
   font-family: var(--font-mono) !important;
@@ -111,9 +138,9 @@ body,
 /* ─── Site title ───────────────────────────────────────────── */
 .tc-site-title {
   font-family: var(--font-mono) !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
   font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
   color: var(--secondary) !important;
   letter-spacing: 0.05em !important;
   line-height: 1 !important;
@@ -133,11 +160,17 @@ body,
 .tc-tiddler-body p { margin-bottom: 0.85rem; }
 
 /* ─── Body headings ────────────────────────────────────────── */
-.tc-tiddler-body h1 {
+/* Shared properties */
+.tc-tiddler-body h1,
+.tc-tiddler-body h2,
+.tc-tiddler-body h3,
+.tc-tiddler-body h4 {
   font-family: var(--font-mono) !important;
-  font-size: var(--type-h1) !important;
   font-weight: 400 !important;
-  font-style: normal !important;
+}
+
+.tc-tiddler-body h1 {
+  font-size: var(--type-h1) !important;
   color: var(--heading) !important;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -148,10 +181,7 @@ body,
 }
 
 .tc-tiddler-body h2 {
-  font-family: var(--font-mono) !important;
   font-size: var(--type-h2) !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
   color: var(--bright) !important;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -160,9 +190,7 @@ body,
 }
 
 .tc-tiddler-body h3 {
-  font-family: var(--font-mono) !important;
   font-size: var(--type-h3) !important;
-  font-weight: 400 !important;
   font-style: italic !important;
   color: var(--body) !important;
   line-height: 1.3;
@@ -172,9 +200,7 @@ body,
 }
 
 .tc-tiddler-body h4 {
-  font-family: var(--font-mono) !important;
   font-size: var(--type-h4) !important;
-  font-weight: 400 !important;
   font-style: italic !important;
   color: var(--subtle) !important;
   letter-spacing: 0.04em;
@@ -201,14 +227,17 @@ pre, code, kbd, samp,
 
 .tc-tiddler-body pre {
   background: var(--bg0h) !important;
-  border: 1px solid var(--border) !important;
-  border-left: 3px solid var(--muted) !important;
-  border-radius: 2px !important;
+  border: none !important;
+  border-radius: 4px !important;
   padding: 1rem 1.25rem !important;
   overflow-x: auto;
   margin: 1.25rem 0;
   line-height: 1.55;
   color: var(--body) !important;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(218, 153, 33, 0.08) !important;
 }
 
 /* ─── Blockquotes ──────────────────────────────────────────── */
@@ -225,19 +254,19 @@ pre, code, kbd, samp,
 .tc-tiddler-body blockquote p { margin-bottom: 0 !important; }
 
 /* ─── Links ────────────────────────────────────────────────── */
-/*
-  No hue available, so we use fg1 (the classic gruvbox fg, noticeably
-  brighter than body text fg2) for links + underline for affordance.
-*/
-a.tc-tiddlylink-external {
-  text-decoration: underline !important;
-  text-decoration-color: var(--dim) !important;
-  color: var(--link-dim) !important;
+.tc-tiddler-body a {
+  color: var(--link) !important;
+  text-decoration: none !important;
 }
 
-.tc-tiddler-body a {
-  color: d65d0e !important;   /* gruvbox orange */
-  text-decoration: none !important;
+a.tc-tiddlylink-resolves {
+  font-family: var(--font-mono) !important;
+}
+
+a.tc-tiddlylink-external {
+  color: var(--link-ext) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--dim) !important;
 }
 
 .tc-tiddler-body a:hover,
@@ -249,8 +278,8 @@ a.tc-tiddlylink-external:hover {
 
 .tc-title a,
 .tc-title a:hover {
-  text-decoration: none !important;
   color: inherit !important;
+  text-decoration: none !important;
 }
 
 /* ─── Horizontal rule ──────────────────────────────────────── */
@@ -266,22 +295,10 @@ button.tc-btn-invisible.tc-tiddlylink {
 }
 
 /* ─── Syntax highlighting ──────────────────────────────────── */
-/*
-  Monochrome syntax using only the fg/bg spectrum.
-  No hue — differentiation purely through lightness:
-
-  fg0  #fbf1c7  — keywords (brightest, most emphatic)
-  fg1  #ebdbb2  — functions / types
-  fg2  #d5c4a1  — strings (default token, body of code)
-  fg3  #bdae93  — numbers, entities
-  fg4  #a89984  — operators, punctuation, attr-names
-  gray #928374  — comments (dimmest readable text)
-  bg4  #7c6f64  — very muted / prolog / cdata
-*/
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: var(--font-mono);
-  color: var(--text);      /* fg2 */
+  color: var(--text);
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -297,8 +314,12 @@ pre[class*="language-"] {
   padding: 1rem 1.25rem;
   margin: 1.25rem 0;
   overflow: auto;
-  border-radius: 2px;
-  border-left: 3px solid var(--muted);  /* bg4 */
+  border-radius: 4px;
+  border: none;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(218, 153, 33, 0.08) !important;
 }
 
 :not(pre) > code[class*="language-"] {
@@ -314,47 +335,39 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
   color: var(--heading);
 }
 
-/* Comments — dimmest, italic */
 .token.comment,
 .token.prolog,
-.token.cdata           { color: #928374; font-style: italic; }   /* gray */
-
+.token.cdata        { color: #928374; font-style: italic; }
 .token.keyword,
 .token.selector,
 .token.atrule,
-.token.important       { color: #fb4934; }                       /* gruvbox red — keywords */
-
+.token.important    { color: #fb4934; }
 .token.tag,
 .token.boolean,
 .token.builtin,
-.token.doctype         { color: #fabd2f; }                       /* gruvbox yellow */
-
+.token.doctype      { color: #fabd2f; }
 .token.function,
 .token.class-name,
-.token.symbol          { color: #b8bb26; font-style: italic; }   /* gruvbox green */
-
+.token.symbol       { color: #b8bb26; font-style: italic; }
 .token.string,
 .token.char,
 .token.attr-value,
-.token.regex           { color: #b8bb26; }                       /* gruvbox green */
-
+.token.regex        { color: #b8bb26; }
 .token.number,
-.token.entity          { color: #d3869b; }                       /* gruvbox purple */
-
+.token.entity       { color: #d3869b; }
 .token.property,
 .token.constant,
 .token.variable,
-.token.delimiter       { color: #d5c4a1; }                       /* fg2, neutral */
-
+.token.delimiter    { color: #d5c4a1; }
 .token.operator,
 .token.punctuation,
 .token.attr-name,
-.token.attr-value .punctuation  { color: #a89984 !important; background: transparent !important; }
-
-.token.url             { color: #83a598; text-decoration: underline; text-decoration-color: #504945; }
-
-.token.inserted        { color: #b8bb26; background: rgba(184,187,38,0.10); }
-.token.deleted         { color: #fb4934; background: rgba(251,73,52,0.10); }
+.token.attr-value .punctuation { color: #a89984 !important; background: transparent !important; }
+.token.url          { color: #83a598; text-decoration: underline; text-decoration-color: #504945; }
+.token.inserted     { color: #b8bb26; background: rgba(184,187,38,0.10); }
+.token.deleted      { color: #fb4934; background: rgba(251,73,52,0.10); }
+.token.bold         { font-weight: bold; }
+.token.italic       { font-style: italic; }
 
 /* ─── Mobile ────────────────────────────────────────────────── */
 @media screen and (max-width: 768px) {
@@ -365,35 +378,4 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
     --type-h3:    1.1rem;
   }
   .tc-tiddler-body { padding: 1rem; }
-}
-
-/* ─── Stacked tiddler depth (Krystal accordion) ─────────────── */
-.tc-tiddler-frame {
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.4),
-    0 4px 12px rgba(0, 0, 0, 0.5),
-    0 12px 32px rgba(0, 0, 0, 0.35) !important;
-  border-radius: 10px !important;
-}
-
-.tc-tiddler-frame:not(:last-child) {
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.5),
-    0 6px 20px rgba(0, 0, 0, 0.65),
-    0 20px 48px rgba(0, 0, 0, 0.5) !important;
-}
-
-.tc-tiddler-frame {
-  border: none !important;
-  outline: none !important;
-}
-
-/* ─── Topbar ─────────────────────────────────────────────────── */
-.tc-topbar,
-.tc-site-title,
-.tc-page-controls,
-nav.tc-sidebar-header,
-.krystal-header {
-  background: var(--page-bg) !important;   /* #1d2021 */
-  border: none !important;
 }
