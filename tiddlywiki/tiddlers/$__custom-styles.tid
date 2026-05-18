@@ -282,14 +282,6 @@ a.tc-tiddlylink-external:hover {
   text-decoration: none !important;
 }
 
-/* ─── Search Bar ──────────────────────────────────────── */
-.tc-search-drop-down .tc-popup-handle {
-  border: none !important;
-  border-top: 1px solid var(--border) !important;
-  margin: 2rem 0 !important;
-  background: var(--bg0h) !important;
-}
-
 /* ─── Horizontal rule ──────────────────────────────────────── */
 .tc-tiddler-body hr {
   border: none !important;
@@ -334,7 +326,7 @@ pre[class*="language-"] {
   background: var(--bg1) !important;
   padding: 0.1em 0.35em;
   border-radius: 2px;
-  border: 1px solid var(--border);
+  border: 0px solid var(--border);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
