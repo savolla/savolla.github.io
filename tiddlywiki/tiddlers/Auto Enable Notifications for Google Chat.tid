@@ -7,11 +7,11 @@ type: text/markdown
 
 ``` javascript
 // ==UserScript==
-// @name        Fix Gmail Notifications
+// @name        Fix Google Chat Notifications
 // @description Hits the notification button, once
 // @version     1.0
-// @namespace   https://mail.google.com/
-// @match       https://mail.google.com/*
+// @namespace   https://chat.google.com/
+// @match       https://chat.google.com/*
 // @run-at      document-idle
 // @grant       none
 // ==/UserScript==
@@ -23,7 +23,7 @@ type: text/markdown
         let button = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
         if(button) {
             button.click();
-            clearInterval(waitForThatFrickingButton);  :javascript:google:greasemonkey:qutebrowser:@zettel:_method:
+            clearInterval(waitForThatFrickingButton);
         }
     }, 500)
 })();
