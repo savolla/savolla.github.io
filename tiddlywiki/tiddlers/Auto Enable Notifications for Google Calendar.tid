@@ -1,0 +1,30 @@
+title: Auto Enable Notifications for Google Calendar
+tags: google qutebrowser greasemonkey @zettel _method
+roam-id: 95897ecf-841d-4f4b-abe3-c5404e1f9de5
+created: 20260518211200000
+modified: 20260518211200000
+type: text/markdown
+
+``` javascript
+// ==UserScript==
+// @name        Fix Google Calendar Notifications
+// @description Hits the notification button, once
+// @version     1.0
+// @namespace   https://calendar.google.com/
+// @match       https://calendar.google.com/*
+// @run-at      document-idle
+// @grant       none
+// ==/UserScript==
+(function() {
+    'use strict';
+
+    var waitForThatFrickingButton = setInterval(function() {
+        let xpath = "//button[contains(text(),'Turn on') or contains(text(),'Allow') or contains(text(),'Enable notifications')]";
+        let button = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        if(button) {
+            button.click();
+            clearInterval(waitForThatFrickingButton);
+        }
+    }, 500)
+})();
+```

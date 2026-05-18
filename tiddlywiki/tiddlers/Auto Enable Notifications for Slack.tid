@@ -1,5 +1,5 @@
 title: Auto Enable Notifications for Slack
-tags: slack qutebrowser greasemonkey @zettel _method
+tags: javascript slack qutebrowser greasemonkey @zettel _method
 roam-id: 6b4ee21a-1680-49f4-81a8-358892e6276a
 created: 20260518203800000
 modified: 20260518203800000
@@ -7,9 +7,9 @@ type: text/markdown
 
 put the following in `~/.config/qutebrowser/greasemonkey/enable-notifications-for-slack.js`
 
-``` {.javascript org-language="js"}
+``` javascript
 // ==UserScript==
-// @name        Fix Notifications
+// @name        Fix Slack Notifications
 // @description Hits the notification button, once
 // @version     1.0
 // @namespace   https://app.slack.com/
@@ -31,3 +31,7 @@ put the following in `~/.config/qutebrowser/greasemonkey/enable-notifications-fo
     }, 500)
 })();
 ```
+
+[^1]
+
+[^1]: <https://github.com/qutebrowser/qutebrowser/issues/5233#issuecomment-614444694>

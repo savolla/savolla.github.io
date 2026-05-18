@@ -1,0 +1,30 @@
+title: Auto Enable Notifications for Gmail
+tags: javascript qutebrowser greasemonkey google @zettel _method
+roam-id: 2f31abfb-4604-49e0-a13c-4daa77323902
+created: 20260518211200000
+modified: 20260518211200000
+type: text/markdown
+
+``` javascript
+// ==UserScript==
+// @name        Fix Gmail Notifications
+// @description Hits the notification button, once
+// @version     1.0
+// @namespace   https://mail.google.com/
+// @match       https://mail.google.com/*
+// @run-at      document-idle
+// @grant       none
+// ==/UserScript==
+(function() {
+    'use strict';
+
+    var waitForThatFrickingButton = setInterval(function() {
+        let xpath = "//button[contains(text(),'Turn on') or contains(text(),'Allow') or contains(text(),'Enable notifications')]";
+        let button = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        if(button) {
+            button.click();
+            clearInterval(waitForThatFrickingButton);
+        }
+    }, 500)
+})();
+```

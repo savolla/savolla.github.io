@@ -1,5 +1,5 @@
 title: Auto Enable Notifications for Whatsapp Web
-tags: qutebrowser greasemonkey whatsapp @zettel _method
+tags: javascript qutebrowser greasemonkey whatsapp @zettel _method
 roam-id: f7fefd0f-6a96-432a-adf2-5088ae03961e
 created: 20260518203200000
 modified: 20260518203200000
@@ -7,9 +7,9 @@ type: text/markdown
 
 put the following in `~/.config/qutebrowser/greasemonkey/enable-notifications-for-whatsapp-web.js`
 
-``` {.javascript org-language="js"}
+``` javascript
 // ==UserScript==
-// @name        Fix Notifications
+// @name        Fix Whatsapp Notifications
 // @description Hits the notification button, once
 // @version     1.0
 // @namespace   https://web.whatsapp.com/
