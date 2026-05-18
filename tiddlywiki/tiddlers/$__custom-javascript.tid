@@ -1,0 +1,64 @@
+title: $:/plugins/custom/drag-pan
+tags: $:/tags/Startup
+type: application/javascript
+
+/*────────────────────────────────────────────
+  Drag-to-pan accordion for Krystal/stacked tiddlers
+────────────────────────────────────────────*/
+
+(function(){
+  "use strict";
+
+  // Wait until the DOM is ready
+  exports.name = "drag-pan-accordion";
+  exports.platforms = ["browser"];
+  exports.after = ["startup"];
+  exports.synchronous = true;
+
+  exports.startup = function() {
+    // Container to pan
+    const container = document.querySelector(".tc-page-container");
+
+    if(!container) return;
+
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let scrollLeft = 0;
+    let scrollTop = 0;
+
+    container.style.cursor = "grab";  // visual hint
+
+    container.addEventListener("mousedown", (e) => {
+      if(e.button !== 0) return; // only left click
+      isDragging = true;
+      container.style.cursor = "grabbing";
+      startX = e.pageX - container.offsetLeft;
+      startY = e.pageY - container.offsetTop;
+      scrollLeft = container.scrollLeft;
+      scrollTop = container.scrollTop;
+      e.preventDefault();
+    });
+
+    container.addEventListener("mouseleave", () => {
+      isDragging = false;
+      container.style.cursor = "grab";
+    });
+
+    container.addEventListener("mouseup", () => {
+      isDragging = false;
+      container.style.cursor = "grab";
+    });
+
+    container.addEventListener("mousemove", (e) => {
+      if(!isDragging) return;
+      const x = e.pageX - container.offsetLeft;
+      const y = e.pageY - container.offsetTop;
+      const walkX = (x - startX);
+      const walkY = (y - startY);
+      container.scrollLeft = scrollLeft - walkX;
+      container.scrollTop = scrollTop - walkY;
+    });
+  };
+
+})();

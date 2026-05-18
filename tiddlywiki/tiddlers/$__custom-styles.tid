@@ -373,7 +373,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
     0 1px 2px rgba(0, 0, 0, 0.4),
     0 4px 12px rgba(0, 0, 0, 0.5),
     0 12px 32px rgba(0, 0, 0, 0.35) !important;
-  border-radius: 2px !important;
+  border-radius: 10px !important;
 }
 
 .tc-tiddler-frame:not(:last-child) {
@@ -381,4 +381,19 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
     0 1px 2px rgba(0, 0, 0, 0.5),
     0 6px 20px rgba(0, 0, 0, 0.65),
     0 20px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
+.tc-tiddler-frame {
+  border: none !important;
+  outline: none !important;
+}
+
+/* ─── Topbar ─────────────────────────────────────────────────── */
+.tc-topbar,
+.tc-site-title,
+.tc-page-controls,
+nav.tc-sidebar-header,
+.krystal-header {
+  background: var(--page-bg) !important;   /* #1d2021 */
+  border: none !important;
 }
