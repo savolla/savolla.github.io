@@ -1,0 +1,14 @@
+title: Get List of Blocked Devices by Rfkill
+tags: linux networking rfkill @zettel _method
+roam-id: 9ac3967e-168a-46d2-91ac-3cdca6cf104c
+created: 20260519015100000
+modified: 20260519015100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+rfkill
+```
+
+[^1]
+
+[^1]: <https://claude.ai/chat/015169e3-9161-4741-b9cf-240e6c043281>
