@@ -1,0 +1,319 @@
+title: Turn Qutebrowser Into Doom Emacs!
+tags: qutebrowser doomemacs @post
+roam-id: ce6caf99-5ebd-42ff-8f51-05e7b82778f7
+created: 20260518194700000
+modified: 20260518194700000
+type: text/markdown
+
+This post is a draft but here is my configuration. You can still use it ;)
+
+Here is my entire `config.py`
+
+``` python
+c = c
+config = config
+config.load_autoconfig(False)  # was True — dangerous, fixed
+c.auto_save.session = True
+c.content.autoplay = False
+config.set("content.cookies.accept", "all", "chrome-devtools://*")
+config.set("content.cookies.accept", "all", "devtools://*")
+config.set("content.headers.accept_language", "", "https://matchmaker.krunker.io/*")
+config.set(
+    "content.headers.user_agent",
+    "Mozilla/5.0 ({os_info}; rv:136.0) Gecko/20100101 Firefox/139.0",
+    "https://accounts.google.com/*",
+)
+
+config.set("content.images", True, "chrome-devtools://*")
+config.set("content.images", True, "devtools://*")
+config.set("content.javascript.enabled", True, "chrome-devtools://*")
+config.set("content.javascript.enabled", True, "devtools://*")
+config.set("content.javascript.enabled", True, "chrome://*/*")
+config.set("content.javascript.enabled", True, "qute://*/*")
+config.set("content.javascript.enabled", True, "https://chatgpt.com/")
+config.set("content.javascript.enabled", True, "*://*.chatgpt.com/*")
+
+config.set(
+    "content.local_content_can_access_remote_urls",
+    True,
+    "file:///home/savolla/.local/share/qutebrowser/userscripts/*",
+)
+
+config.set(
+    "content.local_content_can_access_file_urls",
+    False,
+    "file:///home/savolla/.local/share/qutebrowser/userscripts/*",
+)
+
+c.content.notifications.enabled = True
+c.content.notifications.presenter = "libnotify"  # explicit, reliable
+
+# website settings — fixed patterns with /*
+config.set("content.notifications.enabled", True, "https://chat.google.com/*")
+config.set("content.notifications.enabled", True, "https://calendar.google.com/*")
+config.set("content.notifications.enabled", True, "https://mail.google.com/*")
+config.set("content.notifications.enabled", True, "https://web.whatsapp.com/*")
+
+config.set("content.register_protocol_handler", True, "https://calendar.google.com?cid=%25s")
+config.set("content.register_protocol_handler", True, "https://mail.google.com?extsrc=mailto&url=%25s")
+
+c.content.media.audio_video_capture = True
+c.content.javascript.clipboard = "access"
+
+c.completion.use_best_match = True
+c.tabs.position = "right"
+c.tabs.width = "20%"
+c.tabs.pinned.shrink = False
+c.tabs.show = "always"
+c.tabs.show_switching_delay = 2500
+c.window.transparent = True
+c.zoom.default = "120%"
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.algorithm = "lightness-cielab"
+c.colors.webpage.darkmode.policy.images = "never"
+c.fonts.default_size = "13pt"
+
+c.tabs.select_on_remove = "next"
+c.tabs.title.format = "{audio}{index} {current_title}"
+c.tabs.undo_stack_size = 100
+
+c.session.lazy_restore = True
+c.session.default_name = "main"
+
+# adblockers
+c.content.blocking.adblock.lists = [
+    "https://easylist.to/easylist/easylist.txt",
+    "https://easylist.to/easylist/easyprivacy.txt",
+    "https://easylist.to/easylist/fanboy-social.txt",
+    "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
+    "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+    "https://easylist-downloads.adblockplus.org/easylistdutch.txt",
+    "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
+    "https://www.i-dont-care-about-cookies.eu/abp/",
+]
+
+c.scrolling.smooth = False
+
+c.url.default_page = "https://savolla.github.io"
+c.url.start_pages = ["https://savolla.github.io"]
+
+# ---------------------------------------------------------------------------
+# Gruvbox Hard Dark color scheme
+# bg0_hard  #1d2021  ← new base (was #282828)
+# bg0       #282828  ← used sparingly for slight contrast
+# bg1       #32302f  ← alternating rows (was #3c3836)
+# bg2       #3c3836  ← selected/hover backgrounds
+# bg3       #504945  ← private/muted
+# fg        #ebdbb2
+# yellow    #b8bb26
+# orange    #fe8019
+# red       #fb4934
+# blue      #83a598
+# purple    #d3869b
+# ---------------------------------------------------------------------------
+
+# Backgrounds
+c.colors.webpage.bg            = "#1d2021"
+c.colors.statusbar.normal.bg   = "#1d2021"
+c.colors.statusbar.insert.bg   = "#32302f"
+c.colors.statusbar.passthrough.bg = "#32302f"
+c.colors.statusbar.caret.bg    = "#d3869b"
+c.colors.statusbar.command.bg  = "#1d2021"
+c.colors.statusbar.private.bg  = "#504945"
+
+# Foregrounds
+c.colors.statusbar.normal.fg      = "#ebdbb2"
+c.colors.statusbar.insert.fg      = "#ebdbb2"
+c.colors.statusbar.caret.fg       = "#1d2021"
+c.colors.statusbar.command.fg     = "#ebdbb2"
+c.colors.statusbar.private.fg     = "#ebdbb2"
+
+# URL colors
+c.colors.statusbar.url.fg              = "#ebdbb2"
+c.colors.statusbar.url.hover.fg        = "#83a598"
+c.colors.statusbar.url.success.http.fg = "#ebdbb2"
+c.colors.statusbar.url.success.https.fg= "#b8bb26"
+c.colors.statusbar.url.error.fg        = "#fb4934"
+c.colors.statusbar.url.warn.fg         = "#fe8019"
+
+# Completion widget
+c.colors.completion.fg                    = ["#ebdbb2", "#ebdbb2", "#ebdbb2"]
+c.colors.completion.odd.bg                = "#1d2021"
+c.colors.completion.even.bg               = "#32302f"
+c.colors.completion.item.selected.bg      = "#3c3836"
+c.colors.completion.item.selected.fg      = "#ebdbb2"
+c.colors.completion.match.fg              = "#fe8019"
+c.colors.completion.item.selected.match.fg= "#fe8019"
+c.colors.completion.scrollbar.fg          = "#b8bb26"
+c.colors.completion.scrollbar.bg          = "#32302f"
+
+# Prompts
+c.colors.prompts.bg          = "#32302f"
+c.colors.prompts.fg          = "#ebdbb2"
+c.colors.prompts.selected.bg = "#3c3836"
+c.colors.prompts.selected.fg = "#b8bb26"
+
+# Keyhints
+c.colors.keyhint.bg        = "#32302f"
+c.colors.keyhint.fg        = "#ebdbb2"
+c.colors.keyhint.suffix.fg = "#fe8019"
+
+# Hints
+c.colors.hints.bg       = "#3c3836"
+c.colors.hints.fg       = "#ebdbb2"
+c.colors.hints.match.fg = "#fe8019"
+c.hints.border          = "0px solid #b8bb26"
+
+# Tabs
+c.colors.tabs.bar.bg             = "#1d2021"
+c.colors.tabs.odd.bg             = "#1d2021"
+c.colors.tabs.even.bg            = "#32302f"
+c.colors.tabs.odd.fg             = "#a89984"  # dimmed fg for inactive tabs
+c.colors.tabs.even.fg            = "#a89984"
+c.colors.tabs.selected.even.bg   = "#a89984"
+c.colors.tabs.selected.even.fg   = "#282828"
+c.colors.tabs.selected.odd.bg    = "#a89984"
+c.colors.tabs.selected.odd.fg    = "#282828"
+
+# Downloads
+c.colors.downloads.bar.bg   = "#1d2021"
+c.colors.downloads.error.bg = "#fb4934"
+c.colors.downloads.error.fg = "#1d2021"
+c.colors.downloads.start.bg = "#83a598"
+c.colors.downloads.start.fg = "#1d2021"
+c.colors.downloads.stop.bg  = "#b8bb26"
+c.colors.downloads.stop.fg  = "#1d2021"
+
+# Messages
+c.colors.messages.error.bg   = "#fb4934"
+c.colors.messages.error.fg   = "#1d2021"
+c.colors.messages.warning.bg = "#fe8019"
+c.colors.messages.warning.fg = "#1d2021"
+c.colors.messages.info.bg    = "#1d2021"
+c.colors.messages.info.fg    = "#ebdbb2"
+
+# Unbinds
+config.unbind("r")
+
+# doom emacs keys
+config.bind("<Space>:", "cmd-set-text : ;; message-info 'M-x'")
+config.bind("<Space>hrr", ":config-source ;; message-info 'config reloaded'")
+
+## tabs
+config.bind("<Space>bb", "tab-focus last ;; message-info 'switched to last tab'")
+config.bind("<Space>bn", ":open -t ;; message-info 'created new tab'")
+config.bind("<Space>br", "cmd-set-text -s :tab-rename")  # fixed: use built-in tab-rename
+config.bind("<Space>bR", ":reload")
+config.bind("<Space>bk", ":tab-close ;; message-info 'closed tab'")
+config.bind("<Space>bm", "tab-mute")
+config.bind("<Space>bp", "tab-pin")
+config.bind("<Space>bc", "tab-clone")
+config.bind("<Ctrl-k>", "tab-move -")
+config.bind("<Ctrl-j>", "tab-move +")
+config.bind("<Space><Space>", "cmd-set-text -s :tab-select")
+
+config.bind("<Space>g", "tab-focus 1")
+config.bind("<Space>1", "tab-select 1")
+config.bind("<Space>2", "tab-select 2")
+config.bind("<Space>3", "tab-select 3")
+config.bind("<Space>4", "tab-select 4")
+config.bind("<Space>5", "tab-select 5")
+config.bind("<Space>6", "tab-select 6")
+config.bind("<Space>7", "tab-select 7")
+config.bind("<Space>8", "tab-select 8")
+config.bind("<Space>9", "tab-select 9")
+config.bind("<Space>G", "tab-focus -1")
+
+# Files
+config.bind("<Space>fh", "history --tab")
+config.bind("<Space>fbb", "bookmark-list --tab")
+config.bind("<Space>fba", "bookmark-add")
+config.bind("<Space>fbd", "bookmark-del")
+config.bind("<Space>fp", "config-edit")
+config.bind("<Space>feU", "adblock-update")
+config.bind("<Space>fqa", "quickmark-save")
+config.bind("<Space>fqd", "cmd-set-text -s :quickmark-del")
+
+# Frame
+config.bind("<Space>Fb", "cmd-set-text --space :tab-take")
+config.bind("<Space>FB", "tab-give")
+config.bind("<Space>FD", "window-only")
+config.bind("<Space>Fn", "tab-clone --window")
+
+# session
+config.bind("<Space>qq", "quit --save")
+config.bind("<Space>qr", "restart")
+config.bind("<Space>ff", "cmd-set-text --space :session-load --clear")
+config.bind("<Space>fs", "cmd-set-text --space :session-save")
+
+c.url.searchengines = {
+    "DEFAULT": "https://www.google.com/search?q={}",
+}
+
+# search
+config.bind("<Space>ss", "cmd-set-text /")
+config.bind("<Space>sog", "cmd-set-text :open -t https://www.google.com/search?q=")
+config.bind("<Space>soy", "cmd-set-text :open -t https://www.youtube.com/results?search_query=")
+config.bind("<Space>sod", "cmd-set-text :open -t https://duckduckgo.com/?q=")
+config.bind("<Space>soR", "cmd-set-text :open -t https://rutracker.org/forum/tracker.php?nm=")
+config.bind("<Space>sow", "cmd-set-text :open -t https://en.wikipedia.org/wiki/Special:Search/")
+config.bind("<Space>soG", "cmd-set-text :open -t https://github.com/search?q=")
+config.bind("<Space>sos", "cmd-set-text :open -t https://stackoverflow.com/search?q=")
+config.bind("<Space>sor", "cmd-set-text :open -t https://www.reddit.com/search/?q=")
+config.bind("<Space>soc", "cmd-set-text :open -t https://chat.openai.com/?q=")
+
+## toggles
+config.bind("<Space>tt", "config-cycle tabs.show always never")
+config.bind("<Space>ts", "config-cycle statusbar.show always never")
+config.bind("<Space>td", "config-cycle colors.webpage.darkmode.enabled true false")
+
+## help
+config.bind("<Space>?", "bind")
+
+## quickmark
+config.bind("<Space><Return>", "cmd-set-text -s :quickmark-load -t")
+
+## yank
+config.bind("<Space>yy", "yank")
+config.bind("<Space>yt", "yank title")
+config.bind("<Space>yd", "yank domain")
+config.bind("<Space>yo", "yank inline [[{url:yank}][{title}]]")
+config.bind("<Space>yu", "hint links yank")
+
+## misc
+config.bind("<Space>eu", "cmd-set-text -s :open {url}")
+config.bind("<Space>ov", "hint links spawn --detach mpv --ytdl-format=best {hint-url}")
+config.bind(
+    "<Space>dp",
+    "spawn --detach wkhtmltopdf {url} /home/savolla/resource/notes/org/roam/biblio/webpages/{title}.pdf"  # fixed username
+)
+config.bind("a", "mode-enter insert", mode="normal")
+
+# Domain → tab color mappings
+domain_colors = {
+    "uretimbandi.kartaca.com": "#ff69b4",
+    "github.com": "#24292e",
+    "google.com": "#4285f4",
+}
+default_color = "#1d2021"  # updated to match new base
+
+def set_tab_color(url):
+    if not url or not url.host():
+        return
+    host = url.host()
+    color = domain_colors.get(host, default_color)
+    config.set("colors.tabs.selected.even.bg", color)
+    config.set("colors.tabs.selected.odd.bg", color)
+    config.set("colors.tabs.selected.even.fg", "white")
+    config.set("colors.tabs.selected.odd.fg", "white")
+
+try:
+    from qutebrowser.api import hooks
+
+    @hooks.register("url_changed")
+    def on_url_change(tab, url):
+        set_tab_color(url)
+
+except ImportError:
+    pass
+```
