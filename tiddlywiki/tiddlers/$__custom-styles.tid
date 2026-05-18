@@ -445,3 +445,8 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-align: center;
     width: 85%;
 }
+
+.tc-search-drop-down ::selection {
+  background: var(--bg3) !important;
+  color: var(--heading) !important;
+}

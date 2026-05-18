@@ -1417,17 +1417,17 @@
   "Set Default Namespace in Kubernetes.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2025-09-11.org",
     "node_id": "66b97f48-a63f-4caa-90e2-95aab48be9f5",
-    "source_mtime": 1777750227.6434054
+    "source_mtime": 1779131002.0958858
   },
   "Check Current Namespace in Kubernetes.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2025-09-11.org",
     "node_id": "6f82b6c9-ef95-422b-8f42-3346280397a6",
-    "source_mtime": 1777750227.6434054
+    "source_mtime": 1779131002.0958858
   },
   "Uninstall_Remove a Service That's Installed With Helm.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2025-09-11.org",
     "node_id": "60687910-5536-458b-b155-0c6bfbdc57f4",
-    "source_mtime": 1777750227.6434054
+    "source_mtime": 1779131002.0958858
   },
   "Push an Existing Git Repo to Github.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2025-09-12.org",
@@ -3472,47 +3472,47 @@
   "Create Playlist in RMPC.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "702d9fd3-137f-4ad3-8c1c-e385ad451d5d",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Eenable Notifications for Various Websites in Qutebrowser Using Greasemonkey.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "d3913bf3-4894-487d-8af4-b5270a592a50",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Turn VS Code Into Doom Emacs!.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "7157d77f-0a0b-4fe6-9947-5d2de394e0d2",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Turn Qutebrowser Into Doom Emacs!.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "ce6caf99-5ebd-42ff-8f51-05e7b82778f7",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Enable Notifications for Whatsapp Web.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "f7fefd0f-6a96-432a-adf2-5088ae03961e",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Enable Notifications for Slack.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "6b4ee21a-1680-49f4-81a8-358892e6276a",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Enable Notifications for Gmail.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "2f31abfb-4604-49e0-a13c-4daa77323902",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Enable Notifications for Google Chat.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "393d56a9-9e97-4e12-b937-b1ec2958fa1d",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Auto Enable Notifications for Google Calendar.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/journal/2026-05-18.org",
     "node_id": "95897ecf-841d-4f4b-abe3-c5404e1f9de5",
-    "source_mtime": 1779128135.5337882
+    "source_mtime": 1779131040.750695
   },
   "Add Dockerhub Images on Openshift.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/zettels/20250308010200-add_dockerhub_images_on_openshift.org",
@@ -4712,7 +4712,7 @@
   "Favorite YouTube Channels.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/zettels/20260516134615-favorite_youtube_channels.org",
     "node_id": "0a5dc9df-c96c-4a1b-8744-2e6393a520e7",
-    "source_mtime": 1778928426.7749095
+    "source_mtime": 1779133168.8754754
   },
   "Literate Doom Emacs Configuration.tid": {
     "source_file": "/home/savolla/resource/notes/org/roam/zettels/doom-emacs.org",
