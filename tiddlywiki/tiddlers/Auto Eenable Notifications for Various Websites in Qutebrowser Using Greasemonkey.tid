@@ -32,11 +32,11 @@ I lived like this for 6 months.
 
 ## The Solution or... a Workaround?
 
-I already saw that guy\[fn:1\] who was talking about using [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey#:~:text=Greasemonkey%20is%20a%20userscript%20manager,also%20known%20as%20augmented%20browsing) for automatically clicking the \"Turn notifications on\" button.. Which was very hacky from my perspective. I didn\'t like this solution at all at first. But after 6 months of torgure.. It was a big relief.
+I already saw that guy[^1] who was talking about using [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey#:~:text=Greasemonkey%20is%20a%20userscript%20manager,also%20known%20as%20augmented%20browsing) for automatically clicking the \"Turn notifications on\" button.. Which was very hacky from my perspective. I didn\'t like this solution at all at first. But after 6 months of torgure.. It was a big relief.
 
 I\'ll share my greasemonkey scripts for enabling notifications for various websites;
 
 - [[Auto Enable Notifications for Whatsapp Web]]
 - [[Auto Enable Notifications for Slack]]
 
-\[fn:1 <https://github.com/qutebrowser/qutebrowser/issues/5233#issuecomment-614444694>\]
+[^1]: <https://github.com/qutebrowser/qutebrowser/issues/5233#issuecomment-614444694>
