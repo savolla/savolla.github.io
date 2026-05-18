@@ -222,7 +222,7 @@ pre, code, kbd, samp,
   color: var(--body) !important;
   padding: 0.1em 0.35em;
   border-radius: 2px;
-  border: 1px solid var(--border);
+  border: 0px solid var(--border);
 }
 
 .tc-tiddler-body pre {
