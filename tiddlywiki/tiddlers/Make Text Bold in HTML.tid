@@ -1,0 +1,18 @@
+title: Make Text Bold in HTML
+tags: html @zettel _method
+roam-id: a8c74283-63d9-4802-a01a-9f532e22c8f2
+created: 20260519182400000
+modified: 20260519182400000
+type: text/markdown
+
+\<
+
+``` html
+<strong>This is BOLD</strong>
+```
+
+or
+
+``` html
+<b>This is also BOLD</b>
+```

@@ -1,0 +1,16 @@
+title: 202605191836
+tags: @zettel _bestpractice
+roam-id: 41b0d049-636b-4d15-97ea-cf9fbe3e30a2
+created: 20260519183600000
+modified: 20260519183600000
+type: text/markdown
+
+According to [ChatGPT](https://chatgpt.com/)
+
+> it's best practice to also add rel=\"noopener noreferrer\" so the new tab cannot access your page (prevents a small security risk).
+
+So in our `href` elements we also should add \"rel=\"noopenernoreferrer\" for security
+
+``` html
+<a href="https://www.youtube.com/user/theneedledrop" target="_blank">
+```

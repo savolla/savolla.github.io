@@ -1,0 +1,14 @@
+title: Open Url in a New Tab Instead of Current Tab in HTML
+tags: html @zettel _method
+roam-id: 414b9e03-d0d2-4d75-b2ad-bf13b1b10841
+created: 20260519183500000
+modified: 20260519183500000
+type: text/markdown
+
+Add \"target=\"~blank~\"\" in `href` element
+
+``` html
+<a href="https://www.youtube.com/user/theneedledrop" target="_blank">
+```
+
+also see [[202605191836]]
