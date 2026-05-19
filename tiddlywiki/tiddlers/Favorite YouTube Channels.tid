@@ -3,48 +3,6 @@ tags:
 roam-id: 0a5dc9df-c96c-4a1b-8744-2e6393a520e7
 type: text/markdown
 
-<style>
-  .ytCoreImageHost {
-    border-radius: 50%;
-    width: 300px;          /* fixed size */
-    display: block;
-    margin-top: 4px;       /* small top offset for visual alignment */
-  }
-
-  .ytSpecAvatarShapeImageOverlays {
-    background-color: rgba(0,0,0,0.1);
-  }
-
-  .wrapper {
-    display: flex;
-    align-items: flex-start; /* top-align items */
-    gap: 10px;               /* spacing between image and text */
-  }
-
-  .wrapper p {
-    margin: 0;               /* remove default paragraph margin */
-    line-height: 1.3em;      /* controls text spacing */
-  }
-
-  .wrapper a {
-    display: block;           /* ensures the image keeps its size */
-  }
-</style>
-
-<div class="wrapper">
-  <!-- Only image is clickable -->
-  <a href="https://www.youtube.com/user/theneedledrop">
-    <img alt="" class="ytCoreImageHost ytSpecAvatarShapeImage ytCoreImageFillParentHeight ytCoreImageFillParentWidth ytCoreImageContentModeScaleToFill ytCoreImageLoaded"
-         src="https://yt3.googleusercontent.com/p60m-2Z8bPTuhMaU4yfsOIpTz3NfrUbrcUx7gUko3vvoUU-MTB3Ra_PUEtPPg0D7dnKwjQB-Fw=s160-c-k-c0x00ffffff-no-rj">
-  </a>
-
-  <!-- Description text stays outside link -->
-  <p>
-    <b>theneedledrop :</b>
-    Internet's busiest music nerd. I found this guy way back in 2015. He reviewed my favorite Krallice album, Diotima. I use his channel for music discovery a lot!
-  </p>
-</div>
-
 Tech
 
 :   - [Abhishek.Veeramalla](https://www.youtube.com/@AbhishekVeeramalla) DevOps Teacher God
