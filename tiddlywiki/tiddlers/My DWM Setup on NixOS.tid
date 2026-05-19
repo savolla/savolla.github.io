@@ -61,7 +61,7 @@ cd ~/project/repos/tools/suckless
 git clone https://github.com/bakkeby/dwm-flexipatch.git
 ```
 
-## Integrate dmf-flexipatch in configuration.nix
+## Integrate dwm-flexipatch in configuration.nix
 
 Since `dwm-flexipatch` is not a nix package, we need to custom build it. Here we create a derivation of dwm. we put this `let` block on top of our `configuration.nix`
 
