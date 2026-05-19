@@ -1,0 +1,10 @@
+title: Abort/Remove Merge in Git
+tags: @zettel _method
+roam-id: d12c6187-91f7-4ca9-9e82-a5eb6a1e45f4
+created: 20260519144200000
+modified: 20260519144200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+git merge --abort
+```

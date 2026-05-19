@@ -1,12 +1,12 @@
 title: Zetteltrack Note Types
-tags: @zettel _reference zetteltrack
+tags: _ref zetteltrack
 roam-id: 8f33028e-c2f7-4930-bdb7-41418f631bec
 type: text/markdown
 
-tag           title                         description
-  ------------- ----------------------------- --------------------------------------------
-  ~fact~        YYYYmmddHHMMSS                explanation of something or an information
-  ~howto~       imperative title              tutorial or step by step instructions
-  ~whatis~      concept\'s name               definition of a concept
-  ~reference~   list or table name            **lists** or **tables** of information
-  ~fix~         error (shorten if too long)   error and how to fix it
+tag      title                         description
+  -------- ----------------------------- --------------------------------------------
+  ~fact~   YYYYmmddHHMMSS                explanation of something or an information
+  ~how~    imperative title              tutorial or step by step instructions
+  ~what~   concept\'s name               definition of a concept
+  ~ref~    list or table name            lists or tables of information
+  ~fix~    error (shorten if too long)   error and how to fix it

@@ -1,0 +1,10 @@
+title: Abort/Remove Rebase in Git
+tags: git @zettel _method
+roam-id: 11d1e4a2-c6b0-4e96-a712-b7e90fe65b27
+created: 20260519144100000
+modified: 20260519144100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+git rebase --abort
+```
