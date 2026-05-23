@@ -5,4 +5,14 @@ created: 20260515161700000
 modified: 20260515161700000
 type: text/markdown
 
-I need a better name for this one..
+## `dmenu` scripts and patches
+
+### `clipmenu`
+
+can be found [here](https://github.com/cdown/clipmenu)
+
+## References
+
+[^1]
+
+[^1]: <https://github.com/cdown/clipmenu>
