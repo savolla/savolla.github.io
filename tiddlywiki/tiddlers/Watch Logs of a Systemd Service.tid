@@ -1,0 +1,10 @@
+title: Watch Logs of a Systemd Service
+tags: systemd @zettel _method
+roam-id: 09de0717-3ead-49eb-a871-e0e4c26ba48f
+created: 20260523223900000
+modified: 20260523223900000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo journalctl -u chrony -f
+```

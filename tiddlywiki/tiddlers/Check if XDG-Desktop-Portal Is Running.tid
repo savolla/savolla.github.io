@@ -1,0 +1,10 @@
+title: Check if XDG-Desktop-Portal Is Running
+tags: systemd xdg @zettel _method
+roam-id: d28384f3-ed66-4760-8fe4-7475038b8f5f
+created: 20260523224800000
+modified: 20260523224800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+systemctl --user status xdg-desktop-portal
+```
