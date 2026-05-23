@@ -1,0 +1,10 @@
+title: Get List of Available Tables in Mysql Database
+tags: mysql database @zettel _method
+roam-id: cd95df68-9fc5-4b89-a36e-542e9f495605
+created: 20260520152200000
+modified: 20260520152200000
+type: text/markdown
+
+``` sql
+show tables;
+```

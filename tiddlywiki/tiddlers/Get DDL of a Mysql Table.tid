@@ -1,0 +1,14 @@
+title: Get DDL of a Mysql Table
+tags: mysql database @zettel _method ddl
+roam-id: b81c513b-020b-457b-980b-6ed529557009
+created: 20260520152000000
+modified: 20260520152000000
+type: text/markdown
+
+- [[Get List of Available Tables in Mysql Database]] first
+
+- then get the table creation command with
+
+  ``` sql
+  show create table $TABLENAME;
+  ```

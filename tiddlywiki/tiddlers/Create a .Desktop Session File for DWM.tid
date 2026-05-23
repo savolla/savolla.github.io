@@ -1,0 +1,19 @@
+title: Create a .Desktop Session File for DWM
+tags: dwm xorg @zettel _method
+roam-id: c11cedb4-c12f-439d-a690-fc12efe9f38e
+created: 20260521212500000
+modified: 20260521212500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+cat /usr/share/xsessions/dwm.desktop
+```
+
+  ------------------ --------- ---------
+  \[Desktop          Entry\]   
+  Name=dwm                     
+  Comment=dynamic    window    manager
+  Exec=dwm                     
+  Icon=dwm                     
+  Type=Application             
+  ------------------ --------- ---------

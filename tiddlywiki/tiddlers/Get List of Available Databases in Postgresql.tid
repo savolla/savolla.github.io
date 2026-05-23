@@ -1,0 +1,10 @@
+title: Get List of Available Databases in Postgresql
+tags: postgresql database @zettel _method
+roam-id: b1e0b1c4-ee1f-47d1-9aff-2bcb25e4d443
+created: 20260520153900000
+modified: 20260520153900000
+type: text/markdown
+
+``` sql
+\l
+```

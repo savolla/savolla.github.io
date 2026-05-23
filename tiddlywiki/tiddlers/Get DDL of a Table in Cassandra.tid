@@ -1,0 +1,10 @@
+title: Get DDL of a Table in Cassandra
+tags: cassandra database @zettel _method
+roam-id: 10c33e71-9603-4092-b4f1-b572c33553f6
+created: 20260520152900000
+modified: 20260520152900000
+type: text/markdown
+
+``` sql
+DESC TABLE mytable;
+```

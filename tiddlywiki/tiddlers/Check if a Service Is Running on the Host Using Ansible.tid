@@ -1,0 +1,28 @@
+title: Check if a Service Is Running on the Host Using Ansible
+tags: ansible systemd @zettel _method
+roam-id: 7f82f3c9-3a05-4ece-9803-51a7de043766
+created: 20260520155600000
+modified: 20260520155600000
+type: text/markdown
+
+Will use `chrony` service as an example
+
+``` yaml
+- name: Check Chrony service status
+  block:
+    - name: Gather service facts
+      ansible.builtin.service_facts:
+
+    - name: Chrony Running
+      ansible.builtin.debug:
+        msg: "Chrony Running"
+      when:
+        - "'chrony.service' in ansible_facts.services"
+        - "ansible_facts.services['chrony.service'].state == 'running'"
+
+    - name: Chrony Not Running
+      ansible.builtin.fail:
+        msg: "Chrony Not Running"
+      when:
+        - "'chrony.service' not in ansible_facts.services or ansible_facts.services['chrony.service'].state != 'running'"
+```

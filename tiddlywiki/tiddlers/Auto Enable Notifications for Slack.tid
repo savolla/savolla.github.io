@@ -22,7 +22,7 @@ put the following in `~/.config/qutebrowser/greasemonkey/enable-notifications-fo
     'use strict';
 
     var waitForThatFrickingButton = setInterval(function() {
-        let xpath = "//button[text()='enable desktop notifications']";
+        let xpath = "//button[text()='Enable notifications']";
         let button = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
         if(button) {
             button.click();

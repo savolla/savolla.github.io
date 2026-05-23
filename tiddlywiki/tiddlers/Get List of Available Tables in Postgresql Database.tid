@@ -1,0 +1,16 @@
+title: Get List of Available Tables in Postgresql Database
+tags: database postgresql @zettel _method
+roam-id: e58e5843-ff91-402c-8cf7-810d9401281f
+created: 20260520153000000
+modified: 20260520153000000
+type: text/markdown
+
+``` sql
+\dt
+```
+
+or
+
+``` sql
+SELECT tablename FROM pg_tables WHERE schemaname='public';
+```

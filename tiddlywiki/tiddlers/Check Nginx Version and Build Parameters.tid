@@ -1,0 +1,10 @@
+title: Check Nginx Version and Build Parameters
+tags: nginx @zettel _method
+roam-id: 496ef7f1-c205-4af1-958f-b97116d01aa0
+created: 20260521121600000
+modified: 20260521121600000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+nginx -V
+```

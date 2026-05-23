@@ -1,0 +1,14 @@
+title: Switch/Change Databases in Mysql
+tags: database mysql @zettel _method
+roam-id: 9748dbdf-d39c-46fe-94b8-18c8492906ec
+created: 20260520152300000
+modified: 20260520152300000
+type: text/markdown
+
+- first [[Get List of Available Databases in Mysql]]
+
+- then use one of them by
+
+  ``` sql
+  use $DBNAME;
+  ```

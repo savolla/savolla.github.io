@@ -1,0 +1,26 @@
+title: Get Resource Usage of Docker Containers
+tags: docker @zettel _method
+roam-id: b78e3654-faf1-49e6-8b0a-355bc082eb9f
+created: 20260520145300000
+modified: 20260520145300000
+type: text/markdown
+
+This will show all containers and their resource usages
+
+``` {.bash org-language="sh"}
+sudo docker stats
+```
+
+example output is:
+
+``` {.bash org-language="sh"}
+CONTAINER ID   NAME             CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+62a0b6bd62bc   z-cms          0.00%     119.6MiB / 7.764GiB   1.50%     549kB / 44.8MB    315kB / 8.19kB    11
+f38fe2e785bc   z-bff-web      0.14%     376.5MiB / 7.764GiB   4.74%     756kB / 509kB     12.3kB / 1.56MB   35
+d94a77d3ac1d   z-web          0.43%     59.6MiB / 7.764GiB    0.75%     1.39MB / 67.1MB   1.05MB / 0B       11
+5429f3e9bab4   z-middleware   0.17%     404.1MiB / 7.764GiB   5.08%     751kB / 438kB     8.19kB / 7.91MB   36
+f073d301c84d   z-postgres     0.00%     33.68MiB / 7.764GiB   0.42%     179kB / 626kB     5.5MB / 610kB     10
+e2d251379949   z-redis        0.37%     8.02MiB / 7.764GiB    0.10%     138kB / 596kB     0B / 0B           6
+ca90af1795bf   z-nginx        0.00%     4.844MiB / 7.764GiB   0.06%     131MB / 119MB     127kB / 10.5MB    3
+
+```

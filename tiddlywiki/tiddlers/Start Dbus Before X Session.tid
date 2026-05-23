@@ -1,0 +1,22 @@
+title: Start Dbus Before X Session
+tags: startx xorg dbus @zettel _method
+roam-id: 2032e7de-db36-465f-954b-0addf1eaf146
+created: 20260521203400000
+modified: 20260521203400000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+# ~/.xinitrc
+
+if command -v dbus-launch >/dev/null && [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+```
+
+[^1] [^2] [^3]
+
+[^1]: <https://dbus.freedesktop.org/doc/dbus/faq.html#autolaunch>
+
+[^2]: <https://wiki.archlinux.org/title/D-Bus>
+
+[^3]: <https://wiki.gentoo.org/wiki/D-Bus#Starting_a_session_bus_manually>

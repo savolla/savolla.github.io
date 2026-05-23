@@ -1,0 +1,16 @@
+title: Check Nginx Modules
+tags: nginx @zettel _method
+roam-id: 2e0b6c55-dd19-40fa-927a-b23b4d6cac39
+created: 20260521121700000
+modified: 20260521121700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+ls -la /usr/lib/nginx/modules/
+```
+
+or
+
+``` {.bash org-language="sh"}
+nginx -V 2>&1 | grep modules
+```

@@ -1,0 +1,10 @@
+title: Get List of Available Databases in Mysql
+tags: mysql database @zettel _method
+roam-id: 7b8bd496-aee7-4942-83a9-2ee4701dd18c
+created: 20260520152500000
+modified: 20260520152500000
+type: text/markdown
+
+``` sql
+show databases;
+```

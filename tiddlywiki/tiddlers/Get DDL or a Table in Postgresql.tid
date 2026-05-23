@@ -1,0 +1,16 @@
+title: Get DDL or a Table in Postgresql
+tags: postgresql @zettel _method
+roam-id: 52d9df66-821b-4e19-a562-1498fa4f2dbe
+created: 20260520151000000
+modified: 20260520151000000
+type: text/markdown
+
+``` shell
+pg_dump -U $USERNAME -d $DBNAME -t $TABLENAME.TABLENAME --schema-only
+```
+
+real example;
+
+``` shell
+pg_dump -U mer -d mer -t public.communication --schema-only
+```

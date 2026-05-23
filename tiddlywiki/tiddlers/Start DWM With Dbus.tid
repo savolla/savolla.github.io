@@ -1,0 +1,21 @@
+title: Start DWM With Dbus
+tags: dwm dbus @zettel _method
+roam-id: 237d1f69-4cc5-4ec8-91c0-af833572814d
+created: 20260521203800000
+modified: 20260521203800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+# ~/.xinitrc
+
+# start d-bus session if it's not already running
+if command -v dbus-launch >/dev/null && [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+# start other programs here (optional)
+# e.g., volume control, wallpaper, etc.
+
+# finally, start dwm
+exec dwm
+```

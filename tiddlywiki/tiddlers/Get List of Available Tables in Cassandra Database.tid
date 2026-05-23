@@ -1,0 +1,10 @@
+title: Get List of Available Tables in Cassandra Database
+tags: cassandra database @zettel _method
+roam-id: 37a12ed0-f668-4d1e-a980-b2e5eff5483b
+created: 20260520153200000
+modified: 20260520153200000
+type: text/markdown
+
+``` sql
+DESCRIBE TABLES;
+```
