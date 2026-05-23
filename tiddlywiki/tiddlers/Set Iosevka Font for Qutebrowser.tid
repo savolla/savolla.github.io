@@ -1,0 +1,12 @@
+title: Set Iosevka Font for Qutebrowser
+tags: qutebrowser iosevka @zettel _method
+roam-id: d853e415-6c26-4eee-ae38-dd1d735b7363
+created: 20260523164800000
+modified: 20260523164800000
+type: text/markdown
+
+``` python
+# ~/.config/qutebrowser/config.py
+c.fonts.default_size = "13pt"
+c.fonts.default_family = ["IosevkaTerm Nerd Font Mono"]
+```

@@ -7,3 +7,5 @@ type: text/markdown
 
 - [[Update Nix Channels]]
 - [[Update Nixos Packages]]
+
+you also may want to [[Clean Up Nixos]] after that
