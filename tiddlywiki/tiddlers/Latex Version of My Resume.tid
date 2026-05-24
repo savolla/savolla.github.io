@@ -1,0 +1,192 @@
+title: Latex Version of My Resume
+tags: latex
+roam-id: c6d6c39b-6df7-43bc-b4d7-4b8ab8f771bd
+created: 20260525025000000
+modified: 20260525025000000
+type: text/markdown
+
+``` latex
+\documentclass[letterpaper,10pt]{article}
+
+% ── Core packages ────────────────────────────────────────────
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage[sfdefault]{roboto}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+  {\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{2pt}%
+  \item[]%
+  {\textbf{#1}\hfill\small #2}\\
+  {\small\textit{#3}\hfill\textit{#4}}%
+  \vspace{-2pt}%
+}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemList}{\begin{itemize}[leftmargin=0.2in, label=\textbullet, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{4pt}}
+
+% ─────────────────────────────────────────────────────────────
+\begin{document}
+
+% ── HEADER ───────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\textbf{Kuzey Ko\c{c}}}\\[4pt]
+  \small
+  +90 542 393 7991
+  \quad|\quad
+  \href{mailto:kuzey.koc@tutamail.com}{kuzey.koc@tutamail.com}
+  \quad|\quad
+  \href{https://linkedin.com/in/kuzeykoc}{linkedin.com/in/kuzeykoc}
+  \quad|\quad
+  \href{https://savolla.github.io}{savolla.github.io}
+  \quad|\quad
+  \href{https://youtube.com/@savollaross/videos}{youtube.com/@savollaross}
+  \quad|\quad
+  Kocaeli, TR
+\end{center}
+
+% ── SUMMARY ──────────────────────────────────────────────────
+\section{Summary}
+DevOps and Site Reliability Engineer currently leading infrastructure for Hopi, one of
+Turkey's largest loyalty and fintech super-apps, managing 20+ microservices across a
+30-node GKE production cluster on Google Cloud Platform. Built on a foundation of
+on-premises Linux systems and network administration at Gravity Robotics, where
+infrastructure was designed, cabled, and operated from bare metal up as part of a
+TUBITAK-funded industrial robotics project. Started a career in tech as a STEM
+Instructor -- a thread that still runs through everything: publishes practitioner-level
+DevOps tutorials on YouTube and maintains a technical blog, because understanding
+something well enough to teach it is the only kind of understanding worth having.
+
+% ── TECHNICAL SKILLS ─────────────────────────────────────────
+\section{Technical Skills}
+\resumeSubHeadingList
+  \resumeItem{\textbf{Cloud Platforms}: Google Cloud Platform (GCP) -- GKE, Cloud SQL, Pub/Sub, Cloud Storage, IAM, VPC; Amazon Web Services (AWS)}
+  \resumeItem{\textbf{Container Orchestration}: Kubernetes (K8s), OpenShift, Helm, Kustomize, Docker}
+  \resumeItem{\textbf{CI/CD and GitOps}: Jenkins, ArgoCD, GitOps workflows}
+  \resumeItem{\textbf{Monitoring and Observability}: Prometheus, Grafana, alerting and on-call pipelines}
+  \resumeItem{\textbf{Databases and Messaging}: MySQL, MySQL NDB Cluster, Cassandra, PostgreSQL,  Redis, Cloud SQL, RabbitMQ}
+  \resumeItem{\textbf{Virtualization and Infrastructure}: Terraform, Proxmox VE, KVM, VirtualBox, Vagrant}
+  \resumeItem{\textbf{Programming and Scripting}: Python, Bash, C, C++, SQL}
+  \resumeItem{\textbf{Tooling}: Git, Tmux, Emacs, Vim, LaTeX, Confluence}
+\resumeSubHeadingListEnd
+
+% ── EXPERIENCE ───────────────────────────────────────────────
+\section{Experience}
+\resumeSubHeadingList
+
+  \resumeSubheading
+    {Lead DevOps Engineer / Site Reliability Engineer (SRE) -- Hopi}{Jun 2025 -- Present}
+    {Kartaca}{Istanbul, TR}
+  \resumeItemList
+    \resumeItem{Own the full infrastructure lifecycle for Hopi (hopi.com.tr), a large-scale loyalty and fintech super-app serving millions of users on iOS and Android, hosted on a GKE cluster spanning 30 production nodes across 4 environments (production, staging, test, pretest).}
+    \resumeItem{Manage and operate 20+ microservices in production, maintaining a weekly deployment cadence with zero unplanned downtime as a 2-person DevOps team.}
+    \resumeItem{Administer and optimize GCP-managed data services including Cloud SQL (PostgreSQL and MySQL), Pub/Sub event streaming, Cloud Storage, and VPC networking, keeping p99 query latency within defined SLOs.}
+    \resumeItem{Design and maintain Helm-based release pipelines and Kustomize overlays across all 4 environments, standardizing deployments for a cross-functional team of 10+ engineers.}
+    \resumeItem{Lead on-call rotation and production incident response; define SLOs and SLIs and build Prometheus and Grafana dashboards and alerting rules to proactively surface availability and latency regressions.}
+    \resumeItem{Manage Cassandra and Redis clusters powering Hopi's loyalty engine and session caching layer, performing capacity planning and tuning for high-throughput workloads.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Research and Development Engineer (Intern promoted to Full-time)}{Jun 2021 -- Jun 2024}
+    {Gravity Robotics}{Kocaeli, TR}
+  \resumeItemList
+    \resumeItem{Contributed to a TUBITAK-funded research project developing a 9-axis industrial arc welding robot for shipbuilding applications, mounted on an X-Y gantry system and running entirely on Linux.}
+    \resumeItem{Built and maintained the on-premises network infrastructure for the robotics lab, including switch configuration, static IP allocation, and local DNS -- providing a stable environment for robot-to-server communication.}
+    \resumeItem{Administered Linux servers hosting the trajectory computation backend, handling OS provisioning, service management (systemd), log monitoring, and routine maintenance across the lab environment.}
+    \resumeItem{Built custom Linux images for embedded robot controllers using Buildroot, cross-compiling for target hardware and optimizing the system footprint for real-time operation.}
+    \resumeItem{Developed backend services in Python Flask and C++ using ROS and MoveIt for robot trajectory calculations, applying Forward and Inverse Kinematics to generate motion paths for the welding arm.}
+    \resumeItem{Managed a self-hosted Kubernetes cluster used to deploy and run backend computation services on-premises, operating workload scheduling, resource management, and rolling updates.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {STEM Instructor (Part-time)}{Feb 2019 -- Sep 2019}
+    {Spectre Robotics}{D\"{u}zce, TR}
+  \resumeItemList
+    \resumeItem{Designed and delivered technology education programmes for children and young adults covering Linux fundamentals, SQL and databases, basic networking, and hands-on electronics with Arduino and Raspberry Pi.}
+    \resumeItem{Developed structured curricula from scratch for non-technical audiences, strengthening written communication, lesson planning, and technical mentoring skills.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ── EDUCATION ────────────────────────────────────────────────
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+    {D\"{u}zce University}{D\"{u}zce, TR}
+    {Bachelor of Science in Computer Engineering}{Aug 2019 -- May 2025}
+  \resumeItemList
+    \resumeItem{\textit{Studies suspended 2021--2023 to pursue full-time industry role at Gravity Robotics.}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ── PROJECTS ─────────────────────────────────────────────────
+\section{Projects}
+\resumeSubHeadingList
+  \resumeSubheading
+    {NixOS Home Lab -- Self-Managed Infrastructure Environment}{Late 2024 -- Present}
+    {Proxmox VE, Kubernetes, Terraform, NixOS}{}
+  \resumeItemList
+    \resumeItem{Operate a Proxmox-based home lab running a self-managed Kubernetes cluster and multiple NixOS virtual machines, provisioned entirely through Terraform and Nix -- mirroring production infrastructure practices with no snowflake servers and no manual configuration.}
+    \resumeItem{Serves as the development and testing ground for CI/CD pipeline designs and infrastructure patterns published on YouTube and the technical blog.}
+  \resumeItemListEnd
+  \resumeSubheading
+    {Legolas -- Personal DevOps Command Automation Framework}{Jun 2025 -- Present}
+    {Python, fzf, YAML, Shell}{}
+  \resumeItemList
+    \resumeItem{Built a CLI tool that turns YAML-defined command recipes into interactive, parameter-driven workflows using fzf -- eliminating repetitive kubectl, Helm, and shell commands from daily SRE operations.}
+    \resumeItem{Each recipe declares its parameters, how to populate them (live kubectl output, shell commands, or free input), and a composable output template -- keeping operational knowledge reusable, versioned, and shareable across the team.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ── TECHNICAL WRITING AND COMMUNITY ─────────────────────────
+\section{Technical Writing and Community}
+\resumeSubHeadingList
+  \resumeSubheading
+    {DevOps Content Creator and Technical Blogger}{May 2025 -- Present}
+    {youtube.com/@savollaross/videos \quad|\quad savolla.github.io}{}
+  \resumeItemList
+    \resumeItem{Produce practitioner-level video series on niche infrastructure topics including NixOS-based Kubernetes cluster setup, Terraform on Proxmox, and end-to-end CI/CD pipeline design; all content is hands-on verified against the home lab environment.}
+    \resumeItem{Maintain a technical blog with 10--15 long-form posts on Linux internals, Kubernetes operations, and infrastructure automation -- written to be immediately actionable for other engineers.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ── CERTIFICATIONS ───────────────────────────────────────────
+\section{Certifications}
+\resumeSubHeadingList
+  \resumeItem{EF SET English Certificate -- B2 Upper Intermediate (52/100)}
+\resumeSubHeadingListEnd
+
+\end{document}
+```
