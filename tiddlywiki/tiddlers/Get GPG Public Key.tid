@@ -1,0 +1,20 @@
+title: Get GPG Public Key
+tags: gpg cryptography @zettel _method
+roam-id: 4234900f-fd56-4a94-95e2-77b460e90af9
+created: 20260524193800000
+modified: 20260524193800000
+type: text/markdown
+
+[[Get List of GPG Keys]] first to get the key details. you can use both your key id or email address directly in the following command to get the public key. I choose email since it is more straightforward
+
+``` {.bash org-language="sh" results="output drawer"}
+gpg --armor --export kuzey.koc@kartaca.com
+```
+
+:results: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEaT+0LhYJKwYBBAHaRw8BAQdA/g6i9sJi3rfVfwcieNcDWgF/rWily3eacdvj N8QNWyu0Ikt1emV5IEtvw6cgPGt1emV5LmtvY0BrYXJ0YWNhLmNvbT6IkwQTFgoA OxYhBJu4zcRcfcOjwpQ+L7emJH9ZQc5dBQJpP7QuAhsDBQsJCAcCAiICBhUKCQgL AgQWAgMBAh4HAheAAAoJELemJH9ZQc5dlDAA/RsSfRA9wKP0UdYsghrGE9cSvI/y I9qmOU4JTohZiGiEAP9vaNGAWvOOoKGS59DIf/CBLr8E6mIqYnysSWsePd7DA7g4 BGk/tC4SCisGAQQBl1UBBQEBB0A597pv//f8m0eY0BM6J/JhLNACTlVhqW9nRNrn syLgfAMBCAeIeAQYFgoAIBYhBJu4zcRcfcOjwpQ+L7emJH9ZQc5dBQJpP7QuAhsM AAoJELemJH9ZQc5dbPgBAP5kuWrsHzboXdjTXsGH73BFojym6ysEqdYi5kUgFQfR AQDicVhU4G9tiDzOZTWwtUdjIbCIcH5CGESw6W/ekedTCQ== =5l0k -----END PGP PUBLIC KEY BLOCK-----
+
+[^1]
+
+[^1]: <https://www.youtube.com/watch?v=tXM77BpgeiA&pp=ygUKZ3BnIGdpdGh1Yg%3D%3D>

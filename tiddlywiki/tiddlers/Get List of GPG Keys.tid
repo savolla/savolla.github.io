@@ -6,11 +6,15 @@ modified: 20260510205100000
 type: text/markdown
 
 ``` {.bash org-language="sh" results="output drawer"}
-gpg --list-keys
+gpg --list-secret-keys --keyid-format=long
 ```
 
 :results: *home/savolla/project/repos/one-ring/dotfiles/nix*.gnupg/pubring.kbx
 
 ------------------------------------------------------------------------
 
-pub ed25519 2025-12-15 \[SC\] 9BB8CDC45C7DC3A3C2943E2FB7A6247F5941CE5D uid \[ultimate\] Kuzey Koç \<kuzey.koc@kartaca.com\> sub cv25519 2025-12-15 \[E\]
+sec ed25519/B7A6247F5941CE5D 2025-12-15 \[SC\] 9BB8CDC45C7DC3A3C2943E2FB7A6247F5941CE5D uid \[ultimate\] Kuzey Koç \<kuzey.koc@kartaca.com\> ssb cv25519/65212B8E5D379017 2025-12-15 \[E\]
+
+[^1]
+
+[^1]: <https://www.youtube.com/watch?v=tXM77BpgeiA&pp=ygUKZ3BnIGdpdGh1Yg%3D%3D>

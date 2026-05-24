@@ -1,0 +1,16 @@
+title: Create GPG Key Pair
+tags: gpg cryptography @zettel _method
+roam-id: 8e99485c-2efa-44a5-9c2a-b41ae78a63e2
+created: 20260524193500000
+modified: 20260524193500000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gpg --full-generate-key
+```
+
+provide information, I\'d choose RSA, 4096 bits long, disable expiration for the key by using 0.
+
+[^1]
+
+[^1]: <https://www.youtube.com/watch?v=tXM77BpgeiA&pp=ygUKZ3BnIGdpdGh1Yg%3D%3D>
