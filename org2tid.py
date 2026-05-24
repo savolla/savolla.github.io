@@ -9,11 +9,14 @@ Handles:
   - ROAM_REFS → roam-refs: field on bibliography nodes
   - [[id:UUID][Label]] links → [[Target Title]] wikilinks
   - [[wikilinks]] and {{{ TW filters }}} preserved through pandoc
+  - [[attachment:file]] and [[file:path]] links → copied to assets + URL rewritten
   - Tag filtering: allowlist + blocklist (block takes priority)
   - Incremental builds: only reprocess changed files
   - Orphan cleanup: delete tiddlers whose source node no longer exists
+  - @post nodes: child headings absorbed into body, not separate tiddlers
+  - CREATED property → TiddlyWiki native created/modified fields
 
-Requirements: Python 3.11+, pandoc in PATH
+Requirements: Python 3.11+, pandoc in PATH, titlecase (pip install titlecase)
 Usage: python3 org_to_tiddlers.py
 """
 
@@ -21,13 +24,14 @@ from __future__ import annotations
 
 import base64
 import json
-import os
 import re
+import shutil
 import subprocess
 import sys
-from dataclasses import dataclass, field
-from pathlib import Path
+from dataclasses import dataclass
 from datetime import datetime
+from pathlib import Path
+
 from titlecase import titlecase
 
 # ─────────────────────────────────────────────────────────────────
@@ -41,6 +45,10 @@ SOURCE_DIRS: list[str] = [
 ]
 
 OUTDIR: str = "./tiddlywiki/tiddlers"
+
+ASSETS_SRC_DIR: str = "~/resource/notes/org/roam/assets"
+ASSETS_OUT_DIR: str = "./tiddlywiki/assets"
+SITE_BASE_URL: str = "https://savolla.github.io"
 
 # A node is included if it has ANY of these tags.
 # Leave empty to allow all nodes (subject to blocklist).
@@ -94,15 +102,14 @@ TAG_COLORS: dict[str, str] = {
 # Manifest file path — tracks tiddler → source mapping for incremental builds
 MANIFEST_PATH: str = "./.org2tid_manifest.json"
 
-
 # Titles matching any of these regex patterns will not be converted.
 # Useful for excluding journal files by date title format.
 BLOCK_TITLE_PATTERNS: list[str] = [
-    r"^\d{4}-\d{2}-\d{2}$",  # e.g. 2026-04-23
-    r"^\d{2}:\d{2}$",  # e.g. 04:23
-    r"^\d{4}-\d{2}-\d{2}_\d{2}:\d{2}$",  # e.g. 2026-04-23_13:10
-    r"^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}$",  # e.g. 2026-04-23 13:10
-    r"^\d{4}.\d{2}.\d{2}\/\d{2}:\d{2}:\d{2}$",  # 2025.07.30/14:41:42
+    r"^\d{4}-\d{2}-\d{2}$",            # e.g. 2026-04-23
+    r"^\d{2}:\d{2}$",                   # e.g. 04:23
+    r"^\d{4}-\d{2}-\d{2}_\d{2}:\d{2}$", # e.g. 2026-04-23_13:10
+    r"^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}$",# e.g. 2026-04-23 13:10
+    r"^\d{4}.\d{2}.\d{2}\/\d{2}:\d{2}:\d{2}$", # 2025.07.30/14:41:42
     r"^\[\[.*\]\]$",
     r"^index$",
     r"^TODO",
@@ -114,6 +121,7 @@ _BLOCK_TITLE_RES = [re.compile(p) for p in BLOCK_TITLE_PATTERNS]
 # ─────────────────────────────────────────────────────────────────
 # DATA STRUCTURES
 # ─────────────────────────────────────────────────────────────────
+
 @dataclass
 class Node:
     id: str
@@ -123,7 +131,6 @@ class Node:
     roam_refs: str
     aliases: list[str]
     is_root: bool
-    source_file: str
     source_file: str
     created: str = ""
 
@@ -139,24 +146,22 @@ class ManifestEntry:
 # ORG PARSER
 # ─────────────────────────────────────────────────────────────────
 
-# Matches a heading line: capture (stars, heading_text)
-_HEADING_RE = re.compile(r"^(\*+)\s+(.*)")
-# Matches trailing inline tags on a heading: :tag1:tag2:
+_HEADING_RE    = re.compile(r"^(\*+)\s+(.*)")
 _INLINE_TAGS_RE = re.compile(r"\s+(:[A-Za-z0-9_@#:]+:)\s*$")
-# Matches #+keyword: value
-_KEYWORD_RE = re.compile(r"^#\+(\w+):\s*(.*)", re.IGNORECASE)
-# Use plain string matching for properties — simpler and faster
-_PROP_LINE_RE = re.compile(r"^\s*:([^:]+):\s*(.*?)\s*$")
+_KEYWORD_RE    = re.compile(r"^#\+(\w+):\s*(.*)", re.IGNORECASE)
+_PROP_LINE_RE  = re.compile(r"^\s*:([^:]+):\s*(.*?)\s*$")
 
 
-def write_tag_tiddlers(tag_colors: dict[str, str], outdir: Path) -> None:
-    for tag, color in tag_colors.items():
-        safe = safe_filename(tag)
-        outpath = outdir / f"{safe}.tid"
-        with outpath.open("w", encoding="utf-8") as f:
-            f.write(f"title: {tag}\n")
-            f.write(f"color: {color}\n")
-            f.write("\n")
+def parse_org_timestamp(ts: str) -> str:
+    """Convert org CREATED timestamp to TiddlyWiki format YYYYMMDDHHMMSSMMM."""
+    ts = ts.strip()
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d"):
+        try:
+            dt = datetime.strptime(ts, fmt)
+            return dt.strftime("%Y%m%d%H%M%S") + "000"
+        except ValueError:
+            continue
+    return ""
 
 
 def _parse_inline_tags(heading_text: str) -> tuple[str, list[str]]:
@@ -164,7 +169,7 @@ def _parse_inline_tags(heading_text: str) -> tuple[str, list[str]]:
     m = _INLINE_TAGS_RE.search(heading_text)
     if not m:
         return heading_text.strip(), []
-    tag_str = m.group(1)  # e.g. ':tag1:tag2:'
+    tag_str = m.group(1)
     tags = [t for t in tag_str.split(":") if t]
     title = heading_text[: m.start()].strip()
     return title, tags
@@ -179,20 +184,12 @@ def _parse_aliases(value: str) -> list[str]:
     """Parse '"alias one" "alias two"' → ['alias one', 'alias two']."""
     return re.findall(r'"([^"]+)"', value)
 
-def parse_org_timestamp(ts: str) -> str:
-    ts = ts.strip()
-    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d"):
-        try:
-            dt = datetime.strptime(ts, fmt)
-            return dt.strftime("%Y%m%d%H%M%S") + "000"
-        except ValueError:
-            continue
-    return ""
 
 def parse_org_file(path: Path) -> list[Node]:
     """
     Parse an org file and return all org-roam nodes found in it.
     Each node with an :ID: property becomes a Node.
+    @post nodes absorb child headings into their body.
     """
     lines = path.read_text(encoding="utf-8").splitlines()
     nodes: list[Node] = []
@@ -200,7 +197,6 @@ def parse_org_file(path: Path) -> list[Node]:
     # State
     in_props = False
     first_node_done = False
-    cur_created = ""
     cur_is_post = False
 
     # Current node being built
@@ -211,6 +207,7 @@ def parse_org_file(path: Path) -> list[Node]:
     cur_body_lines: list[str] = []
     cur_roam_refs = ""
     cur_aliases: list[str] = []
+    cur_created = ""
 
     # File-level metadata (before any heading)
     filetags: list[str] = []
@@ -219,29 +216,28 @@ def parse_org_file(path: Path) -> list[Node]:
         nonlocal first_node_done
         if not cur_id:
             return
-        nodes.append(
-            Node(
-                id=cur_id,
-                title=cur_title,
-                tags=cur_tags[:],
-                body="\n".join(cur_body_lines),
-                roam_refs=cur_roam_refs,
-                aliases=cur_aliases[:],
-                is_root=not first_node_done,
-                source_file=str(path),
-                created=cur_created,
-            )
-        )
+        nodes.append(Node(
+            id=cur_id,
+            title=cur_title,
+            tags=cur_tags[:],
+            body="\n".join(cur_body_lines),
+            roam_refs=cur_roam_refs,
+            aliases=cur_aliases[:],
+            is_root=not first_node_done,
+            source_file=str(path),
+            created=cur_created,
+        ))
         first_node_done = True
 
     for line in lines:
-        # Heading line
+        # ── Heading line ──────────────────────────────────────────
         hm = _HEADING_RE.match(line)
         if hm:
             level = len(hm.group(1))
             heading_text = hm.group(2)
             title, own_tags = _parse_inline_tags(heading_text)
 
+            # @post nodes absorb deeper headings into body
             if cur_is_post and level > cur_level:
                 cur_body_lines.append(line)
                 continue
@@ -260,13 +256,15 @@ def parse_org_file(path: Path) -> list[Node]:
             in_props = False
             continue
 
-        # Properties block boundaries
+        # ── Properties block boundaries ───────────────────────────
         if re.match(r"^\s*:PROPERTIES:\s*$", line, re.IGNORECASE):
             in_props = True
             continue
         if re.match(r"^\s*:END:\s*$", line, re.IGNORECASE):
             in_props = False
             continue
+
+        # ── Inside properties block ───────────────────────────────
         if in_props:
             pm = _PROP_LINE_RE.match(line)
             if pm:
@@ -280,19 +278,7 @@ def parse_org_file(path: Path) -> list[Node]:
                     cur_created = parse_org_timestamp(val)
             continue
 
-        # Inside properties block
-        if in_props:
-            pm = _PROP_LINE_RE.match(line)
-            if pm:
-                key = pm.group(1).upper()
-                val = pm.group(2).strip()
-                if key == "ID":
-                    cur_id = val
-                elif key == "ROAM_REFS":
-                    cur_roam_refs = val
-            continue
-
-        # File-level keywords (before any heading, cur_level == 0)
+        # ── File-level keywords ───────────────────────────────────
         km = _KEYWORD_RE.match(line)
         if km:
             key = km.group(1).upper()
@@ -309,8 +295,8 @@ def parse_org_file(path: Path) -> list[Node]:
                     cur_aliases = _parse_aliases(val)
             continue
 
-        # Body line — accumulate for any node level
-        if cur_level >= 0 and cur_id or cur_level > 0:
+        # ── Body line ─────────────────────────────────────────────
+        if (cur_level >= 0 and cur_id) or cur_level > 0:
             cur_body_lines.append(line)
 
     flush()
@@ -321,12 +307,8 @@ def parse_org_file(path: Path) -> list[Node]:
 # LINK RESOLVER — Pass 1
 # ─────────────────────────────────────────────────────────────────
 
-
 def build_link_map(all_nodes: list[Node]) -> dict[str, str]:
-    """
-    Build UUID → display title map for link rewriting.
-    All nodes use their human title (not UUID) so links render meaningfully.
-    """
+    """Build UUID → display title map for link rewriting."""
     return {node.id: node.title for node in all_nodes if node.id}
 
 
@@ -334,28 +316,20 @@ def build_link_map(all_nodes: list[Node]) -> dict[str, str]:
 # TAG FILTER
 # ─────────────────────────────────────────────────────────────────
 
-
 def should_convert(tags: list[str]) -> bool:
-    """
-    Returns True if this node should be converted to a tiddler.
-    Blocklist takes priority over allowlist.
-    """
+    """Returns True if this node should be converted to a tiddler."""
     tag_set = set(tags)
 
-    # Block takes priority
     for tag in BLOCK_TAGS:
         if tag in tag_set:
             return False
 
-    # Empty allowlist = allow everything not blocked
     if not ALLOW_TAGS:
         return True
 
-    # Handle __untagged__ sentinel
     if "__untagged__" in ALLOW_TAGS and not tags:
         return True
 
-    # Require at least one allowlist match
     for tag in ALLOW_TAGS:
         if tag in tag_set:
             return True
@@ -363,24 +337,90 @@ def should_convert(tags: list[str]) -> bool:
     return False
 
 
-# title blocker
 def should_convert_title(title: str) -> bool:
     """Return False if the title matches any blocked pattern."""
     return not any(p.search(title) for p in _BLOCK_TITLE_RES)
 
 
 # ─────────────────────────────────────────────────────────────────
+# ASSET HANDLER
+# ─────────────────────────────────────────────────────────────────
+
+# Image extensions — rendered as <img>, everything else as <a>
+_IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg'}
+
+
+def copy_assets(
+    node: Node,
+    assets_src: Path,
+    assets_out: Path,
+) -> list[tuple[str, str]]:
+    """
+    Find all attachment/file links in node body, copy the files to assets_out,
+    and return a list of (original_org_link, markdown_replacement) tuples.
+    """
+    rewrites: list[tuple[str, str]] = []
+
+    # Format 1: [[attachment:filename]]
+    # org-attach stores files at assets/<uuid[:2]>/<uuid[2:]>/filename
+    for m in re.finditer(r'\[\[attachment:([^\]]+)\]\]', node.body):
+        filename = m.group(1)
+        uuid = node.id
+        src = assets_src / uuid[:2] / uuid[2:] / filename
+        if src.exists():
+            dst = assets_out / filename
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+            new_url = f"{SITE_BASE_URL}/assets/{filename}"
+            ext = src.suffix.lower()
+            if ext in _IMAGE_EXTS:
+                replacement = f"![{filename}]({new_url})"
+            else:
+                replacement = f"[{filename}]({new_url})"
+            rewrites.append((m.group(0), replacement))
+        else:
+            print(f"  WARNING: attachment not found: {src}")
+
+    # Format 2: [[file:path][label]] or [[file:path]]
+    for m in re.finditer(r'\[\[file:([^\]]+)\]\](?:\[([^\]]*)\])?', node.body):
+        filepath = m.group(1)
+        label = m.group(2) or Path(filepath).name
+        src = Path(filepath).expanduser()
+        if not src.is_absolute():
+            src = Path(node.source_file).parent / filepath
+        if src.exists():
+            filename = src.name
+            dst = assets_out / filename
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+            new_url = f"{SITE_BASE_URL}/assets/{filename}"
+            ext = src.suffix.lower()
+            if ext in _IMAGE_EXTS:
+                replacement = f"![{label}]({new_url})"
+            else:
+                replacement = f"[{label}]({new_url})"
+            rewrites.append((m.group(0), replacement))
+        else:
+            print(f"  WARNING: file not found: {src}")
+
+    return rewrites
+
+
+def rewrite_asset_links(body: str, rewrites: list[tuple[str, str]]) -> str:
+    """Apply asset link rewrites to body text."""
+    for original, replacement in rewrites:
+        body = body.replace(original, replacement)
+    return body
+
+
+# ─────────────────────────────────────────────────────────────────
 # BODY CONVERTER
 # ─────────────────────────────────────────────────────────────────
 
-# Matches [[id:UUID][Label]] org-roam links
-_ID_LINK_RE = re.compile(r"\[\[id:([0-9a-f-]+)\]\[([^\]]*)\]\]")
-# Matches [[wikilinks]]
+_ID_LINK_RE  = re.compile(r"\[\[id:([0-9a-f-]+)\]\[([^\]]*)\]\]")
 _WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
-# Matches {{{ TiddlyWiki filters/macros }}}
 _TW_FILTER_RE = re.compile(r"\{\{\{(.*?)\}\}\}", re.DOTALL)
 
-# Placeholder patterns (must survive pandoc unchanged — alphanumeric only)
 _WL_PREFIX = "XWLX"
 _TW_PREFIX = "XTWFX"
 
@@ -390,7 +430,6 @@ def _b64(s: str) -> str:
 
 
 def _unb64(s: str) -> str:
-    # Restore stripped padding
     padding = 4 - len(s) % 4
     if padding != 4:
         s += "=" * padding
@@ -399,22 +438,18 @@ def _unb64(s: str) -> str:
 
 def _rewrite_id_links(body: str, link_map: dict[str, str]) -> str:
     """Rewrite [[id:UUID][Label]] → [[Target Title]]."""
-
     def replace(m: re.Match) -> str:
         uuid, label = m.group(1), m.group(2)
         target = link_map.get(uuid, label)
         return f"[[{target}]]"
-
     return _ID_LINK_RE.sub(replace, body)
 
 
 def _protect(body: str) -> str:
     """Encode [[wikilinks]] and {{{TW filters}}} so pandoc can't touch them."""
-    # Protect TW filters first (they may contain [[ ]])
     body = _TW_FILTER_RE.sub(
         lambda m: f"{_TW_PREFIX}{_b64(m.group(1))}{_TW_PREFIX}", body
     )
-    # Protect wikilinks
     body = _WIKILINK_RE.sub(
         lambda m: f"{_WL_PREFIX}{_b64(m.group(1))}{_WL_PREFIX}", body
     )
@@ -441,13 +476,9 @@ def convert_body(body: str, link_map: dict[str, str]) -> str:
     if not body.strip():
         return ""
 
-    # Step 1: rewrite id links
     body = _rewrite_id_links(body, link_map)
-
-    # Step 2: protect wikilinks and TW filters
     body = _protect(body)
 
-    # Step 3: pandoc org → markdown
     result = subprocess.run(
         ["pandoc", "-f", "org", "-t", "markdown", "--wrap=none"],
         input=body,
@@ -456,10 +487,7 @@ def convert_body(body: str, link_map: dict[str, str]) -> str:
         check=True,
     )
     body = result.stdout
-    body = result.stdout
     body = re.sub(r'\{\.verbatim\}', '', body)
-
-    # Step 4: restore
     body = _restore(body)
 
     return body.strip()
@@ -469,17 +497,37 @@ def convert_body(body: str, link_map: dict[str, str]) -> str:
 # TIDDLER WRITER
 # ─────────────────────────────────────────────────────────────────
 
-
 def safe_filename(title: str) -> str:
     """Sanitize a title for use as a filename."""
     return re.sub(r"[/:\\]+", "_", title).strip("_")
 
 
+def write_tag_tiddlers(tag_colors: dict[str, str], outdir: Path) -> None:
+    """Write a tiddler for each tag with its color field set."""
+    for tag, color in tag_colors.items():
+        safe = safe_filename(tag)
+        outpath = outdir / f"{safe}.tid"
+        with outpath.open("w", encoding="utf-8") as f:
+            f.write(f"title: {tag}\n")
+            f.write(f"color: {color}\n")
+            f.write("\n")
+
+
 def node_to_tid(
-    node: Node, link_map: dict[str, str], outdir: Path, parent_node: Node | None = None
+    node: Node,
+    link_map: dict[str, str],
+    outdir: Path,
+    assets_src: Path,
+    assets_out: Path,
+    parent_node: Node | None = None,
 ) -> Path:
     """Convert a node to a .tid file, return the output path."""
-    body_md = convert_body(node.body, link_map)
+
+    # Rewrite asset links before pandoc conversion
+    rewrites = copy_assets(node, assets_src, assets_out)
+    node_body = rewrite_asset_links(node.body, rewrites)
+
+    body_md = convert_body(node_body, link_map)
 
     # Build tags: node tags + aliases as [[bracket]] tags
     tag_parts = node.tags[:]
@@ -487,13 +535,10 @@ def node_to_tid(
         tag_parts.append(f"[[{alias}]]")
     tags_str = " ".join(tag_parts)
 
-    # Append source reference if this is a subtree node under a @biblio root
+    # Append source reference for subtree nodes under a @biblio root
     if parent_node and parent_node.title:
         source_line = f"\n<sup>source: [[{parent_node.title}]]</sup>"
-        if body_md:
-            body_md = body_md + "\n\n" + source_line
-        else:
-            body_md = source_line
+        body_md = (body_md + "\n\n" + source_line) if body_md else source_line
 
     filename = safe_filename(node.title) + ".tid"
     outpath = outdir / filename
@@ -521,7 +566,6 @@ def node_to_tid(
 # MANIFEST MANAGER
 # ─────────────────────────────────────────────────────────────────
 
-
 def load_manifest(manifest_path: Path) -> dict[str, ManifestEntry]:
     """Load manifest from disk. Returns empty dict if not found."""
     if not manifest_path.exists():
@@ -534,11 +578,7 @@ def load_manifest(manifest_path: Path) -> dict[str, ManifestEntry]:
 def save_manifest(manifest: dict[str, ManifestEntry], manifest_path: Path) -> None:
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     with manifest_path.open("w", encoding="utf-8") as f:
-        json.dump(
-            {k: vars(v) for k, v in manifest.items()},
-            f,
-            indent=2,
-        )
+        json.dump({k: vars(v) for k, v in manifest.items()}, f, indent=2)
 
 
 def needs_rebuild(
@@ -562,7 +602,6 @@ def needs_rebuild(
 # MAIN
 # ─────────────────────────────────────────────────────────────────
 
-
 def collect_org_files(source_dirs: list[str]) -> list[Path]:
     files = []
     for d in source_dirs:
@@ -577,6 +616,10 @@ def collect_org_files(source_dirs: list[str]) -> list[Path]:
 def main() -> None:
     outdir = Path(OUTDIR).expanduser()
     outdir.mkdir(parents=True, exist_ok=True)
+
+    assets_src = Path(ASSETS_SRC_DIR).expanduser()
+    assets_out = Path(ASSETS_OUT_DIR).expanduser()
+    assets_out.mkdir(parents=True, exist_ok=True)
 
     manifest_path = Path(MANIFEST_PATH).expanduser()
     manifest = load_manifest(manifest_path)
@@ -599,7 +642,6 @@ def main() -> None:
     # ── Pass 2: convert nodes to tiddlers ────────────────────────
     print("Pass 2: converting nodes...")
 
-    # Map source file path → root (file-level) node, for parent lookup
     root_node_by_file: dict[str, Node] = {}
     for node in all_nodes:
         if node.is_root:
@@ -608,13 +650,13 @@ def main() -> None:
     new_manifest: dict[str, ManifestEntry] = {}
     built = 0
     skipped = 0
-    errors = 0
 
     for node in all_nodes:
         if not should_convert(node.tags):
             continue
         if not should_convert_title(node.title):
             continue
+
         tid_filename = safe_filename(node.title) + ".tid"
         source_mtime = Path(node.source_file).stat().st_mtime
         new_manifest[tid_filename] = ManifestEntry(
@@ -627,7 +669,6 @@ def main() -> None:
             skipped += 1
             continue
 
-        # Attach parent for subtree nodes under a @biblio-tagged root
         parent: Node | None = None
         if not node.is_root:
             file_root = root_node_by_file.get(node.source_file)
@@ -635,7 +676,7 @@ def main() -> None:
                 parent = file_root
 
         try:
-            outpath = node_to_tid(node, link_map, outdir, parent)
+            outpath = node_to_tid(node, link_map, outdir, assets_src, assets_out, parent)
             print(f"  → {outpath.name}")
             built += 1
         except subprocess.CalledProcessError as e:
@@ -648,6 +689,7 @@ def main() -> None:
             sys.exit(1)
 
     write_tag_tiddlers(TAG_COLORS, outdir)
+
     # ── Orphan cleanup ────────────────────────────────────────────
     deleted = 0
     for tid_filename, entry in manifest.items():
