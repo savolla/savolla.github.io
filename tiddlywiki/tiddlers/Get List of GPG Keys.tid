@@ -5,6 +5,12 @@ created: 20260510205100000
 modified: 20260510205100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` {.bash org-language="sh" results="output drawer"}
 gpg --list-keys
 ```
+
+:results: *home/savolla/project/repos/one-ring/dotfiles/nix*.gnupg/pubring.kbx
+
+------------------------------------------------------------------------
+
+pub ed25519 2025-12-15 \[SC\] 9BB8CDC45C7DC3A3C2943E2FB7A6247F5941CE5D uid \[ultimate\] Kuzey Koç \<kuzey.koc@kartaca.com\> sub cv25519 2025-12-15 \[E\]
