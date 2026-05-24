@@ -1,0 +1,25 @@
+title: Enable GPG Agent Service on Nixos
+tags: nixos gpg @zettel _method
+roam-id: 94cb2b75-ef77-4e0a-afb9-bce5606bb373
+created: 20260524204800000
+modified: 20260524204800000
+type: text/markdown
+
+``` nix
+# configuration.nix
+programs = {
+  gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    pinentryPackage = pkgs.pinentry-dmenu;
+  };
+};
+```
+
+you can also see available pinentry programs for nixos [here](https://search.nixos.org/packages?channel=25.11&query=pinentry). since we choose `pinentry-dmenu` then we also need to specify that package in our `system packages`
+
+``` nix
+systemPackages = with pkgs; [
+  pinentry-dmenu
+];
+```

@@ -1,0 +1,11 @@
+title: Restart GPG Agent
+tags: cryptography gpg @zettel _method
+roam-id: a83841d8-6b89-464c-aa6f-a55db1918c31
+created: 20260524204800000
+modified: 20260524204800000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+gpgconf --kill gpg-agent
+gpgconf --launch gpg-agent
+```
