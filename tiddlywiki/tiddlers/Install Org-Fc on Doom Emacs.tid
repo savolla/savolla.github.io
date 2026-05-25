@@ -5,7 +5,16 @@ created: 20260525175300000
 modified: 20260525175300000
 type: text/markdown
 
-in your `config.el` add;
+add the following into `packages.el`
+
+``` elisp
+(package! org-fc
+  :recipe (:host nil
+           :repo "https://git.sr.ht/~l3kn/org-fc"
+           :files (:defaults "awk" "demo.org")))
+```
+
+then in your `config.el` add;
 
 ``` elisp
 ;; org-fc

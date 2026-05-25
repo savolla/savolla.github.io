@@ -1,0 +1,14 @@
+title: Default Port for the Kubernetes API Server
+tags: fc @zettel _fact
+roam-id: 5eade23f-b553-4502-a49c-caa7d3ef635e
+created: 20260525180400000
+modified: 20260525180400000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  front      2.50   1     0.01       2026-05-25T15:31:15Z
+
+6443
