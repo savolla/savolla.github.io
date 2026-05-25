@@ -1,0 +1,12 @@
+title: Terraform File Extension Where Declared Variables Are Defined
+tags: fc
+roam-id: eee57e60-0f91-428b-a59c-18728956b413
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  front      2.50   0     0.00       2026-05-25T13:18:38Z
+
+`.trfvars`

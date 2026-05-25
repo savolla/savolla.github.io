@@ -1,6 +1,0 @@
-title: In Which Type of File Do We "Define" Terraform Variable Values?
-tags: drill
-roam-id: 3d7edef4-91b1-40ec-b32f-ad78124d9dba
-type: text/markdown
-
-in `.trfvars` file

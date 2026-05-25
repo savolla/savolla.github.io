@@ -7,6 +7,36 @@ type: text/markdown
 
 we really don\'t need the [anki](https://apps.ankiweb.net/) when we have `emacs` and `org-mode`
 
+## Why `org-fc` and not `org-drill` or `anki` ?
+
+## Setting up `org-fc` in doom emacs
+
+in your `config.el` add;
+
+``` elisp
+;; org-fc
+(use-package! org-fc
+  :custom
+  (org-fc-directories '("/home/savolla/resource/notes/org/roam/zettels"
+                        "/home/savolla/resource/notes/org/roam/biblio/notes"
+                        "/home/savolla/resource/notes/org/roam/journal"))
+  :config
+  (require 'org-fc-hydra))
+```
+
+[[Refresh Doom Emacs]]
+
+## Pre-made decks using tag filters
+
+``` elisp
+;;; pre-made decks
+(defun my/fc-terraform () (interactive)
+  (org-fc-review '(:paths all :filter (tag "terraform"))))
+
+(defun my/fc-terraform-facts () (interactive)
+  (org-fc-review '(:paths all :filter (and (tag "terraform") (tag "_fact")))))
+```
+
 ## Setting up Org-Drill
 
 in your `doom-emacs` configuration files `config.el` add the following function
