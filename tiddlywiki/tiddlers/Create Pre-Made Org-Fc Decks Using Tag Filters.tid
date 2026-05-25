@@ -5,6 +5,8 @@ created: 20260525175500000
 modified: 20260525175500000
 type: text/markdown
 
+I prepared two custom decks that I can study using org-fc\'s filters operators. the first one will show all cards tagged with `fc` and `terraform`. but the second one will only filter terraform facts
+
 ``` elisp
 ;;; pre-made decks
 (defun my/fc-terraform () (interactive)

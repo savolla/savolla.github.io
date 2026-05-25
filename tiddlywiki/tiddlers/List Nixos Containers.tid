@@ -1,0 +1,10 @@
+title: List Nixos Containers
+tags: nixos nix @zettel _method
+roam-id: d3cd2f51-85ef-4468-8128-899cce40a9ec
+created: 20260525184100000
+modified: 20260525184100000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+nixos-container list
+```

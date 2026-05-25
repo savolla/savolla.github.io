@@ -1,0 +1,8 @@
+title: Create Nixos Container
+tags: nixos nix @zettel _method
+roam-id: be5e7828-9121-4e7d-a16e-47b8c15b4456
+created: 20260525183600000
+modified: 20260525183600000
+type: text/markdown
+
+make sure you [[Install Nixos-Container Package on Nixos]]

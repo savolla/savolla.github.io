@@ -1,0 +1,14 @@
+title: Install Nixos-Container Package on Nixos
+tags: nixos nix @zettel _method
+roam-id: 8f3d722f-087c-482b-aabf-6bb810212479
+created: 20260525183700000
+modified: 20260525183700000
+type: text/markdown
+
+add the following into your `system packages`
+
+``` nix
+systemPackages = with pkgs; [
+  nixos-container
+];
+```

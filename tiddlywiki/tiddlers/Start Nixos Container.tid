@@ -1,0 +1,12 @@
+title: Start Nixos Container
+tags: nixos nix @zettel _method
+roam-id: bd4b960d-a04e-40a1-b1df-8570d00bbc90
+created: 20260525184300000
+modified: 20260525184300000
+type: text/markdown
+
+first [[List Nixos Containers]] to check what you have. then say we have a container named \"webserver\". start it like the following
+
+``` {.bash org-language="sh"}
+sudo nixos-container start webserver
+```
