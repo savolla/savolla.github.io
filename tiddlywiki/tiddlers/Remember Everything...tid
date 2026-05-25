@@ -1,5 +1,5 @@
 title: Remember Everything..
-tags: @post orgmode emacs anki org_drill flashcard srs
+tags: doomemacs @post orgmode emacs anki org_drill flashcard srs
 roam-id: 4b8ea2d0-be77-413b-a3d1-a851f30e82d4
 created: 20260525154100000
 modified: 20260525154100000
@@ -7,70 +7,32 @@ type: text/markdown
 
 we really don\'t need the [anki](https://apps.ankiweb.net/) when we have `emacs` and `org-mode`
 
-## Why `org-fc` and not `org-drill` or `anki` ?
+## why org-fc and not org-drill or anki?
 
-## Setting up `org-fc` in doom emacs
-
-in your `config.el` add;
+`org-fc` is scalable with its own `filter` operator. it uses `awk` to scan all entries with `:fc:` tag. while `org-drill` doesn\'t have this feature and not scale well with big collection. for example say I want to review only those cards with tag `:terraform:` and `:_fact:`. `org-fc` can handle this with the following function
 
 ``` elisp
-;; org-fc
-(use-package! org-fc
-  :custom
-  (org-fc-directories '("/home/savolla/resource/notes/org/roam/zettels"
-                        "/home/savolla/resource/notes/org/roam/biblio/notes"
-                        "/home/savolla/resource/notes/org/roam/journal"))
-  :config
-  (require 'org-fc-hydra))
-```
-
-[[Refresh Doom Emacs]]
-
-## Pre-made decks using tag filters
-
-``` elisp
-;;; pre-made decks
-(defun my/fc-terraform () (interactive)
-  (org-fc-review '(:paths all :filter (tag "terraform"))))
-
 (defun my/fc-terraform-facts () (interactive)
   (org-fc-review '(:paths all :filter (and (tag "terraform") (tag "_fact")))))
 ```
 
-## Evil Keybings[^1]
+we can define our decks like this. and maybe more?
 
 ``` elisp
-;;; define keybindings for review session (evil-mode)
-(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-flip-mode
-  (kbd "RET") 'org-fc-review-flip
-  (kbd "n") 'org-fc-review-flip
-  (kbd "s") 'org-fc-review-suspend-card
-  (kbd "q") 'org-fc-review-quit)
-
-(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-rate-mode
-  (kbd "a") 'org-fc-review-rate-again
-  (kbd "h") 'org-fc-review-rate-hard
-  (kbd "g") 'org-fc-review-rate-good
-  (kbd "e") 'org-fc-review-rate-easy
-  (kbd "s") 'org-fc-review-suspend-card
-  (kbd "q") 'org-fc-review-quit)
+(defun my/fc-terraform-facts () (interactive)
+  (org-fc-review '(:paths all :filter (and (tag "k8s") (tag "_fact")))))
 ```
 
-  mode     keybind   description
-  -------- --------- ----------------------
-  review   RET/n     flip card
-  review   s         suspend current card
-  rate     a         review again
-  rate     h         mark as \"hard\"
-  rate     g         mark as \"good\"
-  rate     e         mark as \"easy\"
-  rate     s         suspend card
-  all      q         quit session
+another cool feature `org-fc` has is that it can also support \"input type\" flashcards. for example we can use this type of flashcard with the following question type:
 
-[^2]
+> the default port for the kubernetes API server
 
-## Footnotes
+we can use `org-fc-type-text-input-init` function and add `6443` as the answer
 
-[^1]: <https://www.leonrische.me/fc/use_with_evil-mode.html>
+## [[Install Org-Fc on Doom Emacs]]
 
-[^2]: <https://www.leonrische.me/fc/use_with_evil-mode.html>
+## [[Create Pre-Made Org-Fc Decks Using Tag Filters]]
+
+## create flashcard using org-fc
+
+## [[Evil Keybings for Org-Fc]]

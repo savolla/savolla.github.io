@@ -1,0 +1,38 @@
+title: Evil Keybings for Org-Fc
+tags: orgfc @zettel _reference
+roam-id: ac2e2fc7-38c2-447e-9122-a1764033770e
+created: 20260525175700000
+modified: 20260525175700000
+type: text/markdown
+
+``` elisp
+;;; define keybindings for review session (evil-mode)
+(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-flip-mode
+  (kbd "RET") 'org-fc-review-flip
+  (kbd "n") 'org-fc-review-flip
+  (kbd "s") 'org-fc-review-suspend-card
+  (kbd "q") 'org-fc-review-quit)
+
+(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-rate-mode
+  (kbd "a") 'org-fc-review-rate-again
+  (kbd "h") 'org-fc-review-rate-hard
+  (kbd "g") 'org-fc-review-rate-good
+  (kbd "e") 'org-fc-review-rate-easy
+  (kbd "s") 'org-fc-review-suspend-card
+  (kbd "q") 'org-fc-review-quit)
+```
+
+  mode     keybind   description
+  -------- --------- ----------------------
+  review   RET/n     flip card
+  review   s         suspend current card
+  rate     a         review again
+  rate     h         mark as \"hard\"
+  rate     g         mark as \"good\"
+  rate     e         mark as \"easy\"
+  rate     s         suspend card
+  all      q         quit session
+
+[^1]
+
+[^1]: <https://www.leonrische.me/fc/use_with_evil-mode.html>

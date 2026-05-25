@@ -1,0 +1,15 @@
+title: Create Pre-Made Org-Fc Decks Using Tag Filters
+tags: srs orgfc orgmode emacs @zettel _method
+roam-id: 43165242-c3bd-4168-8237-e5041799a5f0
+created: 20260525175500000
+modified: 20260525175500000
+type: text/markdown
+
+``` elisp
+;;; pre-made decks
+(defun my/fc-terraform () (interactive)
+  (org-fc-review '(:paths all :filter (tag "terraform"))))
+
+(defun my/fc-terraform-facts () (interactive)
+  (org-fc-review '(:paths all :filter (and (tag "terraform") (tag "_fact")))))
+```
