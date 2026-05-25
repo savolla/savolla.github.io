@@ -6,11 +6,19 @@ modified: 20260524193500000
 type: text/markdown
 
 ``` {.bash org-language="sh"}
-gpg --full-generate-key
+gpg --expert --full-generate-key
 ```
 
-provide information, I\'d choose RSA, 4096 bits long, disable expiration for the key by using 0.
+- select `(9) ECC and ECC`
+- select `(1) Curve 25519`
+- select `0` for no expiration
+- provide your full name and email address
+- you can also provide your username ad comment
 
-[^1]
+our keypari is generated now [[Get List of GPG Keys]] to verify if it exists
+
+[^1] [^2]
 
 [^1]: <https://www.youtube.com/watch?v=tXM77BpgeiA&pp=ygUKZ3BnIGdpdGh1Yg%3D%3D>
+
+[^2]: <https://www.youtube.com/watch?v=EJzQBv17il4&pp=ygUOZ3BnIGFzIHNzaCBrZXk%3D>

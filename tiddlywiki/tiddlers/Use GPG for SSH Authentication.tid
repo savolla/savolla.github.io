@@ -5,7 +5,81 @@ created: 20260525202300000
 modified: 20260525202300000
 type: text/markdown
 
-you heard me right! let\'s learn how to use one single `gpg` key for ssh authentication. first you may want to [[Create GPG Key Pair]] if you don\'t have it yet.
+as a sysadmin or a regular linux user we may have bunch of keys laying around under `~/gnupg`, `~/.ssh` and god knows where.. maintaining those keys are hard and loosing one will bring problems.. why not just use one single `gpg` key? (and only lose that key? haha). `gpg` also let\'s us use hardware tokens from [Yubikey](https://www.yubico.com/) but we\'re not going to talk about this today.
+
+let\'s learn how to use a single `gpg` key for ssh authentication. first you may want to [[Create GPG Key Pair]] if you don\'t have it yet.
+
+now [[Add Authentication Subkey for Your GPG Key]] since this is the vital step for providing ssh authentication support.
+
+now list your gpg keys with keygrip
+
+``` {.bash org-language="sh" results="output drawer"}
+gpg --list-keys --with-keygrip
+```
+
+:results: *home/savolla*.gnupg/pubring.kbx
+
+------------------------------------------------------------------------
+
+pub rsa4096 2026-05-24 \[SC\] 9330B7C1206224021FBD5EA6F5190B59F4E143E0 Keygrip = B9436196234D75AAB20589D22D70C9365993AF52 uid \[ultimate\] Kuzey Koç (savolla) \<kuzey.koc@tutamail.com\> sub rsa4096 2026-05-24 \[E\] Keygrip = BE2C5521FC6F2C7CD18D7E6C60FBE560D68DB1D0 sub ed25519 2026-05-25 \[A\] Keygrip = 13846241FBFEB7C8661141495B6D99CCBC448BA9
+
+copy the `sub` key with `[A]` sign. in my case it is `13846241FBFEB7C8661141495B6D99CCBC448BA9`. then add this key into a file named `sshcontrol` under `~/.gnupg`
+
+you may also want to read the file contents before overriding it
+
+``` {.bash org-language="sh" results="output drawer"}
+cat ~/.gnupg/sshcontrol
+```
+
+> 
+
+then add your keygrip in
+
+``` {.bash org-language="sh"}
+echo 13846241FBFEB7C8661141495B6D99CCBC448BA9 > ~/.gnupg/sshcontrol
+```
+
+verify
+
+``` {.bash org-language="sh" results="output drawer"}
+cat ~/.gnupg/sshcontrol
+```
+
+:results: 13846241FBFEB7C8661141495B6D99CCBC448BA9
+
+now put the following into your `~/.zshrc` or `~/.bashrc`
+
+``` {.bash org-language="sh"}
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+```
+
+if you use `fish` shell then add the following into `~/.config/fish/config.fish`
+
+``` fish
+set -e SSH_AGENT_PID
+if not set -q gnupg_SSH_AUTH_SOCK_by; or test "$gnupg_SSH_AUTH_SOCK_by" -ne (math $$)
+    set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+end
+```
+
+add the following into your `~/.ssh/config` file
+
+``` {.bash org-language="sh"}
+Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
+```
+
+okay now let\'s verify if our setup works. open a new shell/terminal
+
+``` {.bash org-language="sh" results="output drawer"}
+echo $SSH_AUTH_SOCK
+```
+
+:results: /run/user/1000/gnupg/S.gpg-agent.ssh
+
+if you see `gpg-agent.ssh` then it means it worked!
 
 [^1]
 
