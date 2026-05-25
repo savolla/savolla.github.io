@@ -1,0 +1,53 @@
+title: Remember Everything..
+tags: @post orgmode emacs anki org_drill flashcard srs
+roam-id: 4b8ea2d0-be77-413b-a3d1-a851f30e82d4
+created: 20260525154100000
+modified: 20260525154100000
+type: text/markdown
+
+we really don\'t need the [anki](https://apps.ankiweb.net/) when we have `emacs` and `org-mode`
+
+## Setting up Org-Drill
+
+in your `doom-emacs` configuration files `config.el` add the following function
+
+``` elisp
+(defun my/org-drill-by-tags (tags-match)
+  "Run org-drill on entries in the zettelkasten matching TAGS-MATCH.
+TAGS-MATCH is an org tags match string like '+claude_code+_fact' or '+claude_code'."
+  (interactive "sTags match (e.g. +claude_code+_fact): ")
+  (let ((drill-dirs '("/home/savolla/resource/notes/org/roam/zettels"
+                      "/home/savolla/resource/notes/org/roam/biblio/notes"
+                      "/home/savolla/resource/notes/org/roam/journal"))
+        (entries '()))
+    (dolist (dir drill-dirs)
+      (dolist (file (directory-files-recursively dir "\\.org$"))
+        (with-current-buffer (find-file-noselect file)
+          (org-map-entries
+           (lambda ()
+             (when (member "drill" (org-get-tags))
+               (push (point-marker) entries)))
+           tags-match
+           'file))))
+    (if entries
+        (org-drill-entries entries)
+      (message "No drill entries found matching: %s" tags-match))))
+```
+
+[[Refresh Doom Emacs]]
+
+## Pre-made Decks
+
+``` elisp
+;; claude code facts decks
+(defun my/drill-claude-code-facts ()
+  (interactive)
+  (my/org-drill-by-tags "+claude_code+_fact"))
+
+;; kubernetes deck
+(defun my/drill-kubernetes ()
+  (interactive)
+  (my/org-drill-by-tags "+kubernetes"))
+```
+
+[[Refresh Doom Emacs]]

@@ -1,0 +1,8 @@
+title: 20260525153358
+tags: @zettel _fact terraform
+roam-id: b17cea65-0560-45fe-b42a-39d667ac33ab
+created: 20260525153300000
+modified: 20260525153300000
+type: text/markdown
+
+.tfvars file is where you define variables like giving them the actual values. while variables.tf is there you declare variables. giving them which type and name should they have

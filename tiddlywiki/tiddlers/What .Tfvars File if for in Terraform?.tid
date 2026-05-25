@@ -1,0 +1,6 @@
+title: What .Tfvars File if for in Terraform?
+tags: drill
+roam-id: 12ab3f82-5a2b-46f0-a803-8569fee11a4f
+type: text/markdown
+
+we \"define\" variables here. giving the actual values
