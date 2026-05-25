@@ -1,0 +1,12 @@
+title: Use GPG for SSH Authentication
+tags: security ssh gpg @post
+roam-id: 4a027d30-4b49-44a3-a2dd-c0b9b742a56d
+created: 20260525202300000
+modified: 20260525202300000
+type: text/markdown
+
+you heard me right! let\'s learn how to use one single `gpg` key for ssh authentication. first you may want to [[Create GPG Key Pair]] if you don\'t have it yet.
+
+[^1]
+
+[^1]: [How to use your PGP key for SSH authentication - YouTube](https://www.youtube.com/watch?v=EJzQBv17il4&pp=ygUOZ3BnIGFzIHNzaCBrZXk%3D)

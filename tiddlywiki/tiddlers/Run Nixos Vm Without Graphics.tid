@@ -1,0 +1,10 @@
+title: Run Nixos Vm Without Graphics
+tags: nixos nix @zettel _method
+roam-id: ce0c2b6b-6908-49e2-aa07-cf38d28c3a2e
+created: 20260525200200000
+modified: 20260525200200000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+QEMU_OPTS="-nographic" ./result/bin/run-headless-vm-vm
+```
