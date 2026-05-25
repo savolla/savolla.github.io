@@ -37,47 +37,40 @@ in your `config.el` add;
   (org-fc-review '(:paths all :filter (and (tag "terraform") (tag "_fact")))))
 ```
 
-## Setting up Org-Drill
-
-in your `doom-emacs` configuration files `config.el` add the following function
+## Evil Keybings[^1]
 
 ``` elisp
-(defun my/org-drill-by-tags (tags-match)
-  "Run org-drill on entries in the zettelkasten matching TAGS-MATCH.
-TAGS-MATCH is an org tags match string like '+claude_code+_fact' or '+claude_code'."
-  (interactive "sTags match (e.g. +claude_code+_fact): ")
-  (let ((drill-dirs '("/home/savolla/resource/notes/org/roam/zettels"
-                      "/home/savolla/resource/notes/org/roam/biblio/notes"
-                      "/home/savolla/resource/notes/org/roam/journal"))
-        (entries '()))
-    (dolist (dir drill-dirs)
-      (dolist (file (directory-files-recursively dir "\\.org$"))
-        (with-current-buffer (find-file-noselect file)
-          (org-map-entries
-           (lambda ()
-             (when (member "drill" (org-get-tags))
-               (push (point-marker) entries)))
-           tags-match
-           'file))))
-    (if entries
-        (org-drill-entries entries)
-      (message "No drill entries found matching: %s" tags-match))))
+;;; define keybindings for review session (evil-mode)
+(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-flip-mode
+  (kbd "RET") 'org-fc-review-flip
+  (kbd "n") 'org-fc-review-flip
+  (kbd "s") 'org-fc-review-suspend-card
+  (kbd "q") 'org-fc-review-quit)
+
+(evil-define-minor-mode-key '(normal insert emacs) 'org-fc-review-rate-mode
+  (kbd "a") 'org-fc-review-rate-again
+  (kbd "h") 'org-fc-review-rate-hard
+  (kbd "g") 'org-fc-review-rate-good
+  (kbd "e") 'org-fc-review-rate-easy
+  (kbd "s") 'org-fc-review-suspend-card
+  (kbd "q") 'org-fc-review-quit)
 ```
 
-[[Refresh Doom Emacs]]
+  mode     keybind   description
+  -------- --------- ----------------------
+  review   RET/n     flip card
+  review   s         suspend current card
+  rate     a         review again
+  rate     h         mark as \"hard\"
+  rate     g         mark as \"good\"
+  rate     e         mark as \"easy\"
+  rate     s         suspend card
+  all      q         quit session
 
-## Pre-made Decks
+[^2]
 
-``` elisp
-;; claude code facts decks
-(defun my/drill-claude-code-facts ()
-  (interactive)
-  (my/org-drill-by-tags "+claude_code+_fact"))
+## Footnotes
 
-;; kubernetes deck
-(defun my/drill-kubernetes ()
-  (interactive)
-  (my/org-drill-by-tags "+kubernetes"))
-```
+[^1]: <https://www.leonrische.me/fc/use_with_evil-mode.html>
 
-[[Refresh Doom Emacs]]
+[^2]: <https://www.leonrische.me/fc/use_with_evil-mode.html>
