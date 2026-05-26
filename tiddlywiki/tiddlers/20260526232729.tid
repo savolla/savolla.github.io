@@ -1,5 +1,5 @@
 title: 20260526232729
-tags: fc mongodb @biblio _fact @biblio
+tags: fc mongodb @biblio _fact @biblio @in_progress
 roam-id: 55b8e43a-c189-4f4e-99d8-84977d308216
 created: 20260526232700000
 modified: 20260526232700000
@@ -14,4 +14,4 @@ type: text/markdown
 mongodb is a {{document}@0} database
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

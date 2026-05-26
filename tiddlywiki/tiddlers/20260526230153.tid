@@ -1,5 +1,5 @@
 title: 20260526230153
-tags: fc redis _property @biblio
+tags: fc redis _property @biblio @in_progress
 roam-id: bfc3e7c8-38a7-4309-b802-cf0e52d89367
 created: 20260526230100000
 modified: 20260526230100000
@@ -15,4 +15,4 @@ type: text/markdown
 redis is an {{in-memory}@0} database. which it stores the data in computer\'s {{memory}@1}
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

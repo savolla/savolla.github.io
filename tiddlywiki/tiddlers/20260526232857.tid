@@ -1,5 +1,5 @@
 title: 20260526232857
-tags: graph_database fc @biblio _usecase @biblio
+tags: graph_database fc @biblio _usecase @biblio @in_progress
 roam-id: 5db6565e-adf2-4df7-8d29-1bf38116b6b2
 created: 20260526232800000
 modified: 20260526232800000
@@ -14,4 +14,4 @@ type: text/markdown
 to represent users connections in a social media application, we can use a {{graph}@0} database
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

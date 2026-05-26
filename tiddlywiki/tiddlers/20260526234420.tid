@@ -1,5 +1,5 @@
 title: 20260526234420
-tags: redis redigraph graph_database fc @biblio _usecase @biblio
+tags: redis redigraph graph_database fc @biblio _usecase @biblio @in_progress
 roam-id: 0be0605a-fff6-4e98-a880-9aa01107a500
 created: 20260526234400000
 modified: 20260526234400000
@@ -15,4 +15,4 @@ type: text/markdown
 redis\' module {{redigraph}@0} can be used as {{graph database}@1} instead of technologies like neo4j
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

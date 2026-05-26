@@ -1,5 +1,5 @@
 title: 20260526235831
-tags: redis fc @biblio _fact @biblio
+tags: redis fc @biblio _fact @biblio @in_progress
 roam-id: 50688eb8-0c5a-458c-898c-bed5618203f3
 created: 20260526235800000
 modified: 20260526235800000
@@ -18,4 +18,4 @@ there are 2 reliable methods for implementing **data persistency** in redis;
 2.  {{append only file (AOF)}@1}
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

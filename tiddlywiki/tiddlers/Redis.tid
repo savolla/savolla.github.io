@@ -1,5 +1,5 @@
 title: Redis
-tags: redis @biblio fc _abbr @biblio
+tags: redis @biblio fc _abbr @biblio @in_progress
 roam-id: 960340c0-3d2a-43ec-96c8-16663189fb94
 created: 20260526224700000
 modified: 20260526224700000
@@ -14,4 +14,4 @@ type: text/markdown
 remote dictionary server
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

@@ -1,5 +1,5 @@
 title: 20260526232437
-tags: neo4j fc @biblio _fact @biblio
+tags: neo4j fc @biblio _fact @biblio @in_progress
 roam-id: 171c1255-e57b-4aca-89a0-00f36e0ae5d9
 created: 20260526232400000
 modified: 20260526232400000
@@ -14,4 +14,4 @@ type: text/markdown
 neo4j is a {{graph}@1} database
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>

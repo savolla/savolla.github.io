@@ -1,5 +1,5 @@
 title: 20260526230753
-tags: fc redis _usecase @biblio
+tags: fc redis _usecase @biblio @in_progress
 roam-id: 63fe4535-184c-4fb8-bdde-d01d0c078b5b
 created: 20260526230700000
 modified: 20260526230700000
@@ -14,4 +14,4 @@ type: text/markdown
 redis is often used as {{cache}@0} on top of other {{databases}@1} to improve application performance
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>
