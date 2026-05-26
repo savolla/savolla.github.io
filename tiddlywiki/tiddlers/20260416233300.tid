@@ -1,0 +1,11 @@
+title: 20260416233300
+tags: redis @biblio _tradeoff @biblio redis
+roam-id: 38086dab-3a99-4eb5-96cb-ff774119390b
+created: 20260416233300000
+modified: 20260416233300000
+type: text/markdown
+
+redis is not good at storing structured data. but it is very good at storing key-value pairs
+
+
+<sup>source: [[Redis Crash Course]]</sup>

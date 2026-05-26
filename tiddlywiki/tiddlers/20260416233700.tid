@@ -1,0 +1,11 @@
+title: 20260416233700
+tags: redis @biblio _cause @biblio redis
+roam-id: 41f89d1c-3d5d-4406-9585-59bd6f82405b
+created: 20260416233700000
+modified: 20260416233700000
+type: text/markdown
+
+redis is not used as the normal database because it is volatile (works in memory). all data is lost when redis crashes
+
+
+<sup>source: [[Redis Crash Course]]</sup>

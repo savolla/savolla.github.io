@@ -1,0 +1,11 @@
+title: 20260416233500
+tags: redis @biblio _constraint @biblio redis
+roam-id: 6d70af3a-94f6-4389-94e0-d3ff482f9386
+created: 20260416233500000
+modified: 20260416233500000
+type: text/markdown
+
+because the redis works in memory, it makes it volatile. once your system crashes, you\'re going to loose everything in redis
+
+
+<sup>source: [[Redis Crash Course]]</sup>

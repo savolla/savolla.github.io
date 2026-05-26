@@ -69,6 +69,10 @@ add the following into your `~/.ssh/config` file
 
 ``` {.bash org-language="sh"}
 Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
+
+Host *
+  IdentitiesOnly no
+  IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
 ```
 
 okay now let\'s verify if our setup works. open a new shell/terminal
@@ -80,6 +84,10 @@ echo $SSH_AUTH_SOCK
 :results: /run/user/1000/gnupg/S.gpg-agent.ssh
 
 if you see `gpg-agent.ssh` then it means it worked!
+
+[[Restart SSH Service]] and [[Restart GPG Agent]]
+
+now you should [[Copy Public SSH Key to Another Machine]]. to your other server and try to login. it should not ask password anymore
 
 [^1]
 

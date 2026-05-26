@@ -1,0 +1,10 @@
+title: Restart SSH Service
+tags: ssh @zettel _method
+roam-id: c83621c2-0123-4b50-b695-e85a1495515d
+created: 20260525223700000
+modified: 20260525223700000
+type: text/markdown
+
+``` {.bash org-language="sh"}
+sudo systemctl restart sshd.service
+```

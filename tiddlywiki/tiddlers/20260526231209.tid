@@ -1,0 +1,14 @@
+title: 20260526231209
+tags: fc redis _usecase
+roam-id: fb81424b-863d-4d3a-bbbf-e4eff35d67b6
+created: 20260526231200000
+modified: 20260526231200000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   0     0.00       2026-05-26T20:15:54Z
+
+redis can be used as {{primary database}{not many people use it like that}@0}

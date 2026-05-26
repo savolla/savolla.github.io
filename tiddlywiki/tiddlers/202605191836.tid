@@ -9,8 +9,8 @@ According to [ChatGPT](https://chatgpt.com/)
 
 > it's best practice to also add rel=\"noopener noreferrer\" so the new tab cannot access your page (prevents a small security risk).
 
-So in our `href` elements we also should add \"rel=\"noopenernoreferrer\" for security
+So in our `href` elements we also should add rel=\"noopener noreferrer\" for security
 
 ``` html
-<a href="https://www.youtube.com/user/theneedledrop" target="_blank">
+<a href="https://www.youtube.com/user/theneedledrop" target="_blank" rel="noopener noreferrer">
 ```

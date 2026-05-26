@@ -1,0 +1,33 @@
+title: Example Nixos Configuration With SSH Support
+tags: ssh nix nixos @zettel _reference
+roam-id: 0d13ed0e-be11-4b9f-94b1-8efcebdd09ff
+created: 20260525230700000
+modified: 20260525230700000
+type: text/markdown
+
+``` nix
+{config, lib, pkgs, ... }:
+
+{
+  # static ip
+  networking.interfaces.eth0.ipv4.addresses = [
+    {
+      address = "192.168.1.99";
+      prefixLength = 24;
+    }
+  ];
+
+  # the user "jane"
+  users.users.jane = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+    initialPassword = "123";
+  };
+
+  # ssh service
+  services.openssh.enable = true;
+  networking.firewall.allowedTCPPorts = [ 22 ];
+
+  system.stateVersion = "25.11";
+}
+```

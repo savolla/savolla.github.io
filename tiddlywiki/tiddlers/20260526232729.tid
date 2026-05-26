@@ -1,0 +1,14 @@
+title: 20260526232729
+tags: fc mongodb @biblio _fact
+roam-id: 55b8e43a-c189-4f4e-99d8-84977d308216
+created: 20260526232700000
+modified: 20260526232700000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   0     0.00       2026-05-26T20:28:18Z
+
+mongodb is a {{document}@0} database

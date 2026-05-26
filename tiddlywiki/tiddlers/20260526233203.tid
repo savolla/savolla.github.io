@@ -1,0 +1,13 @@
+title: 20260526233203
+tags: fc document_database @biblio _usecase
+roam-id: 8ab24d93-1f24-43c9-8e11-5951b24d02f9
+created: 20260526233200000
+modified: 20260526233200000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- -----
+
+in an application like instagram where there is a lot of **media content** and users share that media with each other daily, to store this kind of content we can use a {{document database}}

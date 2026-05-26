@@ -1,0 +1,12 @@
+title: "Too Many Authentication Failures"
+tags: ssh @zettel _fix
+roam-id: b0511da8-9f29-45d7-9503-e5749e5b01f1
+created: 20260525224900000
+modified: 20260525224900000
+type: text/markdown
+
+it happens if you delete your public key from the remote server. you should do the following to bypass the error
+
+``` {.bash org-language="sh"}
+ssh -o PubkeyAuthentication=no user@server
+```

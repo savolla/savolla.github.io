@@ -8,4 +8,5 @@ type: text/markdown
 ``` {.bash org-language="sh"}
 gpgconf --kill gpg-agent
 gpgconf --launch gpg-agent
+gpg-connect-agent updatestartuptty /bye
 ```

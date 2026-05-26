@@ -1,0 +1,14 @@
+title: 20260526232203
+tags: neo4j fc @biblio _usecase
+roam-id: ed2e05a2-efc6-4b6e-bfac-fa3fdc12cc72
+created: 20260526232200000
+modified: 20260526232200000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   0     0.00       2026-05-26T20:23:03Z
+
+{{neo4j}@0} can be used for representing user connections like social media apps

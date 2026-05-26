@@ -1,0 +1,14 @@
+title: Aof
+tags: fc @biblio _abbr
+roam-id: 93844947-07c6-4fb7-82e5-7159f6cee117
+created: 20260526235400000
+modified: 20260526235400000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  front      2.50   1     0.01       2026-05-26T22:57:35Z
+
+append only file

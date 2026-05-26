@@ -1,0 +1,11 @@
+title: 20260416233800
+tags: redis @biblio _usecase @biblio redis
+roam-id: b7cb0320-8347-4412-844b-934e337ebb18
+created: 20260416233800000
+modified: 20260416233800000
+type: text/markdown
+
+redis is used for caching data that is taken from database. reduces db writes and reads
+
+
+<sup>source: [[Redis Crash Course]]</sup>

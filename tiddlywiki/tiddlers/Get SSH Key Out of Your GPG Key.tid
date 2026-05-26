@@ -1,0 +1,20 @@
+title: Get SSH Key Out of Your GPG Key
+tags: gpg ssh @zettel _method
+roam-id: 968e4d26-17ce-4c79-bcf9-9e34ad2d866c
+created: 20260527015500000
+modified: 20260527015500000
+type: text/markdown
+
+you first need to see how to [[Use GPG for SSH Authentication]]. without this you\'ll not be able to get ssh public key from your gpg
+
+``` {.bash org-language="sh" results="output drawer"}
+ssh-add -L
+```
+
+:results: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDoRzzcvAoKoWIEa+5Qt09DSc729d8/N2VCEp9PYj/9y (none)
+
+or with a second method
+
+``` {.bash org-language="sh"}
+gpg --export-ssh-key MAIL_ATTACHED_TO_YOUR_GPG_KEY
+```

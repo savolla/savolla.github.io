@@ -1,0 +1,22 @@
+title: Add Your GPG Key as SSH Public on Github
+tags: github gpg ssh @zettel _method
+roam-id: 54b7603b-0a0c-4c21-b4c1-5dfa3f100564
+created: 20260527020600000
+modified: 20260527020600000
+type: text/markdown
+
+you may want to see [[Use GPG for SSH Authentication]] first since this is very specific to this article.
+
+if you set your gpg key as ssh authentication then all your personal github repositories which are cloned using `ssh` authentication will not work (if you deleted your old ssh keys like me..) otherwise you\'ll be fine. Now let\'s add our new gpg key as ssh public key on github
+
+go to `GitHub → Settings → SSH and GPG keys → New SSH Key`. and [[Get SSH Key Out of Your GPG Key]]. mine is;
+
+``` {.bash org-language="sh" results="output drawer"}
+ssh-add -L
+```
+
+:results: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDoRzzcvAoKoWIEa+5Qt09DSc729d8/N2VCEp9PYj/9y (none)
+
+copy the value **except that (none) section**. now paste it in and save. I labeled mine as \"GPG (Yubikey)\".
+
+now [[Test SSH Connection After Adding New SSH Key on Github]] to see if everything worked correctly.

@@ -1,0 +1,16 @@
+title: 20260526234108
+tags: fc redisearch redis elasticsearch @biblio _usecase
+roam-id: 20d9a07f-af32-4c9c-a7cc-170a447a6bd5
+created: 20260526234100000
+modified: 20260526234100000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   0     0.00       2026-05-26T20:43:22Z
+  2          2.50   0     0.00       2026-05-26T20:43:33Z
+  1          2.50   0     0.00       2026-05-26T20:43:27Z
+
+redis\' module {{redisearch}@0} can be used for {{search}@2} functionality instead of {{elasticsearch}@1}

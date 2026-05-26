@@ -1,0 +1,15 @@
+title: 20260526234420
+tags: redis redigraph graph_database fc @biblio _usecase
+roam-id: 0be0605a-fff6-4e98-a880-9aa01107a500
+created: 20260526234400000
+modified: 20260526234400000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   0     0.00       2026-05-26T20:45:13Z
+  1          2.50   0     0.00       2026-05-26T20:45:25Z
+
+redis\' module {{redigraph}@0} can be used as {{graph database}@1} instead of technologies like neo4j

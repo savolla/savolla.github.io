@@ -1,0 +1,15 @@
+title: 20260526230153
+tags: fc redis _property
+roam-id: bfc3e7c8-38a7-4309-b802-cf0e52d89367
+created: 20260526230100000
+modified: 20260526230100000
+type: text/markdown
+
+:REVIEW~DATA~:
+
+  position   ease   box   interval   due
+  ---------- ------ ----- ---------- ----------------------
+  0          2.50   1     0.01       2026-05-26T22:56:36Z
+  1          2.50   0     0.00       2026-05-26T20:06:24Z
+
+redis is an {{in-memory}@0} database. which it stores the data in computer\'s {{memory}@1}

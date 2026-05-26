@@ -1,0 +1,11 @@
+title: 20260416233100
+tags: redis @biblio _property @biblio redis
+roam-id: d017098f-15ff-4931-8e1a-2a15bf62f3a9
+created: 20260416233100000
+modified: 20260416233100000
+type: text/markdown
+
+redis stores its data by key-value pairs
+
+
+<sup>source: [[Redis Crash Course]]</sup>

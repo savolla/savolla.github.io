@@ -1,0 +1,11 @@
+title: 20260416233400
+tags: redis @biblio _property @biblio redis
+roam-id: f5fe7273-e79f-4a4c-ae59-279e20accfe6
+created: 20260416233400000
+modified: 20260416233400000
+type: text/markdown
+
+redis works in memory (RAM) and it makes it very fast
+
+
+<sup>source: [[Redis Crash Course]]</sup>
