@@ -1,5 +1,5 @@
 title: 20260526232729
-tags: fc mongodb @biblio _fact
+tags: fc mongodb @biblio _fact @biblio
 roam-id: 55b8e43a-c189-4f4e-99d8-84977d308216
 created: 20260526232700000
 modified: 20260526232700000
@@ -9,6 +9,9 @@ type: text/markdown
 
   position   ease   box   interval   due
   ---------- ------ ----- ---------- ----------------------
-  0          2.50   0     0.00       2026-05-26T20:28:18Z
+  0          2.50   2     1.00       2026-05-27T23:25:32Z
 
 mongodb is a {{document}@0} database
+
+
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>

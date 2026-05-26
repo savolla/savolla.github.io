@@ -1,5 +1,5 @@
 title: 20260526235831
-tags: fc @biblio _fact
+tags: redis fc @biblio _fact @biblio
 roam-id: 50688eb8-0c5a-458c-898c-bed5618203f3
 created: 20260526235800000
 modified: 20260526235800000
@@ -9,10 +9,13 @@ type: text/markdown
 
   position   ease   box   interval   due
   ---------- ------ ----- ---------- ----------------------
-  0          2.50   0     0.00       2026-05-26T21:02:05Z
+  0          2.50   1     0.01       2026-05-26T23:41:02Z
   1          2.50   0     0.00       2026-05-26T21:02:12Z
 
 there are 2 reliable methods for implementing **data persistency** in redis;
 
 1.  {{snapshotting (RDB)}@0}
 2.  {{append only file (AOF)}@1}
+
+
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database]]</sup>
