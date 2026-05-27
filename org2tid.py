@@ -497,7 +497,8 @@ def convert_body(body: str, link_map: dict[str, str]) -> str:
     body = _protect(body)
 
     result = subprocess.run(
-        ["pandoc", "-f", "org", "-t", "markdown", "--wrap=none"],
+        # ["pandoc", "-f", "org", "-t", "markdown", "--wrap=none"],
+        ["pandoc", "-f", "org", "-t", "gfm", "--wrap=none"],
         input=body,
         capture_output=True,
         text=True,
