@@ -1,0 +1,22 @@
+title: 20260527142048
+tags: gpg @zettel _warning
+roam-id: b031522b-be9d-4255-a27d-504527357b59
+created: 20260527142000000
+modified: 20260527142000000
+type: text/markdown
+
+gpg configuration does not support inline comments. they should be placed on their own line
+
+wrong:
+
+``` bash
+
+default-cache-ttl 7200 # expire cached password after 2h
+```
+
+correct:
+
+``` bash
+# expire cached password after 2h
+default-cache-ttl 7200
+```
