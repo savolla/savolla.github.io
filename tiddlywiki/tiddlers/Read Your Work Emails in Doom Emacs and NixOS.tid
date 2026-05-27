@@ -15,8 +15,24 @@ type: text/markdown
 
 ## create app password for new gmail
 
+<https://security.google.com/settings/security/apppasswords>
+
 ## mail client setup
 
 ## doom emacs setup
 
+## smoke test
+
+``` bash
+mbsync -a
+```
+
 ## forwarding work mails to this new mail
+
+go to Gmail -\> Settings -\> All Settings -\> Accounts (tab)
+
+you'll see "Check mail from other accounts:" section. click on "Add a mail account"
+
+your username will be added automatically. enter your password.
+
+POP Server: mail.gmail.com port: 110

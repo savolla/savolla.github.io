@@ -1,0 +1,10 @@
+title: Get List of Nix Channels on Your System
+tags: nixos nix @zettel _method
+roam-id: 10355e6e-5bca-484d-b705-5fc0c65d8ad2
+created: 20260527212300000
+modified: 20260527212300000
+type: text/markdown
+
+``` bash
+sudo nix-channel --list
+```

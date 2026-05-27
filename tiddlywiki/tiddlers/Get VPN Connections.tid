@@ -5,8 +5,8 @@ created: 20260505101300000
 modified: 20260505101300000
 type: text/markdown
 
-``` {.bash org-language="sh" results="drawer"}
+``` bash
 nmcli connection show | grep -i vpn
 ```
 
-:results: abc-vpn 8e6295a0-e84b-4d27-9348-3c9e76f79b95 vpn --
+:results: abc-vpn 8e6295a0-e84b-4d27-9348-3c9e76f79b95 vpn –

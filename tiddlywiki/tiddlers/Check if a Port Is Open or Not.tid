@@ -1,10 +1,10 @@
 title: Check if a Port Is Open or Not
-tags: linux netcat networking @zettel _method
+tags: linux netcat nc networking @zettel _method
 roam-id: 45b7b207-62e5-46b8-b1d7-4b5e051cbfc8
 created: 20260505103200000
 modified: 20260505103200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 nc -uvz vpn.kartaca.com 4500
 ```

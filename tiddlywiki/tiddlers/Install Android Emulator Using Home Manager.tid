@@ -54,16 +54,16 @@ home.sessionVariables = {
 };
 ```
 
-Note that these variables will be sourced on your next login. That\'s why you need to create them right now
+Note that these variables will be sourced on your next login. That's why you need to create them right now
 
-``` {.bash org-language="sh"}
+``` bash
 export ANDROID_SDK_ROOT="$HOME/.nix-profile/libexec/android-sdk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 ```
 
 Check if all those packages are installed
 
-``` {.bash org-language="sh" results="drawer"}
+``` bash
 which emulator
 which avdmanager
 ```
@@ -72,7 +72,7 @@ which avdmanager
 
 Create an avd android emulator
 
-``` {.bash org-language="sh"}
+``` bash
 avdmanager create avd \
   -n pixel-playstore \
   -k "system-images;android-34;google_apis_playstore;x86_64" \
@@ -81,6 +81,6 @@ avdmanager create avd \
 
 Run android emulator
 
-``` {.bash org-language="sh"}
+``` bash
 nixGL emulator -avd pixel-playstore -gpu host
 ```
