@@ -18,4 +18,4 @@ there are 2 reliable methods for implementing **data persistency** in redis;
 2.  {{append only file (AOF)}@1}
 
 
-<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database [14:53]]]</sup>
+<sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database (14:53)]]</sup>
