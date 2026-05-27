@@ -536,8 +536,13 @@ def org_table_to_html(body: str) -> str:
         re.MULTILINE
     )
 
+    def escape_underscores(table_org: str) -> str:
+        """Escape leading underscores in table cells so pandoc won't subscript them."""
+        cell_re = re.compile(r'(?<=\|)\s*_(\w)')
+        return cell_re.sub(lambda m: m.group(0).replace('_', r'\_'), table_org)
+
     def convert_table(m: re.Match) -> str:
-        table_org = m.group(1)
+        table_org = escape_underscores(m.group(1))
         result = subprocess.run(
             ["pandoc", "-f", "org", "-t", "html", "--wrap=none"],
             input=table_org,
