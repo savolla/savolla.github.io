@@ -1,0 +1,12 @@
+title: Edit GPG Key
+tags: gpg @zettel _method
+roam-id: fa94fc0f-41f3-4cba-b08c-0904b26425df
+created: 20260527133100000
+modified: 20260527133100000
+type: text/markdown
+
+[[get list of gpg keys]] to see your assigned mail and your target key
+
+``` bash
+gpg --edit-key $MAIL_OR_KEY_ID_ASSIGNED_TO_YOUR_GPG_KEY
+```

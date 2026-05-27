@@ -1,0 +1,10 @@
+title: Reload GPG Configuration
+tags: @zettel _method
+roam-id: b1c65cc6-b694-4448-933f-662d2a7f8807
+created: 20260527135800000
+modified: 20260527135800000
+type: text/markdown
+
+``` bash
+gpgconf --reload gpg-agent
+```

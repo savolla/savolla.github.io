@@ -1,0 +1,14 @@
+title: Increase Default TTL for GPG
+tags: gpg @zettel _method
+roam-id: df2b65c7-9022-443a-8804-f6d89872f684
+created: 20260527135600000
+modified: 20260527135600000
+type: text/markdown
+
+``` bash
+# ~/.gnupg/gpg-agent.conf
+default-cache-ttl 7200 # expire cached password after 2h
+max-cache-ttl 86400 # the cache is force-expired after 24 hours and you must re-enter your passphrase
+```
+
+[[Reload GPG Configuration]] to make changes take effect. or you can also [[Restart/Reset GPG Agent]] for hard restart
