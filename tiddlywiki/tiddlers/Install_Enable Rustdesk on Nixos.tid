@@ -5,7 +5,7 @@ created: 20260514220400000
 modified: 20260514220400000
 type: text/markdown
 
-I [[Assign Static Ip Addres on Nixos]] to \"192.168.1.20\" because I use this machine also as rustdesk relay.
+I [[Assign Static Ip Addres on Nixos]] to "192.168.1.20" because I use this machine also as rustdesk relay.
 
 ``` nix
 rustdesk-server = {

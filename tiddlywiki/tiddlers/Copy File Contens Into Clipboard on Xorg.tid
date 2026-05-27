@@ -7,7 +7,7 @@ type: text/markdown
 
 make sure you have `xclip` package installed
 
-``` {.bash org-language="sh"}
+``` bash
 xclip -selection clipboard < filename.txt
 ```
 

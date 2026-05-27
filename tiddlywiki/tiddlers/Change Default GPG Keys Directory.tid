@@ -5,6 +5,6 @@ created: 20260510205500000
 modified: 20260510205500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 export GNUPGHOME=/home/savolla/project/repos/one-ring/dotfiles/nix/.gnupg
 ```

@@ -5,4 +5,4 @@ created: 20260514205100000
 modified: 20260514205100000
 type: text/markdown
 
-[[Open Sunshine Web Interface]] and go to `Configuration -> Audio/Video`. scroll to \"Adapter Name\" and open a terminal where sunshine server is running. [[List All Vaapi Capable Devices]] to get hardware capable interface. put that interface in the textbox
+[[Open Sunshine Web Interface]] and go to `Configuration -> Audio/Video`. scroll to "Adapter Name" and open a terminal where sunshine server is running. [[List All Vaapi Capable Devices]] to get hardware capable interface. put that interface in the textbox

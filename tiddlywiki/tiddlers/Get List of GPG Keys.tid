@@ -5,7 +5,7 @@ created: 20260510205100000
 modified: 20260510205100000
 type: text/markdown
 
-``` {.bash org-language="sh" results="output drawer"}
+``` bash
 gpg --list-secret-keys --keyid-format=long
 ```
 

@@ -5,6 +5,6 @@ created: 20260510212000000
 modified: 20260510212000000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 latexmk -pdf kkoc-cv.tex 
 ```

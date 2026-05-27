@@ -5,9 +5,9 @@ created: 20260514205400000
 modified: 20260514205400000
 type: text/markdown
 
-if you\'re using `nix` then [[Install Vainfo Using Nix]] first
+if you're using `nix` then [[Install Vainfo Using Nix]] first
 
-``` {.bash org-language="sh"}
+``` bash
 ls /dev/dri/renderD*
 ```
 

@@ -5,12 +5,12 @@ created: 20260510155100000
 modified: 20260510155100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 ssh -T git@github.com
 ```
 
 you should see a message like this:
 
-> Hi username! You\'ve successfully authenticated, but GitHub does not provide shell access.
+> Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 
 if you see this then all is OK

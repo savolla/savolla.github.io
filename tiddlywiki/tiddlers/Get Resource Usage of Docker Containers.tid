@@ -7,13 +7,13 @@ type: text/markdown
 
 This will show all containers and their resource usages
 
-``` {.bash org-language="sh"}
+``` bash
 sudo docker stats
 ```
 
 example output is:
 
-``` {.bash org-language="sh"}
+``` bash
 CONTAINER ID   NAME             CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
 62a0b6bd62bc   z-cms          0.00%     119.6MiB / 7.764GiB   1.50%     549kB / 44.8MB    315kB / 8.19kB    11
 f38fe2e785bc   z-bff-web      0.14%     376.5MiB / 7.764GiB   4.74%     756kB / 509kB     12.3kB / 1.56MB   35

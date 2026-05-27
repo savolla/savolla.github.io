@@ -5,7 +5,7 @@ created: 20260514162000000
 modified: 20260514162000000
 type: text/markdown
 
-in the cronjob\'s definition file you need to assign `suspend` property to `true`
+in the cronjob's definition file you need to assign `suspend` property to `true`
 
 ``` diff
  schedule: 0 0 * * 1

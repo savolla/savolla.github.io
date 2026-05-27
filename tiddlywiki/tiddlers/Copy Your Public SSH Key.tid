@@ -7,11 +7,11 @@ type: text/markdown
 
 - list your public ssh keys
 
-``` {.bash org-language="sh" results="drawer output"}
+``` bash
 cd ~/.ssh
 ls *.pub
 ```
 
-:results: id~rsa~.pub
+:results: id<sub>rsa</sub>.pub
 
 - see [[Copy File Contents From Terminal]] and copy your public ssh key
