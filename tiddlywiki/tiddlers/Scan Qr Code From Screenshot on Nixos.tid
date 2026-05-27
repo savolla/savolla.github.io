@@ -1,0 +1,10 @@
+title: Scan Qr Code From Screenshot on Nixos
+tags: nixos nix zbar qr @zettel _method
+roam-id: b7e73586-fd78-4021-9c93-03ee825329bc
+created: 20260528011500000
+modified: 20260528011500000
+type: text/markdown
+
+``` bash
+scrot -s /tmp/qr.png && zbarimg -q --raw /tmp/qr.png | tr -d '\n' | tee >(xclip -selection clipboard) && rm /tmp/qr.png && notify-send "QR copied"
+```
