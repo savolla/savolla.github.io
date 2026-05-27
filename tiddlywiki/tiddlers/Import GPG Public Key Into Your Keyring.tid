@@ -1,0 +1,29 @@
+title: Import GPG Public Key Into Your Keyring
+tags: gpg @zettel _method
+roam-id: 5d35e80f-5b3d-4963-8752-acc105209589
+created: 20260527162500000
+modified: 20260527162500000
+type: text/markdown
+
+so you saw someone included their own GPG Public key on their website just like [[My GPG Public Key]]. you want to import that key into your keyring for the future. here are the steps;
+
+- copy that entire block including those `BEGIN` and `END` separators
+- save this key into a file (notice the `.asc` extension)
+
+``` bash
+vim savolla.asc
+```
+
+- import into your keyring like the following
+
+``` bash
+gpg --import savolla.asc
+```
+
+you should see a similar output
+
+``` ascii
+gpg: key ABCDEF1234567890: public key "Kuzey Koç (savolla) <akuzey.koc@tutamail.com>" imported
+```
+
+now you can [[Encrypt Files With GPG]] for this recepient

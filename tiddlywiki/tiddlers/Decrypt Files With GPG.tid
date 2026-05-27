@@ -6,5 +6,5 @@ modified: 20260527145300000
 type: text/markdown
 
 ``` bash
-gpg -d /path/to/file
+gpg -d /path/to/file.gpg > /path/to/file
 ```

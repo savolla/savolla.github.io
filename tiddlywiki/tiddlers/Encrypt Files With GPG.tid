@@ -5,10 +5,14 @@ created: 20260527145300000
 modified: 20260527145300000
 type: text/markdown
 
-``` bash
-gpg -es /path/to/file
-```
+If you want to encrypt files only for yourself then you may want read [[add a default recepient for gpg]] first. then come back.
+
+otherwise we can use gpg for encryption (yes!). but this encryption is a bit special. because we can encrypt for specific users only. first you want to get the public GPG key of your recepient. and [[Import GPG Public Key Into Your Keyring]]. after that you can encrypt files for that recepient like this;
 
 ``` bash
-gpg -es -r $RECEPIENT_PUBLIC_KEY /path/to/file
+gpg -es -r $RECEPIENT_KEY /path/to/file
 ```
+
+`fish` shell also supports auto completion if you press `Tab` after `-r` parameter. you can even search by pressing `Shift+Tab` instead of `Tab` key.
+
+now only the recepient can decrypt this file.
