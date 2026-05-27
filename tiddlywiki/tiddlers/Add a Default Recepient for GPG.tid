@@ -1,0 +1,31 @@
+title: Add a Default Recepient for GPG
+tags: gpg @zettel _method
+roam-id: 99df97fb-be84-42e5-b119-4b4bd6400486
+created: 20260527154100000
+modified: 20260527154100000
+type: text/markdown
+
+when you use your gpg key for encrypting files for yourself, you may want to make yourself the "recepient" by default. otherwise you'll always specify the recepient using `-r` parameter like
+
+``` bash
+gpg -es -r $YOUR_GPG_PUBLIC_KEY /path/to/file
+```
+
+we can set our gpg key as default recepient like this;
+
+first [[Get List of GPG Keys]]
+
+mine is `9330B7C1206224021FBD5EA6F5190B59F4E143E0` so I'll create `~/.gnupg/gpg.conf` and put the following options in it
+
+``` bash
+# ~/.gnupg/gpg.conf
+# use kuzey.koc@tutamail.com private key by default
+default-key 9330B7C1206224021FBD5EA6F5190B59F4E143E0
+
+# do not specify the recepient when encrypting files for yourlself
+default-recipient-self
+```
+
+save and quit. then [[Restart/Reset GPG Agent]]
+
+now [[Encrypt Files With GPG]] but don't specify the recepient `-r`

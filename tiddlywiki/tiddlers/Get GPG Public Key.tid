@@ -8,7 +8,7 @@ type: text/markdown
 [[Get List of GPG Keys]] first to get the key details. you can use both your key id or email address directly in the following command to get the public key. I choose email since it is more straightforward
 
 ``` bash
-gpg --armor --export kuzey.koc@kartaca.com
+gpg --armor --export kuzey.koc@tutamail.com
 ```
 
 :results: —–BEGIN PGP PUBLIC KEY BLOCK—–

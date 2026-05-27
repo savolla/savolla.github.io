@@ -1,0 +1,12 @@
+title: 20260527145519
+tags: gpg tar fc @zettel _warning
+roam-id: b641273d-483a-45a4-a8a0-fc61efe2b29b
+created: 20260527145500000
+modified: 20260527145500000
+type: text/markdown
+
+GPG cannot encrypt folders directly. You must first archive the folder into a single file. see [[Encrypt Folders With GPG]]
+
+[^1]
+
+[^1]: <https://stackoverflow.com/questions/35584461/gpg-encryption-and-decryption-of-a-folder-using-command-line>

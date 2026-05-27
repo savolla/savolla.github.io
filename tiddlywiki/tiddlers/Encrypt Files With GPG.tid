@@ -1,0 +1,14 @@
+title: Encrypt Files With GPG
+tags: gpg @zettel _method
+roam-id: c9794783-d013-4748-a90e-9c82f17fd5cb
+created: 20260527145300000
+modified: 20260527145300000
+type: text/markdown
+
+``` bash
+gpg -es /path/to/file
+```
+
+``` bash
+gpg -es -r $RECEPIENT_PUBLIC_KEY /path/to/file
+```

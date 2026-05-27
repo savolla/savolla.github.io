@@ -1,0 +1,16 @@
+title: Encrypt Folders With GPG
+tags: gpg @zettel _method
+roam-id: 63e51dcc-523b-438a-b93b-1951c34c2abe
+created: 20260527145600000
+modified: 20260527145600000
+type: text/markdown
+
+``` bash
+tar -czf myfolder.tar.gz myfolder/
+```
+
+now encrypt the tar archive. see [[Encrypt Files With GPG]]
+
+[^1]
+
+[^1]: <https://stackoverflow.com/questions/35584461/gpg-encryption-and-decryption-of-a-folder-using-command-line>

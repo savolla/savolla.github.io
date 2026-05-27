@@ -1,0 +1,10 @@
+title: Decrypt Files With GPG
+tags: @zettel _method
+roam-id: 25f565fa-edf4-4a3f-8eb2-8a702d96918f
+created: 20260527145300000
+modified: 20260527145300000
+type: text/markdown
+
+``` bash
+gpg -d /path/to/file
+```
