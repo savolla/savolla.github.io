@@ -1,0 +1,14 @@
+title: Install/Enable Mu4e on Doom Emacs
+tags: doomemacs mail mu4e @zettel _method
+roam-id: c7f46f5f-1ecd-4e9b-9477-28c8db1953fe
+created: 20260527175400000
+modified: 20260527175400000
+type: text/markdown
+
+add the following into your `init.el`
+
+``` elisp
+(mu4e +org +gmail)
+```
+
+if you're on `nixos` then you also want to install
