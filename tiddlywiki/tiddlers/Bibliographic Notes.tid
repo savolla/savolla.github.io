@@ -16,7 +16,7 @@ My bibliographic notes taken from various sources. books, web articles, youtube 
 </ol>
 
 <h2>Currently Working On..</h2>
-<p>These materials are currently being watched/read</p>
+<p>These materials are currently being watched/read by me</p>
 <ol>
   <$list filter="[tag[@biblio]tag[@in_progress]!tag[_warning]!tag[_bestpractice]!tag[_term]!tag[_con]!tag[_limitation]!tag[_method]!tag[_abbr]!tag[_analogy]!tag[_fact]!tag[_tradeoff]!tag[_comparison]!tag[_pro]!tag[_cause]!tag[_antipattern]!tag[_pattern]!tag[_usecase]!tag[_advice]!tag[_property]!tag[_mechanism]!tag[_definition]!tag[_history]!tag[_constraint]]">
     <li>

@@ -493,6 +493,7 @@ def convert_body(body: str, link_map: dict[str, str]) -> str:
         return ""
 
     body = _rewrite_id_links(body, link_map)
+    body = org_table_to_html(body)
     body = _protect(body)
 
     result = subprocess.run(
@@ -528,6 +529,25 @@ def write_tag_tiddlers(tag_colors: dict[str, str], outdir: Path) -> None:
             f.write(f"color: {color}\n")
             f.write("\n")
 
+def org_table_to_html(body: str) -> str:
+    """Convert org tables in body to HTML via pandoc before main conversion."""
+    table_re = re.compile(
+        r'((?:^[ \t]*\|.*\n)+)',
+        re.MULTILINE
+    )
+
+    def convert_table(m: re.Match) -> str:
+        table_org = m.group(1)
+        result = subprocess.run(
+            ["pandoc", "-f", "org", "-t", "html", "--wrap=none"],
+            input=table_org,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        return result.stdout
+
+    return table_re.sub(convert_table, body)
 
 def node_to_tid(
     node: Node,

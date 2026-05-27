@@ -3,10 +3,4 @@ tags: @zettel _reference zetteltrack
 roam-id: 8f33028e-c2f7-4930-bdb7-41418f631bec
 type: text/markdown
 
-tag           title                         description
-  ------------- ----------------------------- --------------------------------------------
-  ~fact~        YYYYmmddHHMMSS                explanation of something or an information
-  ~howto~       imperative title              tutorial or step by step instructions
-  ~whatis~      concept\'s name               definition of a concept
-  ~reference~   list or table name            **lists** or **tables** of information
-  ~fix~         error (shorten if too long)   error and how to fix it
+\<table\> \<thead\> \<tr\> \<th\>tag\</th\> \<th\>title\</th\> \<th\>description\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>\<sub\>fact\</sub\>\</td\> \<td\>YYYYmmddHHMMSS\</td\> \<td\>explanation of something or an information\</td\> \</tr\> \<tr\> \<td\>\<sub\>howto\</sub\>\</td\> \<td\>imperative title\</td\> \<td\>tutorial or step by step instructions\</td\> \</tr\> \<tr\> \<td\>\<sub\>whatis\</sub\>\</td\> \<td\>concept\'s name\</td\> \<td\>definition of a concept\</td\> \</tr\> \<tr\> \<td\>\<sub\>reference\</sub\>\</td\> \<td\>list or table name\</td\> \<td\>\<strong\>lists\</strong\> or \<strong\>tables\</strong\> of information\</td\> \</tr\> \<tr\> \<td\>\<sub\>fix\</sub\>\</td\> \<td\>error (shorten if too long)\</td\> \<td\>error and how to fix it\</td\> \</tr\> \</tbody\> \</table\>
