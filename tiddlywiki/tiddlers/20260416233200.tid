@@ -5,7 +5,7 @@ created: 20260416233200000
 modified: 20260416233200000
 type: text/markdown
 
-think redis as a giant {{json}@0} file
+think redis as a giant json file
 
 
 <sup>source: [[Redis Crash Course]]</sup>

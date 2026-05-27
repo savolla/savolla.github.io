@@ -5,7 +5,7 @@ created: 20260526232400000
 modified: 20260526232400000
 type: text/markdown
 
-neo4j is a {{graph}@1} database
+neo4j is a graph database
 
 
 <sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database (14:53)]]</sup>

@@ -184,6 +184,9 @@ def _parse_aliases(value: str) -> list[str]:
     """Parse '"alias one" "alias two"' → ['alias one', 'alias two']."""
     return re.findall(r'"([^"]+)"', value)
 
+def strip_cloze_syntax(body: str) -> str:
+    """Strip org-fc cloze markers {{word}@N} → word."""
+    return _CLOZE_RE.sub(r'\1', body)
 
 def parse_org_file(path: Path) -> list[Node]:
     """
@@ -432,6 +435,7 @@ def rewrite_asset_links(body: str, rewrites: list[tuple[str, str]]) -> str:
 _ID_LINK_RE  = re.compile(r"\[\[id:([0-9a-f-]+)\]\[([^\]]*)\]\]")
 _WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 _TW_FILTER_RE = re.compile(r"\{\{\{(.*?)\}\}\}", re.DOTALL)
+_CLOZE_RE    = re.compile(r'\{\{(.+?)\}@\d+\}')
 
 _WL_PREFIX = "XWLX"
 _TW_PREFIX = "XTWFX"
@@ -538,7 +542,7 @@ def node_to_tid(
     # Rewrite asset links before pandoc conversion
     rewrites = copy_assets(node, assets_src, assets_out)
     node_body = rewrite_asset_links(node.body, rewrites)
-
+    node_body = strip_cloze_syntax(node_body)
     body_md = convert_body(node_body, link_map)
 
     # Build tags: node tags + aliases as [[bracket]] tags

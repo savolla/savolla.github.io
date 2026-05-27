@@ -5,7 +5,7 @@ created: 20260526231200000
 modified: 20260526231200000
 type: text/markdown
 
-redis can be used as {{primary database}{not many people use it like that}@0}
+redis can be used as primary database}{not many people use it like that
 
 
 <sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database (14:53)]]</sup>

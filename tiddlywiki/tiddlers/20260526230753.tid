@@ -5,7 +5,7 @@ created: 20260526230700000
 modified: 20260526230700000
 type: text/markdown
 
-redis is often used as {{cache}@0} on top of other {{databases}@1} to improve application performance
+redis is often used as cache on top of other databases to improve application performance
 
 
 <sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database (14:53)]]</sup>

@@ -5,7 +5,7 @@ created: 20260526232800000
 modified: 20260526232800000
 type: text/markdown
 
-to represent users connections in a social media application, we can use a {{graph}@0} database
+to represent users connections in a social media application, we can use a graph database
 
 
 <sup>source: [[Redis Crash Course the What Why and How to Use Redis as Your Primary Database (14:53)]]</sup>
