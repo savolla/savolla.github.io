@@ -1,0 +1,18 @@
+title: Install Pass, Pass-Otp, Pass-Import and Other Extensions on Nixos
+tags: pass nixos nix @zettel _method
+roam-id: 91a2c2d4-10d9-4eb6-b495-d2a1e47ffbd9
+created: 20260527201400000
+modified: 20260527201400000
+type: text/markdown
+
+``` nix
+systemPackages = with pkgs; [
+  (pass.withExtensions (exts: [ exts.pass-otp exts.pass-import ]))
+];
+```
+
+[[Rebuild Nixos]]
+
+[^1]
+
+[^1]: <https://b2g.h11e.de/2024/07/pass-ext/>

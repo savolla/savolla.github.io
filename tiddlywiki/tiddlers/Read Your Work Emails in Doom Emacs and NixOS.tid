@@ -1,0 +1,22 @@
+title: Read Your Work Emails in Doom Emacs and NixOS
+tags: nixos @post mail gmail pass
+roam-id: 02c49a4f-6ed0-4a2a-9479-0f8c9c22d27b
+created: 20260527202700000
+modified: 20260527202700000
+type: text/markdown
+
+`DRAFT`
+
+## setting up a second gmail account
+
+## adding 2FA
+
+## getting OTP using pass-otp
+
+## create app password for new gmail
+
+## mail client setup
+
+## doom emacs setup
+
+## forwarding work mails to this new mail

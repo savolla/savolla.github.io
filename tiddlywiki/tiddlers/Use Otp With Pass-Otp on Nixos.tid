@@ -1,0 +1,24 @@
+title: Use Otp With Pass-Otp on Nixos
+tags: nixos pass otp @zettel _method
+roam-id: e5424358-e673-44c3-9083-e47dab9a2071
+created: 20260527200300000
+modified: 20260527200300000
+type: text/markdown
+
+first you need to [[Install Pass, Pass-Otp, Pass-Import and Other Extensions on Nixos]]
+
+you first need `otpauth` that you'll usually get from scanning a QR code. once you got it just create a new `pass` entry but put `otp` in front of it
+
+``` bash
+pass otp insert $YOUR_ENTRY
+```
+
+it is going to ask for `otpauth` url.
+
+now get the OTP value using
+
+``` bash
+pass otp $YOUR_ENTRY
+```
+
+778905
