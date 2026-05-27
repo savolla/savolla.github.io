@@ -196,6 +196,7 @@ def parse_org_file(path: Path) -> list[Node]:
 
     # State
     in_props = False
+    in_review_data = False
     first_node_done = False
     cur_is_post = False
 
@@ -254,6 +255,16 @@ def parse_org_file(path: Path) -> list[Node]:
             cur_created = ""
             cur_is_post = "@post" in all_tags
             in_props = False
+            in_review_data = False
+            continue
+
+        # ── REVIEW_DATA block ─────────────────────────────────────
+        if re.match(r"^\s*:REVIEW_DATA:\s*$", line, re.IGNORECASE):
+            in_review_data = True
+            continue
+        if in_review_data:
+            if re.match(r"^\s*:END:\s*$", line, re.IGNORECASE):
+                in_review_data = False
             continue
 
         # ── Properties block boundaries ───────────────────────────
@@ -276,6 +287,7 @@ def parse_org_file(path: Path) -> list[Node]:
                     cur_roam_refs = val
                 elif key == "CREATED":
                     cur_created = parse_org_timestamp(val)
+                # FC_CREATED, FC_TYPE, FC_ALGO etc. are silently dropped
             continue
 
         # ── File-level keywords ───────────────────────────────────
