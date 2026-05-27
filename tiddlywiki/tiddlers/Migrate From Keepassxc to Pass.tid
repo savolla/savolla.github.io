@@ -1,0 +1,14 @@
+title: Migrate From Keepassxc to Pass
+tags: pass keepassxc @zettel _method
+roam-id: a0a77f38-14ce-4eb0-9ab5-1a9288448bb6
+created: 20260527190500000
+modified: 20260527190500000
+type: text/markdown
+
+TODO
+
+[^1] [^2]
+
+[^1]: <https://www.passwordstore.org/>
+
+[^2]: <https://git.zx2c4.com/password-store/tree/contrib/importers/keepass2csv2pass.py>
