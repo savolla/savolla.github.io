@@ -5,13 +5,6 @@ created: 20260526235800000
 modified: 20260526235800000
 type: text/markdown
 
-:REVIEW~DATA~:
-
-  position   ease   box   interval   due
-  ---------- ------ ----- ---------- ----------------------
-  0          2.50   1     0.01       2026-05-26T23:41:02Z
-  1          2.50   0     0.00       2026-05-26T21:02:12Z
-
 there are 2 reliable methods for implementing **data persistency** in redis;
 
 1.  {{snapshotting (RDB)}@0}

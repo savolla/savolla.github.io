@@ -5,12 +5,6 @@ created: 20260526232400000
 modified: 20260526232400000
 type: text/markdown
 
-:REVIEW~DATA~:
-
-  position   ease   box   interval   due
-  ---------- ------ ----- ---------- ----------------------
-  1          2.50   2     1.00       2026-05-27T23:21:17Z
-
 neo4j is a {{graph}@1} database
 
 

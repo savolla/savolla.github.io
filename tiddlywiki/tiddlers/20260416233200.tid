@@ -5,12 +5,6 @@ created: 20260416233200000
 modified: 20260416233200000
 type: text/markdown
 
-:REVIEW~DATA~:
-
-  position   ease   box   interval   due
-  ---------- ------ ----- ---------- ----------------------
-  0          2.50   1     0.01       2026-05-26T19:35:14Z
-
 think redis as a giant {{json}@0} file
 
 

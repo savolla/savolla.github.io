@@ -5,12 +5,6 @@ created: 20260526232800000
 modified: 20260526232800000
 type: text/markdown
 
-:REVIEW~DATA~:
-
-  position   ease   box   interval   due
-  ---------- ------ ----- ---------- ----------------------
-  0          2.50   2     1.00       2026-05-27T23:20:19Z
-
 to represent users connections in a social media application, we can use a {{graph}@0} database
 
 
