@@ -14,3 +14,15 @@ My bibliographic notes taken from various sources. books, web articles, youtube 
     </li>
   </$list>
 </ol>
+
+IN-PROGRESS 󰔟 These materials are currently being watched/read
+
+<ol>
+  <$list filter="[tag[@biblio]tag[@in_progress]!tag[_warning]!tag[_bestpractice]!tag[_term]!tag[_con]!tag[_limitation]!tag[_method]!tag[_abbr]!tag[_analogy]!tag[_fact]!tag[_tradeoff]!tag[_comparison]!tag[_pro]!tag[_cause]!tag[_antipattern]!tag[_pattern]!tag[_usecase]!tag[_advice]!tag[_property]!tag[_mechanism]!tag[_definition]!tag[_history]!tag[_constraint]]">
+    <li>
+      <$link>
+        <$view field="title"/>
+      </$link>
+    </li>
+  </$list>
+</ol>
