@@ -229,7 +229,18 @@ I also realized that I can use this flake to manage my other configurations. whi
 
 this may look complicated at first but it scales and require minimum change as you add more hosts. separating machines by context "personal" and "work" and their types "physical" and "virtual".
 
-now we should let each `configuration.nix` know that new package channels are available now!
+now we should let each `configuration.nix` know that new package channels are available now! since we defined those "special arguments" in our flake, we just pass them in. here is the top portion of my xkarna configuration
+
+``` nix
+{
+  config,
+  pkgs,
+  lib,
+  stable, # <--
+  unstable, # <--
+  ...
+}:
+```
 
 now you have a single repo that controls all those mahcines. you can clone the repo on each of your machine and rebuild them like the following;
 
