@@ -1,11 +1,25 @@
 title: Read Your Work Emails in Doom Emacs and NixOS
-tags: nixos @post mail gmail pass
+tags: mu4e nix doomemacs emacs nixos @post mail gmail pass
 roam-id: 02c49a4f-6ed0-4a2a-9479-0f8c9c22d27b
 created: 20260527202700000
 modified: 20260527202700000
 type: text/markdown
 
 `DRAFT`
+
+## installing packages on nixos
+
+``` nix
+systemPackages = with pkgs; [
+  mu
+  ((emacsPackagesFor emacs).emacsWithPackages (epkgs: [ epkgs.mu4e ]))
+  isync
+  offlineimap
+  msmtp
+];
+```
+
+[[Rebuild Nixos]]
 
 ## setting up a second gmail account
 
