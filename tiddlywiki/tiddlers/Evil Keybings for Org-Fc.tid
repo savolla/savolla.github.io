@@ -22,16 +22,7 @@ type: text/markdown
   (kbd "q") 'org-fc-review-quit)
 ```
 
-  mode     keybind   description
-  -------- --------- ----------------------
-  review   RET/n     flip card
-  review   s         suspend current card
-  rate     a         review again
-  rate     h         mark as \"hard\"
-  rate     g         mark as \"good\"
-  rate     e         mark as \"easy\"
-  rate     s         suspend card
-  all      q         quit session
+\<table\> \<thead\> \<tr\> \<th\>mode\</th\> \<th\>keybind\</th\> \<th\>description\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>review\</td\> \<td\>RET/n\</td\> \<td\>flip card\</td\> \</tr\> \<tr\> \<td\>review\</td\> \<td\>s\</td\> \<td\>suspend current card\</td\> \</tr\> \<tr\> \<td\>rate\</td\> \<td\>a\</td\> \<td\>review again\</td\> \</tr\> \<tr\> \<td\>rate\</td\> \<td\>h\</td\> \<td\>mark as "hard"\</td\> \</tr\> \<tr\> \<td\>rate\</td\> \<td\>g\</td\> \<td\>mark as "good"\</td\> \</tr\> \<tr\> \<td\>rate\</td\> \<td\>e\</td\> \<td\>mark as "easy"\</td\> \</tr\> \<tr\> \<td\>rate\</td\> \<td\>s\</td\> \<td\>suspend card\</td\> \</tr\> \<tr\> \<td\>all\</td\> \<td\>q\</td\> \<td\>quit session\</td\> \</tr\> \</tbody\> \</table\>
 
 [^1]
 

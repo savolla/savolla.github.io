@@ -5,8 +5,8 @@ created: 20260525184300000
 modified: 20260525184300000
 type: text/markdown
 
-first [[List Nixos Containers]] to check what you have. then say we have a container named \"webserver\". start it like the following
+first [[List Nixos Containers]] to check what you have. then say we have a container named "webserver". start it like the following
 
-``` {.bash org-language="sh"}
+``` bash
 sudo nixos-container start webserver
 ```

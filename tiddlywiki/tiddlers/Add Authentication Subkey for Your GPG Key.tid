@@ -5,9 +5,9 @@ created: 20260525203300000
 modified: 20260525203300000
 type: text/markdown
 
-[[Get List of GPG Keys]] to find your email address attached to the gpg key (I\'ll provide my own mail in the example)
+[[Get List of GPG Keys]] to find your email address attached to the gpg key (I'll provide my own mail in the example)
 
-``` {.bash org-language="sh"}
+``` bash
 gpg --edit-key --expert kuzey.koc@tutamail.com
 ```
 
@@ -25,6 +25,6 @@ select `(1) Curve 25519`
 
 select `0` for no expiration
 
-confirm two questions as \"y\" and enter your gpg key\'s password after
+confirm two questions as "y" and enter your gpg key's password after
 
 press `q` to quit and `y` to save changes

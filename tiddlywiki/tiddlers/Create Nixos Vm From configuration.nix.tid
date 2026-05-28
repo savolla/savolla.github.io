@@ -5,8 +5,8 @@ created: 20260525231400000
 modified: 20260525231400000
 type: text/markdown
 
-okay let\'s use the [[Example Nixos Configuration With SSH Support]] for this tutorial. let\'s create the vm
+okay let's use the [[Example Nixos Configuration With SSH Support]] for this tutorial. let's create the vm
 
-``` {.bash org-language="sh"}
+``` bash
 
 ```

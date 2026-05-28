@@ -5,6 +5,6 @@ created: 20260525184100000
 modified: 20260525184100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 nixos-container list
 ```

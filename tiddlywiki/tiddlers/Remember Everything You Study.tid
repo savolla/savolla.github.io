@@ -5,11 +5,11 @@ created: 20260525154100000
 modified: 20260525154100000
 type: text/markdown
 
-we really don\'t need the [anki](https://apps.ankiweb.net/) when we have `emacs` and `org-mode`
+we really don't need the [anki](https://apps.ankiweb.net/) when we have `emacs` and `org-mode`
 
 ## why org-fc and not org-drill or anki?
 
-`org-fc` is scalable with its own `filter` operator. it uses `awk` to scan all entries with `:fc:` tag. while `org-drill` doesn\'t have this feature and not scale well with big collection. for example say I want to review only those cards with tag `:terraform:` and `:_fact:`. `org-fc` can handle this with the following function
+`org-fc` is scalable with its own `filter` operator. it uses `awk` to scan all entries with `:fc:` tag. while `org-drill` doesn't have this feature and not scale well with big collection. for example say I want to review only those cards with tag `:terraform:` and `:_fact:`. `org-fc` can handle this with the following function
 
 ``` elisp
 (defun my/fc-terraform-facts () (interactive)
@@ -23,7 +23,7 @@ we can define our decks like this. and maybe more?
   (org-fc-review '(:paths all :filter (and (tag "k8s") (tag "_fact")))))
 ```
 
-another cool feature `org-fc` has is that it can also support \"input type\" flashcards. for example we can use this type of flashcard with the following question type:
+another cool feature `org-fc` has is that it can also support "input type" flashcards. for example we can use this type of flashcard with the following question type:
 
 > the default port for the kubernetes API server
 

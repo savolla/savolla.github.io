@@ -7,6 +7,6 @@ type: text/markdown
 
 it happens if you delete your public key from the remote server. you should do the following to bypass the error
 
-``` {.bash org-language="sh"}
+``` bash
 ssh -o PubkeyAuthentication=no user@server
 ```
