@@ -1,0 +1,11 @@
+title: Run Command as Another User
+tags: linux @zettel _method
+roam-id: 59180e9b-2c7b-404a-9c07-f8204a8be6c4
+created: 20260528153100000
+modified: 20260528153100000
+type: text/markdown
+
+``` bash
+su inferi # switch to another user
+runuser -u savolla -- protonup -y # run protonup -y as savolla
+```

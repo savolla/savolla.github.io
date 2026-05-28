@@ -1,0 +1,18 @@
+title: Enable Startx in Nixos Configuration
+tags: nixos nix xorg @zettel _method
+roam-id: 3ccc8ed0-f818-40da-8e85-bc76f79aa8ea
+created: 20260528152200000
+modified: 20260528152200000
+type: text/markdown
+
+``` nix
+# configuration.nix
+services = {
+  xserver = {
+    enable = true;
+    displayManager = {
+      startx.enable = false;
+    };
+  };
+};
+```

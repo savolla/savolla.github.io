@@ -1,0 +1,26 @@
+title: Reduce Cpu Overhead When Rebuilding Nixos
+tags: nix nixos optimization @zettel _method
+roam-id: e8f0574d-c03d-4ef8-a7af-60ae7307b13d
+created: 20260528145800000
+modified: 20260528145800000
+type: text/markdown
+
+``` nix
+nix = {
+
+  # lower build process priority — makes the builder yield to other processes:
+  daemonCPUSchedPolicy = "idle"; # only use CPU when nothing else needs it
+  daemonIOSchedClass = "idle"; # same for disk I/O
+
+  settings = {
+
+    # limit parallel jobs — by default Nix uses all cores, which can make the system unresponsive:
+    max-jobs = 4; # number of parallel builds
+    cores = 2; # cores per build job
+  };
+};
+```
+
+[^1]
+
+[^1]: <https://claude.ai/chat/7551fb29-40a0-4ba2-a339-90a6b51c4bea>
