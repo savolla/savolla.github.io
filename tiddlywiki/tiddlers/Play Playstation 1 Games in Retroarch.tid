@@ -1,0 +1,13 @@
+title: Play Playstation 1 Games in Retroarch
+tags: ps1 retroarch @zettel _method
+roam-id: b5df5be6-f7a3-404c-bcc9-be4a2b9fb62b
+created: 20260529000100000
+modified: 20260529000100000
+type: text/markdown
+
+- download playstation 1 BIOS files from [here](https://disk.yandex.by/d/Ac98JXVHtx0Jkg)
+- extact archive
+- copy those files into your `$HOME/.config/retroarch/system`
+- download your ps1 game from [romspedia](https://www.romspedia.com/)
+- scan directory for games
+- play

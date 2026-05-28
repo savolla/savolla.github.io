@@ -1,0 +1,10 @@
+title: Fix Retroarch Scan Directory Cannot Scan All Roms
+tags: retroarch @zettel _fix
+roam-id: 13216a16-e9f1-4acc-9357-7b292ac4ef72
+created: 20260528232700000
+modified: 20260528232700000
+type: text/markdown
+
+launch retroarch go to Main Menu -\> Import Content -\> Manual Scan
+
+don't use "Scan Directory"
