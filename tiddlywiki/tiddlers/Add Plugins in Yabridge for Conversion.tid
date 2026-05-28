@@ -1,0 +1,12 @@
+title: Add Plugins in Yabridge for Conversion
+tags: wine yabridge @zettel _method
+roam-id: 0d425515-929b-4eab-85e2-0d8301af47db
+created: 20260529002300000
+modified: 20260529002300000
+type: text/markdown
+
+``` bash
+WINEPREFIX=/path/to/prefix  WINEARCH=win64 yabridgectl add /path/to/vsts/
+```
+
+> you may get the following error when you try to `sync`: `yabridgectl status/sync prints "Indexed over 100.000 files` this is a bug. see [["Err:module:import_dll Library MFC42u.DLL" Wine Error]] for fix

@@ -1,0 +1,10 @@
+title: "Err:module:import_dll Library MFC42u.DLL" Wine Error
+tags: wine winetricks @zettel _fix
+roam-id: c9d0e4b4-65e2-47c3-8c64-ccef41b3340e
+created: 20260529002000000
+modified: 20260529002000000
+type: text/markdown
+
+``` bash
+WINEPREFIX=/path/to/prefix  WINEARCH=win64 winetricks mfc42
+```

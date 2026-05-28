@@ -1,0 +1,28 @@
+title: Install Fabfilter Pro-Q VST on Nixos
+tags: @zettel _method nixos yabridge audio
+roam-id: 63ff9818-f0d8-466c-b06e-706fa90cdfca
+created: 20260529001400000
+modified: 20260529001400000
+type: text/markdown
+
+- [[Install Yabridge on Nixos]]
+
+- download fabfilter plugin bundle by using this [magnet link](magnet:?xt=urn:btih:39A063E9122B3CAF068D588B695E9D952965347F&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet&dn=FabFilter%20-%20Total%20Bundle%20v2024.05.30%20VST%2C%20VST3%2C%20AAX%2C%20CLAP%20x86%20x64%20%7BR2R%7D%20%5B24.06.2024%5D)
+
+- [[Extract 7zip Archive]]
+
+- fix [["Err:module:import_dll Library MFC42u.DLL" Wine Error]] if you see it
+
+- start the installation by doing
+
+  ``` bash
+  WINEPREFIX=~/area/wine/win-vsts  WINEARCH=win64 wine Setup\ Total\ Bundle\ v2024.05.30.exe`
+  ```
+
+- VST plugins will be installed under `~/area/wine/win-vsts/drive_c/Program Files/Common Files/VST3`
+
+- [[Add Plugins in Yabridge for Conversion]]
+
+- [[convert windows vst plugins to linux plugins using yabridge]]
+
+- you'll find your converted plugins under \`~/.vst3\`

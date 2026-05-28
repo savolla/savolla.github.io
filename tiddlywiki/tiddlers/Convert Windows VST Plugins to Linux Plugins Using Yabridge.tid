@@ -1,0 +1,14 @@
+title: Convert Windows VST Plugins to Linux Plugins Using Yabridge
+tags: windows yabridge wine @zettel _method
+roam-id: 7245eab8-4c24-46d5-9907-3ba50a7ec308
+created: 20260529002600000
+modified: 20260529002600000
+type: text/markdown
+
+make sure you [[Add Plugins in Yabridge for Conversion]] first
+
+``` bash
+WINEPREFIX=/path/to/prefix  WINEARCH=win64 yabridge sync
+```
+
+fix [["Yabridgectl Status/Sync Prints "Indexed Over 100.000 Files" Yabridge Issue]] if you get it

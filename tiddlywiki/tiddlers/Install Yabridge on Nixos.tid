@@ -1,0 +1,15 @@
+title: Install Yabridge on Nixos
+tags: yabridge nixos @zettel _method
+roam-id: 9ec243e1-ecf4-40c8-ad9d-6fd07d4736ef
+created: 20260529001800000
+modified: 20260529001800000
+type: text/markdown
+
+add under system packages;
+
+``` nix
+environment.systemPackages = [
+  yabridge
+  yabridgectl
+];
+```

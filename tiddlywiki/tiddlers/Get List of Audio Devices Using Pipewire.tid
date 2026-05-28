@@ -1,0 +1,26 @@
+title: Get List of Audio Devices Using Pipewire
+tags: audio pipewire @zettel _method
+roam-id: 743ec348-25ad-4847-93ba-27e0816d4c7a
+created: 20260529001100000
+modified: 20260529001100000
+type: text/markdown
+
+``` bash
+wpctl status
+```
+
+you'll find your device name down below. here's mine:
+
+``` example
+  ....
+    46   │ Settings
+    47   │  └─ Default Configured Devices:
+    48   │          0. Audio/Sink    alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y75V4MV296115E-00.HiFi__hw_USB__sink
+    49   │          1. Audio/Source  alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y75V4MV296115E-00.HiFi__scarlett2i_mono_in_USB_0_
+         │ 1__source
+```
+
+- I have two devices:
+
+1.  `alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y75V4MV296115E-00.HiFi__hw_USB__sink`
+2.  `alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y75V4MV296115E-00.HiFi__scarlett2i_mono_in_USB_0_1__source`

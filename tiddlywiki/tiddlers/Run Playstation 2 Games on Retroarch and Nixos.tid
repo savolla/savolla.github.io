@@ -1,0 +1,18 @@
+title: Run Playstation 2 Games on Retroarch and Nixos
+tags: nixos retroarch ps2 @zettel _method
+roam-id: 2befa677-098d-44d2-a920-b464006b6b0d
+created: 20260529003300000
+modified: 20260529003300000
+type: text/markdown
+
+in `configuration.nix`
+
+``` nix
+(retroarch.override {
+  cores = with libretro; [
+    pcsx2 # ps2 emulator
+  ];
+})
+```
+
+[[Rebuild Nixos]] then download ps2 bios files from [here](https://www.retrostic.com/bios/pcsx2-playstation-2/download). also see [[Play Playstation 1 Games in Retroarch]] to see where to put bios files

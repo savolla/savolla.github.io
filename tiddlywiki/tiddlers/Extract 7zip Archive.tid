@@ -1,0 +1,10 @@
+title: Extract 7zip Archive
+tags: 7zip @zettel _method
+roam-id: e3c74ac4-d213-4500-91f1-494ef1c64e5e
+created: 20260529001600000
+modified: 20260529001600000
+type: text/markdown
+
+``` bash
+7za x /path/to/archive
+```

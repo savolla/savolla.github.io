@@ -1,0 +1,18 @@
+title: "Yabridgectl Status/Sync Prints "Indexed Over 100.000 Files" Yabridge Issue
+tags: yabridge wine @zettel _fix
+roam-id: f7aadf9b-2401-4f45-9525-fbc27ed6abd4
+created: 20260529002700000
+modified: 20260529002700000
+type: text/markdown
+
+try to add your plugins directory by directory instead of one single directory. like the following:
+
+``` bash
+plugin_dirs = [
+    '/home/savolla/area/wine/win-vsts/drive_c/Program Files/Common Files/VST3/EZdrummer',
+    '/home/savolla/area/wine/win-vsts/drive_c/Program Files/Common Files/VST3/FabFilter',
+    '/home/savolla/area/wine/win-vsts/drive_c/Program Files/Common Files/VST3/Native Instruments',
+]
+```
+
+I tried to add them with `'/home/savolla/area/wine/win-vsts/drive_c/Program Files/Common Files/VST3'` and this bug appeared.

@@ -1,0 +1,26 @@
+title: Very Opinionated Retro Gaming Setup on NixOS
+tags: nixos retroarch @zettel _method
+roam-id: 39ef2164-6cf8-4232-9462-fb58af4b0a5d
+created: 20260529005200000
+modified: 20260529005200000
+type: text/markdown
+
+Maybe I'm not that kid who hacked and coded on Commodore systems but I played bunch of NES, SNES and SEGA games. I miss those days and I decided why not creating the most authentic retro gaming experience on NixOS using retroarch and shaders? the following is my opinions about what is "the best". I promise you a very high quality retro gaming experience once you do all those things.
+
+first off here are my recommended cores for **best accuracy and performance**
+
+``` nix
+systemPackages = with pkgs; [
+  (stable.retroarch.withCores (cores: with cores; [
+    mesen # nes
+    snes9x # snes
+    beetle-psx-hw # ps1
+    pcsx2 # ps2
+    fbneo # arcade (MAME)
+    mgba # gba
+    genesis-plus-gx # sega genesis/megadrive
+  ]))
+];
+```
+
+CRT shaders are what blows life to those games. not all CRTs work for every platform. so we need some cherry picking. in my opinion the best shader for SNES and Megadrive is `shaders/crt/crt-royale.slangp`. this is the gold standard. accurately simulates phosphor glow, bloom, scanlines, and aperture grille.
