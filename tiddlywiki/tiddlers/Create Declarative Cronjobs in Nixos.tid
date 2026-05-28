@@ -1,0 +1,17 @@
+title: Create Declarative Cronjobs in Nixos
+tags: nixos cron cronjob @zettel _method
+roam-id: c94ebde1-19cd-4e7a-8cec-eabc2c91d6eb
+created: 20260528160500000
+modified: 20260528160500000
+type: text/markdown
+
+hourly run `notify-send -u normal 'hello from nixos cronjob'`
+
+``` nix
+cron = {
+  enable = true;
+  systemCronJobs = [
+    "0 * * * * root notify-send -u normal 'hello from nixos cronjob'" # comment
+  ];
+};
+```
