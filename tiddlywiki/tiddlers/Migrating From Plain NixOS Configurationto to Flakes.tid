@@ -27,16 +27,32 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
 
 ``` nix
 {
-  description = "savolla's flake";
+  description = "nazg"; # the one ring that rules all other rings (hosts) (LOTR)
 
   # define channels like this. these are called "inputs"
   inputs = {
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-25_11.url    = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs-unstable = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+    };
+
+    nixpkgs-25_11 = {
+      url    = "github:NixOS/nixpkgs/nixos-25.11";
+    };
+
+    home-manager-25_11 = {
+      url = "github:nix-community/home-manager/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   # I don't know why we need to define them as "outputs" again but here it is..
-  outputs = { self, nixpkgs-unstable, nixpkgs-25_11, ... }:
+  outputs = { self,
+    nixpkgs-unstable,
+    nixpkgs-25_11,
+    home-manager-25_11,
+    ...
+  }:
 
   let
     system = "x86_64-linux";
@@ -52,14 +68,12 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
       inherit system;
       config.allowUnfree = true;
     };
-
   in
 
   {
     nixosConfigurations = {
-
       # my main machine/host named xkarna
-      xkarna = nixpkgs.lib.nixosSystem {
+      "xkarna" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         # we'll pass these "special arguments" in our configuration.nix in a minute..
@@ -69,17 +83,19 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
         };
 
         modules = [
-          ./configuration.nix # my existing configuration file for xkarna
+          ./hosts/personal/physical/xkarna/configuration.nix # my existing configuration file for xkarna
         ];
 
       };
+    };
 
-      # ------------ read if you want extra hosts ------------ #
+    # ------------ read if you want extra hosts ------------ #
 
-      # you can also define more configurations for your other machines like this;
-      # for example I have my work laptop that is ubuntu based but we can still define
-      # flakes for home-manager (home.nix) it as well!
-      fiat = nixpkgs.lib.nixosSystem {
+    # you can also define more configurations for your other machines like this;
+    # for example I have my work laptop that is ubuntu based but we can still define
+    # flakes for home-manager (home.nix) it as well!
+    nixosConfigurations = {
+      "fiat" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         specialArgs = {
@@ -88,13 +104,14 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
         };
 
         modules = [
-          ./configuration.nix # my existing configuration file for xkarna
+          ./hosts/work/kartaca/physical/fiat/configuration.nix
         ];
       };
+    };
 
-
-      # maybe you also have a different system?
-      rpi3b = nixpkgs.lib.nixosSystem {
+    # maybe you also have a different system?
+    nixosConfigurations = {
+      "rpi3b" = nixpkgs.lib.nixosSystem {
         system = "aarch64-linux"; # the main difference
 
         specialArgs = {
@@ -103,11 +120,127 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
         };
 
         modules = [
-          ./configuration.nix # my existing configuration file for xkarna
+          ./hosts/personal/physical/rpi3b/configuration.nix
         ];
       };
-
     };
+
   };
 }
+```
+
+TODO: CORRECT FLAKE. ADAPT THIS ONE ABOVE
+
+``` nix
+{
+  description = "nazg";
+
+  inputs = {
+    nixpkgs-unstable = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+    };
+
+    nixpkgs-25_11 = {
+      url = "github:NixOS/nixpkgs/nixos-25.11";
+    };
+
+    home-manager-25_11 = {
+      url = "github:nix-community/home-manager/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs-25_11";
+    };
+  };
+
+  outputs =
+    {
+      self,
+      nixpkgs-unstable,
+      nixpkgs-25_11,
+      home-manager-25_11,
+      ...
+    }:
+
+    let
+      mkStable = system: import nixpkgs-25_11 {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      mkUnstable = system: import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
+    in
+    {
+      nixosConfigurations = {
+
+        xkarna = nixpkgs-unstable.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {
+            stable = mkStable "x86_64-linux";
+            unstable = mkUnstable "x86_64-linux";
+          };
+          modules = [ ./hosts/personal/physical/xkarna/configuration.nix ];
+        };
+
+        fiat = nixpkgs-unstable.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {
+            stable = mkStable "x86_64-linux";
+            unstable = mkUnstable "x86_64-linux";
+            inherit home-manager-25_11;
+          };
+          modules = [ ./hosts/work/kartaca/physical/fiat/configuration.nix ];
+        };
+
+        rpi3b = nixpkgs-unstable.lib.nixosSystem {
+          system = "aarch64-linux";
+          specialArgs = {
+            stable = mkStable "aarch64-linux";
+            unstable = mkUnstable "aarch64-linux";
+          };
+          modules = [ ./hosts/personal/physical/rpi3b/configuration.nix ];
+        };
+
+      };
+    };
+}
+```
+
+okay now! you seem tired. but keep it up. It really pays off later!
+
+now you see we have a "main" file that stands on top of all nixos configurations and home-managers. always with you and always "extremely" reproducible. (at least "will be" in a minute)
+
+I also realized that I can use this flake to manage my other configurations. which is very convenient. I took `configuration.nix` and `home.nix` files from my other nixos servers and vms and put it under a single repo. so the `flake.nix` can manage them easily. here is my current directory structure;
+
+``` bash
+.
+├── flake.nix
+└── hosts
+    ├── personal
+    │   ├── physical
+    │   │   ├── xkarna
+    │   │   └── rpi3b
+    │   └── virtual
+    └── work
+        └── kartaca
+            ├── physical
+            │   └── fiat
+            └── virtual
+```
+
+this may look complicated at first but it scales and require minimum change as you add more hosts. separating machines by context "personal" and "work" and their types "physical" and "virtual".
+
+now we should let each `configuration.nix` know that new package channels are available now!
+
+now you have a single repo that controls all those mahcines. you can clone the repo on each of your machine and rebuild them like the following;
+
+on `xkarna` host
+
+``` bash
+sudo nixos-rebuild switch --flake .#xkarna
+```
+
+on `fiat` host
+
+``` bash
+sudo nixos-rebuild switch --flake .#fiat
 ```
