@@ -24,3 +24,11 @@ systemPackages = with pkgs; [
 ```
 
 CRT shaders are what blows life to those games. not all CRTs work for every platform. so we need some cherry picking. in my opinion the best shader for SNES and Megadrive is `shaders/crt/crt-royale.slangp`. this is the gold standard. accurately simulates phosphor glow, bloom, scanlines, and aperture grille.
+
+when you first launch retroarch you'd not see the `shader_slang`. slang shaders are GPU friendly. not like `glsl` shaders. so you'd need to update your shaders from retroarch menu and restart the application.
+
+now load a game and press `F1`. locate to the "shaders" select "shader<sub>slang</sub>". then "crt" and find `crt-royale.slangp`. select it.
+
+now go to "save preset" -\> "save core preset". now this shader will be applied for all games that associated with this core. `snes9x` and `genesis-plus-gx`. remember this shader is best for SNES and Megadrive
+
+if your GPU struggles with `crt-royale.slangp` you can also try a faster option which is `crt-geom`
