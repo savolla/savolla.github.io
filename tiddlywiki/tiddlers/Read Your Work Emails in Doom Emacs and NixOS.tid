@@ -19,13 +19,268 @@ type: text/markdown
 
 ## mail client setup
 
-## doom emacs setup
+first of all create directories for your mail. I follow [PARA](https://fortelabs.com/blog/para/) method and I put my mails under `~/area/mail`. you can put them anywhere you want
+
+``` bash
+mkdir -p ~/area/mail/personal/Inbox
+```
+
+my `~/.mbsyncrc` settings
+
+``` bash
+IMAPAccount personal
+Host imap.gmail.com
+Port 993
+User kuzey.koc7991@gmail.com
+PassCmd "pass savolla.email.gmail.kuzey.koc7991@gmail.com | grep app_pass_emacs | awk -F '::' '{ print $2 }'"
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-bundle.crt
+
+IMAPStore personal-remote
+Account personal
+
+MaildirStore personal-local
+SubFolders Verbatim
+Path ~/area/mail/personal/
+Inbox ~/area/mail/personal/Inbox
+
+Channel personal
+Far :personal-remote:
+Near :personal-local:
+Patterns * !Trash !Drafts
+Create Both
+Expunge Both
+SyncState *
+```
+
+notice how I use `pass` command. I structure my pass entries like the following (notice those `::` separators)
+
+``` ascii
+otpauth://totp/Google%3Akuzey.koc7991....
+password::SOMEPASSWORD
+mail::kuzey.koc7991@gmail.com
+birthday::SOME_BIRTHDAY
+gender::male
+app_pass_emacs::SOME_APP_PASSWORD
+```
+
+I keep the `otpauth` field without any prefix because `pass-otp` gets the first line by default. but if I need values below I simply use `grep` `awk` kung-fu to get them using plain `pass`. for example here I call `pass-otp`
+
+``` bash
+pass otp savolla.email.gmail.kuzey.koc7991@gmail.com
+```
+
+``` example
+472903
+```
+
+and for other fields;
+
+``` bash
+pass savolla.email.gmail.kuzey.koc7991@gmail.com | grep app_pass_emacs | awk -F '::' '{ print $2 }'
+```
+
+then in `~/.msmtprc` I added;
+
+    defaults
+    auth           on
+    tls            on
+    tls_trust_file /etc/ssl/certs/ca-bundle.crt
+    logfile        ~/.msmtp.log
+
+    account        personal
+    host           smtp.gmail.com
+    port           465
+    tls_starttls   off
+    from           kuzey.koc7991@gmail.com
+    user           kuzey.koc7991@gmail.com
+    passwordeval   "pass savolla.email.gmail.kuzey.koc7991@gmail.com | grep app_pass_emacs | awk -F '::' '{ print $2 }'"
+    account default : personal
 
 ## smoke test
 
 ``` bash
 mbsync -a
 ```
+
+initialize and index
+
+``` bash
+mu init --maildir=~/area/mail --my-address=kuzey.koc7991@gmail.com
+```
+
+expected output:
+
+``` ascii
+mu has been created with the following properties:
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>property</td>
+<td>value</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>maildir</td>
+<td>/home/savolla/area/mail</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>database-path</td>
+<td><em>home/savolla</em>.cache/mu/xapian</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>schema-version</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>max-message-size</td>
+<td>100000000</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>batch-size</td>
+<td>50000</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>created</td>
+<td>Thu May 28 02:32:59 2026</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>personal-address</td>
+<td>kuzey.koc7991@gmail.com</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>messages in store</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>support-ngrams</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>last-change</td>
+<td>never</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+<table>
+<tbody>
+<tr>
+<td>last-index</td>
+<td>never</td>
+</tr>
+</tbody>
+</table>
++-------------------+--------------------------------+
+Database is empty. You can use 'mu index' to fill it.
+```
+
+now index it like it says
+
+``` bash
+mu index
+```
+
+expected output:
+
+``` ascii
+indexing maildir /home/savolla/area/mail -> store /home/savolla/.cache/mu/xapian
+<table>
+<tbody>
+<tr>
+<td>indexing messages; checked: 2; updated/new: 2; cleaned-up: 0</td>
+</tr>
+</tbody>
+</table>
+```
+
+## doom emacs setup
+
+now it is time to setup doom side. put the following into `config.el`
+
+``` elisp
+(after! mu4e
+  ;; NixOS: mu4e elisp lives in the Nix store, not a standard path.
+  ;; This dynamically resolves it so it survives package updates.
+  (add-to-list 'load-path
+    (expand-file-name
+      "/run/current-system/sw/bin/mu"
+      (file-truename (executable-find "mu"))))
+
+  ;; core paths
+  (setq mu4e-maildir "~/area/mail"
+        mu4e-get-mail-command "mbsync -a"
+        mu4e-update-interval 300) ;; update mails every 5 minutes
+
+  (setq mu4e-drafts-folder "/personal/Drafts"
+        mu4e-sent-folder   "/personal/Sent Mail"
+        mu4e-trash-folder  "/personal/Trash"
+        mu4e-refile-folder "/personal/Archive")
+
+  ;; sending via msmtp
+  (setq sendmail-program (executable-find "msmtp")
+        send-mail-function             'sendmail-send-it
+        message-send-mail-function     'message-send-mail-with-sendmail
+        message-sendmail-f-is-evil     t
+        message-sendmail-extra-arguments '("--read-envelope-from"))
+
+  ;; quality of life
+  (setq mu4e-view-show-images t
+        mu4e-compose-signature-auto-include t
+        mu4e-sent-messages-behavior 'delete))  ; remove this line if not Gmail
+```
+
+[[Refresh Doom Emacs]]
 
 ## forwarding work mails to this new mail
 
