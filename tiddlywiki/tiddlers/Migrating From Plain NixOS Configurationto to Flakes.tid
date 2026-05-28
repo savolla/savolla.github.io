@@ -1,0 +1,96 @@
+title: Migrating From Plain NixOS Configurationto to Flakes
+tags: @post nixos nix flake
+roam-id: b7d6df8a-85da-473b-80df-421c620189b3
+created: 20260528170600000
+modified: 20260528170600000
+type: text/markdown
+
+first of all I couldn't understand flakes for a long time.. I didn't understand what it made for and ignored it for like 2 years? anyway. today I had a very specific problem. I want to talk about the problem because you cannot understand flakes without experiencing this "very specific" problem..
+
+okay I have this HUGE `configuration.nix` where I have bunch of packages, options, services configured. I was happy. very happy with this sytem. until I wanted to upgrade my [qutebrowser](https://qutebrowser.org/) version to fix a specific bug.. I was on `3.6.3` and wanted to upgrade to `3.7.0`.
+
+I thought why not just [[Upgrade Nixos]] and call the day? okay I went that route and upgraded my system. the result was the same. my qutebrowser was still `3.6.3`.. because nixos folks probably thought `3.7.0` too dangerous for their stable nixos channel. hmm.. I [[Get List of Nix Channels on Your System]] and I saw that my current channels was
+
+``` bash
+nixos https://channels.nixos.org/nixos-25.11
+```
+
+I thought maybe I can upgrade to the `unstable` channel and get the latest qutebrowser? okay I [[Switch to Unstable Channel in Nixos]] and rebuilt my nixos system.. (this is where things get wrong)
+
+because all the system packages are upgrading at the same time with qutebrowser, I saw bunch of broken package errors and compilation errors in the rebuild output.. I said okay maybe I can just disable those failing packages? so I was sacrificing my other packages for one browser? that was a mess. I didn't like this at all.
+
+so I thought maybe I can pin those failing packages to `nixos-25.11` channel? that was a good idea at first glance. but I thought maybe I just set the stage for `flakes`. So here is how flakes can help here;
+
+"flakes help us pinning package versions" I think this is the statement that explains flakes in one sentence? maybe I'm wrong by simplifying this concept but this is what I see right now. I need `qutebrowser` from `nixos-unstable` and all those existing packages to stay on `nixos-25.11`. we do this by defining a `flake.nix` file alongside our existing `configuration.nix` and `hardware-configuration.nix`. you see? our existing configuration stays as is! no need to change. `flake.nix` will wrap those files in. but we will need to do simple adjustments inside `configuration.nix` just to tell it that the "flakes are involved now". So here is my `flake.nix`
+
+``` nix
+{
+  description = "savolla's flake";
+
+  # define channels like this. these are called "inputs"
+  inputs = {
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-25_11.url    = "github:NixOS/nixpkgs/nixos-25.11";
+  };
+
+  # I don't know why we need to define them as "outputs" again but here it is..
+  outputs = { self, nixpkgs-unstable, nixpkgs-25_11, ... }:
+
+  let
+    system = "x86_64-linux";
+
+    # define nixpgs-25.11 channel
+    nixpkgs-25_11 = import nixpkgs-25_11 {
+      inherit system;
+      config.allowUnfree = true;
+    };
+
+    # define nixpgs-unstable channel
+    nixpkgs-unstable = import nixpkgs-unstable {
+      inherit system;
+      config.allowUnfree = true;
+    };
+
+  in
+
+  {
+    nixosConfigurations = {
+
+      # my main machine/host named xkarna
+      xkarna = nixpkgs.lib.nixosSystem {
+        inherit system;
+
+        # we'll pass these "special arguments" in our configuration.nix in a minute..
+        specialArgs = {
+          inherit nixpkgs-25_11;
+          inherit nixpkgs-unstable;
+        };
+
+        modules = [
+          ./configuration.nix # my existing configuration file for xkarna
+        ];
+
+      };
+
+      # you can also define more configurations for your other machines like this;
+      # for example I have my work laptop that is ubuntu based but we can still define
+      # flakes for home-manager (home.nix) it as well!
+      fiat = nixpkgs.lib.nixosSystem {
+        inherit system;
+
+        # we'll pass these "special arguments" in our configuration.nix in a minute..
+        specialArgs = {
+          inherit nixpkgs-25_11;
+          inherit nixpkgs-unstable;
+        };
+
+        modules = [
+          ./configuration.nix # my existing configuration file for xkarna
+        ];
+
+      };
+    };
+
+  };
+}
+```
