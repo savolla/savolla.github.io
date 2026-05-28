@@ -23,6 +23,8 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
 
 "flakes help us pinning package versions" I think this is the statement that explains flakes in one sentence? maybe I'm wrong by simplifying this concept but this is what I see right now. I need `qutebrowser` from `nixos-unstable` and all those existing packages to stay on `nixos-25.11`. we do this by defining a `flake.nix` file alongside our existing `configuration.nix` and `hardware-configuration.nix`. you see? our existing configuration stays as is! no need to change. `flake.nix` will wrap those files in. but we will need to do simple adjustments inside `configuration.nix` just to tell it that the "flakes are involved now". So here is my `flake.nix`
 
+*(btw this code block is heavily commented for educational purposes. you can completely skip things under the comment `# -- read if you want extra hosts -- #`)*
+
 ``` nix
 {
   description = "savolla's flake";
@@ -58,7 +60,7 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
 
       # my main machine/host named xkarna
       xkarna = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
 
         # we'll pass these "special arguments" in our configuration.nix in a minute..
         specialArgs = {
@@ -71,14 +73,15 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
         ];
 
       };
+
+      # ------------ read if you want extra hosts ------------ #
 
       # you can also define more configurations for your other machines like this;
       # for example I have my work laptop that is ubuntu based but we can still define
       # flakes for home-manager (home.nix) it as well!
       fiat = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
 
-        # we'll pass these "special arguments" in our configuration.nix in a minute..
         specialArgs = {
           inherit nixpkgs-25_11;
           inherit nixpkgs-unstable;
@@ -87,10 +90,24 @@ so I thought maybe I can pin those failing packages to `nixos-25.11` channel? th
         modules = [
           ./configuration.nix # my existing configuration file for xkarna
         ];
-
       };
-    };
 
+
+      # maybe you also have a different system?
+      rpi3b = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux"; # the main difference
+
+        specialArgs = {
+          inherit nixpkgs-25_11;
+          inherit nixpkgs-unstable;
+        };
+
+        modules = [
+          ./configuration.nix # my existing configuration file for xkarna
+        ];
+      };
+
+    };
   };
 }
 ```
