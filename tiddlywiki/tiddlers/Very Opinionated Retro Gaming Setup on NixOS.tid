@@ -26,6 +26,44 @@ systemPackages = with pkgs; [
 ];
 ```
 
+## what games stand out for each system
+
+according to claude
+
+> 🎮 NES mesen Platformers: Super Mario Bros. 3, Mega Man 2, Castlevania III Action/Adventure: The Legend of Zelda, Metroid, Contra Honorable mentions: Ninja Gaiden II, DuckTales, Kirby's Adventure
+>
+> 🎮 SNES snes9x Platformers: Super Mario World, Mega Man X, Donkey Kong Country 2 RPG: Final Fantasy VI — if you've never played it, you truly owe it to yourself; one of the best in the series or any series. Chrono Trigger, Secret of Mana, EarthBound Action: Super Metroid, A Link to the Past, Contra III Honorable mentions: Chrono Trigger's compact time-traveling adventure became a gold standard that stands up to many AAA RPG experiences on modern consoles today. F-Zero, Street Fighter II Turbo steamcommunityGitHub
+>
+> 🎮 Mega Drive genesis-plus-gx Platformers: Sonic the Hedgehog 2, Sonic 3 & Knuckles, Aladdin Action/Beat-em-up: Streets of Rage 2, Gunstar Heroes, Comix Zone RPG: Phantasy Star IV, Shining Force II Honorable mentions: Castlevania Bloodlines, Thunder Force IV, ToeJam & Earl
+>
+> 🎮 Game Boy / GBC sameboy Platformers: Kirby's Dream Land 2, Wario Land 3, Metroid II RPG: Pokémon Gold/Silver, The Legend of Zelda: Link's Awakening DX Honorable mentions: Metal Gear Solid (GBC), Shantae
+>
+> 🎮 GBA mgba Platformers: Castlevania: Aria of Sorrow, Mega Man Zero 2, Metroid Fusion RPG: Final Fantasy VI Advance, Golden Sun, Mother 3, Pokémon Emerald Action: The Legend of Zelda: Minish Cap, Advance Wars Honorable mentions: Fire Emblem, Kirby & The Amazing Mirror, Tactics Ogre
+>
+> 🎮 N64 mupen64plus 3D Platformers: Super Mario 64, Banjo-Kazooie, Donkey Kong 64 Adventure: Ocarina of Time at \#1, Majora's Mask at \#3 — non-negotiable. Shooter: GoldenEye 007, Perfect Dark Racing: Mario Kart 64, F-Zero X Honorable mentions: Paper Mario, Conker's Bad Fur Day, Star Fox 64 GitHub
+>
+> 🎮 PS1 beetle-psx-hw RPG: Final Fantasy VII, VIII, IX, Chrono Cross, Vagrant Story, Suikoden II Action/Adventure: Castlevania: Symphony of the Night, Metal Gear Solid, Crash Bandicoot 2 Racing: Gran Turismo 2 Honorable mentions: Spyro 2, Resident Evil 2, Tony Hawk's Pro Skater 2
+>
+> 🎮 NDS melonds RPG: Pokémon HeartGold/SoulSilver, Final Fantasy Tactics A2, Radiant Historia Action/Adventure: Castlevania: Dawn of Sorrow, The World Ends With You, Zelda: Phantom Hourglass Visual Novel: Ace Attorney series (all 3), Ghost Trick Honorable mentions: Dragon Quest IX, Chrono Trigger DS port (best version)
+>
+> 🎮 PS2 pcsx2 Action/Adventure: Shadow of the Colossus, God of War II, ICO, Okami Open World: GTA: San Andreas, GTA: Vice City RPG: Final Fantasy XII, Persona 3 & 4, Kingdom Hearts II, Dragon Quest VIII Platformers: Jak & Daxter, Ratchet & Clank 3, Sly Cooper 2 Honorable mentions: Burnout 3, Silent Hill 2, Devil May Cry 3
+
+according to Gemini
+
+> Here is your curated, "all-killer-no-filler" list for each core. Dense walls of text have been stripped out to give you just the absolute essentials, categorized by genre, with a few unmissable honorable mentions.
+>
+> —
+>
+> \## Mesen \`NES\`
+>
+> The system that started it all. Skip the primitive early titles and jump straight to the masterpieces that still play beautifully today.
+
+according to chatgpt
+
+> You have a very good emulator lineup already. So instead of giving you 30+ games per system, here's the \*\*"if I had to start from zero and only keep the masterpieces"\*\* list.
+>
+> I optimized for:
+
 I'm using `shaders_slang/bazel/koko-aio/Presets-ng/Monitor-Ambilight-immersive.slangp` shader
 
 ~~CRT shaders are what blows life to those games. not all CRTs work for every platform. so we need some cherry picking. in my opinion the best shader for SNES and Megadrive is `shaders/crt/crt-royale.slangp`. this is the gold standard. accurately simulates phosphor glow, bloom, scanlines, and aperture grille.^~~
@@ -43,4 +81,93 @@ if your GPU struggles with `crt-royale.slangp` you can also try a faster option 
 go to core options
 
 - enable NTSC filter and select **Composite Blargg** in Display
--
+- 
+
+## Skyscraper Config
+
+in `~/.skyscraper/config.ini` put the following
+
+``` conf
+[main]
+frontend=pegasus
+unattend=true
+relativePaths=true
+lang=en
+region=us
+
+[snes]
+inputFolder=/home/savolla/resource/games/games/snes
+gameListFolder=/home/savolla/resource/games/games/snes
+mediaFolder=/home/savolla/resource/games/games/snes/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/snes9x_libretro.so
+
+[nes]
+inputFolder=/home/savolla/resource/games/games/nes
+gameListFolder=/home/savolla/resource/games/games/nes
+mediaFolder=/home/savolla/resource/games/games/nes/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/mesen_libretro.so
+
+[megadrive]
+inputFolder=/home/savolla/resource/games/games/megadrive
+gameListFolder=/home/savolla/resource/games/games/megadrive
+mediaFolder=/home/savolla/resource/games/games/megadrive/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/genesis_plus_gx_libretro.so
+
+[gba]
+inputFolder=/home/savolla/resource/games/games/gba
+gameListFolder=/home/savolla/resource/games/games/gba
+mediaFolder=/home/savolla/resource/games/games/gba/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/mgba_libretro.so
+
+[gb]
+inputFolder=/home/savolla/resource/games/games/gb
+gameListFolder=/home/savolla/resource/games/games/gb
+mediaFolder=/home/savolla/resource/games/games/gb/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/sameboy_libretro.so
+
+[gbc]
+inputFolder=/home/savolla/resource/games/games/gbc
+gameListFolder=/home/savolla/resource/games/games/gbc
+mediaFolder=/home/savolla/resource/games/games/gbc/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/sameboy_libretro.so
+
+[nds]
+inputFolder=/home/savolla/resource/games/games/nds
+gameListFolder=/home/savolla/resource/games/games/nds
+mediaFolder=/home/savolla/resource/games/games/nds/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/melonds_libretro.so
+
+[n64]
+inputFolder=/home/savolla/resource/games/games/n64
+gameListFolder=/home/savolla/resource/games/games/n64
+mediaFolder=/home/savolla/resource/games/games/n64/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/mupen64plus_next_libretro.so
+
+[psx]
+inputFolder=/home/savolla/resource/games/games/psx
+gameListFolder=/home/savolla/resource/games/games/psx
+mediaFolder=/home/savolla/resource/games/games/psx/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/mednafen_psx_hw_libretro.so
+
+[ps2]
+inputFolder=/home/savolla/resource/games/games/ps2
+gameListFolder=/home/savolla/resource/games/games/ps2
+mediaFolder=/home/savolla/resource/games/games/ps2/media
+emulator=retroarch -L /home/savolla/.config/retroarch/cores/pcsx2_libretro.so
+```
+
+downloading metadata
+
+``` bash
+#!/usr/bin/env bash
+
+SYSTEMS=(snes nes megadrive gba gb gbc nds n64 psx ps2)
+
+for system in "${SYSTEMS[@]}"; do
+  echo "=== Scraping $system ==="
+  Skyscraper -p "$system" -s screenscraper --flags unpack
+  Skyscraper -p "$system"
+done
+
+echo "All done. Open Pegasus and reload game lists."
+```

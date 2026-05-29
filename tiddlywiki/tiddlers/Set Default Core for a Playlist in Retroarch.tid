@@ -1,0 +1,8 @@
+title: Set Default Core for a Playlist in Retroarch
+tags: retroarch @zettel _method
+roam-id: 62c518d3-02e7-4ee5-b248-0cbcf4d927fe
+created: 20260530000800000
+modified: 20260530000800000
+type: text/markdown
+
+Settings -\> Manage Playlists -\> \$YOUR<sub>PLAYLIST</sub> -\> Default Core
