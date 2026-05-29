@@ -1,0 +1,14 @@
+title: Get Api Token From retroachievements.org
+tags: @zettel _method
+roam-id: e1719cc0-f68a-489d-b1b5-1cfb625e1b24
+created: 20260529164600000
+modified: 20260529164600000
+type: text/markdown
+
+log in to RetroAchievements. click on your profile name at the top of the page. select Settings (or My Pages then Settings) from the dropdown menu. scroll down to the Keys section. copy your Web API Key (or click "Reset Connect Key" if you need to generate a fresh one).
+
+[^1] [^2]
+
+[^1]: <https://gemini.google.com/>
+
+[^2]: <https://api-docs.retroachievements.org/getting-started.html>
