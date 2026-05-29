@@ -64,6 +64,20 @@ according to chatgpt
 >
 > I optimized for:
 
+distilled results according to those AI responses
+
+nes \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Super Mario Bros. 3\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Mega Man 2\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Castlevania III\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The Legend of Zelda\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Metroid\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Contra\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Ninja Gaiden 1,2,3\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>DuckTales\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Kirby's Adventure\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Punch-Out\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+snes \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Super Mario World\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Super Mario World 2: Yoshi\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Mega Man X\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Donkey Kong Country 2\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy VI\</td\> \<td\>x++\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Chrono Trigger\</td\> \<td\>x++\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Secret of Mana\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>EarthBound\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Super Metroid\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>A Link to the Past\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Contra III\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>F-Zero\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Street Fighter II Turbo\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+megadrive \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Sonic the Hedgehog 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Sonic 3 &amp; Knuckles\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Aladdin\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Streets of Rage 2\</td\> \<td\>x\</td\> \<td\>x++ (soundtrack)\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Gunstar Heroes\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Comix Zone\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Phantasy Star IV\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Shining Force II\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Castlevania Bloodlines\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Thunder Force IV\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>ToeJam &amp; Earl\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Contra: Hard Corps\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Shinobi III: Return of Ninja Master\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Beyond Oasis\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Alien Soldier\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+gameboy \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Kirby's Dream Land 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Wario Land 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Metroid II\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Pokémon Gold/Silver\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The Legend of Zelda: Link's Awakening DX\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Metal Gear Solid (GBC)\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Shantae\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+gameboy advance \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Castlevania: Aria of Sorrow\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Mega Man Zero 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Metroid Fusion\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy VI Advance\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Golden Sun\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Mother 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Pokémon Emerald\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The Legend of Zelda: Minish Cap\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Advance Wars\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Fire Emblem\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Kirby &amp; The Amazing Mirror\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Tactics Ogre\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\> n64 \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Super Mario 64\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Banjo-Kazooie\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Donkey Kong 64\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The Legend of Zelda: Ocarina of Time\</td\> \<td\>x++\</td\> \<td\>x++\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The Legend of Zelda: Majora's Mask\</td\> \<td\>x++\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>GoldenEye 007\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Perfect Dark\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Mario Kart 64\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>F-Zero X\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Paper Mario\</td\> \<td\>x\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Conker's Bad Fur Day\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Star Fox 64\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Super Smash Bros.\</td\> \<td\>\</td\> \<td\>x\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\> ps1 \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Final Fantasy VII\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy VIII\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy IX\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Chrono Cross\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Vagrant Story\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Suikoden II\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Castlevania: Symphony of the Night\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Metal Gear Solid\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Crash Bandicoot 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Gran Turismo 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Spyro 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Resident Evil 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Tony Hawk's Pro Skater 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+nds \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Pokémon HeartGold/SoulSilver\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy Tactics A2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Radiant Historia\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Castlevania: Dawn of Sorrow\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>The World Ends With You\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Zelda: Phantom Hourglass\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Ace Attorney series (all 3)\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Ghost Trick\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Dragon Quest IX\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Chrono Trigger DS port (best version)\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\> ps2 \<table\> \<thead\> \<tr\> \<th\>game\</th\> \<th\>claude\</th\> \<th\>gemini\</th\> \<th\>chatgpt\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>Shadow of the Colossus\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>God of War II\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>ICO\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Okami\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>GTA: San Andreas\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>GTA: Vice City\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Final Fantasy XII\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Persona 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Persona 4\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Kingdom Hearts II\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Dragon Quest VIII\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Jak &amp; Daxter\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Ratchet &amp; Clank 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Sly Cooper 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Burnout 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Silent Hill 2\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Devil May Cry 3\</td\> \<td\>x\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
 I'm using `shaders_slang/bazel/koko-aio/Presets-ng/Monitor-Ambilight-immersive.slangp` shader
 
 ~~CRT shaders are what blows life to those games. not all CRTs work for every platform. so we need some cherry picking. in my opinion the best shader for SNES and Megadrive is `shaders/crt/crt-royale.slangp`. this is the gold standard. accurately simulates phosphor glow, bloom, scanlines, and aperture grille.^~~
@@ -99,61 +113,63 @@ region=us
 inputFolder=/home/savolla/resource/games/games/snes
 gameListFolder=/home/savolla/resource/games/games/snes
 mediaFolder=/home/savolla/resource/games/games/snes/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/snes9x_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/snes9x_libretro.so
 
 [nes]
 inputFolder=/home/savolla/resource/games/games/nes
 gameListFolder=/home/savolla/resource/games/games/nes
 mediaFolder=/home/savolla/resource/games/games/nes/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/mesen_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/mesen_libretro.so
 
 [megadrive]
 inputFolder=/home/savolla/resource/games/games/megadrive
 gameListFolder=/home/savolla/resource/games/games/megadrive
 mediaFolder=/home/savolla/resource/games/games/megadrive/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/genesis_plus_gx_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/genesis_plus_gx_libretro.so
 
 [gba]
 inputFolder=/home/savolla/resource/games/games/gba
 gameListFolder=/home/savolla/resource/games/games/gba
 mediaFolder=/home/savolla/resource/games/games/gba/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/mgba_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/mgba_libretro.so
 
 [gb]
 inputFolder=/home/savolla/resource/games/games/gb
 gameListFolder=/home/savolla/resource/games/games/gb
 mediaFolder=/home/savolla/resource/games/games/gb/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/sameboy_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/sameboy_libretro.so
+
 
 [gbc]
 inputFolder=/home/savolla/resource/games/games/gbc
 gameListFolder=/home/savolla/resource/games/games/gbc
 mediaFolder=/home/savolla/resource/games/games/gbc/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/sameboy_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/sameboy_libretro.so
+
 
 [nds]
 inputFolder=/home/savolla/resource/games/games/nds
 gameListFolder=/home/savolla/resource/games/games/nds
 mediaFolder=/home/savolla/resource/games/games/nds/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/melonds_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/melonds_libretro.so
 
 [n64]
 inputFolder=/home/savolla/resource/games/games/n64
 gameListFolder=/home/savolla/resource/games/games/n64
 mediaFolder=/home/savolla/resource/games/games/n64/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/mupen64plus_next_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/mupen64plus_next_libretro.so
 
 [psx]
 inputFolder=/home/savolla/resource/games/games/psx
 gameListFolder=/home/savolla/resource/games/games/psx
 mediaFolder=/home/savolla/resource/games/games/psx/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/mednafen_psx_hw_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/mednafen_psx_hw_libretro.so
 
 [ps2]
 inputFolder=/home/savolla/resource/games/games/ps2
 gameListFolder=/home/savolla/resource/games/games/ps2
 mediaFolder=/home/savolla/resource/games/games/ps2/media
-emulator=retroarch -L /home/savolla/.config/retroarch/cores/pcsx2_libretro.so
+emulator=retroarch -L /run/current-system/sw/lib/retroarch/cores/pcsx2_libretro.so
 ```
 
 downloading metadata
