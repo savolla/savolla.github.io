@@ -6,3 +6,9 @@ type: text/markdown
 ``` shell
 sudo nix-collect-garbage -d
 ```
+
+or if you're on `home-manager` then use without `sudo`
+
+``` shell
+nix-collect-garbage -d
+```

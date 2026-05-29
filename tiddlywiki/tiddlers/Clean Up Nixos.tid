@@ -3,6 +3,4 @@ tags: @zettel _method nixos nix
 roam-id: ffeaaa4f-ecb3-4a1f-b637-dbaac3b9eba0
 type: text/markdown
 
-- [[Delete Old Nixos Generations Except the Current One]]
-- [[Delete User Profile Generation in Nixos]]
-- [[Delete Garbage in Nixos]]
+[[Delete Old Nixos Generations Except the Current One]] do it multiple times
