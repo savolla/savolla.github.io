@@ -5,6 +5,14 @@ created: 20260524204800000
 modified: 20260524204800000
 type: text/markdown
 
+for softer reload
+
+``` bash
+gpgconf --reload gpg-agent
+```
+
+for guaranteed reload (close/open)
+
 ``` bash
 gpgconf --kill gpg-agent
 gpgconf --launch gpg-agent
