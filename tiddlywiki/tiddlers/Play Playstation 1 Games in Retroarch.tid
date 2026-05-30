@@ -11,3 +11,7 @@ type: text/markdown
 - download your ps1 game from [romspedia](https://www.romspedia.com/)
 - scan directory for games
 - play
+
+if your specific BIOS is not downloaded from the url I provided then use <https://psx.arthus.net/roms/bios/> and manually download your file. for example `5501` is not included above
+
+if you have problems then see how to fix [["Firmware Is Missing: Scph5501.bin" Error]]

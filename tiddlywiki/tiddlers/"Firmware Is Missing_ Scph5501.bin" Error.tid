@@ -1,0 +1,10 @@
+title: "Firmware Is Missing: Scph5501.bin" Error
+tags: ps1 retroarch @zettel _fix
+roam-id: 7fdd1e7d-ddc3-4e1a-bd80-50fafed2abf7
+created: 20260530182100000
+modified: 20260530182100000
+type: text/markdown
+
+it's a BIOS issue. see how to [[Play Playstation 1 Games in Retroarch]]
+
+if you already have your bios files and you still get the error just rename your file. for example the file I have under `~/.config/retroarch/system` is `SCHP-5501.BIN`. but error message on retroarch says `schp5501.bin` is missing. just remove the `-` and make lower case.
