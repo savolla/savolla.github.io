@@ -1,0 +1,16 @@
+title: Enable Zram Swap on Nixos
+tags: zram swap nixos @zettel _method
+roam-id: 2eebcbc4-00a9-44ca-a868-33528e068f1d
+created: 20260530220100000
+modified: 20260530220100000
+type: text/markdown
+
+``` nix
+zramSwap = {
+  enable = true;
+  algorithm = "zstd";
+  memoryPercent = 50;  # up to ~5.8GB of compressed swap from your 11.6GB RAM
+};
+```
+
+[[Rebuild Nixos]]
