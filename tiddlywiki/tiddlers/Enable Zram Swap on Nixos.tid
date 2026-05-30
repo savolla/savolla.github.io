@@ -14,3 +14,5 @@ zramSwap = {
 ```
 
 [[Rebuild Nixos]]
+
+now [[Check if Zram Is Working]]

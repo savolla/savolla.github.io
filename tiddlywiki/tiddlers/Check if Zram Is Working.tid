@@ -1,0 +1,29 @@
+title: Check if Zram Is Working
+tags: zram @zettel _method
+roam-id: c9bef035-30d7-4999-b44f-64dcfe865248
+created: 20260530221300000
+modified: 20260530221300000
+type: text/markdown
+
+``` bash
+zramctl
+```
+
+expected output:
+
+``` example
+NAME        ALGORITHM  DISKSIZE  DATA  COMPR  TOTAL  STREAMS  MOUNTPOINT
+/dev/zram0  zstd       5,8G      4K    64B    20K    [SWAP]
+```
+
+also do
+
+``` bash
+swapon --show
+```
+
+\<table\> \<tbody\> \<tr\> \<td\>NAME\</td\> \<td\>TYPE\</td\> \<td\>SIZE\</td\> \<td\>USED\</td\> \<td\>PRIO\</td\> \</tr\> \<tr\> \<td\>/dev/dm-0\</td\> \<td\>partition\</td\> \<td\>32G\</td\> \<td\>0B\</td\> \<td\>-1\</td\> \</tr\> \</tbody\> \</table\>
+
+|            |           |      |     |     |
+|------------|-----------|------|-----|-----|
+| /dev/zram0 | partition | 5,8G | 0B  | 5   |
