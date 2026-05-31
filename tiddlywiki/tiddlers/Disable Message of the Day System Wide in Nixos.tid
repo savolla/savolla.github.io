@@ -17,4 +17,18 @@ users = {
 };
 ```
 
+``` nix
+environment = {
+  etc."issue".text = ""; # clear /etc/issue for disabling messages in Motd
+};
+```
+
+``` nix
+# silence the agetty "Welcome to NixOS" banner on tty
+getty = {
+  greetingLine = "";
+  helpLine = "";   # removes the "run nixos-help" line
+};
+```
+
 [[Rebuild Nixos]]
