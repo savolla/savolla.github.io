@@ -1,0 +1,43 @@
+title: Change Email/Name Attached to a GPG Key
+tags: gpg @zettel _method
+roam-id: 1b8ff826-b854-42a4-a5b1-e94cd2ec61c6
+created: 20260531221200000
+modified: 20260531221200000
+type: text/markdown
+
+- edit the key
+
+  ``` bash
+  gpg --edit-key YOUR_KEY_ID
+  ```
+
+- inside gpg prompt
+
+  ``` bash
+  gpg> adduid
+  Real name: Savolla
+  Email address: newemail@example.com
+  Comment:
+  ```
+
+- confirm
+
+- set the new uid as primary
+
+  ``` bash
+  gpg> uid 2          # select the new uid by number
+  gpg> primary        # make it primary
+  ```
+
+- optionally delete the old uid
+
+  ``` bash
+  gpg> uid 1          # select old uid
+  gpg> deluid         # delete it
+  ```
+
+- save
+
+  ``` bash
+  gpg> save
+  ```

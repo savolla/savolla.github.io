@@ -5,7 +5,7 @@ created: 20260416233500000
 modified: 20260416233500000
 type: text/markdown
 
-because the redis works in memory, it makes it volatile. once your system crashes, you\'re going to loose everything in redis
+because the redis works in memory, it makes it volatile. once your system crashes, you're going to loose everything in redis
 
 
 <sup>source: [[Redis Crash Course]]</sup>
