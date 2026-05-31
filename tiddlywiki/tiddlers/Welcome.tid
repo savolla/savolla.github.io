@@ -3,16 +3,17 @@ tags:
 roam-id: b657bcb7-1ec1-48ad-ab00-441a3d757704
 type: text/markdown
 
-You\'re looking at a single 4MB portable html file that contains 900 [zettelkasten](Https://en-wikipedia-org.translate.goog/wiki/Zettelkasten?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc) notes that I took in 4 years (and it\'s counting).
+You're looking at a single 5MB HTML file containing +1000 [[zettelkasten]] notes I've been building since 2022 — and counting.
 
-It\'s a living website and I add more and more constantly. I take my notes using an [emacs](https://en-wikipedia-org.translate.goog/wiki/Emacs?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc) package called [org-roam](https://www.orgroam.com/) and exporting all of my notes to [tiddlywiki](https://tiddlywiki.com/) compatible format (this website). the theme I\'m using is actually inspired by [andy matuschak](https://notes.andymatuschak.org/About_these_notes)\'s website. you can start exploring this mess using the following entry points;
+I'm Kuzey, a DevOps/SRE engineer in Istanbul. I live in the terminal: NixOS, Emacs, Kubernetes. This is where I think out loud.
 
-- [[Posts]]
-- [[Permanent Notes]]
-- [[Bibliographic Notes]]
-- [[Map of Content]]
-- [[Tags]]
-- [[Index]]
-- [[Personal]]
+Where to start;
+
+- [[Posts]] – things I wrote intentinonally
+- [[Personal]] – who I am
+- [[Permanent Notes]] – raw ideas and thinking
+- [[Bibliographic Notes]] – notes from books/videos/articles etc.
+- [[Map of Content]] – structured overview of specific topics
+- [[Index]] and [[Tags]] – if you know what you're looking for
 
 Enjoy your stay, friend!
