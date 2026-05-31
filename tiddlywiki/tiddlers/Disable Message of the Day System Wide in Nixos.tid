@@ -1,0 +1,20 @@
+title: Disable Message of the Day System Wide in Nixos
+tags: nixos @zettel _method
+roam-id: c1fcbf28-8e7e-44c9-b0d3-bdcde68becc0
+created: 20260531133600000
+modified: 20260531133600000
+type: text/markdown
+
+``` nix
+users = {
+  motd = ""; # disable MotD globally for all users
+
+  users = {
+    savolla = {
+      # other user specific configuration
+    };
+  };
+};
+```
+
+[[Rebuild Nixos]]

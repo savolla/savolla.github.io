@@ -1,0 +1,12 @@
+title: Disable Message of the Day (Motd) When Connecting to Host via SSH in Nixos
+tags: nixos ssh @zettel _method
+roam-id: 46cc17d4-11a8-47f5-86b9-0336025d43c0
+created: 20260531133000000
+modified: 20260531133000000
+type: text/markdown
+
+``` nix
+services.openssh.settings.PrintMotd = false;
+```
+
+[[Rebuild Nixos]]

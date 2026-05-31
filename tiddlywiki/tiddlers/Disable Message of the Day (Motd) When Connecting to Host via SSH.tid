@@ -1,0 +1,12 @@
+title: Disable Message of the Day (Motd) When Connecting to Host via SSH
+tags: ssh @zettel _method
+roam-id: b93161f5-dd9e-4e20-8004-83953bc2fe53
+created: 20260531133100000
+modified: 20260531133100000
+type: text/markdown
+
+in `~/.ssh/config` add the following
+
+``` nix
+PrintMotd = false;
+```
