@@ -1,0 +1,14 @@
+title: Listen to MOD Files With MPD
+tags: @post music
+roam-id: 53bfe7cb-ca82-48fb-9f6a-87bda1a1c618
+created: 20260531184100000
+modified: 20260531184100000
+type: text/markdown
+
+DRAFT
+
+## which file format?
+
+\<table\> \<thead\> \<tr\> \<th\>system\</th\> \<th\>format\</th\> \<th\>description\</th\> \<th\>where to get\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>NES\</td\> \<td\>.nsf / .nsfe\</td\> \<td\>Direct 8-bit Ricoh synthesis\</td\> \<td\>Zophar's Domain (NES)\</td\> \</tr\> \<tr\> \<td\>SNES\</td\> \<td\>.spc\</td\> \<td\>Exact 16-bit Sony wavetable data\</td\> \<td\>SnesMusic.org\</td\> \</tr\> \<tr\> \<td\>Mega Drive\</td\> \<td\>.vgm / .vgz\</td\> \<td\>Exact Yamaha YM2612 FM synth commands\</td\> \<td\>Project2612\</td\> \</tr\> \<tr\> \<td\>Game Boy\</td\> \<td\>.gbs\</td\> \<td\>Direct 4-channel hardware synth\</td\> \<td\>Zophar's Domain (GB)\</td\> \</tr\> \<tr\> \<td\>PlayStation 1\</td\> \<td\>.psf\</td\> \<td\>Direct Sony SPU audio data\</td\> \<td\>HCS64 Archive\</td\> \</tr\> \</tbody\> \</table\>
+
+download from <https://www.zophar.net/music/popular>
