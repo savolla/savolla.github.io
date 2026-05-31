@@ -1,0 +1,18 @@
+title: Create Github Access Token
+tags: github git @zettel _method
+roam-id: 590d5862-b274-427b-bae3-ea8aa5f68aeb
+created: 20260531155900000
+modified: 20260531155900000
+type: text/markdown
+
+go to your github profile -\> settings -\> developer settings (down below) -\> personal access tokens -\> Tokens (classid)
+
+click on "generate new token" select classic
+
+enter you github password
+
+enter Note, select expiration, check "repo"
+
+click generate token button down below
+
+copy your token asap. it will not be visible when you close the page
