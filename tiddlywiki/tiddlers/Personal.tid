@@ -3,21 +3,6 @@ tags:
 roam-id: c0e45a3c-5d7f-431e-b166-ff735f866528
 type: text/markdown
 
-My name is Kuzey Koç — I was born Oleksiy Nehlyadyuk. I live in Istanbul, Turkey. On IRC and most platforms I'm `savolla`.
-
-My name is Kuzey Koç *(formerly know as Oleksiy Nehlyadyuk)*. My nickname on IRC and in other platforms is `savolla`. I live in Turkey. I like writing and I literally take notes about anything and store them in my zettelkasten. I play guitar and write music using open source software and vsts. here are my socials;
-
-- [GitHub](https://github.com/savolla)
-- [YouTube](https://www.youtube.com/@savollaross/videos)
-
-You can mail me `kuzey.koc7991@gmail.com` or send a DM from XMPP. My username is `savolla` on conversations.
-
-I'm currently working at [Kartaca](https://kartaca.com/) as devops engineer. See [[My Resume]]
-
-- [[My Bookmarks]]
-- [[My Favorite YouTube Channels]]
-- [[My GPG Public Key]]
-
 My name is Kuzey Koç. I'm originally from Ukraine, where I went by Oleksiy Nehlyadyuk. I've been living in Istanbul, Turkey for a while now. On IRC and most platforms I'm `savolla`.
 
 I'm a DevOps/SRE engineer with 5+ years of experience, currently at [Kartaca](https://kartaca.com/). I spend most of my time in the terminal — my daily driver is NixOS with a custom DWM setup, and I've been living inside Emacs for years. If you're curious about the setup, see [[My DWM Setup on NixOS]] and [[Literate Doom Emacs Configuration]] if you like this stuff check my [dotfiles](https://github.com/savolla/nazg). You'll find more there.
@@ -36,4 +21,8 @@ Reach me:
 - [GitHub](https://github.com/savolla)
 - [YouTube](https://www.youtube.com/@savollaross/videos)
 
-[[My Resume]] · [[My GPG Public Key]] · [[My Bookmarks]]
+Also See:
+
+- [[My Resume]]
+- [[My Bookmarks]]
+- [[My GPG Public Key]]
