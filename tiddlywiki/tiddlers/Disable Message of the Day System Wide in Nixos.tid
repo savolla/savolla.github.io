@@ -7,7 +7,7 @@ type: text/markdown
 
 ``` nix
 users = {
-  motd = ""; # disable MotD globally for all users
+  motdFile = null; # disable MotD globally for all users
 
   users = {
     savolla = {
