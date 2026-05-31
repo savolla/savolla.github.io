@@ -1,0 +1,10 @@
+title: Extract Zip Archives That Don't Create a Container Directory by Automatically Creating It
+tags: zip @zettel _method
+roam-id: b39415c3-8a74-456b-922f-8e72d2b522da
+created: 20260531202600000
+modified: 20260531202600000
+type: text/markdown
+
+``` bash
+for f in *.zip; do unzip "$f" -d "${f%.zip}"; done
+```
