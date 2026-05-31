@@ -1,0 +1,9 @@
+title: Install Nix on Termux
+tags: android fdroid termux nix @zettel _method
+roam-id: 1a72d938-43d0-4726-a7d1-6d8f4cb37a0b
+created: 20260531142800000
+modified: 20260531142800000
+type: text/markdown
+
+- download `Nix-on-Droid` app from `F-Droid` or
+- launch the app, it will ask if you want to enable `flakes`. press `y` to accept flakes
