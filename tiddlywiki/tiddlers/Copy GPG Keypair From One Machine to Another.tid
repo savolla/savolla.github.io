@@ -1,0 +1,21 @@
+title: Copy GPG Keypair From One Machine to Another
+tags: @post gpg security
+roam-id: 00aaed80-85a8-4e93-a4d5-89c816ec2477
+created: 20260601205800000
+modified: 20260601205800000
+type: text/markdown
+
+so you [[Create GPG Key Pair]] and use it on one machine. you [[Encrypt Files With GPG]] or [[Decrypt Files With GPG]] or maybe even [[Use GPG for SSH Authentication]]. you're not using GPG but wielding it now!
+
+let's say one day you get another machine or joined a new company where they gave you a laptop. because you already using GPG and it is so embedded in your workflow, you will want to put your keys on those machines as well. doing this is very easy and here is how to do it step by step;
+
+first off GPG is a key"pair". that means we need to [[Export Public GPG Key]] and [[Export Private GPG Key]] first. once you have those keys in your local directory
+
+``` bash
+public.asc
+private.asc
+```
+
+you can use `scp` or other methods to copy those files to your other machine. and when I say "copy" I literally mean it! you `cp` those keys and not `mv`. why? because we will [[Securely Remove Files or Directories]] after we copy our key.
+
+now I assume you put the `public.asc` and `private.asc` files on another machine. now you'll need to [[Import GPG Public Key Into Your Keyring]] and [[Import Private GPG Key Into Keyring]] once you do all of these then you'll want to again [[Securely Remove Files or Directories]] that include your private and public keys. just to be safe.

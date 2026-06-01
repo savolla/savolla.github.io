@@ -5,6 +5,8 @@ created: 20260508230000000
 modified: 20260508230000000
 type: text/markdown
 
+you can find it [here](https://www.overleaf.com/latex/templates/ats-friendly-technical-resume/yrhtcnjyzgsf)
+
 ``` latex
 \documentclass[letterpaper,10pt]{article}
 

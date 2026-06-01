@@ -5,6 +5,8 @@ created: 20260525025000000
 modified: 20260525025000000
 type: text/markdown
 
+you can [[Convert .Tex File to PDF]] if you want to build it yourlself.
+
 ``` latex
 \documentclass[letterpaper,10pt]{article}
 

@@ -6,5 +6,5 @@ modified: 20260510212000000
 type: text/markdown
 
 ``` bash
-latexmk -pdf kkoc-cv.tex 
+latexmk -pdf /path/to/document.tex
 ```

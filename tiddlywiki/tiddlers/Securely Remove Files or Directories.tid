@@ -1,0 +1,16 @@
+title: Securely Remove Files or Directories
+tags: wipe linux shred security privacy @zettel _method
+roam-id: b9382281-92b9-4c96-aa89-a98aa8ee6bcb
+created: 20260601211000000
+modified: 20260601211000000
+type: text/markdown
+
+``` bash
+shred --remove /path/to/file
+```
+
+for directories
+
+``` bash
+wipe -r /path/to/dir
+```
