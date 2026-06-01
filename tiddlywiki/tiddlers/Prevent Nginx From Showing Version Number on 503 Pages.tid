@@ -1,0 +1,12 @@
+title: Prevent Nginx From Showing Version Number on 503 Pages
+tags: http nginx @zettel _method
+roam-id: 43409cef-6e5b-4e64-8809-7752974ee677
+created: 20260601143200000
+modified: 20260601143200000
+type: text/markdown
+
+in `/etc/nginx/nginx.conf`
+
+``` conf
+server_tokens off;
+```
