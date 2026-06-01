@@ -1,0 +1,14 @@
+title: Export Public GPG Key
+tags: gpg @zettel _method
+roam-id: 0b458d02-071d-4b2e-bd20-3729e4da193e
+created: 20260601202900000
+modified: 20260601202900000
+type: text/markdown
+
+[[Get List of GPG Keys]] then [[Get GPG Key Id]] by copying it.
+
+``` bash
+gpg --armor --export $KEY_ID > public.asc
+```
+
+store it somewhere safe! you'd also like to see how to [[Import GPG Public Key Into Your Keyring]] for further operations

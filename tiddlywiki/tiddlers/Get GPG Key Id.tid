@@ -1,0 +1,25 @@
+title: Get GPG Key Id
+tags: gpg @zettel _method
+roam-id: 300bac5e-adff-4b22-a43b-fbbc74633edd
+created: 20260601200100000
+modified: 20260601200100000
+type: text/markdown
+
+[[Get List of GPG Keys]] and look for lines start with `sec` see example below
+
+``` example
+/home/savolla/.gnupg/pubring.kbx
+--------------------------------
+sec   ed25519/24B7F5941CEA675D 2025-12-15 [SC]
+      C45C743E2FB7AD9BB8CDC3AF5941CE5D3C296247
+uid                 [ultimate] Kuzey Koç <kuzey.koc@blabla.com>
+ssb   cv25195/B8D37901E6521257 2025-12-15 [E]
+
+sec   rsa4096/3E00BF59F4195E14 2026-05-24 [SC]
+      9336F5190B59F4E00622402B7C121FBD5EA143E0
+uid                 [ultimate] Kuzey Koç (savolla) <kuzey.koc7991@gmail.com>
+ssb   rsa4096/917321CEE58C1959 2026-05-24 [E]
+ssb   ed25519/A34D6D5A5AEC5284 2026-05-25 [A]
+```
+
+if I want to get the key associated with the mail `kuzey.koc7991@gmail.com` then I'll get the 16 character long string after `rsa4096/` so that is `3E00BF59F4195E14`. that is your key id

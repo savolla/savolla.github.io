@@ -29,10 +29,13 @@ type: text/markdown
   gpg> primary        # make it primary
   ```
 
+- YOU SHOULD NOW SAVE AND EXIT
+
 - optionally delete the old uid
 
   ``` bash
-  gpg> uid 1          # select old uid
+  gpg --edit-key YOUR_KEY_ID
+  gpg> uid 2          # don't make a mistake. make sure the old one is selected with asterics
   gpg> deluid         # delete it
   ```
 

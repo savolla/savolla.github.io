@@ -1,0 +1,10 @@
+title: Get List of Public GPG Keys
+tags: gpg @zettel _method
+roam-id: f118f181-3617-4fd9-972b-505b0b989d40
+created: 20260601203200000
+modified: 20260601203200000
+type: text/markdown
+
+``` bash
+gpg --list-keys
+```

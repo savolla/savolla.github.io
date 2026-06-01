@@ -1,0 +1,10 @@
+title: Get List of Private GPG Keys
+tags: gpg @zettel _method
+roam-id: 1da51d6b-245e-4e77-8126-6ce5ea8a1187
+created: 20260601203200000
+modified: 20260601203200000
+type: text/markdown
+
+``` bash
+gpg --list-secret-keys
+```
