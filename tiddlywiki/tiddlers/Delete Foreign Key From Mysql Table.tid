@@ -1,0 +1,14 @@
+title: Delete Foreign Key From Mysql Table
+tags: mysql @zettel _method
+roam-id: 8444e220-c71b-41d3-bf6c-ebc448cca730
+created: 20260602153100000
+modified: 20260602153100000
+type: text/markdown
+
+example command below;
+
+``` sql
+ALTER TABLE wallet_operation DROP FOREIGN KEY fk_wallet_operation_provision_id;
+```
+
+then [[Get DDL of a Mysql Table]] to validate changes

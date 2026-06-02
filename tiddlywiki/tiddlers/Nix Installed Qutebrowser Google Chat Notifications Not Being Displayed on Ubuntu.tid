@@ -1,0 +1,13 @@
+title: Nix Installed Qutebrowser Google Chat Notifications Not Being Displayed on Ubuntu
+tags: homemanager ubuntu nix google gmail qutebrowser @zettel _fix
+roam-id: e912eb93-a302-4a29-80dd-fb9bab418f7e
+created: 20260602162700000
+modified: 20260602162700000
+type: text/markdown
+
+``` bash
+ln -sf ~/.nix-profile/share/applications/org.qutebrowser.qutebrowser.desktop \
+    ~/.local/share/applications/qutebrowser.desktop
+```
+
+now [[Update Desktop Database]]

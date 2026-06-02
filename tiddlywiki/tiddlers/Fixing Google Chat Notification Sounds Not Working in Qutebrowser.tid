@@ -1,0 +1,8 @@
+title: Fixing Google Chat Notification Sounds Not Working in Qutebrowser
+tags: nix qutebrowser @zettel _fix
+roam-id: 71d84b1e-adaa-4305-9c97-3825583d85ee
+created: 20260602105700000
+modified: 20260602105700000
+type: text/markdown
+
+go to <http://hpr.dogphilosophy.net/test/> and test all the files. if some of those files don't play, you get decode error then you need to install packages for those codecs

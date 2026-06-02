@@ -1,0 +1,21 @@
+title: XDB Portals Service Not Found on Non-Nixos Systems
+tags: xdg nix ubuntu @zettel _fix
+roam-id: c3cf5e2d-f687-4a10-a657-b92b1ab32bca
+created: 20260602100400000
+modified: 20260602100400000
+type: text/markdown
+
+``` nix
+home.activation.linkSystemd = let
+  inherit (lib) hm;
+in hm.dag.entryBefore [ "reloadSystemd" ] (''
+  find $HOME/.config/systemd/user/ \
+    -type l \
+    -exec bash -c "readlink {} | grep -q $HOME/.nix-profile/share/systemd/user/" \; \
+    -delete
+
+  find $HOME/.nix-profile/share/systemd/user/ \
+    \( -type f -o -type l \) \
+    -exec ln -s {} $HOME/.config/systemd/user/ \;
+'');
+```

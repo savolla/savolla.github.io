@@ -1,0 +1,10 @@
+title: Update Desktop Database
+tags: xdg @zettel _method
+roam-id: 1a5c9491-9f7c-42b0-ad48-8bf70ee4da40
+created: 20260602162900000
+modified: 20260602162900000
+type: text/markdown
+
+``` bash
+update-desktop-database ~/.local/share/applications
+```

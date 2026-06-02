@@ -1,0 +1,27 @@
+title: Enable/Install XDG Portal Using Home-Manager
+tags: nix homemanager xdg @zettel _method
+roam-id: b0f933a6-2a34-4e6a-9704-08dc174207dd
+created: 20260602093200000
+modified: 20260602093200000
+type: text/markdown
+
+``` nix
+{
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr # use this for wlroots compositors (e.g., Sway, Hyprland)
+    ];
+
+    # configure how portals handle requests
+    config = {
+      common = {
+        default = [ "gtk" ];
+      };
+    };
+  };
+}
+```
+
+if you're using non-nixos system like ubuntu then you should also see how to

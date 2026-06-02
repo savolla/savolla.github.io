@@ -1,0 +1,44 @@
+title: Making Nix Packages Use GPU on Non-NixOS Systems
+tags: nixos nix ubuntu fedora @post
+roam-id: 804cb897-04b3-4d44-964c-bd7d34dd7ec9
+created: 20260602191300000
+modified: 20260602191300000
+type: text/markdown
+
+DRAFT (more later)
+
+installed mako (home-manager)
+
+``` nix
+services = {
+  mako = {
+    enable = true;
+    package = unstable.mako;
+  };
+```
+
+enable user service mako
+
+    systemctl --user enable --now mako.service
+
+test the notifications
+
+``` bash
+notify-send "Test" "Hello from mako"
+```
+
+I finally decided to reboot my system after bashing my head into the wall like 2 hours?
+
+when I rebuilt my system using
+
+``` bash
+home-manager switch --flake .#fiat --impure
+```
+
+I saw the following warning (finally!)
+
+``` bash
+This non-NixOS system is not yet set up to use the GPU
+with Nix packages. To set up GPU drivers, run
+  sudo /nix/store/gpvbnk7gchls5y89jb4v981527rgbsra-non-nixos-gpu/bin/non-nixos-gpu-setup
+```
