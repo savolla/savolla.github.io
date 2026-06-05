@@ -1,0 +1,10 @@
+title: Check Entropy
+tags: gpg security cryptography @zettel _method
+roam-id: 9d506df7-caf7-4077-bea6-b28fff4320c2
+created: 20260605204700000
+modified: 20260605204700000
+type: text/markdown
+
+``` bash
+cat /proc/sys/kernel/random/entropy_avail
+```
