@@ -1,0 +1,12 @@
+title: Delete a GPG Key
+tags: gpg @zettel _method
+roam-id: 55d94fca-85e6-4883-96e8-3649f94d93ee
+created: 20260605214100000
+modified: 20260605214100000
+type: text/markdown
+
+[[Get GPG Key Id]] first
+
+``` bash
+gpg --delete-secret-and-public-key YOUR_KEY_ID
+```

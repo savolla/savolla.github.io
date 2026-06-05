@@ -9,11 +9,12 @@ type: text/markdown
 gpg --expert --full-generate-key
 ```
 
-- select `(9) ECC and ECC`
+- select `(11) ECC (set your own capabilities)`
+- remove Sign capability with selecting `S`
+- select `Q`
 - select `(1) Curve 25519`
-- select `0` for no expiration
-- provide your full name and email address
-- you can also provide your username ad comment
+- enter your fullname, email and comment
+- enter a secure and hard to forget password
 
 our keypair is generated now [[Get List of GPG Keys]] to verify if it exists
 
