@@ -1,0 +1,21 @@
+title: Creating a Monster USB Drive
+tags: @post usb
+roam-id: 08d9d904-5078-4fa1-a0b5-75ca460afdef
+created: 20260605222200000
+modified: 20260605222200000
+type: text/markdown
+
+DRAFT (more later)
+
+I have Sandisk USB3.2. with the metal case which dissipates heat so fast that I sometimes cannot touch it at all.. anyways. it is 64 gigs.
+
+settings up ventoy
+
+putting the following isos in
+
+- tailsos
+- ubuntu lts
+- proxmox
+- nixos
+
+partitoning the drive to extend it as a storage device also. using exFAT for os agnosticism.
