@@ -5,12 +5,12 @@ created: 20260521121700000
 modified: 20260521121700000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 ls -la /usr/lib/nginx/modules/
 ```
 
 or
 
-``` {.bash org-language="sh"}
+``` bash
 nginx -V 2>&1 | grep modules
 ```

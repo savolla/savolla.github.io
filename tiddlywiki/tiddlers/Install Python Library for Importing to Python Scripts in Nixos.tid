@@ -1,0 +1,24 @@
+title: Install Python Library for Importing to Python Scripts in Nixos
+tags: homemanager nix python @zettel _method
+roam-id: 2d2d3c59-34d5-4e60-b135-afbb56967d9f
+created: 20260605122100000
+modified: 20260605122100000
+type: text/markdown
+
+here is an example when I install `tldextract` library for qute-pass python script dependency
+
+``` nix
+home.packages =
+  with pkgs;
+  [
+    (stable.python312.withPackages (ps: [
+      ps.tldextract # qute-pass dependency
+    ]))
+  ];
+```
+
+check if it imports
+
+``` bash
+python3 -c 'import tldextract'
+```

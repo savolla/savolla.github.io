@@ -1,0 +1,16 @@
+title: Get Vendor and Product Id of a Usb Device
+tags: linux usb @zettel _method
+roam-id: febd4610-91c4-41b5-9f03-133b4af98fcc
+created: 20260605163800000
+modified: 20260605163800000
+type: text/markdown
+
+plug your usb device in. then use the following command.
+
+``` bash
+lsusb
+```
+
+example output \<table\> \<tbody\> \<tr\> \<td\>Bus\</td\> \<td\>3\</td\> \<td\>Device\</td\> \<td\>024:\</td\> \<td\>ID\</td\> \<td\>1050:0407\</td\> \<td\>Yubico.com\</td\> \<td\>Yubikey\</td\> \<td\>4/5\</td\> \<td\>OTP+U2F+CCID\</td\> \</tr\> \<tr\> \<td\>Bus\</td\> \<td\>4\</td\> \<td\>Device\</td\> \<td\>003:\</td\> \<td\>ID\</td\> \<td\>0781:55ab\</td\> \<td\>SanDisk\</td\> \<td\>Corp.\</td\> \<td\>SanDisk\</td\> \<td\>3.2Gen1\</td\> \</tr\> \</tbody\> \</table\>
+
+the first portion of the ID is Vendor ID and the second is Product ID. `ID <VENDOR>:<PRODUCT>`

@@ -1,0 +1,31 @@
+title: Boot Iso Using Qemu
+tags: virtualization qemu @zettel _method
+roam-id: 24975b9a-e1f3-47cb-9745-6a90db248352
+created: 20260605160700000
+modified: 20260605160700000
+type: text/markdown
+
+you may want an ephemeral environment just for testing something in a completely fresh environment. or doing stuff like [[My Password Management System (Paranoid Edition)]].. you can boot into an iso just like the following;
+
+``` bash
+qemu-system-x86_64 \
+  -enable-kvm \
+  -cpu host \
+  -m 4G \
+  -cdrom live.iso \
+  -snapshot
+```
+
+`-snapshot` parameter makes the temporary disk to be wiped when vm shuts down. increasing security and privacy
+
+for extra security you also may need to disable network access completely by using `-nic none` parameter
+
+``` bash
+qemu-system-x86_64 \
+  -enable-kvm \
+  -cpu host \
+  -m 4G \
+  -cdrom live.iso \
+  -snapshot \
+  -nic none
+```

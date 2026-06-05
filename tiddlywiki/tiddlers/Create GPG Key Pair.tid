@@ -15,7 +15,7 @@ gpg --expert --full-generate-key
 - provide your full name and email address
 - you can also provide your username ad comment
 
-our keypari is generated now [[Get List of GPG Keys]] to verify if it exists
+our keypair is generated now [[Get List of GPG Keys]] to verify if it exists
 
 [^1] [^2]
 

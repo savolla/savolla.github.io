@@ -5,15 +5,12 @@ created: 20260521212500000
 modified: 20260521212500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 cat /usr/share/xsessions/dwm.desktop
 ```
 
-  ------------------ --------- ---------
-  \[Desktop          Entry\]   
-  Name=dwm                     
-  Comment=dynamic    window    manager
-  Exec=dwm                     
-  Icon=dwm                     
-  Type=Application             
-  ------------------ --------- ---------
+\<table\> \<tbody\> \<tr\> \<td\>\[Desktop\</td\> \<td\>Entry\]\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Name=dwm\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Comment=dynamic\</td\> \<td\>window\</td\> \<td\>manager\</td\> \</tr\> \<tr\> \<td\>Exec=dwm\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \<tr\> \<td\>Icon=dwm\</td\> \<td\>\</td\> \<td\>\</td\> \</tr\> \</tbody\> \</table\>
+
+|                  |     |     |
+|------------------|-----|-----|
+| Type=Application |     |     |

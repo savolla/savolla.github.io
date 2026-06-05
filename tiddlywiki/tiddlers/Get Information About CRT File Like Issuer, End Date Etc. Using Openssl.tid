@@ -1,0 +1,24 @@
+title: Get Information About CRT File Like Issuer, End Date Etc. Using Openssl
+tags: openssl crt @zettel _method
+roam-id: 66d13a68-7f7a-4ecf-b2e6-6d1c8d0de170
+created: 20260603132300000
+modified: 20260603132300000
+type: text/markdown
+
+get your `.crt` file
+
+``` bash
+openssl x509 -in STAR_staging_kartaca_com.crt -text -noout
+```
+
+check issuer
+
+``` bash
+openssl x509 -in STAR_staging_kartaca_com.crt -noout -subject -issuer
+```
+
+serial number
+
+``` bash
+openssl x509 -in STAR_staging_kartaca_com.crt -noout -serial
+```

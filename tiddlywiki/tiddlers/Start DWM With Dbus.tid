@@ -5,7 +5,7 @@ created: 20260521203800000
 modified: 20260521203800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 # ~/.xinitrc
 
 # start d-bus session if it's not already running
