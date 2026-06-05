@@ -8,7 +8,13 @@ type: text/markdown
 [[Get List of GPG Keys]] then [[Get GPG Key Id]] by copying it.
 
 ``` bash
-gpg --armor --export-secret-key $KEY_ID > private.asc
+gpg --armor --export-secret-key $KEY_ID > master.asc
+```
+
+also for subkeys
+
+``` bash
+gpg --armor --export-secret-subkeys $KEY_ID > sub.asc
 ```
 
 store it somewhere safe! you'd also like to see how to [[Import GPG Public Key Into Your Keyring]] for further operations

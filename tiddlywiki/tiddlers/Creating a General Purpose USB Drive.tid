@@ -1,4 +1,4 @@
-title: Creating a Monster USB Drive
+title: Creating a General Purpose USB Drive
 tags: @post usb
 roam-id: 08d9d904-5078-4fa1-a0b5-75ca460afdef
 created: 20260605222200000
@@ -25,7 +25,7 @@ I first [[Install Ventoy on a Usb Drive on Nixos]] and left the half of the usb 
 my usb partition structure
 
 ``` bash
-        VENTOYEFI           BACKUP (encrypted)
+        VENTOYEFI             LUKS (encrypted)
            /                       /
 +-------------------+----+----+----+----+
 <table>
@@ -41,3 +41,9 @@ my usb partition structure
                        /
              TEMPORARY (unencrypted)
 ```
+
+added the following iso files in ventoy
+
+- 
+
+[[Encrypt a Drive/HDD/SSD Using Luks on Linux]] the ext4 partition
