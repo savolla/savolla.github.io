@@ -1,0 +1,10 @@
+title: Get Yubikey Information
+tags: yubikey gpg @zettel _method
+roam-id: ad136b23-38c4-44b0-8803-7dec61608551
+created: 20260606010800000
+modified: 20260606010800000
+type: text/markdown
+
+``` bash
+gpg --card-edit
+```
