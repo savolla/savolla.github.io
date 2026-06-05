@@ -15,5 +15,11 @@ nix-shell -p ventoy
 
   ``` shell
   lsblk # check your usb device (be careful)
-  sudo ventoy -I /dev/sdX # replace with your drive
+  sudo ventoy -I -g -r 29335 /dev/sdX # replace with your drive
   ```
+
+- `-I` :: install
+
+- `-g` :: enabled GPT (default is MBR)
+
+- `-r` :: leave n MB for storage
