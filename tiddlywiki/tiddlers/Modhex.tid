@@ -1,0 +1,8 @@
+title: Modhex
+tags: fc @zettel _term gpg @zettel _method ssh
+roam-id: 270531c1-786e-49c6-8b90-77999a73d794
+created: 20260607012200000
+modified: 20260607012200000
+type: text/markdown
+
+16 character alphabet. "cbdefghijklnrtuv" that is identical on all keyboard layouts. safe to use with yubikey static passwords
