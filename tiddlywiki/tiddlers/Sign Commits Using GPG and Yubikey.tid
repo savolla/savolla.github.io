@@ -1,0 +1,31 @@
+title: Sign Commits Using GPG and Yubikey
+tags: git gpg yubikey @zettel _method
+roam-id: 6b0fbd77-a829-4122-b724-7b9bd68c61e6
+created: 20260607015700000
+modified: 20260607015700000
+type: text/markdown
+
+- [[Get GPG Key Id]] first and copy it
+
+- add the key id you just copied into the `<KEY_ID>` below
+
+``` bash
+git config --global user.signingkey <KEY_ID>
+git config --global gpg.program gpg
+git config --global commit.gpgSign true   # auto-sign every commit
+```
+
+add this into your `fish` config
+
+``` fish
+set -x GPG_TTY (tty)
+```
+
+or if you're a dinosaur use these
+
+``` bash
+# Add to your ~/.bashrc or ~/.zshrc
+export GPG_TTY=$(tty)
+```
+
+now commit normally and [[Show Signature of a Git Commit]] to verify it worked

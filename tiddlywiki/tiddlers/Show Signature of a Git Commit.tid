@@ -1,0 +1,10 @@
+title: Show Signature of a Git Commit
+tags: gpg git @zettel _method
+roam-id: ec9f86ff-b5a5-4756-be5a-8953d29879de
+created: 20260607020500000
+modified: 20260607020500000
+type: text/markdown
+
+``` bash
+git log --show-signature -1
+```
