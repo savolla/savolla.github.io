@@ -1,0 +1,28 @@
+title: Check Which Package Depends on a Dependency/Package in Nixos
+tags: nixos nix @zettel _method
+roam-id: cce798f0-a4df-4e43-8a4c-fd78ab426117
+created: 20260606173000000
+modified: 20260606173000000
+type: text/markdown
+
+for example I want to see which package depends on `gcr` package. my upgrade process failed because of the build error in `gcr`. when I checked my system packages, I didn't see the `gcr` package in my list. so here is how to find which package depends on it
+
+there are two methods for this. I'll give you the easies first
+
+``` bash
+nix-store --query --referrers $(nix-store --query --outputs $(nix-instantiate '<nixpkgs>' -A gcr))
+```
+
+\<table\> \<tbody\> \<tr\> \<td\>/nix/store/lp0p3dawvhc0aj8pmrj90nx1d9n9w95b-gcr-3.41.2\</td\> \</tr\> \<tr\> \<td\>/nix/store/ybwyx2r9ifa1irivwxjj1q74r8qch4q7-pinentry-gnome3-1.3.2\</td\> \</tr\> \</tbody\> \</table\>
+
+so I can see that it is mostly `pinentry-gnome3-1.3.2`. try to remove or change to stable channel on this package for stability
+
+for the second method (which is more interactive)
+
+first get the dependency tree on nix
+
+``` bash
+nix-shell -p nix-tree --run "nix-tree"
+```
+
+then find the `gcr` manually by pressing `/`
