@@ -1,0 +1,24 @@
+title: Compare Two Project Files in Doom Emacs
+tags: doomemacs diff ediff projectle @zettel _method
+roam-id: afff7a82-2ab4-4818-a85f-2916a9b4c2ec
+created: 20260606175700000
+modified: 20260606175700000
+type: text/markdown
+
+``` elisp
+(defun my/project-ediff ()
+  "Ediff two files picked from the current project."
+  (interactive)
+  (let* ((project (project-current t))
+         (files (project-files project))
+         (file-a (completing-read "File A: " files nil t))
+         (file-b (completing-read "File B: " files nil t)))
+    (ediff file-a file-b)))
+
+(map! :leader
+      :desc "Ediff project files" "f E" #'my/project-ediff)
+```
+
+[[Refresh Doom Emacs]]
+
+press `SPC f E` under your project directory
