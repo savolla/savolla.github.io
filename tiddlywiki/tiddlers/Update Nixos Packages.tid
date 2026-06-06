@@ -5,6 +5,8 @@ created: 20260508230800000
 modified: 20260508230800000
 type: text/markdown
 
+make sure you first [[Update Nix Channels]]
+
 ``` bash
 sudo nixos-rebuild switch -I nixos-config=./configuration.nix --upgrade
 ```

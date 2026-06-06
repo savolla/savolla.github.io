@@ -4,5 +4,6 @@ roam-id: 61454f3a-db6f-47f1-9996-3dca13542be3
 type: text/markdown
 
 ``` shell
-sudo nix-store --gc
+nix store gc
+sudo nix store gc
 ```

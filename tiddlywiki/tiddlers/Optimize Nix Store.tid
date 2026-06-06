@@ -1,0 +1,10 @@
+title: Optimize Nix Store
+tags: @zettel _method nix
+roam-id: 0043f9e6-8e47-4660-8e72-e28409cc4f77
+created: 20260606150400000
+modified: 20260606150400000
+type: text/markdown
+
+``` bash
+nix store optimise
+```
