@@ -1,0 +1,20 @@
+title: ERROR: Failed to Connect to YubiKey.
+tags: ykman yubikey @zettel _fix
+roam-id: fadea0a3-341c-4eab-a30b-8fced8272d08
+created: 20260607145800000
+modified: 20260607145800000
+type: text/markdown
+
+try to pull back your yubikey and the plug it back. then issue your command again. if that doesn't work then see below
+
+you first need to [[Enable/Install PCSCD Service on Nixos]] or for your distro check if `pcscd` service is running
+
+``` bash
+sudo systemctl status pcscd.service
+```
+
+restart it
+
+``` bash
+sudo systemctl restart pcscd.service
+```

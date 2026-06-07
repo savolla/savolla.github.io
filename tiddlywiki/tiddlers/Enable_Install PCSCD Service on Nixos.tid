@@ -1,0 +1,16 @@
+title: Enable/Install PCSCD Service on Nixos
+tags: yubikey pcscd nixos @zettel _method
+roam-id: 60865a42-6ed0-4cca-8163-0362dabb1936
+created: 20260607150100000
+modified: 20260607150100000
+type: text/markdown
+
+in `configuration.nix` put
+
+``` nix
+services = {
+  pcscd = {
+    enable = true;
+  };
+};
+```
