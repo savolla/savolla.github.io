@@ -5,3 +5,16 @@ created: 20260607172500000
 modified: 20260607172500000
 type: text/markdown
 
+DRAFT
+
+## chezmoi
+
+for encrypting parts of files. uses gpg and gopass see below
+
+## gopass
+
+for password management with gpg
+
+## gitleaks
+
+ensure no plain secrets go to the repo
