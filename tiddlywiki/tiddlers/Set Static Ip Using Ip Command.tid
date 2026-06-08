@@ -1,0 +1,10 @@
+title: Set Static Ip Using Ip Command
+tags: networking ip linux @zettel _method
+roam-id: 04d6550a-54fe-48ed-9b57-767a0ad27907
+created: 20260608155000000
+modified: 20260608155000000
+type: text/markdown
+
+``` bash
+sudo ip addr add 192.168.1.100/24 dev ens33
+```

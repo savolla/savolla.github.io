@@ -1,0 +1,15 @@
+title: Prevent Network Manager From Overriding Static Ips on Ubuntu
+tags: ubuntu networking linux networkmanager @zettel _fix
+roam-id: 29859ec8-8c16-413c-8b19-f93e9e4b3f4c
+created: 20260608160900000
+modified: 20260608160900000
+type: text/markdown
+
+add the following under `/etc/NetworkManager/conf.d/unmanaged.conf`
+
+``` bash
+[keyfile]
+unmanaged-devices=interface-name:YOUR_INTERFACE
+```
+
+then restart network manager [[Set Static Ip Using Ip Command]] again
