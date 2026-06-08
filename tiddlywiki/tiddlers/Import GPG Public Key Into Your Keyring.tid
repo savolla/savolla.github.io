@@ -23,7 +23,7 @@ gpg --import savolla.asc
 you should see a similar output
 
 ``` ascii
-gpg: key ABCDEF1234567890: public key "Kuzey Koç (savolla) <akuzey.koc@tutamail.com>" imported
+gpg: key ABCDEF1234567890: public key "Kuzey Koç (savolla) <kuzey.koc7991@gmail.com>" imported
 ```
 
 now you can [[Encrypt Files With GPG]] for this recepient

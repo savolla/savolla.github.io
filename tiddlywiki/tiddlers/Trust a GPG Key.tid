@@ -1,0 +1,14 @@
+title: Trust a GPG Key
+tags: gpg @zettel _method
+roam-id: 18a5b9f6-9c34-4ba9-988b-9bfae4cfb066
+created: 20260608114800000
+modified: 20260608114800000
+type: text/markdown
+
+[[Edit GPG Key]]
+
+``` bash
+gpg> trust
+# select ultimate
+save
+```

@@ -5,7 +5,7 @@ created: 20260421182000000
 modified: 20260421182000000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 mkdir testwiki
 cd testwiki
 tiddlywiki --init

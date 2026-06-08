@@ -1,0 +1,16 @@
+title: Introduce Your Yubikey to a New Machine
+tags: gpg yubikey @zettel _method
+roam-id: e7171479-53a1-4532-bbbb-709b3f497c32
+created: 20260608120700000
+modified: 20260608120700000
+type: text/markdown
+
+(you may want to [[Import GPG Public Key Into Your Keyring]] first but I'm not really sure) plug your yubikey
+
+``` bash
+gpg --card-status
+```
+
+> This does two things: verifies GPG can see the card, and automatically creates the secret key stubs on your machine that point to the YubiKey. After this, gpg –list-secret-keys should show your keys with a \> marker (meaning "key is on card"):\[fn:1\]
+
+[[Trust a GPG Key]] for your key on yubikey

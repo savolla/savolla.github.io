@@ -5,11 +5,11 @@ created: 20260421193400000
 modified: 20260421193400000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 sudo cryptsetup open /dev/sdb savolla
 # it will ask for password
 mkdir ./0
 sudo mount /dev/mapper/savolla ./0
 ```
 
-you also want to see [[Unmount Luks Encrypted Drive]] when you finish
+you also want to see [[unmount luks encrypted drive]] when you finish
