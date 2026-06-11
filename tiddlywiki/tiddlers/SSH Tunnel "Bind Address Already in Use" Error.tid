@@ -1,0 +1,9 @@
+title: SSH Tunnel "Bind Address Already in Use" Error
+tags: ssh @zettel _fix
+roam-id: 222a3c1e-fc63-4556-b3de-4ca22fe6cbdf
+created: 20260611123700000
+modified: 20260611123700000
+type: text/markdown
+
+- [[Check Which Process Uses a Particular Port]]
+- kill that process

@@ -1,0 +1,10 @@
+title: Create SSH Tunnel
+tags: ssh @zettel _method
+roam-id: 81ea0e99-33b7-4427-958e-57c0a7f15605
+created: 20260611122500000
+modified: 20260611122500000
+type: text/markdown
+
+``` bash
+ssh -N -L 3336:localhost:3306 <user>@<remote-machine-ip>
+```

@@ -1,0 +1,18 @@
+title: Check Which Process Uses a Particular Port
+tags: networking linux @zettel _method
+roam-id: 0a2c8414-f2be-48ab-92c4-320af5ec5706
+created: 20260611123900000
+modified: 20260611123900000
+type: text/markdown
+
+I want to see which process uses port `3336` on my system
+
+``` bash
+lsof -i :3336
+```
+
+``` example
+COMMAND |     PID | USER | FD | TYPE |  DEVICE | SIZE/OFF | NODE | NAME           |          |
+ssh     | 3242190 | kkoc | 4u | IPv6 | 5057726 | 0t0      | TCP  | [::1]:3336     | (LISTEN) |
+ssh     | 3242190 | kkoc | 5u | IPv4 | 5057727 | 0t0      | TCP  | localhost:3336 | (LISTEN) |
+```
