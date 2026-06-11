@@ -1,0 +1,10 @@
+title: Connect to Mysql Keyspace Using Harlequin
+tags: harlequin mysql @zettel _method
+roam-id: 8acc165a-24f5-495b-8e67-4e519aa60339
+created: 20260611151200000
+modified: 20260611151200000
+type: text/markdown
+
+``` bash
+harlequin -a mysql -h MYSQL_SERVER_IP -p 3306 -U USER --password SOMEPASSWORD --theme gruvbox
+```

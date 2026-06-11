@@ -1,0 +1,8 @@
+title: Create a New Window in Tmux
+tags: tmux @zettel _method
+roam-id: fa2b1dca-77d4-4c4d-852e-ff8974aee732
+created: 20260611145700000
+modified: 20260611145700000
+type: text/markdown
+
+`Ctrl+b c`

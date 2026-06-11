@@ -1,0 +1,10 @@
+title: Connect to Cassandra Keyspace Using Harlequin
+tags: harlequin cassandra @zettel _method
+roam-id: bc8594cd-d20b-4c0e-825d-f326087713b0
+created: 20260611150600000
+modified: 20260611150600000
+type: text/markdown
+
+``` bash
+harlequin -a cassandra --host DB_HOST_IP --username USERNAME --password SOMEPASSWORD --theme gruvbox
+```
