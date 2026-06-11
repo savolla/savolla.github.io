@@ -1,0 +1,12 @@
+title: Update/Upgrade Tools Using Uv
+tags: python uv @zettel _method
+roam-id: de37a5b1-6ad6-4fbd-9c72-3632f731793c
+created: 20260611134100000
+modified: 20260611134100000
+type: text/markdown
+
+in this example I'm upgrading my `harlequin` installation with some extra adapters
+
+``` bash
+uv tool update 'harlequin[postgres,mysql,s3,cassandra]'
+```
