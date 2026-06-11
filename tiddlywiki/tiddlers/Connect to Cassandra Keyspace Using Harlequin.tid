@@ -5,6 +5,8 @@ created: 20260611150600000
 modified: 20260611150600000
 type: text/markdown
 
+instead of doing that you may want to [[Launch Configuration Wizard for Harlequin]]
+
 ``` bash
 harlequin -a cassandra --host DB_HOST_IP --username USERNAME --password SOMEPASSWORD --theme gruvbox
 ```

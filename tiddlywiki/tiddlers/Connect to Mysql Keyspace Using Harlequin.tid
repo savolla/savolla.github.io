@@ -5,6 +5,8 @@ created: 20260611151200000
 modified: 20260611151200000
 type: text/markdown
 
+instead of doing that you may want to [[Launch Configuration Wizard for Harlequin]]
+
 ``` bash
 harlequin -a mysql -h MYSQL_SERVER_IP -p 3306 -U USER --password SOMEPASSWORD --theme gruvbox
 ```

@@ -1,0 +1,10 @@
+title: Launch Harlequin With Special Profile
+tags: harlequin database @zettel _method
+roam-id: 044db805-9691-493f-89aa-05e20da378c6
+created: 20260611153300000
+modified: 20260611153300000
+type: text/markdown
+
+``` bash
+harlequin --profile <your_profile>
+```

@@ -1,0 +1,12 @@
+title: Launch Configuration Wizard for Harlequin
+tags: database harlequin @zettel _method
+roam-id: 2814f170-c568-41a1-9444-bc18733dfeee
+created: 20260611153100000
+modified: 20260611153100000
+type: text/markdown
+
+``` bash
+harlequin --configure
+```
+
+then [[Launch Harlequin With Special Profile]]
