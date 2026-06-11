@@ -5,9 +5,13 @@ type: text/markdown
 
 use proportional padding for 16:9 ratio
 
-$$\frac{16}{9} = 1.777\ldots$$
+``` math
+\frac{16}{9} = 1.777\ldots
+```
 
-$$\frac{1}{1.777\ldots} = 0.5625 \Rightarrow 56.25\%$$
+``` math
+\frac{1}{1.777\ldots} = 0.5625 \Rightarrow 56.25\%
+```
 
 ``` html
 <div className="relative w-full pt-[56.25%]">

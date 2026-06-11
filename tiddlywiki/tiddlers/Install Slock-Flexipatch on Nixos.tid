@@ -9,26 +9,26 @@ clone the repository <https://github.com/bakkeby/slock-flexipatch>
 
 I personally added the following patches
 
-`DPMS_PATCH`
-:   shutdown monitor when locked
+`DPMS_PATCH`  
+shutdown monitor when locked
 
-`DWM_LOGO_PATCH`
-:   display cool dwm logo on the lock screen
+`DWM_LOGO_PATCH`  
+display cool dwm logo on the lock screen
 
-`KEYPRESS_FEEDBACK_PATCH`
-:   draw blocks on screen on key press
+`KEYPRESS_FEEDBACK_PATCH`  
+draw blocks on screen on key press
 
-`MEDIAKEYS_PATCH`
-:   adjust volume and change songs when screen is locked
+`MEDIAKEYS_PATCH`  
+adjust volume and change songs when screen is locked
 
-`MESSAGE_PATCH`
-:   put a message on lock screen
+`MESSAGE_PATCH`  
+put a message on lock screen
 
-`ALPHA_PATCH`
-:   make lock screen transparent
+`ALPHA_PATCH`  
+make lock screen transparent
 
-`CAPSCOLOR_PATCH`
-:   warn when Caps Lock is active
+`CAPSCOLOR_PATCH`  
+warn when Caps Lock is active
 
 For those patches to compile you also need to do modifications in `config.mk` file
 

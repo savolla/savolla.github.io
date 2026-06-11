@@ -5,7 +5,7 @@ type: text/markdown
 
 your ssh folder and key permissions are wrong. correct it like
 
-``` {.bash org-language="sh"}
+``` bash
 chmod 600 ~/.ssh/id_rsa
 chmod 700 ~/.ssh
 ```

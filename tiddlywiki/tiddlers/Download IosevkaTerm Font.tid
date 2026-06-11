@@ -5,9 +5,9 @@ created: 20260512193100000
 modified: 20260512193100000
 type: text/markdown
 
-you can download IosevkaTerm directly from github\'s releases page. simply use the following command
+you can download IosevkaTerm directly from github's releases page. simply use the following command
 
-``` {.bash org-language="sh"}
+``` bash
 curl -s 'https://api.github.com/repos/be5invis/Iosevka/releases/latest' | jq -r ".assets[] | .browser_download_url" | grep PkgWebFont-IosevkaTerm- | xargs -n 1 curl -L -O --fail --silent --show-error
 ```
 

@@ -5,12 +5,12 @@ type: text/markdown
 
 - startup probe
 
-  > Don't rush me, I'm starting
+  > Don’t rush me, I’m starting
 
 - liveness probe
 
-  > If I'm dead, restart me.
+  > If I’m dead, restart me.
 
 - readiness probe
 
-  > If I'm busy, stop sending work
+  > If I’m busy, stop sending work

@@ -3,8 +3,8 @@ tags: sftp @zettel _method
 roam-id: 601f831f-0530-413b-945a-c593e2f26e61
 type: text/markdown
 
-while you\'re inside the sftp shell do;
+while you're inside the sftp shell do;
 
-``` {.bash org-language="sh"}
+``` bash
 get /path/to/file
 ```

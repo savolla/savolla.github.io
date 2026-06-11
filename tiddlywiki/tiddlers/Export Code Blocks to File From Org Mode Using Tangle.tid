@@ -3,6 +3,6 @@ tags: @zettel _method orgmode
 roam-id: 28fc4efd-3639-43bf-a220-e722daf7868c
 type: text/markdown
 
-+begin~src~ bash :tangle /path/to/file.sh #!/usr/bin/env bash echo \"hello world\" +end~src~
++begin<sub>src</sub> bash :tangle /path/to/file.sh \#!/usr/bin/env bash echo "hello world" +end<sub>src</sub>
 
 when you run this code block your code will be exported to `/path/to/file.sh`

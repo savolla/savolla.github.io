@@ -5,9 +5,9 @@ created: 20260527015500000
 modified: 20260527015500000
 type: text/markdown
 
-you first need to see how to [[Use GPG for SSH Authentication]]. without this you\'ll not be able to get ssh public key from your gpg
+you first need to see how to [[Use GPG for SSH Authentication]]. without this you'll not be able to get ssh public key from your gpg
 
-``` {.bash org-language="sh" results="output drawer"}
+``` bash
 ssh-add -L
 ```
 
@@ -15,6 +15,6 @@ ssh-add -L
 
 or with a second method
 
-``` {.bash org-language="sh"}
+``` bash
 gpg --export-ssh-key MAIL_ATTACHED_TO_YOUR_GPG_KEY
 ```

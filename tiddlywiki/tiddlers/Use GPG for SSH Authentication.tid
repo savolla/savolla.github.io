@@ -86,6 +86,8 @@ Host *
   IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
 ```
 
+WARNING: make sure your `uid` is correct. I enter `1000` above but your user's uid may be different if you're setting this on a work machine. [[Get Uid of a User]] to check. and replace `1000` above with ouputted uid
+
 okay now let's verify if our setup works. open a new shell/terminal
 
 ``` bash

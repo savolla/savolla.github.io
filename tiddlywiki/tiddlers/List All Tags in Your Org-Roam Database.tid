@@ -3,6 +3,6 @@ tags: @zettel _method orgroam
 roam-id: 06f5708e-6777-4c9a-98f4-225e28fdc12a
 type: text/markdown
 
-``` {.commonlisp org-language="emacs-lisp" results="value raw drawer"}
+``` commonlisp
 (org-roam-db-query "SELECT DISTINCT tag FROM tags")
 ```

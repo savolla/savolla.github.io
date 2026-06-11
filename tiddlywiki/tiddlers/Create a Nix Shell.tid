@@ -3,7 +3,7 @@ tags: @zettel _method nix
 roam-id: b8d5659d-c71f-4098-a8a1-fe81ff43985e
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 touch shell.nix
 ```
 

@@ -8,7 +8,7 @@ type: text/markdown
 
 These are in the 2xx range, meaning the request worked:
 
-- 200 OK -- Everything worked as expected.
-- 201 Created -- Something was successfully created (common for APIs).
-- 202 Accepted -- Request accepted but not processed yet.
-- 204 No Content -- Request succeeded but there's nothing to show (e.g., after deletion).
+- 200 OK – Everything worked as expected.
+- 201 Created – Something was successfully created (common for APIs).
+- 202 Accepted – Request accepted but not processed yet.
+- 204 No Content – Request succeeded but there’s nothing to show (e.g., after deletion).

@@ -3,7 +3,7 @@ tags: @zettel _method echo linux
 roam-id: 070c0f4d-b086-442d-9280-afc458de7284
 type: text/markdown
 
-``` {.shell results="output"}
+``` shell
 echo "Line 1
 Line 2
 Line 3"

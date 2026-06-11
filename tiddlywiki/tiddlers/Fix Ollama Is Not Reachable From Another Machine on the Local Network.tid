@@ -5,7 +5,7 @@ created: 20260320224600000
 modified: 20260320224600000
 type: text/markdown
 
-set ollama\'s host to 0.0.0.0
+set ollama's host to 0.0.0.0
 
 on nixos you can set it in the options like
 

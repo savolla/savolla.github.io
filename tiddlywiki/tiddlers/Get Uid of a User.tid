@@ -1,0 +1,10 @@
+title: Get Uid of a User
+tags: linux @zettel _method
+roam-id: 550154ac-c176-499e-b8eb-15105ac57a88
+created: 20260610143300000
+modified: 20260610143300000
+type: text/markdown
+
+``` bash
+id -u $USER
+```

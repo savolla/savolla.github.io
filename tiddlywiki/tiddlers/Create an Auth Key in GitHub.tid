@@ -7,10 +7,10 @@ type: text/markdown
 
 Go to <https://github.com/settings/keys>
 
-Click on \"New SSH Key\"
+Click on "New SSH Key"
 
 Name your key
 
-Copy your **public ssh key** in your system. if you don\'t have any then [[Generate an SSH Keypair]]
+Copy your **public ssh key** in your system. if you don't have any then [[Generate an SSH Keypair]]
 
-Paste your public ssh key in the \"Key\" section
+Paste your public ssh key in the "Key" section

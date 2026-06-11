@@ -3,7 +3,7 @@ tags: @zettel _method gcp
 roam-id: ff8c58d9-f2bf-42ee-8a77-2f7f01ef8e4c
 type: text/markdown
 
-- [[Get All Google Cloud Storage Elements Buckets]] to get your TARGET~BUCKET~
+- [[Get All Google Cloud Storage Elements Buckets]] to get your TARGET<sub>BUCKET</sub>
 
 ``` shell
 gcloud storage ls gs://TARGET_BUCKET

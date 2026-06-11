@@ -5,7 +5,7 @@ created: 20260519014800000
 modified: 20260519014800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 rfkill unblock all
 ```
 

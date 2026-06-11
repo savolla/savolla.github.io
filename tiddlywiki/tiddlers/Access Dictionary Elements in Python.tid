@@ -3,7 +3,7 @@ tags: @zettel _method python _e
 roam-id: ed0a8eb7-9b25-438d-8d7f-724ba19d586b
 type: text/markdown
 
-``` {.python results="output"}
+``` python
 movies = [
     {
         "movie_name"       : "eyes wide shut",

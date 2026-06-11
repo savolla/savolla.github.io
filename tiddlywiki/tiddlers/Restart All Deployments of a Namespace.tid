@@ -5,6 +5,6 @@ created: 20260403120100000
 modified: 20260403120100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 kubectl rollout restart deployment -n <namespace>
 ```

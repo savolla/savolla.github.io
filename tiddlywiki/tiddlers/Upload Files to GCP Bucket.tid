@@ -5,6 +5,6 @@ created: 20260402180100000
 modified: 20260402180100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 gsutil cp object_location gs://destination_bucket_name/
 ```

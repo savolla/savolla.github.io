@@ -3,6 +3,6 @@ tags: @zettel _fix dockerhub docker
 roam-id: 1f681596-4087-4c88-964e-ac7ac9c189d0
 type: text/markdown
 
-- you\'re pushing your image without the correct tag like `savolla/image:latest`. you\'re probably pushing it like `image:latest`
+- you're pushing your image without the correct tag like `savolla/image:latest`. you're probably pushing it like `image:latest`
 - see [[Tag Your Docker Image]]
 - and tag it correctly. then try to push again

@@ -22,13 +22,8 @@ type: text/markdown
 
 - [[Increase Mapped Memory Regions in Ubuntu or Debian Linux]]
 
-:::: warning
-::: title
-Warning
-:::
-
-next step is to download sonarqube and extract. but it installs version 9.9.0. go and check the ****latest version**** and install that instead
-::::
+> [!WARNING]
+> next step is to download sonarqube and extract. but it installs version 9.9.0. go and check the ****latest version**** and install that instead
 
 ``` shell
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip

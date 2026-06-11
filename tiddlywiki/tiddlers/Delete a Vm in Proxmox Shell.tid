@@ -7,12 +7,12 @@ type: text/markdown
 
 make sure you [[Shutdown a Vm in Proxmox Shell]] before destroying it
 
-``` {.bash org-language="sh"}
+``` bash
 qm destroy $VMID
 ```
 
 alternatively you can keep the attached disk and only remove the vm
 
-``` {.bash org-language="sh"}
+``` bash
 qm destroy $VMID --keep-disk
 ```

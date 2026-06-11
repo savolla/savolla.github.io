@@ -5,13 +5,13 @@ type: text/markdown
 
 - make sure you logged into gcp
 
-  ``` {.bash org-language="sh"}
+  ``` bash
   gcloud auth application-default login
   ```
 
 - after you logged in a new `adc.json` file will be created under `~/.config/gcloud/legacy_credentials/user@mail.com`
 
-- you\'ll need to add this file to `GOOGLE_APPLICATION_CREDENTIALS` environment variable
+- you'll need to add this file to `GOOGLE_APPLICATION_CREDENTIALS` environment variable
 
 ``` shell
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/adc.json"

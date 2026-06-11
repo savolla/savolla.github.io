@@ -5,7 +5,7 @@ type: text/markdown
 
 - go to your youtube video
 - right click on the video
-- \"Copy Embed Code\"
+- "Copy Embed Code"
 - go back to emacs org mode file
 - add the following **export block**
 

@@ -5,7 +5,7 @@ created: 20260516195700000
 modified: 20260516195700000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 qutebrowser \\
     --qt-flag ignore-gpu-blacklist \\
     --QT-flag enable-gpu-rasterization \\

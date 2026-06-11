@@ -5,7 +5,7 @@ created: 20260430163100000
 modified: 20260430163100000
 type: text/markdown
 
-when user sends a prompt like \"show the contents of main.go file\" to the coding agent, the software portion of coding agent inserts extra prompts to the user\'s prompt like \"if you want to read a file use ReadFile: file-name\". so it gives hints to the LLM. helps it to make useful stuff on the system. when LLM calls \"ReadFile: main.go\" then the software portion acts like a backend service and performs the read operation and gives the content of main.go to the LLM.
+when user sends a prompt like "show the contents of main.go file" to the coding agent, the software portion of coding agent inserts extra prompts to the user's prompt like "if you want to read a file use ReadFile: file-name". so it gives hints to the LLM. helps it to make useful stuff on the system. when LLM calls "ReadFile: main.go" then the software portion acts like a backend service and performs the read operation and gives the content of main.go to the LLM.
 
 
 <sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

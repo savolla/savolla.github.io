@@ -5,12 +5,12 @@ created: 20260506162200000
 modified: 20260506162200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 -w "%{time_total}\n"
 ```
 
 example:
 
-``` {.bash org-language="sh"}
+``` bash
 curl -i http://bird-user-context:8080/bird-user-context/user-info?birdId=14 -w "%{time_total}\n"
 ```

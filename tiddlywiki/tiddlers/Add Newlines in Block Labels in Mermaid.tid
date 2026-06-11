@@ -5,7 +5,7 @@ type: text/markdown
 
 - use `<br>`
 
-``` {.mermaid file="\"test2.png\"" scale="2"}
+``` mermaid
 flowchart LR
     A[Scrimba <br> Python Course]:::someclass --> B
     classDef someclass fill:#f96

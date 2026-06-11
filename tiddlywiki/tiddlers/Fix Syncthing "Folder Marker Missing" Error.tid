@@ -6,4 +6,4 @@ type: text/markdown
 - go to the folder you want to sync
 - create a new file `.stfolder`
 - restart the sync process
-- so syncthing will see that this is a \"syncthing folder\" and will start syncing
+- so syncthing will see that this is a "syncthing folder" and will start syncing

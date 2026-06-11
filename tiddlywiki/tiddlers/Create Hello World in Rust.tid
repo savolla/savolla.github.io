@@ -3,7 +3,7 @@ tags: @zettel _method
 roam-id: b2a79350-84d7-4680-b9a1-b4f972de3bbe
 type: text/markdown
 
-``` {.rust results="output"}
+``` rust
 fn main() {
   println!("hello world");
 }

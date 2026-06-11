@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 ```
 
-``` {.javascript org-language="js"}
+``` javascript
 {
   "id": 1,
   "title": "feed the dog",

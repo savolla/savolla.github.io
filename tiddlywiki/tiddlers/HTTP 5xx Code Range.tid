@@ -8,7 +8,7 @@ type: text/markdown
 
 Codes in the 5xx range, the server failed:
 
-- 500 Internal Server Error -- Something broke on the server.
-- 502 Bad Gateway -- Server got an invalid response from upstream.
-- 503 Service Unavailable -- Server is overloaded or down temporarily.
-- 504 Gateway Timeout -- Server took too long to respond.
+- 500 Internal Server Error – Something broke on the server.
+- 502 Bad Gateway – Server got an invalid response from upstream.
+- 503 Service Unavailable – Server is overloaded or down temporarily.
+- 504 Gateway Timeout – Server took too long to respond.

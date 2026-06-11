@@ -3,7 +3,7 @@ tags: @zettel _method coquitts nixos
 roam-id: 96e1d8eb-995d-4ee5-8967-bf8a6853f041
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 # configuration.nix (under system packages)
 ...
 tts

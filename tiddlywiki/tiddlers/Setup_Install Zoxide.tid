@@ -7,6 +7,6 @@ type: text/markdown
 
 - setting up zoxide for zsh below
 
-  ``` {.bash org-language="sh"}
+  ``` bash
   zoxide init zsh
   ```

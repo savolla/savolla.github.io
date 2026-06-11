@@ -6,7 +6,7 @@ created: 20260313192600000
 modified: 20260313192600000
 type: text/markdown
 
-in your `init.el` or `config.el` if you\'re using doom emacs
+in your `init.el` or `config.el` if you're using doom emacs
 
 ``` elisp
 (add-hook 'auto-save-hook 'org-save-all-org-buffers)

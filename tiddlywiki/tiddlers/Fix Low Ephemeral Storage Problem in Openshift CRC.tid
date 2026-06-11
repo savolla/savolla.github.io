@@ -3,19 +3,19 @@ tags: @zettel _fix openshift youtube
 roam-id: 0efc0a82-133e-4b92-ba35-fa0f33535bcf
 type: text/markdown
 
-- [[Check Allocated Ephemeral Storage in Openshift Cluster]] (confirm it\'s low or 0)
+- [[Check Allocated Ephemeral Storage in Openshift Cluster]] (confirm it's low or 0)
 
 - [[Connect to CRC Openshift Container Vm via SSH]] and do `df -h`.
 
-- look for the `/sysroot` partition. if it\'s low then
+- look for the `/sysroot` partition. if it's low then
 
-- [[stop openshift cluster]] if it\'s running
+- [[stop openshift cluster]] if it's running
 
 - navigate to `/home/your_username/.crc/machines/crc`
 
 - [[Resize Qcow2 Image Size]] of `crc.qcow2` to 20G
 
-- [[run/open/start openshift]]. it will automatically resize the /sysroot partition. if it doesn\'t
+- [[run/open/start openshift]]. it will automatically resize the /sysroot partition. if it doesn't
 
 - [[Connect to CRC Openshift Container Vm via SSH]] again
 

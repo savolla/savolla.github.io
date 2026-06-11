@@ -7,7 +7,7 @@ type: text/markdown
 
 - add the following into your `package.el`
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (package! xclip)
   ```
 
@@ -15,7 +15,7 @@ type: text/markdown
 
 - add the following into your `config.el`
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (use-package! xclip
     :hook (after-init . xclip-mode))
   ```

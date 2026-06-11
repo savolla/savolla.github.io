@@ -6,6 +6,6 @@ type: text/markdown
 - download the tool called `wkhtmltopdf`
 - copy the url
 
-``` {.bash org-language="sh"}
+``` bash
 wkhtmltopdf https://link.to/webpage.html output.pdf
 ```

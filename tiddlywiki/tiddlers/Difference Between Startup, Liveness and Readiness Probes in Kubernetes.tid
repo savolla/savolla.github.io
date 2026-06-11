@@ -5,6 +5,6 @@ created: 20260318111700000
 modified: 20260318111700000
 type: text/markdown
 
-- Liveness probe --- "Is it still alive?"
-- Readiness probe --- "Can it handle traffic?"
-- Startup probe --- "Has it finished starting?"
+- Liveness probe — “Is it still alive?”
+- Readiness probe — “Can it handle traffic?”
+- Startup probe — “Has it finished starting?”

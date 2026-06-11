@@ -5,7 +5,7 @@ type: text/markdown
 
 remove commans from the following example
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 * EVENT payday
 ,DEADLINE: <2025-11-05 Wed +1m -3d>
 ,:PROPERTIES:

@@ -4,7 +4,7 @@ roam-id: 92f66e28-3eed-4e25-9595-9bb276758281
 type: text/markdown
 
 - go to <https://www.nerdfonts.com/font-downloads>
-- search \"iosevkaterm\"
+- search "iosevkaterm"
 - download the font
 - extract the archive
 - `mkdir iosevkaterm`

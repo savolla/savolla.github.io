@@ -5,13 +5,13 @@ type: text/markdown
 
 - add the following into `packages.el`
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (package! nov)
   ```
 
 - in your `config.el` add
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (use-package! nov
     :mode ("\\.epub\\'" . nov-mode)
     :config

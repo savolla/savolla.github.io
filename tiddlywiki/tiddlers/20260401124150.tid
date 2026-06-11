@@ -5,7 +5,7 @@ type: text/markdown
 
 > Each Pod in a DaemonSet performs a role similar to a system daemon on a classic Unix / POSIX server.
 
-k8s\' daemonset = linux\'s systemd service
+k8s' daemonset = linux's systemd service
 
 
 <sup>source: [[Workload Management Kubernetes]]</sup>

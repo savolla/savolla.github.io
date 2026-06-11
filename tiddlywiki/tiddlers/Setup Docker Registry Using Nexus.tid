@@ -5,9 +5,9 @@ type: text/markdown
 
 - login into nexus
 - go to <http://192.168.1.54:8081/#admin/repository/repositories>
-- click \"create repository\"
+- click "create repository"
 - select docker hosted
-- name it \"docker-hosted\"
+- name it "docker-hosted"
 - enable other connections
 - http port 5000
 - allow anonymous docker pull

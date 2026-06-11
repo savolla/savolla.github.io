@@ -10,7 +10,7 @@ type: text/markdown
   - copy your token
 - create credential in jenkins controller
   - new credential
-  - \"username and password\" type
+  - "username and password" type
   - add your details. add ID for referencing it in your pipelines
 - next steps
   - [[Login to Dockerhub and Push an Image From Jenkins Pipeline]]

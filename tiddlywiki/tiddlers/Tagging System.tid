@@ -3,7 +3,7 @@ tags:
 roam-id: 76b9605a-fb75-4d49-890b-d8068c6285e0
 type: text/markdown
 
-when you tag an entry you need to follow the following structure: `:one_main_tag:UPPERCASE_CONTEXT_LABEL:regular_tag1:regular_tag2:` here is one example for a context that is about my nixos environment =:~c~:NIXOS
+when you tag an entry you need to follow the following structure: `:one_main_tag:UPPERCASE_CONTEXT_LABEL:regular_tag1:regular_tag2:` here is one example for a context that is about my nixos environment =:<sub>c</sub>:NIXOS
 
 tags will be separated into 3 groups;
 

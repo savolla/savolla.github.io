@@ -9,4 +9,4 @@ type: text/markdown
 - Set Type to `text/css`
 - Add the tag `$:/tags/Stylesheet`
 - Paste the entire CSS into the tiddler body
-- Save --- it applies instantly, no reload needed
+- Save — it applies instantly, no reload needed

@@ -13,4 +13,4 @@ sudo docker run -d \
   prom/prometheus
 ```
 
-**WARNING**: notice it\'s `.yml` and not `.yaml`. I\'m not sure if it works with `.yaml` or not..
+**WARNING**: notice it's `.yml` and not `.yaml`. I'm not sure if it works with `.yaml` or not..

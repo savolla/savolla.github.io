@@ -3,7 +3,7 @@ tags: iac _abbr @biblio
 roam-id: 4c44307a-d46f-4206-b132-db8af9dee429
 type: text/markdown
 
-> The idea of storing declarative configuration in source control is often referred to as "infrastructure as code."
+> The idea of storing declarative configuration in source control is often referred to as “infrastructure as code.”
 
 
 <sup>source: [[Kubernetes Up and Running (2022)]]</sup>

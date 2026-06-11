@@ -5,6 +5,6 @@ created: 20260512195000000
 modified: 20260512195000000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 woff2_compress path/to/file.ttc
 ```

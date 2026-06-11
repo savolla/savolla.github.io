@@ -3,7 +3,7 @@ tags: @zettel _method k8s
 roam-id: 66b97f48-a63f-4caa-90e2-95aab48be9f5
 type: text/markdown
 
-the following example sets \"cassandra\" as a default namespace for `admin` user
+the following example sets "cassandra" as a default namespace for `admin` user
 
 ``` shell
 kubectl config set-context --current --namespace=cassandra

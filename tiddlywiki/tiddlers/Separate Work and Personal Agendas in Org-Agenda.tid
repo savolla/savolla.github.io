@@ -3,11 +3,11 @@ tags: @zettel _method orgmode emacs orgagenda
 roam-id: a74f4e70-ee65-4c77-b2ff-b1a544040de5
 type: text/markdown
 
-- State \"DOING\" from \"TODO\" \[2025-12-28 Sun 00:17\]
+- State "DOING" from "TODO" \[2025-12-28 Sun 00:17\]
 
-create separate context tags for your personal and work tasks. I did it like \@w and \@p. then you can create a new org-agenda view for these tags. see the example below
+create separate context tags for your personal and work tasks. I did it like @w and @p. then you can create a new org-agenda view for these tags. see the example below
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (setq org-agenda-custom-commands
       '(
         ("p" "personal agenda"
@@ -47,4 +47,4 @@ create separate context tags for your personal and work tasks. I did it like \@w
         ))
 ```
 
-I know it\'s a little bit ugly but it works. you can also crete a new view without any tag filter if you want to see all of your tasks in a separate view
+I know it's a little bit ugly but it works. you can also crete a new view without any tag filter if you want to see all of your tasks in a separate view

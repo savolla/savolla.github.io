@@ -5,6 +5,6 @@ type: text/markdown
 
 - you have to use nodetool with root user. it will ask for the password
 
-``` {.bash org-language="sh"}
+``` bash
 nodetool -u cassandra tablestats <keyspace>.<table> -H
 ```

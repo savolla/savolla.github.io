@@ -5,6 +5,6 @@ created: 20260320212500000
 modified: 20260320212500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 qm status $VMID
 ```

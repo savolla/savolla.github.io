@@ -3,7 +3,7 @@ tags: @zettel _method orgmode hugo blowfish
 roam-id: 6fa97fee-bcdc-417f-b651-ac046693b077
 type: text/markdown
 
-- you just need to \"auto-click\" on the zen mode button (make sure it is enabled in your theme settings)
+- you just need to "auto-click" on the zen mode button (make sure it is enabled in your theme settings)
 
 - add the following html export function into your org file
 

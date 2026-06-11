@@ -5,6 +5,6 @@ created: 20260401102800000
 modified: 20260401102800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 composer global require spatie/scotty
 ```

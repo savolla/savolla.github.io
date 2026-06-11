@@ -5,6 +5,6 @@ created: 20260308125600000
 modified: 20260308125600000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 zcat /path/to/file.gz
 ```

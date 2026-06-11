@@ -3,7 +3,7 @@ tags: @zettel _method gcp
 roam-id: 0280d233-b6a1-4a69-8d11-d78013dfb272
 type: text/markdown
 
-- [[Get Current Gcloud Project]] to make sure you\'re in the correct project. or [[Set GCP Project]] to correct project
+- [[Get Current Gcloud Project]] to make sure you're in the correct project. or [[Set GCP Project]] to correct project
 
 ``` shell
 gcloud logging sinks list --format=json

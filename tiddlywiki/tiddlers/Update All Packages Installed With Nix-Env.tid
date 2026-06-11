@@ -3,6 +3,6 @@ tags: nix @zettel _method
 roam-id: 44964bbe-cf32-4af6-a7da-9e479526bd45
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 nix-env -u '*'
 ```

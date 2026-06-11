@@ -5,14 +5,14 @@ created: 20260519014900000
 modified: 20260519014900000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 rfkill unblock wifi
 rfkill unblock bluetooth
 ```
 
 or by index
 
-``` {.bash org-language="sh"}
+``` bash
 rfkill unblock 0
 ```
 

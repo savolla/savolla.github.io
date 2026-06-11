@@ -5,7 +5,7 @@ type: text/markdown
 
 [[Chatgpt]] gave me a function like this:
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (defun my/insert-org-context-heading ()
   "Insert a new Org 'CONTEXT' heading with CREATED and ID properties."
   (interactive)

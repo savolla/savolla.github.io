@@ -5,6 +5,6 @@ created: 20260504213500000
 modified: 20260504213500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 sudo journalctl --disk-usage
 ```

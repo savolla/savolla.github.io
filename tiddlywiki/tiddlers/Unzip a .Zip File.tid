@@ -7,6 +7,6 @@ type: text/markdown
 
 make sure you have `unzip` package
 
-``` {.bash org-language="sh"}
+``` bash
 unzip /path/to/file.zip
 ```

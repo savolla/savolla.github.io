@@ -5,6 +5,6 @@ created: 20260523224800000
 modified: 20260523224800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 systemctl --user status xdg-desktop-portal
 ```

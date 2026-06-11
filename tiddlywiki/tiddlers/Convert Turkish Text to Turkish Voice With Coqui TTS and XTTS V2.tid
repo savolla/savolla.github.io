@@ -5,7 +5,7 @@ type: text/markdown
 
 - [[Install Coqui TTS on Nixos]]
 
-``` {.bash org-language="sh"}
+``` bash
 tts \
     --text "iyi günler. yarın saat 10:30'da, Bahçelievler Devlet Hastanesi Radyoloji bölümünde, doktor Kuzey Koç ile bir randevunuz mevcuttur. Eğer bu randevuya gelmek istiyorsanız lütfen 'vet'deyiniz. Eğer gelemeyecekseniz lütfen 'Hayır eyiniz" \
     --model_name tts_models/multilingual/multi-dataset/xtts_v2 \

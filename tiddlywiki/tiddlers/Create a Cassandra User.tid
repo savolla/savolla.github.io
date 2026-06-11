@@ -5,7 +5,7 @@ type: text/markdown
 
 - connect one of the cassandra nodes as root user. example;
 
-``` {.bash org-language="sh"}
+``` bash
 cqlsh $CASS_HOST -u $ROOT_USER -p$ROOT_PASS
 ```
 

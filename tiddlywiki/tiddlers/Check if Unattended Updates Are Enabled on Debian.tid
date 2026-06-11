@@ -1,0 +1,46 @@
+title: Check if Unattended Updates Are Enabled on Debian
+tags: apt ubuntu debian @zettel _method
+roam-id: 9c239df3-d093-4a85-9196-ef82229bef1f
+created: 20260611101100000
+modified: 20260611101100000
+type: text/markdown
+
+- check if the package is installed
+
+  ``` bash
+  dpkg -l unattended-upgrades #
+  ```
+
+- check if the service is enabled
+
+  ``` bash
+  systemctl is-active unattended-upgrades
+  systemctl is-enabled unattended-upgrades
+  ```
+
+- check if it is enabled
+
+  ``` bash
+  cat /etc/apt/apt.conf.d/20auto-upgrades
+  ```
+
+  example output:
+
+``` example
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
+```
+
+A value of "1" means enabled; "0" means disabled.
+
+- Check the main config for what gets updated
+
+  ``` bash
+  cat /etc/apt/apt.conf.d/50unattended-upgrades
+  ```
+
+  Look for the Unattended-Upgrade::Allowed-Origins or Unattended-Upgrade::Origins-Pattern block — entries that aren't commented out (//) are active.
+
+  [^1]
+
+[^1]: <https://claude.ai/chat/be170309-5df7-4711-a5d7-63d206d4b324>

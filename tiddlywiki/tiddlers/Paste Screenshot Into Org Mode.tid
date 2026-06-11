@@ -3,5 +3,5 @@ tags: @zettel _method
 roam-id: 3e2c155c-fd4f-48dd-819c-9eec9f4eea62
 type: text/markdown
 
-- enable `+download` flag in doom emacs\'s `init.el` file in org section
+- enable `+download` flag in doom emacs's `init.el` file in org section
 - [[Refresh Doom Emacs]]

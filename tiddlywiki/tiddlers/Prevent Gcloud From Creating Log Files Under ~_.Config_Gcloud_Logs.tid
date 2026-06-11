@@ -3,6 +3,6 @@ tags: gcp gcloud @zettel _method
 roam-id: 16bdeeb1-470b-46c3-a266-e670ee544cd1
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 gcloud config set core/disable_file_logging True
 ```

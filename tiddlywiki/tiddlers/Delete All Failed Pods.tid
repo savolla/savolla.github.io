@@ -5,6 +5,6 @@ created: 20260403120500000
 modified: 20260403120500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 kubectl delete pod --field-selector=status.phase=Failed -n <namespace>
 ```

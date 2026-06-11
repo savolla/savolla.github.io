@@ -5,7 +5,7 @@ type: text/markdown
 
 > Trending Alerting and debugging usually happen on timescales on the order of minutes to hours. While less urgent, the ability to see how your systems are being used and changing over time is also useful. Trending can feed into design decisions and processes such as capacity planning.
 
-:plumbing:trending:~term~:@biblio:prometheus:
+:plumbing:trending:<sub>term</sub>:@biblio:prometheus:
 
 
 <sup>source: [[Prometheus Up & Running (2023)]]</sup>

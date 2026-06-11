@@ -7,6 +7,6 @@ type: text/markdown
 
 [[Get Status of a Vm in Proxmox Shell]] first
 
-``` {.bash org-language="sh"}
+``` bash
 qm shutdown $VMID
 ```

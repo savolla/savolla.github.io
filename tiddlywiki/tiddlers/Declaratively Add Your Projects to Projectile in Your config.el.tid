@@ -5,11 +5,11 @@ type: text/markdown
 
 :LOGBOOK:
 
-- State \"DOING\" from \"TODO\" \[2025-12-30 Tue 22:38\]
+- State "DOING" from "TODO" \[2025-12-30 Tue 22:38\]
 
 add the following into your emacs config
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (setq projectile-known-projects
       '("~/resource/notes/org/"
         "~/.config/emacs/"

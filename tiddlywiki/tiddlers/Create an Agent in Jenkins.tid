@@ -6,12 +6,12 @@ type: text/markdown
 - you need one jenkins master up and running
 - you need to [[Generate an SSH Keypair]] on jenkins master
 - on the other machine you want to make the agent, make sure you installed `java` on it.
-- if it\'s ubuntu or debian [[Install Java on Ubuntu or Debian]]
-- copy jenkins master\'s ssh public key to remote agent machine. see: [[Copy Public SSH Key to Another Machine]]
+- if it's ubuntu or debian [[Install Java on Ubuntu or Debian]]
+- copy jenkins master's ssh public key to remote agent machine. see: [[Copy Public SSH Key to Another Machine]]
 - add ssh credentials in jenkins
   - Kind: SSH Username with private key
   - Username: The SSH user on the agent
   - Private Key: Paste the private key from **jenkins master** `~/.ssh/id_rsa`
   - Optionally, set ID and description
 - add a new node from jenkins ui and use the credentials above
-- after succesfull agent creation don\'t forget to set built-in node\'s executors to 0
+- after succesfull agent creation don't forget to set built-in node's executors to 0

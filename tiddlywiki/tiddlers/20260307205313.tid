@@ -5,7 +5,7 @@ type: text/markdown
 
 > include HAProxy, MySQL, PostgreSQL, Redis, JMX, SNMP, Consul, and Kafka.
 
-prometheus exporter can be used for exporting those tools\' metrics
+prometheus exporter can be used for exporting those tools' metrics
 
 
 <sup>source: [[Prometheus Up & Running (2023)]]</sup>

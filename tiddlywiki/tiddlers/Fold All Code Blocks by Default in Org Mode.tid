@@ -3,7 +3,7 @@ tags: @zettel _method orgmode
 roam-id: 659cb8b4-b744-4db4-a38f-fb37b41e57b4
 type: text/markdown
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 ;; doom/config.el
 ;; hide all source blocks by default
 (defun my/org-hide-all-blocks-on-open ()

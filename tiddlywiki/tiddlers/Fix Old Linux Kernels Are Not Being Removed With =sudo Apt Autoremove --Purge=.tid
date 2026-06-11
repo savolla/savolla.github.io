@@ -5,12 +5,12 @@ created: 20260504211100000
 modified: 20260504211100000
 type: text/markdown
 
-- [[Get Currently Used Linux Kernel]] so you don\'t accidentally remove that one
+- [[Get Currently Used Linux Kernel]] so you don't accidentally remove that one
 
-- [[List Installed Linux Kernels]] and see what\'s old
+- [[List Installed Linux Kernels]] and see what's old
 
 - manually remove old ones. for example
 
-  ``` {.bash org-language="sh"}
+  ``` bash
   sudo apt purge linux-image-6.1.0-37-amd64
   ```

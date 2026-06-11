@@ -5,6 +5,6 @@ created: 20260314181200000
 modified: 20260314181200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 buku -a https://your.url.com --title "title you want" -c "your comment here"
 ```

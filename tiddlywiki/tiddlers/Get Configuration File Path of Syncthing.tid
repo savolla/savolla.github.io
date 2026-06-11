@@ -3,6 +3,6 @@ tags: syncthing @zettel _method
 roam-id: c8f71c7a-4e05-465b-baa1-66e1a136eba1
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 syncthing paths
 ```

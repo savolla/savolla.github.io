@@ -5,5 +5,5 @@ type: text/markdown
 
 - make sure you are in the same directory as your `shell.nix`
 - do `nix-shell`
-- or if you\'re using `starship` then do the following
+- or if you're using `starship` then do the following
 - `nix-shell --command zsh`

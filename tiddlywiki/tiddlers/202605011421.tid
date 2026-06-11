@@ -5,7 +5,7 @@ created: 20260501142100000
 modified: 20260501142100000
 type: text/markdown
 
-claude-code automatically picks the desired skill for you. based on your prompt. this is possible thanks to LLMs\' reasoning capabilities. you never specify which SKILL.md to use in your prompts
+claude-code automatically picks the desired skill for you. based on your prompt. this is possible thanks to LLMs' reasoning capabilities. you never specify which SKILL.md to use in your prompts
 
 
 <sup>source: [[Anthropic Academy: Introduction to Agent Skills]]</sup>

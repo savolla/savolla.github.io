@@ -7,7 +7,7 @@ type: text/markdown
 
 make sure you installed `kubescape`
 
-``` {.bash org-language="sh"}
+``` bash
 kubescape scan framework nsa
 kubescape scan framework nsa
 ```

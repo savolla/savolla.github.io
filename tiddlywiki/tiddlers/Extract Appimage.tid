@@ -5,7 +5,7 @@ created: 20260513161600000
 modified: 20260513161600000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 ./example.AppImage --appimage-extract
 cd squashfs-root
 ```

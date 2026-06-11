@@ -58,12 +58,40 @@ An *extra container* is a **generic Kubernetes term** referring to any **additio
 
 ### 🧭 In Short
 
-| Feature          | **Sidecar Container**                                         | **Extra Container**                                    |
-| ---------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
-| **Definition**   | A helper container that extends the main container’s function | Any additional container in a Pod besides the main one |
-| **Concept Type** | Design pattern                                                | Generic term                                           |
-| **Dependency**   | Depends on the main container                                 | Not necessarily related                                |
-| **Example**      | Log forwarder, proxy, metrics exporter                        | Debug tool, test container, unrelated app              |
+<table>
+<tbody>
+<tr>
+<td>Feature</td>
+<td><strong><strong>Sidecar Container</strong></strong></td>
+<td><strong><strong>Extra Container</strong></strong></td>
+</tr>
+<tr>
+<td>—————-</td>
+<td>————————————————————-</td>
+<td>——————————————————</td>
+</tr>
+<tr>
+<td><strong><strong>Definition</strong></strong></td>
+<td>A helper container that extends the main container’s function</td>
+<td>Any additional container in a Pod besides the main one</td>
+</tr>
+<tr>
+<td><strong><strong>Concept Type</strong></strong></td>
+<td>Design pattern</td>
+<td>Generic term</td>
+</tr>
+<tr>
+<td><strong><strong>Dependency</strong></strong></td>
+<td>Depends on the main container</td>
+<td>Not necessarily related</td>
+</tr>
+<tr>
+<td><strong><strong>Example</strong></strong></td>
+<td>Log forwarder, proxy, metrics exporter</td>
+<td>Debug tool, test container, unrelated app</td>
+</tr>
+</tbody>
+</table>
 
 ---
 

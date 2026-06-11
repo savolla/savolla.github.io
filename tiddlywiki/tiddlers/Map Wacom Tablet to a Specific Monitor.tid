@@ -3,7 +3,7 @@ tags: @arrow @zettel _method wacom
 roam-id: 1fab7b8b-0be0-437d-a47d-a5269f0f216a
 type: text/markdown
 
-``` {.shell results="output"}
+``` shell
 # list wacom devices
 xsetwacom --list devices
 ```
@@ -15,7 +15,7 @@ Wacom Intuos S Pen stylus       id: 24    type: STYLUS
 
 list active monitors
 
-``` {.shell results="output"}
+``` shell
 xrandr --listactivemonitors
 ```
 

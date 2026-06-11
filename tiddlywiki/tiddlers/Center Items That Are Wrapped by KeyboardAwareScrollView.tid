@@ -5,7 +5,7 @@ type: text/markdown
 
 I learned how to center items that are wrapped by `<KeyboardAwareScrollView>` component. you need to use `contentContainerStyle`
 
-``` {.javascript org-language="js"}
+``` javascript
   return (
     <KeyboardAwareScrollView
       contentContainerStyle={{

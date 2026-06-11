@@ -5,9 +5,9 @@ type: text/markdown
 
 - [[List Gcloud Project]]
 
-- [[Set GCP Project]] to your liking \"hopi-test-kartaca\" in this case
+- [[Set GCP Project]] to your liking "hopi-test-kartaca" in this case
 
-- [[Get Cluster Name of a Specific Gke]] to get the current cluster name information [for the current set project]{.underline}
+- [[Get Cluster Name of a Specific Gke]] to get the current cluster name information <u>for the current set project</u>
 
 - add the context
 

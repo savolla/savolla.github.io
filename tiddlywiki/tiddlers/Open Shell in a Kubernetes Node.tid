@@ -5,7 +5,7 @@ type: text/markdown
 
 - you can directly connect into a pod with the following command
 
-  ``` {.bash org-language="sh"}
+  ``` bash
   kubectl debug node/${NODE_NAME} -it --image=busybox
   ```
 
@@ -13,13 +13,10 @@ type: text/markdown
 
 - do
 
-  ``` {.shell results="output"}
+  ``` shell
   kubectl get node
   ```
 
-  ```{=org}
-  #+RESULTS:
-  ```
   ``` example
   NAME                                                  STATUS   ROLES    AGE   VERSION
   gke-bird-pretest-gke-bird-pretest-gke-8045da2c-be3z   Ready    <none>   25d   v1.34.1-gke.1829001

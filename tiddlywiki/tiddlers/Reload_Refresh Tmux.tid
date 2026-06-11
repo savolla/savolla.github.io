@@ -5,6 +5,6 @@ created: 20260516175800000
 modified: 20260516175800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 tmux source ~/.config/tmux/tmux.conf
 ```

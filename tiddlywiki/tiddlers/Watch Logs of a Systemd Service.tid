@@ -5,6 +5,6 @@ created: 20260523223900000
 modified: 20260523223900000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 sudo journalctl -u chrony -f
 ```

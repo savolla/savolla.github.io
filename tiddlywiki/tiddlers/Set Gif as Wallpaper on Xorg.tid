@@ -7,6 +7,6 @@ type: text/markdown
 
 install `xwinwrap` when do
 
-``` {.bash org-language="sh"}
+``` bash
 xwinwrap -fs -ni -b -nf -ov -argb -s -st -- mpv -wid WID --loop --no-audio your.gif
 ```

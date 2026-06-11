@@ -7,7 +7,7 @@ type: text/markdown
 
 example below;
 
-``` {.bash org-language="sh"}
+``` bash
 <ol>
   <$list filter="[tag[@zettel]tag[_method]]">
     <li>

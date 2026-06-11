@@ -12,7 +12,7 @@ quickemu --vm nixos-25.05-minimal.conf
 # this will download the iso
 ```
 
-- if you\'re on nixos then append `--display spice` to `quickemu` command at the end
+- if you're on nixos then append `--display spice` to `quickemu` command at the end
 - it is also recommended to increase the size of the vm. nixos consumes more storage
 - once the vm booted
 

@@ -5,11 +5,11 @@ type: text/markdown
 
 the following function will list all our contexts in our workflow
 
-``` {.commonlisp org-language="emacs-lisp" results="none"}
+``` commonlisp
 (org-roam-ql-search
  '(and (tags "_c") (and (not (tags "_j")) (not (tags "@zettel:_method"))))
  "contexts"
  "title")
 ```
 
-we\'re getting all the context tags `_c` but excluding journal tags `_j`
+we're getting all the context tags `_c` but excluding journal tags `_j`

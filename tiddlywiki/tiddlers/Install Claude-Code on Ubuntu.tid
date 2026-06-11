@@ -5,7 +5,7 @@ created: 20260430182700000
 modified: 20260430182700000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 

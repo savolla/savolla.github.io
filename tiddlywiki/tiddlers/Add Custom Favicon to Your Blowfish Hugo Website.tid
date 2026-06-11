@@ -4,5 +4,5 @@ roam-id: 82134023-02c0-4c29-8965-f05bb010f97e
 type: text/markdown
 
 - [[Generate a Favicon for Your Website]]
-- extract the .zip file into your website\'s `static` folder
-- when you [[Start Hugo Website Locally]] you\'ll see your changes are already applied
+- extract the .zip file into your website's `static` folder
+- when you [[Start Hugo Website Locally]] you'll see your changes are already applied

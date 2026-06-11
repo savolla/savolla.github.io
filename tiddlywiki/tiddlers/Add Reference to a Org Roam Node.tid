@@ -4,8 +4,8 @@ roam-id: 516d1e27-3abd-4fc9-aa44-a84b83434cb8
 roam-refs: https://jethrokuan.github.io/org-roam-guide/
 type: text/markdown
 
-- while you\'re inside the node press `SPC m m o r`
+- while you're inside the node press `SPC m m o r`
 - a new Ref: popup will appear
 - you can insert the video url or book url inside
-- then your node will contain a new property as \"ROAM~REFS~\"
+- then your node will contain a new property as "ROAM<sub>REFS</sub>"
 - you can also add more refs into this list

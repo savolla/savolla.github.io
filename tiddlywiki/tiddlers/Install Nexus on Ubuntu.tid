@@ -22,7 +22,7 @@ adduser nexus usermod -aG sudo nexus
 
 - change shebang from sh to bash
 
-  - run~asuser~=\'nexus\'
+  - run<sub>asuser</sub>='nexus'
 
 - create a systemd service
 

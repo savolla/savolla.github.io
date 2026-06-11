@@ -5,7 +5,7 @@ type: text/markdown
 
 find the current stable channel from <https://status.nixos.org/> (it is currently 25.1)
 
-``` {.bash org-language="sh"}
+``` bash
 sudo nix-channel --add https://channels.nixos.org/nixos-25.11 nixos
 sudo nix-channel --update
 sudo nixos-rebuild switch --upgrade

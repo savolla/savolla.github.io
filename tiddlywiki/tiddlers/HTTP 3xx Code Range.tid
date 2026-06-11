@@ -6,7 +6,7 @@ created: 20260331114800000
 modified: 20260331114800000
 type: text/markdown
 
-Codes in the 3xx range mean "follow me somewhere else":
+Codes in the 3xx range mean “follow me somewhere else”:
 
-- 301 Moved Permanently -- Resource has a new permanent URL.
-- 302 Found / 307 Temporary Redirect -- Resource temporarily moved; follow the new URL.
+- 301 Moved Permanently – Resource has a new permanent URL.
+- 302 Found / 307 Temporary Redirect – Resource temporarily moved; follow the new URL.

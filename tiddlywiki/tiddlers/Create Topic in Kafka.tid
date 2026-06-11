@@ -5,6 +5,6 @@ created: 20260401155000000
 modified: 20260401155000000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topicname --partitions 50 --replication-factor 3
 ```

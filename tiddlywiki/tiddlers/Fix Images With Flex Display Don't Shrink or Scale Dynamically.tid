@@ -3,7 +3,7 @@ tags: @zettel _fix flex webdev
 roam-id: 1cfed7fe-93dd-4f58-aa0e-d51bb65c2cc6
 type: text/markdown
 
-- you used `flex` and then image don\'t resize dynamically anymore.. this is due to the flex elements require their natural width and heights. restrict their width with `w-1/2` or something. they\'ll now shrink. see the example below
+- you used `flex` and then image don't resize dynamically anymore.. this is due to the flex elements require their natural width and heights. restrict their width with `w-1/2` or something. they'll now shrink. see the example below
 
   ``` typescript
   import Section2Img0 from '../../../public/img/img002.jpg';

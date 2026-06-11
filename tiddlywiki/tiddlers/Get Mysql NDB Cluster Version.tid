@@ -6,7 +6,7 @@ modified: 20260327124400000
 type: text/markdown
 
 - [[Connect to Mysql NDB in Test Environment]]
-- mysql -h \$YOUR~MYSQLDATANODEIP~ -p
+- mysql -h \$YOUR<sub>MYSQLDATANODEIP</sub> -p
 
 ``` sql
 SELECT VERSION();

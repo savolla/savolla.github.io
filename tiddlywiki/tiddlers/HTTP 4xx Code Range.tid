@@ -8,8 +8,8 @@ type: text/markdown
 
 Codes in the 4xx range, usually **your request** (client) was wrong:
 
-- 400 Bad Request -- Request is malformed or invalid.
-- 401 Unauthorized -- You need to log in or provide credentials.
-- 403 Forbidden -- You're logged in, but not allowed to do this.
-- 404 Not Found -- Resource doesn't exist (classic internet error).
-- 429 Too Many Requests -- You are sending too many requests too fast.
+- 400 Bad Request – Request is malformed or invalid.
+- 401 Unauthorized – You need to log in or provide credentials.
+- 403 Forbidden – You’re logged in, but not allowed to do this.
+- 404 Not Found – Resource doesn’t exist (classic internet error).
+- 429 Too Many Requests – You are sending too many requests too fast.

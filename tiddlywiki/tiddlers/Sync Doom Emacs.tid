@@ -3,6 +3,6 @@ tags: doomemacs emacs @zettel _method
 roam-id: 08797f42-c6fb-4f5e-9631-229ef2c4ce88
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 ~/.config/emacs/bin/doom sync
 ```

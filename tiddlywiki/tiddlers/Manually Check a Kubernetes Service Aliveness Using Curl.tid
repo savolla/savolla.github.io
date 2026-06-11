@@ -7,4 +7,4 @@ type: text/markdown
 curl https://some-k8s-service/api/isAlive -v -o /dev/null
 ```
 
-if you see `< 200` then it\'s up
+if you see `< 200` then it's up

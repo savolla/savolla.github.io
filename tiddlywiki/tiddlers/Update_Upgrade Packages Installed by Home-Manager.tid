@@ -10,7 +10,7 @@ type: text/markdown
   home-manager swtich
   ```
 
-- if you\'re using flakes then
+- if you're using flakes then
 
   ``` shell
   cd /path/to/your/flake.nix

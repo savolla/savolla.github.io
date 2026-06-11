@@ -5,6 +5,6 @@ created: 20260401154700000
 modified: 20260401154700000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```

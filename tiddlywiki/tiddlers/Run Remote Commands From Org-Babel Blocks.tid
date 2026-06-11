@@ -5,7 +5,7 @@ type: text/markdown
 
 use `:dir /ssh:USER@IP:` structure. example below
 
-``` {.bash results="raw drawer output" dir="/ssh:root@192.168.122.50:"}
+``` bash
 kubectl cluster-info
 kubectl get nodes
 ```

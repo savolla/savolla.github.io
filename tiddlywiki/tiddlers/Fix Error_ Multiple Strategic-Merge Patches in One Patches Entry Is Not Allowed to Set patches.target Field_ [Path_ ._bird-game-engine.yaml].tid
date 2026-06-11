@@ -5,4 +5,4 @@ created: 20260427152300000
 modified: 20260427152300000
 type: text/markdown
 
-:@zettel:~fix~: you probably have both service and deployment in the same yaml file separated by `---`
+:@zettel:<sub>fix</sub>: you probably have both service and deployment in the same yaml file separated by `---`

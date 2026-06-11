@@ -9,7 +9,7 @@ type: text/markdown
 
 - get screenshot of a web page
 
-  ``` {.bash org-language="sh"}
+  ``` bash
   wkhtmltoimage https://your.url page.png
   ```
 

@@ -3,9 +3,9 @@ tags: @zettel _method xrandr
 roam-id: 0585679e-bbf0-47b2-b3e1-9bdb3a0386fb
 type: text/markdown
 
-in this example I\'ll make eDP-1 show exactly what HDMI-1 shows
+in this example I'll make eDP-1 show exactly what HDMI-1 shows
 
-``` {.shell results="drawer"}
+``` shell
 xrandr | grep -w "connected"
 ```
 

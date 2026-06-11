@@ -3,6 +3,6 @@ tags: @zettel _method orgroam elisp
 roam-id: 0bf4d246-5d65-4f09-9ff6-03c6a14e8895
 type: text/markdown
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (org-roam-db-query "SELECT id, file, title FROM nodes")
 ```

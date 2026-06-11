@@ -7,7 +7,7 @@ type: text/markdown
 GET http://127.0.0.1:8000/todo/hello/
 ```
 
-``` {.javascript org-language="js"}
+``` javascript
 {
   "message": "Hello, World!"
 }

@@ -5,6 +5,6 @@ created: 20260519144100000
 modified: 20260519144100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 git rebase --abort
 ```

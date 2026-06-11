@@ -5,7 +5,7 @@ created: 20260424172500000
 modified: 20260424172500000
 type: text/markdown
 
-use the following trick. I\'m filtering tiddlers tagged with `@zettel` and `k8s` and then transclude their contents
+use the following trick. I'm filtering tiddlers tagged with `@zettel` and `k8s` and then transclude their contents
 
 ``` tiddlywiki
 <$list filter="[tag[@zettel]tag[k8s]]">

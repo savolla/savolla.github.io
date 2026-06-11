@@ -3,7 +3,7 @@ tags: @zettel _method tmux tpm
 roam-id: e200a048-ab73-4a54-9404-cc813b7fbdfa
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
 

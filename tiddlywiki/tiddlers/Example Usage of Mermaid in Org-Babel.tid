@@ -3,7 +3,7 @@ tags: @zettel _method orgmode mermaid
 roam-id: aceae85f-1fa1-49a2-b9fb-07b5061f57f3
 type: text/markdown
 
-``` {.mermaid file="\"test.png\"" theme="dark" scale="1"}
+``` mermaid
 flowchart TD
     A[Start] --> B{Is it working?}
     B -- Yes --> C[Great!]

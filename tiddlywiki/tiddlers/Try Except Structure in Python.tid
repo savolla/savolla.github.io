@@ -3,7 +3,7 @@ tags: @zettel _method python
 roam-id: b9da5d56-d3a6-4de3-8dc0-f40fc3436cd1
 type: text/markdown
 
-``` {.python results="output"}
+``` python
 try:
     result = 10 / 0  # This will raise a ZeroDivisionError
 except:

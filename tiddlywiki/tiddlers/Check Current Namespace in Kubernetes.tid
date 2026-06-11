@@ -7,7 +7,4 @@ type: text/markdown
 kubectl config get-contexts
 ```
 
-  --------- ----------------------------- ----------------------- ----------------------------- -----------
-  CURRENT   NAME                          CLUSTER                 AUTHINFO                      NAMESPACE
-  \*        admin@talos-proxmox-cluster   talos-proxmox-cluster   admin@talos-proxmox-cluster   cassandra
-  --------- ----------------------------- ----------------------- ----------------------------- -----------
+\<table\> \<tbody\> \<tr\> \<td\>CURRENT\</td\> \<td\>NAME\</td\> \<td\>CLUSTER\</td\> \<td\>AUTHINFO\</td\> \<td\>NAMESPACE\</td\> \</tr\> \<tr\> \<td\>\*\</td\> \<td\>admin@talos-proxmox-cluster\</td\> \<td\>talos-proxmox-cluster\</td\> \<td\>admin@talos-proxmox-cluster\</td\> \<td\>cassandra\</td\> \</tr\> \</tbody\> \</table\>

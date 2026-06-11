@@ -5,7 +5,7 @@ type: text/markdown
 
 - in your `doom/config.el` add
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (after! org-roam
     (setq org-roam-node-display-template
           (concat

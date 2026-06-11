@@ -3,13 +3,8 @@ tags: @zettel _method nixos
 roam-id: 862725f7-1190-4717-a4cd-599ee22d0940
 type: text/markdown
 
-:::: warning
-::: title
-Warning
-:::
-
-nixos-24.11 is used below. you can find the latest version by going to \[this\](<https://nixos.org/manual/nixos/stable/index.html#sec-upgrading>) url
-::::
+> [!WARNING]
+> nixos-24.11 is used below. you can find the latest version by going to \[this\](<https://nixos.org/manual/nixos/stable/index.html#sec-upgrading>) url
 
 ``` bash
 nix-channel --add https://channels.nixos.org/nixos-24.11 nixos

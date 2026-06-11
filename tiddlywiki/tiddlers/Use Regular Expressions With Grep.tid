@@ -3,6 +3,6 @@ tags: @zettel _method grep
 roam-id: 62f209b1-2e71-4fb8-b7c7-cd5ffb654768
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 find | grep -E '*.sls$'
 ```

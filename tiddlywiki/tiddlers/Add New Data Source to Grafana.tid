@@ -3,7 +3,7 @@ tags: @zettel _method grafana ATTACH
 roam-id: 1070504a-1b6f-4c32-92b6-7c74597ac0a0
 type: text/markdown
 
-**WARNING**: if you run grafana and prometheus separately using docker, don\'t forget to create a new network for them. so they can see each other. additionally you\'ll want to change `http://localhost:9090` to `http://prometheus:9090` in the second screenshot
+**WARNING**: if you run grafana and prometheus separately using docker, don't forget to create a new network for them. so they can see each other. additionally you'll want to change `http://localhost:9090` to `http://prometheus:9090` in the second screenshot
 
 - [[attachment:_20250926_100625screenshot.png]]
 - select prometheus for example

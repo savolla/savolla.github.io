@@ -5,7 +5,7 @@ type: text/markdown
 
 - check out the followin function
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 ;; active contexts
 (tags "+_c+personal+project-_j"
       ((org-agenda-overriding-header "󱗾  Contexts")

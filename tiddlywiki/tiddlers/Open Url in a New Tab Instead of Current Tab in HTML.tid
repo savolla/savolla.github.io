@@ -5,7 +5,7 @@ created: 20260519183500000
 modified: 20260519183500000
 type: text/markdown
 
-Add \"target=\"~blank~\"\" in `href` element
+Add "target="<sub>blank</sub>"" in `href` element
 
 ``` html
 <a href="https://www.youtube.com/user/theneedledrop" target="_blank">

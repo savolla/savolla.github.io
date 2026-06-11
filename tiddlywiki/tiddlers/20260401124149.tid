@@ -3,7 +3,7 @@ tags: @biblio k8s k8s_daemonset _usecase
 roam-id: be7556dd-b910-4f7d-9fd9-d41189de1b89
 type: text/markdown
 
-> You use a DaemonSet when the driver, or other node-level service, has to run on the node where it\'s useful.
+> You use a DaemonSet when the driver, or other node-level service, has to run on the node where it's useful.
 
 
 <sup>source: [[Workload Management Kubernetes]]</sup>

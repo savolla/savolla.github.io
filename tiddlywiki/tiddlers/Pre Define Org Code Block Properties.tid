@@ -8,4 +8,4 @@ type: text/markdown
   ``` org
   ```
 
-- this will define default properties for each code block globally so you don\'t need to put these props on every code block
+- this will define default properties for each code block globally so you don't need to put these props on every code block

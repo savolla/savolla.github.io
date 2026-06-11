@@ -5,6 +5,6 @@ created: 20260407115200000
 modified: 20260407115200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 docker login -u kkoc -p <LDAP_PASS> https://registry.kartaca.com
 ```

@@ -1,0 +1,8 @@
+title: 20260611102712
+tags: database mysql fc @zettel _property
+roam-id: d3360437-beab-49f6-be5f-03ae12db16c2
+created: 20260611102700000
+modified: 20260611102700000
+type: text/markdown
+
+when connecting to mysql the -D parameter is used for specifying which database to use

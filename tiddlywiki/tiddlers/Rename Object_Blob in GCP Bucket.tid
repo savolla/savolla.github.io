@@ -5,6 +5,6 @@ created: 20260402175900000
 modified: 20260402175900000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 gsutil mv gs://bucket_name/old_object_name gs://bucket_name/new_object_name
 ```

@@ -5,7 +5,7 @@ created: 20260512195900000
 modified: 20260512195900000
 type: text/markdown
 
-I\'m a big fan of [Iosevka](https://github.com/be5invis/Iosevka) font. I use it in my terminal and in other graphical applications if possible. So I use it in my personal website also. But I don\'t like the idea of using \"sourced\" fonts like Google fonts.. I love the idea of self-hosting and wanted to embed this font directly into my 5MB website. The font itself is bigger though.. like 7MB, but hey!
+I'm a big fan of [Iosevka](https://github.com/be5invis/Iosevka) font. I use it in my terminal and in other graphical applications if possible. So I use it in my personal website also. But I don't like the idea of using "sourced" fonts like Google fonts.. I love the idea of self-hosting and wanted to embed this font directly into my 5MB website. The font itself is bigger though.. like 7MB, but hey!
 
 I first did [[Download IosevkaTerm Font]] from the releases page. It only downloaded one `.zip` file. I did [[Unzip a .Zip File]] and bunch of `.ttc` files were extracted. Bunch of variants of iosevka.. But I only needed the **Regular** for my main text, **ExtraBold** for my titles and for code blocks I needed **Medium** variant.
 

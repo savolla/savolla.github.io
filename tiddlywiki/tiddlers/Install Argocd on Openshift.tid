@@ -9,6 +9,6 @@ type: text/markdown
 - search for argocd
 - install argocd on a namespace
 - after installing
-- go to \"installed opeartors\"
-- go to \"Argo CD\" tab
-- click on \"Crete ArgoCD\"
+- go to "installed opeartors"
+- go to "Argo CD" tab
+- click on "Crete ArgoCD"

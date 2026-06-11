@@ -5,6 +5,6 @@ created: 20260517220100000
 modified: 20260517220100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 echo $DBUS_SESSION_BUS_ADDRESS
 ```

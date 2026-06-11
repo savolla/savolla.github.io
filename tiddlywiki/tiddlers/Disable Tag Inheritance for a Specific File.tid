@@ -7,7 +7,7 @@ type: text/markdown
 
 there are two methods (may be more)
 
-- disable tag inheritance if a file has a special tag like \@biblio for example;
+- disable tag inheritance if a file has a special tag like @biblio for example;
 
   ``` elisp
   (add-hook 'org-mode-hook

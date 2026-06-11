@@ -5,6 +5,6 @@ created: 20260504164200000
 modified: 20260504164200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 sudo du -xh / | sort -rh | head -20
 ```

@@ -7,11 +7,11 @@ type: text/markdown
 
 I am a big fan of keyboard driven stuff. I always try to integrate vim like keys in my workflow and applications. See my [[Turn VS Code Into Doom Emacs!]] post for example. Now one thing bothered me was using mouse for my web browser. And I use it a lot! I used [Vimium](https://github.com/philc/vimium) and other similar extensions for [Firefox](https://www.firefox.com/en-US/). They I went full [Librewolf](https://librewolf.net/) + the vimium extension. It was a good keyboard driven experience. One day [qutebrowser](https://qutebrowser.org/) catched my eye. I immediatelly fell in love with it. It was very light, keyboard driven by design and most importantly, all the cool kids was using it :p
 
-Anyway I downloaded and configured it just like I want. In the end I made it like [Doom Emacs](https://github.com/doomemacs/doomemacs). I mean the `keybindings` were like doom emacs. I\'m still using this configuration and I\'m very confortable with it because all those keybinds are embedded into my muscle memory already! If you want to see that configuration see [[Turn Qutebrowser Into Doom Emacs!]]
+Anyway I downloaded and configured it just like I want. In the end I made it like [Doom Emacs](https://github.com/doomemacs/doomemacs). I mean the `keybindings` were like doom emacs. I'm still using this configuration and I'm very confortable with it because all those keybinds are embedded into my muscle memory already! If you want to see that configuration see [[Turn Qutebrowser Into Doom Emacs!]]
 
-## The Problem...
+## The Problem…
 
-Of course using a \"non-standard\" tool brings its own burden.. Since this browser was Qt based, it uses its web engine in the background. So the developer [The-Compiler](https://github.com/the-compiler) got nothing to do for those upstream bugs. For example when I open up whatsapp.web, gmail or slack they always asked for \"notification\" permissions. And on every browser restart they asked for those permissions again and again.
+Of course using a "non-standard" tool brings its own burden.. Since this browser was Qt based, it uses its web engine in the background. So the developer [The-Compiler](https://github.com/the-compiler) got nothing to do for those upstream bugs. For example when I open up whatsapp.web, gmail or slack they always asked for "notification" permissions. And on every browser restart they asked for those permissions again and again.
 
 When I looked at the github issues I saw people are complaining about this problem since 2020! Eventually The-Compiler provided settings that we can put in `config.py`. The config was this
 
@@ -30,11 +30,11 @@ I used this configuration. And wondered if I misconfigured `dbus` or notificatio
 
 I lived like this for 6 months.
 
-## The Solution or... a Workaround?
+## The Solution or… a Workaround?
 
-I already saw that guy who was talking about using [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey#:~:text=Greasemonkey%20is%20a%20userscript%20manager,also%20known%20as%20augmented%20browsing) for automatically clicking the \"Turn notifications on\" button.. Which was very hacky from my perspective. I didn\'t like this solution at all at first. But after 6 months of torgure.. It was a big relief.
+I already saw that guy who was talking about using [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey#:~:text=Greasemonkey%20is%20a%20userscript%20manager,also%20known%20as%20augmented%20browsing) for automatically clicking the "Turn notifications on" button.. Which was very hacky from my perspective. I didn't like this solution at all at first. But after 6 months of torgure.. It was a big relief.
 
-I\'ll share my greasemonkey scripts for enabling notifications for various websites;
+I'll share my greasemonkey scripts for enabling notifications for various websites;
 
 - [[Auto Enable Notifications for Whatsapp Web]]
 - [[Auto Enable Notifications for Slack]]

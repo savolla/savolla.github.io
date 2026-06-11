@@ -5,7 +5,7 @@ type: text/markdown
 
 - put the following into your `packages.el` first
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   ;; doom/packages.el
   ;; org mode automatic tangle on save
   (package! org-auto-tangle)
@@ -13,7 +13,7 @@ type: text/markdown
 
 - then this into your `config.el`
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   ;; doom/config.el
   ;; tangle source codes on save automatically
   (use-package! org-auto-tangle

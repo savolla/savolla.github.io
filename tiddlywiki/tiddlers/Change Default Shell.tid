@@ -3,6 +3,6 @@ tags: linux zsh bash @zettel _method
 roam-id: b60bf65e-e5bd-4d1d-ab5f-a65879f8f152
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 chsh -s /path/to/shell $USER
 ```

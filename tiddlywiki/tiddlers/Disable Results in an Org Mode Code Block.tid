@@ -5,7 +5,7 @@ type: text/markdown
 
 - use `:results none`
 
-  ``` {.python session="a" results="none"}
+  ``` python
   def sum(a, b):
       return a + b
   ```

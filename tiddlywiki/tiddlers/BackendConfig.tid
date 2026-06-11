@@ -6,4 +6,4 @@ created: 20260315153200000
 modified: 20260315153200000
 type: text/markdown
 
-> A BackendConfig is a Custom Resource Definition (CRD) used in Google Kubernetes Engine (GKE) to provide fine-grained, structured control over the Google Cloud load balancer\'s backend services.
+> A BackendConfig is a Custom Resource Definition (CRD) used in Google Kubernetes Engine (GKE) to provide fine-grained, structured control over the Google Cloud load balancer's backend services.

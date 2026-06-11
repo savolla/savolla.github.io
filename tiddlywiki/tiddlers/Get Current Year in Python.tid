@@ -3,7 +3,7 @@ tags: @zettel _method python
 roam-id: 76e6076a-d4ea-4f92-8420-6f1594c4cc13
 type: text/markdown
 
-``` {.python results="output"}
+``` python
 from datetime import datetime
 
 current_year = datetime.now().year

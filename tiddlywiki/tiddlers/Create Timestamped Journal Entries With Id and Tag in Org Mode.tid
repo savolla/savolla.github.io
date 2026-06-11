@@ -5,7 +5,7 @@ type: text/markdown
 
 - put the following in your `config.el` and attach it to a keybind
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (defun savolla/org-insert-header-with-timestamp ()
   "Insert a timestamped Org heading at the same level within the current subtree."
   (interactive)

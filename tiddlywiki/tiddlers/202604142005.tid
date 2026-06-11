@@ -6,4 +6,4 @@ created: 20260414200500000
 modified: 20260414200500000
 type: text/markdown
 
-pubsub is google\'s message broker on google cloud just like rabbitmq and kafka
+pubsub is google's message broker on google cloud just like rabbitmq and kafka

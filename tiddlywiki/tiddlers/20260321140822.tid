@@ -3,9 +3,9 @@ tags: k8s _mechanism @biblio
 roam-id: c16126f5-c321-43d3-a382-17b3faaa2861
 type: text/markdown
 
-> As a concrete e2ample of this self-healing behavior, if you assert a desired state of three replicas to Kubernetes, it does not just create three replicas---it continuously ensures that there are exactly three replicas. If you manually create a fourth replica, Kubernetes will destroy one to bring the number back to three. If you manually destroy a replica, Kubernetes will create one to again return you to the desired state.
+> As a concrete e2ample of this self-healing behavior, if you assert a desired state of three replicas to Kubernetes, it does not just create three replicas—it continuously ensures that there are exactly three replicas. If you manually create a fourth replica, Kubernetes will destroy one to bring the number back to three. If you manually destroy a replica, Kubernetes will create one to again return you to the desired state.
 
-example of k8s\'2 online self-healing mechanism
+example of k8s'2 online self-healing mechanism
 
 
 <sup>source: [[Kubernetes Up and Running (2022)]]</sup>

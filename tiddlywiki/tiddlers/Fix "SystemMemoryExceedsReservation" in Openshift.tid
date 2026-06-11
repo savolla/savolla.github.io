@@ -29,7 +29,7 @@ type: text/markdown
   oc get machineconfigpools
   ```
 
-- You'll likely see just:
+- You’ll likely see just:
 
   ``` yaml
   NAME     CONFIG                              UPDATED   ...

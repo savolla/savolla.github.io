@@ -3,11 +3,11 @@ tags: @zettel _method emacs
 roam-id: a9e9dd15-e8d0-44b5-bd2b-9e63678bc151
 type: text/markdown
 
-``` {.commonlisp org-language="emacs-lisp"}
+``` commonlisp
 (set-face-inverse-video-p 'vertical-border nil)
 (set-face-background 'vertical-border (face-background 'default))
 (set-display-table-slot standard-display-table 'vertical-border (make-glyph-code ?│))
 ```
 
-- [ilgili teknolojiler için kindle\'a yolda okumak için kitap indir](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-01.org::2756)
-- [ilgili teknolojiler için kindle\'a yolda okumak için kitap indir](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-01.org::2894)
+- [ilgili teknolojiler için kindle'a yolda okumak için kitap indir](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-01.org::2756)
+- [ilgili teknolojiler için kindle'a yolda okumak için kitap indir](file:///home/kkoc/resource/notes/org/roam/daily/2025-11-01.org::2894)

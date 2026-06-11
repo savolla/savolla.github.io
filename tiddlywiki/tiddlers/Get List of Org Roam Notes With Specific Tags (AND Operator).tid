@@ -3,7 +3,7 @@ tags: @zettel _method orgmode orgroam orgroamql
 roam-id: b1a12a19-e8e3-4d93-b41c-cfc34df9f258
 type: text/markdown
 
-- you\'ll need to create an org mode source block for this
+- you'll need to create an org mode source block for this
 
 - here is the example source block that prints all org roam notes with tags `orgmode` and `emacs`
 
@@ -20,6 +20,6 @@ type: text/markdown
   #+end_src
   ```
 
-- when you execute this block using `org-babel-execute-src-block` you\'ll get a list of results
+- when you execute this block using `org-babel-execute-src-block` you'll get a list of results
 
 - you can also see [[Get List of Org Roam Notes With Specific Tags (OR Operator)]]

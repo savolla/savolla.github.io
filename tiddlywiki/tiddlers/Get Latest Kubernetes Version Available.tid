@@ -5,8 +5,18 @@ created: 20260318084200000
 modified: 20260318084200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 curl -s https://api.github.com/repos/kubernetes/kubernetes/releases \
-    | jq -r '[.[] | select(.prerelease==false)][0].tag_name' \
-    | sed 's/^v//'
+<table>
+<tbody>
+<tr>
+<td>jq -r '[.[]</td>
+<td>select(.prerelease==false)][0].tag<sub>name</sub>' \</td>
+</tr>
+<tr>
+<td>sed 's/<sup>v</sup>//'</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 ```

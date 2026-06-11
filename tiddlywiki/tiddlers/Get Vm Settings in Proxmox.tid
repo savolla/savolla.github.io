@@ -5,6 +5,6 @@ created: 20260314160600000
 modified: 20260314160600000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 qm config $VM_ID
 ```

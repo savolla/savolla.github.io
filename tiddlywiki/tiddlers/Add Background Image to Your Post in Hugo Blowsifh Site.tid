@@ -5,7 +5,7 @@ type: text/markdown
 
 - in your blowfish theme configuration `config/_default/params.toml` uncomment the following values under the `[article]` section
 
-  ``` {.toml hl_lines="6,7"}
+  ``` toml
   [article]
     ...
     showDateUpdated = true
@@ -21,6 +21,6 @@ type: text/markdown
 
 - find an image from the internet or use your own image
 
-- place the image inside `content/posts` directory [with \"feature\" prefix]{.underline}
+- place the image inside `content/posts` directory <u>with "feature" prefix</u>
 
-- if image name is \"1234.png\" then it must be \"feature-1234.png\" to make blowfish recognize it
+- if image name is "1234.png" then it must be "feature-1234.png" to make blowfish recognize it

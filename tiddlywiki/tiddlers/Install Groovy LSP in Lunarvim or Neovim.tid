@@ -7,6 +7,6 @@ type: text/markdown
   - [[Install Java on Nixos]] or [[Install Java on Ubuntu or Debian]]
 - launch `lvim`
 - do `:Mason`
-- search \"groovy\"
+- search "groovy"
 - navigate to `groovy-language-server`
 - press `i` for install

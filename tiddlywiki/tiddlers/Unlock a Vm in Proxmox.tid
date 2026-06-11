@@ -3,7 +3,7 @@ tags: @zettel _method proxmox
 roam-id: 31b789e9-8bc5-49fb-9567-8fd2feb08c60
 type: text/markdown
 
-- login into proxmox shell by going to the web console, clicking the \"pve\" (under datacenter) and click console
+- login into proxmox shell by going to the web console, clicking the "pve" (under datacenter) and click console
 - get the id of the vm and do
 
 ``` shell

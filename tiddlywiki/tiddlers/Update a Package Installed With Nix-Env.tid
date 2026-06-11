@@ -5,6 +5,6 @@ type: text/markdown
 
 - [[Get List of Installed Packages Using Nix-Env]]
 
-``` {.bash org-language="sh"}
+``` bash
 nix-env -u firefox
 ```

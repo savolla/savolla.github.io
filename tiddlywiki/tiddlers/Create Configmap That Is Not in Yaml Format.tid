@@ -7,6 +7,6 @@ type: text/markdown
 
 example below
 
-``` {.bash org-language="sh"}
+``` bash
 kubectl create configmap bird-profiling-importer-app-config --from-file=bird-profiling-importer.properties -oyaml --dry-run=client | kubectl diff -f -
 ```

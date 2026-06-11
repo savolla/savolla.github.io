@@ -6,6 +6,6 @@ created: 20260423174200000
 modified: 20260423174200000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 tiddlywiki . --build index
 ```

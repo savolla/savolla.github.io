@@ -11,44 +11,35 @@ type: text/markdown
 
 ## Patches Used
 
-`COOL_AUTOSTART_PATCH`
+`COOL_AUTOSTART_PATCH`  
+I used to put my commands inside `.xprofile` or `.xinitrc` but I had issues with this method. for example when I tried the `ly` display manager it read the `.xprofile` file. while when using `startx` it read `.xinitrc`. I think auto starting programs can be simplified in a unified method. I think the window manager should be responsible for starting programs. This is why I use this patch.
 
-:   I used to put my commands inside `.xprofile` or `.xinitrc` but I had issues with this method. for example when I tried the `ly` display manager it read the `.xprofile` file. while when using `startx` it read `.xinitrc`. I think auto starting programs can be simplified in a unified method. I think the window manager should be responsible for starting programs. This is why I use this patch.
+`MOVESTACK_PATCH`  
+It lets us move windows in the stacked area. By default you can only swap windows between stacked and master areas.
 
-`MOVESTACK_PATCH`
+`PERTAG_PATCH`  
+Normally when you increase or decrease master size on one workspace (tag), it applies globally on all tags. This is annoying. With this patch all tags have their own master and stack area sizes
 
-:   It lets us move windows in the stacked area. By default you can only swap windows between stacked and master areas.
+`PERTAG_VANITYGAPS_PATCH`  
+Same thing for gaps. I want my gaps on tag 3 but not in tag 1. this patch does that.
 
-`PERTAG_PATCH`
+`SCRATCHPADS_PATCH`  
+A big game changer. A floating terminal you can toggle on every tag. For quick typing, quick calculation for example or python interpreter etc. You can even use `tmux` in that terminal so you have named scratchpads in one place
 
-:   Normally when you increase or decrease master size on one workspace (tag), it applies globally on all tags. This is annoying. With this patch all tags have their own master and stack area sizes
+`BAR_PADDING_SMART_PATCH`  
+Disable window borders when there is only one window in the workspace
 
-`PERTAG_VANITYGAPS_PATCH`
+`FOCUSADJACENTTAG_PATCH`  
+I use `Alt+l` and `Alt+h` to quickly navigate tags on the left and rights. This patch allows it
 
-:   Same thing for gaps. I want my gaps on tag 3 but not in tag 1. this patch does that.
+`SPAWNCMD_PATCH`  
+keep working directory of currently focused terminal when launching a new terminal
 
-`SCRATCHPADS_PATCH`
+`STICKY_PATCH`  
+make a floating window sticky using `Alt+s`
 
-:   A big game changer. A floating terminal you can toggle on every tag. For quick typing, quick calculation for example or python interpreter etc. You can even use `tmux` in that terminal so you have named scratchpads in one place
-
-`BAR_PADDING_SMART_PATCH`
-
-:   Disable window borders when there is only one window in the workspace
-
-`FOCUSADJACENTTAG_PATCH`
-
-:   I use `Alt+l` and `Alt+h` to quickly navigate tags on the left and rights. This patch allows it
-
-`SPAWNCMD_PATCH`
-
-:   keep working directory of currently focused terminal when launching a new terminal
-
-`STICKY_PATCH`
-
-:   make a floating window sticky using `Alt+s`
-
-`SENDMON_KEEPFOCUS_PATCH`
-:   keep focus on the current monitor when sending one of the window to another monitor
+`SENDMON_KEEPFOCUS_PATCH`  
+keep focus on the current monitor when sending one of the window to another monitor
 
 ## Enable Patches
 
@@ -56,7 +47,7 @@ type: text/markdown
 
 ## Process
 
-``` {.bash org-language="sh"}
+``` bash
 cd ~/project/repos/tools/suckless
 git clone https://github.com/bakkeby/dwm-flexipatch.git
 ```
@@ -89,7 +80,7 @@ let
 in
 ```
 
-Then let\'s add this derivation in our system packages
+Then let's add this derivation in our system packages
 
 ``` nix
 systemPackages = with pkgs; [
@@ -210,7 +201,7 @@ shadow-offset-y = -15;
 
 ### False
 
-we\'ll use different fork of `picom` that is `icom-ftlabs` add this in your `let` block in `configuration.nix`
+we'll use different fork of `picom` that is `icom-ftlabs` add this in your `let` block in `configuration.nix`
 
 ``` nix
  picomFtlabs = pkgs.picom.overrideAttrs (oldAttrs: {
@@ -242,7 +233,7 @@ services.picom = {
 };
 ```
 
-[[Rebuild Nixos]] and get the hash error. this is what we want. I got hash `FmORxY7SLFnAmtQyC82sK36RoUBa94rJ7BsDXjXUCXk`. So I\'m updating my code with it
+[[Rebuild Nixos]] and get the hash error. this is what we want. I got hash `FmORxY7SLFnAmtQyC82sK36RoUBa94rJ7BsDXjXUCXk`. So I'm updating my code with it
 
 ``` diff
  picomFtlabs = pkgs.picom.overrideAttrs (oldAttrs: {

@@ -5,6 +5,6 @@ created: 20260314181900000
 modified: 20260314181900000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 buku -p
 ```

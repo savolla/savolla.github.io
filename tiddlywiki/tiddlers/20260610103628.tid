@@ -1,0 +1,8 @@
+title: 20260610103628
+tags: k8s fc @zettel _fact
+roam-id: f34d701f-71a4-4bdd-b0f8-6e526defb239
+created: 20260610103600000
+modified: 20260610103600000
+type: text/markdown
+
+kubernetes jobs names must not be more than 63 characters

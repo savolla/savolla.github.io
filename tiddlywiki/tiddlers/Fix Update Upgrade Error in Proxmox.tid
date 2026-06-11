@@ -5,10 +5,10 @@ type: text/markdown
 
 - [How To Change Proxmox Repository to Fix Update Error - YouTube](https://www.youtube.com/watch?v=5AumO9AKKB0)
 - click on pve -\> updates -\> repositories
-- click on \"pve-enterprise\" repo
-- click on \"disable\" button above
-- click on \"Add\" button
-- select \"No-Subscription\" from the dropdown menu
-- click on \"updates\" (sidebar)
-- click on \"Update\" button
+- click on "pve-enterprise" repo
+- click on "disable" button above
+- click on "Add" button
+- select "No-Subscription" from the dropdown menu
+- click on "updates" (sidebar)
+- click on "Update" button
 - a new browser window will open and follow instructions there

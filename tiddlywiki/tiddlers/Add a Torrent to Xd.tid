@@ -3,6 +3,6 @@ tags: @zettel _method i2p c xd piracy
 roam-id: e0f3d57c-65bc-4ff0-b8a1-dee77e48a29b
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 XD-CLI add "magnet:?t=urn:bh:d794d54732ec253e0e907008939c"
 ```

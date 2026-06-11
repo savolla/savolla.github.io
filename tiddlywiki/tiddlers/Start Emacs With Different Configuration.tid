@@ -3,6 +3,6 @@ tags: @zettel emacs _method
 roam-id: fe2ece58-dd3b-4a66-87b5-6c15be7967a5
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 emacs --init-directory /path/to/init.el
 ```

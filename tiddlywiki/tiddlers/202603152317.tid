@@ -5,4 +5,4 @@ created: 20260315231700000
 modified: 20260315231700000
 type: text/markdown
 
-when you connect to a vpn, it actually creates a new network interface on your machine called \"tun0\". and you\'re using that interface when connecting to the internet
+when you connect to a vpn, it actually creates a new network interface on your machine called "tun0". and you're using that interface when connecting to the internet

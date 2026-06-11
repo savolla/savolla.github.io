@@ -5,13 +5,13 @@ created: 20260423165400000
 modified: 20260423165400000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 cd /path/to/tiddlywiki
 tiddlywiki . --init server
 ```
 
 or if it already exists then
 
-``` {.bash org-language="sh"}
+``` bash
 tiddlywiki . --listen
 ```

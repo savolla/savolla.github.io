@@ -5,8 +5,8 @@ created: 20260515162200000
 modified: 20260515162200000
 type: text/markdown
 
-In this example I\'m using my remote host named `fiat`. I\'ll connect to its Desktop like this
+In this example I'm using my remote host named `fiat`. I'll connect to its Desktop like this
 
-``` {.bash org-language="sh"}
+``` bash
 moonlight stream fiat "Desktop"
 ```

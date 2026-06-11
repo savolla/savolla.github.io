@@ -5,7 +5,7 @@ created: 20260519015100000
 modified: 20260519015100000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 rfkill
 ```
 

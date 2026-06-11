@@ -5,6 +5,6 @@ created: 20260402194800000
 modified: 20260402194800000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 kubectl exec -n default apm-dd86897fd-f5m8l -- curl -s ident.me
 ```

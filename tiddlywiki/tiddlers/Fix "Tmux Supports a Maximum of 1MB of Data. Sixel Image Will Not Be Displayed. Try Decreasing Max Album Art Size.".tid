@@ -20,6 +20,6 @@ set -as terminal-overrides ",xterm-256color:Tc"
 
 `~/.profile` or `~/.xprofile`
 
-``` {.bash org-language="sh"}
+``` bash
 export TERM=xterm-256color
 ```

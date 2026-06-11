@@ -7,6 +7,6 @@ type: text/markdown
 
 - put the following into your emacs config
 
-  ``` {.commonlisp org-language="emacs-lisp"}
+  ``` commonlisp
   (setq org-log-into-drawer t) ;; wrap org mode task state changes into a drawer
   ```

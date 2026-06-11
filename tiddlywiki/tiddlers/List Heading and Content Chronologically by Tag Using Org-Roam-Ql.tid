@@ -3,9 +3,9 @@ tags: @zettel _method orgroamql
 roam-id: 28813975-3486-47f5-867c-699a22a1af5b
 type: text/markdown
 
-the following function will display all entries tagged with \"zetteltrack\"
+the following function will display all entries tagged with "zetteltrack"
 
-``` {.commonlisp org-language="emacs-lisp" results="none"}
+``` commonlisp
 (org-roam-ql-search
  '(tags "ZETTELTRACK")
  "Zetteltrack Notes"

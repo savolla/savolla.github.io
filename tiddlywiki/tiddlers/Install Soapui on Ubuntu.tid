@@ -9,7 +9,7 @@ type: text/markdown
   java -version
   ```
 
-- if you don\'t have it
+- if you don't have it
 
   ``` shell
   sudo apt update

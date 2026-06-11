@@ -5,7 +5,7 @@ type: text/markdown
 
 - here is a function that does this
 
-  ``` {#org-roam-nodes-by-tags .commonlisp org-language="emacs-lisp" results="none"}
+  ``` commonlisp
   (defun my/org-roam-nodes-by-tags (tags)
     (let* ((placeholders (mapconcat (lambda (_tag) "?") tags ", "))
            (query (format
@@ -28,7 +28,7 @@ type: text/markdown
 
 - to use this function do this
 
-  ``` {.commonlisp org-language="emacs-lisp" results="output raw" noweb="yes"}
+  ``` commonlisp
   <<org-roam-nodes-by-tags>>
   (my/org-roam-nodes-by-tags '("z" "playwright"))
   ```

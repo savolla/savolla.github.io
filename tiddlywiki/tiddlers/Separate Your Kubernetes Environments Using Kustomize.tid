@@ -5,22 +5,22 @@ created: 20260504214500000
 modified: 20260504214500000
 type: text/markdown
 
-We\'re going to use a [[Kubernetes Deployment Example]] as a base file. Our goal is to derive 3 more deployments but with different specs. Things like replica sets, container ports, resources etc.
+We're going to use a [[Kubernetes Deployment Example]] as a base file. Our goal is to derive 3 more deployments but with different specs. Things like replica sets, container ports, resources etc.
 
-We can do this by copying and pasting that deployment 3 more times but it is not efficient and not very maintainable (for some). That\'s we\'re going to use [Kustomize](https://kustomize.io/).
+We can do this by copying and pasting that deployment 3 more times but it is not efficient and not very maintainable (for some). That's we're going to use [Kustomize](https://kustomize.io/).
 
 ## Create a Directory Structure for Kustomize
 
 We need the following sturcture as a starting point.
 
-``` {.bash org-language="sh"}
+``` bash
 kustomize/
 └── base/
     ├── deployment.yaml
     └── kustomization.yaml
 ```
 
-This is going to be our BASE and this directory will be used by other environments that we\'ll create in a moment. We have [[Kubernetes Deployment Example]] in the `deployment.yaml`.
+This is going to be our BASE and this directory will be used by other environments that we'll create in a moment. We have [[Kubernetes Deployment Example]] in the `deployment.yaml`.
 
 The structure of our `kustomization.yaml` is the following;
 
@@ -29,13 +29,13 @@ resources:
   - deployment.yaml
 ```
 
-So our `kustomization.yaml` has the attribute called `resources:`. That attribute will tell Kustomize \"Hey! These are the files that will be used when generating other overlays!\"
+So our `kustomization.yaml` has the attribute called `resources:`. That attribute will tell Kustomize "Hey! These are the files that will be used when generating other overlays!"
 
-> If you don\'t put your files under `resources:` then Kustomize will never see them.
+> If you don't put your files under `resources:` then Kustomize will never see them.
 
 ## Overlays are Coming!
 
-Overlays are actually \"derivatives\" of base deployments,services and other resources. Since we have 3 environments, let\'s add three more directories under our tree. But we also tell Kustomize that \"These are overlays!\". That\'s why we put them in `overlays/` directory
+Overlays are actually "derivatives" of base deployments,services and other resources. Since we have 3 environments, let's add three more directories under our tree. But we also tell Kustomize that "These are overlays!". That's why we put them in `overlays/` directory
 
 ``` ascii
 kustomize
@@ -51,4 +51,4 @@ kustomize
         └── kustomization.yaml
 ```
 
-We add `kustomization.yaml` for each environment. But they\'re empty for now
+We add `kustomization.yaml` for each environment. But they're empty for now

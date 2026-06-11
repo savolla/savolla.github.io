@@ -3,7 +3,7 @@ tags: @zettel _method orgmode rest
 roam-id: 428314f8-6383-4584-b6b8-662055de6869
 type: text/markdown
 
-``` {.restclient results="output"}
+``` restclient
 POST http://127.0.0.1:8000/todo/todos/
 Content-Type: application/json
 

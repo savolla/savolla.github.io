@@ -3,7 +3,7 @@ tags: regex @zettel _method
 roam-id: 07d0f188-e3f7-4fde-9626-5a7d03a97b6d
 type: text/markdown
 
-- the following example excludes all lines contain \"forbidden\"
+- the following example excludes all lines contain "forbidden"
 
 ``` shell
 ^(?!.*forbidden).*

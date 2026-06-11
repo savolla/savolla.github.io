@@ -3,26 +3,3 @@ tags:
 roam-id: dd29b941-a5bc-4238-9827-69bebf45282a
 type: text/markdown
 
-\thispagestyle{empty}
-
-\backgroundsetup{
-  scale=1,
-  angle=0,
-  opacity=0.1,
-  contents={\includegraphics[width=\paperwidth,height=\paperheight]{cover-background.jpg}}
-}
-
-% Set text color for cover
-{\color{covertext}
-\begin{titlepage}
-  \centering
-  \vspace*{4cm}
-  {\Large\bfseries DevOps Serileri \par}
-  \vspace{1cm}
-  {\Huge\bfseries Proxmox'a 5 Node Kubernetes Cluster Kurulumu \par}
-  \vspace{3cm}
-  {\Large Kuzey Koç \par}
-  \vfill
-\end{titlepage}
-}
-\clearpage

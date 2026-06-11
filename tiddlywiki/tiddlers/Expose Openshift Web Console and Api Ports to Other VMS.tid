@@ -3,7 +3,7 @@ tags: @zettel _method openshift oc
 roam-id: f3f6b77a-84c0-4168-8a69-0f9fce4ffea7
 type: text/markdown
 
-- forward external traffic to CRC\'s internal API server
+- forward external traffic to CRC's internal API server
 
 ``` shell
 sudo iptables -t nat -A PREROUTING -p tcp --dport 6443 -j REDIRECT --to-ports 6443
@@ -11,7 +11,7 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 443
 sudo iptables-save
 ```
 
-- add the following to your client vm\'s hosts file (in this case nixos)
+- add the following to your client vm's hosts file (in this case nixos)
 
   ``` nix
 

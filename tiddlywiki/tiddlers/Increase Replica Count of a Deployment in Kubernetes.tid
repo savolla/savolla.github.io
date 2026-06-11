@@ -3,7 +3,7 @@ tags: @zettel _method k8s
 roam-id: 51ac0e71-b520-43a7-ab16-f9e2d3fa2397
 type: text/markdown
 
-the following will increase your~deployment~\'s replica count to 3 (or reduce)
+the following will increase your<sub>deployment</sub>'s replica count to 3 (or reduce)
 
 ``` shell
 kubectl scale <your_deployment> --replicas 3

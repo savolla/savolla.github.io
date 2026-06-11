@@ -7,7 +7,7 @@ type: text/markdown
 
 example below
 
-``` {.bash org-language="sh"}
+``` bash
 gcloud logging read 'resource.type="k8s_container" AND
     resource.labels.cluster_name="bird-production-gke-cluster" AND
     resource.labels.container_name="profiling" AND

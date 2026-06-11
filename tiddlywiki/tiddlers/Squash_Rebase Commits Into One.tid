@@ -3,7 +3,7 @@ tags: @zettel _method git
 roam-id: 418adbb4-c77b-4f86-87b9-52a3eb34dbf5
 type: text/markdown
 
-I\'m squashing 4 commits before HEAD (HEAD included)
+I'm squashing 4 commits before HEAD (HEAD included)
 
 ``` shell
 git rebase -i HEAD~4
@@ -11,4 +11,4 @@ git rebase -i HEAD~4
 
 - leave the first commit as is but change the subsequent commits to `s`
 - next, remove all the commit messages below and change the first one. or leave the first one as is.
-- you can now do `git push --force` if you\'re sure about what you\'re doing
+- you can now do `git push --force` if you're sure about what you're doing

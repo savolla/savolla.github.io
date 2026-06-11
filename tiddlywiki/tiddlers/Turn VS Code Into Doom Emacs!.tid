@@ -7,11 +7,11 @@ type: text/markdown
 
 This post is a draft but here is my configuration. You can still use it ;)
 
-You\'ll find both `keybindings.js` and `settings.js` below. Put these files under `~/.config/VSCodium/User/` directory. And yes I used `VSCodium` and not `VSCode` but these files are same for `VSCode` too. They should work fine
+You'll find both `keybindings.js` and `settings.js` below. Put these files under `~/.config/VSCodium/User/` directory. And yes I used `VSCodium` and not `VSCode` but these files are same for `VSCode` too. They should work fine
 
 ## `keybindings.js`
 
-``` {.javascript org-language="js"}
+``` javascript
 // Place your key bindings in this file to override the defaults
 [
     // tabs
@@ -419,7 +419,7 @@ You\'ll find both `keybindings.js` and `settings.js` below. Put these files unde
 
 ## `settings.js`
 
-``` {.javascript org-language="js"}
+``` javascript
 {
   "window.restoreWindows": "none", // do not restore previous session on restart
   "editor.formatOnSave": true, // auto format on save

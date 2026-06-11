@@ -1,0 +1,14 @@
+title: Decode Url Encoded Strings
+tags: @zettel _method
+roam-id: 36947c84-05a5-41a9-90dd-81c7313c7ced
+created: 20260611101900000
+modified: 20260611101900000
+type: text/markdown
+
+``` bash
+urlencode -d "Dx%5BiMuAxs%238a4eB3"
+```
+
+``` example
+Dx[iMuAxs#8a4eB3
+```

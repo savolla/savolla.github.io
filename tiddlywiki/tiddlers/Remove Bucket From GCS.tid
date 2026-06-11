@@ -5,6 +5,6 @@ type: text/markdown
 
 - [[Get All Google Cloud Storage Elements Buckets]]
 
-``` {.bash org-language="sh"}
+``` bash
 gcloud storage rm --recursive gs://BUCKET_NAME
 ```

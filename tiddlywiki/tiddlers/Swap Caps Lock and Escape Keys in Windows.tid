@@ -11,7 +11,7 @@ type: text/markdown
 
 - enter `shell:startup`
 
-- you\'ll place your startup scripts here
+- you'll place your startup scripts here
 
 - right click and create a new file `swapescapecapslock.ahk`
 

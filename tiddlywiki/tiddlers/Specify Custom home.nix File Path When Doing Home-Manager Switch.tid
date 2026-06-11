@@ -3,6 +3,6 @@ tags: homemanager nix @zettel _method
 roam-id: a0c92252-c479-455c-a331-69e4fb1c899c
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 home-manager switch -f /path/to/home.nix
 ```

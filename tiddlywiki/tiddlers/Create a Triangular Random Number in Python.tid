@@ -3,7 +3,7 @@ tags: @zettel _method python
 roam-id: c727150a-1963-4996-a7d7-2906c2b653ae
 type: text/markdown
 
-``` {.python results="output"}
+``` python
 import random
 
 delay = random.triangular(low=1, high=10)

@@ -3,11 +3,4 @@ tags: @zettel _method qutebrowser
 roam-id: 95ff79c9-fb39-4cd2-9232-efdc6b28342e
 type: text/markdown
 
-shortcut   functionality
-  ---------- --------------------------------------
-  g t        fuzzy find tab and select with enter
-  g C        clone current tab to right
-  yyPp       clone current tab with favicon
-  g J/K      move tab right or left
-  yy         copy page url
-  yT         copy page title
+\<table\> \<thead\> \<tr\> \<th\>shortcut\</th\> \<th\>functionality\</th\> \</tr\> \</thead\> \<tbody\> \<tr\> \<td\>g t\</td\> \<td\>fuzzy find tab and select with enter\</td\> \</tr\> \<tr\> \<td\>g C\</td\> \<td\>clone current tab to right\</td\> \</tr\> \<tr\> \<td\>yyPp\</td\> \<td\>clone current tab with favicon\</td\> \</tr\> \<tr\> \<td\>g J/K\</td\> \<td\>move tab right or left\</td\> \</tr\> \<tr\> \<td\>yy\</td\> \<td\>copy page url\</td\> \</tr\> \<tr\> \<td\>yT\</td\> \<td\>copy page title\</td\> \</tr\> \</tbody\> \</table\>

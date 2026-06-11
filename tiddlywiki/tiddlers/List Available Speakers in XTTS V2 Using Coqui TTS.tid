@@ -3,7 +3,7 @@ tags: @zettel _method coquitts xtts
 roam-id: c95c22ec-b568-4aab-86c0-27e7216afd8b
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
     --list_speaker_idx
 ```

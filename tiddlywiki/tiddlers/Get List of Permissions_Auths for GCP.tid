@@ -5,6 +5,6 @@ created: 20260511141500000
 modified: 20260511141500000
 type: text/markdown
 
-``` {.bash org-language="sh"}
+``` bash
 gcloud auth list
 ```
