@@ -1,0 +1,18 @@
+title: Comment in Mysql
+tags: mysql @zettel _method
+roam-id: 145ad283-ceeb-47aa-bc1f-fbba1a63a1a1
+created: 20260611142200000
+modified: 20260611142200000
+type: text/markdown
+
+fully comment a line
+
+``` sql
+-- select count(*) from accounting_archive.coin_transaction
+```
+
+comments for descriptions
+
+``` sql
+select count(*) from accounting_archive.coin_transaction -- count transactions
+```
