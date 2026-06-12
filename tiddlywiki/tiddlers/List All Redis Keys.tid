@@ -1,0 +1,28 @@
+title: List All Redis Keys
+tags: redis @zettel _method
+roam-id: 0eb8be28-b40c-4169-b119-77ab0acbdb04
+created: 20260612133800000
+modified: 20260612133800000
+type: text/markdown
+
+first see [[20260612135035]]
+
+never use `keys *` in `redis-cli`. these are better alternatives;
+
+scan before accessing the cli
+
+``` bash
+redis-cli -h REDIS_HOST --scan
+```
+
+or with a regex pattern
+
+``` bash
+redis-cli -h REDIS_HOST --scan --pattern YOUR_REGEX_HERE
+```
+
+example;
+
+``` bash
+redis-cli -h 10.0.0.3 --scan --pattern "BULK:EMAIL:SEND:*"
+```

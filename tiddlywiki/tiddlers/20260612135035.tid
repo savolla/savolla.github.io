@@ -1,0 +1,8 @@
+title: 20260612135035
+tags: redis fc @zettel _warning
+roam-id: 2d4db780-7261-4bb2-9937-f94c6b2fce9b
+created: 20260612135000000
+modified: 20260612135000000
+type: text/markdown
+
+never use `keys *` in production redis. if the keyspace is too large then redis will not function as it should be for some time. DOWNTIME POTENTIAL!

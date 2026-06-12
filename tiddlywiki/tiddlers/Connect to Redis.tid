@@ -1,0 +1,10 @@
+title: Connect to Redis
+tags: redis @zettel _method
+roam-id: e5ed00f4-19d1-46fe-941c-17461d18b239
+created: 20260612133700000
+modified: 20260612133700000
+type: text/markdown
+
+``` bash
+redis-cli -h REDIS_SERVER -n DB_NUMBER
+```

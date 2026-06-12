@@ -7,13 +7,13 @@ type: text/markdown
 
 - Enable Android support in nixpkgs in home.nix
 
-``` nix
-{
-  nixpkgs.config = {
-    allowUnfree = true;
-    android_sdk.accept_license = true;
-  };
-}
+``` diff
+ {
+   nixpkgs.config = {
+     allowUnfree = true;
++    android_sdk.accept_license = true;
+   };
+ }
 ```
 
 Add the following variable in home.nix
