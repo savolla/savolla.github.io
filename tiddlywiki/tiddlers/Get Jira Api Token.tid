@@ -1,0 +1,8 @@
+title: Get Jira Api Token
+tags: jira @zettel _method
+roam-id: 7250fdc7-f91a-4ee6-b9b0-031cf5b4252a
+created: 20260612101700000
+modified: 20260612101700000
+type: text/markdown
+
+check <https://id.atlassian.com/manage-profile/security/api-tokens>
