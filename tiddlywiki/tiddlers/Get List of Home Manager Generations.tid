@@ -1,0 +1,10 @@
+title: Get List of Home Manager Generations
+tags: homemanager nix @zettel _method
+roam-id: 230da2b9-4433-4480-9318-9ced55e197d5
+created: 20260612005500000
+modified: 20260612005500000
+type: text/markdown
+
+``` bash
+home-manager generations
+```
