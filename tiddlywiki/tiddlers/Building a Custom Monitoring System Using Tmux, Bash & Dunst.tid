@@ -1,0 +1,136 @@
+title: Building a Custom Monitoring System Using Tmux, Bash & Dunst
+tags: @post devops sre bash
+roam-id: 653e6906-cf7f-4801-8e71-ee9db8ee5bf9
+created: 20260616183900000
+modified: 20260616183900000
+type: text/markdown
+
+This post is a draft. more are coming. but you can watch the progress below.
+
+## kubernetes
+
+- pod<sub>restartcount</sub> crit: \>10 in 10m warn: \>3 in 10m CrashLoopBackOff / OOMKilled — primary signal of app instability
+
+  ``` bash
+  kubectl get pods -A | awk '{print $5}'
+  ```
+
+- pod<sub>notrunning</sub> crit: any critical ns warn: any Pods stuck in Pending / Failed / ImagePullBackOff
+
+- node<sub>cpuutilization</sub> crit: \>90% warn: \>70% Per-node CPU — spot noisy neighbours and scheduling pressure
+
+- node<sub>memoryutilization</sub> crit: \>90% warn: \>80% Per-node RAM — OOM evictions happen before you'd expect
+
+- node<sub>diskpressure</sub> crit: true Kubelet condition — node stops accepting pods when true
+
+- pvc<sub>boundratio</sub> crit: stateful ns warn: any PersistentVolumeClaims not Bound — stateful workloads stall
+
+- hpa<sub>atmax</sub> warn: replicas=max HorizontalPodAutoscaler capped — service is request-limited right now
+
+- deployment<sub>unavailablereplicas</sub> crit: \>0 Available \< desired for any Deployment
+
+## mysql
+
+- Threads<sub>running</sub> crit: \>150 warn: \>50 Active query threads — sudden spike = slow query pile-up
+
+- Questions<sub>persec</sub> track delta QPS — baseline + sudden drop both signal problems
+
+- Innodb<sub>rowlockwaits</sub> warn: rising Lock wait accumulation — deadlock precursor
+
+- Seconds<sub>BehindMaster</sub> crit: \>300s warn: \>30s Replica lag — read replicas serving stale data
+
+- Connection<sub>errorsmaxconnections</sub> crit: \>0 Connections rejected because max<sub>connections</sub> was hit
+
+- Innodb<sub>bufferpoolhitrate</sub> crit: \<95% warn: \<98% Cache hit rate — should stay \>99% in production
+
+- Slow<sub>queries</sub> warn: \>5/min Cumulative slow queries (delta per interval)
+
+- Open<sub>files</sub> warn: \>80% limit Approaching open<sub>fileslimit</sub> causes table-open failures
+
+## cassandra
+
+- ReadLatency<sub>99p</sub> crit: \>50ms warn: \>10ms 99th percentile read latency via JMX/nodetool
+
+- WriteLatency<sub>99p</sub> crit: \>20ms warn: \>5ms 99th percentile write latency
+
+- PendingTasks<sub>ReadStage</sub> crit: \>500 warn: \>100 Backlog of queued reads — thread pool saturation
+
+- PendingTasks<sub>MutationStage</sub> warn: \>100 Queued writes — signals write pressure
+
+- DropMessages crit: \>0 Dropped mutations/reads = data loss / timeout flood
+
+- CompactionBytesRemaining warn: \>50GB Compaction lag — high values cause read amplification
+
+- HeapMemoryUsage crit: \>85% warn: \>70% JVM heap — OOM causes node to leave the ring
+
+- HintedHandoffPending warn: \>0 Hints accumulating = a node was recently down
+
+- node<sub>down</sub> crit: any DN Node unreachable from ring perspective
+
+## redis
+
+- used<sub>memoryrss</sub> crit: \>95% max warn: \>80% max RSS from OS — eviction starts when close to maxmemory
+
+- evicted<sub>keys</sub> crit: \>0 Keys being evicted — data is being silently dropped
+
+- keyspace<sub>hitsrate</sub> warn: \<95% hit/(hit+miss) — cache effectiveness
+
+- connected<sub>clients</sub> warn: \>80% max Approaching maxclients causes NOAUTH/rejected connections
+
+- blocked<sub>clients</sub> warn: \>10 Clients blocked on BRPOP/BLPOP — long blocks signal problems
+
+- rdb<sub>lastbgsavestatus</sub> crit: err Last BGSAVE result — 'err' means no persistence since last success
+
+- master<sub>linkstatus</sub> crit: down Replica disconnected from master
+
+- instantaneous<sub>opspersec</sub> track delta Commands/sec — baseline + drop detection
+
+## rabbitmq
+
+- queue<sub>messagesready</sub> crit: \>10000 warn: \>1000 Messages piling up — consumers are down or too slow
+
+- queue<sub>messagesunacked</sub> warn: \>500 Unacknowledged messages — consumers holding locks
+
+- consumer<sub>count</sub> crit: =0 on critical Zero consumers on a critical queue = silent data loss
+
+- memory<sub>alarm</sub> crit: true Node hit memory high-watermark and blocked publishers
+
+- disk<sub>freealarm</sub> crit: true Disk free below low-watermark — broker will block all publishers
+
+- publish<sub>rate</sub> baseline Messages published/sec — drop signals upstream failure
+
+- deliver<sub>rate</sub> baseline Messages delivered/sec — drop signals consumer failure
+
+- node<sub>running</sub> crit: failed RabbitMQ node health check
+
+## gcp
+
+- cpu<sub>utilization</sub> crit: \>90% warn: \>70% Per-instance CPU — Cloud Monitoring / agent
+
+- memory<sub>utilization</sub> crit: \>90% warn: \>80% Requires Ops Agent — not a native GCP metric
+
+- disk<sub>readwriteops</sub> warn: \>80% quota IOPS nearing disk quota — throttling incoming
+
+- disk<sub>utilizationpercent</sub> crit: \>90% warn: \>80% Filesystem full — app crashes, logs stop
+
+- network<sub>egressbytes</sub> anomaly Unexpected egress = data exfil or runaway process
+
+- uptime<sub>check</sub> crit: failing GCP uptime check failing — VM unreachable
+
+## vms
+
+- cpu<sub>steal</sub> crit: \>10% warn: \>5% Hypervisor stealing CPU from your VM — invisible latency
+
+- load<sub>average15m</sub> warn: \>nCPU\*1.5 Sustained load \> nCPUs means runaway processes
+
+- iowait<sub>pct</sub> crit: \>40% warn: \>20% Processes blocked on I/O — storage bottleneck
+
+- tcp<sub>timewaitcount</sub> warn: \>10000 TIME<sub>WAIT</sub> accumulation — port exhaustion approaching
+
+- file<sub>descriptorusage</sub> warn: \>80% limit Close to ulimit causes EMFILE — services silently fail
+
+- oom<sub>killcount</sub> crit: \>0 OOM killer fired — memory-related service restart
+
+- ntp<sub>offsetms</sub> crit: \>200ms warn: \>50ms Clock drift — Cassandra and distributed systems require tight sync
+
+- swap<sub>usagepct</sub> crit: \>30% warn: \>10% Any swap usage in prod = memory pressure you missed

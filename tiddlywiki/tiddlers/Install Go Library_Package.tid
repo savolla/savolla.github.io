@@ -1,0 +1,12 @@
+title: Install Go Library/Package
+tags: go @zettel _method
+roam-id: d594bc95-fbc7-4dff-8bfb-036e88c7a3ee
+created: 20260616195000000
+modified: 20260616195000000
+type: text/markdown
+
+example for `lipgloss` package
+
+``` bash
+go install github.com/charmbracelet/lipgloss@latest
+```

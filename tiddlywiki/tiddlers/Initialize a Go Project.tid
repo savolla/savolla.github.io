@@ -1,0 +1,11 @@
+title: Initialize a Go Project
+tags: go @zettel _method
+roam-id: 40a1206d-1bf6-474b-b7bb-9ce2ca1396da
+created: 20260616195400000
+modified: 20260616195400000
+type: text/markdown
+
+``` bash
+cd /path/to/project
+go mod tidy
+```
