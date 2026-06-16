@@ -1,0 +1,10 @@
+title: Set a Network Interface Up Using Ip Command
+tags: ip networking linux @zettel _method
+roam-id: 029148e2-0b22-491a-9620-31c3196da098
+created: 20260613225300000
+modified: 20260613225300000
+type: text/markdown
+
+``` bash
+sudo ip link set dev <interface> up
+```

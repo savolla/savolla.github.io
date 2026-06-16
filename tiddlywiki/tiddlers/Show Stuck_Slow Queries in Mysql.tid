@@ -1,0 +1,10 @@
+title: Show Stuck/Slow Queries in Mysql
+tags: database mysql @zettel _method mysql database
+roam-id: 03a25684-c7d1-4dbf-9fce-09fca4db127e
+created: 20260615163800000
+modified: 20260615163800000
+type: text/markdown
+
+``` sql
+SELECT ID, USER, TIME, STATE, LEFT(REPLACE(REPLACE(INFO, '\n', ' '), '\r', ''), 40) FROM information_schema.processlist WHERE COMMAND != 'Sleep' AND TIME > 5 ORDER BY TIME DESC LIMIT 5;
+```

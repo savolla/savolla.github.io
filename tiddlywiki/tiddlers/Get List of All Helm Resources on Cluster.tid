@@ -1,0 +1,10 @@
+title: Get List of All Helm Resources on Cluster
+tags: k8s helm @zettel _method fc mysql database
+roam-id: 10115348-7ede-4f24-80b3-59d58ff50849
+created: 20260615131800000
+modified: 20260615131800000
+type: text/markdown
+
+``` bash
+helm list -A
+```

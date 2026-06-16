@@ -8,3 +8,5 @@ type: text/markdown
 ``` bash
 sudo ip addr add 192.168.1.100/24 dev ens33
 ```
+
+now you may want to see how to [[Set a Network Interface Up Using Ip Command]]

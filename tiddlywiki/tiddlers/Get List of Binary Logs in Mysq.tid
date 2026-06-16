@@ -1,0 +1,15 @@
+title: Get List of Binary Logs in Mysq
+tags: @zettel _method mysql database
+roam-id: 1d3180e5-6904-4860-8642-f470e49c07d9
+created: 20260615172100000
+modified: 20260615172100000
+type: text/markdown
+
+``` bash
+show binary logs;
+```
+
+\*lfalino92 enable newrelic for deployment :newrelic:hopi:kartaca:k8s:mysql:database:@zettel:<sub>method</sub>:
+
+- open the deeployment `yaml` file
+- find `bird.analyze` section

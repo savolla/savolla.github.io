@@ -33,7 +33,7 @@ type: text/markdown
   ```
 
   ``` bash
-  launch: retroarch -L /nix/store/lijgkr69jahfqaam5g3l24dlmdlf7a77-retroarch-with-cores-1.21.0/lib/retroarch/cores/snes9x_libretro.so "{file.path}"
+  launch: retroarch -L /run/current-system/sw/lib/retroarch/cores/mesen_libretro.so "{file.path}"
   ```
 
 - open pegasus-fe and add game directory and select `metadata.pegasus.txt` under snes directory
