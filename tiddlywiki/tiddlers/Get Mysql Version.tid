@@ -1,0 +1,10 @@
+title: Get Mysql Version
+tags: sql database mysql @zettel _method
+roam-id: b5b3054f-3d09-48ab-a6ef-a3a9a39fdeb3
+created: 20260616143200000
+modified: 20260616143200000
+type: text/markdown
+
+``` sql
+SELECT VERSION();
+```

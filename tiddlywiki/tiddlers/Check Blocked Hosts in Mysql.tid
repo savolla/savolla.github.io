@@ -1,0 +1,18 @@
+title: Check Blocked Hosts in Mysql
+tags: mysql @zettel _method
+roam-id: a6bfe3d2-1ed2-430d-9e30-547495a54e5e
+created: 20260616144700000
+modified: 20260616144700000
+type: text/markdown
+
+``` sql
+SELECT * FROM performance_schema.host_cache
+WHERE COUNT_CONNECT_ERRORS > 0
+   OR COUNT_HANDSHAKE_ERRORS > 0
+   OR COUNT_AUTHENTICATION_ERRORS > 0
+   OR COUNT_MAX_USER_CONNECTIONS_ERRORS > 0
+ORDER BY COUNT_CONNECT_ERRORS DESC
+LIMIT 20;
+```
+
+also [[Check Blocked Hosts in Mysql NDB]] if you're using ndb

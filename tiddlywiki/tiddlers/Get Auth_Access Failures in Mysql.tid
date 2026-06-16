@@ -1,0 +1,13 @@
+title: Get Auth/Access Failures in Mysql
+tags: mysql @zettel _method
+roam-id: b5693d4a-5d53-481f-a597-7eb23ed239ad
+created: 20260616144600000
+modified: 20260616144600000
+type: text/markdown
+
+``` sql
+SHOW GLOBAL STATUS WHERE Variable_name IN (
+  'Aborted_connects',
+  'Aborted_clients'
+);
+```

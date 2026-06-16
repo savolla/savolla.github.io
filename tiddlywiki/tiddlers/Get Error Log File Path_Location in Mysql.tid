@@ -1,0 +1,34 @@
+title: Get Error Log File Path/Location in Mysql
+tags: mysql @zettel _method
+roam-id: ffce790a-d44e-4f9d-b04b-c6b9d7fcf727
+created: 20260616125200000
+modified: 20260616125200000
+type: text/markdown
+
+``` sql
+SHOW VARIABLES LIKE 'log_error';
+```
+
+expected results
+
+``` bash
++---------------+--------------------------+
+<table>
+<tbody>
+<tr>
+<td>Variable<sub>name</sub></td>
+<td>Value</td>
+</tr>
+</tbody>
+</table>
++---------------+--------------------------+
+<table>
+<tbody>
+<tr>
+<td>log<sub>error</sub></td>
+<td>/var/log/mysql/error.log</td>
+</tr>
+</tbody>
+</table>
++---------------+--------------------------+
+```

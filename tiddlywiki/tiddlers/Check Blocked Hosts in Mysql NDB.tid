@@ -1,0 +1,10 @@
+title: Check Blocked Hosts in Mysql NDB
+tags: ndb mysql @zettel _method
+roam-id: 39741fb6-9084-43d2-a808-69d917c34196
+created: 20260616144900000
+modified: 20260616144900000
+type: text/markdown
+
+``` sql
+SELECT * FROM performance_schema.host_cache\G
+```
