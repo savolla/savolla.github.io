@@ -1,0 +1,25 @@
+title: Fix Application Crash on Non-Nixos Systems
+tags: ubuntu nixos nix @zettel _fix
+roam-id: 0ed995e8-37c2-4e82-87c5-eab68c179da3
+created: 20260616122700000
+modified: 20260616122700000
+type: text/markdown
+
+in the following example I wrap soapui with needed libraries
+
+``` nix
+home.packages =
+  with pkgs;
+  [
+    (pkgs.soapui.overrideAttrs (old: {
+      nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ pkgs.makeWrapper ];
+      postInstall = (old.postInstall or "") + ''
+        wrapProgram $out/bin/soapui \
+    --prefix LD_LIBRARY_PATH : "${pkgs.lib.makeLibraryPath [
+      pkgs.xorg.libXxf86vm
+      pkgs.glib
+    ]}"
+      '';
+    }))
+  ];
+```
