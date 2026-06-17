@@ -6,6 +6,10 @@ type: text/markdown
 ``` shell
 cd /path/to/your_chart
 helm upgrade --install your_chart . -f values/pretest.yaml
+
+VERSION=<YOUR_VERSION> ENV=<YOUR_ENV> make
+helm diff upgrade bird-web bird-web-4.60.0-ug1778154783.tgz
+helm upgrade --reset-values --wait bird-web --timeout 5m0s bird-web-4.60.0-ug1778154783.tgz
 ```
 
 values can be one of the pretest, test, staging, prod etc.
