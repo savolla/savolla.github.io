@@ -1,0 +1,8 @@
+title: Repeated Data Values Accumulate on Each Refresh in Grafana
+tags: monitoring grafana @zettel _fix
+roam-id: d505b473-abb8-4d7e-9d18-592c679baf78
+created: 20260618172400000
+modified: 20260618172400000
+type: text/markdown
+
+go to your panel -\> edit -\> queries -\> options -\> type make it `Instant`
