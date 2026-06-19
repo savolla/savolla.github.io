@@ -1,0 +1,14 @@
+title: 20260619124358
+tags: prometheus grafana monitoring fc @zettel _comparison
+roam-id: 59e7147e-6835-4697-86ad-30c4fd98b550
+created: 20260619124300000
+modified: 20260619124300000
+type: text/markdown
+
+the difference betwee push-based and pull-based metrics collection is;
+
+push-based  
+the VMs send metrics to you
+
+pull-based  
+your local machine reaches out to the VM and takes the metric (ssh)
