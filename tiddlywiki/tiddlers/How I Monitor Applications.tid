@@ -1,0 +1,12 @@
+title: How I Monitor Applications
+tags: @zettel post
+roam-id: e2b11cba-af6b-4792-bd4f-b2a063a36fc6
+created: 20260620113500000
+modified: 20260620113500000
+type: text/markdown
+
+It is a draft
+
+I first tried pull-based metrics collection for my local machine. I tried using ssh for metrics collection but had issues like timeouts, hangs etc. so I decided to use push-based collection. since it is more lightweight. my local machine will only collect those metrics like checking RSS feeds.
+
+I was also creating my own alerts using shell scripts which are more error prone and sometimes contain bugs. I coundn't trust them on production servers. so I needed a more battle-tested exporters. then I discovered [samber/awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts) that lists needed alerts for kubernetes, mysql, cassandra, kafka, redis etc. not just alerts but they also
