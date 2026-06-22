@@ -1,0 +1,10 @@
+title: Get Cassandra Version
+tags: cassandra @zettel _method
+roam-id: 24ee61b2-55c7-437d-9cb8-778bc188fa6f
+created: 20260620120000000
+modified: 20260620120000000
+type: text/markdown
+
+``` sql
+show version;
+```

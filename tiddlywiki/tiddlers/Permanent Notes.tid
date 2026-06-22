@@ -5,18 +5,18 @@ type: text/markdown
 
 Zettels split into categories
 
-- [[Terms]]
-- [[Abbreviations]]
-- [[Analogies]]
-- [[History]]
+- [[Methods]] - how to do things
+- [[Properties]] - properties of a technology
+- [[Mechanisms]] - how something works internally
+- [[Fixes]] - how to fix problems
+- [[Terms]] - concepts and their definitions
+- [[Abbreviations]] - abbr = abbreviation
+- [[Analogies]] - ELI5 type of explanations
+- [[History]] - origins of concepts
 - [[Facts]]
-- [[Properties]]
-- [[Mechanisms]]
-- [[Methods]]
-- [[Comparisons]]
-- [[Usecases]]
-- [[Tradeoffs]]
+- [[Comparisons]] - difference between something
+- [[Usecases]] - when to use what
+- [[Tradeoffs]] - pros and cons of something
 - [[Best Practices]]
-- [[Warnings]]
-- [[Fixes]]
+- [[Warnings]] - pitfalls
 - [[References]]

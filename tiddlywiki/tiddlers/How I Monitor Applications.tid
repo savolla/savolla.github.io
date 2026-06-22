@@ -9,4 +9,6 @@ It is a draft
 
 I first tried pull-based metrics collection for my local machine. I tried using ssh for metrics collection but had issues like timeouts, hangs etc. so I decided to use push-based collection. since it is more lightweight. my local machine will only collect those metrics like checking RSS feeds.
 
-I was also creating my own alerts using shell scripts which are more error prone and sometimes contain bugs. I coundn't trust them on production servers. so I needed a more battle-tested exporters. then I discovered [samber/awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts) that lists needed alerts for kubernetes, mysql, cassandra, kafka, redis etc. not just alerts but they also
+I was also creating my own alerts using shell scripts which are more error prone and sometimes contain bugs. I coundn't trust them on production servers. so I needed a more battle-tested exporters. then I discovered [samber/awesome-prometheus-alerts](https://github.com/samber/awesome-prometheus-alerts) that lists needed alerts for kubernetes, mysql, cassandra, kafka, redis etc. not just alerts but they also listed the exporters for them. so I downloaded both exporters and alert rules for the following technologies;
+
+-

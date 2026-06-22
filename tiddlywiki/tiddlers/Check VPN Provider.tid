@@ -13,7 +13,7 @@ nmcli connection show "8e6295a0-e84b-4d27-9348-3c9e76f79b95" | grep -E "vpn.data
 ```
 
 ``` example
-vpn.data:                               Enable Single DES = yes, IKE DH Group = dh2, IPSec ID = kartaca-vpn, IPSec gateway = vpn.kartaca.com, IPSec secret-flags = 0, Local Port = 0, NAT Traversal Mode = natt, Perfect Forward Secrecy = server, Vendor = cisco, Xauth password-flags = 2, Xauth username = savolla, ipsec-secret-type = save, xauth-password-type = ask
+vpn.data:                               Enable Single DES = yes, IKE DH Group = dh2, IPSec ID = kartaca-vpn, IPSec gateway = vpn.somecompany.com, IPSec secret-flags = 0, Local Port = 0, NAT Traversal Mode = natt, Perfect Forward Secrecy = server, Vendor = cisco, Xauth password-flags = 2, Xauth username = savolla, ipsec-secret-type = save, xauth-password-type = ask
 ```
 
 - look for the `Vendor = cisco`

@@ -1,0 +1,176 @@
+title: My Music Production Environment on NixOS
+tags: nix nixos @post music audio
+roam-id: 7ca080d9-0838-4618-ad52-d4f92a2047ff
+created: 20260621132300000
+modified: 20260621132300000
+type: text/markdown
+
+## NixOS Setup
+
+`NOTE: since musnix has its own kernel you have to comment your kenel in configuration.nix to avoid kernel conflicts`
+
+in `configuration.nix`
+
+on top of your configuration file add
+
+``` nix
+let
+  musnix = import (fetchTarball "https://github.com/musnix/musnix/archive/master.tar.gz");
+in
+```
+
+then import musnix in
+
+``` diff
+  imports = [
+    ./hardware-configuration.nix
++   musnix
+  ];
+```
+
+configure musnix
+
+``` nix
+musnix = {
+  enable = true;
+  kernel.realtime = true;   # uses RT-patched kernel
+  rtirq.enable = true;      # raises IRQ thread priorities for audio devices
+  das_watchdog.enable = true;
+};
+```
+
+let user processes request rt
+
+``` nix
+security = {
+  rtkit.enable = true;
+};
+```
+
+disable pulseaudio server. we'll be using pipewire instead
+
+``` nix
+services.pulseaudio.enable = false;
+```
+
+enable pipewire in your `services`
+
+``` nix
+pipewire = {
+  enable = true;
+  alsa.enable = true;
+  alsa.support32Bit = true;
+  pulse.enable = true;
+  jack.enable = true;
+};
+```
+
+increase realtime limits for the audio group
+
+``` diff
+  security = {
+    protectKernelImage = false; # sometimes required if lockdown mode interferes (for hibernation)
+    rtkit.enable = true;
++   pam = {
++     loginLimits = [
++       # realtime limits for the audio group
++       { domain = "@audio"; item = "memlock"; type = "-"; value = "unlimited"; }
++       { domain = "@audio"; item = "rtprio";  type = "-"; value = "99"; }
++       { domain = "@audio"; item = "nofile";  type = "-"; value = "99999"; }
++     ];
+    };
+  };
+```
+
+add your user to necessary groups
+
+``` nix
+users.users.YOURUSERNAME.extraGroups = [ "audio" "jackaudio" ];
+```
+
+let reaper know where are lv2 plugins are
+
+``` diff
+  environment = {
+
+    etc."issue".text = ""; # clear /etc/issue for disabling messages in Motd
+
+    sessionVariables = {
+      STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/savolla/.steam/root/compatibilitytools.d";
+      GTK_THEME = "Adwaita:dark";
++     LV2_PATH = "/run/current-system/sw/lib/lv2";
+    };
+```
+
+install packages:
+
+``` nix
+systemPackages = with pkgs; [
+  reaper                 # "the" daw
+  carla                  # route jack outputs/inputs
+  drumgizmo              # drums
+  neural-amp-modeler-lv2 # guitar tone
+  guitarix-vst           # for loading nam and other irs
+  zlequalizer            # fabfilter pro alternative
+  tonelib-gfx            # good guitar amp
+  tonelib-jam            # 3d tab editor (paid)
+  tonelib-metal          # all in one guitar rig
+  yabridge               # use windows vsts on linux wine is requirement here
+  yabridgectl            # yabridge control utility
+  qjackctl               # patchbay / routing GUI, works against pipewire-jack
+  crosspipe              # modern jack ui (using this instead helvum)
+  pavucontrol            # pipewire buffer size and latency settings can be done from there
+  calf                   # high quality music production plugins and vsts
+  lsp-plugins            # collection of open-source audio plugins
+  x42-plugins            # collection of lv2 plugins by Robin Gareus
+  distrho-ports          # audio plugins
+];
+```
+
+## Yabridge
+
+I keep my vsts on another harddrive. and I import them using `yapbridge` like this:
+
+first party
+
+``` bash
+WINEPREFIX=/home/savolla/resource/audio/vst/yabridge  WINEARCH=win64 yabridgectl add /home/savolla/resource/audio/vst/yabridge/drive_c/Program\ Files/Common\ Files/VST3
+```
+
+first party
+
+``` bash
+WINEPREFIX=/home/savolla/resource/audio/vst/yabridge  WINEARCH=win64 yabridgectl add /home/savolla/resource/audio/vst/yabridge/drive_c/Program\ Files\ \(x86\)/Common\ Files/VST3
+```
+
+now convert them into linux compatible formats
+
+``` bash
+WINEPREFIX=/home/savolla/resource/audio/vst/yabridge  WINEARCH=win64 yabridgectl sync
+```
+
+## Metal Guitar Tone
+
+best nam models
+
+> Peavey 6505 / 5150: Captured by Arlington Audio, this is universally considered the holy grail of free NAM metal tones. It perfectly replicates the thick, aggressive crunch and articulation of a 2004 USA Peavey.
+>
+> EVH 5150 III (Blue Channel): Captures by Obi-Juan provide the modern standard for tight, percussive djent and progressive metal tones.
+>
+> Mesa Boogie Mark IIC+ & JP-2A: The gold standard for mid-focused, articulate metal leads and rhythms.
+>
+> Revv Generator (Purple Channel): Captured by creators like Primal Nerd, it offers an incredibly smooth, high-gain modern delight perfect for heavy rhythm tracks.
+>
+> The "Ollie" Chug: The famous digital pedal-to-amp captures created by Ola Englund are a massive hit for quick, brutal chugging.
+
+best input responses
+
+> Mesa Boogie OS 4x12: The industry standard for heavy, massive guitar tones. Look for captures using an SM57 or MD421 microphone on the edge of the cone.
+>
+> God’s Cab (Wilkinson Audio): A legendary, free IR pack highly recommended by the metal community for its tight, mix-ready characteristics.
+>
+> York Audio IRs: While the free options above are great, York Audio's premium packs (especially the Mesa 4x12 OS or Bogner packs) offer the most pristine, phase-coherent metal IRs on the market.
+
+preset chain
+
+> The "Secret Sauce" Metal ChainNoise Gate: Place a tight noise gate (like the stock ReaGate or Noise Gate in your DAW) first in the chain to keep your chugs clean.Virtual Boost: Load a Tube Screamer plugin (e.g., Ignite Amps TS-999) before the NAM plugin. Turn the Drive to 0, Level to Max, and Tone to Taste. This tightens the low end.NAM Plugin: Load your chosen Peavey, EVH, or Revv "amp-only" profile here.IR Loader: Load your Mesa OS IR. Apply a high-pass filter at roughly 80Hz and a low-pass filter around 10kHz–12kHz to remove unwanted buzz and rumble.

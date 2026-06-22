@@ -13,7 +13,10 @@ there are two methods for this. I'll give you the easies first
 nix-store --query --referrers $(nix-store --query --outputs $(nix-instantiate '<nixpkgs>' -A gcr))
 ```
 
-\<table\> \<tbody\> \<tr\> \<td\>/nix/store/lp0p3dawvhc0aj8pmrj90nx1d9n9w95b-gcr-3.41.2\</td\> \</tr\> \<tr\> \<td\>/nix/store/ybwyx2r9ifa1irivwxjj1q74r8qch4q7-pinentry-gnome3-1.3.2\</td\> \</tr\> \</tbody\> \</table\>
+``` example
+/nix/store/lp0p3dawvhc0aj8pmrj90nx1d9n9w95b-gcr-3.41.2
+/nix/store/ybwyx2r9ifa1irivwxjj1q74r8qch4q7-pinentry-gnome3-1.3.2
+```
 
 so I can see that it is mostly `pinentry-gnome3-1.3.2`. try to remove or change to stable channel on this package for stability
 

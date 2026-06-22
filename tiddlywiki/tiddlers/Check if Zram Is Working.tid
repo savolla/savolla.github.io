@@ -22,8 +22,8 @@ also do
 swapon --show
 ```
 
-\<table\> \<tbody\> \<tr\> \<td\>NAME\</td\> \<td\>TYPE\</td\> \<td\>SIZE\</td\> \<td\>USED\</td\> \<td\>PRIO\</td\> \</tr\> \<tr\> \<td\>/dev/dm-0\</td\> \<td\>partition\</td\> \<td\>32G\</td\> \<td\>0B\</td\> \<td\>-1\</td\> \</tr\> \</tbody\> \</table\>
-
-|            |           |      |     |     |
-|------------|-----------|------|-----|-----|
-| /dev/zram0 | partition | 5,8G | 0B  | 5   |
+``` example
+| NAME       | TYPE      | SIZE | USED | PRIO |
+| /dev/dm-0  | partition | 32G  | 0B   |   -1 |
+| /dev/zram0 | partition | 5,8G | 0B   |    5 |
+```
