@@ -1,0 +1,10 @@
+title: Cat All Files Recursively
+tags: cat linux @zettel _method
+roam-id: ff35214e-32a6-4275-9be7-4a8b837c2f20
+created: 20260622130800000
+modified: 20260622130800000
+type: text/markdown
+
+``` bash
+find . -type f -exec cat {} +
+```
