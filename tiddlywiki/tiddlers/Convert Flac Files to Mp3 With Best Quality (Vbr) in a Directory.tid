@@ -3,4 +3,14 @@ tags: @zettel _method mp3 ffmpeg flac
 roam-id: 864a89be-11ef-416b-a96f-fa01b04afd6b
 type: text/markdown
 
-for file in *.flac; do ffmpeg -i "$file" -q:a 0 "${file%.flac}.mp3"; done
+zsh/bash version
+
+    for file in *.flac; do ffmpeg -i "$file" -q:a 0 "${file%.flac}.mp3"; done
+
+fish version
+
+``` fish
+for file in *.flac
+    ffmpeg -i "$file" -q:a 0 "$(string replace -r '\.flac$' '.mp3' -- $file)"
+end
+```
