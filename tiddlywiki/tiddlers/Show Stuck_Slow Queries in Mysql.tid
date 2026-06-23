@@ -5,6 +5,8 @@ created: 20260615163800000
 modified: 20260615163800000
 type: text/markdown
 
+I list slow queries that are running more that 30 minutes below. you may want to adjust that `1800` key vavaluelue
+
 ``` sql
-SELECT ID, USER, TIME, STATE, LEFT(REPLACE(REPLACE(INFO, '\n', ' '), '\r', ''), 40) FROM information_schema.processlist WHERE COMMAND != 'Sleep' AND TIME > 5 ORDER BY TIME DESC LIMIT 5;
+SELECT ID, USER, TIME, STATE, LEFT(REPLACE(REPLACE(INFO, '\n', ' '), '\r', ''), 40) FROM information_schema.processlist WHERE COMMAND != 'Sleep' AND TIME > 1800 ORDER BY TIME DESC LIMIT 5;
 ```
