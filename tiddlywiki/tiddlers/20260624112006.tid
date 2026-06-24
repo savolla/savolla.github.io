@@ -1,0 +1,8 @@
+title: 20260624112006
+tags: k8s gateway_api fc @zettel _warning
+roam-id: fb8a8887-9b98-4ee2-ae14-1be58e9e0aff
+created: 20260624112000000
+modified: 20260624112000000
+type: text/markdown
+
+In Gateway API, a rule can contain at most 16 match conditions.
