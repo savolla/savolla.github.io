@@ -8,5 +8,5 @@ type: text/markdown
 ``` sql
 SELECT TABLE_NAME, TABLE_COLLATION
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'your_database';
+WHERE TABLE_SCHEMA = 'bird_cms';
 ```

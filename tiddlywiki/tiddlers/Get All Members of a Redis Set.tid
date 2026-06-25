@@ -1,0 +1,13 @@
+title: Get All Members of a Redis Set
+tags: redis @zettel _method
+roam-id: 96c5cf84-2146-41bf-a03b-c0b8d67f2328
+created: 20260625170000000
+modified: 20260625170000000
+type: text/markdown
+
+- make sure the key is actually a **set**. [[Check Type of a Redis Key]] first.
+- [[Connect to Redis]]
+
+``` bash
+smembers SET_KEY_NAME
+```

@@ -1,0 +1,34 @@
+title: Change Collation of All Tables in Mysql Database
+tags: mysql @zettel _method
+roam-id: e7936a56-8ead-4210-9e5e-3396642a2627
+created: 20260625171900000
+modified: 20260625171900000
+type: text/markdown
+
+example
+
+``` sql
+alter database YOUR_DATABASE character set utf8mb4 collate utf8mb4_unicode_ci;
+```
+
+convert all tables under
+
+``` sql
+SELECT CONCAT(
+    'ALTER TABLE `', TABLE_NAME,
+    '` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;'
+) AS sql_statement
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'your_database';
+```
+
+real example;
+
+``` sql
+SELECT CONCAT(
+    'ALTER TABLE `', TABLE_NAME,
+    '` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;'
+) AS sql_statement
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'bird_cms';
+```

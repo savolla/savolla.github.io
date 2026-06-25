@@ -1,0 +1,12 @@
+title: Check Type of a Redis Key
+tags: redis @zettel _method
+roam-id: e903198b-a00c-405c-b9e0-aee12b335e3b
+created: 20260625165900000
+modified: 20260625165900000
+type: text/markdown
+
+- [[Connect to Redis]]
+
+``` bash
+type KEYNAME
+```

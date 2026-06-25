@@ -1,0 +1,16 @@
+title: Get Value of a Key in Redis
+tags: redis @zettel _method
+roam-id: dc1ef8e7-222e-4bf3-8814-9043d60a3b15
+created: 20260625165600000
+modified: 20260625165600000
+type: text/markdown
+
+- [[Connect to Redis]]
+
+- [[Check Type of a Redis Key]]. if its type is set then [[Get All Members of a Redis Set]]
+
+- if it's a normal key-value type then
+
+  ``` bash
+  get KEY_NAME
+  ```
