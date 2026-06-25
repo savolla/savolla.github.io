@@ -1,0 +1,12 @@
+title: Get Collations of All Tables in Mysql Database
+tags: mysql @zettel _method
+roam-id: 4b54068d-150a-484b-a236-c284ca6358bc
+created: 20260625164300000
+modified: 20260625164300000
+type: text/markdown
+
+``` sql
+SELECT TABLE_NAME, TABLE_COLLATION
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'your_database';
+```

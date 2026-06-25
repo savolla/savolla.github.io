@@ -1,0 +1,10 @@
+title: Update Charset of a Table to Utf8mb4 in Mysql
+tags: utf8 mysql @zettel _method
+roam-id: 8ccc06a0-066e-4517-9c67-d18ba6cfdebe
+created: 20260625163800000
+modified: 20260625163800000
+type: text/markdown
+
+``` sql
+ALTER DATABASE <your_database> CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
