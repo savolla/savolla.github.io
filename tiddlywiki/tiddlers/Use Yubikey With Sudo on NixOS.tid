@@ -1,0 +1,91 @@
+title: Use Yubikey With Sudo on NixOS
+tags: nix nixos linux sudo @post yubikey
+roam-id: 524f66a2-e442-403a-a0d1-c3896c9071d7
+created: 20260629164300000
+modified: 20260629164300000
+type: text/markdown
+
+enable the fido2/u2f pam module
+
+``` nix
+security.pam.u2f = {
+  enable = true;
+  settings = {
+    cue = true; # print a reminder to touch the device
+  };
+};
+```
+
+[[Rebuild Nixos]]
+
+create your credential mapping
+
+``` bash
+mkdir -p ~/.config/Yubico
+chmod 700 ~/.config/Yubico
+```
+
+add `stable.pam_u2f` under your system packages and [[Rebuild Nixos]]
+
+generate the mapping
+
+``` bash
+pamu2fcfg > ~/.config/Yubico/u2f_keys
+```
+
+touch your YubiKey when prompted.
+
+fix [[Error: Fido_dev_make_cred (-2) FIDO_ERR_RX]] if you get it
+
+protect the file by adjusting the permissions
+
+``` bash
+chmod 600 ~/.config/Yubico/u2f_keys
+```
+
+## configure pam for sudo
+
+add the following to your `configuration.nix`
+
+``` nix
+security.pam.services.sudo = {
+  u2fAuth = true;
+};
+```
+
+## allow fallback to password if the YubiKey isn't present
+
+By default, `u2fAuth = true` makes the u2f check `sufficient`, not `required` — meaning NixOS already falls back to your normal sudo password if the key is missing or fails. So out of the box you get fallback behavior for free.
+
+If you instead want it to **require** the key (no password fallback at all), you'd set `control = "required";` explicitly:
+
+``` nix
+security.pam.services.sudo = {
+  u2fAuth = true;
+  control = "required"; # uncomment to REQUIRE the yubikey, no password fallback
+};
+```
+
+Leave that out (or set it to "sufficient") if you want password as a backup, which is the safer default in case you lose the key.
+
+## rebuild and test
+
+[[Rebuild Nixos]]
+
+open a **new** terminal (don't close your current one!) and test:
+
+``` bash
+sudo true
+```
+
+you should be prompted to touch your YubiKey. If `cue = true`, you'll see a reminder printed to the terminal first.
+
+## troubleshooting
+
+- if sudo hangs with no prompt, check `journalctl --user -xe` or `journalctl -xe` for pam<sub>u2f</sub> errors while running `sudo true`.
+
+- if you have multiple YubiKeys (e.g. a backup), run `pamu2fcfg` again with `-n` and append to the same file, e.g.:
+
+  ``` bash
+  nix-shell -p pam_u2f --run "pamu2fcfg -n >> ~/.config/Yubico/u2f_keys"
+  ```

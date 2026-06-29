@@ -1,0 +1,8 @@
+title: Error: Fido_dev_make_cred (-2) FIDO_ERR_RX
+tags: yubikey @zettel _fix
+roam-id: 1ab53175-1cca-40b1-be6d-b212502925d1
+created: 20260629172500000
+modified: 20260629172500000
+type: text/markdown
+
+you probably mounted your yubikey on an external usb hub. try to mount it on a proper usb port

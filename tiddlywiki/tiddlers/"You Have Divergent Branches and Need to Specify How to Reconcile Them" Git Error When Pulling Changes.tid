@@ -1,0 +1,16 @@
+title: "You Have Divergent Branches and Need to Specify How to Reconcile Them" Git Error When Pulling Changes
+tags: git @zettel _fix
+roam-id: 580fa7a6-48f0-4dbf-b360-f04fef8a466d
+created: 20260629154600000
+modified: 20260629154600000
+type: text/markdown
+
+``` bash
+git pull --no-rebase
+```
+
+you also would want to put the following config in your git config
+
+``` bash
+git config --global pull.rebase false
+```
