@@ -1,0 +1,10 @@
+title: Check the Sync Policy in Redis
+tags: redis @zettel _method
+roam-id: c480f14e-eb31-463b-ab71-a36875e098d7
+created: 20260629114900000
+modified: 20260629114900000
+type: text/markdown
+
+``` bash
+redis-cli CONFIG GET appendfsync
+```

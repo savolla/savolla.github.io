@@ -1,0 +1,24 @@
+title: Check if RDB Snapshots Are Enabled
+tags: redis @zettel _method
+roam-id: 1432bd12-2eb8-4697-8bf2-7e2ee8d39f5a
+created: 20260629115300000
+modified: 20260629115300000
+type: text/markdown
+
+``` bash
+redis-cli CONFIG GET save
+```
+
+possible outputs if enabled
+
+``` example
+1) "save"
+2) "3600 1 300 100 60 10000"
+```
+
+if not enabled
+
+``` example
+1) "save"
+2) ""
+```

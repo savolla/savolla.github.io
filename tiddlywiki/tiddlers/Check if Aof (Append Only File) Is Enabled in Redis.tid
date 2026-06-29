@@ -1,0 +1,24 @@
+title: Check if Aof (Append Only File) Is Enabled in Redis
+tags: redis @zettel _method
+roam-id: f43d7032-237e-4727-85ce-4141dc8b1fd5
+created: 20260629114700000
+modified: 20260629114700000
+type: text/markdown
+
+``` bash
+redis-cli CONFIG GET appendonly
+```
+
+you shall see something like this if it's enabled
+
+``` example
+1) "appendonly"
+2) "yes"
+```
+
+if it's not enabled;
+
+``` example
+1) "appendonly"
+2) "no"
+```
